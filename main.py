@@ -5,7 +5,7 @@ import itertools as it
 import numpy as np
 import dynet_config as dy_conf
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
 
 random.seed(14535)
 np.random.seed(78456)
@@ -94,6 +94,8 @@ def main(input_path):
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
     training, testing = train_test_split(instances, stratify=labels)
 
+    print("Positive: %i\tNegative: %i" % (sum(labels), len(labels)-sum(labels)))
+
     testing_labels = [1 if instance.polarity else 0 for instance in testing]
 
     # Training loop
@@ -131,8 +133,13 @@ def main(input_path):
         precision = precision_score(testing_labels, testing_predictions)
         recall = recall_score(testing_labels, testing_predictions)
 
+
+
         print("Epoch %i average training loss: %f\t average testing loss: %f" % (e+1, np.average(training_losses), np.average(testing_losses)))
         print("Precision: %f\tRecall: %f\tF1: %f" % (precision, recall, f1))
+        if sum(testing_predictions) >= 1:
+            report = classification_report(testing_labels, testing_predictions)
+            print(report)
         if avg_loss <= 3e-3:
             break
         print()
