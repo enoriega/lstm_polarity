@@ -32,10 +32,11 @@ class Instance:
 
     @staticmethod
     def normalize(raw):
-        sentence = raw.lower().strip('"')
+        sentence = raw.lower()
         # Replace numbers by "[NUM]"
-        sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', '[NUM]', sentence)
+        sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', ' [NUM] ', sentence)
         tokens = sentence.split()
+
         return tokens
         # return ['[START]'] + tokens + ['[END]']
 
@@ -47,6 +48,16 @@ class Instance:
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
                         False if d['polarity'].startswith('Positive') else True)
+
+    def get_segments(self, k = 2):
+        trigger_tokens = self.trigger.split()
+        trigger_ix = self.tokens.index(trigger_tokens[0], self.start, self.end+1)
+        tokens_prev = self.tokens[max(0, self.start - k):self.start]
+        tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
+        tokens_in_right = self.tokens[(trigger_ix+len(trigger_tokens)):self.end]
+        tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
+
+        return tokens_prev, tokens_in_left, tokens_in_right, tokens_last
 
 
 def build_vocabulary(words):
