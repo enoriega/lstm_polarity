@@ -26,8 +26,8 @@ class Instance:
         self.tokens = Instance.normalize(sen)
 
     def get_tokens(self, k=0):
-        start = min(0, self.start - k)
-        end = max(len(self.tokens) - 1, self.end + k)
+        start = max(0, self.start - k)
+        end = min(len(self.tokens) - 1, self.end + k)
         return self.tokens[start:end]
 
     @staticmethod
