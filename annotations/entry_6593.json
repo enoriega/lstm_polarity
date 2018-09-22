@@ -1,0 +1,424 @@
+{
+  "documents" : {
+    "-977415567" : {
+      "id" : "sentence_annotator",
+      "text" : "Coexpression of SRC-1 reversed the ability of the estrogen receptor to squelch activation by hPR.",
+      "sentences" : [ {
+        "words" : [ "Coexpression", "of", "SRC-1", "reversed", "the", "ability", "of", "the", "estrogen", "receptor", "to", "squelch", "activation", "by", "hPR", "." ],
+        "startOffsets" : [ 0, 13, 16, 22, 31, 35, 43, 46, 50, 59, 68, 71, 79, 90, 93, 96 ],
+        "endOffsets" : [ 12, 15, 21, 30, 34, 42, 45, 49, 58, 67, 70, 78, 89, 92, 96, 97 ],
+        "tags" : [ "NN", "IN", "NN", "VBD", "DT", "NN", "IN", "DT", "NN", "NN", "TO", "VB", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "coexpression", "of", "src-1", "reverse", "the", "ability", "of", "the", "estrogen", "receptor", "to", "squelch", "activation", "by", "hpr", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 11,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 11,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_by"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:523745121",
+    "text" : "SRC-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "-977415567",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p60-Src",
+      "namespace" : "uniprot",
+      "id" : "P12931",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:988414468",
+    "text" : "estrogen receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-977415567",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ER-alpha",
+      "namespace" : "uniprot",
+      "id" : "P03372",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-311376294",
+    "text" : "hPR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 93,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "-977415567",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Haptoglobin-related protein",
+      "namespace" : "uniprot",
+      "id" : "P00739",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1302110011",
+    "text" : "Coexpression of SRC-1",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-875899898",
+      "text" : "Coexpression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 12,
+      "sentence" : 0,
+      "document" : "-977415567",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:523745121",
+        "text" : "SRC-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "-977415567",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p60-Src",
+          "namespace" : "uniprot",
+          "id" : "P12931",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:523745121" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "-977415567",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:668853713",
+    "text" : "Coexpression of SRC-1 reversed the ability of the estrogen receptor",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1385412762",
+      "text" : "reversed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "-977415567",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:988414468",
+        "text" : "estrogen receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-977415567",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ER-alpha",
+          "namespace" : "uniprot",
+          "id" : "P03372",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1302110011",
+        "text" : "Coexpression of SRC-1",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-875899898",
+          "text" : "Coexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 12,
+          "sentence" : 0,
+          "document" : "-977415567",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:523745121",
+            "text" : "SRC-1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 21,
+            "sentence" : 0,
+            "document" : "-977415567",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "p60-Src",
+              "namespace" : "uniprot",
+              "id" : "P12931",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:523745121" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "-977415567",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:988414468" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1302110011" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:523745121" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-977415567",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

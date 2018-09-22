@@ -1,0 +1,505 @@
+{
+  "documents" : {
+    "-833688086" : {
+      "id" : "sentence_annotator",
+      "text" : "CNK1 mediates AKT dependent inhibition of CRAF in EGF stimulated cells.",
+      "sentences" : [ {
+        "words" : [ "CNK1", "mediates", "AKT", "dependent", "inhibition", "of", "CRAF", "in", "EGF", "stimulated", "cells", "." ],
+        "startOffsets" : [ 0, 5, 14, 18, 28, 39, 42, 47, 50, 54, 65, 70 ],
+        "endOffsets" : [ 4, 13, 17, 27, 38, 41, 46, 49, 53, 64, 70, 71 ],
+        "tags" : [ "NN", "VBZ", "NN", "JJ", "NN", "IN", "NNP", "IN", "NN", "VBN", "NNS", "." ],
+        "lemmas" : [ "cnk1", "mediate", "akt", "dependent", "inhibition", "of", "CRAF", "in", "egf", "stimulate", "cell", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1094402839",
+    "text" : "CNK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Connector enhancer of KSR-like",
+      "namespace" : "uniprot",
+      "id" : "Q969H4",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-809000583",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1539364883",
+    "text" : "CRAF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "cRaf",
+      "namespace" : "uniprot",
+      "id" : "P04049",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-876376523",
+    "text" : "EGF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-586758087",
+    "text" : "CNK1 mediates AKT",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-56023168",
+      "text" : "mediates",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 13,
+      "sentence" : 0,
+      "document" : "-833688086",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-809000583",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1094402839",
+        "text" : "CNK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Connector enhancer of KSR-like",
+          "namespace" : "uniprot",
+          "id" : "Q969H4",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-809000583" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ],
+        "T:-1539364883" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1094402839" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2079562619",
+    "text" : "CNK1 mediates AKT dependent inhibition of CRAF",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-56023168",
+      "text" : "mediates",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 13,
+      "sentence" : 0,
+      "document" : "-833688086",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1539364883",
+        "text" : "CRAF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "cRaf",
+          "namespace" : "uniprot",
+          "id" : "P04049",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1094402839",
+        "text" : "CNK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Connector enhancer of KSR-like",
+          "namespace" : "uniprot",
+          "id" : "Q969H4",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-809000583" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ],
+        "T:-1539364883" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1094402839" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-342784385",
+    "text" : "AKT dependent inhibition of CRAF",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-650670512",
+      "text" : "inhibition",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "-833688086",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1539364883",
+        "text" : "CRAF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "cRaf",
+          "namespace" : "uniprot",
+          "id" : "P04049",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-809000583",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-833688086",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1539364883" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-809000583" : [ {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-833688086",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

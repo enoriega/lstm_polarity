@@ -1,0 +1,396 @@
+{
+  "documents" : {
+    "179155399" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Like ABT-737, Navitoclax also targets BCL-XL and BCL-W.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Like", "ABT-737", ",", "Navitoclax", "also", "targets", "BCL-XL", "and", "BCL-W", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 13, 15, 26, 31, 39, 46, 50, 55, 56 ],
+        "endOffsets" : [ 1, 5, 13, 14, 25, 30, 38, 45, 49, 55, 56, 57 ],
+        "tags" : [ "``", "IN", "NN", ",", "NN", "RB", "VBZ", "NN", "CC", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "like", "abt-737", ",", "navitoclax", "also", "target", "bcl-xl", "and", "bcl-w", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "prep_like"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:258398247",
+    "text" : "ABT-737",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 13,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ABT-737",
+      "namespace" : "pubchem",
+      "id" : "11228183",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1021360909",
+    "text" : "Navitoclax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Navitoclax",
+      "namespace" : "uaz",
+      "id" : "UAZ01433",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1713492467",
+    "text" : "BCL-XL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BclXL",
+      "namespace" : "uniprot",
+      "id" : "Q07817",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1358926588",
+    "text" : "BCL-W",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apoptosis regulator Bcl-W",
+      "namespace" : "uniprot",
+      "id" : "Q92843",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1557862170",
+    "text" : "Navitoclax also targets BCL-XL",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:870276876",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "179155399",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1713492467",
+        "text" : "BCL-XL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 39,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "179155399",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BclXL",
+          "namespace" : "uniprot",
+          "id" : "Q07817",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1021360909",
+        "text" : "Navitoclax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "179155399",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Navitoclax",
+          "namespace" : "uaz",
+          "id" : "UAZ01433",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1713492467" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:1358926588" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1021360909" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1898932565",
+    "text" : "Navitoclax also targets BCL-XL and BCL-W",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:870276876",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "179155399",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1358926588",
+        "text" : "BCL-W",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "179155399",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apoptosis regulator Bcl-W",
+          "namespace" : "uniprot",
+          "id" : "Q92843",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1021360909",
+        "text" : "Navitoclax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "179155399",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Navitoclax",
+          "namespace" : "uaz",
+          "id" : "UAZ01433",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1713492467" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:1358926588" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1021360909" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 10
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "179155399",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

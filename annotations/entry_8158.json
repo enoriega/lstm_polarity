@@ -1,0 +1,237 @@
+{
+  "documents" : {
+    "-1260768545" : {
+      "id" : "sentence_annotator",
+      "text" : "Knock-down of PHLPP restores the activation of Akt in Tregs.",
+      "sentences" : [ {
+        "words" : [ "Knock-down", "of", "PHLPP", "restores", "the", "activation", "of", "Akt", "in", "Tregs", "." ],
+        "startOffsets" : [ 0, 11, 14, 20, 29, 33, 44, 47, 51, 54, 59 ],
+        "endOffsets" : [ 10, 13, 19, 28, 32, 43, 46, 50, 53, 59, 60 ],
+        "tags" : [ "NN", "IN", "NN", "VBZ", "DT", "NN", "IN", "NN", "IN", "NNP", "." ],
+        "lemmas" : [ "knock-down", "of", "phlpp", "restore", "the", "activation", "of", "akt", "in", "Tregs", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_in"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-954663446",
+    "text" : "PHLPP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-1260768545",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "hSCOP",
+      "namespace" : "uniprot",
+      "id" : "O60346",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:450841955",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "-1260768545",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1656598734",
+    "text" : "PHLPP restores the activation of Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-266645190",
+      "text" : "restores",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "-1260768545",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:450841955",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "-1260768545",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-954663446",
+        "text" : "PHLPP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-1260768545",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "hSCOP",
+          "namespace" : "uniprot",
+          "id" : "O60346",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:450841955" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-954663446" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 8
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "-1260768545",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

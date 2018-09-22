@@ -1,0 +1,798 @@
+{
+  "documents" : {
+    "-1710894728" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Gefitinib or Iressa, erlotinib or Tarceva are used to target EGFR.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Gefitinib", "or", "Iressa", ",", "erlotinib", "or", "Tarceva", "are", "used", "to", "target", "EGFR", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 11, 14, 20, 22, 32, 35, 43, 47, 52, 55, 62, 66, 67 ],
+        "endOffsets" : [ 1, 10, 13, 20, 21, 31, 34, 42, 46, 51, 54, 61, 66, 67, 68 ],
+        "tags" : [ "``", "NNP", "CC", "NNP", ",", "NN", "CC", "NN", "VBP", "VBN", "TO", "VB", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "Gefitinib", "or", "Iressa", ",", "erlotinib", "or", "tarceva", "be", "use", "to", "target", "egfr", ".", "\"" ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-VP", "I-VP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj_or"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "conj_or"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "conj_or"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1453244971",
+    "text" : "Gefitinib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 10,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Gefitinib",
+      "namespace" : "pubchem",
+      "id" : "123631",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-638771164",
+    "text" : "Iressa",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Iressa",
+      "namespace" : "uaz",
+      "id" : "UAZ00556",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-16100112",
+    "text" : "erlotinib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "[6,7-Bis-(2-methoxy-ethoxy)-quinazolin-4-yl]-(3-ethynyl-phenyl)-amine",
+      "namespace" : "pubchem",
+      "id" : "176870",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1676669205",
+    "text" : "Tarceva",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Tarceva",
+      "namespace" : "uaz",
+      "id" : "UAZ02036",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1211852802",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:82078709",
+    "text" : "Gefitinib or Iressa, erlotinib or Tarceva are used to target EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1859246889",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1710894728",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1211852802",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1453244971",
+        "text" : "Gefitinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 10,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Gefitinib",
+          "namespace" : "pubchem",
+          "id" : "123631",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1211852802" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1453244971" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ],
+        "T:-638771164" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_or"
+        } ],
+        "T:-16100112" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "conj_or"
+        } ],
+        "T:-1676669205" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 7,
+          "relation" : "conj_or"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:441279603",
+    "text" : "Iressa, erlotinib or Tarceva are used to target EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1859246889",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1710894728",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1211852802",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-638771164",
+        "text" : "Iressa",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Iressa",
+          "namespace" : "uaz",
+          "id" : "UAZ00556",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1211852802" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1453244971" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ],
+        "T:-638771164" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_or"
+        } ],
+        "T:-16100112" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "conj_or"
+        } ],
+        "T:-1676669205" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 7,
+          "relation" : "conj_or"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1706770725",
+    "text" : "erlotinib or Tarceva are used to target EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1859246889",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1710894728",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1211852802",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-16100112",
+        "text" : "erlotinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "[6,7-Bis-(2-methoxy-ethoxy)-quinazolin-4-yl]-(3-ethynyl-phenyl)-amine",
+          "namespace" : "pubchem",
+          "id" : "176870",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1211852802" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1453244971" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ],
+        "T:-638771164" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_or"
+        } ],
+        "T:-16100112" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "conj_or"
+        } ],
+        "T:-1676669205" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 7,
+          "relation" : "conj_or"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 13
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1639535301",
+    "text" : "Tarceva are used to target EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1859246889",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1710894728",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1211852802",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1676669205",
+        "text" : "Tarceva",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-1710894728",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Tarceva",
+          "namespace" : "uaz",
+          "id" : "UAZ02036",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1211852802" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1453244971" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ],
+        "T:-638771164" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_or"
+        } ],
+        "T:-16100112" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "conj_or"
+        } ],
+        "T:-1676669205" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 7,
+          "relation" : "conj_or"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1710894728",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,684 @@
+{
+  "documents" : {
+    "1897797997" : {
+      "id" : "sentence_annotator",
+      "text" : "Several of signaling pathways can be triggered by EGF and EGFR activation including the MEK and ERK pathways.",
+      "sentences" : [ {
+        "words" : [ "Several", "of", "signaling", "pathways", "can", "be", "triggered", "by", "EGF", "and", "EGFR", "activation", "including", "the", "MEK", "and", "ERK", "pathways", "." ],
+        "startOffsets" : [ 0, 8, 11, 21, 30, 34, 37, 47, 50, 54, 58, 63, 74, 84, 88, 92, 96, 100, 108 ],
+        "endOffsets" : [ 7, 10, 20, 29, 33, 36, 46, 49, 53, 57, 62, 73, 83, 87, 91, 95, 99, 108, 109 ],
+        "tags" : [ "JJ", "IN", "NN", "NNS", "MD", "VB", "VBN", "IN", "NN", "CC", "NN", "NN", "VBG", "DT", "NN", "CC", "NN", "NNS", "." ],
+        "lemmas" : [ "several", "of", "signaling", "pathway", "can", "be", "trigger", "by", "egf", "and", "egfr", "activation", "include", "the", "mek", "and", "erk", "pathway", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "B-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "cc"
+            }, {
+              "source" : 14,
+              "destination" : 17,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "agent"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 17,
+              "relation" : "prep_including"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_including"
+            }, {
+              "source" : 14,
+              "destination" : 17,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1005472264",
+    "text" : "EGF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-531814307",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-290196745",
+    "text" : "MEK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "MEK",
+      "namespace" : "be",
+      "id" : "MEK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1337943345",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 96,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1558770041",
+    "text" : "EGF and EGFR activation including the MEK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-695472223",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "1897797997",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1005472264",
+        "text" : "EGF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-290196745",
+        "text" : "MEK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 88,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1005472264" : [ {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-531814307" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-290196745" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_including"
+        } ],
+        "T:1337943345" : [ {
+          "source" : 11,
+          "destination" : 17,
+          "relation" : "prep_including"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 15
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-40653302",
+    "text" : "EGF and EGFR activation including the MEK and ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-695472223",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "1897797997",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1005472264",
+        "text" : "EGF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1337943345",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 99,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1005472264" : [ {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-531814307" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-290196745" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_including"
+        } ],
+        "T:1337943345" : [ {
+          "source" : 11,
+          "destination" : 17,
+          "relation" : "prep_including"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 17
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1342531793",
+    "text" : "EGFR activation including the MEK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-695472223",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "1897797997",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-531814307",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-290196745",
+        "text" : "MEK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 88,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1005472264" : [ {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-531814307" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-290196745" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_including"
+        } ],
+        "T:1337943345" : [ {
+          "source" : 11,
+          "destination" : 17,
+          "relation" : "prep_including"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 15
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:775188816",
+    "text" : "EGFR activation including the MEK and ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-695472223",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "1897797997",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-531814307",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1337943345",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 99,
+        "sentence" : 0,
+        "document" : "1897797997",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1005472264" : [ {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-531814307" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-290196745" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_including"
+        } ],
+        "T:1337943345" : [ {
+          "source" : 11,
+          "destination" : 17,
+          "relation" : "prep_including"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 17
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "1897797997",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

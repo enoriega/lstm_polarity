@@ -1,0 +1,406 @@
+{
+  "documents" : {
+    "-161229667" : {
+      "id" : "sentence_annotator",
+      "text" : "We hypothesized that c-Abl expression could rescue the effects of ABL1 knockdown.",
+      "sentences" : [ {
+        "words" : [ "We", "hypothesized", "that", "c-Abl", "expression", "could", "rescue", "the", "effects", "of", "ABL1", "knockdown", "." ],
+        "startOffsets" : [ 0, 3, 16, 21, 27, 38, 44, 51, 55, 63, 66, 71, 80 ],
+        "endOffsets" : [ 2, 15, 20, 26, 37, 43, 50, 54, 62, 65, 70, 80, 81 ],
+        "tags" : [ "PRP", "VBD", "IN", "NN", "NN", "MD", "VB", "DT", "NNS", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "we", "hypothesize", "that", "c-abl", "expression", "could", "rescue", "the", "effect", "of", "abl1", "knockdown", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-958350595",
+    "text" : "c-Abl",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-161229667",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "c-Abl",
+      "namespace" : "uaz",
+      "id" : "UAZ01149",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-751389510",
+    "text" : "ABL1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-161229667",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ABL",
+      "namespace" : "uniprot",
+      "id" : "P00519",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1223866671",
+    "text" : "c-Abl expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2138577152",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "-161229667",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-958350595",
+        "text" : "c-Abl",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-161229667",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "c-Abl",
+          "namespace" : "uaz",
+          "id" : "UAZ01149",
+          "species" : ""
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-958350595" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-161229667",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1612458954",
+    "text" : "c-Abl expression could rescue the effects of ABL1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:949059213",
+      "text" : "rescue",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 50,
+      "sentence" : 0,
+      "document" : "-161229667",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-751389510",
+        "text" : "ABL1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "-161229667",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ABL",
+          "namespace" : "uniprot",
+          "id" : "P00519",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1223866671",
+        "text" : "c-Abl expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2138577152",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 27,
+          "characterEndOffset" : 37,
+          "sentence" : 0,
+          "document" : "-161229667",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-958350595",
+            "text" : "c-Abl",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 21,
+            "characterEndOffset" : 26,
+            "sentence" : 0,
+            "document" : "-161229667",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "c-Abl",
+              "namespace" : "uaz",
+              "id" : "UAZ01149",
+              "species" : ""
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-958350595" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-161229667",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-751389510" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "prep_of"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-1223866671" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-958350595" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-161229667",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:2096016871",
+        "text" : "hypothesized",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 3,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "-161229667",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

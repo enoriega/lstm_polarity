@@ -1,0 +1,499 @@
+{
+  "documents" : {
+    "821888574" : {
+      "id" : "sentence_annotator",
+      "text" : "MTA1 silencing impairs FOG2 dependent repression of GATA4 target genes.",
+      "sentences" : [ {
+        "words" : [ "MTA1", "silencing", "impairs", "FOG2", "dependent", "repression", "of", "GATA4", "target", "genes", "." ],
+        "startOffsets" : [ 0, 5, 15, 23, 28, 38, 49, 52, 58, 65, 70 ],
+        "endOffsets" : [ 4, 14, 22, 27, 37, 48, 51, 57, 64, 70, 71 ],
+        "tags" : [ "NN", "NN", "VBZ", "NN", "JJ", "NN", "IN", "NN", "NN", "NNS", "." ],
+        "lemmas" : [ "mta1", "silencing", "impair", "fog2", "dependent", "repression", "of", "gata4", "target", "gene", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:366712389",
+    "text" : "MTA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MTA1",
+      "namespace" : "uniprot",
+      "id" : "Q13330",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:964124003",
+    "text" : "FOG2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Zinc finger protein ZFPM2",
+      "namespace" : "uniprot",
+      "id" : "Q8WW38",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-113465244",
+    "text" : "GATA4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GATA-binding factor 4",
+      "namespace" : "uniprot",
+      "id" : "P43694",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-239593216",
+    "text" : "FOG2 dependent repression of GATA4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2059630785",
+      "text" : "repression",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "821888574",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-113465244",
+        "text" : "GATA4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GATA-binding factor 4",
+          "namespace" : "uniprot",
+          "id" : "P43694",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:964124003",
+        "text" : "FOG2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Zinc finger protein ZFPM2",
+          "namespace" : "uniprot",
+          "id" : "Q8WW38",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-113465244" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        }, {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:964124003" : [ {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1693095874",
+    "text" : "MTA1 silencing impairs FOG2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:994040215",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 15,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "821888574",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:964124003",
+        "text" : "FOG2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Zinc finger protein ZFPM2",
+          "namespace" : "uniprot",
+          "id" : "Q8WW38",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:366712389",
+        "text" : "MTA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MTA1",
+          "namespace" : "uniprot",
+          "id" : "Q13330",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:964124003" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-113465244" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        }, {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:366712389" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:530164816",
+    "text" : "MTA1 silencing impairs FOG2 dependent repression of GATA4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:994040215",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 15,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "821888574",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-113465244",
+        "text" : "GATA4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GATA-binding factor 4",
+          "namespace" : "uniprot",
+          "id" : "P43694",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:366712389",
+        "text" : "MTA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "821888574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MTA1",
+          "namespace" : "uniprot",
+          "id" : "Q13330",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:964124003" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-113465244" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        }, {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:366712389" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "821888574",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

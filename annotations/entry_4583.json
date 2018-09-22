@@ -1,0 +1,334 @@
+{
+  "documents" : {
+    "-1658116788" : {
+      "id" : "sentence_annotator",
+      "text" : "Restoring insulin mediated endothelial responses in mice with whole-body haploinsufficiency of IR by reducing IGF-1R.",
+      "sentences" : [ {
+        "words" : [ "Restoring", "insulin", "mediated", "endothelial", "responses", "in", "mice", "with", "whole-body", "haploinsufficiency", "of", "IR", "by", "reducing", "IGF-1R", "." ],
+        "startOffsets" : [ 0, 10, 18, 27, 39, 49, 52, 57, 62, 73, 92, 95, 98, 101, 110, 116 ],
+        "endOffsets" : [ 9, 17, 26, 38, 48, 51, 56, 61, 72, 91, 94, 97, 100, 109, 116, 117 ],
+        "tags" : [ "VBG", "NN", "VBD", "JJ", "NNS", "IN", "NNS", "IN", "JJ", "NN", "IN", "NN", "IN", "VBG", "NN", "." ],
+        "lemmas" : [ "restore", "insulin", "mediate", "endothelial", "response", "in", "mouse", "with", "whole-body", "haploinsufficiency", "of", "ir", "by", "reduce", "igf-1r", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Species", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pcomp"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 13,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_with"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:851506826",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-1658116788",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:99564563",
+    "text" : "mice",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-1658116788",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Mouse",
+      "namespace" : "taxonomy",
+      "id" : "10090",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1816265418",
+    "text" : "IR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 95,
+    "characterEndOffset" : 97,
+    "sentence" : 0,
+    "document" : "-1658116788",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor subunit beta",
+      "namespace" : "uniprot",
+      "id" : "P06213",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-347671835",
+    "text" : "IGF-1R",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 110,
+    "characterEndOffset" : 116,
+    "sentence" : 0,
+    "document" : "-1658116788",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IGF1R",
+      "namespace" : "uniprot",
+      "id" : "P08069",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-981052052",
+    "text" : "insulin mediated endothelial responses in mice with whole-body haploinsufficiency of IR by reducing IGF-1R",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1689872452",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "-1658116788",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-347671835",
+        "text" : "IGF-1R",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 110,
+        "characterEndOffset" : 116,
+        "sentence" : 0,
+        "document" : "-1658116788",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IGF1R",
+          "namespace" : "uniprot",
+          "id" : "P08069",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:851506826",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-1658116788",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-347671835" : [ {
+          "source" : 2,
+          "destination" : 13,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:851506826" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 15
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 116,
+    "sentence" : 0,
+    "document" : "-1658116788",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

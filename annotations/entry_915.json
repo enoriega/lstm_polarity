@@ -1,0 +1,277 @@
+{
+  "documents" : {
+    "-1198635854" : {
+      "id" : "sentence_annotator",
+      "text" : "3.4 Administration of rapamycin increases activation of mTOR in microglia.",
+      "sentences" : [ {
+        "words" : [ "3.4", "Administration", "of", "rapamycin", "increases", "activation", "of", "mTOR", "in", "microglia", "." ],
+        "startOffsets" : [ 0, 4, 19, 22, 32, 42, 53, 56, 61, 64, 73 ],
+        "endOffsets" : [ 3, 18, 21, 31, 41, 52, 55, 60, 63, 73, 74 ],
+        "tags" : [ "CD", "NN", "IN", "NN", "VBZ", "NN", "IN", "NN", "IN", "NNS", "." ],
+        "lemmas" : [ "3.4", "administration", "of", "rapamycin", "increase", "activation", "of", "mtor", "in", "microglium", "." ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-TissueType", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_in"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1451723421",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1198635854",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0627" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-499938221",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-1198635854",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0627" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2041688157",
+    "text" : "microglia",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1198635854",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Microglia",
+      "namespace" : "tissuelist",
+      "id" : "TS-0627",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0627" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1827838407",
+    "text" : "rapamycin increases activation of mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-104141751",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "-1198635854",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-499938221",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 60,
+        "sentence" : 0,
+        "document" : "-1198635854",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0627" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1451723421",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1198635854",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0627" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-499938221" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1451723421" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-1198635854",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0627" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

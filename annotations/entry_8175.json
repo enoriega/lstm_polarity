@@ -1,0 +1,533 @@
+{
+  "documents" : {
+    "1876695113" : {
+      "id" : "sentence_annotator",
+      "text" : "\"BMP-4 also activated beta-catenin, which was blocked by Smad4 and Wnt1 siRNAs.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "BMP-4", "also", "activated", "beta-catenin", ",", "which", "was", "blocked", "by", "Smad4", "and", "Wnt1", "siRNAs", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 12, 22, 34, 36, 42, 46, 54, 57, 63, 67, 72, 78, 79 ],
+        "endOffsets" : [ 1, 6, 11, 21, 34, 35, 41, 45, 53, 56, 62, 66, 71, 78, 79, 80 ],
+        "tags" : [ "``", "NN", "RB", "VBD", "NN", ",", "WDT", "VBD", "VBN", "IN", "NN", "CC", "NN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "bmp-4", "also", "activate", "beta-catenin", ",", "which", "be", "block", "by", "smad4", "and", "wnt1", "sirna", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "O", "B-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "agent"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1411033592",
+    "text" : "BMP-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DVR4",
+      "namespace" : "uniprot",
+      "id" : "P12644",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-482355550",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1841853438",
+    "text" : "Smad4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DPC4",
+      "namespace" : "uniprot",
+      "id" : "Q13485",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1988657543",
+    "text" : "Wnt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "INT1",
+      "namespace" : "uniprot",
+      "id" : "P04628",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1429297562",
+    "text" : "BMP-4 also activated beta-catenin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:507537010",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "1876695113",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-482355550",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1411033592",
+        "text" : "BMP-4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DVR4",
+          "namespace" : "uniprot",
+          "id" : "P12644",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-482355550" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1411033592" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1679847825",
+    "text" : "beta-catenin, which was blocked by Smad4",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:915354427",
+      "text" : "blocked",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "1876695113",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_6_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-482355550",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1841853438",
+        "text" : "Smad4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DPC4",
+          "namespace" : "uniprot",
+          "id" : "Q13485",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-482355550" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "rcmod"
+        } ]
+      },
+      "controller" : {
+        "T:-1841853438" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-1988657543" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_6_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-401982632",
+    "text" : "beta-catenin, which was blocked by Smad4 and Wnt1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:915354427",
+      "text" : "blocked",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "1876695113",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_6_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-482355550",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1988657543",
+        "text" : "Wnt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 67,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "1876695113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "INT1",
+          "namespace" : "uniprot",
+          "id" : "P04628",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-482355550" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "rcmod"
+        } ]
+      },
+      "controller" : {
+        "T:-1841853438" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-1988657543" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "1876695113",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_6_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

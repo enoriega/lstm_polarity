@@ -1,0 +1,470 @@
+{
+  "documents" : {
+    "-1109957585" : {
+      "id" : "sentence_annotator",
+      "text" : "Systemic administration of rapamycin modulates mTOR signaling and autophagy in a rat fracture model.",
+      "sentences" : [ {
+        "words" : [ "Systemic", "administration", "of", "rapamycin", "modulates", "mTOR", "signaling", "and", "autophagy", "in", "a", "rat", "fracture", "model", "." ],
+        "startOffsets" : [ 0, 9, 24, 27, 37, 47, 52, 62, 66, 76, 79, 81, 85, 94, 99 ],
+        "endOffsets" : [ 8, 23, 26, 36, 46, 51, 61, 65, 75, 78, 80, 84, 93, 99, 100 ],
+        "tags" : [ "JJ", "NN", "IN", "NN", "VBZ", "NN", "NN", "CC", "NN", "IN", "DT", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "systemic", "administration", "of", "rapamycin", "modulate", "mtor", "signaling", "and", "autophagy", "in", "a", "rat", "fracture", "model", "." ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "B-Species", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1987093281",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1964147606",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:598394184",
+    "text" : "autophagy",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "autophagy",
+      "namespace" : "go",
+      "id" : "GO:0006914",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1012336288",
+    "text" : "rat",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Rattus norvegicus8",
+      "namespace" : "taxonomy",
+      "id" : "10116",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1770032988",
+    "text" : "rapamycin modulates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1238474010",
+      "text" : "modulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "-1109957585",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1964147606",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-1109957585",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10116" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1987093281",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-1109957585",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10116" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1964147606" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:598394184" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1987093281" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2096188043",
+    "text" : "rapamycin modulates mTOR signaling and autophagy",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1238474010",
+      "text" : "modulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "-1109957585",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:598394184",
+        "text" : "autophagy",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-1109957585",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "autophagy",
+          "namespace" : "go",
+          "id" : "GO:0006914",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10116" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1987093281",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-1109957585",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10116" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1964147606" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:598394184" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1987093281" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1109957585",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:10116" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

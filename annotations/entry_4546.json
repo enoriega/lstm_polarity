@@ -1,0 +1,297 @@
+{
+  "documents" : {
+    "-2027972507" : {
+      "id" : "sentence_annotator",
+      "text" : "HGFL ablation decreased oncogenic Ron activation and delayed mammary tumor initiation.",
+      "sentences" : [ {
+        "words" : [ "HGFL", "ablation", "decreased", "oncogenic", "Ron", "activation", "and", "delayed", "mammary", "tumor", "initiation", "." ],
+        "startOffsets" : [ 0, 5, 14, 24, 34, 38, 49, 53, 61, 69, 75, 85 ],
+        "endOffsets" : [ 4, 13, 23, 33, 37, 48, 52, 60, 68, 74, 85, 86 ],
+        "tags" : [ "NN", "NN", "VBD", "JJ", "NNP", "NN", "CC", "VBN", "JJ", "NN", "NN", "." ],
+        "lemmas" : [ "hgfl", "ablation", "decrease", "oncogenic", "Ron", "activation", "and", "delay", "mammary", "tumor", "initiation", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-TissueType", "I-TissueType", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:329649638",
+    "text" : "HGFL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-2027972507",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HGFL",
+      "namespace" : "uniprot",
+      "id" : "P26927",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0597" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1466631482",
+    "text" : "Ron",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-2027972507",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein-tyrosine kinase 8",
+      "namespace" : "uniprot",
+      "id" : "Q04912",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0597" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:675931739",
+    "text" : "mammary tumor",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-2027972507",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Mammary gland tumor",
+      "namespace" : "tissuelist",
+      "id" : "TS-0597",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0597" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:171897743",
+    "text" : "HGFL ablation decreased oncogenic Ron",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1926754219",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 14,
+      "characterEndOffset" : 23,
+      "sentence" : 0,
+      "document" : "-2027972507",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1466631482",
+        "text" : "Ron",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-2027972507",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein-tyrosine kinase 8",
+          "namespace" : "uniprot",
+          "id" : "Q04912",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0597" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:329649638",
+        "text" : "HGFL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-2027972507",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HGFL",
+          "namespace" : "uniprot",
+          "id" : "P26927",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0597" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1466631482" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:329649638" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-2027972507",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0597" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

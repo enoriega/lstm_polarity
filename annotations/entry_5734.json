@@ -1,0 +1,392 @@
+{
+  "documents" : {
+    "1361953282" : {
+      "id" : "sentence_annotator",
+      "text" : "Chronic Insulin Exposure Decreases CHT Activity and Suppresses PKB and Akt Activation.",
+      "sentences" : [ {
+        "words" : [ "Chronic", "Insulin", "Exposure", "Decreases", "CHT", "Activity", "and", "Suppresses", "PKB", "and", "Akt", "Activation", "." ],
+        "startOffsets" : [ 0, 8, 16, 25, 35, 39, 48, 52, 63, 67, 71, 75, 85 ],
+        "endOffsets" : [ 7, 15, 24, 34, 38, 47, 51, 62, 66, 70, 74, 85, 86 ],
+        "tags" : [ "JJ", "NN", "NN", "VBZ", "NNP", "NNP", "CC", "VBZ", "NN", "CC", "NN", "NN", "." ],
+        "lemmas" : [ "chronic", "insulin", "exposure", "decrease", "CHT", "Activity", "and", "suppress", "pkb", "and", "akt", "activation", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "I-Family", "I-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1126899052",
+    "text" : "Insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "1361953282",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-439360898",
+    "text" : "CHT",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1361953282",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CHT",
+      "namespace" : "uniprot",
+      "id" : "Q9GZV3",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1600518154",
+    "text" : "PKB and Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 11
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1361953282",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PKB and AKT",
+      "namespace" : "uaz",
+      "id" : "UAZ00384",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1342761824",
+    "text" : "Insulin Exposure Decreases CHT",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1871690097",
+      "text" : "Decreases",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "1361953282",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-439360898",
+        "text" : "CHT",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "1361953282",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CHT",
+          "namespace" : "uniprot",
+          "id" : "Q9GZV3",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1126899052",
+        "text" : "Insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1361953282",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-439360898" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1126899052" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1361953282",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-45340660",
+    "text" : "Insulin Exposure Decreases CHT Activity and Suppresses PKB and Akt",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:193233741",
+      "text" : "Suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "1361953282",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1600518154",
+        "text" : "PKB and Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 11
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1361953282",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PKB and AKT",
+          "namespace" : "uaz",
+          "id" : "UAZ00384",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1126899052",
+        "text" : "Insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1361953282",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1600518154" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1126899052" : [ {
+          "source" : 7,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1361953282",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

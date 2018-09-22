@@ -1,0 +1,310 @@
+{
+  "documents" : {
+    "-30391992" : {
+      "id" : "sentence_annotator",
+      "text" : "DTX1 downregulates NOTCH signaling by ubiquitination of ICN.",
+      "sentences" : [ {
+        "words" : [ "DTX1", "downregulates", "NOTCH", "signaling", "by", "ubiquitination", "of", "ICN", "." ],
+        "startOffsets" : [ 0, 5, 19, 25, 35, 38, 53, 56, 59 ],
+        "endOffsets" : [ 4, 18, 24, 34, 37, 52, 55, 59, 60 ],
+        "tags" : [ "NN", "VBZ", "NN", "NN", "IN", "NN", "IN", "NNP", "." ],
+        "lemmas" : [ "dtx1", "downregulate", "notch", "signaling", "by", "ubiquitination", "of", "ICN", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_by"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1241134368",
+    "text" : "DTX1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-30391992",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein deltex-1",
+      "namespace" : "uniprot",
+      "id" : "Q86Y01",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-974554632",
+    "text" : "NOTCH",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-30391992",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "NOTCH",
+      "namespace" : "pfam",
+      "id" : "PF00066",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:188912444",
+    "text" : "ICN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-30391992",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ICN",
+      "namespace" : "uaz",
+      "id" : "UAZ01822",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:164370403",
+    "text" : "DTX1 downregulates NOTCH",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-91298936",
+      "text" : "downregulates",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "-30391992",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-974554632",
+        "text" : "NOTCH",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-30391992",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "NOTCH",
+          "namespace" : "pfam",
+          "id" : "PF00066",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1241134368",
+        "text" : "DTX1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-30391992",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein deltex-1",
+          "namespace" : "uniprot",
+          "id" : "Q86Y01",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-974554632" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1241134368" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-30391992",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-985452406",
+    "text" : "ubiquitination of ICN",
+    "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-742590478",
+      "text" : "ubiquitination",
+      "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "-30391992",
+      "keep" : true,
+      "foundBy" : "Ubiquitination_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:188912444",
+        "text" : "ICN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "-30391992",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICN",
+          "namespace" : "uaz",
+          "id" : "UAZ01822",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:188912444" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-30391992",
+    "keep" : true,
+    "foundBy" : "Ubiquitination_syntax_1a_noun",
+    "displayLabel" : "Ubiquitination",
+    "isDirect" : false
+  } ]
+}

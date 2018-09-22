@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "-235956159" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Therefore, deletion of Rbpj would be expected to completely abolish canonical Notch signaling.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Therefore", ",", "deletion", "of", "Rbpj", "would", "be", "expected", "to", "completely", "abolish", "canonical", "Notch", "signaling", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 10, 12, 21, 24, 29, 35, 38, 47, 50, 61, 69, 79, 85, 94, 95 ],
+        "endOffsets" : [ 1, 10, 11, 20, 23, 28, 34, 37, 46, 49, 60, 68, 78, 84, 94, 95, 96 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "NNP", "MD", "VB", "VBN", "TO", "RB", "VB", "JJ", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "therefore", ",", "deletion", "of", "Rbpj", "would", "be", "expect", "to", "completely", "abolish", "canonical", "notch", "signaling", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "I-VP", "I-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:165377205",
+    "text" : "Rbpj",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-235956159",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "RBP-J kappa",
+      "namespace" : "uniprot",
+      "id" : "Q06330",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1105180645",
+    "text" : "Notch",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-235956159",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "NOTCH",
+      "namespace" : "pfam",
+      "id" : "PF00066",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1254221746",
+    "text" : "Rbpj would be expected to completely abolish canonical Notch",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:470712062",
+      "text" : "abolish",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 61,
+      "characterEndOffset" : 68,
+      "sentence" : 0,
+      "document" : "-235956159",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1105180645",
+        "text" : "Notch",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-235956159",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "NOTCH",
+          "namespace" : "pfam",
+          "id" : "PF00066",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:165377205",
+        "text" : "Rbpj",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "-235956159",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RBP-J kappa",
+          "namespace" : "uniprot",
+          "id" : "Q06330",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1105180645" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:165377205" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 14
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-235956159",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

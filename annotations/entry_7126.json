@@ -1,0 +1,2312 @@
+{
+  "documents" : {
+    "973210388" : {
+      "id" : "sentence_annotator",
+      "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR and suppressed AR protein degradation.",
+      "sentences" : [ {
+        "words" : [ "CNPY2", "inhibited", "the", "MYLIP", "mediated", "ubiquitination", "of", "AR", "and", "suppressed", "AR", "protein", "degradation", "." ],
+        "startOffsets" : [ 0, 6, 16, 20, 26, 35, 50, 53, 56, 60, 71, 74, 82, 93 ],
+        "endOffsets" : [ 5, 15, 19, 25, 34, 49, 52, 55, 59, 70, 73, 81, 93, 94 ],
+        "tags" : [ "NN", "VBD", "DT", "NNP", "VBD", "NN", "IN", "NN", "CC", "VBD", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "cnpy2", "inhibit", "the", "MYLIP", "mediate", "ubiquitination", "of", "ar", "and", "suppress", "ar", "protein", "degradation", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "B-BioProcess", "I-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:1179170686",
+    "text" : "MYLIP mediated ubiquitination of AR",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:174513758",
+      "text" : "mediated",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Positive_early_regulation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:542069849",
+        "text" : "MYLIP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MYLIP",
+          "namespace" : "uniprot",
+          "id" : "Q8WY64",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-587415777",
+        "text" : "ubiquitination of AR",
+        "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1991693062",
+          "text" : "ubiquitination",
+          "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 35,
+          "characterEndOffset" : 49,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Ubiquitination_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1451091528",
+            "text" : "AR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 53,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "NR3C4",
+              "namespace" : "uniprot",
+              "id" : "P10275",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1451091528" : [ {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Ubiquitination_syntax_1a_noun",
+        "displayLabel" : "Ubiquitination",
+        "isDirect" : false
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Positive_early_regulation",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1524769928",
+    "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:910556910",
+      "text" : "inhibited",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 6,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1179170686",
+        "text" : "MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:174513758",
+          "text" : "mediated",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 26,
+          "characterEndOffset" : 34,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Positive_early_regulation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:542069849",
+            "text" : "MYLIP",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MYLIP",
+              "namespace" : "uniprot",
+              "id" : "Q8WY64",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-587415777",
+            "text" : "ubiquitination of AR",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1991693062",
+              "text" : "ubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 35,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1451091528",
+                "text" : "AR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 53,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "NR3C4",
+                  "namespace" : "uniprot",
+                  "id" : "P10275",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1451091528" : [ {
+                  "source" : 5,
+                  "destination" : 7,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_1a_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Positive_early_regulation",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2096313520",
+        "text" : "CNPY2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Putative secreted protein Zsig9",
+          "namespace" : "uniprot",
+          "id" : "Q9Y2B0",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:1179170686" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "ccomp"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "E:-587415777" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "ccomp"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-2096313520" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2096313520",
+    "text" : "CNPY2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Putative secreted protein Zsig9",
+      "namespace" : "uniprot",
+      "id" : "Q9Y2B0",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:542069849",
+    "text" : "MYLIP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MYLIP",
+      "namespace" : "uniprot",
+      "id" : "Q8WY64",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1451091528",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-396877843",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1451091528",
+      "text" : "AR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 55,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "NR3C4",
+        "namespace" : "uniprot",
+        "id" : "P10275",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1036308450",
+    "text" : "protein degradation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "proteolysis",
+      "namespace" : "go",
+      "id" : "GO:0006508",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1829547345",
+    "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR and suppressed AR protein degradation",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1675354872",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1036308450",
+        "text" : "protein degradation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 74,
+        "characterEndOffset" : 93,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "proteolysis",
+          "namespace" : "go",
+          "id" : "GO:0006508",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1524769928",
+        "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:910556910",
+          "text" : "inhibited",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:1179170686",
+            "text" : "MYLIP mediated ubiquitination of AR",
+            "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:174513758",
+              "text" : "mediated",
+              "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 26,
+              "characterEndOffset" : 34,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Positive_early_regulation"
+            },
+            "arguments" : {
+              "controller" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:542069849",
+                "text" : "MYLIP",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 20,
+                "characterEndOffset" : 25,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "MYLIP",
+                  "namespace" : "uniprot",
+                  "id" : "Q8WY64",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ],
+              "controlled" : [ {
+                "type" : "CorefEventMention",
+                "id" : "E:-587415777",
+                "text" : "ubiquitination of AR",
+                "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+                "trigger" : {
+                  "type" : "TextBoundMention",
+                  "id" : "T:1991693062",
+                  "text" : "ubiquitination",
+                  "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+                  "tokenInterval" : {
+                    "start" : 5,
+                    "end" : 6
+                  },
+                  "characterStartOffset" : 35,
+                  "characterEndOffset" : 49,
+                  "sentence" : 0,
+                  "document" : "973210388",
+                  "keep" : true,
+                  "foundBy" : "Ubiquitination_syntax_1a_noun"
+                },
+                "arguments" : {
+                  "theme" : [ {
+                    "type" : "CorefTextBoundMention",
+                    "id" : "T:1451091528",
+                    "text" : "AR",
+                    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                    "tokenInterval" : {
+                      "start" : 7,
+                      "end" : 8
+                    },
+                    "characterStartOffset" : 53,
+                    "characterEndOffset" : 55,
+                    "sentence" : 0,
+                    "document" : "973210388",
+                    "keep" : true,
+                    "foundBy" : "ner-gene_or_gene_product-entities",
+                    "grounding" : {
+                      "text" : "NR3C4",
+                      "namespace" : "uniprot",
+                      "id" : "P10275",
+                      "species" : "homo sapiens"
+                    },
+                    "displayLabel" : "Protein"
+                  } ]
+                },
+                "paths" : {
+                  "theme" : {
+                    "T:1451091528" : [ {
+                      "source" : 5,
+                      "destination" : 7,
+                      "relation" : "prep_of"
+                    } ]
+                  }
+                },
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 8
+                },
+                "characterStartOffset" : 35,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "Ubiquitination_syntax_1a_noun",
+                "displayLabel" : "Ubiquitination",
+                "isDirect" : false
+              } ]
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 8
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Positive_early_regulation",
+            "displayLabel" : "Positive_regulation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2096313520",
+            "text" : "CNPY2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Putative secreted protein Zsig9",
+              "namespace" : "uniprot",
+              "id" : "Q9Y2B0",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1179170686" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ],
+            "E:-587415777" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:-2096313520" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 13
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:913903584",
+    "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR and suppressed AR protein degradation",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1675354872",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1036308450",
+        "text" : "protein degradation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 74,
+        "characterEndOffset" : 93,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "proteolysis",
+          "namespace" : "go",
+          "id" : "GO:0006508",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1551915067",
+        "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:910556910",
+          "text" : "inhibited",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-587415777",
+            "text" : "ubiquitination of AR",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1991693062",
+              "text" : "ubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 35,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1451091528",
+                "text" : "AR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 53,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "NR3C4",
+                  "namespace" : "uniprot",
+                  "id" : "P10275",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1451091528" : [ {
+                  "source" : 5,
+                  "destination" : 7,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_1a_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2096313520",
+            "text" : "CNPY2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Putative secreted protein Zsig9",
+              "namespace" : "uniprot",
+              "id" : "Q9Y2B0",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1179170686" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ],
+            "E:-587415777" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:-2096313520" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 13
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1439536191",
+    "text" : "MYLIP mediated ubiquitination of AR and suppressed AR protein degradation",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1675354872",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1036308450",
+        "text" : "protein degradation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 74,
+        "characterEndOffset" : 93,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "proteolysis",
+          "namespace" : "go",
+          "id" : "GO:0006508",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1179170686",
+        "text" : "MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:174513758",
+          "text" : "mediated",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 26,
+          "characterEndOffset" : 34,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Positive_early_regulation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:542069849",
+            "text" : "MYLIP",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MYLIP",
+              "namespace" : "uniprot",
+              "id" : "Q8WY64",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-587415777",
+            "text" : "ubiquitination of AR",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1991693062",
+              "text" : "ubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 35,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1451091528",
+                "text" : "AR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 53,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "NR3C4",
+                  "namespace" : "uniprot",
+                  "id" : "P10275",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1451091528" : [ {
+                  "source" : 5,
+                  "destination" : 7,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_1a_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Positive_early_regulation",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-587415777",
+    "text" : "ubiquitination of AR",
+    "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1991693062",
+      "text" : "ubiquitination",
+      "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Ubiquitination_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1451091528",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1451091528" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Ubiquitination_syntax_1a_noun",
+    "displayLabel" : "Ubiquitination",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1678508986",
+    "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR and suppressed AR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2016220989",
+      "text" : "suppressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-396877843",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1524769928",
+        "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:910556910",
+          "text" : "inhibited",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:1179170686",
+            "text" : "MYLIP mediated ubiquitination of AR",
+            "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:174513758",
+              "text" : "mediated",
+              "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 26,
+              "characterEndOffset" : 34,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Positive_early_regulation"
+            },
+            "arguments" : {
+              "controller" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:542069849",
+                "text" : "MYLIP",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 20,
+                "characterEndOffset" : 25,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "MYLIP",
+                  "namespace" : "uniprot",
+                  "id" : "Q8WY64",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ],
+              "controlled" : [ {
+                "type" : "CorefEventMention",
+                "id" : "E:-587415777",
+                "text" : "ubiquitination of AR",
+                "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+                "trigger" : {
+                  "type" : "TextBoundMention",
+                  "id" : "T:1991693062",
+                  "text" : "ubiquitination",
+                  "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+                  "tokenInterval" : {
+                    "start" : 5,
+                    "end" : 6
+                  },
+                  "characterStartOffset" : 35,
+                  "characterEndOffset" : 49,
+                  "sentence" : 0,
+                  "document" : "973210388",
+                  "keep" : true,
+                  "foundBy" : "Ubiquitination_syntax_1a_noun"
+                },
+                "arguments" : {
+                  "theme" : [ {
+                    "type" : "CorefTextBoundMention",
+                    "id" : "T:1451091528",
+                    "text" : "AR",
+                    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                    "tokenInterval" : {
+                      "start" : 7,
+                      "end" : 8
+                    },
+                    "characterStartOffset" : 53,
+                    "characterEndOffset" : 55,
+                    "sentence" : 0,
+                    "document" : "973210388",
+                    "keep" : true,
+                    "foundBy" : "ner-gene_or_gene_product-entities",
+                    "grounding" : {
+                      "text" : "NR3C4",
+                      "namespace" : "uniprot",
+                      "id" : "P10275",
+                      "species" : "homo sapiens"
+                    },
+                    "displayLabel" : "Protein"
+                  } ]
+                },
+                "paths" : {
+                  "theme" : {
+                    "T:1451091528" : [ {
+                      "source" : 5,
+                      "destination" : 7,
+                      "relation" : "prep_of"
+                    } ]
+                  }
+                },
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 8
+                },
+                "characterStartOffset" : 35,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "Ubiquitination_syntax_1a_noun",
+                "displayLabel" : "Ubiquitination",
+                "isDirect" : false
+              } ]
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 8
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Positive_early_regulation",
+            "displayLabel" : "Positive_regulation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2096313520",
+            "text" : "CNPY2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Putative secreted protein Zsig9",
+              "namespace" : "uniprot",
+              "id" : "Q9Y2B0",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1179170686" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ],
+            "E:-587415777" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:-2096313520" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:53659362",
+    "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR and suppressed AR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2016220989",
+      "text" : "suppressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-396877843",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1551915067",
+        "text" : "CNPY2 inhibited the MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:910556910",
+          "text" : "inhibited",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-587415777",
+            "text" : "ubiquitination of AR",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1991693062",
+              "text" : "ubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 35,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1451091528",
+                "text" : "AR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 53,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "NR3C4",
+                  "namespace" : "uniprot",
+                  "id" : "P10275",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1451091528" : [ {
+                  "source" : 5,
+                  "destination" : 7,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_1a_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2096313520",
+            "text" : "CNPY2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Putative secreted protein Zsig9",
+              "namespace" : "uniprot",
+              "id" : "Q9Y2B0",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1179170686" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ],
+            "E:-587415777" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:-2096313520" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:409943941",
+    "text" : "MYLIP mediated ubiquitination of AR and suppressed AR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2016220989",
+      "text" : "suppressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "973210388",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-396877843",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1179170686",
+        "text" : "MYLIP mediated ubiquitination of AR",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:174513758",
+          "text" : "mediated",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 26,
+          "characterEndOffset" : 34,
+          "sentence" : 0,
+          "document" : "973210388",
+          "keep" : true,
+          "foundBy" : "Positive_early_regulation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:542069849",
+            "text" : "MYLIP",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MYLIP",
+              "namespace" : "uniprot",
+              "id" : "Q8WY64",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-587415777",
+            "text" : "ubiquitination of AR",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1991693062",
+              "text" : "ubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 35,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "973210388",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1451091528",
+                "text" : "AR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 53,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "973210388",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "NR3C4",
+                  "namespace" : "uniprot",
+                  "id" : "P10275",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1451091528" : [ {
+                  "source" : 5,
+                  "destination" : 7,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "973210388",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_1a_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "973210388",
+        "keep" : true,
+        "foundBy" : "Positive_early_regulation",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1036308450" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-396877843" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:542069849" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1179170686" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1524769928" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1551915067" : [ {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "973210388",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

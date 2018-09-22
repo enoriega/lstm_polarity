@@ -1,0 +1,364 @@
+{
+  "documents" : {
+    "1850202436" : {
+      "id" : "sentence_annotator",
+      "text" : "COX-2 -/- mice and mice treated with celecoxib show improved motor coordination and balance after cuprizone exposure.",
+      "sentences" : [ {
+        "words" : [ "COX-2", "-/-", "mice", "and", "mice", "treated", "with", "celecoxib", "show", "improved", "motor", "coordination", "and", "balance", "after", "cuprizone", "exposure", "." ],
+        "startOffsets" : [ 0, 6, 10, 15, 19, 24, 32, 37, 47, 52, 61, 67, 80, 84, 92, 98, 108, 116 ],
+        "endOffsets" : [ 5, 9, 14, 18, 23, 31, 36, 46, 51, 60, 66, 79, 83, 91, 97, 107, 116, 117 ],
+        "tags" : [ "NNP", "CD", "NNS", "CC", "NNS", "VBN", "IN", "NN", "VBP", "VBN", "NN", "NN", "CC", "NN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "COX-2", "-/-", "mouse", "and", "mouse", "treat", "with", "celecoxib", "show", "improve", "motor", "coordination", "and", "balance", "after", "cuprizone", "exposure", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Species", "O", "B-Species", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_with"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "prep_after"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1687307814",
+    "text" : "COX-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "1850202436",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PGHS-2",
+      "namespace" : "uniprot",
+      "id" : "P35354",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-260681016",
+    "text" : "mice",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "1850202436",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Mouse",
+      "namespace" : "taxonomy",
+      "id" : "10090",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:603678598",
+    "text" : "mice",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "1850202436",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Mouse",
+      "namespace" : "taxonomy",
+      "id" : "10090",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Species",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-260681016",
+      "text" : "mice",
+      "labels" : [ "Species", "Context" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 10,
+      "characterEndOffset" : 14,
+      "sentence" : 0,
+      "document" : "1850202436",
+      "keep" : true,
+      "foundBy" : "ner-species",
+      "grounding" : {
+        "text" : "Mouse",
+        "namespace" : "taxonomy",
+        "id" : "10090",
+        "species" : ""
+      },
+      "context" : {
+        "Species" : [ "taxonomy:10090" ]
+      },
+      "displayLabel" : "Species"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1186964576",
+    "text" : "celecoxib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1850202436",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Celocoxib",
+      "namespace" : "pubchem",
+      "id" : "2662",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-773940910",
+    "text" : "COX-2 -/- mice and mice treated with celecoxib",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:375935796",
+      "text" : "treated with",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 7
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "1850202436",
+      "keep" : true,
+      "foundBy" : "Positive_activation_surface_treated_with"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1687307814",
+        "text" : "COX-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "1850202436",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PGHS-2",
+          "namespace" : "uniprot",
+          "id" : "P35354",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1186964576",
+        "text" : "celecoxib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1850202436",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Celocoxib",
+          "namespace" : "pubchem",
+          "id" : "2662",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1850202436",
+    "keep" : true,
+    "foundBy" : "Positive_activation_surface_treated_with",
+    "context" : {
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

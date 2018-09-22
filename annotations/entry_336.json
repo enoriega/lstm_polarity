@@ -1,0 +1,499 @@
+{
+  "documents" : {
+    "1111588225" : {
+      "id" : "sentence_annotator",
+      "text" : "These findings reveal that prolonged ERK and MAPK stimulation results in caspase 8 activation and cell death.",
+      "sentences" : [ {
+        "words" : [ "These", "findings", "reveal", "that", "prolonged", "ERK", "and", "MAPK", "stimulation", "results", "in", "caspase", "8", "activation", "and", "cell", "death", "." ],
+        "startOffsets" : [ 0, 6, 15, 22, 27, 37, 41, 45, 50, 62, 70, 73, 81, 83, 94, 98, 103, 108 ],
+        "endOffsets" : [ 5, 14, 21, 26, 36, 40, 44, 49, 61, 69, 72, 80, 82, 93, 97, 102, 108, 109 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "JJ", "NN", "CC", "NN", "NN", "VBZ", "IN", "NN", "CD", "NN", "CC", "NN", "NN", "." ],
+        "lemmas" : [ "these", "finding", "reveal", "that", "prolonged", "erk", "and", "mapk", "stimulation", "result", "in", "caspase", "8", "activation", "and", "cell", "death", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Family", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "B-BioProcess", "I-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "cc"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1197966005",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-978767911",
+    "text" : "MAPK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERKs",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : ""
+    },
+    "displayLabel" : "Family",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1197966005",
+      "text" : "ERK",
+      "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "1111588225",
+      "keep" : true,
+      "foundBy" : "ner-family-entities",
+      "grounding" : {
+        "text" : "ERK",
+        "namespace" : "be",
+        "id" : "ERK",
+        "species" : "human"
+      },
+      "displayLabel" : "Family"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1661650393",
+    "text" : "caspase 8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ICE-like apoptotic protease 5",
+      "namespace" : "uniprot",
+      "id" : "Q14790",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-285276298",
+    "text" : "cell death",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 17
+    },
+    "characterStartOffset" : 98,
+    "characterEndOffset" : 108,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell death",
+      "namespace" : "go",
+      "id" : "GO:0008219",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:233249150",
+    "text" : "ERK and MAPK stimulation results in caspase 8 activation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1661321098",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 83,
+      "characterEndOffset" : 93,
+      "sentence" : 0,
+      "document" : "1111588225",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_results_in"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1197966005",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "1111588225",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1661650393",
+        "text" : "caspase 8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "1111588225",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICE-like apoptotic protease 5",
+          "namespace" : "uniprot",
+          "id" : "Q14790",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:1197966005" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "prep_in"
+        }, {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-978767911" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "prep_in"
+        }, {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "conj_and"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controlled" : {
+        "T:1661650393" : [ {
+          "source" : 13,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 14
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_results_in",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1283542417",
+    "text" : "MAPK stimulation results in caspase 8 activation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1661321098",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 83,
+      "characterEndOffset" : 93,
+      "sentence" : 0,
+      "document" : "1111588225",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_results_in"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-978767911",
+        "text" : "MAPK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "1111588225",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1661650393",
+        "text" : "caspase 8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "1111588225",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICE-like apoptotic protease 5",
+          "namespace" : "uniprot",
+          "id" : "Q14790",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:1197966005" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "prep_in"
+        }, {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-978767911" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "prep_in"
+        }, {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "conj_and"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controlled" : {
+        "T:1661650393" : [ {
+          "source" : 13,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 14
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "1111588225",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_results_in",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

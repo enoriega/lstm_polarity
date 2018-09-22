@@ -1,0 +1,285 @@
+{
+  "documents" : {
+    "678941407" : {
+      "id" : "sentence_annotator",
+      "text" : "Neutralizing IL-6 in the conditioned media did not seem to significantly reduce p-STAT3.",
+      "sentences" : [ {
+        "words" : [ "Neutralizing", "IL-6", "in", "the", "conditioned", "media", "did", "not", "seem", "to", "significantly", "reduce", "p-STAT3", "." ],
+        "startOffsets" : [ 0, 13, 18, 21, 25, 37, 43, 47, 51, 56, 59, 73, 80, 87 ],
+        "endOffsets" : [ 12, 17, 20, 24, 36, 42, 46, 50, 55, 58, 72, 79, 87, 88 ],
+        "tags" : [ "VBG", "NN", "IN", "DT", "JJ", "NNS", "VBD", "RB", "VB", "TO", "RB", "VB", "NN", "." ],
+        "lemmas" : [ "neutralize", "il-6", "in", "the", "conditioned", "media", "do", "not", "seem", "to", "significantly", "reduce", "p-stat3", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "I-VP", "I-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "neg"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "neg"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:29174289",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "678941407",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2074930351",
+    "text" : "p-STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "678941407",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:233107599",
+    "text" : "IL-6 in the conditioned media did not seem to significantly reduce p-STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1891890790",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 73,
+      "characterEndOffset" : 79,
+      "sentence" : 0,
+      "document" : "678941407",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2074930351",
+        "text" : "p-STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "678941407",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:29174289",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "678941407",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:2074930351" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:29174289" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "678941407",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1908499786",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "678941407",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

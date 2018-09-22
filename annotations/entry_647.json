@@ -1,0 +1,410 @@
+{
+  "documents" : {
+    "-1168481144" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Under basal conditions, Nrf2 dependent transcription is repressed by its negative regulator Keap1.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Under", "basal", "conditions", ",", "Nrf2", "dependent", "transcription", "is", "repressed", "by", "its", "negative", "regulator", "Keap1", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 13, 23, 25, 30, 40, 54, 57, 67, 70, 74, 83, 93, 98, 99 ],
+        "endOffsets" : [ 1, 6, 12, 23, 24, 29, 39, 53, 56, 66, 69, 73, 82, 92, 98, 99, 100 ],
+        "tags" : [ "``", "IN", "JJ", "NNS", ",", "NN", "JJ", "NN", "VBZ", "VBN", "IN", "PRP$", "JJ", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "under", "basal", "condition", ",", "nrf2", "dependent", "transcription", "be", "repress", "by", "its", "negative", "regulator", "keap1", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-BioProcess", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "poss"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "prep_under"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "agent"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "poss"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1306338658",
+    "text" : "Nrf2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "-1168481144",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1101729985",
+    "text" : "transcription",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-1168481144",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA-dependent transcription",
+      "namespace" : "go",
+      "id" : "GO:0006351",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1655846054",
+    "text" : "Keap1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 93,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "-1168481144",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:255798637",
+    "text" : "Nrf2 dependent transcription is repressed by its negative regulator Keap1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-850176753",
+      "text" : "repressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 57,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-1168481144",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1306338658",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "-1168481144",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1655846054",
+        "text" : "Keap1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 93,
+        "characterEndOffset" : 98,
+        "sentence" : 0,
+        "document" : "-1168481144",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1101729985" : [ {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1306338658" : [ {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 7,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1655846054" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 15
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "-1168481144",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2117701043",
+    "text" : "transcription is repressed by its negative regulator Keap1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-850176753",
+      "text" : "repressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 57,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-1168481144",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1101729985",
+        "text" : "transcription",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-1168481144",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "DNA-dependent transcription",
+          "namespace" : "go",
+          "id" : "GO:0006351",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1655846054",
+        "text" : "Keap1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 93,
+        "characterEndOffset" : 98,
+        "sentence" : 0,
+        "document" : "-1168481144",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1101729985" : [ {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1306338658" : [ {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 7,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1655846054" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 15
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "-1168481144",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,372 @@
+{
+  "documents" : {
+    "-284559545" : {
+      "id" : "sentence_annotator",
+      "text" : "Nitration of tyrosine residues of ApoA-I diminishes cholesterol efflux from macrophages.",
+      "sentences" : [ {
+        "words" : [ "Nitration", "of", "tyrosine", "residues", "of", "ApoA-I", "diminishes", "cholesterol", "efflux", "from", "macrophages", "." ],
+        "startOffsets" : [ 0, 10, 13, 22, 31, 34, 41, 52, 64, 71, 76, 87 ],
+        "endOffsets" : [ 9, 12, 21, 30, 33, 40, 51, 63, 70, 75, 87, 88 ],
+        "tags" : [ "NN", "IN", "NN", "NNS", "IN", "NN", "VBZ", "NN", "NN", "IN", "NNS", "." ],
+        "lemmas" : [ "nitration", "of", "tyrosine", "residue", "of", "apoa-i", "diminish", "cholesterol", "efflux", "from", "macrophage", "." ],
+        "entities" : [ "O", "O", "B-Site", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O", "B-CellType", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_from"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-343143202",
+    "text" : "tyrosine residues",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 4
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "-284559545",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "tyrosine residues",
+      "namespace" : "uaz",
+      "id" : "UAZ00468",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1554384998",
+    "text" : "ApoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-284559545",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-343143202",
+        "text" : "tyrosine residues",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 4
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "-284559545",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "tyrosine residues",
+          "namespace" : "uaz",
+          "id" : "UAZ00468",
+          "species" : ""
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1286856114",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "-284559545",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:756121463",
+    "text" : "macrophages",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "-284559545",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "histiocyte",
+      "namespace" : "cl",
+      "id" : "CL:0000235",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1468268102",
+    "text" : "ApoA-I diminishes cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1590332411",
+      "text" : "diminishes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 41,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-284559545",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1286856114",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "-284559545",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1554384998",
+        "text" : "ApoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-284559545",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-343143202",
+            "text" : "tyrosine residues",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 4
+            },
+            "characterStartOffset" : 13,
+            "characterEndOffset" : 30,
+            "sentence" : 0,
+            "document" : "-284559545",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "tyrosine residues",
+              "namespace" : "uaz",
+              "id" : "UAZ00468",
+              "species" : ""
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1286856114" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1554384998" : [ {
+          "source" : 6,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "-284559545",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

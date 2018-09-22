@@ -1,0 +1,322 @@
+{
+  "documents" : {
+    "462066872" : {
+      "id" : "sentence_annotator",
+      "text" : "The induction of EGF receptor loss by EGF was a specific effect on the EGF receptor.",
+      "sentences" : [ {
+        "words" : [ "The", "induction", "of", "EGF", "receptor", "loss", "by", "EGF", "was", "a", "specific", "effect", "on", "the", "EGF", "receptor", "." ],
+        "startOffsets" : [ 0, 4, 14, 17, 21, 30, 35, 38, 42, 46, 48, 57, 64, 67, 71, 75, 83 ],
+        "endOffsets" : [ 3, 13, 16, 20, 29, 34, 37, 41, 45, 47, 56, 63, 66, 70, 74, 83, 84 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "NN", "NN", "IN", "NN", "VBD", "DT", "JJ", "NN", "IN", "DT", "NN", "NN", "." ],
+        "lemmas" : [ "the", "induction", "of", "egf", "receptor", "loss", "by", "egf", "be", "a", "specific", "effect", "on", "the", "egf", "receptor", "." ],
+        "entities" : [ "O", "O", "O", "B-Family", "I-Family", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Family", "I-Family", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_by"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_on"
+            }, {
+              "source" : 11,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:150913443",
+    "text" : "EGF receptor",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "462066872",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TyrPK_EGF-R",
+      "namespace" : "interpro",
+      "id" : "IPR016245",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1829820030",
+    "text" : "EGF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "462066872",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1545508426",
+    "text" : "EGF receptor",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 16
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "462066872",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TyrPK_EGF-R",
+      "namespace" : "interpro",
+      "id" : "IPR016245",
+      "species" : "human"
+    },
+    "displayLabel" : "Family",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:150913443",
+      "text" : "EGF receptor",
+      "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 5
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "462066872",
+      "keep" : true,
+      "foundBy" : "ner-family-entities",
+      "grounding" : {
+        "text" : "TyrPK_EGF-R",
+        "namespace" : "interpro",
+        "id" : "IPR016245",
+        "species" : "human"
+      },
+      "displayLabel" : "Family"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:869558533",
+    "text" : "EGF receptor loss by EGF",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-153045334",
+      "text" : "loss",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "462066872",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:150913443",
+        "text" : "EGF receptor",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "462066872",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "TyrPK_EGF-R",
+          "namespace" : "interpro",
+          "id" : "IPR016245",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1829820030",
+        "text" : "EGF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "462066872",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:150913443" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1829820030" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "462066872",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

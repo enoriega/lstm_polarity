@@ -1,0 +1,464 @@
+{
+  "documents" : {
+    "-1035314173" : {
+      "id" : "sentence_annotator",
+      "text" : "These results indicate that the inhibition of JNK mediated beta-catenin signaling activates Bax (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "These", "results", "indicate", "that", "the", "inhibition", "of", "JNK", "mediated", "beta-catenin", "signaling", "activates", "Bax", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 6, 14, 23, 28, 32, 43, 46, 50, 59, 72, 82, 92, 96, 97, 105, 106 ],
+        "endOffsets" : [ 5, 13, 22, 27, 31, 42, 45, 49, 58, 71, 81, 91, 95, 97, 105, 106, 107 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "DT", "NN", "IN", "NN", "VBN", "NN", "NN", "VBZ", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "these", "result", "indicate", "that", "the", "inhibition", "of", "jnk", "mediate", "beta-catenin", "signaling", "activate", "bax", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 11,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 11,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1753134352",
+    "text" : "JNK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "-1035314173",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "JNK MAPK",
+      "namespace" : "be",
+      "id" : "JNK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1539101615",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1035314173",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1651851288",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 92,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "-1035314173",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1828002341",
+    "text" : "JNK mediated beta-catenin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2009459326",
+      "text" : "mediated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 58,
+      "sentence" : 0,
+      "document" : "-1035314173",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1753134352",
+        "text" : "JNK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "-1035314173",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "JNK MAPK",
+          "namespace" : "be",
+          "id" : "JNK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1539101615",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1035314173",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1035314173",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:626516817",
+    "text" : "JNK mediated beta-catenin signaling activates Bax",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1833849435",
+      "text" : "activates",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 82,
+      "characterEndOffset" : 91,
+      "sentence" : 0,
+      "document" : "-1035314173",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1651851288",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 92,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "-1035314173",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1828002341",
+        "text" : "JNK mediated beta-catenin",
+        "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-2009459326",
+          "text" : "mediated",
+          "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 8,
+            "end" : 9
+          },
+          "characterStartOffset" : 50,
+          "characterEndOffset" : 58,
+          "sentence" : 0,
+          "document" : "-1035314173",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1753134352",
+            "text" : "JNK",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 46,
+            "characterEndOffset" : 49,
+            "sentence" : 0,
+            "document" : "-1035314173",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "JNK MAPK",
+              "namespace" : "be",
+              "id" : "JNK",
+              "species" : ""
+            },
+            "displayLabel" : "Family"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1539101615",
+            "text" : "beta-catenin",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 59,
+            "characterEndOffset" : 71,
+            "sentence" : 0,
+            "document" : "-1035314173",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Beta-catenin",
+              "namespace" : "uniprot",
+              "id" : "P35222",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 10
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1035314173",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Negative_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1651851288" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-1753134352" : [ {
+          "source" : 11,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "E:1828002341" : [ {
+          "source" : 11,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "-1035314173",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1808363632",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "-1035314173",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

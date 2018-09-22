@@ -1,0 +1,249 @@
+{
+  "documents" : {
+    "2021666514" : {
+      "id" : "sentence_annotator",
+      "text" : "Intracellular Delivery of a Cell Penetrating SOCS1 that Targets IFN-gamma Signaling.",
+      "sentences" : [ {
+        "words" : [ "Intracellular", "Delivery", "of", "a", "Cell", "Penetrating", "SOCS1", "that", "Targets", "IFN-gamma", "Signaling", "." ],
+        "startOffsets" : [ 0, 14, 23, 26, 28, 33, 45, 51, 56, 64, 74, 83 ],
+        "endOffsets" : [ 13, 22, 25, 27, 32, 44, 50, 55, 63, 73, 83, 84 ],
+        "tags" : [ "JJ", "NN", "IN", "DT", "NN", "VBG", "NN", "WDT", "VBZ", "NN", "NN", "." ],
+        "lemmas" : [ "intracellular", "delivery", "of", "a", "cell", "penetrate", "socs1", "that", "target", "ifn-gamma", "signaling", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "B-NP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:427270962",
+    "text" : "SOCS1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "2021666514",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAB",
+      "namespace" : "uniprot",
+      "id" : "O15524",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1060372942",
+    "text" : "IFN-gamma",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "2021666514",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IFN-gamma",
+      "namespace" : "uniprot",
+      "id" : "P01579",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1817017802",
+    "text" : "SOCS1 that Targets IFN-gamma",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:975298075",
+      "text" : "Targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 63,
+      "sentence" : 0,
+      "document" : "2021666514",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1060372942",
+        "text" : "IFN-gamma",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "2021666514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IFN-gamma",
+          "namespace" : "uniprot",
+          "id" : "P01579",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:427270962",
+        "text" : "SOCS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "2021666514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAB",
+          "namespace" : "uniprot",
+          "id" : "O15524",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1060372942" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:427270962" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 10
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "2021666514",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

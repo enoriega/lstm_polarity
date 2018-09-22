@@ -1,0 +1,333 @@
+{
+  "documents" : {
+    "1104267221" : {
+      "id" : "sentence_annotator",
+      "text" : "Tuberin deficient cells derived from TSC tumors have increased mTOR activity and are sensitive to apoptosis.",
+      "sentences" : [ {
+        "words" : [ "Tuberin", "deficient", "cells", "derived", "from", "TSC", "tumors", "have", "increased", "mTOR", "activity", "and", "are", "sensitive", "to", "apoptosis", "." ],
+        "startOffsets" : [ 0, 8, 18, 24, 32, 37, 41, 48, 53, 63, 68, 77, 81, 85, 95, 98, 107 ],
+        "endOffsets" : [ 7, 17, 23, 31, 36, 40, 47, 52, 62, 67, 76, 80, 84, 94, 97, 107, 108 ],
+        "tags" : [ "NN", "JJ", "NNS", "VBN", "IN", "NN", "NNS", "VBP", "VBN", "NN", "NN", "CC", "VBP", "JJ", "TO", "NN", "." ],
+        "lemmas" : [ "tuberin", "deficient", "cell", "derive", "from", "tsc", "tumor", "have", "increase", "mtor", "activity", "and", "be", "sensitive", "to", "apoptosis", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "O", "B-VP", "B-ADJP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "cop"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_from"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_to"
+            }, {
+              "source" : 13,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "cop"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-678026546",
+    "text" : "Tuberin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "1104267221",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Tuberous sclerosis 2 protein",
+      "namespace" : "uniprot",
+      "id" : "P49815",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2119799416",
+    "text" : "TSC",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "1104267221",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TSC",
+      "namespace" : "be",
+      "id" : "TSC",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1095550343",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1104267221",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1731609487",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 98,
+    "characterEndOffset" : 107,
+    "sentence" : 0,
+    "document" : "1104267221",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-500064655",
+    "text" : "Tuberin deficient cells derived from TSC tumors have increased mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:674379440",
+      "text" : "increased",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "1104267221",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1095550343",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "1104267221",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-678026546",
+        "text" : "Tuberin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "1104267221",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Tuberous sclerosis 2 protein",
+          "namespace" : "uniprot",
+          "id" : "P49815",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1095550343" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-678026546" : [ {
+          "source" : 8,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1104267221",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

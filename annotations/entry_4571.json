@@ -1,0 +1,299 @@
+{
+  "documents" : {
+    "1676709476" : {
+      "id" : "sentence_annotator",
+      "text" : "These results suggested that ASPP2 inhibited L-OHP-induced cell autophagy independent of p53.",
+      "sentences" : [ {
+        "words" : [ "These", "results", "suggested", "that", "ASPP2", "inhibited", "L-OHP-induced", "cell", "autophagy", "independent", "of", "p53", "." ],
+        "startOffsets" : [ 0, 6, 14, 24, 29, 35, 45, 59, 64, 74, 86, 89, 92 ],
+        "endOffsets" : [ 5, 13, 23, 28, 34, 44, 58, 63, 73, 85, 88, 92, 93 ],
+        "tags" : [ "DT", "NNS", "VBD", "IN", "NN", "VBD", "JJ", "NN", "NN", "JJ", "IN", "NN", "." ],
+        "lemmas" : [ "these", "result", "suggest", "that", "aspp2", "inhibit", "l-ohp-induced", "cell", "autophagy", "independent", "of", "p53", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-BioProcess", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-ADJP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-698796790",
+    "text" : "ASPP2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1676709476",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p53-binding protein 2",
+      "namespace" : "uniprot",
+      "id" : "Q13625",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:787347029",
+    "text" : "autophagy",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "1676709476",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "autophagy",
+      "namespace" : "go",
+      "id" : "GO:0006914",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1044325423",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "1676709476",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:275063957",
+    "text" : "ASPP2 inhibited L-OHP-induced cell autophagy independent of p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:196455881",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "1676709476",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1044325423",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 89,
+        "characterEndOffset" : 92,
+        "sentence" : 0,
+        "document" : "1676709476",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-698796790",
+        "text" : "ASPP2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1676709476",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p53-binding protein 2",
+          "namespace" : "uniprot",
+          "id" : "Q13625",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1044325423" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-698796790" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 12
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "1676709476",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1613942576",
+        "text" : "suggested",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "1676709476",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

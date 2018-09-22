@@ -1,0 +1,422 @@
+{
+  "documents" : {
+    "416781435" : {
+      "id" : "sentence_annotator",
+      "text" : "\"This mutant, however, does not block insulin induced inhibition of GLUT4 endocytosis.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "This", "mutant", ",", "however", ",", "does", "not", "block", "insulin", "induced", "inhibition", "of", "GLUT4", "endocytosis", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 12, 14, 21, 23, 28, 32, 38, 46, 54, 65, 68, 74, 85, 86 ],
+        "endOffsets" : [ 1, 5, 12, 13, 21, 22, 27, 31, 37, 45, 53, 64, 67, 73, 85, 86, 87 ],
+        "tags" : [ "``", "DT", "NN", ",", "RB", ",", "VBZ", "RB", "VB", "NN", "VBN", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "this", "mutant", ",", "however", ",", "do", "not", "block", "insulin", "induce", "inhibition", "of", "glut4", "endocytosis", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "O", "B-ADVP", "O", "B-VP", "I-VP", "I-VP", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "neg"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "neg"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1651360929",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "416781435",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1125133657",
+    "text" : "GLUT4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 68,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "416781435",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Glucose transporter type 4, insulin-responsive",
+      "namespace" : "uniprot",
+      "id" : "P14672",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1510032237",
+    "text" : "endocytosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "416781435",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "plasma membrane invagination",
+      "namespace" : "go",
+      "id" : "GO:0006897",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1873779091",
+    "text" : "insulin induced inhibition of GLUT4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-250261022",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "416781435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1125133657",
+        "text" : "GLUT4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 68,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "416781435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Glucose transporter type 4, insulin-responsive",
+          "namespace" : "uniprot",
+          "id" : "P14672",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1651360929",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "416781435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1510032237" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ],
+        "T:1125133657" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1651360929" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 14
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "416781435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1801869074",
+    "text" : "insulin induced inhibition of GLUT4 endocytosis",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-250261022",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "416781435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1510032237",
+        "text" : "endocytosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 74,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "416781435",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "plasma membrane invagination",
+          "namespace" : "go",
+          "id" : "GO:0006897",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1651360929",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "416781435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1510032237" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ],
+        "T:1125133657" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1651360929" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 15
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "416781435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

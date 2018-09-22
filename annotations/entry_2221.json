@@ -1,0 +1,350 @@
+{
+  "documents" : {
+    "71683824" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Since ErbB2 inhibits endocytic down-regulation of EGFR, EGFR-ErbB2 heterodimers accumulate at the plasma membrane.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Since", "ErbB2", "inhibits", "endocytic", "down-regulation", "of", "EGFR", ",", "EGFR-ErbB2", "heterodimers", "accumulate", "at", "the", "plasma", "membrane", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 13, 22, 32, 48, 51, 55, 57, 68, 81, 92, 95, 99, 106, 114, 115 ],
+        "endOffsets" : [ 1, 6, 12, 21, 31, 47, 50, 55, 56, 67, 80, 91, 94, 98, 105, 114, 115, 116 ],
+        "tags" : [ "``", "IN", "NN", "VBZ", "JJ", "NN", "IN", "NN", ",", "NN", "NNS", "VBP", "IN", "DT", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "since", "erbb2", "inhibit", "endocytic", "down-regulation", "of", "egfr", ",", "egfr-erbb2", "heterodimer", "accumulate", "at", "the", "plasma", "membrane", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Cellular_component", "I-Cellular_component", "O", "O" ],
+        "chunks" : [ "O", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "mark"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "advcl"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "mark"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_at"
+            }, {
+              "source" : 11,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "advcl"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-332968735",
+    "text" : "ErbB2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 12,
+    "sentence" : 0,
+    "document" : "71683824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ERBB2",
+      "namespace" : "uniprot",
+      "id" : "P04626",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005886" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:775479137",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "71683824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005886" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1296795344",
+    "text" : "EGFR-ErbB2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "71683824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR-erbB2",
+      "namespace" : "uaz",
+      "id" : "UAZ00553",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005886" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1744671273",
+    "text" : "plasma membrane",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 16
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 114,
+    "sentence" : 0,
+    "document" : "71683824",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "plasma membranes",
+      "namespace" : "go",
+      "id" : "GO:0005886",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005886" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:59992687",
+    "text" : "ErbB2 inhibits endocytic down-regulation of EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2018834893",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 13,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "71683824",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:775479137",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "71683824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005886" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-332968735",
+        "text" : "ErbB2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 12,
+        "sentence" : 0,
+        "document" : "71683824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ERBB2",
+          "namespace" : "uniprot",
+          "id" : "P04626",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005886" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:775479137" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-332968735" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 8
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "71683824",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005886" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,566 @@
+{
+  "documents" : {
+    "1614022879" : {
+      "id" : "sentence_annotator",
+      "text" : "\"3) P-Akt activates Rac1 and Calpain, which enhances SOCE and in turn P-Akt.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "3", ")", "P-Akt", "activates", "Rac1", "and", "Calpain", ",", "which", "enhances", "SOCE", "and", "in", "turn", "P-Akt", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 2, 4, 10, 20, 25, 29, 36, 38, 44, 53, 58, 62, 65, 70, 75, 76 ],
+        "endOffsets" : [ 1, 2, 3, 9, 19, 24, 28, 36, 37, 43, 52, 57, 61, 64, 69, 75, 76, 77 ],
+        "tags" : [ "``", "CD", "-RRB-", "NN", "VBZ", "NN", "CC", "NN", ",", "WDT", "VBZ", "NNP", "CC", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "3", ")", "p-akt", "activate", "rac1", "and", "calpain", ",", "which", "enhance", "SOCE", "and", "in", "turn", "p-akt", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "B-PP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "rcmod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "rcmod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:775873762",
+    "text" : "P-Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-878644889",
+    "text" : "Rac1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "RAC1",
+      "namespace" : "uniprot",
+      "id" : "P63000",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:557673148",
+    "text" : "Calpain",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "CAPN",
+      "namespace" : "be",
+      "id" : "CAPN",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:799220399",
+    "text" : "SOCE",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SOCE",
+      "namespace" : "uaz",
+      "id" : "UAZ01076",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-895848475",
+    "text" : "P-Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:775873762",
+      "text" : "P-Akt",
+      "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 9,
+      "sentence" : 0,
+      "document" : "1614022879",
+      "keep" : true,
+      "foundBy" : "ner-family-entities",
+      "grounding" : {
+        "text" : "PI3K-AKT",
+        "namespace" : "be",
+        "id" : "AKT",
+        "species" : ""
+      },
+      "displayLabel" : "Family"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1408342896",
+    "text" : "P-Akt activates Rac1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1012515908",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 10,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "1614022879",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:775873762",
+        "text" : "P-Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-878644889",
+        "text" : "Rac1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RAC1",
+          "namespace" : "uniprot",
+          "id" : "P63000",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-414275705",
+    "text" : "Rac1 and Calpain, which enhances SOCE",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-596772016",
+      "text" : "enhances",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "1614022879",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:799220399",
+        "text" : "SOCE",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOCE",
+          "namespace" : "uaz",
+          "id" : "UAZ01076",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-878644889",
+        "text" : "Rac1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RAC1",
+          "namespace" : "uniprot",
+          "id" : "P63000",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:799220399" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-878644889" : [ {
+          "source" : 5,
+          "destination" : 10,
+          "relation" : "rcmod"
+        } ],
+        "T:557673148" : [ {
+          "source" : 5,
+          "destination" : 10,
+          "relation" : "rcmod"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1891197403",
+    "text" : "Calpain, which enhances SOCE",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-596772016",
+      "text" : "enhances",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "1614022879",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:799220399",
+        "text" : "SOCE",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOCE",
+          "namespace" : "uaz",
+          "id" : "UAZ01076",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:557673148",
+        "text" : "Calpain",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1614022879",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "CAPN",
+          "namespace" : "be",
+          "id" : "CAPN",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:799220399" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-878644889" : [ {
+          "source" : 5,
+          "destination" : 10,
+          "relation" : "rcmod"
+        } ],
+        "T:557673148" : [ {
+          "source" : 5,
+          "destination" : 10,
+          "relation" : "rcmod"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 12
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1614022879",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

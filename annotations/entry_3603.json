@@ -1,0 +1,301 @@
+{
+  "documents" : {
+    "1620824613" : {
+      "id" : "sentence_annotator",
+      "text" : "Knockdown of WIP1 protein in U-2 OS cells helps to activate p53.",
+      "sentences" : [ {
+        "words" : [ "Knockdown", "of", "WIP1", "protein", "in", "U-2", "OS", "cells", "helps", "to", "activate", "p53", "." ],
+        "startOffsets" : [ 0, 10, 13, 18, 26, 29, 33, 36, 42, 48, 51, 60, 63 ],
+        "endOffsets" : [ 9, 12, 17, 25, 28, 32, 35, 41, 47, 50, 59, 63, 64 ],
+        "tags" : [ "NNP", "IN", "NN", "NN", "IN", "NN", "NN", "NNS", "VBZ", "TO", "VB", "NN", "." ],
+        "lemmas" : [ "Knockdown", "of", "wip1", "protein", "in", "u-2", "os", "cell", "help", "to", "activate", "p53", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "B-CellLine", "I-CellLine", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1030953083",
+    "text" : "WIP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "1620824613",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein phosphatase 1D",
+      "namespace" : "uniprot",
+      "id" : "O15297",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0042" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:507617869",
+    "text" : "U-2 OS",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "1620824613",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "U2OS",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_0042",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0042" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1703750940",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1620824613",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0042" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2017172623",
+    "text" : "WIP1 protein in U-2 OS cells helps to activate p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1366239350",
+      "text" : "activate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "1620824613",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1703750940",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1620824613",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0042" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1030953083",
+        "text" : "WIP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1620824613",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein phosphatase 1D",
+          "namespace" : "uniprot",
+          "id" : "O15297",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0042" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1703750940" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1030953083" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 12
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1620824613",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0042" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

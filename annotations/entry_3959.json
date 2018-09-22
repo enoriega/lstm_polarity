@@ -1,0 +1,340 @@
+{
+  "documents" : {
+    "-1055924958" : {
+      "id" : "sentence_annotator",
+      "text" : "PARP Cleavage in Response to rhFasL and Staurosporine Induced Apoptosis.",
+      "sentences" : [ {
+        "words" : [ "PARP", "Cleavage", "in", "Response", "to", "rhFasL", "and", "Staurosporine", "Induced", "Apoptosis", "." ],
+        "startOffsets" : [ 0, 5, 14, 17, 26, 29, 36, 40, 54, 62, 71 ],
+        "endOffsets" : [ 4, 13, 16, 25, 28, 35, 39, 53, 61, 71, 72 ],
+        "tags" : [ "NN", "NN", "IN", "NN", "TO", "NN", "CC", "NN", "VBN", "NN", "." ],
+        "lemmas" : [ "parp", "cleavage", "in", "response", "to", "rhfasl", "and", "staurosporine", "induce", "apoptosis", "." ],
+        "entities" : [ "B-Family", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_to"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_to"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:591077880",
+    "text" : "PARP",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-1055924958",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PARP",
+      "namespace" : "be",
+      "id" : "PARP",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2128230412",
+    "text" : "Staurosporine",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-1055924958",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "(5S,6R,7R,9R)-6-methoxy-5-methyl-7-methylazaniumyl-6,7,8,9,15,16-hexahydro-5H,14H-5,9-epoxy-4b,9a,15-triazadibenzo[b,h]cyclonona[1,2,3,4-jkl]cyclopenta[e]-as-indacen-14-one",
+      "namespace" : "pubchem",
+      "id" : "7048594",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2074417975",
+    "text" : "Apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1055924958",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-692668613",
+    "text" : "PARP Cleavage in Response to rhFasL and Staurosporine Induced Apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:887489893",
+      "text" : "Induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1055924958",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2074417975",
+        "text" : "Apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1055924958",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:591077880",
+        "text" : "PARP",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-1055924958",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PARP",
+          "namespace" : "be",
+          "id" : "PARP",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:2074417975" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:591077880" : [ {
+          "source" : 8,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1055924958",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:886084912",
+    "text" : "Staurosporine Induced Apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:887489893",
+      "text" : "Induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1055924958",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2128230412",
+        "text" : "Staurosporine",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-1055924958",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "(5S,6R,7R,9R)-6-methoxy-5-methyl-7-methylazaniumyl-6,7,8,9,15,16-hexahydro-5H,14H-5,9-epoxy-4b,9a,15-triazadibenzo[b,h]cyclonona[1,2,3,4-jkl]cyclopenta[e]-as-indacen-14-one",
+          "namespace" : "pubchem",
+          "id" : "7048594",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2074417975",
+        "text" : "Apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1055924958",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1055924958",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

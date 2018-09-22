@@ -1,0 +1,301 @@
+{
+  "documents" : {
+    "587453574" : {
+      "id" : "sentence_annotator",
+      "text" : "Granzyme A can directly target the SET complex in ER for proteolysis.",
+      "sentences" : [ {
+        "words" : [ "Granzyme", "A", "can", "directly", "target", "the", "SET", "complex", "in", "ER", "for", "proteolysis", "." ],
+        "startOffsets" : [ 0, 9, 11, 15, 24, 31, 35, 39, 47, 50, 53, 57, 68 ],
+        "endOffsets" : [ 8, 10, 14, 23, 30, 34, 38, 46, 49, 52, 56, 68, 69 ],
+        "tags" : [ "NN", "NN", "MD", "RB", "VB", "DT", "NN", "NN", "IN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "granzyme", "a", "can", "directly", "target", "the", "set", "complex", "in", "er", "for", "proteolysis", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_for"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1185953932",
+    "text" : "Granzyme A",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 10,
+    "sentence" : 0,
+    "document" : "587453574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "H factor",
+      "namespace" : "uniprot",
+      "id" : "P12544",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1591530144",
+    "text" : "SET",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "587453574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Template-activating factor I",
+      "namespace" : "uniprot",
+      "id" : "Q01105",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2077288372",
+    "text" : "ER",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "587453574",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ER-alpha",
+      "namespace" : "uniprot",
+      "id" : "P03372",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-749678825",
+    "text" : "proteolysis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "587453574",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "proteolysis",
+      "namespace" : "go",
+      "id" : "GO:0006508",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1769558011",
+    "text" : "Granzyme A can directly target the SET",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1969139793",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "587453574",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1591530144",
+        "text" : "SET",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "587453574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Template-activating factor I",
+          "namespace" : "uniprot",
+          "id" : "Q01105",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1185953932",
+        "text" : "Granzyme A",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 10,
+        "sentence" : 0,
+        "document" : "587453574",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "H factor",
+          "namespace" : "uniprot",
+          "id" : "P12544",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1591530144" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1185953932" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "587453574",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

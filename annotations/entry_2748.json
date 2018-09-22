@@ -1,0 +1,649 @@
+{
+  "documents" : {
+    "568657637" : {
+      "id" : "sentence_annotator",
+      "text" : "\"PTH simultaneously stimulates RANK-L expression and inhibits OPG production [XREF_BIBR, XREF_BIBR].\"",
+      "sentences" : [ {
+        "words" : [ "\"", "PTH", "simultaneously", "stimulates", "RANK-L", "expression", "and", "inhibits", "OPG", "production", "[", "XREF_BIBR", ",", "XREF_BIBR", "]", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 20, 31, 38, 49, 53, 62, 66, 77, 78, 87, 89, 98, 99, 100 ],
+        "endOffsets" : [ 1, 4, 19, 30, 37, 48, 52, 61, 65, 76, 78, 87, 88, 98, 99, 100, 101 ],
+        "tags" : [ "``", "NN", "RB", "VBZ", "NN", "NN", "CC", "VBZ", "NN", "NN", "CD", "NN", ",", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "pth", "simultaneously", "stimulate", "rank-l", "expression", "and", "inhibit", "opg", "production", "[", "xref_bibr", ",", "xref_bibr", "]", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:1469276727",
+    "text" : "PTH simultaneously stimulates RANK-L expression",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2007453359",
+      "text" : "stimulates",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "568657637",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1289570622",
+        "text" : "RANK-L expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1660371600",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 38,
+          "characterEndOffset" : 48,
+          "sentence" : 0,
+          "document" : "568657637",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1404744201",
+            "text" : "RANK-L",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 31,
+            "characterEndOffset" : 37,
+            "sentence" : 0,
+            "document" : "568657637",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Osteoclast differentiation factor",
+              "namespace" : "uniprot",
+              "id" : "O14788",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1404744201" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "568657637",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1710595179",
+        "text" : "PTH",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "568657637",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTH",
+          "namespace" : "uniprot",
+          "id" : "P01270",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:1289570622" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1710595179" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1710595179",
+    "text" : "PTH",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTH",
+      "namespace" : "uniprot",
+      "id" : "P01270",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1404744201",
+    "text" : "RANK-L",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Osteoclast differentiation factor",
+      "namespace" : "uniprot",
+      "id" : "O14788",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:392033489",
+    "text" : "OPG",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "OCIF",
+      "namespace" : "uniprot",
+      "id" : "O00300",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1289570622",
+    "text" : "RANK-L expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1660371600",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "568657637",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1404744201",
+        "text" : "RANK-L",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "568657637",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Osteoclast differentiation factor",
+          "namespace" : "uniprot",
+          "id" : "O14788",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1404744201" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1669186135",
+    "text" : "PTH simultaneously stimulates RANK-L expression and inhibits OPG",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1511871642",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "568657637",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:392033489",
+        "text" : "OPG",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "568657637",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "OCIF",
+          "namespace" : "uniprot",
+          "id" : "O00300",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1469276727",
+        "text" : "PTH simultaneously stimulates RANK-L expression",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2007453359",
+          "text" : "stimulates",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 3,
+            "end" : 4
+          },
+          "characterStartOffset" : 20,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "568657637",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:1289570622",
+            "text" : "RANK-L expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1660371600",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 38,
+              "characterEndOffset" : 48,
+              "sentence" : 0,
+              "document" : "568657637",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1404744201",
+                "text" : "RANK-L",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 4,
+                  "end" : 5
+                },
+                "characterStartOffset" : 31,
+                "characterEndOffset" : 37,
+                "sentence" : 0,
+                "document" : "568657637",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Osteoclast differentiation factor",
+                  "namespace" : "uniprot",
+                  "id" : "O14788",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1404744201" : [ {
+                  "source" : 5,
+                  "destination" : 4,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 6
+            },
+            "characterStartOffset" : 31,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "568657637",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1710595179",
+            "text" : "PTH",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 1,
+            "characterEndOffset" : 4,
+            "sentence" : 0,
+            "document" : "568657637",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PTH",
+              "namespace" : "uniprot",
+              "id" : "P01270",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1289570622" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1710595179" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 6
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "568657637",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:392033489" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1710595179" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "E:1469276727" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "568657637",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

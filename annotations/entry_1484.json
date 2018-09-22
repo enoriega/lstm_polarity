@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "2053922334" : {
+      "id" : "sentence_annotator",
+      "text" : "AKT is activated by PTEN and cell growth is enhanced via mTOR.",
+      "sentences" : [ {
+        "words" : [ "AKT", "is", "activated", "by", "PTEN", "and", "cell", "growth", "is", "enhanced", "via", "mTOR", "." ],
+        "startOffsets" : [ 0, 4, 7, 17, 20, 25, 29, 34, 41, 44, 53, 57, 61 ],
+        "endOffsets" : [ 3, 6, 16, 19, 24, 28, 33, 40, 43, 52, 56, 61, 62 ],
+        "tags" : [ "NNP", "VBZ", "VBN", "IN", "NN", "CC", "NN", "NN", "VBZ", "VBN", "IN", "NN", "." ],
+        "lemmas" : [ "AKT", "be", "activate", "by", "pten", "and", "cell", "growth", "be", "enhance", "via", "mtor", "." ],
+        "entities" : [ "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-BioProcess", "I-BioProcess", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "agent"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_via"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-921404627",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "2053922334",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-980614832",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "2053922334",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1350637046",
+    "text" : "cell growth",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "2053922334",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "increase of cell mass",
+      "namespace" : "go",
+      "id" : "GO:0016049",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1119946564",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "2053922334",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1396049951",
+    "text" : "AKT is activated by PTEN",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2090896669",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 16,
+      "sentence" : 0,
+      "document" : "2053922334",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-921404627",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "2053922334",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-980614832",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "2053922334",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-921404627" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-980614832" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "2053922334",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

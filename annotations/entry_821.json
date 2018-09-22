@@ -1,0 +1,322 @@
+{
+  "documents" : {
+    "1371479766" : {
+      "id" : "sentence_annotator",
+      "text" : "\"For instance, rapamycin targets the mTOR protein but mTOR signaling was not identified.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "For", "instance", ",", "rapamycin", "targets", "the", "mTOR", "protein", "but", "mTOR", "signaling", "was", "not", "identified", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 13, 15, 25, 33, 37, 42, 50, 54, 59, 69, 73, 77, 87, 88 ],
+        "endOffsets" : [ 1, 4, 13, 14, 24, 32, 36, 41, 49, 53, 58, 68, 72, 76, 87, 88, 89 ],
+        "tags" : [ "``", "IN", "NN", ",", "NN", "VBZ", "DT", "NN", "NN", "CC", "NN", "NN", "VBD", "RB", "VBN", ".", "''" ],
+        "lemmas" : [ "\"", "for", "instance", ",", "rapamycin", "target", "the", "mtor", "protein", "but", "mtor", "signaling", "be", "not", "identify", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "neg"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "prep_for"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "conj_but"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "neg"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1837222557",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1371479766",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1326368115",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1371479766",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-550499137",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "1371479766",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1326368115",
+      "text" : "mTOR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "1371479766",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "mTOR",
+        "namespace" : "uniprot",
+        "id" : "P42345",
+        "species" : "human"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1275105004",
+    "text" : "rapamycin targets the mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-769431877",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1371479766",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1326368115",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "1371479766",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1837222557",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1371479766",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1326368115" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1837222557" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1371479766",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

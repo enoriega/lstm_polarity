@@ -1,0 +1,444 @@
+{
+  "documents" : {
+    "118566268" : {
+      "id" : "sentence_annotator",
+      "text" : "\"CDK5 knockdown induces TP53 dependent growth inhibition, apoptosis and G1 arrest.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "CDK5", "knockdown", "induces", "TP53", "dependent", "growth", "inhibition", ",", "apoptosis", "and", "G1", "arrest", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 16, 24, 29, 39, 46, 56, 58, 68, 72, 75, 81, 82 ],
+        "endOffsets" : [ 1, 5, 15, 23, 28, 38, 45, 56, 57, 67, 71, 74, 81, 82, 83 ],
+        "tags" : [ "``", "NN", "NN", "VBZ", "NN", "JJ", "NN", "NN", ",", "NN", "CC", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "cdk5", "knockdown", "induce", "tp53", "dependent", "growth", "inhibition", ",", "apoptosis", "and", "g1", "arrest", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "dep"
+            }, {
+              "source" : 5,
+              "destination" : 12,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1265225386",
+    "text" : "CDK5",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDK5",
+      "namespace" : "uniprot",
+      "id" : "Q00535",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1174425952",
+    "text" : "TP53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:774828344",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-10656662",
+    "text" : "G1",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 72,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "site_1letter_a",
+    "grounding" : {
+      "text" : "G1",
+      "namespace" : "uaz",
+      "id" : "UAZ00020",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1896644222",
+    "text" : "CDK5 knockdown induces TP53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:658431161",
+      "text" : "induces",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 23,
+      "sentence" : 0,
+      "document" : "118566268",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1174425952",
+        "text" : "TP53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "118566268",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1265225386",
+        "text" : "CDK5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "118566268",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDK5",
+          "namespace" : "uniprot",
+          "id" : "Q00535",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1174425952" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:774828344" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "amod"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "dep"
+        } ]
+      },
+      "controller" : {
+        "T:-1265225386" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:570201602",
+    "text" : "CDK5 knockdown induces TP53 dependent growth inhibition, apoptosis",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:658431161",
+      "text" : "induces",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 23,
+      "sentence" : 0,
+      "document" : "118566268",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:774828344",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "118566268",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1265225386",
+        "text" : "CDK5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "118566268",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDK5",
+          "namespace" : "uniprot",
+          "id" : "Q00535",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1174425952" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:774828344" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "amod"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "dep"
+        } ]
+      },
+      "controller" : {
+        "T:-1265225386" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 10
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "118566268",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

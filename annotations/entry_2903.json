@@ -1,0 +1,325 @@
+{
+  "documents" : {
+    "-645312521" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Interestingly, SRT1720 addition increased the SIRT1 activity slightly more than RSV treatment alone.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Interestingly", ",", "SRT1720", "addition", "increased", "the", "SIRT1", "activity", "slightly", "more", "than", "RSV", "treatment", "alone", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 24, 33, 43, 47, 53, 62, 71, 76, 81, 85, 95, 100, 101 ],
+        "endOffsets" : [ 1, 14, 15, 23, 32, 42, 46, 52, 61, 70, 75, 80, 84, 94, 100, 101, 102 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "VBD", "DT", "NN", "NN", "RB", "JJR", "IN", "NN", "NN", "RB", ".", "''" ],
+        "lemmas" : [ "\"", "interestingly", ",", "srt1720", "addition", "increase", "the", "sirt1", "activity", "slightly", "more", "than", "rsv", "treatment", "alone", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Species", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-ADJP", "I-ADJP", "B-PP", "B-NP", "I-NP", "B-ADVP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "prep_than"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:937958849",
+    "text" : "SRT1720",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "-645312521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SRT1720",
+      "namespace" : "uaz",
+      "id" : "UAZ00832",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:12814" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1549766402",
+    "text" : "SIRT1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "-645312521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:12814" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2137380136",
+    "text" : "RSV",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-645312521",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "R. syncytial virus RS",
+      "namespace" : "taxonomy",
+      "id" : "12814",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:12814" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-111078629",
+    "text" : "SRT1720 addition increased the SIRT1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:209617570",
+      "text" : "increased",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 42,
+      "sentence" : 0,
+      "document" : "-645312521",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1549766402",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 52,
+        "sentence" : 0,
+        "document" : "-645312521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:12814" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:937958849",
+        "text" : "SRT1720",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-645312521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SRT1720",
+          "namespace" : "uaz",
+          "id" : "UAZ00832",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:12814" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1549766402" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:937958849" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "-645312521",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:12814" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

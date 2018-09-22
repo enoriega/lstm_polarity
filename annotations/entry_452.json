@@ -1,0 +1,396 @@
+{
+  "documents" : {
+    "991998113" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Interestingly, increased Nrf2 caused by Keap1 depletion was reversed by co-depletion of NF-kappaB.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Interestingly", ",", "increased", "Nrf2", "caused", "by", "Keap1", "depletion", "was", "reversed", "by", "co-depletion", "of", "NF-kappaB", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 26, 31, 38, 41, 47, 57, 61, 70, 73, 86, 89, 98, 99 ],
+        "endOffsets" : [ 1, 14, 15, 25, 30, 37, 40, 46, 56, 60, 69, 72, 85, 88, 98, 99, 100 ],
+        "tags" : [ "``", "RB", ",", "VBD", "NN", "VBN", "IN", "NN", "NN", "VBD", "VBN", "IN", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "interestingly", ",", "increase", "nrf2", "cause", "by", "keap1", "depletion", "be", "reverse", "by", "co-depletion", "of", "nf-kappab", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "agent"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "agent"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1185317616",
+    "text" : "Nrf2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "991998113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1126554855",
+    "text" : "Keap1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "991998113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1338599945",
+    "text" : "NF-kappaB",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "991998113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NF-kappaB subunits",
+      "namespace" : "be",
+      "id" : "NFkappaB",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-112705425",
+    "text" : "Nrf2 caused by Keap1 depletion was reversed by co-depletion of NF-kappaB",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1911113462",
+      "text" : "reversed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 61,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "991998113",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1185317616",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "991998113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1338599945",
+        "text" : "NF-kappaB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 89,
+        "characterEndOffset" : 98,
+        "sentence" : 0,
+        "document" : "991998113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NF-kappaB subunits",
+          "namespace" : "be",
+          "id" : "NFkappaB",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1185317616" : [ {
+          "source" : 10,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-1338599945" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "agent"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 15
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "991998113",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1845318638",
+    "text" : "Nrf2 caused by Keap1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1693083171",
+      "text" : "caused",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "991998113",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1185317616",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "991998113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1126554855",
+        "text" : "Keap1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "991998113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1185317616" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "vmod"
+        } ]
+      },
+      "controller" : {
+        "T:-1126554855" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "agent"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "991998113",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

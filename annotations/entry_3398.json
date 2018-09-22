@@ -1,0 +1,516 @@
+{
+  "documents" : {
+    "1762293397" : {
+      "id" : "sentence_annotator",
+      "text" : "Knock-out of TLR4 or antagonizing HMGB1 by specific antagonist A-box inhibited ILA notably.",
+      "sentences" : [ {
+        "words" : [ "Knock-out", "of", "TLR4", "or", "antagonizing", "HMGB1", "by", "specific", "antagonist", "A-box", "inhibited", "ILA", "notably", "." ],
+        "startOffsets" : [ 0, 10, 13, 18, 21, 34, 40, 43, 52, 63, 69, 79, 83, 90 ],
+        "endOffsets" : [ 9, 12, 17, 20, 33, 39, 42, 51, 62, 68, 78, 82, 90, 91 ],
+        "tags" : [ "NN", "IN", "NN", "CC", "VBG", "NN", "IN", "JJ", "NN", "NN", "VBD", "NN", "RB", "." ],
+        "lemmas" : [ "knock-out", "of", "tlr4", "or", "antagonize", "hmgb1", "by", "specific", "antagonist", "a-box", "inhibit", "ilum", "notably", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "O", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-ADVP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "advmod"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_or"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep_by"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "advmod"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1937004837",
+    "text" : "TLR4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TLR4",
+      "namespace" : "uniprot",
+      "id" : "O00206",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-139047458",
+    "text" : "HMGB1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HMGB1",
+      "namespace" : "uniprot",
+      "id" : "P09429",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:254602963",
+    "text" : "ILA",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TNFRSF9",
+      "namespace" : "uniprot",
+      "id" : "Q07011",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1568401232",
+    "text" : "TLR4 or antagonizing HMGB1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1850486127",
+      "text" : "antagonizing",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "1762293397",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1937004837",
+        "text" : "TLR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TLR4",
+          "namespace" : "uniprot",
+          "id" : "O00206",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-139047458",
+        "text" : "HMGB1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HMGB1",
+          "namespace" : "uniprot",
+          "id" : "P09429",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1937004837" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "conj_or"
+        } ],
+        "T:-139047458" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "conj_or"
+        }, {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-139047458" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 6
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-166934519",
+    "text" : "TLR4 or antagonizing HMGB1 by specific antagonist A-box inhibited ILA",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-23587545",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 69,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "1762293397",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:254602963",
+        "text" : "ILA",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TNFRSF9",
+          "namespace" : "uniprot",
+          "id" : "Q07011",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1937004837",
+        "text" : "TLR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TLR4",
+          "namespace" : "uniprot",
+          "id" : "O00206",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:254602963" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-139047458" : [ {
+          "source" : 10,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1937004837" : [ {
+          "source" : 10,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 12
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-167104683",
+    "text" : "HMGB1 by specific antagonist A-box inhibited ILA",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-23587545",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 69,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "1762293397",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:254602963",
+        "text" : "ILA",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TNFRSF9",
+          "namespace" : "uniprot",
+          "id" : "Q07011",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-139047458",
+        "text" : "HMGB1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "1762293397",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HMGB1",
+          "namespace" : "uniprot",
+          "id" : "P09429",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:254602963" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-139047458" : [ {
+          "source" : 10,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1937004837" : [ {
+          "source" : 10,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "1762293397",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

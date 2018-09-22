@@ -1,0 +1,453 @@
+{
+  "documents" : {
+    "285464689" : {
+      "id" : "sentence_annotator",
+      "text" : "Higher BACE expression inhibited Abeta deposition within both the cortex and the hippocampus.",
+      "sentences" : [ {
+        "words" : [ "Higher", "BACE", "expression", "inhibited", "Abeta", "deposition", "within", "both", "the", "cortex", "and", "the", "hippocampus", "." ],
+        "startOffsets" : [ 0, 7, 12, 23, 33, 39, 50, 57, 62, 66, 73, 77, 81, 92 ],
+        "endOffsets" : [ 6, 11, 22, 32, 38, 49, 56, 61, 65, 72, 76, 80, 92, 93 ],
+        "tags" : [ "JJR", "NN", "NN", "VBD", "NN", "NN", "IN", "CC", "DT", "NN", "CC", "DT", "NN", "." ],
+        "lemmas" : [ "higher", "bace", "expression", "inhibit", "abeta", "deposition", "within", "both", "the", "cortex", "and", "the", "hippocampus", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-TissueType", "O", "O", "B-TissueType", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "O", "B-NP", "I-NP", "O", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "preconj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "prep_within"
+            }, {
+              "source" : 3,
+              "destination" : 12,
+              "relation" : "prep_within"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "preconj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1830348673",
+    "text" : "BACE",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:289157477",
+    "text" : "Abeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "A-beta",
+      "namespace" : "uniprot",
+      "id" : "O73683",
+      "species" : "chelonodon fluviatilis"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1229046782",
+    "text" : "cortex",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Cerebral cortex",
+      "namespace" : "tissuelist",
+      "id" : "TS-0091",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-26987273",
+    "text" : "hippocampus",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Hippocampus",
+      "namespace" : "tissuelist",
+      "id" : "TS-0460",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1308391423",
+    "text" : "BACE expression inhibited Abeta",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:572888338",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "285464689",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:289157477",
+        "text" : "Abeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "285464689",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "A-beta",
+          "namespace" : "uniprot",
+          "id" : "O73683",
+          "species" : "chelonodon fluviatilis"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0091" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-370414779",
+        "text" : "BACE expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1892624999",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 12,
+          "characterEndOffset" : 22,
+          "sentence" : 0,
+          "document" : "285464689",
+          "keep" : true,
+          "foundBy" : "transcription_2"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1830348673",
+            "text" : "BACE",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 7,
+            "characterEndOffset" : 11,
+            "sentence" : 0,
+            "document" : "285464689",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Beta-site APP cleaving enzyme 1",
+              "namespace" : "uniprot",
+              "id" : "P56817",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0091" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1830348673" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dep"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 3
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "285464689",
+        "keep" : true,
+        "foundBy" : "transcription_2",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:289157477" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1830348673" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "E:-370414779" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-370414779",
+    "text" : "BACE expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1892624999",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "285464689",
+      "keep" : true,
+      "foundBy" : "transcription_2"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1830348673",
+        "text" : "BACE",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "285464689",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0091" ]
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1830348673" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dep"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 3
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "285464689",
+    "keep" : true,
+    "foundBy" : "transcription_2",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0091" ]
+    },
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

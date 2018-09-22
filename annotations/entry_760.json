@@ -1,0 +1,418 @@
+{
+  "documents" : {
+    "-585703200" : {
+      "id" : "sentence_annotator",
+      "text" : "PERK is known to activate the eIF2alpha and ATF4 pathway [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "PERK", "is", "known", "to", "activate", "the", "eIF2alpha", "and", "ATF4", "pathway", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 5, 8, 14, 17, 26, 30, 40, 44, 49, 57, 58, 67, 68 ],
+        "endOffsets" : [ 4, 7, 13, 16, 25, 29, 39, 43, 48, 56, 58, 67, 68, 69 ],
+        "tags" : [ "NN", "VBZ", "VBN", "TO", "VB", "DT", "NN", "CC", "NN", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "perk", "be", "know", "to", "activate", "the", "eif2alpha", "and", "atf4", "pathway", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "xcomp"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "xcomp"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1965794724",
+    "text" : "PERK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-585703200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Pancreatic eIF2-alpha kinase",
+      "namespace" : "uniprot",
+      "id" : "Q9NZJ5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1532416027",
+    "text" : "eIF2alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "-585703200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF2A",
+      "namespace" : "uniprot",
+      "id" : "P05198",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:945079613",
+    "text" : "ATF4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-585703200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Activating transcription factor 4",
+      "namespace" : "uniprot",
+      "id" : "P18848",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1884255560",
+    "text" : "PERK is known to activate the eIF2alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1546707398",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-585703200",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1532416027",
+        "text" : "eIF2alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "-585703200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF2A",
+          "namespace" : "uniprot",
+          "id" : "P05198",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1965794724",
+        "text" : "PERK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-585703200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Pancreatic eIF2-alpha kinase",
+          "namespace" : "uniprot",
+          "id" : "Q9NZJ5",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1532416027" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ],
+        "T:945079613" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 12,
+          "relation" : "conj_and"
+        }, {
+          "source" : 12,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1965794724" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "xcomp"
+        }, {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "-585703200",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:236793185",
+    "text" : "PERK is known to activate the eIF2alpha and ATF4",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1546707398",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-585703200",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:945079613",
+        "text" : "ATF4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-585703200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Activating transcription factor 4",
+          "namespace" : "uniprot",
+          "id" : "P18848",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1965794724",
+        "text" : "PERK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-585703200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Pancreatic eIF2-alpha kinase",
+          "namespace" : "uniprot",
+          "id" : "Q9NZJ5",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1532416027" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ],
+        "T:945079613" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 12,
+          "relation" : "conj_and"
+        }, {
+          "source" : 12,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1965794724" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "xcomp"
+        }, {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-585703200",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

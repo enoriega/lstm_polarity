@@ -1,0 +1,927 @@
+{
+  "documents" : {
+    "880365606" : {
+      "id" : "sentence_annotator",
+      "text" : "Simvastatin reversed the down-regulation of p21 protein expression and decreased CDK4 and CDK2 kinase activities.",
+      "sentences" : [ {
+        "words" : [ "Simvastatin", "reversed", "the", "down-regulation", "of", "p21", "protein", "expression", "and", "decreased", "CDK4", "and", "CDK2", "kinase", "activities", "." ],
+        "startOffsets" : [ 0, 12, 21, 25, 41, 44, 48, 56, 67, 71, 81, 86, 90, 95, 102, 112 ],
+        "endOffsets" : [ 11, 20, 24, 40, 43, 47, 55, 66, 70, 80, 85, 89, 94, 101, 112, 113 ],
+        "tags" : [ "NN", "VBD", "DT", "NN", "IN", "NN", "NN", "NN", "CC", "VBD", "NN", "CC", "NN", "NN", "NNS", "." ],
+        "lemmas" : [ "simvastatin", "reverse", "the", "down-regulation", "of", "p21", "protein", "expression", "and", "decrease", "cdk4", "and", "cdk2", "kinase", "activity", "." ],
+        "entities" : [ "B-Simple_chemical", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-981298764",
+    "text" : "Simvastatin reversed the down-regulation of p21 protein expression",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1823430840",
+      "text" : "reversed",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 20,
+      "sentence" : 0,
+      "document" : "880365606",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:663926155",
+        "text" : "p21 protein expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1488554519",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 56,
+          "characterEndOffset" : 66,
+          "sentence" : 0,
+          "document" : "880365606",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-656609346",
+            "text" : "p21",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 44,
+            "characterEndOffset" : 47,
+            "sentence" : 0,
+            "document" : "880365606",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "p21",
+              "namespace" : "uniprot",
+              "id" : "P38936",
+              "species" : "human"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-656609346" : [ {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1400533034",
+        "text" : "Simvastatin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Lipovas",
+          "namespace" : "pubchem",
+          "id" : "54454",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:663926155" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "prep_of"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1400533034" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1400533034",
+    "text" : "Simvastatin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Lipovas",
+      "namespace" : "pubchem",
+      "id" : "54454",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-656609346",
+    "text" : "p21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p21",
+      "namespace" : "uniprot",
+      "id" : "P38936",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1431758129",
+    "text" : "CDK4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cell division protein kinase 4",
+      "namespace" : "uniprot",
+      "id" : "P11802",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-783300861",
+    "text" : "CDK2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 90,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p33 protein kinase",
+      "namespace" : "uniprot",
+      "id" : "P24941",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:663926155",
+    "text" : "p21 protein expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1488554519",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "880365606",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-656609346",
+        "text" : "p21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p21",
+          "namespace" : "uniprot",
+          "id" : "P38936",
+          "species" : "human"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-656609346" : [ {
+          "source" : 7,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:405905959",
+    "text" : "Simvastatin reversed the down-regulation of p21 protein expression and decreased CDK4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1446852592",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 71,
+      "characterEndOffset" : 80,
+      "sentence" : 0,
+      "document" : "880365606",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1431758129",
+        "text" : "CDK4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cell division protein kinase 4",
+          "namespace" : "uniprot",
+          "id" : "P11802",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-981298764",
+        "text" : "Simvastatin reversed the down-regulation of p21 protein expression",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1823430840",
+          "text" : "reversed",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 12,
+          "characterEndOffset" : 20,
+          "sentence" : 0,
+          "document" : "880365606",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:663926155",
+            "text" : "p21 protein expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1488554519",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 56,
+              "characterEndOffset" : 66,
+              "sentence" : 0,
+              "document" : "880365606",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-656609346",
+                "text" : "p21",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 6
+                },
+                "characterStartOffset" : 44,
+                "characterEndOffset" : 47,
+                "sentence" : 0,
+                "document" : "880365606",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "p21",
+                  "namespace" : "uniprot",
+                  "id" : "P38936",
+                  "species" : "human"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-656609346" : [ {
+                  "source" : 7,
+                  "destination" : 5,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 44,
+            "characterEndOffset" : 66,
+            "sentence" : 0,
+            "document" : "880365606",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1400533034",
+            "text" : "Simvastatin",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 11,
+            "sentence" : 0,
+            "document" : "880365606",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "Lipovas",
+              "namespace" : "pubchem",
+              "id" : "54454",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:663926155" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1400533034" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1431758129" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-783300861" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1400533034" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "E:-981298764" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-861932172",
+    "text" : "Simvastatin reversed the down-regulation of p21 protein expression and decreased CDK4 and CDK2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1446852592",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 71,
+      "characterEndOffset" : 80,
+      "sentence" : 0,
+      "document" : "880365606",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-783300861",
+        "text" : "CDK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 90,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p33 protein kinase",
+          "namespace" : "uniprot",
+          "id" : "P24941",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-981298764",
+        "text" : "Simvastatin reversed the down-regulation of p21 protein expression",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1823430840",
+          "text" : "reversed",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 12,
+          "characterEndOffset" : 20,
+          "sentence" : 0,
+          "document" : "880365606",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:663926155",
+            "text" : "p21 protein expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1488554519",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 56,
+              "characterEndOffset" : 66,
+              "sentence" : 0,
+              "document" : "880365606",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-656609346",
+                "text" : "p21",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 6
+                },
+                "characterStartOffset" : 44,
+                "characterEndOffset" : 47,
+                "sentence" : 0,
+                "document" : "880365606",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "p21",
+                  "namespace" : "uniprot",
+                  "id" : "P38936",
+                  "species" : "human"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-656609346" : [ {
+                  "source" : 7,
+                  "destination" : 5,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 8
+            },
+            "characterStartOffset" : 44,
+            "characterEndOffset" : 66,
+            "sentence" : 0,
+            "document" : "880365606",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1400533034",
+            "text" : "Simvastatin",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 11,
+            "sentence" : 0,
+            "document" : "880365606",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "Lipovas",
+              "namespace" : "pubchem",
+              "id" : "54454",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:663926155" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1400533034" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 8
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "880365606",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1431758129" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-783300861" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1400533034" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "E:-981298764" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 13
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "880365606",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

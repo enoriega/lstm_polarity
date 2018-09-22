@@ -1,0 +1,403 @@
+{
+  "documents" : {
+    "-446572736" : {
+      "id" : "sentence_annotator",
+      "text" : "PERK dimerization and trans-autophosphorylation leads to the activation of eIF2alpha by phosphorylation at Ser51.",
+      "sentences" : [ {
+        "words" : [ "PERK", "dimerization", "and", "trans-autophosphorylation", "leads", "to", "the", "activation", "of", "eIF2alpha", "by", "phosphorylation", "at", "Ser51", "." ],
+        "startOffsets" : [ 0, 5, 18, 22, 48, 54, 57, 61, 72, 75, 85, 88, 104, 107, 112 ],
+        "endOffsets" : [ 4, 17, 21, 47, 53, 56, 60, 71, 74, 84, 87, 103, 106, 112, 113 ],
+        "tags" : [ "NN", "NN", "CC", "NN", "VBZ", "TO", "DT", "NN", "IN", "NN", "IN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "perk", "dimerization", "and", "trans-autophosphorylation", "lead", "to", "the", "activation", "of", "eif2alpha", "by", "phosphorylation", "at", "ser51", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep_to"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "prep_by"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep_at"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:82553317",
+    "text" : "PERK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-446572736",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Pancreatic eIF2-alpha kinase",
+      "namespace" : "uniprot",
+      "id" : "Q9NZJ5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-280462862",
+    "text" : "eIF2alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 75,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-446572736",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF2A",
+      "namespace" : "uniprot",
+      "id" : "P05198",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:228623598",
+    "text" : "Ser51",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 107,
+    "characterEndOffset" : 112,
+    "sentence" : 0,
+    "document" : "-446572736",
+    "keep" : true,
+    "foundBy" : "site_3letter",
+    "grounding" : {
+      "text" : "Ser51",
+      "namespace" : "uaz",
+      "id" : "UAZ00196",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1773021191",
+    "text" : "PERK dimerization and trans-autophosphorylation",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1061844485",
+      "text" : "trans-autophosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 47,
+      "sentence" : 0,
+      "document" : "-446572736",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:82553317",
+        "text" : "PERK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-446572736",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Pancreatic eIF2-alpha kinase",
+          "namespace" : "uniprot",
+          "id" : "Q9NZJ5",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:82553317" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_and"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-446572736",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_4_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1887485766",
+    "text" : "PERK dimerization and trans-autophosphorylation leads to the activation of eIF2alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1043993903",
+      "text" : "leads to",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 6
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "-446572736",
+      "keep" : true,
+      "foundBy" : "Positive_activation_nested_syntax_2_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1773021191",
+        "text" : "PERK dimerization and trans-autophosphorylation",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1061844485",
+          "text" : "trans-autophosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 3,
+            "end" : 4
+          },
+          "characterStartOffset" : 22,
+          "characterEndOffset" : 47,
+          "sentence" : 0,
+          "document" : "-446572736",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:82553317",
+            "text" : "PERK",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 4,
+            "sentence" : 0,
+            "document" : "-446572736",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Pancreatic eIF2-alpha kinase",
+              "namespace" : "uniprot",
+              "id" : "Q9NZJ5",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:82553317" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj_and"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 4
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "-446572736",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_4_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-280462862",
+        "text" : "eIF2alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 75,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-446572736",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF2A",
+          "namespace" : "uniprot",
+          "id" : "P05198",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "E:1773021191" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:-280462862" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "prep_to"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-446572736",
+    "keep" : true,
+    "foundBy" : "Positive_activation_nested_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

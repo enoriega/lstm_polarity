@@ -1,0 +1,422 @@
+{
+  "documents" : {
+    "-494925135" : {
+      "id" : "sentence_annotator",
+      "text" : "ATM activity promotes HDR and inhibits DNA-PK cs activation at viral DNA replication centers.",
+      "sentences" : [ {
+        "words" : [ "ATM", "activity", "promotes", "HDR", "and", "inhibits", "DNA-PK", "cs", "activation", "at", "viral", "DNA", "replication", "centers", "." ],
+        "startOffsets" : [ 0, 4, 13, 22, 26, 30, 39, 46, 49, 60, 63, 69, 73, 85, 92 ],
+        "endOffsets" : [ 3, 12, 21, 25, 29, 38, 45, 48, 59, 62, 68, 72, 84, 92, 93 ],
+        "tags" : [ "NNP", "NN", "VBZ", "NNP", "CC", "VBZ", "NN", "NNS", "NN", "IN", "JJ", "NN", "NN", "NNS", "." ],
+        "lemmas" : [ "ATM", "activity", "promote", "HDR", "and", "inhibit", "dna-pk", "c", "activation", "at", "viral", "dna", "replication", "center", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-BioProcess", "I-BioProcess", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "prep_at"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-700862376",
+    "text" : "ATM",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ATM",
+      "namespace" : "uniprot",
+      "id" : "Q13315",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2050163981",
+    "text" : "HDR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ISPH",
+      "namespace" : "uniprot",
+      "id" : "Q94B35",
+      "species" : "arabidopsis thaliana"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1940639244",
+    "text" : "cs",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Citrate (Si)-synthase",
+      "namespace" : "uniprot",
+      "id" : "O75390",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1108360895",
+    "text" : "DNA replication",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA replication",
+      "namespace" : "go",
+      "id" : "GO:0006260",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:427477598",
+    "text" : "ATM activity promotes HDR and inhibits DNA-PK cs",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1127072677",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "-494925135",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1940639244",
+        "text" : "cs",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-494925135",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Citrate (Si)-synthase",
+          "namespace" : "uniprot",
+          "id" : "O75390",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-700862376",
+        "text" : "ATM",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "-494925135",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ATM",
+          "namespace" : "uniprot",
+          "id" : "Q13315",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1940639244" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-700862376" : [ {
+          "source" : 5,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-982144913",
+    "text" : "ATM activity promotes HDR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1620671504",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 13,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "-494925135",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2050163981",
+        "text" : "HDR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-494925135",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ISPH",
+          "namespace" : "uniprot",
+          "id" : "Q94B35",
+          "species" : "arabidopsis thaliana"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-700862376",
+        "text" : "ATM",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "-494925135",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ATM",
+          "namespace" : "uniprot",
+          "id" : "Q13315",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2050163981" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-700862376" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-494925135",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

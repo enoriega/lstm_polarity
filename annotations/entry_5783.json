@@ -1,0 +1,274 @@
+{
+  "documents" : {
+    "-51219366" : {
+      "id" : "sentence_annotator",
+      "text" : "Deletion of insulin induced PI3K-Akt signaling in GALP neurons.",
+      "sentences" : [ {
+        "words" : [ "Deletion", "of", "insulin", "induced", "PI3K-Akt", "signaling", "in", "GALP", "neurons", "." ],
+        "startOffsets" : [ 0, 9, 12, 20, 28, 37, 47, 50, 55, 62 ],
+        "endOffsets" : [ 8, 11, 19, 27, 36, 46, 49, 54, 62, 63 ],
+        "tags" : [ "NN", "IN", "NN", "VBD", "NN", "NN", "IN", "NNP", "NNS", "." ],
+        "lemmas" : [ "deletion", "of", "insulin", "induce", "pi3k-akt", "signaling", "in", "GALP", "neuron", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "B-CellType", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:273007890",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-51219366",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000540" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1709077216",
+    "text" : "PI3K-Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-51219366",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000540" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-464661221",
+    "text" : "GALP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-51219366",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GALP",
+      "namespace" : "uniprot",
+      "id" : "Q9UBC7",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000540" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:796303110",
+    "text" : "neurons",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-51219366",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "neurons",
+      "namespace" : "cl",
+      "id" : "CL:0000540",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000540" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1086596056",
+    "text" : "insulin induced PI3K-Akt",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1723531275",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "-51219366",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:273007890",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 12,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-51219366",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000540" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1709077216",
+        "text" : "PI3K-Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-51219366",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000540" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-51219366",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "context" : {
+      "CellType" : [ "cl:CL:0000540" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

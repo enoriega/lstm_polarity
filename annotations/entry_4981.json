@@ -1,0 +1,410 @@
+{
+  "documents" : {
+    "-671411610" : {
+      "id" : "sentence_annotator",
+      "text" : "These data suggest that the ERK1/2 pathway may activate inhibitors of C/EBPbeta and thereby inhibit COX-2 expression.",
+      "sentences" : [ {
+        "words" : [ "These", "data", "suggest", "that", "the", "ERK1/2", "pathway", "may", "activate", "inhibitors", "of", "C/EBPbeta", "and", "thereby", "inhibit", "COX-2", "expression", "." ],
+        "startOffsets" : [ 0, 6, 11, 19, 24, 28, 35, 43, 47, 56, 67, 70, 80, 84, 92, 100, 106, 116 ],
+        "endOffsets" : [ 5, 10, 18, 23, 27, 34, 42, 46, 55, 66, 69, 79, 83, 91, 99, 105, 116, 117 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "DT", "NN", "NN", "MD", "VB", "NNS", "IN", "NN", "CC", "RB", "VBP", "NN", "NN", "." ],
+        "lemmas" : [ "these", "datum", "suggest", "that", "the", "erk1/2", "pathway", "may", "activate", "inhibitor", "of", "c/ebpbeta", "and", "thereby", "inhibit", "cox-2", "expression", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Family", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "O", "B-VP", "I-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:866004182",
+    "text" : "ERK1/2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-671411610",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERKs",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1206920500",
+    "text" : "C/EBPbeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "-671411610",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TCF-5",
+      "namespace" : "uniprot",
+      "id" : "P17676",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:468636534",
+    "text" : "COX-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 105,
+    "sentence" : 0,
+    "document" : "-671411610",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PGHS-2",
+      "namespace" : "uniprot",
+      "id" : "P35354",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:411130063",
+    "text" : "ERK1/2 pathway may activate inhibitors of C/EBPbeta",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-68989261",
+      "text" : "activate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 55,
+      "sentence" : 0,
+      "document" : "-671411610",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1206920500",
+        "text" : "C/EBPbeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 79,
+        "sentence" : 0,
+        "document" : "-671411610",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TCF-5",
+          "namespace" : "uniprot",
+          "id" : "P17676",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:866004182",
+        "text" : "ERK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "-671411610",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1206920500" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:866004182" : [ {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nsubj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "-671411610",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1445977445",
+        "text" : "suggest",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "-671411610",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-225531451",
+    "text" : "COX-2 expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:882046617",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 16,
+        "end" : 17
+      },
+      "characterStartOffset" : 106,
+      "characterEndOffset" : 116,
+      "sentence" : 0,
+      "document" : "-671411610",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:468636534",
+        "text" : "COX-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 100,
+        "characterEndOffset" : 105,
+        "sentence" : 0,
+        "document" : "-671411610",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PGHS-2",
+          "namespace" : "uniprot",
+          "id" : "P35354",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:468636534" : [ {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 17
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 116,
+    "sentence" : 0,
+    "document" : "-671411610",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,253 @@
+{
+  "documents" : {
+    "-475626504" : {
+      "id" : "sentence_annotator",
+      "text" : "We then wondered how PTP1B inhibition could suppress ROS induced toxicity.",
+      "sentences" : [ {
+        "words" : [ "We", "then", "wondered", "how", "PTP1B", "inhibition", "could", "suppress", "ROS", "induced", "toxicity", "." ],
+        "startOffsets" : [ 0, 3, 8, 17, 21, 27, 38, 44, 53, 57, 65, 73 ],
+        "endOffsets" : [ 2, 7, 16, 20, 26, 37, 43, 52, 56, 64, 73, 74 ],
+        "tags" : [ "PRP", "RB", "VBD", "WRB", "NN", "NN", "MD", "VB", "NN", "VBN", "NN", "." ],
+        "lemmas" : [ "we", "then", "wonder", "how", "ptp1b", "inhibition", "could", "suppress", "ro", "induce", "toxicity", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Simple_chemical", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-ADVP", "B-VP", "B-ADVP", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:465919955",
+    "text" : "PTP1B",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-475626504",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTP1B",
+      "namespace" : "uniprot",
+      "id" : "P18031",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1605089286",
+    "text" : "ROS",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-475626504",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ROS",
+      "namespace" : "chebi",
+      "id" : "CHEBI:26523",
+      "species" : "human"
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:793497808",
+    "text" : "PTP1B inhibition could suppress ROS",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1522314017",
+      "text" : "suppress",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "-475626504",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1605089286",
+        "text" : "ROS",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-475626504",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ROS",
+          "namespace" : "chebi",
+          "id" : "CHEBI:26523",
+          "species" : "human"
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:465919955",
+        "text" : "PTP1B",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-475626504",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTP1B",
+          "namespace" : "uniprot",
+          "id" : "P18031",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1605089286" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:465919955" : [ {
+          "source" : 7,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-475626504",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

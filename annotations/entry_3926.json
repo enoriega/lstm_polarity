@@ -1,0 +1,948 @@
+{
+  "documents" : {
+    "1564380193" : {
+      "id" : "sentence_annotator",
+      "text" : "HDAC4 overexpression inhibits chondrocyte hypertrophy and skeletal development by repressing the Runx2 and MEF2c transcription factors.",
+      "sentences" : [ {
+        "words" : [ "HDAC4", "overexpression", "inhibits", "chondrocyte", "hypertrophy", "and", "skeletal", "development", "by", "repressing", "the", "Runx2", "and", "MEF2c", "transcription", "factors", "." ],
+        "startOffsets" : [ 0, 6, 21, 30, 42, 54, 58, 67, 79, 82, 93, 97, 103, 107, 113, 127, 134 ],
+        "endOffsets" : [ 5, 20, 29, 41, 53, 57, 66, 78, 81, 92, 96, 102, 106, 112, 126, 134, 135 ],
+        "tags" : [ "NN", "NN", "VBZ", "NN", "NN", "CC", "JJ", "NN", "IN", "VBG", "DT", "NN", "CC", "NN", "NN", "NNS", "." ],
+        "lemmas" : [ "hdac4", "overexpression", "inhibit", "chondrocyte", "hypertrophy", "and", "skeletal", "development", "by", "repress", "the", "runx2", "and", "mef2c", "transcription", "factor", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-TissueType", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pcomp"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1385316812",
+    "text" : "HDAC4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HDAC4",
+      "namespace" : "uniprot",
+      "id" : "P56524",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-426708872",
+    "text" : "chondrocyte",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Chondrocyte",
+      "namespace" : "tissuelist",
+      "id" : "TS-0138",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1312042906",
+    "text" : "Runx2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "OSF2",
+      "namespace" : "uniprot",
+      "id" : "Q13950",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1540437082",
+    "text" : "MEF2c",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 107,
+    "characterEndOffset" : 112,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Myocyte-specific enhancer factor 2C",
+      "namespace" : "uniprot",
+      "id" : "Q06413",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1345146961",
+    "text" : "transcription",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 113,
+    "characterEndOffset" : 126,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA-dependent transcription",
+      "namespace" : "go",
+      "id" : "GO:0006351",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1126236163",
+    "text" : "HDAC4 overexpression inhibits chondrocyte hypertrophy and skeletal development by repressing the Runx2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1432221298",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1564380193",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1312042906",
+        "text" : "Runx2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 102,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "OSF2",
+          "namespace" : "uniprot",
+          "id" : "Q13950",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0138" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-143470665",
+        "text" : "HDAC4 overexpression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1449824154",
+          "text" : "overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 20,
+          "sentence" : 0,
+          "document" : "1564380193",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1385316812",
+            "text" : "HDAC4",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "1564380193",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "HDAC4",
+              "namespace" : "uniprot",
+              "id" : "P56524",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0138" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1385316812" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1312042906" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:-1540437082" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ],
+        "T:-1345146961" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-143470665" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1385316812" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1537965913",
+    "text" : "HDAC4 overexpression inhibits chondrocyte hypertrophy and skeletal development by repressing the Runx2 and MEF2c",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1432221298",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1564380193",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1540437082",
+        "text" : "MEF2c",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 107,
+        "characterEndOffset" : 112,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Myocyte-specific enhancer factor 2C",
+          "namespace" : "uniprot",
+          "id" : "Q06413",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0138" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-143470665",
+        "text" : "HDAC4 overexpression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1449824154",
+          "text" : "overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 20,
+          "sentence" : 0,
+          "document" : "1564380193",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1385316812",
+            "text" : "HDAC4",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "1564380193",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "HDAC4",
+              "namespace" : "uniprot",
+              "id" : "P56524",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0138" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1385316812" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1312042906" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:-1540437082" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ],
+        "T:-1345146961" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-143470665" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1385316812" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 14
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 112,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1879621923",
+    "text" : "HDAC4 overexpression inhibits chondrocyte hypertrophy and skeletal development by repressing the Runx2 and MEF2c transcription",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1432221298",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1564380193",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1345146961",
+        "text" : "transcription",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 113,
+        "characterEndOffset" : 126,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "DNA-dependent transcription",
+          "namespace" : "go",
+          "id" : "GO:0006351",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0138" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-143470665",
+        "text" : "HDAC4 overexpression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1449824154",
+          "text" : "overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 6,
+          "characterEndOffset" : 20,
+          "sentence" : 0,
+          "document" : "1564380193",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1385316812",
+            "text" : "HDAC4",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 5,
+            "sentence" : 0,
+            "document" : "1564380193",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "HDAC4",
+              "namespace" : "uniprot",
+              "id" : "P56524",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0138" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1385316812" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1312042906" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:-1540437082" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ],
+        "T:-1345146961" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "conj_and"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-143470665" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1385316812" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 15
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 126,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-143470665",
+    "text" : "HDAC4 overexpression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1449824154",
+      "text" : "overexpression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 6,
+      "characterEndOffset" : 20,
+      "sentence" : 0,
+      "document" : "1564380193",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1385316812",
+        "text" : "HDAC4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "1564380193",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDAC4",
+          "namespace" : "uniprot",
+          "id" : "P56524",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0138" ]
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1385316812" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "1564380193",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0138" ]
+    },
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

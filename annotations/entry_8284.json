@@ -1,0 +1,462 @@
+{
+  "documents" : {
+    "-1267684534" : {
+      "id" : "sentence_annotator",
+      "text" : "These data indicate that SIRT1 might negatively regulate Notch signalling by promoting NICD degradation.",
+      "sentences" : [ {
+        "words" : [ "These", "data", "indicate", "that", "SIRT1", "might", "negatively", "regulate", "Notch", "signalling", "by", "promoting", "NICD", "degradation", "." ],
+        "startOffsets" : [ 0, 6, 11, 20, 25, 31, 37, 48, 57, 63, 74, 77, 87, 92, 103 ],
+        "endOffsets" : [ 5, 10, 19, 24, 30, 36, 47, 56, 62, 73, 76, 86, 91, 103, 104 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "NN", "MD", "RB", "VB", "NN", "NN", "IN", "VBG", "NNP", "NN", "." ],
+        "lemmas" : [ "these", "datum", "indicate", "that", "sirt1", "might", "negatively", "regulate", "notch", "signalling", "by", "promote", "NICD", "degradation", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pcomp"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:269600478",
+    "text" : "SIRT1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "-1267684534",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1789266433",
+    "text" : "Notch",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-1267684534",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "NOTCH",
+      "namespace" : "pfam",
+      "id" : "PF00066",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-707102415",
+    "text" : "NICD",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 87,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "-1267684534",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Translocation-associated notch protein TAN-1",
+      "namespace" : "uniprot",
+      "id" : "P46531",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-179261602",
+    "text" : "SIRT1 might negatively regulate Notch",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1111632139",
+      "text" : "negatively regulate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 8
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "-1267684534",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1789266433",
+        "text" : "Notch",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "NOTCH",
+          "namespace" : "pfam",
+          "id" : "PF00066",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:269600478",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1789266433" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-707102415" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:269600478" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-1267684534",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:197138727",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-278840987",
+    "text" : "SIRT1 might negatively regulate Notch signalling by promoting NICD",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904855770",
+      "text" : "negatively regulate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 8
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "-1267684534",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-707102415",
+        "text" : "NICD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 87,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Translocation-associated notch protein TAN-1",
+          "namespace" : "uniprot",
+          "id" : "P46531",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:269600478",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1789266433" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ],
+        "T:-707102415" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:269600478" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "-1267684534",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:197138727",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-1267684534",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

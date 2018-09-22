@@ -1,0 +1,847 @@
+{
+  "documents" : {
+    "-720040922" : {
+      "id" : "sentence_annotator",
+      "text" : "Over-expression of Wnt5a antagonized RA mediated down-regulation of Myf5 and MyoD in C2C12 cells.",
+      "sentences" : [ {
+        "words" : [ "Over-expression", "of", "Wnt5a", "antagonized", "RA", "mediated", "down-regulation", "of", "Myf5", "and", "MyoD", "in", "C2C12", "cells", "." ],
+        "startOffsets" : [ 0, 16, 19, 25, 37, 40, 49, 65, 68, 73, 77, 82, 85, 91, 96 ],
+        "endOffsets" : [ 15, 18, 24, 36, 39, 48, 64, 67, 72, 76, 81, 84, 90, 96, 97 ],
+        "tags" : [ "NN", "IN", "NN", "VBD", "NN", "VBD", "NN", "IN", "NN", "CC", "NN", "IN", "NN", "NNS", "." ],
+        "lemmas" : [ "over-expression", "of", "wnt5a", "antagonize", "ra", "mediate", "down-regulation", "of", "myf5", "and", "myod", "in", "c2c12", "cell", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1118846645",
+    "text" : "Wnt5a",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein Wnt-5a",
+      "namespace" : "uniprot",
+      "id" : "P41221",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:61644801",
+    "text" : "RA",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "RA",
+      "namespace" : "pfam",
+      "id" : "PF00788",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:4029610",
+    "text" : "Myf5",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 68,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "bHLHc2",
+      "namespace" : "uniprot",
+      "id" : "P13349",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1424062515",
+    "text" : "MyoD",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MYF3",
+      "namespace" : "uniprot",
+      "id" : "P15172",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-34766592",
+    "text" : "RA mediated down-regulation of Myf5",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1402651809",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "-720040922",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:4029610",
+        "text" : "Myf5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 68,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "bHLHc2",
+          "namespace" : "uniprot",
+          "id" : "P13349",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:61644801",
+        "text" : "RA",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "RA",
+          "namespace" : "pfam",
+          "id" : "PF00788",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:4029610" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:-1424062515" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:61644801" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1428897503",
+    "text" : "RA mediated down-regulation of Myf5 and MyoD",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1402651809",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "-720040922",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1424062515",
+        "text" : "MyoD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MYF3",
+          "namespace" : "uniprot",
+          "id" : "P15172",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:61644801",
+        "text" : "RA",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "RA",
+          "namespace" : "pfam",
+          "id" : "PF00788",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:4029610" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:-1424062515" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:61644801" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1196900626",
+    "text" : "Over-expression of Wnt5a",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:64476753",
+      "text" : "Over-expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-720040922",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1118846645",
+        "text" : "Wnt5a",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein Wnt-5a",
+          "namespace" : "uniprot",
+          "id" : "P41221",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1118846645" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-718054377",
+    "text" : "Over-expression of Wnt5a antagonized RA mediated down-regulation of Myf5",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1051131399",
+      "text" : "antagonized",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "-720040922",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:4029610",
+        "text" : "Myf5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 68,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "bHLHc2",
+          "namespace" : "uniprot",
+          "id" : "P13349",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1196900626",
+        "text" : "Over-expression of Wnt5a",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:64476753",
+          "text" : "Over-expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-720040922",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1118846645",
+            "text" : "Wnt5a",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 24,
+            "sentence" : 0,
+            "document" : "-720040922",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Protein Wnt-5a",
+              "namespace" : "uniprot",
+              "id" : "P41221",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1118846645" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:4029610" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "ccomp"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:-1424062515" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "ccomp"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-1196900626" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:-1118846645" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-886230031",
+    "text" : "Over-expression of Wnt5a antagonized RA mediated down-regulation of Myf5 and MyoD",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1051131399",
+      "text" : "antagonized",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "-720040922",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1424062515",
+        "text" : "MyoD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MYF3",
+          "namespace" : "uniprot",
+          "id" : "P15172",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1196900626",
+        "text" : "Over-expression of Wnt5a",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:64476753",
+          "text" : "Over-expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-720040922",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1118846645",
+            "text" : "Wnt5a",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 24,
+            "sentence" : 0,
+            "document" : "-720040922",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Protein Wnt-5a",
+              "namespace" : "uniprot",
+              "id" : "P41221",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1118846645" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-720040922",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:4029610" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "ccomp"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:-1424062515" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "ccomp"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-1196900626" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:-1118846645" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "-720040922",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

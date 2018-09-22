@@ -1,0 +1,267 @@
+{
+  "documents" : {
+    "-1985690238" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Moreover, sustained activation of JNK1 downregulated p53 during apoptosis.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Moreover", ",", "sustained", "activation", "of", "JNK1", "downregulated", "p53", "during", "apoptosis", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 21, 32, 35, 40, 54, 58, 65, 74, 75 ],
+        "endOffsets" : [ 1, 9, 10, 20, 31, 34, 39, 53, 57, 64, 74, 75, 76 ],
+        "tags" : [ "``", "RB", ",", "JJ", "NN", "IN", "NN", "VBD", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "moreover", ",", "sustained", "activation", "of", "jnk1", "downregulate", "p53", "during", "apoptosis", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep_during"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "punct"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:550466687",
+    "text" : "JNK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "-1985690238",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JNK1",
+      "namespace" : "uniprot",
+      "id" : "P45983",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-164411003",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-1985690238",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-976142983",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-1985690238",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-437720305",
+    "text" : "JNK1 downregulated p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1087794216",
+      "text" : "downregulated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "-1985690238",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-164411003",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-1985690238",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:550466687",
+        "text" : "JNK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "-1985690238",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JNK1",
+          "namespace" : "uniprot",
+          "id" : "P45983",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-164411003" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:550466687" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 9
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-1985690238",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

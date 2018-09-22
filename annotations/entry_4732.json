@@ -1,0 +1,648 @@
+{
+  "documents" : {
+    "762366034" : {
+      "id" : "sentence_annotator",
+      "text" : "\"U0126 is a selective inhibitor of MEK1 and MEK2, which inhibit ERK1/2 activation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "U0126", "is", "a", "selective", "inhibitor", "of", "MEK1", "and", "MEK2", ",", "which", "inhibit", "ERK1/2", "activation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 10, 12, 22, 32, 35, 40, 44, 48, 50, 56, 64, 71, 81, 82 ],
+        "endOffsets" : [ 1, 6, 9, 11, 21, 31, 34, 39, 43, 48, 49, 55, 63, 70, 81, 82, 83 ],
+        "tags" : [ "``", "NN", "VBZ", "DT", "JJ", "NN", "IN", "NN", "CC", "NN", ",", "WDT", "VBP", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "u0126", "be", "a", "selective", "inhibitor", "of", "mek1", "and", "mek2", ",", "which", "inhibit", "erk1/2", "activation", ".", "\"" ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "rcmod"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "rcmod"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1534247585",
+    "text" : "U0126",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "U 0126",
+      "namespace" : "pubchem",
+      "id" : "3006531",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:83538847",
+    "text" : "MEK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MEK 1",
+      "namespace" : "uniprot",
+      "id" : "Q02750",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1199848775",
+    "text" : "MEK2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PRKMK2",
+      "namespace" : "uniprot",
+      "id" : "P36507",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:350721667",
+    "text" : "ERK1/2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERKs",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1760896364",
+    "text" : "U0126 is a selective inhibitor of MEK1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1885419194",
+      "text" : "is a selective inhibitor",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 6
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "762366034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_copula_1"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1534247585",
+        "text" : "U0126",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "U 0126",
+          "namespace" : "pubchem",
+          "id" : "3006531",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:83538847",
+        "text" : "MEK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MEK 1",
+          "namespace" : "uniprot",
+          "id" : "Q02750",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:-1534247585" : [ {
+          "source" : 5,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:83538847" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "T:1199848775" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_copula_1",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-198133833",
+    "text" : "U0126 is a selective inhibitor of MEK1 and MEK2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1885419194",
+      "text" : "is a selective inhibitor",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 6
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "762366034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_copula_1"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1534247585",
+        "text" : "U0126",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "U 0126",
+          "namespace" : "pubchem",
+          "id" : "3006531",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1199848775",
+        "text" : "MEK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PRKMK2",
+          "namespace" : "uniprot",
+          "id" : "P36507",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:-1534247585" : [ {
+          "source" : 5,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:83538847" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "T:1199848775" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 10
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_copula_1",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1509072525",
+    "text" : "MEK1 and MEK2, which inhibit ERK1/2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-130234228",
+      "text" : "inhibit",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 63,
+      "sentence" : 0,
+      "document" : "762366034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:350721667",
+        "text" : "ERK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:83538847",
+        "text" : "MEK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MEK 1",
+          "namespace" : "uniprot",
+          "id" : "Q02750",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:350721667" : [ {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:83538847" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "rcmod"
+        } ],
+        "T:1199848775" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "rcmod"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 14
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:276533366",
+    "text" : "MEK2, which inhibit ERK1/2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-130234228",
+      "text" : "inhibit",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 63,
+      "sentence" : 0,
+      "document" : "762366034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:350721667",
+        "text" : "ERK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1199848775",
+        "text" : "MEK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "762366034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PRKMK2",
+          "namespace" : "uniprot",
+          "id" : "P36507",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:350721667" : [ {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:83538847" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "rcmod"
+        } ],
+        "T:1199848775" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "rcmod"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 14
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "762366034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

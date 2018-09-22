@@ -1,0 +1,370 @@
+{
+  "documents" : {
+    "2136941039" : {
+      "id" : "sentence_annotator",
+      "text" : "Tgfbr1 haploinsufficiency impairs Smad2 and Smad3 signaling.",
+      "sentences" : [ {
+        "words" : [ "Tgfbr1", "haploinsufficiency", "impairs", "Smad2", "and", "Smad3", "signaling", "." ],
+        "startOffsets" : [ 0, 7, 26, 34, 40, 44, 50, 59 ],
+        "endOffsets" : [ 6, 25, 33, 39, 43, 49, 59, 60 ],
+        "tags" : [ "NN", "NN", "VBZ", "NN", "CC", "NN", "NN", "." ],
+        "lemmas" : [ "tgfbr1", "haploinsufficiency", "impair", "smad2", "and", "smad3", "signaling", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-52648061",
+    "text" : "Tgfbr1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "2136941039",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TGF-beta receptor type-1",
+      "namespace" : "uniprot",
+      "id" : "P36897",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:958290515",
+    "text" : "Smad2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "2136941039",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JV18-1",
+      "namespace" : "uniprot",
+      "id" : "Q15796",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-278582546",
+    "text" : "Smad3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "2136941039",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SMAD3",
+      "namespace" : "uniprot",
+      "id" : "P84022",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1469190307",
+    "text" : "Tgfbr1 haploinsufficiency impairs Smad2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2018962394",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "2136941039",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:958290515",
+        "text" : "Smad2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 39,
+        "sentence" : 0,
+        "document" : "2136941039",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JV18-1",
+          "namespace" : "uniprot",
+          "id" : "Q15796",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-52648061",
+        "text" : "Tgfbr1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "2136941039",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TGF-beta receptor type-1",
+          "namespace" : "uniprot",
+          "id" : "P36897",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:958290515" : [ {
+          "source" : 2,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-278582546" : [ {
+          "source" : 2,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-52648061" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "2136941039",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:972349278",
+    "text" : "Tgfbr1 haploinsufficiency impairs Smad2 and Smad3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2018962394",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "2136941039",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-278582546",
+        "text" : "Smad3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "2136941039",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SMAD3",
+          "namespace" : "uniprot",
+          "id" : "P84022",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-52648061",
+        "text" : "Tgfbr1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "2136941039",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TGF-beta receptor type-1",
+          "namespace" : "uniprot",
+          "id" : "P36897",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:958290515" : [ {
+          "source" : 2,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-278582546" : [ {
+          "source" : 2,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-52648061" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "2136941039",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

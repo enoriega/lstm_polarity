@@ -1,0 +1,428 @@
+{
+  "documents" : {
+    "20062700" : {
+      "id" : "sentence_annotator",
+      "text" : "XREF_BIBR found that thrombin induced PAR-1 activation reduces alkaline phosphatase activity.",
+      "sentences" : [ {
+        "words" : [ "XREF_BIBR", "found", "that", "thrombin", "induced", "PAR-1", "activation", "reduces", "alkaline", "phosphatase", "activity", "." ],
+        "startOffsets" : [ 0, 10, 16, 21, 30, 38, 44, 55, 63, 72, 84, 92 ],
+        "endOffsets" : [ 9, 15, 20, 29, 37, 43, 54, 62, 71, 83, 92, 93 ],
+        "tags" : [ "NN", "VBD", "IN", "NN", "VBD", "NN", "NN", "VBZ", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "xref_bibr", "find", "that", "thrombin", "induce", "par-1", "activation", "reduce", "alkaline", "phosphatase", "activity", "." ],
+        "entities" : [ "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O", "B-Family", "I-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1288917695",
+    "text" : "thrombin",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "20062700",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PROTHROMBIN",
+      "namespace" : "interpro",
+      "id" : "IPR003966",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-795281476",
+    "text" : "PAR-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "20062700",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PAR1",
+      "namespace" : "uniprot",
+      "id" : "P25116",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1265389787",
+    "text" : "alkaline phosphatase",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "20062700",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Alkaline phosphatase",
+      "namespace" : "pfam",
+      "id" : "PF00245",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2022626559",
+    "text" : "thrombin induced PAR-1 activation reduces alkaline phosphatase",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1760742814",
+      "text" : "reduces",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "20062700",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1265389787",
+        "text" : "alkaline phosphatase",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "20062700",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Alkaline phosphatase",
+          "namespace" : "pfam",
+          "id" : "PF00245",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:958099984",
+        "text" : "thrombin induced PAR-1",
+        "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-2082266348",
+          "text" : "induced",
+          "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 30,
+          "characterEndOffset" : 37,
+          "sentence" : 0,
+          "document" : "20062700",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1288917695",
+            "text" : "thrombin",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 21,
+            "characterEndOffset" : 29,
+            "sentence" : 0,
+            "document" : "20062700",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PROTHROMBIN",
+              "namespace" : "interpro",
+              "id" : "IPR003966",
+              "species" : "human"
+            },
+            "displayLabel" : "Family"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-795281476",
+            "text" : "PAR-1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 38,
+            "characterEndOffset" : 43,
+            "sentence" : 0,
+            "document" : "20062700",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PAR1",
+              "namespace" : "uniprot",
+              "id" : "P25116",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "20062700",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Negative_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1265389787" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-795281476" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "E:958099984" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "20062700",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:958099984",
+    "text" : "thrombin induced PAR-1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2082266348",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "20062700",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1288917695",
+        "text" : "thrombin",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "20062700",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PROTHROMBIN",
+          "namespace" : "interpro",
+          "id" : "IPR003966",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-795281476",
+        "text" : "PAR-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "20062700",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PAR1",
+          "namespace" : "uniprot",
+          "id" : "P25116",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "20062700",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

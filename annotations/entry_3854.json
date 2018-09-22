@@ -1,0 +1,1030 @@
+{
+  "documents" : {
+    "-1492890801" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Imatinib, a phenylaminopyrimidine TKI specifically targets BCR-ABL1, KIT, and PDGFR kinases.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Imatinib", ",", "a", "phenylaminopyrimidine", "TKI", "specifically", "targets", "BCR-ABL1", ",", "KIT", ",", "and", "PDGFR", "kinases", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 13, 35, 39, 52, 60, 68, 70, 73, 75, 79, 85, 92, 93 ],
+        "endOffsets" : [ 1, 9, 10, 12, 34, 38, 51, 59, 68, 69, 73, 74, 78, 84, 92, 93, 94 ],
+        "tags" : [ "``", "NNP", ",", "DT", "NN", "NN", "RB", "VBZ", "NN", ",", "NN", ",", "CC", "NN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "Imatinib", ",", "a", "phenylaminopyrimidine", "tkus", "specifically", "target", "bcr-abl1", ",", "kit", ",", "and", "pdgfr", "kinase", ".", "\"" ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "O", "B-NP", "O", "O", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2065770965",
+    "text" : "Imatinib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Imatinib",
+      "namespace" : "pubchem",
+      "id" : "5291",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1796868283",
+    "text" : "phenylaminopyrimidine TKI",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "phenylaminopyrimidine TKI",
+      "namespace" : "uaz",
+      "id" : "UAZ01098",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1772381421",
+    "text" : "BCR-ABL1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCR-ABL1",
+      "namespace" : "uaz",
+      "id" : "UAZ01099",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1811528672",
+    "text" : "KIT",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PBT",
+      "namespace" : "uniprot",
+      "id" : "P10721",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1681182792",
+    "text" : "PDGFR",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PDGFR",
+      "namespace" : "be",
+      "id" : "PDGFR",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:381040387",
+    "text" : "Imatinib, a phenylaminopyrimidine TKI specifically targets BCR-ABL1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1772381421",
+        "text" : "BCR-ABL1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCR-ABL1",
+          "namespace" : "uaz",
+          "id" : "UAZ01099",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2065770965",
+        "text" : "Imatinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Imatinib",
+          "namespace" : "pubchem",
+          "id" : "5291",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1038238720",
+    "text" : "Imatinib, a phenylaminopyrimidine TKI specifically targets BCR-ABL1, KIT",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1811528672",
+        "text" : "KIT",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PBT",
+          "namespace" : "uniprot",
+          "id" : "P10721",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2065770965",
+        "text" : "Imatinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Imatinib",
+          "namespace" : "pubchem",
+          "id" : "5291",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1856549121",
+    "text" : "Imatinib, a phenylaminopyrimidine TKI specifically targets BCR-ABL1, KIT, and PDGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1681182792",
+        "text" : "PDGFR",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PDGFR",
+          "namespace" : "be",
+          "id" : "PDGFR",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2065770965",
+        "text" : "Imatinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Imatinib",
+          "namespace" : "pubchem",
+          "id" : "5291",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 14
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:175882887",
+    "text" : "phenylaminopyrimidine TKI specifically targets BCR-ABL1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1772381421",
+        "text" : "BCR-ABL1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCR-ABL1",
+          "namespace" : "uaz",
+          "id" : "UAZ01099",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796868283",
+        "text" : "phenylaminopyrimidine TKI",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phenylaminopyrimidine TKI",
+          "namespace" : "uaz",
+          "id" : "UAZ01098",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-376666619",
+    "text" : "phenylaminopyrimidine TKI specifically targets BCR-ABL1, KIT",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1811528672",
+        "text" : "KIT",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PBT",
+          "namespace" : "uniprot",
+          "id" : "P10721",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796868283",
+        "text" : "phenylaminopyrimidine TKI",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phenylaminopyrimidine TKI",
+          "namespace" : "uaz",
+          "id" : "UAZ01098",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-928913563",
+    "text" : "phenylaminopyrimidine TKI specifically targets BCR-ABL1, KIT, and PDGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1376913637",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1492890801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1681182792",
+        "text" : "PDGFR",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PDGFR",
+          "namespace" : "be",
+          "id" : "PDGFR",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796868283",
+        "text" : "phenylaminopyrimidine TKI",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-1492890801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phenylaminopyrimidine TKI",
+          "namespace" : "uaz",
+          "id" : "UAZ01098",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1772381421" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1811528672" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:-1681182792" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 14,
+          "relation" : "conj_and"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-2065770965" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1796868283" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 14
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1492890801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

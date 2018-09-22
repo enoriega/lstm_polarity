@@ -1,0 +1,463 @@
+{
+  "documents" : {
+    "339596697" : {
+      "id" : "sentence_annotator",
+      "text" : "SGK1 is activated by the serine/threonine kinase mammalian target of rapamycin (mTOR) isoform mTORC2.",
+      "sentences" : [ {
+        "words" : [ "SGK1", "is", "activated", "by", "the", "serine/threonine", "kinase", "mammalian", "target", "of", "rapamycin", "(", "mTOR", ")", "isoform", "mTORC2", "." ],
+        "startOffsets" : [ 0, 5, 8, 18, 21, 25, 42, 49, 59, 66, 69, 79, 80, 84, 86, 94, 100 ],
+        "endOffsets" : [ 4, 7, 17, 20, 24, 41, 48, 58, 65, 68, 78, 80, 84, 85, 93, 100, 101 ],
+        "tags" : [ "NN", "VBZ", "VBN", "IN", "DT", "NN", "NN", "JJ", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", "NN", "NN", "." ],
+        "lemmas" : [ "sgk1", "be", "activate", "by", "the", "serine/threonine", "kinase", "mammalian", "target", "of", "rapamycin", "(", "mtor", ")", "isoform", "mtorc2", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "agent"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:946895193",
+    "text" : "SGK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Serum/glucocorticoid-regulated kinase 1",
+      "namespace" : "uniprot",
+      "id" : "O00141",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-286662845",
+    "text" : "mammalian target of rapamycin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 11
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Rapamycin target protein 1",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1130919062",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-286662845",
+      "text" : "mammalian target of rapamycin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 11
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "339596697",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Rapamycin target protein 1",
+        "namespace" : "uniprot",
+        "id" : "P42345",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1300475479",
+    "text" : "mTORC2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 94,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTORC2",
+      "namespace" : "be",
+      "id" : "mTORC2",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:870593022",
+    "text" : "SGK1 is activated by the serine/threonine kinase mammalian target of rapamycin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-26883909",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 17,
+      "sentence" : 0,
+      "document" : "339596697",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:946895193",
+        "text" : "SGK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "339596697",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Serum/glucocorticoid-regulated kinase 1",
+          "namespace" : "uniprot",
+          "id" : "O00141",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-286662845",
+        "text" : "mammalian target of rapamycin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 11
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 78,
+        "sentence" : 0,
+        "document" : "339596697",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Rapamycin target protein 1",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:946895193" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-286662845" : [ {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "agent"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1300475479" : [ {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "agent"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        }, {
+          "source" : 10,
+          "destination" : 15,
+          "relation" : "dep"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-777563918",
+    "text" : "SGK1 is activated by the serine/threonine kinase mammalian target of rapamycin (mTOR) isoform mTORC2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-26883909",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 17,
+      "sentence" : 0,
+      "document" : "339596697",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:946895193",
+        "text" : "SGK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "339596697",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Serum/glucocorticoid-regulated kinase 1",
+          "namespace" : "uniprot",
+          "id" : "O00141",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1300475479",
+        "text" : "mTORC2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 100,
+        "sentence" : 0,
+        "document" : "339596697",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTORC2",
+          "namespace" : "be",
+          "id" : "mTORC2",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:946895193" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-286662845" : [ {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "agent"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1300475479" : [ {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "agent"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        }, {
+          "source" : 10,
+          "destination" : 15,
+          "relation" : "dep"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 16
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "339596697",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

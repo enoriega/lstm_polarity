@@ -1,0 +1,343 @@
+{
+  "documents" : {
+    "-2135883975" : {
+      "id" : "sentence_annotator",
+      "text" : "Pharmacological blockade of KCa3.1 by TRAM-34 similarly attenuated cisplatin induced AKI in mice.",
+      "sentences" : [ {
+        "words" : [ "Pharmacological", "blockade", "of", "KCa3", ".1", "by", "TRAM-34", "similarly", "attenuated", "cisplatin", "induced", "AKI", "in", "mice", "." ],
+        "startOffsets" : [ 0, 16, 25, 28, 32, 35, 38, 46, 56, 67, 77, 85, 89, 92, 96 ],
+        "endOffsets" : [ 15, 24, 27, 32, 34, 37, 45, 55, 66, 76, 84, 88, 91, 96, 97 ],
+        "tags" : [ "JJ", "NN", "IN", "NN", "CD", "IN", "NN", "RB", "VBD", "NN", "VBD", "NNP", "IN", "NNS", "." ],
+        "lemmas" : [ "pharmacological", "blockade", "of", "kca3", ".1", "by", "tram-34", "similarly", "attenuate", "cisplatin", "induce", "AKI", "in", "mouse", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Simple_chemical", "O", "B-CellLine", "O", "B-Species", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-ADVP", "B-VP", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "num"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "num"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_by"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep_in"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1651031669",
+    "text" : "KCa3.1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SK4",
+      "namespace" : "uniprot",
+      "id" : "O15554",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:595440579",
+    "text" : "TRAM-34",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TRAM-34",
+      "namespace" : "uaz",
+      "id" : "UAZ02157",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-720300475",
+    "text" : "cisplatin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "trans-Platinum(II) diamminedichloride",
+      "namespace" : "pubchem",
+      "id" : "441203",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:133192642",
+    "text" : "AKI",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 85,
+    "characterEndOffset" : 88,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "AKI",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_8170",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1882092951",
+    "text" : "mice",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 92,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Mouse",
+      "namespace" : "taxonomy",
+      "id" : "10090",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-9575790",
+    "text" : "blockade of KCa3.1 by TRAM-34",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1549696502",
+      "text" : "blockade",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "-2135883975",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1651031669",
+        "text" : "KCa3.1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "-2135883975",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SK4",
+          "namespace" : "uniprot",
+          "id" : "O15554",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_8170" ],
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:595440579",
+        "text" : "TRAM-34",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "-2135883975",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TRAM-34",
+          "namespace" : "uaz",
+          "id" : "UAZ02157",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_8170" ],
+          "Species" : [ "taxonomy:10090" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-2135883975",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_2_noun",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_8170" ],
+      "Species" : [ "taxonomy:10090" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

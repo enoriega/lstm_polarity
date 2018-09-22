@@ -1,0 +1,374 @@
+{
+  "documents" : {
+    "313100104" : {
+      "id" : "sentence_annotator",
+      "text" : "The Rheb activates mTOR by antagonizing its endogenous inhibitor FKBP38.",
+      "sentences" : [ {
+        "words" : [ "The", "Rheb", "activates", "mTOR", "by", "antagonizing", "its", "endogenous", "inhibitor", "FKBP38", "." ],
+        "startOffsets" : [ 0, 4, 9, 19, 24, 27, 40, 44, 55, 65, 71 ],
+        "endOffsets" : [ 3, 8, 18, 23, 26, 39, 43, 54, 64, 71, 72 ],
+        "tags" : [ "DT", "NNP", "VBZ", "NN", "IN", "VBG", "PRP$", "JJ", "NN", "NN", "." ],
+        "lemmas" : [ "the", "Rheb", "activate", "mtor", "by", "antagonize", "its", "endogenous", "inhibitor", "fkbp38", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pcomp"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "poss"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "poss"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-265038018",
+    "text" : "Rheb",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "313100104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "RHEB",
+      "namespace" : "uniprot",
+      "id" : "Q15382",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1264794820",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "313100104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:203484412",
+    "text" : "FKBP38",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "313100104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "FKBP-38",
+      "namespace" : "uniprot",
+      "id" : "Q14318",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-708066937",
+    "text" : "Rheb activates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-938263393",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "313100104",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1264794820",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "313100104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-265038018",
+        "text" : "Rheb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "313100104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RHEB",
+          "namespace" : "uniprot",
+          "id" : "Q15382",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1264794820" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ],
+        "T:203484412" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-265038018" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "313100104",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1631181253",
+    "text" : "Rheb activates mTOR by antagonizing its endogenous inhibitor FKBP38",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-938263393",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "313100104",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:203484412",
+        "text" : "FKBP38",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 65,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "313100104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FKBP-38",
+          "namespace" : "uniprot",
+          "id" : "Q14318",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-265038018",
+        "text" : "Rheb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "313100104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RHEB",
+          "namespace" : "uniprot",
+          "id" : "Q15382",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1264794820" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ],
+        "T:203484412" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-265038018" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 10
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "313100104",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

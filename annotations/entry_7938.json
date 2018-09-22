@@ -1,0 +1,354 @@
+{
+  "documents" : {
+    "1445688530" : {
+      "id" : "sentence_annotator",
+      "text" : "\"By inhibiting gastric COX-1, aspirin may reduce mucosal blood flow, causing local ischemic injury.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "By", "inhibiting", "gastric", "COX-1", ",", "aspirin", "may", "reduce", "mucosal", "blood", "flow", ",", "causing", "local", "ischemic", "injury", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 15, 23, 28, 30, 38, 42, 49, 57, 63, 67, 69, 77, 83, 92, 98, 99 ],
+        "endOffsets" : [ 1, 3, 14, 22, 28, 29, 37, 41, 48, 56, 62, 67, 68, 76, 82, 91, 98, 99, 100 ],
+        "tags" : [ "``", "IN", "VBG", "JJ", "NN", ",", "NN", "MD", "VB", "JJ", "NN", "NN", ",", "VBG", "JJ", "JJ", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "by", "inhibit", "gastric", "cox-1", ",", "aspirin", "may", "reduce", "mucosal", "blood", "flow", ",", "cause", "local", "ischemic", "injury", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O", "O", "B-TissueType", "O", "O", "O", "O", "O", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pcomp"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 8,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1440170348",
+    "text" : "COX-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "1445688530",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PGHS-1",
+      "namespace" : "uniprot",
+      "id" : "P23219",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0079" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-991994407",
+    "text" : "aspirin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "1445688530",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "2-Acetoxybenzoate",
+      "namespace" : "pubchem",
+      "id" : "2244",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0079" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-630406895",
+    "text" : "blood",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1445688530",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Blood",
+      "namespace" : "tissuelist",
+      "id" : "TS-0079",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0079" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-95353133",
+    "text" : "injury",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 92,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "1445688530",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "Injury",
+      "namespace" : "go",
+      "id" : "GO:0090303",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0079" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1159635295",
+    "text" : "COX-1, aspirin may reduce",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1030299858",
+      "text" : "reduce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 42,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "1445688530",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1440170348",
+        "text" : "COX-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "1445688530",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PGHS-1",
+          "namespace" : "uniprot",
+          "id" : "P23219",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0079" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-991994407",
+        "text" : "aspirin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "1445688530",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "2-Acetoxybenzoate",
+          "namespace" : "pubchem",
+          "id" : "2244",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0079" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1440170348" : [ {
+          "source" : 8,
+          "destination" : 2,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-991994407" : [ {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1445688530",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0079" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

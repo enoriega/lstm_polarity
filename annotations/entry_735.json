@@ -1,0 +1,253 @@
+{
+  "documents" : {
+    "-1698810906" : {
+      "id" : "sentence_annotator",
+      "text" : "IR down-regulation and synaptic loss are markedly decreased by insulin treatment.",
+      "sentences" : [ {
+        "words" : [ "IR", "down-regulation", "and", "synaptic", "loss", "are", "markedly", "decreased", "by", "insulin", "treatment", "." ],
+        "startOffsets" : [ 0, 3, 19, 23, 32, 37, 41, 50, 60, 63, 71, 80 ],
+        "endOffsets" : [ 2, 18, 22, 31, 36, 40, 49, 59, 62, 70, 80, 81 ],
+        "tags" : [ "NN", "NN", "CC", "JJ", "NN", "VBP", "RB", "VBN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "ir", "down-regulation", "and", "synaptic", "loss", "be", "markedly", "decrease", "by", "insulin", "treatment", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "agent"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1264553172",
+    "text" : "IR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 2,
+    "sentence" : 0,
+    "document" : "-1698810906",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor subunit beta",
+      "namespace" : "uniprot",
+      "id" : "P06213",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1878738619",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-1698810906",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:679413159",
+    "text" : "IR down-regulation and synaptic loss are markedly decreased by insulin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1761753724",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1698810906",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1264553172",
+        "text" : "IR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 2,
+        "sentence" : 0,
+        "document" : "-1698810906",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin receptor subunit beta",
+          "namespace" : "uniprot",
+          "id" : "P06213",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1878738619",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "-1698810906",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1264553172" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1878738619" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "agent"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-1698810906",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

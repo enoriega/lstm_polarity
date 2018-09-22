@@ -1,0 +1,977 @@
+{
+  "documents" : {
+    "302211577" : {
+      "id" : "sentence_annotator",
+      "text" : "\"However, rIL-10 and RA rescued LPS mediated ERK activation in MEK1 deficient macrophages.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "However", ",", "rIL-10", "and", "RA", "rescued", "LPS", "mediated", "ERK", "activation", "in", "MEK1", "deficient", "macrophages", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 10, 17, 21, 24, 32, 36, 45, 49, 60, 63, 68, 78, 89, 90 ],
+        "endOffsets" : [ 1, 8, 9, 16, 20, 23, 31, 35, 44, 48, 59, 62, 67, 77, 89, 90, 91 ],
+        "tags" : [ "``", "RB", ",", "NN", "CC", "NN", "VBD", "NN", "JJ", "NN", "NN", "IN", "NN", "JJ", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "however", ",", "ril-10", "and", "ra", "rescue", "lp", "mediated", "erk", "activation", "in", "mek1", "deficient", "macrophage", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Family", "O", "B-Simple_chemical", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "O", "B-CellType", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "prep_in"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:126850532",
+    "text" : "RA rescued LPS mediated ERK",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1959203823",
+      "text" : "rescued",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "302211577",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:151534660",
+        "text" : "LPS mediated ERK",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:392313473",
+          "text" : "mediated",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 8,
+            "end" : 9
+          },
+          "characterStartOffset" : 36,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "302211577",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-148497505",
+            "text" : "LPS",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 32,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "LPS with O-antigen",
+              "namespace" : "pubchem",
+              "id" : "53481793",
+              "species" : ""
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Simple_chemical"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1260215300",
+            "text" : "ERK",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 45,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "ERK",
+              "namespace" : "be",
+              "id" : "ERK",
+              "species" : "human"
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 10
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:599053924",
+        "text" : "RA",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "RA",
+          "namespace" : "pfam",
+          "id" : "PF00788",
+          "species" : ""
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:151534660" : [ {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:599053924" : [ {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 10
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:599053924",
+    "text" : "RA",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "RA",
+      "namespace" : "pfam",
+      "id" : "PF00788",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-148497505",
+    "text" : "LPS",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "LPS with O-antigen",
+      "namespace" : "pubchem",
+      "id" : "53481793",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1260215300",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:370500882",
+    "text" : "MEK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MEK 1",
+      "namespace" : "uniprot",
+      "id" : "Q02750",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1888282338",
+    "text" : "macrophages",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "histiocyte",
+      "namespace" : "cl",
+      "id" : "CL:0000235",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:151534660",
+    "text" : "LPS mediated ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:392313473",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "302211577",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-148497505",
+        "text" : "LPS",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "LPS with O-antigen",
+          "namespace" : "pubchem",
+          "id" : "53481793",
+          "species" : ""
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1260215300",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-843590576",
+    "text" : "RA rescued LPS mediated ERK activation in MEK1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1255731100",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "302211577",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:370500882",
+        "text" : "MEK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MEK 1",
+          "namespace" : "uniprot",
+          "id" : "Q02750",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:126850532",
+        "text" : "RA rescued LPS mediated ERK",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1959203823",
+          "text" : "rescued",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 6,
+            "end" : 7
+          },
+          "characterStartOffset" : 24,
+          "characterEndOffset" : 31,
+          "sentence" : 0,
+          "document" : "302211577",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:151534660",
+            "text" : "LPS mediated ERK",
+            "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:392313473",
+              "text" : "mediated",
+              "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 8,
+                "end" : 9
+              },
+              "characterStartOffset" : 36,
+              "characterEndOffset" : 44,
+              "sentence" : 0,
+              "document" : "302211577",
+              "keep" : true,
+              "foundBy" : "Positive_early_activation"
+            },
+            "arguments" : {
+              "controller" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-148497505",
+                "text" : "LPS",
+                "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 7,
+                  "end" : 8
+                },
+                "characterStartOffset" : 32,
+                "characterEndOffset" : 35,
+                "sentence" : 0,
+                "document" : "302211577",
+                "keep" : true,
+                "foundBy" : "ner-simple_chemical-entities",
+                "grounding" : {
+                  "text" : "LPS with O-antigen",
+                  "namespace" : "pubchem",
+                  "id" : "53481793",
+                  "species" : ""
+                },
+                "context" : {
+                  "CellType" : [ "cl:CL:0000235" ]
+                },
+                "displayLabel" : "Simple_chemical"
+              } ],
+              "controlled" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1260215300",
+                "text" : "ERK",
+                "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 9,
+                  "end" : 10
+                },
+                "characterStartOffset" : 45,
+                "characterEndOffset" : 48,
+                "sentence" : 0,
+                "document" : "302211577",
+                "keep" : true,
+                "foundBy" : "ner-family-entities",
+                "grounding" : {
+                  "text" : "ERK",
+                  "namespace" : "be",
+                  "id" : "ERK",
+                  "species" : "human"
+                },
+                "context" : {
+                  "CellType" : [ "cl:CL:0000235" ]
+                },
+                "displayLabel" : "Family"
+              } ]
+            },
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 10
+            },
+            "characterStartOffset" : 32,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "Positive_early_activation",
+            "displayLabel" : "Positive_activation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:599053924",
+            "text" : "RA",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 21,
+            "characterEndOffset" : 23,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "RA",
+              "namespace" : "pfam",
+              "id" : "PF00788",
+              "species" : ""
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:151534660" : [ {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:599053924" : [ {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 10
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:370500882" : [ {
+          "source" : 10,
+          "destination" : 14,
+          "relation" : "prep_in"
+        }, {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:151534660" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "E:126850532" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "T:1260215300" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 13
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:187330765",
+    "text" : "LPS mediated ERK activation in MEK1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1255731100",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "302211577",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:370500882",
+        "text" : "MEK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MEK 1",
+          "namespace" : "uniprot",
+          "id" : "Q02750",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:151534660",
+        "text" : "LPS mediated ERK",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:392313473",
+          "text" : "mediated",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 8,
+            "end" : 9
+          },
+          "characterStartOffset" : 36,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "302211577",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-148497505",
+            "text" : "LPS",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 32,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "LPS with O-antigen",
+              "namespace" : "pubchem",
+              "id" : "53481793",
+              "species" : ""
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Simple_chemical"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1260215300",
+            "text" : "ERK",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 45,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "302211577",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "ERK",
+              "namespace" : "be",
+              "id" : "ERK",
+              "species" : "human"
+            },
+            "context" : {
+              "CellType" : [ "cl:CL:0000235" ]
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 10
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "302211577",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:370500882" : [ {
+          "source" : 10,
+          "destination" : 14,
+          "relation" : "prep_in"
+        }, {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:151534660" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "E:126850532" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "T:1260215300" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "302211577",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "context" : {
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

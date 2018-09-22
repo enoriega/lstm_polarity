@@ -1,0 +1,305 @@
+{
+  "documents" : {
+    "-2145072905" : {
+      "id" : "sentence_annotator",
+      "text" : "Afatinib not only targets EGFR but also has an inhibitory effect on Her-2 [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "Afatinib", "not", "only", "targets", "EGFR", "but", "also", "has", "an", "inhibitory", "effect", "on", "Her-2", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 9, 13, 18, 26, 31, 35, 40, 44, 47, 58, 65, 68, 74, 75, 84, 85 ],
+        "endOffsets" : [ 8, 12, 17, 25, 30, 34, 39, 43, 46, 57, 64, 67, 73, 75, 84, 85, 86 ],
+        "tags" : [ "NNP", "RB", "RB", "VBZ", "NN", "CC", "RB", "VBZ", "DT", "JJ", "NN", "IN", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "Afatinib", "not", "only", "target", "egfr", "but", "also", "have", "a", "inhibitory", "effect", "on", "her-2", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-CONJP", "I-CONJP", "B-VP", "B-NP", "B-CONJP", "I-CONJP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "neg"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "preconj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "num"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "neg"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "preconj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj_but"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "prep_on"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "num"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1661456765",
+    "text" : "Afatinib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "-2145072905",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "(2E)-N-{4-[(3-chloro-4-fluorophenyl)amino]-7-[(3S)-tetrahydrofuran-3-yloxy]quinazolin-6-yl}-4-(dimethylamino)but-2-enamide",
+      "namespace" : "pubchem",
+      "id" : "10184653",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-613226387",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "-2145072905",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:968490290",
+    "text" : "Afatinib not only targets EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:37210593",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2145072905",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-613226387",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "-2145072905",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1661456765",
+        "text" : "Afatinib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "-2145072905",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "(2E)-N-{4-[(3-chloro-4-fluorophenyl)amino]-7-[(3S)-tetrahydrofuran-3-yloxy]quinazolin-6-yl}-4-(dimethylamino)but-2-enamide",
+          "namespace" : "pubchem",
+          "id" : "10184653",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-613226387" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1661456765" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "-2145072905",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-451133936",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 9,
+        "characterEndOffset" : 12,
+        "sentence" : 0,
+        "document" : "-2145072905",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

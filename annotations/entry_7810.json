@@ -1,0 +1,457 @@
+{
+  "documents" : {
+    "-1656477690" : {
+      "id" : "sentence_annotator",
+      "text" : "Treatment with the highly selective KCa3.1 blocker TRAM-34 suppressed cisplatin induced HK-2 cell apoptosis.",
+      "sentences" : [ {
+        "words" : [ "Treatment", "with", "the", "highly", "selective", "KCa3", ".1", "blocker", "TRAM-34", "suppressed", "cisplatin", "induced", "HK-2", "cell", "apoptosis", "." ],
+        "startOffsets" : [ 0, 10, 15, 19, 26, 36, 40, 43, 51, 59, 70, 80, 88, 93, 98, 107 ],
+        "endOffsets" : [ 9, 14, 18, 25, 35, 40, 42, 50, 58, 69, 79, 87, 92, 97, 107, 108 ],
+        "tags" : [ "NN", "IN", "DT", "RB", "JJ", "NN", "NN", "NN", "NN", "VBD", "NN", "VBD", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "treatment", "with", "the", "highly", "selective", "kca3", ".1", "blocker", "tram-34", "suppress", "cisplatin", "induce", "hk-2", "cell", "apoptosis", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "B-CellLine", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 8,
+              "relation" : "prep_with"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1231097707",
+    "text" : "KCa3.1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SK4",
+      "namespace" : "uniprot",
+      "id" : "O15554",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1388802115",
+    "text" : "TRAM-34",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TRAM-34",
+      "namespace" : "uaz",
+      "id" : "UAZ02157",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-89372458",
+    "text" : "cisplatin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "trans-Platinum(II) diamminedichloride",
+      "namespace" : "pubchem",
+      "id" : "441203",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1010818032",
+    "text" : "HK-2",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "Hk-2",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_0302",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:138294682",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 98,
+    "characterEndOffset" : 107,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:27700427",
+    "text" : "KCa3.1 blocker TRAM-34",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1613722667",
+      "text" : "blocker",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 43,
+      "characterEndOffset" : 50,
+      "sentence" : 0,
+      "document" : "-1656477690",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1231097707",
+        "text" : "KCa3.1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-1656477690",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SK4",
+          "namespace" : "uniprot",
+          "id" : "O15554",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0302" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1388802115",
+        "text" : "TRAM-34",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "-1656477690",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TRAM-34",
+          "namespace" : "uaz",
+          "id" : "UAZ02157",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0302" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 9
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_1_noun",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1284598117",
+    "text" : "cisplatin induced HK-2 cell apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1202989487",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 80,
+      "characterEndOffset" : 87,
+      "sentence" : 0,
+      "document" : "-1656477690",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:138294682",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 98,
+        "characterEndOffset" : 107,
+        "sentence" : 0,
+        "document" : "-1656477690",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0302" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-89372458",
+        "text" : "cisplatin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 79,
+        "sentence" : 0,
+        "document" : "-1656477690",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "trans-Platinum(II) diamminedichloride",
+          "namespace" : "pubchem",
+          "id" : "441203",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0302" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:138294682" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-89372458" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 15
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 107,
+    "sentence" : 0,
+    "document" : "-1656477690",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0302" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

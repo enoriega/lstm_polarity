@@ -1,0 +1,367 @@
+{
+  "documents" : {
+    "-304633029" : {
+      "id" : "sentence_annotator",
+      "text" : "CHO concentration can be decreased in foam cells by cooperation of ABCA1 and ApoA-I mediate cholesterol efflux.",
+      "sentences" : [ {
+        "words" : [ "CHO", "concentration", "can", "be", "decreased", "in", "foam", "cells", "by", "cooperation", "of", "ABCA1", "and", "ApoA-I", "mediate", "cholesterol", "efflux", "." ],
+        "startOffsets" : [ 0, 4, 18, 22, 25, 35, 38, 43, 49, 52, 64, 67, 73, 77, 84, 92, 104, 110 ],
+        "endOffsets" : [ 3, 17, 21, 24, 34, 37, 42, 48, 51, 63, 66, 72, 76, 83, 91, 103, 110, 111 ],
+        "tags" : [ "NN", "NN", "MD", "VB", "VBN", "IN", "NN", "NNS", "IN", "NN", "IN", "NN", "CC", "NN", "VBP", "NN", "NN", "." ],
+        "lemmas" : [ "cho", "concentration", "can", "be", "decrease", "in", "foam", "cell", "by", "cooperation", "of", "abca1", "and", "apoa-i", "mediate", "cholesterol", "efflux", "." ],
+        "entities" : [ "B-TissueType", "O", "O", "O", "O", "O", "B-CellType", "I-CellType", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 14 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "agent"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 14 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-914954253",
+    "text" : "CHO",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Ovarian carcinoma",
+      "namespace" : "tissuelist",
+      "id" : "TS-0725",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1674011847",
+    "text" : "foam cells",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "foam cell",
+      "namespace" : "cl",
+      "id" : "CL:0000891",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1103667100",
+    "text" : "ABCA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ABCA1",
+      "namespace" : "uniprot",
+      "id" : "O95477",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1352221554",
+    "text" : "ApoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1389739722",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 92,
+    "characterEndOffset" : 103,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:855909404",
+    "text" : "ApoA-I mediate cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1654848700",
+      "text" : "mediate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 84,
+      "characterEndOffset" : 91,
+      "sentence" : 0,
+      "document" : "-304633029",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1352221554",
+        "text" : "ApoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "-304633029",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0725" ],
+          "CellType" : [ "cl:CL:0000891" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1389739722",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 92,
+        "characterEndOffset" : 103,
+        "sentence" : 0,
+        "document" : "-304633029",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0725" ],
+          "CellType" : [ "cl:CL:0000891" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 16
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 103,
+    "sentence" : 0,
+    "document" : "-304633029",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0725" ],
+      "CellType" : [ "cl:CL:0000891" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

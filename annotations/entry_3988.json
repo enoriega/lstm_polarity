@@ -1,0 +1,205 @@
+{
+  "documents" : {
+    "-714612948" : {
+      "id" : "sentence_annotator",
+      "text" : "IL-15Ralpha is rapidly depleted by IL-15.",
+      "sentences" : [ {
+        "words" : [ "IL-15Ralpha", "is", "rapidly", "depleted", "by", "IL-15", "." ],
+        "startOffsets" : [ 0, 12, 15, 23, 32, 35, 40 ],
+        "endOffsets" : [ 11, 14, 22, 31, 34, 40, 41 ],
+        "tags" : [ "NNP", "VBZ", "RB", "VBN", "IN", "NN", "." ],
+        "lemmas" : [ "IL-15Ralpha", "be", "rapidly", "deplete", "by", "il-15", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "agent"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1785267595",
+    "text" : "IL-15Ralpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "-714612948",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL-15 receptor subunit alpha",
+      "namespace" : "uniprot",
+      "id" : "Q13261",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-849331528",
+    "text" : "IL-15",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-714612948",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interleukin-15",
+      "namespace" : "uniprot",
+      "id" : "P40933",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-576280272",
+    "text" : "IL-15Ralpha is rapidly depleted by IL-15",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1400717430",
+      "text" : "depleted",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "-714612948",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1785267595",
+        "text" : "IL-15Ralpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-714612948",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL-15 receptor subunit alpha",
+          "namespace" : "uniprot",
+          "id" : "Q13261",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-849331528",
+        "text" : "IL-15",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-714612948",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interleukin-15",
+          "namespace" : "uniprot",
+          "id" : "P40933",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1785267595" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-849331528" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-714612948",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

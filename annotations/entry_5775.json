@@ -1,0 +1,609 @@
+{
+  "documents" : {
+    "-1147916618" : {
+      "id" : "sentence_annotator",
+      "text" : "In hepatocytes insulin suppresses HGP by stimulating AKT to inhibit FOXO1.",
+      "sentences" : [ {
+        "words" : [ "In", "hepatocytes", "insulin", "suppresses", "HGP", "by", "stimulating", "AKT", "to", "inhibit", "FOXO1", "." ],
+        "startOffsets" : [ 0, 3, 15, 23, 34, 38, 41, 53, 57, 60, 68, 73 ],
+        "endOffsets" : [ 2, 14, 22, 33, 37, 40, 52, 56, 59, 67, 73, 74 ],
+        "tags" : [ "IN", "NNS", "NN", "VBZ", "NN", "IN", "VBG", "NNP", "TO", "VB", "NN", "." ],
+        "lemmas" : [ "in", "hepatocyte", "insulin", "suppress", "hgp", "by", "stimulate", "AKT", "to", "inhibit", "foxo1", "." ],
+        "entities" : [ "O", "B-TissueType", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-VP", "B-NP", "B-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pcomp"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "prep_in"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1288581759",
+    "text" : "hepatocytes",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 3,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Liver parenchymal cell",
+      "namespace" : "tissuelist",
+      "id" : "TS-0454",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1796276315",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1530945543",
+    "text" : "HGP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HGP",
+      "namespace" : "uaz",
+      "id" : "UAZ01647",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:323857246",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:896024701",
+    "text" : "FOXO1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 68,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Forkhead box protein O1",
+      "namespace" : "uniprot",
+      "id" : "Q12778",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1573757112",
+    "text" : "insulin suppresses HGP by stimulating AKT to inhibit FOXO1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1009270446",
+      "text" : "suppresses",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-1147916618",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:896024701",
+        "text" : "FOXO1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 68,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Forkhead box protein O1",
+          "namespace" : "uniprot",
+          "id" : "Q12778",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796276315",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1530945543" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:323857246" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:896024701" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1796276315" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 11
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1576617523",
+    "text" : "insulin suppresses HGP",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1945491278",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-1147916618",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1530945543",
+        "text" : "HGP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HGP",
+          "namespace" : "uaz",
+          "id" : "UAZ01647",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796276315",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1530945543" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:323857246" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:896024701" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1796276315" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-32096385",
+    "text" : "insulin suppresses HGP by stimulating AKT",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1945491278",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-1147916618",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:323857246",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796276315",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "-1147916618",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0454" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1530945543" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:323857246" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:896024701" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1796276315" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 8
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-1147916618",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0454" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

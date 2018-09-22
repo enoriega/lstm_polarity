@@ -1,0 +1,745 @@
+{
+  "documents" : {
+    "890205392" : {
+      "id" : "sentence_annotator",
+      "text" : "\"During apoptosis, DFF-40 and CAD is activated by caspase-3-mediated cleavage of DFF45 and ICAD.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "During", "apoptosis", ",", "DFF-40", "and", "CAD", "is", "activated", "by", "caspase-3-mediated", "cleavage", "of", "DFF45", "and", "ICAD", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 17, 19, 26, 30, 34, 37, 47, 50, 69, 78, 81, 87, 91, 95, 96 ],
+        "endOffsets" : [ 1, 7, 17, 18, 25, 29, 33, 36, 46, 49, 68, 77, 80, 86, 90, 95, 96, 97 ],
+        "tags" : [ "``", "IN", "NN", ",", "NN", "CC", "NN", "VBZ", "VBN", "IN", "JJ", "NN", "IN", "NN", "CC", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "during", "apoptosis", ",", "dff-40", "and", "cad", "be", "activate", "by", "caspase-3-mediated", "cleavage", "of", "dff45", "and", "icad", ".", "\"" ],
+        "entities" : [ "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "cc"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "prep_during"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "agent"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:860559464",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:561661484",
+    "text" : "DFF-40",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DFFB",
+      "namespace" : "uniprot",
+      "id" : "O76075",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1930745750",
+    "text" : "CAD",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CAD",
+      "namespace" : "uniprot",
+      "id" : "A6NK06",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-640932076",
+    "text" : "DFF45",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ICAD",
+      "namespace" : "uniprot",
+      "id" : "O00273",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-419852446",
+    "text" : "ICAD",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 91,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DFFA",
+      "namespace" : "uniprot",
+      "id" : "O00273",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-640932076",
+      "text" : "DFF45",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 81,
+      "characterEndOffset" : 86,
+      "sentence" : 0,
+      "document" : "890205392",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "ICAD",
+        "namespace" : "uniprot",
+        "id" : "O00273",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1907940971",
+    "text" : "DFF-40 and CAD is activated by caspase-3-mediated cleavage of DFF45",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1870919254",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "890205392",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:561661484",
+        "text" : "DFF-40",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DFFB",
+          "namespace" : "uniprot",
+          "id" : "O76075",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-640932076",
+        "text" : "DFF45",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICAD",
+          "namespace" : "uniprot",
+          "id" : "O00273",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:561661484" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1930745750" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-640932076" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ],
+        "T:-419852446" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 14
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:201827135",
+    "text" : "DFF-40 and CAD is activated by caspase-3-mediated cleavage of DFF45 and ICAD",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1870919254",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "890205392",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:561661484",
+        "text" : "DFF-40",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DFFB",
+          "namespace" : "uniprot",
+          "id" : "O76075",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-419852446",
+        "text" : "ICAD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 91,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DFFA",
+          "namespace" : "uniprot",
+          "id" : "O00273",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:561661484" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1930745750" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-640932076" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ],
+        "T:-419852446" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 16
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-685970853",
+    "text" : "CAD is activated by caspase-3-mediated cleavage of DFF45",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1870919254",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "890205392",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1930745750",
+        "text" : "CAD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CAD",
+          "namespace" : "uniprot",
+          "id" : "A6NK06",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-640932076",
+        "text" : "DFF45",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICAD",
+          "namespace" : "uniprot",
+          "id" : "O00273",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:561661484" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1930745750" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-640932076" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ],
+        "T:-419852446" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 14
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-358774838",
+    "text" : "CAD is activated by caspase-3-mediated cleavage of DFF45 and ICAD",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1870919254",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "890205392",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1930745750",
+        "text" : "CAD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CAD",
+          "namespace" : "uniprot",
+          "id" : "A6NK06",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-419852446",
+        "text" : "ICAD",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 91,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "890205392",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DFFA",
+          "namespace" : "uniprot",
+          "id" : "O00273",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:561661484" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        } ],
+        "T:1930745750" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-640932076" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ],
+        "T:-419852446" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 16
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "890205392",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

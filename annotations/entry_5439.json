@@ -1,0 +1,390 @@
+{
+  "documents" : {
+    "-515171657" : {
+      "id" : "sentence_annotator",
+      "text" : "FBXO11 promotes cellular migration by downregulating Cdt2 and thus upregulating Set8.",
+      "sentences" : [ {
+        "words" : [ "FBXO11", "promotes", "cellular", "migration", "by", "downregulating", "Cdt2", "and", "thus", "upregulating", "Set8", "." ],
+        "startOffsets" : [ 0, 7, 16, 25, 35, 38, 53, 58, 62, 67, 80, 84 ],
+        "endOffsets" : [ 6, 15, 24, 34, 37, 52, 57, 61, 66, 79, 84, 85 ],
+        "tags" : [ "NN", "VBZ", "JJ", "NN", "IN", "VBG", "NN", "CC", "RB", "VBG", "NN", "." ],
+        "lemmas" : [ "fbxo11", "promote", "cellular", "migration", "by", "downregulate", "cdt2", "and", "thus", "upregulate", "set8", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "O", "B-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pcomp"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-316035868",
+    "text" : "FBXO11",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "-515171657",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "VIT-1",
+      "namespace" : "uniprot",
+      "id" : "Q86XK2",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-319870325",
+    "text" : "Cdt2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-515171657",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Lethal(2) denticleless protein homolog",
+      "namespace" : "uniprot",
+      "id" : "Q9NZJ0",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1692596113",
+    "text" : "Set8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-515171657",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PRSET7",
+      "namespace" : "uniprot",
+      "id" : "Q9NQR1",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1090642465",
+    "text" : "FBXO11 promotes cellular migration by downregulating Cdt2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:627950395",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-515171657",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-319870325",
+        "text" : "Cdt2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-515171657",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Lethal(2) denticleless protein homolog",
+          "namespace" : "uniprot",
+          "id" : "Q9NZJ0",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-316035868",
+        "text" : "FBXO11",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-515171657",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "VIT-1",
+          "namespace" : "uniprot",
+          "id" : "Q86XK2",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-319870325" : [ {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ],
+        "T:1692596113" : [ {
+          "source" : 1,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-316035868" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-515171657",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1126088617",
+    "text" : "FBXO11 promotes cellular migration by downregulating Cdt2 and thus upregulating Set8",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:627950395",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-515171657",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1692596113",
+        "text" : "Set8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-515171657",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PRSET7",
+          "namespace" : "uniprot",
+          "id" : "Q9NQR1",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-316035868",
+        "text" : "FBXO11",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-515171657",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "VIT-1",
+          "namespace" : "uniprot",
+          "id" : "Q86XK2",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-319870325" : [ {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ],
+        "T:1692596113" : [ {
+          "source" : 1,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-316035868" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-515171657",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

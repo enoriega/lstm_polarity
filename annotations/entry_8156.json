@@ -1,0 +1,943 @@
+{
+  "documents" : {
+    "-993428650" : {
+      "id" : "sentence_annotator",
+      "text" : "SNORA74B silencing induced PHLPP expression and suppressed activation of AKT and mTOR pathway.",
+      "sentences" : [ {
+        "words" : [ "SNORA74B", "silencing", "induced", "PHLPP", "expression", "and", "suppressed", "activation", "of", "AKT", "and", "mTOR", "pathway", "." ],
+        "startOffsets" : [ 0, 9, 19, 27, 33, 44, 48, 59, 70, 73, 77, 81, 86, 93 ],
+        "endOffsets" : [ 8, 18, 26, 32, 43, 47, 58, 69, 72, 76, 80, 85, 93, 94 ],
+        "tags" : [ "NN", "NN", "VBD", "NN", "NN", "CC", "VBD", "NN", "IN", "NN", "CC", "NN", "NN", "." ],
+        "lemmas" : [ "snora74b", "silencing", "induce", "phlpp", "expression", "and", "suppress", "activation", "of", "akt", "and", "mtor", "pathway", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-657256239",
+    "text" : "SNORA74B silencing induced PHLPP expression",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-679742805",
+      "text" : "induced",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "-993428650",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1134819904",
+        "text" : "PHLPP expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:351170102",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 33,
+          "characterEndOffset" : 43,
+          "sentence" : 0,
+          "document" : "-993428650",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1337537492",
+            "text" : "PHLPP",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 32,
+            "sentence" : 0,
+            "document" : "-993428650",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "hSCOP",
+              "namespace" : "uniprot",
+              "id" : "O60346",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1337537492" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1315753004",
+        "text" : "SNORA74B",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SNORA74B",
+          "namespace" : "uaz",
+          "id" : "UAZ02246",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-1134819904" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1315753004" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1315753004",
+    "text" : "SNORA74B",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SNORA74B",
+      "namespace" : "uaz",
+      "id" : "UAZ02246",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1337537492",
+    "text" : "PHLPP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "hSCOP",
+      "namespace" : "uniprot",
+      "id" : "O60346",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1709597065",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1434356594",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1134819904",
+    "text" : "PHLPP expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:351170102",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-993428650",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1337537492",
+        "text" : "PHLPP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "hSCOP",
+          "namespace" : "uniprot",
+          "id" : "O60346",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1337537492" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-699604169",
+    "text" : "SNORA74B silencing induced PHLPP expression and suppressed activation of AKT",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1993884074",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 58,
+      "sentence" : 0,
+      "document" : "-993428650",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1709597065",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 76,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-657256239",
+        "text" : "SNORA74B silencing induced PHLPP expression",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-679742805",
+          "text" : "induced",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 19,
+          "characterEndOffset" : 26,
+          "sentence" : 0,
+          "document" : "-993428650",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-1134819904",
+            "text" : "PHLPP expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:351170102",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 33,
+              "characterEndOffset" : 43,
+              "sentence" : 0,
+              "document" : "-993428650",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1337537492",
+                "text" : "PHLPP",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 27,
+                "characterEndOffset" : 32,
+                "sentence" : 0,
+                "document" : "-993428650",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "hSCOP",
+                  "namespace" : "uniprot",
+                  "id" : "O60346",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1337537492" : [ {
+                  "source" : 4,
+                  "destination" : 3,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 5
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 43,
+            "sentence" : 0,
+            "document" : "-993428650",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1315753004",
+            "text" : "SNORA74B",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 8,
+            "sentence" : 0,
+            "document" : "-993428650",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "SNORA74B",
+              "namespace" : "uaz",
+              "id" : "UAZ02246",
+              "species" : ""
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-1134819904" : [ {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1315753004" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 5
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1709597065" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_of"
+        }, {
+          "source" : 12,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "T:1434356594" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_of"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-657256239" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1315753004" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-602787068",
+    "text" : "SNORA74B silencing induced PHLPP expression and suppressed activation of AKT and mTOR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1993884074",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 58,
+      "sentence" : 0,
+      "document" : "-993428650",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1434356594",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-657256239",
+        "text" : "SNORA74B silencing induced PHLPP expression",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-679742805",
+          "text" : "induced",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 19,
+          "characterEndOffset" : 26,
+          "sentence" : 0,
+          "document" : "-993428650",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-1134819904",
+            "text" : "PHLPP expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:351170102",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 33,
+              "characterEndOffset" : 43,
+              "sentence" : 0,
+              "document" : "-993428650",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1337537492",
+                "text" : "PHLPP",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 27,
+                "characterEndOffset" : 32,
+                "sentence" : 0,
+                "document" : "-993428650",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "hSCOP",
+                  "namespace" : "uniprot",
+                  "id" : "O60346",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1337537492" : [ {
+                  "source" : 4,
+                  "destination" : 3,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 5
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 43,
+            "sentence" : 0,
+            "document" : "-993428650",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1315753004",
+            "text" : "SNORA74B",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 8,
+            "sentence" : 0,
+            "document" : "-993428650",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "SNORA74B",
+              "namespace" : "uaz",
+              "id" : "UAZ02246",
+              "species" : ""
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-1134819904" : [ {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1315753004" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 5
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "-993428650",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1709597065" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_of"
+        }, {
+          "source" : 12,
+          "destination" : 9,
+          "relation" : "nn"
+        } ],
+        "T:1434356594" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_of"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-657256239" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1315753004" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-993428650",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

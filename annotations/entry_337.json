@@ -1,0 +1,404 @@
+{
+  "documents" : {
+    "197972499" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Accordingly, prolonged ERK stimulation activated caspase 8 and strongly potentiated Fas signaling.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Accordingly", ",", "prolonged", "ERK", "stimulation", "activated", "caspase", "8", "and", "strongly", "potentiated", "Fas", "signaling", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 24, 28, 40, 50, 58, 60, 64, 73, 85, 89, 98, 99 ],
+        "endOffsets" : [ 1, 12, 13, 23, 27, 39, 49, 57, 59, 63, 72, 84, 88, 98, 99, 100 ],
+        "tags" : [ "``", "RB", ",", "JJ", "NN", "NN", "VBD", "NN", "CD", "CC", "RB", "VBD", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "accordingly", ",", "prolonged", "erk", "stimulation", "activate", "caspase", "8", "and", "strongly", "potentiate", "fa", "signaling", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-949812520",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "197972499",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:191336634",
+    "text" : "caspase 8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "197972499",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ICE-like apoptotic protease 5",
+      "namespace" : "uniprot",
+      "id" : "Q14790",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2098487888",
+    "text" : "Fas",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 85,
+    "characterEndOffset" : 88,
+    "sentence" : 0,
+    "document" : "197972499",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apo-1 antigen",
+      "namespace" : "uniprot",
+      "id" : "P25445",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-277488800",
+    "text" : "ERK stimulation activated caspase 8",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1623194353",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "197972499",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:191336634",
+        "text" : "caspase 8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "197972499",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICE-like apoptotic protease 5",
+          "namespace" : "uniprot",
+          "id" : "Q14790",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-949812520",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "197972499",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:191336634" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-949812520" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "197972499",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:214224813",
+    "text" : "ERK stimulation activated caspase 8 and strongly potentiated Fas",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:67905292",
+      "text" : "potentiated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 73,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "197972499",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2098487888",
+        "text" : "Fas",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 85,
+        "characterEndOffset" : 88,
+        "sentence" : 0,
+        "document" : "197972499",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apo-1 antigen",
+          "namespace" : "uniprot",
+          "id" : "P25445",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-949812520",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "197972499",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:2098487888" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-949812520" : [ {
+          "source" : 11,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 88,
+    "sentence" : 0,
+    "document" : "197972499",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

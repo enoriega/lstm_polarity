@@ -1,0 +1,1990 @@
+{
+  "documents" : {
+    "538941514" : {
+      "id" : "sentence_annotator",
+      "text" : "AKT phosphorylation of TSC2 at Ser 939 and Thr 1462 activates mTOR through additional signaling molecules.",
+      "sentences" : [ {
+        "words" : [ "AKT", "phosphorylation", "of", "TSC2", "at", "Ser", "939", "and", "Thr", "1462", "activates", "mTOR", "through", "additional", "signaling", "molecules", "." ],
+        "startOffsets" : [ 0, 4, 20, 23, 28, 31, 35, 39, 43, 47, 52, 62, 67, 75, 86, 96, 105 ],
+        "endOffsets" : [ 3, 19, 22, 27, 30, 34, 38, 42, 46, 51, 61, 66, 74, 85, 95, 105, 106 ],
+        "tags" : [ "NN", "NN", "IN", "NN", "IN", "NN", "CD", "CC", "NNP", "CD", "VBZ", "NN", "IN", "JJ", "VBG", "NNS", "." ],
+        "lemmas" : [ "akt", "phosphorylation", "of", "tsc2", "at", "ser", "939", "and", "Thr", "1462", "activate", "mtor", "through", "additional", "signal", "molecule", "." ],
+        "entities" : [ "B-Family", "O", "O", "B-Gene_or_gene_product", "O", "B-Site", "O", "O", "B-Site", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "num"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "num"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "prep_through"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:-2014037376",
+    "text" : "AKT phosphorylation of TSC2 at Ser 939",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1437002934",
+        "text" : "phosphorylation of TSC2 at Ser 939",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1597486043",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "538941514",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:224751101",
+            "text" : "Ser 939",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 7
+            },
+            "characterStartOffset" : 31,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "site_3letterALT",
+            "grounding" : {
+              "text" : "Ser 939",
+              "namespace" : "uaz",
+              "id" : "UAZ00026",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-255109423",
+            "text" : "TSC2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TSC2",
+              "namespace" : "uniprot",
+              "id" : "P49815",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 7
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2044814009",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-255109423" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:2044814009" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      },
+      "site" : {
+        "T:224751101" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ],
+        "T:-2069931017" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefRelationMention",
+    "id" : "R:-2065351802",
+    "text" : "AKT phosphorylation of TSC2 at Ser 939 and Thr 1462",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1679330312",
+        "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1597486043",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "538941514",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2069931017",
+            "text" : "Thr 1462",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 43,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "site_3letterALT",
+            "grounding" : {
+              "text" : "Thr 1462",
+              "namespace" : "uaz",
+              "id" : "UAZ00025",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-255109423",
+            "text" : "TSC2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TSC2",
+              "namespace" : "uniprot",
+              "id" : "P49815",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 10
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2044814009",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-255109423" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:2044814009" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      },
+      "site" : {
+        "T:224751101" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ],
+        "T:-2069931017" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2044814009",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-255109423",
+    "text" : "TSC2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TSC2",
+      "namespace" : "uniprot",
+      "id" : "P49815",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:224751101",
+    "text" : "Ser 939",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "site_3letterALT",
+    "grounding" : {
+      "text" : "Ser 939",
+      "namespace" : "uaz",
+      "id" : "UAZ00026",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2069931017",
+    "text" : "Thr 1462",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "site_3letterALT",
+    "grounding" : {
+      "text" : "Thr 1462",
+      "namespace" : "uaz",
+      "id" : "UAZ00025",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1897147148",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1437002934",
+    "text" : "phosphorylation of TSC2 at Ser 939",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1597486043",
+      "text" : "phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:224751101",
+        "text" : "Ser 939",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "site_3letterALT",
+        "grounding" : {
+          "text" : "Ser 939",
+          "namespace" : "uaz",
+          "id" : "UAZ00026",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      } ],
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-255109423",
+        "text" : "TSC2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TSC2",
+          "namespace" : "uniprot",
+          "id" : "P49815",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-255109423" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:2044814009" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      },
+      "site" : {
+        "T:224751101" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ],
+        "T:-2069931017" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1679330312",
+    "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1597486043",
+      "text" : "phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2069931017",
+        "text" : "Thr 1462",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 43,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "site_3letterALT",
+        "grounding" : {
+          "text" : "Thr 1462",
+          "namespace" : "uaz",
+          "id" : "UAZ00025",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      } ],
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-255109423",
+        "text" : "TSC2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TSC2",
+          "namespace" : "uniprot",
+          "id" : "P49815",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-255109423" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:2044814009" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      },
+      "site" : {
+        "T:224751101" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ],
+        "T:-2069931017" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 10
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1549732000",
+    "text" : "AKT phosphorylation of TSC2 at Ser 939 and Thr 1462 activates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1320058626",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897147148",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-2065351802",
+        "text" : "AKT phosphorylation of TSC2 at Ser 939 and Thr 1462",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-1679330312",
+            "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462",
+            "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1597486043",
+              "text" : "phosphorylation",
+              "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 4,
+              "characterEndOffset" : 19,
+              "sentence" : 0,
+              "document" : "538941514",
+              "keep" : true,
+              "foundBy" : "Phosphorylation_syntax_1a_noun"
+            },
+            "arguments" : {
+              "site" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-2069931017",
+                "text" : "Thr 1462",
+                "labels" : [ "Site" ],
+                "tokenInterval" : {
+                  "start" : 8,
+                  "end" : 10
+                },
+                "characterStartOffset" : 43,
+                "characterEndOffset" : 51,
+                "sentence" : 0,
+                "document" : "538941514",
+                "keep" : true,
+                "foundBy" : "site_3letterALT",
+                "grounding" : {
+                  "text" : "Thr 1462",
+                  "namespace" : "uaz",
+                  "id" : "UAZ00025",
+                  "species" : ""
+                },
+                "displayLabel" : "Site"
+              } ],
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-255109423",
+                "text" : "TSC2",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 23,
+                "characterEndOffset" : 27,
+                "sentence" : 0,
+                "document" : "538941514",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TSC2",
+                  "namespace" : "uniprot",
+                  "id" : "P49815",
+                  "species" : "human"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-255109423" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "cause" : {
+                "T:2044814009" : [ {
+                  "source" : 1,
+                  "destination" : 0,
+                  "relation" : "nn"
+                } ]
+              },
+              "site" : {
+                "T:224751101" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                }, {
+                  "source" : 3,
+                  "destination" : 5,
+                  "relation" : "prep_at"
+                } ],
+                "T:-2069931017" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                }, {
+                  "source" : 3,
+                  "destination" : 8,
+                  "relation" : "prep_at"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 10
+            },
+            "characterStartOffset" : 4,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "Phosphorylation_syntax_1a_noun",
+            "displayLabel" : "Phosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2044814009",
+            "text" : "AKT",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 3,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PI3K-AKT",
+              "namespace" : "be",
+              "id" : "AKT",
+              "species" : ""
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 10
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1897147148" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-1437002934" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:2044814009" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "E:-1679330312" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2065351802" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-255109423" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2014037376" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1080862206",
+    "text" : "AKT phosphorylation of TSC2 at Ser 939 and Thr 1462 activates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1320058626",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897147148",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-2014037376",
+        "text" : "AKT phosphorylation of TSC2 at Ser 939",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-1437002934",
+            "text" : "phosphorylation of TSC2 at Ser 939",
+            "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1597486043",
+              "text" : "phosphorylation",
+              "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 4,
+              "characterEndOffset" : 19,
+              "sentence" : 0,
+              "document" : "538941514",
+              "keep" : true,
+              "foundBy" : "Phosphorylation_syntax_1a_noun"
+            },
+            "arguments" : {
+              "site" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:224751101",
+                "text" : "Ser 939",
+                "labels" : [ "Site" ],
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 7
+                },
+                "characterStartOffset" : 31,
+                "characterEndOffset" : 38,
+                "sentence" : 0,
+                "document" : "538941514",
+                "keep" : true,
+                "foundBy" : "site_3letterALT",
+                "grounding" : {
+                  "text" : "Ser 939",
+                  "namespace" : "uaz",
+                  "id" : "UAZ00026",
+                  "species" : ""
+                },
+                "displayLabel" : "Site"
+              } ],
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-255109423",
+                "text" : "TSC2",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 23,
+                "characterEndOffset" : 27,
+                "sentence" : 0,
+                "document" : "538941514",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TSC2",
+                  "namespace" : "uniprot",
+                  "id" : "P49815",
+                  "species" : "human"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-255109423" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "cause" : {
+                "T:2044814009" : [ {
+                  "source" : 1,
+                  "destination" : 0,
+                  "relation" : "nn"
+                } ]
+              },
+              "site" : {
+                "T:224751101" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                }, {
+                  "source" : 3,
+                  "destination" : 5,
+                  "relation" : "prep_at"
+                } ],
+                "T:-2069931017" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                }, {
+                  "source" : 3,
+                  "destination" : 8,
+                  "relation" : "prep_at"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 7
+            },
+            "characterStartOffset" : 4,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "Phosphorylation_syntax_1a_noun",
+            "displayLabel" : "Phosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2044814009",
+            "text" : "AKT",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 3,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PI3K-AKT",
+              "namespace" : "be",
+              "id" : "AKT",
+              "species" : ""
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 7
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1897147148" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-1437002934" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:2044814009" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "E:-1679330312" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2065351802" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-255109423" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2014037376" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1242948140",
+    "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462 activates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1320058626",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897147148",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1679330312",
+        "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1597486043",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "538941514",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2069931017",
+            "text" : "Thr 1462",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 43,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "site_3letterALT",
+            "grounding" : {
+              "text" : "Thr 1462",
+              "namespace" : "uaz",
+              "id" : "UAZ00025",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-255109423",
+            "text" : "TSC2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TSC2",
+              "namespace" : "uniprot",
+              "id" : "P49815",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 10
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1897147148" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-1437002934" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:2044814009" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "E:-1679330312" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2065351802" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-255109423" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2014037376" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 12
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1154863735",
+    "text" : "phosphorylation of TSC2 at Ser 939 and Thr 1462 activates mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1320058626",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "538941514",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897147148",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1437002934",
+        "text" : "phosphorylation of TSC2 at Ser 939",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1597486043",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "538941514",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:224751101",
+            "text" : "Ser 939",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 7
+            },
+            "characterStartOffset" : 31,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "site_3letterALT",
+            "grounding" : {
+              "text" : "Ser 939",
+              "namespace" : "uaz",
+              "id" : "UAZ00026",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-255109423",
+            "text" : "TSC2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "538941514",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TSC2",
+              "namespace" : "uniprot",
+              "id" : "P49815",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-255109423" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:2044814009" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:224751101" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ],
+            "T:-2069931017" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 7
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "538941514",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1897147148" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-1437002934" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:2044814009" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "E:-1679330312" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2065351802" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-255109423" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "R:-2014037376" : [ {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 12
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "538941514",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

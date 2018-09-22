@@ -1,0 +1,304 @@
+{
+  "documents" : {
+    "1576332995" : {
+      "id" : "sentence_annotator",
+      "text" : "Increased glycolysis in HL-60R cells is affected by the p21 peptide targeting cytosolic PCNA.",
+      "sentences" : [ {
+        "words" : [ "Increased", "glycolysis", "in", "HL-60R", "cells", "is", "affected", "by", "the", "p21", "peptide", "targeting", "cytosolic", "PCNA", "." ],
+        "startOffsets" : [ 0, 10, 21, 24, 31, 37, 40, 49, 52, 56, 60, 68, 78, 88, 92 ],
+        "endOffsets" : [ 9, 20, 23, 30, 36, 39, 48, 51, 55, 59, 67, 77, 87, 92, 93 ],
+        "tags" : [ "VBN", "NN", "IN", "NN", "NNS", "VBZ", "VBN", "IN", "DT", "NN", "NN", "VBG", "JJ", "NN", "." ],
+        "lemmas" : [ "increase", "glycolysis", "in", "hl-60r", "cell", "be", "affect", "by", "the", "p21", "peptide", "target", "cytosolic", "pcna", "." ],
+        "entities" : [ "O", "B-BioProcess", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep_in"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "agent"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1962454643",
+    "text" : "glycolysis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "1576332995",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "glycolysis",
+      "namespace" : "go",
+      "id" : "GO:0006096",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-894215753",
+    "text" : "p21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "1576332995",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p21",
+      "namespace" : "uniprot",
+      "id" : "P38936",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1385532788",
+    "text" : "PCNA",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "1576332995",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cyclin",
+      "namespace" : "uniprot",
+      "id" : "P12004",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1563758090",
+    "text" : "p21 peptide targeting cytosolic PCNA",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1059121135",
+      "text" : "targeting",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 68,
+      "characterEndOffset" : 77,
+      "sentence" : 0,
+      "document" : "1576332995",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1385532788",
+        "text" : "PCNA",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 88,
+        "characterEndOffset" : 92,
+        "sentence" : 0,
+        "document" : "1576332995",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cyclin",
+          "namespace" : "uniprot",
+          "id" : "P12004",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-894215753",
+        "text" : "p21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "1576332995",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p21",
+          "namespace" : "uniprot",
+          "id" : "P38936",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1385532788" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-1962454643" : [ {
+          "source" : 6,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ],
+        "T:-894215753" : [ {
+          "source" : 6,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "agent"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 14
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 92,
+    "sentence" : 0,
+    "document" : "1576332995",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

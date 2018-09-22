@@ -1,0 +1,485 @@
+{
+  "documents" : {
+    "-2021816539" : {
+      "id" : "sentence_annotator",
+      "text" : "The AKT pathway modulates AR function and protects prostate cancer cells from apoptosis induced by AD.",
+      "sentences" : [ {
+        "words" : [ "The", "AKT", "pathway", "modulates", "AR", "function", "and", "protects", "prostate", "cancer", "cells", "from", "apoptosis", "induced", "by", "AD", "." ],
+        "startOffsets" : [ 0, 4, 8, 16, 26, 29, 38, 42, 51, 60, 67, 73, 78, 88, 96, 99, 101 ],
+        "endOffsets" : [ 3, 7, 15, 25, 28, 37, 41, 50, 59, 66, 72, 77, 87, 95, 98, 101, 102 ],
+        "tags" : [ "DT", "NN", "NN", "VBZ", "NN", "NN", "CC", "VBZ", "NN", "NN", "NNS", "IN", "NN", "VBN", "IN", "NN", "." ],
+        "lemmas" : [ "the", "akt", "pathway", "modulate", "ar", "function", "and", "protect", "prostate", "cancer", "cell", "from", "apoptosis", "induce", "by", "ad", "." ],
+        "entities" : [ "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-TissueType", "I-TissueType", "O", "O", "B-BioProcess", "O", "O", "B-Family", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep_from"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "agent"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1009690952",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1677003166",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-201146744",
+    "text" : "prostate cancer",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Prostatic malignant tumour",
+      "namespace" : "tissuelist",
+      "id" : "TS-1224",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1993880222",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1928684819",
+    "text" : "AD",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "AD",
+      "namespace" : "pfam",
+      "id" : "PF09793",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1625880531",
+    "text" : "AKT pathway modulates AR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-122357557",
+      "text" : "modulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2021816539",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1677003166",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "-2021816539",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1009690952",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "-2021816539",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1677003166" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1009690952" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1636815128",
+    "text" : "apoptosis induced by AD",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1758015686",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 88,
+      "characterEndOffset" : 95,
+      "sentence" : 0,
+      "document" : "-2021816539",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1993880222",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "-2021816539",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1928684819",
+        "text" : "AD",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 99,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "-2021816539",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "AD",
+          "namespace" : "pfam",
+          "id" : "PF09793",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1993880222" : [ {
+          "source" : 12,
+          "destination" : 13,
+          "relation" : "vmod"
+        } ]
+      },
+      "controller" : {
+        "T:1928684819" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 16
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "-2021816539",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

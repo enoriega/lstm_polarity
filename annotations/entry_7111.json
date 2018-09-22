@@ -1,0 +1,815 @@
+{
+  "documents" : {
+    "-84469075" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In the case of AR, SIRT1 binds and deacetylates AR to repress AR signaling.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "the", "case", "of", "AR", ",", "SIRT1", "binds", "and", "deacetylates", "AR", "to", "repress", "AR", "signaling", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 8, 13, 16, 18, 20, 26, 32, 36, 49, 52, 55, 63, 66, 75, 76 ],
+        "endOffsets" : [ 1, 3, 7, 12, 15, 18, 19, 25, 31, 35, 48, 51, 54, 62, 65, 75, 76, 77 ],
+        "tags" : [ "``", "IN", "DT", "NN", "IN", "NN", ",", "NN", "VBZ", "CC", "VBZ", "NN", "TO", "VB", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "the", "case", "of", "ar", ",", "sirt1", "bind", "and", "deacetylate", "ar", "to", "repress", "ar", "signaling", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "B-VP", "O", "B-VP", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1969379247",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1430211174",
+    "text" : "SIRT1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1579778189",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1969379247",
+      "text" : "AR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "NR3C4",
+        "namespace" : "uniprot",
+        "id" : "P10275",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:638979126",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1579778189",
+      "text" : "AR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "NR3C4",
+        "namespace" : "uniprot",
+        "id" : "P10275",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein",
+      "antecedents" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1969379247",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:862818826",
+    "text" : "SIRT1 binds and deacetylates AR",
+    "labels" : [ "Binding", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-702746906",
+      "text" : "binds",
+      "labels" : [ "Binding", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "binding1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1430211174",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      }, {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1579778189",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme1" : {
+        "T:-1430211174" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ]
+      },
+      "theme2" : {
+        "T:-1579778189" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 12
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "binding1b",
+    "displayLabel" : "Binding",
+    "isDirect" : true
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1559673518",
+    "text" : "deacetylates AR",
+    "labels" : [ "Deacetylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1021555093",
+      "text" : "deacetylates",
+      "labels" : [ "Deacetylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "Deacetylation_token_5_verb"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1579778189",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "Deacetylation_token_5_verb",
+    "displayLabel" : "Deacetylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-437355822",
+    "text" : "SIRT1 binds and deacetylates AR to repress AR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1082821693",
+      "text" : "repress",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:638979126",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:862818826",
+        "text" : "SIRT1 binds and deacetylates AR",
+        "labels" : [ "Binding", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-702746906",
+          "text" : "binds",
+          "labels" : [ "Binding", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 8,
+            "end" : 9
+          },
+          "characterStartOffset" : 26,
+          "characterEndOffset" : 31,
+          "sentence" : 0,
+          "document" : "-84469075",
+          "keep" : true,
+          "foundBy" : "binding1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1430211174",
+            "text" : "SIRT1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "-84469075",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "75SirT1",
+              "namespace" : "uniprot",
+              "id" : "Q96EB6",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          }, {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1579778189",
+            "text" : "AR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 11,
+              "end" : 12
+            },
+            "characterStartOffset" : 49,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "-84469075",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "NR3C4",
+              "namespace" : "uniprot",
+              "id" : "P10275",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme1" : {
+            "T:-1430211174" : [ {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            } ]
+          },
+          "theme2" : {
+            "T:-1579778189" : [ {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 12
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "binding1b",
+        "displayLabel" : "Binding",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:638979126" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:862818826" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "E:-1559673518" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:1969379247" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "prep_in"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 15
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:112768413",
+    "text" : "deacetylates AR to repress AR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1082821693",
+      "text" : "repress",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "-84469075",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:638979126",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1559673518",
+        "text" : "deacetylates AR",
+        "labels" : [ "Deacetylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1021555093",
+          "text" : "deacetylates",
+          "labels" : [ "Deacetylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 10,
+            "end" : 11
+          },
+          "characterStartOffset" : 36,
+          "characterEndOffset" : 48,
+          "sentence" : 0,
+          "document" : "-84469075",
+          "keep" : true,
+          "foundBy" : "Deacetylation_token_5_verb"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1579778189",
+            "text" : "AR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 11,
+              "end" : 12
+            },
+            "characterStartOffset" : 49,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "-84469075",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "NR3C4",
+              "namespace" : "uniprot",
+              "id" : "P10275",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 12
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-84469075",
+        "keep" : true,
+        "foundBy" : "Deacetylation_token_5_verb",
+        "displayLabel" : "Deacetylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:638979126" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:862818826" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "E:-1559673518" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ],
+        "T:1969379247" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "prep_in"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 15
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-84469075",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

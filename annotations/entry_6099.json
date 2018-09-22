@@ -1,0 +1,404 @@
+{
+  "documents" : {
+    "2050703530" : {
+      "id" : "sentence_annotator",
+      "text" : "Nutlin-3 strongly suppresses growth of p53 wild-type cancer cells and induces apoptosis [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "Nutlin-3", "strongly", "suppresses", "growth", "of", "p53", "wild-type", "cancer", "cells", "and", "induces", "apoptosis", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 9, 18, 29, 36, 39, 43, 53, 60, 66, 70, 78, 88, 89, 98, 99 ],
+        "endOffsets" : [ 8, 17, 28, 35, 38, 42, 52, 59, 65, 69, 77, 87, 89, 98, 99, 100 ],
+        "tags" : [ "NNP", "RB", "VBZ", "NN", "IN", "NN", "JJ", "NN", "NNS", "CC", "VBZ", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "Nutlin-3", "strongly", "suppress", "growth", "of", "p53", "wild-type", "cancer", "cell", "and", "induce", "apoptosis", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "B-Simple_chemical", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-BioProcess", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-ADVP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:874693320",
+    "text" : "Nutlin-3",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "2050703530",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+      "namespace" : "pubchem",
+      "id" : "16755649",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2091931157",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "2050703530",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1555767327",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "2050703530",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:248427382",
+    "text" : "Nutlin-3 strongly suppresses growth of p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-464806261",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "2050703530",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2091931157",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 39,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "2050703530",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:874693320",
+        "text" : "Nutlin-3",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "2050703530",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+          "namespace" : "pubchem",
+          "id" : "16755649",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:2091931157" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_of"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:874693320" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "2050703530",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:218323249",
+    "text" : "Nutlin-3 strongly suppresses growth of p53 wild-type cancer cells and induces apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-667593613",
+      "text" : "induces",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 70,
+      "characterEndOffset" : 77,
+      "sentence" : 0,
+      "document" : "2050703530",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1555767327",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "2050703530",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:874693320",
+        "text" : "Nutlin-3",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "2050703530",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+          "namespace" : "pubchem",
+          "id" : "16755649",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1555767327" : [ {
+          "source" : 10,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:874693320" : [ {
+          "source" : 10,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "2050703530",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,269 @@
+{
+  "documents" : {
+    "-918720212" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Thus, insulin deficiency and resistance can induce abnormal activation of GSK3beta.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Thus", ",", "insulin", "deficiency", "and", "resistance", "can", "induce", "abnormal", "activation", "of", "GSK3beta", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 15, 26, 30, 41, 45, 52, 61, 72, 75, 83, 84 ],
+        "endOffsets" : [ 1, 5, 6, 14, 25, 29, 40, 44, 51, 60, 71, 74, 83, 84, 85 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "CC", "NN", "MD", "VB", "JJ", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "thus", ",", "insulin", "deficiency", "and", "resistance", "can", "induce", "abnormal", "activation", "of", "gsk3beta", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-389081197",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "-918720212",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-714584793",
+    "text" : "GSK3beta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 75,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-918720212",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GSK3beta",
+      "namespace" : "uniprot",
+      "id" : "P49841",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1978972095",
+    "text" : "insulin deficiency and resistance can induce abnormal activation of GSK3beta",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1697730132",
+      "text" : "induce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-918720212",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-714584793",
+        "text" : "GSK3beta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 75,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "-918720212",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GSK3beta",
+          "namespace" : "uniprot",
+          "id" : "P49841",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-389081197",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 14,
+        "sentence" : 0,
+        "document" : "-918720212",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-714584793" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-389081197" : [ {
+          "source" : 8,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-918720212",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

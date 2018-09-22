@@ -1,0 +1,303 @@
+{
+  "documents" : {
+    "-1039402107" : {
+      "id" : "sentence_annotator",
+      "text" : "Basal renin secretion and the stimulatory response to isoprenaline were significantly suppressed by angiotensin I.",
+      "sentences" : [ {
+        "words" : [ "Basal", "renin", "secretion", "and", "the", "stimulatory", "response", "to", "isoprenaline", "were", "significantly", "suppressed", "by", "angiotensin", "I." ],
+        "startOffsets" : [ 0, 6, 12, 22, 26, 30, 42, 51, 54, 67, 72, 86, 97, 100, 112 ],
+        "endOffsets" : [ 5, 11, 21, 25, 29, 41, 50, 53, 66, 71, 85, 96, 99, 111, 114 ],
+        "tags" : [ "JJ", "NN", "NN", "CC", "DT", "JJ", "NN", "TO", "NN", "VBD", "RB", "VBN", "IN", "NN", "NN" ],
+        "lemmas" : [ "basal", "renin", "secretion", "and", "the", "stimulatory", "response", "to", "isoprenaline", "be", "significantly", "suppress", "by", "angiotensin", "i." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "B-Simple_chemical", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_to"
+            }, {
+              "source" : 11,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "agent"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-319333963",
+    "text" : "renin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "-1039402107",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Renin",
+      "namespace" : "uniprot",
+      "id" : "P00797",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-979151917",
+    "text" : "isoprenaline",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1039402107",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "(+-)-isoprenaline",
+      "namespace" : "pubchem",
+      "id" : "3779",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:399756237",
+    "text" : "angiotensin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "-1039402107",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Human angiotensin II",
+      "namespace" : "pubchem",
+      "id" : "172198",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-815834310",
+    "text" : "renin secretion and the stimulatory response to isoprenaline were significantly suppressed by angiotensin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1482083783",
+      "text" : "suppressed",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 86,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "-1039402107",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-319333963",
+        "text" : "renin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 6,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-1039402107",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Renin",
+          "namespace" : "uniprot",
+          "id" : "P00797",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:399756237",
+        "text" : "angiotensin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 100,
+        "characterEndOffset" : 111,
+        "sentence" : 0,
+        "document" : "-1039402107",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Human angiotensin II",
+          "namespace" : "pubchem",
+          "id" : "172198",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-319333963" : [ {
+          "source" : 11,
+          "destination" : 2,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:399756237" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "agent"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 14
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "-1039402107",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

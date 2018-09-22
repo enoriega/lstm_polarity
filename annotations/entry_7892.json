@@ -1,0 +1,312 @@
+{
+  "documents" : {
+    "2102448872" : {
+      "id" : "sentence_annotator",
+      "text" : "The association of p27 with the ubiquitin ligase subunit Skp2 targets p27 for degradation.",
+      "sentences" : [ {
+        "words" : [ "The", "association", "of", "p27", "with", "the", "ubiquitin", "ligase", "subunit", "Skp2", "targets", "p27", "for", "degradation", "." ],
+        "startOffsets" : [ 0, 4, 16, 19, 23, 28, 32, 42, 49, 57, 62, 70, 74, 78, 89 ],
+        "endOffsets" : [ 3, 15, 18, 22, 27, 31, 41, 48, 56, 61, 69, 73, 77, 89, 90 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "IN", "DT", "NN", "NN", "NN", "NN", "VBZ", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "the", "association", "of", "p27", "with", "the", "ubiquitin", "ligase", "subunit", "skp2", "target", "p27", "for", "degradation", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "prep_with"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep_for"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1230889346",
+    "text" : "p27",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "2102448872",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interferon alpha-induced 11.5 kDa protein",
+      "namespace" : "uniprot",
+      "id" : "P40305",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1479096663",
+    "text" : "ubiquitin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "2102448872",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Polyubiquitin-B",
+      "namespace" : "uniprot",
+      "id" : "P0CG47",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:588999854",
+    "text" : "Skp2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "2102448872",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "F-box protein Skp2",
+      "namespace" : "uniprot",
+      "id" : "Q13309",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1135941470",
+    "text" : "p27",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "2102448872",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interferon alpha-induced 11.5 kDa protein",
+      "namespace" : "uniprot",
+      "id" : "P40305",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1230889346",
+      "text" : "p27",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "2102448872",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Interferon alpha-induced 11.5 kDa protein",
+        "namespace" : "uniprot",
+        "id" : "P40305",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-776817160",
+    "text" : "Skp2 targets p27",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1121362005",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "2102448872",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:588999854",
+        "text" : "Skp2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "2102448872",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "F-box protein Skp2",
+          "namespace" : "uniprot",
+          "id" : "Q13309",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1135941470",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "2102448872",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 12
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "2102448872",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

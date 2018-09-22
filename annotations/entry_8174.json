@@ -1,0 +1,329 @@
+{
+  "documents" : {
+    "-276541814" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Moreover, Wnt1 knockdown induced the cytoplasmic accumulation of beta-catenin in breast cancer cells (XREF_SUPPLEMENTARY).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Moreover", ",", "Wnt1", "knockdown", "induced", "the", "cytoplasmic", "accumulation", "of", "beta-catenin", "in", "breast", "cancer", "cells", "(", "XREF_SUPPLEMENTARY", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 16, 26, 34, 38, 50, 63, 66, 79, 82, 89, 96, 102, 103, 121, 122, 123 ],
+        "endOffsets" : [ 1, 9, 10, 15, 25, 33, 37, 49, 62, 65, 78, 81, 88, 95, 101, 103, 121, 122, 123, 124 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "VBD", "DT", "JJ", "NN", "IN", "NN", "IN", "NN", "NN", "NNS", "-LRB-", "NN", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "moreover", ",", "wnt1", "knockdown", "induce", "the", "cytoplasmic", "accumulation", "of", "beta-catenin", "in", "breast", "cancer", "cell", "(", "xref_supplementary", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-TissueType", "I-TissueType", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:592098568",
+    "text" : "Wnt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "-276541814",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "INT1",
+      "namespace" : "uniprot",
+      "id" : "P04628",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0591" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:232437683",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "-276541814",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0591" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2123872397",
+    "text" : "breast cancer",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 82,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "-276541814",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Mammary cancer",
+      "namespace" : "tissuelist",
+      "id" : "TS-0591",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0591" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1633635511",
+    "text" : "Wnt1 knockdown induced the cytoplasmic accumulation of beta-catenin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1958082673",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-276541814",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:232437683",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 78,
+        "sentence" : 0,
+        "document" : "-276541814",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0591" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:592098568",
+        "text" : "Wnt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "-276541814",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "INT1",
+          "namespace" : "uniprot",
+          "id" : "P04628",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0591" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:232437683" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:592098568" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "-276541814",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0591" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,355 @@
+{
+  "documents" : {
+    "-71475405" : {
+      "id" : "sentence_annotator",
+      "text" : "Therapies that inhibit androgen receptor (AR) are needed for treatment of castration resistant prostate cancer (CRPC).",
+      "sentences" : [ {
+        "words" : [ "Therapies", "that", "inhibit", "androgen", "receptor", "(", "AR", ")", "are", "needed", "for", "treatment", "of", "castration", "resistant", "prostate", "cancer", "(", "CRPC", ")", "." ],
+        "startOffsets" : [ 0, 10, 15, 23, 32, 41, 42, 44, 46, 50, 57, 61, 71, 74, 85, 95, 104, 111, 112, 116, 117 ],
+        "endOffsets" : [ 9, 14, 22, 31, 40, 42, 44, 45, 49, 56, 60, 70, 73, 84, 94, 103, 110, 112, 116, 117, 118 ],
+        "tags" : [ "NNS", "WDT", "VBP", "NN", "NN", "-LRB-", "NN", "-RRB-", "VBP", "VBN", "IN", "NN", "IN", "NN", "JJ", "NN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "therapy", "that", "inhibit", "androgen", "receptor", "(", "ar", ")", "be", "need", "for", "treatment", "of", "castration", "resistant", "prostate", "cancer", "(", "crpc", ")", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-TissueType", "I-TissueType", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "rcmod"
+            }, {
+              "source" : 0,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 18,
+              "relation" : "appos"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "rcmod"
+            }, {
+              "source" : 0,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_for"
+            }, {
+              "source" : 11,
+              "destination" : 16,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 18,
+              "relation" : "appos"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1799817478",
+    "text" : "androgen receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-71475405",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AR",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-61804324",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "-71475405",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1799817478",
+      "text" : "androgen receptor",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 5
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-71475405",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "AR",
+        "namespace" : "uniprot",
+        "id" : "P10275",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "TissueType" : [ "tissuelist:TS-1224" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1774331967",
+    "text" : "prostate cancer",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 17
+    },
+    "characterStartOffset" : 95,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "-71475405",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Prostatic malignant tumour",
+      "namespace" : "tissuelist",
+      "id" : "TS-1224",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:136742642",
+    "text" : "inhibit androgen receptor (AR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1611794548",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 15,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-71475405",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1799817478",
+        "text" : "androgen receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-71475405",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AR",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-61804324",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "-71475405",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-1224" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1799817478" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-61804324" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "rcmod"
+        }, {
+          "source" : 0,
+          "destination" : 6,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "-71475405",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_5_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-1224" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

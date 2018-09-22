@@ -1,0 +1,347 @@
+{
+  "documents" : {
+    "-274489934" : {
+      "id" : "sentence_annotator",
+      "text" : "\"The ER antagonist CI-628 can inhibit ERalpha and ERbeta, but has partial agonist activity.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "The", "ER", "antagonist", "CI-628", "can", "inhibit", "ERalpha", "and", "ERbeta", ",", "but", "has", "partial", "agonist", "activity", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 8, 19, 26, 30, 38, 46, 50, 56, 58, 62, 66, 74, 82, 90, 91 ],
+        "endOffsets" : [ 1, 4, 7, 18, 25, 29, 37, 45, 49, 56, 57, 61, 65, 73, 81, 90, 91, 92 ],
+        "tags" : [ "``", "DT", "NN", "NN", "NN", "MD", "VB", "NN", "CC", "NN", ",", "CC", "VBZ", "JJ", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "the", "er", "antagonist", "ci-628", "can", "inhibit", "eralpha", "and", "erbeta", ",", "but", "have", "partial", "agonist", "activity", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O", "O", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj_but"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1832431394",
+    "text" : "ER",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "-274489934",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ER-alpha",
+      "namespace" : "uniprot",
+      "id" : "P03372",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:388069767",
+    "text" : "ERalpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-274489934",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ER-alpha",
+      "namespace" : "uniprot",
+      "id" : "P03372",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1832431394",
+      "text" : "ER",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 7,
+      "sentence" : 0,
+      "document" : "-274489934",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "ER-alpha",
+        "namespace" : "uniprot",
+        "id" : "P03372",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-478683079",
+    "text" : "ERbeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-274489934",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ESTRB",
+      "namespace" : "uniprot",
+      "id" : "Q92731",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:720260631",
+    "text" : "ER antagonist CI-628 can inhibit ERalpha and ERbeta",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1686848870",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "-274489934",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-478683079",
+        "text" : "ERbeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-274489934",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ESTRB",
+          "namespace" : "uniprot",
+          "id" : "Q92731",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1832431394",
+        "text" : "ER",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 5,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "-274489934",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ER-alpha",
+          "namespace" : "uniprot",
+          "id" : "P03372",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:388069767" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:-478683079" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1832431394" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 10
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-274489934",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

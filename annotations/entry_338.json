@@ -1,0 +1,277 @@
+{
+  "documents" : {
+    "985194253" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Inhibition of GSK-3beta, in turn, promotes NFATc2 inhibition and degradation in cancer cells.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Inhibition", "of", "GSK-3beta", ",", "in", "turn", ",", "promotes", "NFATc2", "inhibition", "and", "degradation", "in", "cancer", "cells", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 15, 24, 26, 29, 33, 35, 44, 51, 62, 66, 78, 81, 88, 93, 94 ],
+        "endOffsets" : [ 1, 11, 14, 24, 25, 28, 33, 34, 43, 50, 61, 65, 77, 80, 87, 93, 94, 95 ],
+        "tags" : [ "``", "NN", "IN", "NN", ",", "IN", "NN", ",", "VBZ", "NN", "NN", "CC", "NN", "IN", "NN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "inhibition", "of", "gsk-3beta", ",", "in", "turn", ",", "promote", "nfatc2", "inhibition", "and", "degradation", "in", "cancer", "cell", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-PP", "B-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:261957718",
+    "text" : "GSK-3beta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "985194253",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GSK3beta",
+      "namespace" : "uniprot",
+      "id" : "P49841",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1400827548",
+    "text" : "NFATc2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "985194253",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NF-ATc2",
+      "namespace" : "uniprot",
+      "id" : "Q13469",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1534315244",
+    "text" : "GSK-3beta, in turn, promotes NFATc2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1748435886",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "985194253",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1400827548",
+        "text" : "NFATc2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "985194253",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NF-ATc2",
+          "namespace" : "uniprot",
+          "id" : "Q13469",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:261957718",
+        "text" : "GSK-3beta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "985194253",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GSK3beta",
+          "namespace" : "uniprot",
+          "id" : "P49841",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1400827548" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:261957718" : [ {
+          "source" : 8,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "985194253",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

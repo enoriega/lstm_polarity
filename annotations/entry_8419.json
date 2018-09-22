@@ -1,0 +1,309 @@
+{
+  "documents" : {
+    "85012895" : {
+      "id" : "sentence_annotator",
+      "text" : "Deamidation of Bcl-xL might be induced in order to translocate Bax to the mitochondria.",
+      "sentences" : [ {
+        "words" : [ "Deamidation", "of", "Bcl-xL", "might", "be", "induced", "in", "order", "to", "translocate", "Bax", "to", "the", "mitochondria", "." ],
+        "startOffsets" : [ 0, 12, 15, 22, 28, 31, 39, 42, 48, 51, 63, 67, 70, 74, 86 ],
+        "endOffsets" : [ 11, 14, 21, 27, 30, 38, 41, 47, 50, 62, 66, 69, 73, 86, 87 ],
+        "tags" : [ "NN", "IN", "NN", "MD", "VB", "VBN", "IN", "NN", "TO", "VB", "NN", "TO", "DT", "NN", "." ],
+        "lemmas" : [ "deamidation", "of", "bcl-xl", "might", "be", "induce", "in", "order", "to", "translocate", "bax", "to", "the", "mitochondrium", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Cellular_component", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-SBAR", "O", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "det"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_to"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "det"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:9375411",
+    "text" : "Bcl-xL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "85012895",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BclXL",
+      "namespace" : "uniprot",
+      "id" : "Q07817",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:114855106",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "85012895",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1634594941",
+    "text" : "mitochondria",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "85012895",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "Mitochondria",
+      "namespace" : "go",
+      "id" : "GO:0005739",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:298336257",
+    "text" : "Bcl-xL might be induced in order to translocate Bax",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-879889395",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "85012895",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:114855106",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "85012895",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:9375411",
+        "text" : "Bcl-xL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "85012895",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BclXL",
+          "namespace" : "uniprot",
+          "id" : "Q07817",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:114855106" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:9375411" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 11
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "85012895",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

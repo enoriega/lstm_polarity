@@ -1,0 +1,712 @@
+{
+  "documents" : {
+    "1975342578" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Downstream of PTEN, miR-21 promotes activation of Akt, and consequently increases activation of NF-kappaB pathway.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Downstream", "of", "PTEN", ",", "miR-21", "promotes", "activation", "of", "Akt", ",", "and", "consequently", "increases", "activation", "of", "NF-kappaB", "pathway", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 15, 19, 21, 28, 37, 48, 51, 54, 56, 60, 73, 83, 94, 97, 107, 114, 115 ],
+        "endOffsets" : [ 1, 11, 14, 19, 20, 27, 36, 47, 50, 54, 55, 59, 72, 82, 93, 96, 106, 114, 115, 116 ],
+        "tags" : [ "``", "JJ", "IN", "NNP", ",", "NN", "VBZ", "NN", "IN", "NN", ",", "CC", "RB", "VBZ", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "downstream", "of", "PTEN", ",", "mir-21", "promote", "activation", "of", "akt", ",", "and", "consequently", "increase", "activation", "of", "nf-kappab", "pathway", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O", "O", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "pobj"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 17,
+              "relation" : "prep_of"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1887199052",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1291836133",
+    "text" : "miR-21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "miR-21",
+      "namespace" : "uaz",
+      "id" : "UAZ00358",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1183155321",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-671228781",
+    "text" : "NF-kappaB",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 106,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NF-kappaB subunits",
+      "namespace" : "be",
+      "id" : "NFkappaB",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-347307615",
+    "text" : "PTEN, miR-21 promotes activation of Akt, and consequently increases activation of NF-kappaB",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1333272231",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 73,
+      "characterEndOffset" : 82,
+      "sentence" : 0,
+      "document" : "1975342578",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-671228781",
+        "text" : "NF-kappaB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 106,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NF-kappaB subunits",
+          "namespace" : "be",
+          "id" : "NFkappaB",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1887199052",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-671228781" : [ {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 17,
+          "relation" : "prep_of"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1887199052" : [ {
+          "source" : 13,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1291836133" : [ {
+          "source" : 13,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 17
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 106,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1601083263",
+    "text" : "miR-21 promotes activation of Akt, and consequently increases activation of NF-kappaB",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1333272231",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 73,
+      "characterEndOffset" : 82,
+      "sentence" : 0,
+      "document" : "1975342578",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-671228781",
+        "text" : "NF-kappaB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 106,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NF-kappaB subunits",
+          "namespace" : "be",
+          "id" : "NFkappaB",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1291836133",
+        "text" : "miR-21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "miR-21",
+          "namespace" : "uaz",
+          "id" : "UAZ00358",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-671228781" : [ {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 17,
+          "relation" : "prep_of"
+        }, {
+          "source" : 17,
+          "destination" : 16,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1887199052" : [ {
+          "source" : 13,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1291836133" : [ {
+          "source" : 13,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 17
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 106,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1219835426",
+    "text" : "PTEN, miR-21 promotes activation of Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:932933726",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "1975342578",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1183155321",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1887199052",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1183155321" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1887199052" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1291836133" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1624103043",
+    "text" : "miR-21 promotes activation of Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:932933726",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "1975342578",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1183155321",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1291836133",
+        "text" : "miR-21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "1975342578",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "miR-21",
+          "namespace" : "uaz",
+          "id" : "UAZ00358",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1183155321" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1887199052" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1291836133" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 10
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "1975342578",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

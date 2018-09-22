@@ -1,0 +1,277 @@
+{
+  "documents" : {
+    "-665503264" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In addition, celecoxib triggers COX-2 loading on exosomes.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "addition", ",", "celecoxib", "triggers", "COX-2", "loading", "on", "exosomes", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 12, 14, 24, 33, 39, 47, 50, 58, 59 ],
+        "endOffsets" : [ 1, 3, 12, 13, 23, 32, 38, 46, 49, 58, 59, 60 ],
+        "tags" : [ "``", "IN", "NN", ",", "NN", "VBZ", "NN", "NN", "IN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "in", "addition", ",", "celecoxib", "trigger", "cox-2", "loading", "on", "exosome", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "B-Cellular_component", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_on"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1339407437",
+    "text" : "celecoxib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "-665503264",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Celocoxib",
+      "namespace" : "pubchem",
+      "id" : "2662",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0070062" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2048284969",
+    "text" : "COX-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-665503264",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PGHS-2",
+      "namespace" : "uniprot",
+      "id" : "P35354",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0070062" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1945932133",
+    "text" : "exosomes",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-665503264",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "Exosomes",
+      "namespace" : "go",
+      "id" : "GO:0070062",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0070062" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2083056733",
+    "text" : "celecoxib triggers COX-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2064202895",
+      "text" : "triggers",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "-665503264",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2048284969",
+        "text" : "COX-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-665503264",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PGHS-2",
+          "namespace" : "uniprot",
+          "id" : "P35354",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0070062" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1339407437",
+        "text" : "celecoxib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-665503264",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Celocoxib",
+          "namespace" : "pubchem",
+          "id" : "2662",
+          "species" : ""
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0070062" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2048284969" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1339407437" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-665503264",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0070062" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

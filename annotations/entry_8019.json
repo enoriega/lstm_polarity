@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "-1629443621" : {
+      "id" : "sentence_annotator",
+      "text" : "An inhibition of the mPT strongly attenuated cytochrome c release induced by BAX oligo in our experiments.",
+      "sentences" : [ {
+        "words" : [ "An", "inhibition", "of", "the", "mPT", "strongly", "attenuated", "cytochrome", "c", "release", "induced", "by", "BAX", "oligo", "in", "our", "experiments", "." ],
+        "startOffsets" : [ 0, 3, 14, 17, 21, 25, 34, 45, 56, 58, 66, 74, 77, 81, 87, 90, 94, 105 ],
+        "endOffsets" : [ 2, 13, 16, 20, 24, 33, 44, 55, 57, 65, 73, 76, 80, 86, 89, 93, 105, 106 ],
+        "tags" : [ "DT", "NN", "IN", "DT", "NNP", "RB", "VBD", "NN", "NN", "NN", "VBN", "IN", "NN", "JJ", "IN", "PRP$", "NNS", "." ],
+        "lemmas" : [ "a", "inhibition", "of", "the", "mPT", "strongly", "attenuate", "cytochrome", "c", "release", "induce", "by", "bax", "oligo", "in", "we", "experiment", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "poss"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "agent"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "poss"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-82530960",
+    "text" : "cytochrome c",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 9
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-1629443621",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cytochrome c",
+      "namespace" : "uniprot",
+      "id" : "P99999",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:483886871",
+    "text" : "BAX",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "-1629443621",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:280023892",
+    "text" : "cytochrome c release induced by BAX",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-510761422",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 66,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "-1629443621",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-82530960",
+        "text" : "cytochrome c",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 9
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-1629443621",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cytochrome c",
+          "namespace" : "uniprot",
+          "id" : "P99999",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:483886871",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 80,
+        "sentence" : 0,
+        "document" : "-1629443621",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-82530960" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "vmod"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:483886871" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "-1629443621",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

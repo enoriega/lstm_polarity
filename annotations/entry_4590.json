@@ -1,0 +1,271 @@
+{
+  "documents" : {
+    "-1821881799" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Moreover, FBXW7 mediated CCDC6 degradation is impaired in response to DNA damage.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Moreover", ",", "FBXW7", "mediated", "CCDC6", "degradation", "is", "impaired", "in", "response", "to", "DNA", "damage", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 17, 26, 32, 44, 47, 56, 59, 68, 71, 75, 81, 82 ],
+        "endOffsets" : [ 1, 9, 10, 16, 25, 31, 43, 46, 55, 58, 67, 70, 74, 81, 82, 83 ],
+        "tags" : [ "``", "RB", ",", "NN", "VBD", "NN", "NN", "VBZ", "JJ", "IN", "NN", "TO", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "moreover", ",", "fbxw7", "mediate", "ccdc6", "degradation", "be", "impaired", "in", "response", "to", "dna", "damage", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-BioProcess", "I-BioProcess", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-ADJP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "cop"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "cop"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "prep_to"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:502012315",
+    "text" : "FBXW7",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 16,
+    "sentence" : 0,
+    "document" : "-1821881799",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "FBX30",
+      "namespace" : "uniprot",
+      "id" : "Q969H0",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:644256622",
+    "text" : "CCDC6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1821881799",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein H4",
+      "namespace" : "uniprot",
+      "id" : "Q16204",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2144000088",
+    "text" : "DNA damage",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "-1821881799",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA methylation damage",
+      "namespace" : "mesh",
+      "id" : "D004249",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1231262241",
+    "text" : "FBXW7 mediated CCDC6",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:822468932",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-1821881799",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:502012315",
+        "text" : "FBXW7",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 16,
+        "sentence" : 0,
+        "document" : "-1821881799",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FBX30",
+          "namespace" : "uniprot",
+          "id" : "Q969H0",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:644256622",
+        "text" : "CCDC6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1821881799",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein H4",
+          "namespace" : "uniprot",
+          "id" : "Q16204",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1821881799",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

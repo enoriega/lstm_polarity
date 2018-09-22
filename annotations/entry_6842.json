@@ -1,0 +1,443 @@
+{
+  "documents" : {
+    "-865201021" : {
+      "id" : "sentence_annotator",
+      "text" : "Silencing LAMC2 partially blocked epidermal growth factor mediated activation of EGFR and its downstream pathway.",
+      "sentences" : [ {
+        "words" : [ "Silencing", "LAMC2", "partially", "blocked", "epidermal", "growth", "factor", "mediated", "activation", "of", "EGFR", "and", "its", "downstream", "pathway", "." ],
+        "startOffsets" : [ 0, 10, 16, 26, 34, 44, 51, 58, 67, 78, 81, 86, 90, 94, 105, 112 ],
+        "endOffsets" : [ 9, 15, 25, 33, 43, 50, 57, 66, 77, 80, 85, 89, 93, 104, 112, 113 ],
+        "tags" : [ "NN", "NN", "RB", "VBD", "JJ", "NN", "NN", "JJ", "NN", "IN", "NN", "CC", "PRP$", "JJ", "NN", "." ],
+        "lemmas" : [ "silencing", "lamc2", "partially", "block", "epidermal", "growth", "factor", "mediated", "activation", "of", "egfr", "and", "its", "downstream", "pathway", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "poss"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "poss"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:127786569",
+    "text" : "LAMC2 partially blocked epidermal growth factor mediated activation of EGFR",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1695731736",
+      "text" : "blocked",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-865201021",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1919897692",
+        "text" : "epidermal growth factor mediated activation of EGFR",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:809422279",
+          "text" : "mediated",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 58,
+          "characterEndOffset" : 66,
+          "sentence" : 0,
+          "document" : "-865201021",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2079383914",
+            "text" : "epidermal growth factor",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 7
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 57,
+            "sentence" : 0,
+            "document" : "-865201021",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGF",
+              "namespace" : "uniprot",
+              "id" : "P01133",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:765848926",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 10,
+              "end" : 11
+            },
+            "characterStartOffset" : 81,
+            "characterEndOffset" : 85,
+            "sentence" : 0,
+            "document" : "-865201021",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 11
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "-865201021",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-904290879",
+        "text" : "LAMC2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "-865201021",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Laminin B2t chain",
+          "namespace" : "uniprot",
+          "id" : "Q13753",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:1919897692" : [ {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-904290879" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-865201021",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-904290879",
+    "text" : "LAMC2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "-865201021",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Laminin B2t chain",
+      "namespace" : "uniprot",
+      "id" : "Q13753",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2079383914",
+    "text" : "epidermal growth factor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-865201021",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:765848926",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-865201021",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1919897692",
+    "text" : "epidermal growth factor mediated activation of EGFR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:809422279",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 58,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-865201021",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2079383914",
+        "text" : "epidermal growth factor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 7
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-865201021",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:765848926",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "-865201021",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-865201021",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,575 @@
+{
+  "documents" : {
+    "-2039720052" : {
+      "id" : "sentence_annotator",
+      "text" : "Diablo Promotes Apoptosis by Removing Miha and Xiap from Processed Caspase 9.",
+      "sentences" : [ {
+        "words" : [ "Diablo", "Promotes", "Apoptosis", "by", "Removing", "Miha", "and", "Xiap", "from", "Processed", "Caspase", "9", "." ],
+        "startOffsets" : [ 0, 7, 16, 26, 29, 38, 43, 47, 52, 57, 67, 75, 76 ],
+        "endOffsets" : [ 6, 15, 25, 28, 37, 42, 46, 51, 56, 66, 74, 76, 77 ],
+        "tags" : [ "NNP", "VBZ", "NN", "IN", "VBG", "NNP", "CC", "NNP", "IN", "NNP", "NN", "CD", "." ],
+        "lemmas" : [ "Diablo", "promote", "apoptosis", "by", "remove", "Miha", "and", "Xiap", "from", "Processed", "caspase", "9", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-BioProcess", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pcomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "num"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "prep_from"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "num"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1417778381",
+    "text" : "Diablo",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Diablo homolog, mitochondrial",
+      "namespace" : "uniprot",
+      "id" : "Q9NR28",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1325385251",
+    "text" : "Apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-475467674",
+    "text" : "Miha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Api3",
+      "namespace" : "uniprot",
+      "id" : "Q60989",
+      "species" : "mouse"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:760526563",
+    "text" : "Xiap",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IAP-like protein",
+      "namespace" : "uniprot",
+      "id" : "P98170",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1612720158",
+    "text" : "Caspase 9",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CASP-9",
+      "namespace" : "uniprot",
+      "id" : "P55211",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:531874159",
+    "text" : "Diablo Promotes Apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:303121632",
+      "text" : "Promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-2039720052",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1325385251",
+        "text" : "Apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1417778381",
+        "text" : "Diablo",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Diablo homolog, mitochondrial",
+          "namespace" : "uniprot",
+          "id" : "Q9NR28",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1325385251" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dobj"
+        } ],
+        "T:-475467674" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ],
+        "T:760526563" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1417778381" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:342634328",
+    "text" : "Diablo Promotes Apoptosis by Removing Miha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:303121632",
+      "text" : "Promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-2039720052",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-475467674",
+        "text" : "Miha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Api3",
+          "namespace" : "uniprot",
+          "id" : "Q60989",
+          "species" : "mouse"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1417778381",
+        "text" : "Diablo",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Diablo homolog, mitochondrial",
+          "namespace" : "uniprot",
+          "id" : "Q9NR28",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1325385251" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dobj"
+        } ],
+        "T:-475467674" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ],
+        "T:760526563" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1417778381" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1209849812",
+    "text" : "Diablo Promotes Apoptosis by Removing Miha and Xiap",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:303121632",
+      "text" : "Promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-2039720052",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:760526563",
+        "text" : "Xiap",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IAP-like protein",
+          "namespace" : "uniprot",
+          "id" : "P98170",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1417778381",
+        "text" : "Diablo",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-2039720052",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Diablo homolog, mitochondrial",
+          "namespace" : "uniprot",
+          "id" : "Q9NR28",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1325385251" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dobj"
+        } ],
+        "T:-475467674" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ],
+        "T:760526563" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1417778381" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-2039720052",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

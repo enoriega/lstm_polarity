@@ -1,0 +1,496 @@
+{
+  "documents" : {
+    "-1701446275" : {
+      "id" : "sentence_annotator",
+      "text" : "We hypothesized that compromised IFN-gamma signaling mediated by SOCS-1 prevents effective suppression of osteoclast differentiation.",
+      "sentences" : [ {
+        "words" : [ "We", "hypothesized", "that", "compromised", "IFN-gamma", "signaling", "mediated", "by", "SOCS-1", "prevents", "effective", "suppression", "of", "osteoclast", "differentiation", "." ],
+        "startOffsets" : [ 0, 3, 16, 21, 33, 43, 53, 62, 65, 72, 81, 91, 103, 106, 117, 132 ],
+        "endOffsets" : [ 2, 15, 20, 32, 42, 52, 61, 64, 71, 80, 90, 102, 105, 116, 132, 133 ],
+        "tags" : [ "PRP", "VBD", "IN", "VBN", "NN", "NN", "VBN", "IN", "NN", "VBZ", "JJ", "NN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "we", "hypothesize", "that", "compromise", "ifn-gamma", "signaling", "mediate", "by", "socs-1", "prevent", "effective", "suppression", "of", "osteoclast", "differentiation", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-TissueType", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "agent"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:538619922",
+    "text" : "IFN-gamma",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IFN-gamma",
+      "namespace" : "uniprot",
+      "id" : "P01579",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1134675780",
+    "text" : "SOCS-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAB",
+      "namespace" : "uniprot",
+      "id" : "O15524",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:84845893",
+    "text" : "osteoclast",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 106,
+    "characterEndOffset" : 116,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Osteoclast",
+      "namespace" : "tissuelist",
+      "id" : "TS-0721",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-273467895",
+    "text" : "differentiation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 117,
+    "characterEndOffset" : 132,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell differentiation",
+      "namespace" : "go",
+      "id" : "GO:0030154",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1322171483",
+    "text" : "IFN-gamma signaling mediated by SOCS-1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-778823576",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "-1701446275",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:538619922",
+        "text" : "IFN-gamma",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IFN-gamma",
+          "namespace" : "uniprot",
+          "id" : "P01579",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0721" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1134675780",
+        "text" : "SOCS-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 65,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAB",
+          "namespace" : "uniprot",
+          "id" : "O15524",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0721" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:538619922" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "vmod"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1134675780" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1655349684",
+        "text" : "hypothesized",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 3,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_2_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1295914924",
+    "text" : "IFN-gamma signaling mediated by SOCS-1 prevents effective suppression of osteoclast differentiation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1938338740",
+      "text" : "prevents",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 72,
+      "characterEndOffset" : 80,
+      "sentence" : 0,
+      "document" : "-1701446275",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-273467895",
+        "text" : "differentiation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 117,
+        "characterEndOffset" : 132,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell differentiation",
+          "namespace" : "go",
+          "id" : "GO:0030154",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0721" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:538619922",
+        "text" : "IFN-gamma",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IFN-gamma",
+          "namespace" : "uniprot",
+          "id" : "P01579",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0721" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-273467895" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:538619922" : [ {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 15
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 132,
+    "sentence" : 0,
+    "document" : "-1701446275",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1655349684",
+        "text" : "hypothesized",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 3,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "-1701446275",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0721" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

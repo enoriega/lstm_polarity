@@ -1,0 +1,409 @@
+{
+  "documents" : {
+    "-702736399" : {
+      "id" : "sentence_annotator",
+      "text" : "The inhibition of TNFalpha induced AKT activation often leads to the activation of TNFalpha mediated apoptosis.",
+      "sentences" : [ {
+        "words" : [ "The", "inhibition", "of", "TNFalpha", "induced", "AKT", "activation", "often", "leads", "to", "the", "activation", "of", "TNFalpha", "mediated", "apoptosis", "." ],
+        "startOffsets" : [ 0, 4, 15, 18, 27, 35, 39, 50, 56, 62, 65, 69, 80, 83, 92, 101, 110 ],
+        "endOffsets" : [ 3, 14, 17, 26, 34, 38, 49, 55, 61, 64, 68, 79, 82, 91, 100, 110, 111 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "VBD", "NN", "NN", "RB", "VBZ", "TO", "DT", "NN", "IN", "NN", "JJ", "NN", "." ],
+        "lemmas" : [ "the", "inhibition", "of", "tnfalpha", "induce", "akt", "activation", "often", "lead", "to", "the", "activation", "of", "tnfalpha", "mediated", "apoptosis", "." ],
+        "entities" : [ "O", "O", "O", "B-Family", "O", "B-Family", "O", "O", "O", "O", "O", "O", "O", "B-Family", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-ADVP", "B-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_to"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2036968400",
+    "text" : "TNFalpha",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TNFALPHA",
+      "namespace" : "interpro",
+      "id" : "IPR002959",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-195725751",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1098698425",
+    "text" : "TNFalpha",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 83,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TNFALPHA",
+      "namespace" : "interpro",
+      "id" : "IPR002959",
+      "species" : "human"
+    },
+    "displayLabel" : "Family",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-2036968400",
+      "text" : "TNFalpha",
+      "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "-702736399",
+      "keep" : true,
+      "foundBy" : "ner-family-entities",
+      "grounding" : {
+        "text" : "TNFALPHA",
+        "namespace" : "interpro",
+        "id" : "IPR002959",
+        "species" : "human"
+      },
+      "displayLabel" : "Family"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1077602961",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 101,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1362637026",
+    "text" : "TNFalpha mediated apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-349295803",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 92,
+      "characterEndOffset" : 100,
+      "sentence" : 0,
+      "document" : "-702736399",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1098698425",
+        "text" : "TNFalpha",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 83,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "-702736399",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "TNFALPHA",
+          "namespace" : "interpro",
+          "id" : "IPR002959",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1077602961",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 101,
+        "characterEndOffset" : 110,
+        "sentence" : 0,
+        "document" : "-702736399",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 16
+    },
+    "characterStartOffset" : 83,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-117153080",
+    "text" : "TNFalpha induced AKT",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-329998896",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "-702736399",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2036968400",
+        "text" : "TNFalpha",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-702736399",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "TNFALPHA",
+          "namespace" : "interpro",
+          "id" : "IPR002959",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-195725751",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-702736399",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-702736399",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

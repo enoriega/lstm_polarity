@@ -1,0 +1,214 @@
+{
+  "documents" : {
+    "-1894792317" : {
+      "id" : "sentence_annotator",
+      "text" : "New SMAC-mimetics targeting the BIR2 and BIR3 domains of XIAP.",
+      "sentences" : [ {
+        "words" : [ "New", "SMAC-mimetics", "targeting", "the", "BIR2", "and", "BIR3", "domains", "of", "XIAP", "." ],
+        "startOffsets" : [ 0, 4, 18, 28, 32, 37, 41, 46, 54, 57, 61 ],
+        "endOffsets" : [ 3, 17, 27, 31, 36, 40, 45, 53, 56, 61, 62 ],
+        "tags" : [ "NNP", "NNP", "VBG", "DT", "NN", "CC", "NN", "NNS", "IN", "NN", "." ],
+        "lemmas" : [ "New", "SMAC-mimetics", "target", "the", "bir2", "and", "bir3", "domain", "of", "xiap", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1600309514",
+    "text" : "BIR2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-1894792317",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-613559534",
+        "text" : "BIR3 domains",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-1894792317",
+        "keep" : true,
+        "foundBy" : "site_domain",
+        "grounding" : {
+          "text" : "BIR3 domains",
+          "namespace" : "uaz",
+          "id" : "UAZ00805",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "Protein BAK1-INTERACTING RECEPTOR-LIKE KINASE 2",
+      "namespace" : "uniprot",
+      "id" : "Q9LSI9",
+      "species" : "arabidopsis thaliana"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-613559534",
+    "text" : "BIR3 domains",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-1894792317",
+    "keep" : true,
+    "foundBy" : "site_domain",
+    "grounding" : {
+      "text" : "BIR3 domains",
+      "namespace" : "uaz",
+      "id" : "UAZ00805",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1345319579",
+    "text" : "XIAP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-1894792317",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-613559534",
+        "text" : "BIR3 domains",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-1894792317",
+        "keep" : true,
+        "foundBy" : "site_domain",
+        "grounding" : {
+          "text" : "BIR3 domains",
+          "namespace" : "uaz",
+          "id" : "UAZ00805",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "IAP-like protein",
+      "namespace" : "uniprot",
+      "id" : "P98170",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  } ]
+}

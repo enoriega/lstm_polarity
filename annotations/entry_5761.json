@@ -1,0 +1,290 @@
+{
+  "documents" : {
+    "240151429" : {
+      "id" : "sentence_annotator",
+      "text" : "Reduced insulin stimulated Akt is evident in insulin resistant obese individuals.",
+      "sentences" : [ {
+        "words" : [ "Reduced", "insulin", "stimulated", "Akt", "is", "evident", "in", "insulin", "resistant", "obese", "individuals", "." ],
+        "startOffsets" : [ 0, 8, 16, 27, 31, 34, 42, 45, 53, 63, 69, 80 ],
+        "endOffsets" : [ 7, 15, 26, 30, 33, 41, 44, 52, 62, 68, 80, 81 ],
+        "tags" : [ "VBN", "NN", "VBN", "NNP", "VBZ", "JJ", "IN", "NN", "JJ", "JJ", "NNS", "." ],
+        "lemmas" : [ "reduce", "insulin", "stimulate", "Akt", "be", "evident", "in", "insulin", "resistant", "obese", "individual", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-VP", "B-ADJP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2087878027",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "240151429",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1050260281",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "240151429",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1713521145",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "240151429",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:2087878027",
+      "text" : "insulin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "240151429",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Insulin B chain",
+        "namespace" : "uniprot",
+        "id" : "P01308",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1182682533",
+    "text" : "insulin stimulated Akt",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1383668504",
+      "text" : "stimulated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "240151429",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1050260281",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "240151429",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2087878027",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "240151429",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1050260281" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:2087878027" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "240151429",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

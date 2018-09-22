@@ -1,0 +1,424 @@
+{
+  "documents" : {
+    "1234462979" : {
+      "id" : "sentence_annotator",
+      "text" : "TNFalpha increases IRS-1 Ser307 in REC.",
+      "sentences" : [ {
+        "words" : [ "TNFalpha", "increases", "IRS-1", "Ser307", "in", "REC", "." ],
+        "startOffsets" : [ 0, 9, 19, 25, 32, 35, 38 ],
+        "endOffsets" : [ 8, 18, 24, 31, 34, 38, 39 ],
+        "tags" : [ "NN", "VBZ", "NN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "tnfalpha", "increase", "irs-1", "ser307", "in", "rec", "." ],
+        "entities" : [ "B-Family", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_in"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:756737715",
+    "text" : "TNFalpha",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "TNFALPHA",
+      "namespace" : "interpro",
+      "id" : "IPR002959",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1201362882",
+    "text" : "IRS-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-220892401",
+        "text" : "Ser307",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "1234462979",
+        "keep" : true,
+        "foundBy" : "site_3letter",
+        "grounding" : {
+          "text" : "Ser307",
+          "namespace" : "uaz",
+          "id" : "UAZ01083",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "Insulin receptor substrate 1",
+      "namespace" : "uniprot",
+      "id" : "P35568",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-220892401",
+    "text" : "Ser307",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "site_3letter",
+    "grounding" : {
+      "text" : "Ser307",
+      "namespace" : "uaz",
+      "id" : "UAZ01083",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-421947953",
+    "text" : "REC",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Zinc finger protein 372",
+      "namespace" : "uniprot",
+      "id" : "Q9UIJ5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1648051605",
+    "text" : "TNFalpha increases IRS-1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:468956039",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "1234462979",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1201362882",
+        "text" : "IRS-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1234462979",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-220892401",
+            "text" : "Ser307",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 25,
+            "characterEndOffset" : 31,
+            "sentence" : 0,
+            "document" : "1234462979",
+            "keep" : true,
+            "foundBy" : "site_3letter",
+            "grounding" : {
+              "text" : "Ser307",
+              "namespace" : "uaz",
+              "id" : "UAZ01083",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "Insulin receptor substrate 1",
+          "namespace" : "uniprot",
+          "id" : "P35568",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:756737715",
+        "text" : "TNFalpha",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "1234462979",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "TNFALPHA",
+          "namespace" : "interpro",
+          "id" : "IPR002959",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1201362882" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ],
+        "T:-421947953" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ]
+      },
+      "controller" : {
+        "T:756737715" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-128345449",
+    "text" : "TNFalpha increases IRS-1 Ser307 in REC",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:468956039",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "1234462979",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-421947953",
+        "text" : "REC",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "1234462979",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Zinc finger protein 372",
+          "namespace" : "uniprot",
+          "id" : "Q9UIJ5",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:756737715",
+        "text" : "TNFalpha",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "1234462979",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "TNFALPHA",
+          "namespace" : "interpro",
+          "id" : "IPR002959",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1201362882" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ],
+        "T:-421947953" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ]
+      },
+      "controller" : {
+        "T:756737715" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1234462979",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

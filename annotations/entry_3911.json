@@ -1,0 +1,309 @@
+{
+  "documents" : {
+    "-1310053303" : {
+      "id" : "sentence_annotator",
+      "text" : "\"For the non canonical pathway, RelB is sequestered in the cytosol by p100.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "For", "the", "non", "canonical", "pathway", ",", "RelB", "is", "sequestered", "in", "the", "cytosol", "by", "p100", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 9, 13, 23, 30, 32, 37, 40, 52, 55, 59, 67, 70, 74, 75 ],
+        "endOffsets" : [ 1, 4, 8, 12, 22, 30, 31, 36, 39, 51, 54, 58, 66, 69, 74, 75, 76 ],
+        "tags" : [ "``", "IN", "DT", "JJ", "JJ", "NN", ",", "NN", "VBZ", "VBN", "IN", "DT", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "for", "the", "non", "canonical", "pathway", ",", "relb", "be", "sequester", "in", "the", "cytosol", "by", "p100", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Cellular_component", "O", "B-Family", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "prep_for"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "prep_in"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "agent"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:925684278",
+    "text" : "RelB",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-1310053303",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "I-Rel",
+      "namespace" : "uniprot",
+      "id" : "Q01201",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1582876284",
+    "text" : "cytosol",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1310053303",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "cytosol",
+      "namespace" : "go",
+      "id" : "GO:0005829",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1553044314",
+    "text" : "p100",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-1310053303",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "p100",
+      "namespace" : "pfam",
+      "id" : "PF00794",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1107500915",
+    "text" : "RelB is sequestered in the cytosol by p100",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:9336508",
+      "text" : "sequestered",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-1310053303",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:925684278",
+        "text" : "RelB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-1310053303",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "I-Rel",
+          "namespace" : "uniprot",
+          "id" : "Q01201",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1553044314",
+        "text" : "p100",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "-1310053303",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "p100",
+          "namespace" : "pfam",
+          "id" : "PF00794",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:925684278" : [ {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-1553044314" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 15
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-1310053303",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,459 @@
+{
+  "documents" : {
+    "-439614095" : {
+      "id" : "sentence_annotator",
+      "text" : "Phosphorylation of GSK3beta has been shown to mediate beta-catenin activation through inhibition of beta-catenin degradation complex.",
+      "sentences" : [ {
+        "words" : [ "Phosphorylation", "of", "GSK3beta", "has", "been", "shown", "to", "mediate", "beta-catenin", "activation", "through", "inhibition", "of", "beta-catenin", "degradation", "complex", "." ],
+        "startOffsets" : [ 0, 16, 19, 28, 32, 37, 43, 46, 54, 67, 78, 86, 97, 100, 113, 125, 132 ],
+        "endOffsets" : [ 15, 18, 27, 31, 36, 42, 45, 53, 66, 77, 85, 96, 99, 112, 124, 132, 133 ],
+        "tags" : [ "NN", "IN", "NN", "VBZ", "VBN", "VBN", "TO", "VB", "NN", "NN", "IN", "NN", "IN", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "phosphorylation", "of", "gsk3beta", "have", "be", "show", "to", "mediate", "beta-catenin", "activation", "through", "inhibition", "of", "beta-catenin", "degradation", "complex", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prep_through"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-6604272",
+    "text" : "GSK3beta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-439614095",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GSK3beta",
+      "namespace" : "uniprot",
+      "id" : "P49841",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1660835977",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-439614095",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2124332358",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 112,
+    "sentence" : 0,
+    "document" : "-439614095",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1660835977",
+      "text" : "beta-catenin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-439614095",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Beta-catenin",
+        "namespace" : "uniprot",
+        "id" : "P35222",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1340689490",
+    "text" : "Phosphorylation of GSK3beta has been shown to mediate beta-catenin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1784081744",
+      "text" : "mediate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "-439614095",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1660835977",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-439614095",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-246082267",
+        "text" : "Phosphorylation of GSK3beta",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1017043380",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-439614095",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-6604272",
+            "text" : "GSK3beta",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-439614095",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "GSK3beta",
+              "namespace" : "uniprot",
+              "id" : "P49841",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-6604272" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-439614095",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1660835977" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-246082267" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:-6604272" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-439614095",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-246082267",
+    "text" : "Phosphorylation of GSK3beta",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1017043380",
+      "text" : "Phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-439614095",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-6604272",
+        "text" : "GSK3beta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-439614095",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GSK3beta",
+          "namespace" : "uniprot",
+          "id" : "P49841",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-6604272" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-439614095",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  } ]
+}

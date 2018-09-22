@@ -1,0 +1,336 @@
+{
+  "documents" : {
+    "151158820" : {
+      "id" : "sentence_annotator",
+      "text" : "Enhancement of p-Bad could induce the release of Bcl-2 from Bcl-2 and Bad dimmer.",
+      "sentences" : [ {
+        "words" : [ "Enhancement", "of", "p-Bad", "could", "induce", "the", "release", "of", "Bcl-2", "from", "Bcl-2", "and", "Bad", "dimmer", "." ],
+        "startOffsets" : [ 0, 12, 15, 21, 27, 34, 38, 46, 49, 55, 60, 66, 70, 74, 80 ],
+        "endOffsets" : [ 11, 14, 20, 26, 33, 37, 45, 48, 54, 59, 65, 69, 73, 80, 81 ],
+        "tags" : [ "NN", "IN", "NN", "MD", "VB", "DT", "NN", "IN", "NN", "IN", "NN", "CC", "JJ", "NN", "." ],
+        "lemmas" : [ "enhancement", "of", "p-bad", "could", "induce", "the", "release", "of", "bcl-2", "from", "bcl-2", "and", "bad", "dimmer", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "prep_from"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "prep_from"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1558393587",
+    "text" : "p-Bad",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "151158820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl-2-binding component 6",
+      "namespace" : "uniprot",
+      "id" : "Q92934",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:212808689",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "151158820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1818803714",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "151158820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:212808689",
+      "text" : "Bcl-2",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "151158820",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Bcl2",
+        "namespace" : "uniprot",
+        "id" : "P10415",
+        "species" : "human"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-822568478",
+    "text" : "Bad dimmer",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "151158820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bad dimmer",
+      "namespace" : "uaz",
+      "id" : "UAZ01330",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1187813129",
+    "text" : "p-Bad could induce the release of Bcl-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-151686388",
+      "text" : "induce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "151158820",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:212808689",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "151158820",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1558393587",
+        "text" : "p-Bad",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "151158820",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl-2-binding component 6",
+          "namespace" : "uniprot",
+          "id" : "Q92934",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:212808689" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1558393587" : [ {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 9
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "151158820",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,438 @@
+{
+  "documents" : {
+    "-489534333" : {
+      "id" : "sentence_annotator",
+      "text" : "\"To investigate whether DTX1 antagonizes NOTCH signaling in osteosarcoma, we overexpressed DTX1 in OS187 cells.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "To", "investigate", "whether", "DTX1", "antagonizes", "NOTCH", "signaling", "in", "osteosarcoma", ",", "we", "overexpressed", "DTX1", "in", "OS187", "cells", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 16, 24, 29, 41, 47, 57, 60, 72, 74, 77, 91, 96, 99, 105, 110, 111 ],
+        "endOffsets" : [ 1, 3, 15, 23, 28, 40, 46, 56, 59, 72, 73, 76, 90, 95, 98, 104, 110, 111, 112 ],
+        "tags" : [ "``", "TO", "VB", "IN", "NN", "VBZ", "NN", "NN", "IN", "NN", ",", "PRP", "VBD", "NN", "IN", "NN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "to", "investigate", "whether", "dtx1", "antagonize", "notch", "signaling", "in", "osteosarcoma", ",", "we", "overexpress", "dtx1", "in", "os187", "cell", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "B-TissueType", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-CellLine", "O", "O", "O" ],
+        "chunks" : [ "O", "B-VP", "I-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 2,
+              "relation" : "advcl"
+            }, {
+              "source" : 12,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_in"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 12,
+              "destination" : 2,
+              "relation" : "advcl"
+            }, {
+              "source" : 12,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:678702150",
+    "text" : "DTX1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein deltex-1",
+      "namespace" : "uniprot",
+      "id" : "Q86Y01",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1956089273",
+    "text" : "NOTCH",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "NOTCH",
+      "namespace" : "pfam",
+      "id" : "PF00066",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2127015162",
+    "text" : "osteosarcoma",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Osteosarcoma",
+      "namespace" : "tissuelist",
+      "id" : "TS-0723",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1366079639",
+    "text" : "DTX1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 91,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein deltex-1",
+      "namespace" : "uniprot",
+      "id" : "Q86Y01",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:678702150",
+      "text" : "DTX1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "-489534333",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Protein deltex-1",
+        "namespace" : "uniprot",
+        "id" : "Q86Y01",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+        "TissueType" : [ "tissuelist:TS-0723" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-753947608",
+    "text" : "OS187",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "OS187",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_1R50",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1825753769",
+    "text" : "DTX1 antagonizes NOTCH",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:494293117",
+      "text" : "antagonizes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 29,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-489534333",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1956089273",
+        "text" : "NOTCH",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-489534333",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "NOTCH",
+          "namespace" : "pfam",
+          "id" : "PF00066",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+          "TissueType" : [ "tissuelist:TS-0723" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:678702150",
+        "text" : "DTX1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "-489534333",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein deltex-1",
+          "namespace" : "uniprot",
+          "id" : "Q86Y01",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+          "TissueType" : [ "tissuelist:TS-0723" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1956089273" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:678702150" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-489534333",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1047542212",
+        "text" : "whether",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-489534333",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_1R50" ],
+      "TissueType" : [ "tissuelist:TS-0723" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,257 @@
+{
+  "documents" : {
+    "-528388347" : {
+      "id" : "sentence_annotator",
+      "text" : "CDK8 has been shown to target Notch1 for ubiquitination and proteosomal degradation.",
+      "sentences" : [ {
+        "words" : [ "CDK8", "has", "been", "shown", "to", "target", "Notch1", "for", "ubiquitination", "and", "proteosomal", "degradation", "." ],
+        "startOffsets" : [ 0, 5, 9, 14, 20, 23, 30, 37, 41, 56, 60, 72, 83 ],
+        "endOffsets" : [ 4, 8, 13, 19, 22, 29, 36, 40, 55, 59, 71, 83, 84 ],
+        "tags" : [ "NN", "VBZ", "VBN", "VBN", "TO", "VB", "NN", "IN", "NN", "CC", "JJ", "NN", "." ],
+        "lemmas" : [ "cdk8", "have", "be", "show", "to", "target", "notch1", "for", "ubiquitination", "and", "proteosomal", "degradation", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_for"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "prep_for"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1187482233",
+    "text" : "CDK8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-528388347",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDK8",
+      "namespace" : "uniprot",
+      "id" : "P49336",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-414159427",
+    "text" : "Notch1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-528388347",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Translocation-associated notch protein TAN-1",
+      "namespace" : "uniprot",
+      "id" : "P46531",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1607739401",
+    "text" : "CDK8 has been shown to target Notch1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:697193263",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "-528388347",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-414159427",
+        "text" : "Notch1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-528388347",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Translocation-associated notch protein TAN-1",
+          "namespace" : "uniprot",
+          "id" : "P46531",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1187482233",
+        "text" : "CDK8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-528388347",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDK8",
+          "namespace" : "uniprot",
+          "id" : "P49336",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-414159427" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1187482233" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "xcomp"
+        }, {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-528388347",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

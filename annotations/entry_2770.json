@@ -1,0 +1,261 @@
+{
+  "documents" : {
+    "304732338" : {
+      "id" : "sentence_annotator",
+      "text" : "Caspase 9 inhibition blocked the TNP induced activation of caspase 3 significantly.",
+      "sentences" : [ {
+        "words" : [ "Caspase", "9", "inhibition", "blocked", "the", "TNP", "induced", "activation", "of", "caspase", "3", "significantly", "." ],
+        "startOffsets" : [ 0, 8, 10, 21, 29, 33, 37, 45, 56, 59, 67, 69, 82 ],
+        "endOffsets" : [ 7, 9, 20, 28, 32, 36, 44, 55, 58, 66, 68, 82, 83 ],
+        "tags" : [ "NN", "CD", "NN", "VBD", "DT", "NN", "VBD", "NN", "IN", "NN", "CD", "RB", "." ],
+        "lemmas" : [ "caspase", "9", "inhibition", "block", "the", "tnp", "induce", "activation", "of", "caspase", "3", "significantly", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "B-ADVP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "num"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "num"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:256898802",
+    "text" : "Caspase 9",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "304732338",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CASP-9",
+      "namespace" : "uniprot",
+      "id" : "P55211",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1679886802",
+    "text" : "caspase 3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 11
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "304732338",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Caspase-3 subunit p12",
+      "namespace" : "uniprot",
+      "id" : "P42574",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1041096387",
+    "text" : "Caspase 9 inhibition blocked the TNP induced activation of caspase 3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-889558556",
+      "text" : "blocked",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "304732338",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1679886802",
+        "text" : "caspase 3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 11
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "304732338",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Caspase-3 subunit p12",
+          "namespace" : "uniprot",
+          "id" : "P42574",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:256898802",
+        "text" : "Caspase 9",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "304732338",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CASP-9",
+          "namespace" : "uniprot",
+          "id" : "P55211",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1679886802" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "ccomp"
+        }, {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:256898802" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "304732338",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

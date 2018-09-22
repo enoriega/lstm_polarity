@@ -1,0 +1,464 @@
+{
+  "documents" : {
+    "628021493" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Concomitantly, suppressor of fused (Sufu) stabilizes Gli proteins to suppress transcriptional activity of Gli2.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Concomitantly", ",", "suppressor", "of", "fused", "(", "Sufu", ")", "stabilizes", "Gli", "proteins", "to", "suppress", "transcriptional", "activity", "of", "Gli2", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 27, 30, 36, 37, 41, 43, 54, 58, 67, 70, 79, 95, 104, 107, 111, 112 ],
+        "endOffsets" : [ 1, 14, 15, 26, 29, 35, 37, 41, 42, 53, 57, 66, 69, 78, 94, 103, 106, 111, 112, 113 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "VBN", "-LRB-", "NN", "-RRB-", "VBZ", "JJ", "NNS", "TO", "VB", "JJ", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "concomitantly", ",", "suppressor", "of", "fuse", "(", "sufu", ")", "stabilize", "gli", "protein", "to", "suppress", "transcriptional", "activity", "of", "gli2", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Family", "I-Family", "I-Family", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pcomp"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "prep"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 17,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prepc_of"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "prep_of"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-979227544",
+    "text" : "suppressor of fused",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Suppressor of fused",
+      "namespace" : "interpro",
+      "id" : "IPR007768",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:50178065",
+    "text" : "Sufu",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SUFU",
+      "namespace" : "uniprot",
+      "id" : "Q9UMX1",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1286176209",
+    "text" : "Gli proteins",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Gli proteins",
+      "namespace" : "uaz",
+      "id" : "UAZ01533",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:973044638",
+    "text" : "Gli2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 17,
+      "end" : 18
+    },
+    "characterStartOffset" : 107,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Zinc finger protein GLI2",
+      "namespace" : "uniprot",
+      "id" : "P10070",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:815050529",
+    "text" : "suppressor of fused (Sufu) stabilizes Gli proteins to suppress transcriptional activity of Gli2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:466309373",
+      "text" : "suppress",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 70,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "628021493",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:973044638",
+        "text" : "Gli2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 17,
+          "end" : 18
+        },
+        "characterStartOffset" : 107,
+        "characterEndOffset" : 111,
+        "sentence" : 0,
+        "document" : "628021493",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Zinc finger protein GLI2",
+          "namespace" : "uniprot",
+          "id" : "P10070",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-979227544",
+        "text" : "suppressor of fused",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 6
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "628021493",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Suppressor of fused",
+          "namespace" : "interpro",
+          "id" : "IPR007768",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:973044638" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 17,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-979227544" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "T:50178065" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 18
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:250868749",
+    "text" : "Sufu) stabilizes Gli proteins to suppress transcriptional activity of Gli2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1189165972",
+      "text" : "suppress",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 70,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "628021493",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:973044638",
+        "text" : "Gli2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 17,
+          "end" : 18
+        },
+        "characterStartOffset" : 107,
+        "characterEndOffset" : 111,
+        "sentence" : 0,
+        "document" : "628021493",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Zinc finger protein GLI2",
+          "namespace" : "uniprot",
+          "id" : "P10070",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:50178065",
+        "text" : "Sufu",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "628021493",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SUFU",
+          "namespace" : "uniprot",
+          "id" : "Q9UMX1",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:973044638" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 17,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-979227544" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "T:50178065" : [ {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 18
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "628021493",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

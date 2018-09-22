@@ -1,0 +1,514 @@
+{
+  "documents" : {
+    "1910705191" : {
+      "id" : "sentence_annotator",
+      "text" : "We next tested whether the presence of plasma apoA-I would prevent LN cholesterol accumulation.",
+      "sentences" : [ {
+        "words" : [ "We", "next", "tested", "whether", "the", "presence", "of", "plasma", "apoA-I", "would", "prevent", "LN", "cholesterol", "accumulation", "." ],
+        "startOffsets" : [ 0, 3, 8, 15, 23, 27, 36, 39, 46, 53, 59, 67, 70, 82, 94 ],
+        "endOffsets" : [ 2, 7, 14, 22, 26, 35, 38, 45, 52, 58, 66, 69, 81, 94, 95 ],
+        "tags" : [ "PRP", "RB", "VBD", "IN", "DT", "NN", "IN", "NN", "NN", "MD", "VB", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "we", "next", "test", "whether", "the", "presence", "of", "plasma", "apoa-i", "would", "prevent", "ln", "cholesterol", "accumulation", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-TissueType", "B-Gene_or_gene_product", "O", "O", "B-Simple_chemical", "B-Simple_chemical", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-SBAR", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-444469545",
+    "text" : "plasma",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Plasma",
+      "namespace" : "tissuelist",
+      "id" : "TS-0800",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1227556153",
+    "text" : "apoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1837928113",
+    "text" : "LN",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "LN",
+      "namespace" : "pubchem",
+      "id" : "7016078",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1466500729",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:324200691",
+    "text" : "apoA-I would prevent LN",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1795506667",
+      "text" : "prevent",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 59,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "1910705191",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1837928113",
+        "text" : "LN",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 67,
+        "characterEndOffset" : 69,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "LN",
+          "namespace" : "pubchem",
+          "id" : "7016078",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1227556153",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 52,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1837928113" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-1466500729" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1227556153" : [ {
+          "source" : 10,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 12
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1513531745",
+        "text" : "whether",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1623493961",
+    "text" : "apoA-I would prevent LN cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1795506667",
+      "text" : "prevent",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 59,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "1910705191",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1466500729",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1227556153",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 52,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1837928113" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 11,
+          "relation" : "nn"
+        } ],
+        "T:-1466500729" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1227556153" : [ {
+          "source" : 10,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 13
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1910705191",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1513531745",
+        "text" : "whether",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1910705191",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

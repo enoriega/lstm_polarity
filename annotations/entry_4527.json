@@ -1,0 +1,445 @@
+{
+  "documents" : {
+    "1330648982" : {
+      "id" : "sentence_annotator",
+      "text" : "Pim1 Promotes Proliferation and Resistance to Mitochondria Dependent Apoptosis in PAH PASMCs.",
+      "sentences" : [ {
+        "words" : [ "Pim1", "Promotes", "Proliferation", "and", "Resistance", "to", "Mitochondria", "Dependent", "Apoptosis", "in", "PAH", "PASMCs", "." ],
+        "startOffsets" : [ 0, 5, 14, 28, 32, 43, 46, 59, 69, 79, 82, 86, 92 ],
+        "endOffsets" : [ 4, 13, 27, 31, 42, 45, 58, 68, 78, 81, 85, 92, 93 ],
+        "tags" : [ "NN", "VBZ", "NN", "CC", "NN", "TO", "NNP", "NNP", "NN", "IN", "NN", "NNS", "." ],
+        "lemmas" : [ "pim1", "promote", "proliferation", "and", "resistance", "to", "Mitochondria", "Dependent", "apoptosis", "in", "pah", "pasmc", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-BioProcess", "O", "O", "O", "B-Cellular_component", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "prep_to"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_in"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1879051397",
+    "text" : "Pim1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Serine/threonine-protein kinase pim-1",
+      "namespace" : "uniprot",
+      "id" : "P11309",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:657951442",
+    "text" : "Proliferation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell Multiplication",
+      "namespace" : "go",
+      "id" : "GO:0008283",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2113232604",
+    "text" : "Mitochondria",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "Mitochondria",
+      "namespace" : "go",
+      "id" : "GO:0005739",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-265544981",
+    "text" : "Apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:950612008",
+    "text" : "PAH",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 82,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Phenylalanine-4-hydroxylase",
+      "namespace" : "uniprot",
+      "id" : "P00439",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-993453658",
+    "text" : "Pim1 Promotes Proliferation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1622593803",
+      "text" : "Promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 13,
+      "sentence" : 0,
+      "document" : "1330648982",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:657951442",
+        "text" : "Proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "1330648982",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1879051397",
+        "text" : "Pim1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "1330648982",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Serine/threonine-protein kinase pim-1",
+          "namespace" : "uniprot",
+          "id" : "P11309",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:657951442" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-1879051397" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1500029335",
+    "text" : "Pim1 Promotes Proliferation and Resistance to Mitochondria Dependent Apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1622593803",
+      "text" : "Promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 13,
+      "sentence" : 0,
+      "document" : "1330648982",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_7_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-265544981",
+        "text" : "Apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 69,
+        "characterEndOffset" : 78,
+        "sentence" : 0,
+        "document" : "1330648982",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1879051397",
+        "text" : "Pim1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "1330648982",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Serine/threonine-protein kinase pim-1",
+          "namespace" : "uniprot",
+          "id" : "P11309",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-265544981" : [ {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_to"
+        } ]
+      },
+      "controller" : {
+        "T:-1879051397" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 78,
+    "sentence" : 0,
+    "document" : "1330648982",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_7_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

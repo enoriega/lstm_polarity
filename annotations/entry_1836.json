@@ -1,0 +1,464 @@
+{
+  "documents" : {
+    "-1019907886" : {
+      "id" : "sentence_annotator",
+      "text" : "In vitro oxidation of either apoA1 or HDL particles by MPO impairs their cholesterol acceptor function.",
+      "sentences" : [ {
+        "words" : [ "In", "vitro", "oxidation", "of", "either", "apoA1", "or", "HDL", "particles", "by", "MPO", "impairs", "their", "cholesterol", "acceptor", "function", "." ],
+        "startOffsets" : [ 0, 3, 9, 19, 22, 29, 35, 38, 42, 52, 55, 59, 67, 73, 85, 94, 102 ],
+        "endOffsets" : [ 2, 8, 18, 21, 28, 34, 37, 41, 51, 54, 58, 66, 72, 84, 93, 102, 103 ],
+        "tags" : [ "FW", "FW", "NN", "IN", "CC", "NN", "CC", "NN", "NNS", "IN", "NNP", "VBZ", "PRP$", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "in", "vitro", "oxidation", "of", "either", "apoa1", "or", "hdl", "particle", "by", "MPO", "impair", "they", "cholesterol", "acceptor", "function", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Simple_chemical", "O", "O", "O" ],
+        "chunks" : [ "B-PP", "B-NP", "I-NP", "B-PP", "O", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "preconj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "poss"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "prep_by"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "preconj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj_or"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "poss"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 11 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:330992807",
+    "text" : "apoA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:542828145",
+    "text" : "HDL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HDL",
+      "namespace" : "be",
+      "id" : "HDL",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:403383655",
+    "text" : "MPO",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Myeloperoxidase heavy chain",
+      "namespace" : "uniprot",
+      "id" : "P05164",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:407959434",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:587738371",
+    "text" : "apoA1 or HDL particles by MPO impairs their cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2070749612",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 59,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-1019907886",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:407959434",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-1019907886",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:330992807",
+        "text" : "apoA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "-1019907886",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:407959434" : [ {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:330992807" : [ {
+          "source" : 11,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:542828145" : [ {
+          "source" : 11,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "prep_of"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 14
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1805073276",
+    "text" : "HDL particles by MPO impairs their cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2070749612",
+      "text" : "impairs",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 59,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-1019907886",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:407959434",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-1019907886",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:542828145",
+        "text" : "HDL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "-1019907886",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDL",
+          "namespace" : "be",
+          "id" : "HDL",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:407959434" : [ {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:330992807" : [ {
+          "source" : 11,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:542828145" : [ {
+          "source" : 11,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 8,
+          "relation" : "prep_of"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 14
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-1019907886",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

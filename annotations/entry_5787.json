@@ -1,0 +1,364 @@
+{
+  "documents" : {
+    "-1078959323" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Importantly, silencing of TBC1D3 suppressed the activation of Akt by insulin.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Importantly", ",", "silencing", "of", "TBC1D3", "suppressed", "the", "activation", "of", "Akt", "by", "insulin", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 24, 27, 34, 45, 49, 60, 63, 67, 70, 77, 78 ],
+        "endOffsets" : [ 1, 12, 13, 23, 26, 33, 44, 48, 59, 62, 66, 69, 77, 78, 79 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "NN", "VBD", "DT", "NN", "IN", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "importantly", ",", "silencing", "of", "tbc1d3", "suppress", "the", "activation", "of", "akt", "by", "insulin", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "prep_by"
+            }, {
+              "source" : 6,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:638836355",
+    "text" : "TBC1D3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "-1078959323",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TBC1 domain family member 3",
+      "namespace" : "uniprot",
+      "id" : "Q8IZP1",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1899746314",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1078959323",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-233331093",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "-1078959323",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2113259417",
+    "text" : "activation of Akt by insulin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:883567556",
+      "text" : "activation",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 49,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-1078959323",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1899746314",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1078959323",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-233331093",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "-1078959323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 13
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "-1078959323",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_2_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:187558203",
+    "text" : "TBC1D3 suppressed the activation of Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:186322317",
+      "text" : "suppressed",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 34,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "-1078959323",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1899746314",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-1078959323",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:638836355",
+        "text" : "TBC1D3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "-1078959323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TBC1 domain family member 3",
+          "namespace" : "uniprot",
+          "id" : "Q8IZP1",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1899746314" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:638836355" : [ {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 11
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-1078959323",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

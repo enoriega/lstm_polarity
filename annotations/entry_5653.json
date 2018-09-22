@@ -1,0 +1,366 @@
+{
+  "documents" : {
+    "-2037077299" : {
+      "id" : "sentence_annotator",
+      "text" : "Dietary Fat Mediation of Cell Proliferation and Angiogenesis.",
+      "sentences" : [ {
+        "words" : [ "Dietary", "Fat", "Mediation", "of", "Cell", "Proliferation", "and", "Angiogenesis", "." ],
+        "startOffsets" : [ 0, 8, 12, 22, 25, 30, 44, 48, 60 ],
+        "endOffsets" : [ 7, 11, 21, 24, 29, 43, 47, 60, 61 ],
+        "tags" : [ "JJ", "NNP", "NNP", "IN", "NN", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "dietary", "Fat", "Mediation", "of", "cell", "proliferation", "and", "angiogenesis", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "I-BioProcess", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-997532593",
+    "text" : "Fat",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "-2037077299",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GPIIIB",
+      "namespace" : "uniprot",
+      "id" : "P16671",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1056515198",
+    "text" : "Cell Proliferation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-2037077299",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell Multiplication",
+      "namespace" : "go",
+      "id" : "GO:0008283",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1723342909",
+    "text" : "Angiogenesis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-2037077299",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "neovascularization",
+      "namespace" : "go",
+      "id" : "GO:0001525",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1029782049",
+    "text" : "Fat Mediation of Cell Proliferation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1251737148",
+      "text" : "Mediation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "-2037077299",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1056515198",
+        "text" : "Cell Proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "-2037077299",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-997532593",
+        "text" : "Fat",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-2037077299",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GPIIIB",
+          "namespace" : "uniprot",
+          "id" : "P16671",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1056515198" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "T:-1723342909" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-997532593" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-2037077299",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1712448091",
+    "text" : "Fat Mediation of Cell Proliferation and Angiogenesis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1251737148",
+      "text" : "Mediation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "-2037077299",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1723342909",
+        "text" : "Angiogenesis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 60,
+        "sentence" : 0,
+        "document" : "-2037077299",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "neovascularization",
+          "namespace" : "go",
+          "id" : "GO:0001525",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-997532593",
+        "text" : "Fat",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-2037077299",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GPIIIB",
+          "namespace" : "uniprot",
+          "id" : "P16671",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1056515198" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "T:-1723342909" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-997532593" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-2037077299",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

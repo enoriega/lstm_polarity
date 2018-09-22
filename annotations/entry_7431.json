@@ -1,0 +1,1506 @@
+{
+  "documents" : {
+    "-1372573471" : {
+      "id" : "sentence_annotator",
+      "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues inhibits EGFR kinase activity.",
+      "sentences" : [ {
+        "words" : [ "Phosphorylation", "of", "the", "EGFR", "at", "specific", "serine", "(", "Ser", ")", "and", "threonine", "residues", "inhibits", "EGFR", "kinase", "activity", "." ],
+        "startOffsets" : [ 0, 16, 19, 23, 28, 31, 40, 47, 48, 51, 53, 57, 67, 76, 85, 90, 97, 105 ],
+        "endOffsets" : [ 15, 18, 22, 27, 30, 39, 46, 48, 51, 52, 56, 66, 75, 84, 89, 96, 105, 106 ],
+        "tags" : [ "NN", "IN", "DT", "NN", "IN", "JJ", "NN", "-LRB-", "NN", "-RRB-", "CC", "NN", "NNS", "VBZ", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "phosphorylation", "of", "the", "egfr", "at", "specific", "serine", "(", "ser", ")", "and", "threonine", "residue", "inhibit", "egfr", "kinase", "activity", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Site", "O", "B-Site", "O", "O", "B-Site", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 13 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_at"
+            }, {
+              "source" : 3,
+              "destination" : 12,
+              "relation" : "prep_at"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 13 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1716898819",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:877857176",
+    "text" : "serine",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "Ser",
+      "namespace" : "uaz",
+      "id" : "UAZ-S-016",
+      "species" : "human"
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1701327465",
+    "text" : "Ser",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "ner-domain-entities",
+    "grounding" : {
+      "text" : "Ser",
+      "namespace" : "uaz",
+      "id" : "UAZ-S-016",
+      "species" : "human"
+    },
+    "displayLabel" : "Site",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:877857176",
+      "text" : "serine",
+      "labels" : [ "Site" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "site_long",
+      "grounding" : {
+        "text" : "Ser",
+        "namespace" : "uaz",
+        "id" : "UAZ-S-016",
+        "species" : "human"
+      },
+      "displayLabel" : "Site"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1213779930",
+    "text" : "threonine residues",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "threonine residues",
+      "namespace" : "uaz",
+      "id" : "UAZ02055",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1809191088",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 85,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1716898819",
+      "text" : "EGFR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "EGFR",
+        "namespace" : "uniprot",
+        "id" : "P00533",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-731433949",
+    "text" : "Phosphorylation of the EGFR at specific serine",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1222120235",
+      "text" : "Phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1716898819",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:877857176",
+        "text" : "serine",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "Ser",
+          "namespace" : "uaz",
+          "id" : "UAZ-S-016",
+          "species" : "human"
+        },
+        "displayLabel" : "Site"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1716898819" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "site" : {
+        "T:877857176" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prep_at"
+        } ],
+        "T:-1213779930" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 12,
+          "relation" : "prep_at"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:174891343",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1222120235",
+      "text" : "Phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1716898819",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1701327465",
+        "text" : "Ser",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-domain-entities",
+        "grounding" : {
+          "text" : "Ser",
+          "namespace" : "uaz",
+          "id" : "UAZ-S-016",
+          "species" : "human"
+        },
+        "displayLabel" : "Site"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1716898819" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "site" : {
+        "T:877857176" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prep_at"
+        } ],
+        "T:-1213779930" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 12,
+          "relation" : "prep_at"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1756817453",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1222120235",
+      "text" : "Phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1716898819",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1213779930",
+        "text" : "threonine residues",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "threonine residues",
+          "namespace" : "uaz",
+          "id" : "UAZ02055",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1716898819" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "site" : {
+        "T:877857176" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prep_at"
+        } ],
+        "T:-1213779930" : [ {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 12,
+          "relation" : "prep_at"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 13
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1884044842",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues inhibits EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1502059504",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1809191088",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 85,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:174891343",
+        "text" : "Phosphorylation of the EGFR at specific serine (Ser",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1222120235",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-1372573471",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1716898819",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1701327465",
+            "text" : "Ser",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 48,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "ner-domain-entities",
+            "grounding" : {
+              "text" : "Ser",
+              "namespace" : "uaz",
+              "id" : "UAZ-S-016",
+              "species" : "human"
+            },
+            "displayLabel" : "Site"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1716898819" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "site" : {
+            "T:877857176" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_at"
+            } ],
+            "T:-1213779930" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 12,
+              "relation" : "prep_at"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 9
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1809191088" : [ {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1756817453" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1716898819" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-731433949" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:174891343" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-243807940" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 15
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-358415653",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues inhibits EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1502059504",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1809191088",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 85,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-731433949",
+        "text" : "Phosphorylation of the EGFR at specific serine",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1222120235",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-1372573471",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1716898819",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:877857176",
+            "text" : "serine",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 46,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "Ser",
+              "namespace" : "uaz",
+              "id" : "UAZ-S-016",
+              "species" : "human"
+            },
+            "displayLabel" : "Site"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1716898819" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "site" : {
+            "T:877857176" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_at"
+            } ],
+            "T:-1213779930" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 12,
+              "relation" : "prep_at"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 7
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1809191088" : [ {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1756817453" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1716898819" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-731433949" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:174891343" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-243807940" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 15
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1151788994",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues inhibits EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1502059504",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1809191088",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 85,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1756817453",
+        "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1222120235",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-1372573471",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1716898819",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1213779930",
+            "text" : "threonine residues",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 11,
+              "end" : 13
+            },
+            "characterStartOffset" : 57,
+            "characterEndOffset" : 75,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "threonine residues",
+              "namespace" : "uaz",
+              "id" : "UAZ02055",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1716898819" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "site" : {
+            "T:877857176" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_at"
+            } ],
+            "T:-1213779930" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 12,
+              "relation" : "prep_at"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 13
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1809191088" : [ {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1756817453" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1716898819" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-731433949" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:174891343" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-243807940" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 15
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2109755227",
+    "text" : "Phosphorylation of the EGFR at specific serine (Ser) and threonine residues inhibits EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1502059504",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "-1372573471",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1809191088",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 85,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-243807940",
+        "text" : "Phosphorylation of the EGFR",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1222120235",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-1372573471",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_token_1_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1716898819",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-1372573471",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 4
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-1372573471",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_token_1_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1809191088" : [ {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1756817453" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1716898819" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-731433949" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:174891343" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-243807940" : [ {
+          "source" : 13,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 15
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1372573471",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

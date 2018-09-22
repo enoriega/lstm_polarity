@@ -1,0 +1,434 @@
+{
+  "documents" : {
+    "-1803911505" : {
+      "id" : "sentence_annotator",
+      "text" : "The pro apoptotic Bcl-2 family member BIM is known to induce BAX activation.",
+      "sentences" : [ {
+        "words" : [ "The", "pro", "apoptotic", "Bcl-2", "family", "member", "BIM", "is", "known", "to", "induce", "BAX", "activation", "." ],
+        "startOffsets" : [ 0, 4, 8, 18, 24, 31, 38, 42, 45, 51, 54, 61, 65, 75 ],
+        "endOffsets" : [ 3, 7, 17, 23, 30, 37, 41, 44, 50, 53, 60, 64, 75, 76 ],
+        "tags" : [ "DT", "JJ", "JJ", "NN", "NN", "NN", "NNP", "VBZ", "VBN", "TO", "VB", "NN", "NN", "." ],
+        "lemmas" : [ "the", "pro", "apoptotic", "bcl-2", "family", "member", "BIM", "be", "know", "to", "induce", "bax", "activation", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1329448440",
+    "text" : "Bcl-2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "-1803911505",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1378658575",
+    "text" : "BIM",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-1803911505",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2-interacting mediator of cell death",
+      "namespace" : "uniprot",
+      "id" : "O43521",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1008909615",
+    "text" : "BAX",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-1803911505",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1566002060",
+    "text" : "Bcl-2 family member BIM is known to induce BAX",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-805916265",
+      "text" : "induce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "-1803911505",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1008909615",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 61,
+        "characterEndOffset" : 64,
+        "sentence" : 0,
+        "document" : "-1803911505",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1329448440",
+        "text" : "Bcl-2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-1803911505",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1008909615" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1329448440" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1378658575" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 12
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-1803911505",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-794363450",
+    "text" : "BIM is known to induce BAX",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-805916265",
+      "text" : "induce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "-1803911505",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1008909615",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 61,
+        "characterEndOffset" : 64,
+        "sentence" : 0,
+        "document" : "-1803911505",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1378658575",
+        "text" : "BIM",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "-1803911505",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2-interacting mediator of cell death",
+          "namespace" : "uniprot",
+          "id" : "O43521",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1008909615" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1329448440" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1378658575" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 12
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-1803911505",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

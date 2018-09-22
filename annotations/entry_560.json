@@ -1,0 +1,550 @@
+{
+  "documents" : {
+    "-1733739739" : {
+      "id" : "sentence_annotator",
+      "text" : "The KEAP1 and NRF2 mutations associated with human cancers impair the Keap1 mediated repression of Nrf2.",
+      "sentences" : [ {
+        "words" : [ "The", "KEAP1", "and", "NRF2", "mutations", "associated", "with", "human", "cancers", "impair", "the", "Keap1", "mediated", "repression", "of", "Nrf2", "." ],
+        "startOffsets" : [ 0, 4, 10, 14, 19, 29, 40, 45, 51, 59, 66, 70, 76, 85, 96, 99, 103 ],
+        "endOffsets" : [ 3, 9, 13, 18, 28, 39, 44, 50, 58, 65, 69, 75, 84, 95, 98, 103, 104 ],
+        "tags" : [ "DT", "NN", "CC", "NN", "NNS", "VBN", "IN", "NN", "NNS", "VBP", "DT", "NN", "VBD", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "the", "keap1", "and", "nrf2", "mutation", "associate", "with", "human", "cancer", "impair", "the", "keap1", "mediate", "repression", "of", "nrf2", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Species", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_with"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1405205559",
+    "text" : "KEAP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1555737072",
+    "text" : "NRF2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "Mutant",
+      "evidence" : {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:824506209",
+        "text" : "mutations",
+        "labels" : [ "GenericMutant", "Mutant", "Modification" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "-1733739739",
+        "keep" : false,
+        "foundBy" : "mutantlate_1",
+        "displayLabel" : "GenericMutant"
+      },
+      "foundBy" : "mutantmod_1a"
+    } ],
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein",
+    "sieves" : [ "mutantProteinMatch" ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:530486393",
+    "text" : "human",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:666352209",
+    "text" : "Keap1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1405205559",
+      "text" : "KEAP1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 9,
+      "sentence" : 0,
+      "document" : "-1733739739",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "KIAA0132",
+        "namespace" : "uniprot",
+        "id" : "Q14145",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "Species" : [ "taxonomy:9606" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1783039610",
+    "text" : "Nrf2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 103,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1286082551",
+    "text" : "Keap1 mediated repression of Nrf2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2132834985",
+      "text" : "mediated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "-1733739739",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1783039610",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 99,
+        "characterEndOffset" : 103,
+        "sentence" : 0,
+        "document" : "-1733739739",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:666352209",
+        "text" : "Keap1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-1733739739",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1783039610" : [ {
+          "source" : 12,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:666352209" : [ {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 16
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 103,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1849066333",
+    "text" : "KEAP1 and NRF2 mutations associated with human cancers impair the Keap1 mediated repression of Nrf2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-660149887",
+      "text" : "impair",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 59,
+      "characterEndOffset" : 65,
+      "sentence" : 0,
+      "document" : "-1733739739",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1783039610",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 99,
+        "characterEndOffset" : 103,
+        "sentence" : 0,
+        "document" : "-1733739739",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1405205559",
+        "text" : "KEAP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-1733739739",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1783039610" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "ccomp"
+        }, {
+          "source" : 12,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1405205559" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nn"
+        } ],
+        "T:1555737072" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 16
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 103,
+    "sentence" : 0,
+    "document" : "-1733739739",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

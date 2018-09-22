@@ -1,0 +1,760 @@
+{
+  "documents" : {
+    "1741651497" : {
+      "id" : "sentence_annotator",
+      "text" : "\"ERK, Akt, and Jak2 mediate Gab2 induced HepG2 cell proliferation and migration.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "ERK", ",", "Akt", ",", "and", "Jak2", "mediate", "Gab2", "induced", "HepG2", "cell", "proliferation", "and", "migration", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 6, 9, 11, 15, 20, 28, 33, 41, 47, 52, 66, 70, 79, 80 ],
+        "endOffsets" : [ 1, 4, 5, 9, 10, 14, 19, 27, 32, 40, 46, 51, 65, 69, 79, 80, 81 ],
+        "tags" : [ "``", "NN", ",", "NN", ",", "CC", "NN", "VBP", "NN", "VBD", "NN", "NN", "NN", "CC", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "erk", ",", "akt", ",", "and", "jak2", "mediate", "gab2", "induce", "hepg2", "cell", "proliferation", "and", "migration", ".", "\"" ],
+        "entities" : [ "O", "B-Family", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-CellLine", "B-BioProcess", "I-BioProcess", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "O", "O", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "cc"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "conj_and"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2017882717",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1523886545",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1150776447",
+    "text" : "Jak2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAK2",
+      "namespace" : "uniprot",
+      "id" : "O60674",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1460957750",
+    "text" : "Gab2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GRB2-associated-binding protein 2",
+      "namespace" : "uniprot",
+      "id" : "Q9UQC2",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1477945949",
+    "text" : "HepG2",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "HEP-G2",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_0027",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:700938429",
+    "text" : "cell proliferation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell Multiplication",
+      "namespace" : "go",
+      "id" : "GO:0008283",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1178708991",
+    "text" : "Jak2 mediate Gab2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:456651237",
+      "text" : "mediate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "1741651497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1150776447",
+        "text" : "Jak2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAK2",
+          "namespace" : "uniprot",
+          "id" : "O60674",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1460957750",
+        "text" : "Gab2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GRB2-associated-binding protein 2",
+          "namespace" : "uniprot",
+          "id" : "Q9UQC2",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 9
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:971520957",
+    "text" : "ERK, Akt, and Jak2 mediate Gab2 induced HepG2 cell proliferation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-833577208",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "1741651497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:700938429",
+        "text" : "cell proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2017882717",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:700938429" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2017882717" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1523886545" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_and"
+        } ],
+        "T:1150776447" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-918439959",
+    "text" : "Akt, and Jak2 mediate Gab2 induced HepG2 cell proliferation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-833577208",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "1741651497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:700938429",
+        "text" : "cell proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1523886545",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 6,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:700938429" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2017882717" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1523886545" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_and"
+        } ],
+        "T:1150776447" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1867984179",
+    "text" : "Jak2 mediate Gab2 induced HepG2 cell proliferation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-833577208",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "1741651497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:700938429",
+        "text" : "cell proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1150776447",
+        "text" : "Jak2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "1741651497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAK2",
+          "namespace" : "uniprot",
+          "id" : "O60674",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0027" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:700938429" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2017882717" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:1523886545" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "conj_and"
+        } ],
+        "T:1150776447" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 13
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1741651497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0027" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,370 @@
+{
+  "documents" : {
+    "1977689430" : {
+      "id" : "sentence_annotator",
+      "text" : "with CRH can down-regulate its own CRHR1 receptor.",
+      "sentences" : [ {
+        "words" : [ "with", "CRH", "can", "down-regulate", "its", "own", "CRHR1", "receptor", "." ],
+        "startOffsets" : [ 0, 5, 9, 13, 27, 31, 35, 41, 49 ],
+        "endOffsets" : [ 4, 8, 12, 26, 30, 34, 40, 49, 50 ],
+        "tags" : [ "IN", "NNP", "MD", "VB", "PRP$", "JJ", "NN", "NN", "." ],
+        "lemmas" : [ "with", "CRH", "can", "down-regulate", "its", "own", "crhr1", "receptor", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-PP", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "mark"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "poss"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "mark"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "poss"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2059356633",
+    "text" : "CRH",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "1977689430",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CRH",
+      "namespace" : "uniprot",
+      "id" : "P06850",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-862757872",
+    "text" : "CRHR1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "1977689430",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CRF-R1",
+      "namespace" : "uniprot",
+      "id" : "P34998",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:946671821",
+    "text" : "CRHR1 receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1977689430",
+    "keep" : true,
+    "foundBy" : "missing-location",
+    "grounding" : {
+      "text" : "CRHR1 receptor",
+      "namespace" : "uaz",
+      "id" : "UAZ01401",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-698841896",
+    "text" : "CRH can down-regulate its own CRHR1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-129823879",
+      "text" : "down-regulate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 13,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "1977689430",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-862757872",
+        "text" : "CRHR1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "1977689430",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CRF-R1",
+          "namespace" : "uniprot",
+          "id" : "P34998",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2059356633",
+        "text" : "CRH",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 5,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "1977689430",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CRH",
+          "namespace" : "uniprot",
+          "id" : "P06850",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:946671821" : [ {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:-862757872" : [ {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2059356633" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "1977689430",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:655995749",
+    "text" : "CRH can down-regulate its own CRHR1 receptor",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-129823879",
+      "text" : "down-regulate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 13,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "1977689430",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:946671821",
+        "text" : "CRHR1 receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "1977689430",
+        "keep" : true,
+        "foundBy" : "missing-location",
+        "grounding" : {
+          "text" : "CRHR1 receptor",
+          "namespace" : "uaz",
+          "id" : "UAZ01401",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2059356633",
+        "text" : "CRH",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 5,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "1977689430",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CRH",
+          "namespace" : "uniprot",
+          "id" : "P06850",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:946671821" : [ {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:-862757872" : [ {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2059356633" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1977689430",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

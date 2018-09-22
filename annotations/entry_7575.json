@@ -1,0 +1,416 @@
+{
+  "documents" : {
+    "317954010" : {
+      "id" : "sentence_annotator",
+      "text" : "\"The downstream target of BRAF, MEK stimulates ERK when activated.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "The", "downstream", "target", "of", "BRAF", ",", "MEK", "stimulates", "ERK", "when", "activated", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 16, 23, 26, 30, 32, 36, 47, 51, 56, 65, 66 ],
+        "endOffsets" : [ 1, 4, 15, 22, 25, 30, 31, 35, 46, 50, 55, 65, 66, 67 ],
+        "tags" : [ "``", "DT", "JJ", "NN", "IN", "NN", ",", "NN", "VBZ", "NN", "WRB", "VBN", ".", "''" ],
+        "lemmas" : [ "\"", "the", "downstream", "target", "of", "braf", ",", "mek", "stimulate", "erk", "when", "activate", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "B-Family", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "B-ADVP", "B-VP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "advcl"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "advcl"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "advmod"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:397985406",
+    "text" : "BRAF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "317954010",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BRAF",
+      "namespace" : "uniprot",
+      "id" : "P15056",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:323265919",
+    "text" : "MEK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "317954010",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "MEK",
+      "namespace" : "be",
+      "id" : "MEK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1821981896",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "317954010",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1069087593",
+    "text" : "BRAF, MEK stimulates ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-777416474",
+      "text" : "stimulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "317954010",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1821981896",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "317954010",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:397985406",
+        "text" : "BRAF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "317954010",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BRAF",
+          "namespace" : "uniprot",
+          "id" : "P15056",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1821981896" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1657810803" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "T:397985406" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:323265919" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 10
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "317954010",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:766418948",
+    "text" : "MEK stimulates ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-777416474",
+      "text" : "stimulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "317954010",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1821981896",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "317954010",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:323265919",
+        "text" : "MEK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "317954010",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1821981896" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1657810803" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "T:397985406" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:323265919" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "317954010",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

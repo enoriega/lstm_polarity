@@ -1,0 +1,287 @@
+{
+  "documents" : {
+    "-335980490" : {
+      "id" : "sentence_annotator",
+      "text" : "\"p100, encoded by the Nf-b2 gene, is known to inhibit RelB.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "p100", ",", "encoded", "by", "the", "Nf-b2", "gene", ",", "is", "known", "to", "inhibit", "RelB", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 15, 18, 22, 28, 32, 34, 37, 43, 46, 54, 58, 59 ],
+        "endOffsets" : [ 1, 5, 6, 14, 17, 21, 27, 32, 33, 36, 42, 45, 53, 58, 59, 60 ],
+        "tags" : [ "``", "NN", ",", "VBN", "IN", "DT", "NN", "NN", ",", "VBZ", "VBN", "TO", "VB", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "p100", ",", "encode", "by", "the", "nf-b2", "gene", ",", "be", "know", "to", "inhibit", "relb", ".", "\"" ],
+        "entities" : [ "O", "B-Family", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "xcomp"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "aux"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "agent"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "xcomp"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "aux"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:713783688",
+    "text" : "p100",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "-335980490",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "p100",
+      "namespace" : "pfam",
+      "id" : "PF00794",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1771888046",
+    "text" : "Nf-b2 gene",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-335980490",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nf-b2 gene",
+      "namespace" : "uaz",
+      "id" : "UAZ01113",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1153245655",
+    "text" : "RelB",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-335980490",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "I-Rel",
+      "namespace" : "uniprot",
+      "id" : "Q01201",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:142178403",
+    "text" : "p100, encoded by the Nf-b2 gene, is known to inhibit RelB",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1182325373",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "-335980490",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1153245655",
+        "text" : "RelB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "-335980490",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "I-Rel",
+          "namespace" : "uniprot",
+          "id" : "Q01201",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:713783688",
+        "text" : "p100",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "-335980490",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "p100",
+          "namespace" : "pfam",
+          "id" : "PF00794",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1153245655" : [ {
+          "source" : 12,
+          "destination" : 13,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:713783688" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "xcomp"
+        }, {
+          "source" : 10,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 14
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-335980490",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

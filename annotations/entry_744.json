@@ -1,0 +1,273 @@
+{
+  "documents" : {
+    "1292157337" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In both HTC-IR and HTC-IR/M -1030 cells, insulin enhanced insulin receptor degradation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "both", "HTC-IR", "and", "HTC-IR/M", "-1030", "cells", ",", "insulin", "enhanced", "insulin", "receptor", "degradation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 9, 16, 20, 29, 35, 40, 42, 50, 59, 67, 76, 87, 88 ],
+        "endOffsets" : [ 1, 3, 8, 15, 19, 28, 34, 40, 41, 49, 58, 66, 75, 87, 88, 89 ],
+        "tags" : [ "``", "IN", "DT", "NN", "CC", "NN", "CD", "NNS", ",", "NN", "VBD", "NN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "both", "htc-ir", "and", "htc-ir/m", "-1030", "cell", ",", "insulin", "enhance", "insulin", "receptor", "degradation", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "preconj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "preconj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1275388664",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1292157337",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-391651104",
+    "text" : "insulin receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1292157337",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor subunit beta",
+      "namespace" : "uniprot",
+      "id" : "P06213",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1854852287",
+    "text" : "insulin enhanced insulin receptor",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:394279715",
+      "text" : "enhanced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 58,
+      "sentence" : 0,
+      "document" : "1292157337",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-391651104",
+        "text" : "insulin receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 13
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1292157337",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin receptor subunit beta",
+          "namespace" : "uniprot",
+          "id" : "P06213",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1275388664",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "1292157337",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-391651104" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1275388664" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 13
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1292157337",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

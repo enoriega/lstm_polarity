@@ -1,0 +1,274 @@
+{
+  "documents" : {
+    "1035031611" : {
+      "id" : "sentence_annotator",
+      "text" : "Association with Skp2 targets p27 for degradation.",
+      "sentences" : [ {
+        "words" : [ "Association", "with", "Skp2", "targets", "p27", "for", "degradation", "." ],
+        "startOffsets" : [ 0, 12, 17, 22, 30, 34, 38, 49 ],
+        "endOffsets" : [ 11, 16, 21, 29, 33, 37, 49, 50 ],
+        "tags" : [ "NNP", "IN", "NN", "NNS", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "Association", "with", "skp2", "target", "p27", "for", "degradation", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 0 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 4,
+              "relation" : "prep_with"
+            }, {
+              "source" : 0,
+              "destination" : 6,
+              "relation" : "prep_for"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 0 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1513519087",
+    "text" : "Skp2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "1035031611",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "F-box protein Skp2",
+      "namespace" : "uniprot",
+      "id" : "Q13309",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1814403485",
+    "text" : "p27",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1035031611",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interferon alpha-induced 11.5 kDa protein",
+      "namespace" : "uniprot",
+      "id" : "P40305",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1976339383",
+    "text" : "Skp2 targets p27",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1257081849",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1035031611",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1513519087",
+        "text" : "Skp2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "1035031611",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "F-box protein Skp2",
+          "namespace" : "uniprot",
+          "id" : "Q13309",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1814403485",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "1035031611",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1035031611",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1022152851",
+    "text" : "Skp2 targets p27",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1257081849",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1035031611",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1513519087",
+        "text" : "Skp2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "1035031611",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "F-box protein Skp2",
+          "namespace" : "uniprot",
+          "id" : "Q13309",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1814403485",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "1035031611",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1035031611",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,271 @@
+{
+  "documents" : {
+    "1328513689" : {
+      "id" : "sentence_annotator",
+      "text" : "PTPN2 associates and activates Src kinase through dephosphorylation of Tyrosine 527.",
+      "sentences" : [ {
+        "words" : [ "PTPN2", "associates", "and", "activates", "Src", "kinase", "through", "dephosphorylation", "of", "Tyrosine", "527", "." ],
+        "startOffsets" : [ 0, 6, 17, 21, 31, 35, 42, 50, 68, 71, 80, 83 ],
+        "endOffsets" : [ 5, 16, 20, 30, 34, 41, 49, 67, 70, 79, 83, 84 ],
+        "tags" : [ "NN", "NNS", "CC", "VBZ", "NN", "NN", "IN", "NN", "IN", "NN", "CD", "." ],
+        "lemmas" : [ "ptpn2", "associate", "and", "activate", "src", "kinase", "through", "dephosphorylation", "of", "tyrosine", "527", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O", "O", "O", "B-Site", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_through"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2134388779",
+    "text" : "PTPN2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "1328513689",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "T-cell protein-tyrosine phosphatase",
+      "namespace" : "uniprot",
+      "id" : "P17706",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1699071944",
+    "text" : "Src",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1328513689",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "SRC",
+      "namespace" : "be",
+      "id" : "SRC",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:373659256",
+    "text" : "Tyrosine 527",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 11
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "1328513689",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "Tyrosine 527",
+      "namespace" : "uaz",
+      "id" : "UAZ01326",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1312763881",
+    "text" : "PTPN2 associates and activates Src",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-185104927",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "1328513689",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1699071944",
+        "text" : "Src",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1328513689",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "SRC",
+          "namespace" : "be",
+          "id" : "SRC",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2134388779",
+        "text" : "PTPN2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "1328513689",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "T-cell protein-tyrosine phosphatase",
+          "namespace" : "uniprot",
+          "id" : "P17706",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1699071944" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2134388779" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1328513689",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

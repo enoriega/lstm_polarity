@@ -1,0 +1,251 @@
+{
+  "documents" : {
+    "-923379326" : {
+      "id" : "sentence_annotator",
+      "text" : "Effect of Olaparib on cisplatin mediated hyperactivation of PARP1.",
+      "sentences" : [ {
+        "words" : [ "Effect", "of", "Olaparib", "on", "cisplatin", "mediated", "hyperactivation", "of", "PARP1", "." ],
+        "startOffsets" : [ 0, 7, 10, 19, 22, 32, 41, 57, 60, 65 ],
+        "endOffsets" : [ 6, 9, 18, 21, 31, 40, 56, 59, 65, 66 ],
+        "tags" : [ "NN", "IN", "NN", "IN", "NN", "VBD", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "effect", "of", "olaparib", "on", "cisplatin", "mediate", "hyperactivation", "of", "parp1", "." ],
+        "entities" : [ "O", "O", "B-Simple_chemical", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_on"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:265763172",
+    "text" : "Olaparib",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-923379326",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "olaparib",
+      "namespace" : "pubchem",
+      "id" : "23725625",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:199521681",
+    "text" : "cisplatin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-923379326",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "trans-Platinum(II) diamminedichloride",
+      "namespace" : "pubchem",
+      "id" : "441203",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:588481393",
+    "text" : "PARP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-923379326",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ARTD1",
+      "namespace" : "uniprot",
+      "id" : "P09874",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:63770470",
+    "text" : "Olaparib on cisplatin mediated hyperactivation of PARP1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1433873496",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-923379326",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:588481393",
+        "text" : "PARP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-923379326",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ARTD1",
+          "namespace" : "uniprot",
+          "id" : "P09874",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:265763172",
+        "text" : "Olaparib",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "-923379326",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "olaparib",
+          "namespace" : "pubchem",
+          "id" : "23725625",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:588481393" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:265763172" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 9
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-923379326",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

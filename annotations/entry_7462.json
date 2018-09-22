@@ -1,0 +1,680 @@
+{
+  "documents" : {
+    "615082178" : {
+      "id" : "sentence_annotator",
+      "text" : "HDAC6 inhibitors decrease EGFR protein levels and impair the activation of the EGFR pathway.",
+      "sentences" : [ {
+        "words" : [ "HDAC6", "inhibitors", "decrease", "EGFR", "protein", "levels", "and", "impair", "the", "activation", "of", "the", "EGFR", "pathway", "." ],
+        "startOffsets" : [ 0, 6, 17, 26, 31, 39, 46, 50, 57, 61, 72, 75, 79, 84, 91 ],
+        "endOffsets" : [ 5, 16, 25, 30, 38, 45, 49, 56, 60, 71, 74, 78, 83, 91, 92 ],
+        "tags" : [ "NN", "NNS", "VBP", "NN", "NN", "NNS", "CC", "VBP", "DT", "NN", "IN", "DT", "NN", "NN", "." ],
+        "lemmas" : [ "hdac6", "inhibitor", "decrease", "egfr", "protein", "level", "and", "impair", "the", "activation", "of", "the", "egfr", "pathway", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-897870596",
+    "text" : "HDAC6 inhibitors decrease EGFR protein levels",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2082517110",
+      "text" : "decrease",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "615082178",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:890363462",
+        "text" : "EGFR protein levels",
+        "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:575029396",
+          "text" : "levels",
+          "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 39,
+          "characterEndOffset" : 45,
+          "sentence" : 0,
+          "document" : "615082178",
+          "keep" : true,
+          "foundBy" : "amount_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-219956181",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 26,
+            "characterEndOffset" : 30,
+            "sentence" : 0,
+            "document" : "615082178",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-219956181" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 6
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "615082178",
+        "keep" : true,
+        "foundBy" : "amount_1",
+        "displayLabel" : "Amount",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-791357677",
+        "text" : "HDAC6 inhibitors",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 16,
+        "sentence" : 0,
+        "document" : "615082178",
+        "keep" : true,
+        "foundBy" : "protein-inhibitor",
+        "grounding" : {
+          "text" : "HDAC6 inhibitors",
+          "namespace" : "uaz",
+          "id" : "UAZ02065",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:890363462" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-791357677" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-791357677",
+    "text" : "HDAC6 inhibitors",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 16,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "protein-inhibitor",
+    "grounding" : {
+      "text" : "HDAC6 inhibitors",
+      "namespace" : "uaz",
+      "id" : "UAZ02065",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-219956181",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-155379934",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-219956181",
+      "text" : "EGFR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "615082178",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "EGFR",
+        "namespace" : "uniprot",
+        "id" : "P00533",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1000671781",
+    "text" : "HDAC6 inhibitors decrease EGFR protein levels and impair the activation of the EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1396384845",
+      "text" : "impair",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "615082178",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-155379934",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "615082178",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-897870596",
+        "text" : "HDAC6 inhibitors decrease EGFR protein levels",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-2082517110",
+          "text" : "decrease",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 17,
+          "characterEndOffset" : 25,
+          "sentence" : 0,
+          "document" : "615082178",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:890363462",
+            "text" : "EGFR protein levels",
+            "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:575029396",
+              "text" : "levels",
+              "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 39,
+              "characterEndOffset" : 45,
+              "sentence" : 0,
+              "document" : "615082178",
+              "keep" : true,
+              "foundBy" : "amount_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-219956181",
+                "text" : "EGFR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 26,
+                "characterEndOffset" : 30,
+                "sentence" : 0,
+                "document" : "615082178",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "EGFR",
+                  "namespace" : "uniprot",
+                  "id" : "P00533",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-219956181" : [ {
+                  "source" : 5,
+                  "destination" : 3,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 6
+            },
+            "characterStartOffset" : 26,
+            "characterEndOffset" : 45,
+            "sentence" : 0,
+            "document" : "615082178",
+            "keep" : true,
+            "foundBy" : "amount_1",
+            "displayLabel" : "Amount",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-791357677",
+            "text" : "HDAC6 inhibitors",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 2
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 16,
+            "sentence" : 0,
+            "document" : "615082178",
+            "keep" : true,
+            "foundBy" : "protein-inhibitor",
+            "grounding" : {
+              "text" : "HDAC6 inhibitors",
+              "namespace" : "uaz",
+              "id" : "UAZ02065",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:890363462" : [ {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:-791357677" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 6
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "615082178",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-155379934" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-791357677" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "E:-897870596" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 13
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:890363462",
+    "text" : "EGFR protein levels",
+    "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:575029396",
+      "text" : "levels",
+      "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "615082178",
+      "keep" : true,
+      "foundBy" : "amount_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-219956181",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "615082178",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-219956181" : [ {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "615082178",
+    "keep" : true,
+    "foundBy" : "amount_1",
+    "displayLabel" : "Amount",
+    "isDirect" : false
+  } ]
+}

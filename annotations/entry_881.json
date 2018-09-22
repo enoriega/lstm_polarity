@@ -1,0 +1,475 @@
+{
+  "documents" : {
+    "900739321" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Cell survival is mediated partially through mammalian target of rapamycin (mTOR), which is inhibited by rapamycin.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Cell", "survival", "is", "mediated", "partially", "through", "mammalian", "target", "of", "rapamycin", "(", "mTOR", ")", ",", "which", "is", "inhibited", "by", "rapamycin", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 15, 18, 27, 37, 45, 55, 62, 65, 75, 76, 80, 81, 83, 89, 92, 102, 105, 114, 115 ],
+        "endOffsets" : [ 1, 5, 14, 17, 26, 36, 44, 54, 61, 64, 74, 76, 80, 81, 82, 88, 91, 101, 104, 114, 115, 116 ],
+        "tags" : [ "``", "NN", "NN", "VBZ", "VBN", "RB", "IN", "JJ", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", ",", "WDT", "VBZ", "VBN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "cell", "survival", "be", "mediate", "partially", "through", "mammalian", "target", "of", "rapamycin", "(", "mtor", ")", ",", "which", "be", "inhibit", "by", "rapamycin", ".", "\"" ],
+        "entities" : [ "O", "B-BioProcess", "I-BioProcess", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-ADVP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "I-VP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 21,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 17,
+              "relation" : "rcmod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            }, {
+              "source" : 17,
+              "destination" : 15,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "auxpass"
+            }, {
+              "source" : 17,
+              "destination" : 18,
+              "relation" : "prep"
+            }, {
+              "source" : 18,
+              "destination" : 19,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 21,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep_through"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 17,
+              "relation" : "rcmod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            }, {
+              "source" : 17,
+              "destination" : 15,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "auxpass"
+            }, {
+              "source" : 17,
+              "destination" : 19,
+              "relation" : "agent"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-132235718",
+    "text" : "Cell survival",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 3
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell survival",
+      "namespace" : "mesh",
+      "id" : "D002470",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1389372533",
+    "text" : "mammalian target of rapamycin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 11
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Rapamycin target protein 1",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1002037999",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1389372533",
+      "text" : "mammalian target of rapamycin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 11
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 74,
+      "sentence" : 0,
+      "document" : "900739321",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Rapamycin target protein 1",
+        "namespace" : "uniprot",
+        "id" : "P42345",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-4883165",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 19,
+      "end" : 20
+    },
+    "characterStartOffset" : 105,
+    "characterEndOffset" : 114,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:515896116",
+    "text" : "mammalian target of rapamycin (mTOR), which is inhibited by rapamycin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-157484252",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 17,
+        "end" : 18
+      },
+      "characterStartOffset" : 92,
+      "characterEndOffset" : 101,
+      "sentence" : 0,
+      "document" : "900739321",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_6_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1389372533",
+        "text" : "mammalian target of rapamycin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 11
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "900739321",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Rapamycin target protein 1",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-4883165",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 19,
+          "end" : 20
+        },
+        "characterStartOffset" : 105,
+        "characterEndOffset" : 114,
+        "sentence" : 0,
+        "document" : "900739321",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1389372533" : [ {
+          "source" : 10,
+          "destination" : 17,
+          "relation" : "rcmod"
+        } ],
+        "T:-1002037999" : [ {
+          "source" : 10,
+          "destination" : 17,
+          "relation" : "rcmod"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "appos"
+        } ]
+      },
+      "controller" : {
+        "T:-4883165" : [ {
+          "source" : 17,
+          "destination" : 19,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 20
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 114,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_6_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-629005728",
+    "text" : "mTOR), which is inhibited by rapamycin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-157484252",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 17,
+        "end" : 18
+      },
+      "characterStartOffset" : 92,
+      "characterEndOffset" : 101,
+      "sentence" : 0,
+      "document" : "900739321",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_6_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1002037999",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 76,
+        "characterEndOffset" : 80,
+        "sentence" : 0,
+        "document" : "900739321",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-4883165",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 19,
+          "end" : 20
+        },
+        "characterStartOffset" : 105,
+        "characterEndOffset" : 114,
+        "sentence" : 0,
+        "document" : "900739321",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1389372533" : [ {
+          "source" : 10,
+          "destination" : 17,
+          "relation" : "rcmod"
+        } ],
+        "T:-1002037999" : [ {
+          "source" : 10,
+          "destination" : 17,
+          "relation" : "rcmod"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "appos"
+        } ]
+      },
+      "controller" : {
+        "T:-4883165" : [ {
+          "source" : 17,
+          "destination" : 19,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 20
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 114,
+    "sentence" : 0,
+    "document" : "900739321",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_6_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

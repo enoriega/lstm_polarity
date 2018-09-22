@@ -1,0 +1,267 @@
+{
+  "documents" : {
+    "1871564951" : {
+      "id" : "sentence_annotator",
+      "text" : "ANGPT2 functions to antagonize the endothelial tyrosine kinase receptor TEK.",
+      "sentences" : [ {
+        "words" : [ "ANGPT2", "functions", "to", "antagonize", "the", "endothelial", "tyrosine", "kinase", "receptor", "TEK", "." ],
+        "startOffsets" : [ 0, 7, 17, 20, 31, 35, 47, 56, 63, 72, 75 ],
+        "endOffsets" : [ 6, 16, 19, 30, 34, 46, 55, 62, 71, 75, 76 ],
+        "tags" : [ "NN", "NNS", "TO", "VB", "DT", "JJ", "NN", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "angpt2", "function", "to", "antagonize", "the", "endothelial", "tyrosine", "kinase", "receptor", "tek", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1491281294",
+    "text" : "ANGPT2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "1871564951",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ANGPT2",
+      "namespace" : "uniprot",
+      "id" : "O15123",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:352495828",
+    "text" : "tyrosine",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "1871564951",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "Tyrosine",
+      "namespace" : "uaz",
+      "id" : "UAZ-S-019",
+      "species" : "human"
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:718802010",
+    "text" : "TEK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 72,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1871564951",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Endothelial tyrosine kinase",
+      "namespace" : "uniprot",
+      "id" : "Q02763",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1987818440",
+    "text" : "ANGPT2 functions to antagonize the endothelial tyrosine kinase receptor TEK",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1536258950",
+      "text" : "antagonize",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "1871564951",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:718802010",
+        "text" : "TEK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 72,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1871564951",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Endothelial tyrosine kinase",
+          "namespace" : "uniprot",
+          "id" : "Q02763",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1491281294",
+        "text" : "ANGPT2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "1871564951",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ANGPT2",
+          "namespace" : "uniprot",
+          "id" : "O15123",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:718802010" : [ {
+          "source" : 3,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-1491281294" : [ {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1871564951",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

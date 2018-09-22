@@ -1,0 +1,394 @@
+{
+  "documents" : {
+    "392201220" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In Drosophila, Numb promotes neuronal differentiation by antagonizing Notch signaling.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "Drosophila", ",", "Numb", "promotes", "neuronal", "differentiation", "by", "antagonizing", "Notch", "signaling", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 14, 16, 21, 30, 39, 55, 58, 71, 77, 86, 87 ],
+        "endOffsets" : [ 1, 3, 14, 15, 20, 29, 38, 54, 57, 70, 76, 86, 87, 88 ],
+        "tags" : [ "``", "IN", "NN", ",", "NNP", "VBZ", "JJ", "NN", "IN", "VBG", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "drosophilum", ",", "Numb", "promote", "neuronal", "differentiation", "by", "antagonize", "notch", "signaling", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pcomp"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-501096650",
+    "text" : "Numb",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "392201220",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NUMB",
+      "namespace" : "uniprot",
+      "id" : "P49757",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-643697927",
+    "text" : "differentiation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "392201220",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell differentiation",
+      "namespace" : "go",
+      "id" : "GO:0030154",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1968339256",
+    "text" : "Notch",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "392201220",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "NOTCH",
+      "namespace" : "pfam",
+      "id" : "PF00066",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-519115364",
+    "text" : "Numb promotes neuronal differentiation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1149529233",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "392201220",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-643697927",
+        "text" : "differentiation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 39,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "392201220",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell differentiation",
+          "namespace" : "go",
+          "id" : "GO:0030154",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-501096650",
+        "text" : "Numb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "392201220",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NUMB",
+          "namespace" : "uniprot",
+          "id" : "P49757",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-643697927" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:1968339256" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-501096650" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "392201220",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2017945812",
+    "text" : "Numb promotes neuronal differentiation by antagonizing Notch",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1149529233",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "392201220",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1968339256",
+        "text" : "Notch",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 76,
+        "sentence" : 0,
+        "document" : "392201220",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "NOTCH",
+          "namespace" : "pfam",
+          "id" : "PF00066",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-501096650",
+        "text" : "Numb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "392201220",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NUMB",
+          "namespace" : "uniprot",
+          "id" : "P49757",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-643697927" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:1968339256" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-501096650" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "392201220",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

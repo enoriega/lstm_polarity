@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "-358894317" : {
+      "id" : "sentence_annotator",
+      "text" : "Transfected cells were studied following angiotensin converting enzyme inhibition to prevent endogenous formation of Ang II.",
+      "sentences" : [ {
+        "words" : [ "Transfected", "cells", "were", "studied", "following", "angiotensin", "converting", "enzyme", "inhibition", "to", "prevent", "endogenous", "formation", "of", "Ang", "II", "." ],
+        "startOffsets" : [ 0, 12, 18, 23, 31, 41, 53, 64, 71, 82, 85, 93, 104, 114, 117, 121, 123 ],
+        "endOffsets" : [ 11, 17, 22, 30, 40, 52, 63, 70, 81, 84, 92, 103, 113, 116, 120, 123, 124 ],
+        "tags" : [ "VBN", "NNS", "VBD", "VBN", "VBG", "NN", "VBG", "NN", "NN", "TO", "VB", "JJ", "NN", "IN", "NNP", "NNP", "." ],
+        "lemmas" : [ "transfect", "cell", "be", "study", "follow", "angiotensin", "convert", "enzyme", "inhibition", "to", "prevent", "endogenous", "formation", "of", "Ang", "II", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "dep"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "dep"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_following"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:413436113",
+    "text" : "angiotensin converting enzyme",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-358894317",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ACE",
+      "namespace" : "uniprot",
+      "id" : "P12821",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:753529161",
+    "text" : "Ang II",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 16
+    },
+    "characterStartOffset" : 117,
+    "characterEndOffset" : 123,
+    "sentence" : 0,
+    "document" : "-358894317",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Angiotensin 1-7",
+      "namespace" : "uniprot",
+      "id" : "P01019",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:385826923",
+    "text" : "angiotensin converting enzyme inhibition to prevent endogenous formation of Ang II",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-737119001",
+      "text" : "prevent",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 85,
+      "characterEndOffset" : 92,
+      "sentence" : 0,
+      "document" : "-358894317",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:753529161",
+        "text" : "Ang II",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 16
+        },
+        "characterStartOffset" : 117,
+        "characterEndOffset" : 123,
+        "sentence" : 0,
+        "document" : "-358894317",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Angiotensin 1-7",
+          "namespace" : "uniprot",
+          "id" : "P01019",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:413436113",
+        "text" : "angiotensin converting enzyme",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "-358894317",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ACE",
+          "namespace" : "uniprot",
+          "id" : "P12821",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:753529161" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:413436113" : [ {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 16
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 123,
+    "sentence" : 0,
+    "document" : "-358894317",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

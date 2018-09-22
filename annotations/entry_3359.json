@@ -1,0 +1,492 @@
+{
+  "documents" : {
+    "-735945909" : {
+      "id" : "sentence_annotator",
+      "text" : "Down-regulation of cell surface IL-10R expression would be predicted to diminish the activation of IL-10R-associated Jak1.",
+      "sentences" : [ {
+        "words" : [ "Down-regulation", "of", "cell", "surface", "IL-10R", "expression", "would", "be", "predicted", "to", "diminish", "the", "activation", "of", "IL-10R-associated", "Jak1", "." ],
+        "startOffsets" : [ 0, 16, 19, 24, 32, 39, 50, 56, 59, 69, 72, 81, 85, 96, 99, 117, 121 ],
+        "endOffsets" : [ 15, 18, 23, 31, 38, 49, 55, 58, 68, 71, 80, 84, 95, 98, 116, 121, 122 ],
+        "tags" : [ "NN", "IN", "NN", "NN", "NN", "NN", "MD", "VB", "VBN", "TO", "VB", "DT", "NN", "IN", "JJ", "NN", "." ],
+        "lemmas" : [ "down-regulation", "of", "cell", "surface", "il-10r", "expression", "would", "be", "predict", "to", "diminish", "the", "activation", "of", "il-10r-associated", "jak1", "." ],
+        "entities" : [ "O", "O", "B-Cellular_component", "I-Cellular_component", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1650483643",
+    "text" : "cell surface",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-735945909",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "cell surfaces",
+      "namespace" : "go",
+      "id" : "GO:0009986",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0009986" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1438900898",
+    "text" : "IL-10R",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "-735945909",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL-10R1",
+      "namespace" : "uniprot",
+      "id" : "Q13651",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0009986" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-340103991",
+    "text" : "Jak1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 117,
+    "characterEndOffset" : 121,
+    "sentence" : 0,
+    "document" : "-735945909",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAK1",
+      "namespace" : "uniprot",
+      "id" : "P23458",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0009986" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1623723770",
+    "text" : "IL-10R expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1552291034",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "-735945909",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1438900898",
+        "text" : "IL-10R",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "-735945909",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL-10R1",
+          "namespace" : "uniprot",
+          "id" : "Q13651",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0009986" ]
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1438900898" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "-735945909",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0009986" ]
+    },
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1348244310",
+    "text" : "IL-10R expression would be predicted to diminish the activation of IL-10R-associated Jak1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1591479795",
+      "text" : "diminish",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 72,
+      "characterEndOffset" : 80,
+      "sentence" : 0,
+      "document" : "-735945909",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-340103991",
+        "text" : "Jak1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 117,
+        "characterEndOffset" : 121,
+        "sentence" : 0,
+        "document" : "-735945909",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAK1",
+          "namespace" : "uniprot",
+          "id" : "P23458",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0009986" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1623723770",
+        "text" : "IL-10R expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1552291034",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 39,
+          "characterEndOffset" : 49,
+          "sentence" : 0,
+          "document" : "-735945909",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1438900898",
+            "text" : "IL-10R",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 32,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "-735945909",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "IL-10R1",
+              "namespace" : "uniprot",
+              "id" : "Q13651",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "Cellular_component" : [ "go:GO:0009986" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1438900898" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "-735945909",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-340103991" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-1623723770" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "T:-1438900898" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 16
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 121,
+    "sentence" : 0,
+    "document" : "-735945909",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-2536017",
+        "text" : "predicted",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "-735945909",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "Cellular_component" : [ "go:GO:0009986" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

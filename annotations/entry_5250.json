@@ -1,0 +1,253 @@
+{
+  "documents" : {
+    "-1747192298" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In each case, addition of CSF1 down-regulated surface CSF1R (XREF_FIG).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "each", "case", ",", "addition", "of", "CSF1", "down-regulated", "surface", "CSF1R", "(", "XREF_FIG", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 9, 13, 15, 24, 27, 32, 47, 55, 61, 62, 70, 71, 72 ],
+        "endOffsets" : [ 1, 3, 8, 13, 14, 23, 26, 31, 46, 54, 60, 62, 70, 71, 72, 73 ],
+        "tags" : [ "``", "IN", "DT", "NN", ",", "NN", "IN", "NN", "VBD", "NN", "NN", "-LRB-", "NN", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "in", "each", "case", ",", "addition", "of", "csf1", "down-regulate", "surface", "csf1r", "(", "xref_fig", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:65772952",
+    "text" : "CSF1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1747192298",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CSF1",
+      "namespace" : "uniprot",
+      "id" : "P09603",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1136466329",
+    "text" : "CSF1R",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-1747192298",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CSF1R",
+      "namespace" : "uniprot",
+      "id" : "P07333",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1444577648",
+    "text" : "CSF1 down-regulated surface CSF1R",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-233806260",
+      "text" : "down-regulated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "-1747192298",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1136466329",
+        "text" : "CSF1R",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 55,
+        "characterEndOffset" : 60,
+        "sentence" : 0,
+        "document" : "-1747192298",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CSF1R",
+          "namespace" : "uniprot",
+          "id" : "P07333",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:65772952",
+        "text" : "CSF1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1747192298",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CSF1",
+          "namespace" : "uniprot",
+          "id" : "P09603",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1136466329" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:65772952" : [ {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 11
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-1747192298",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

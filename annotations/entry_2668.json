@@ -1,0 +1,331 @@
+{
+  "documents" : {
+    "460890436" : {
+      "id" : "sentence_annotator",
+      "text" : "Recombinant NPM decreased GTP binding in membrane fractions after activation of CXCR4 by CXCL12.",
+      "sentences" : [ {
+        "words" : [ "Recombinant", "NPM", "decreased", "GTP", "binding", "in", "membrane", "fractions", "after", "activation", "of", "CXCR4", "by", "CXCL12", "." ],
+        "startOffsets" : [ 0, 12, 16, 26, 30, 38, 41, 50, 60, 66, 77, 80, 86, 89, 95 ],
+        "endOffsets" : [ 11, 15, 25, 29, 37, 40, 49, 59, 65, 76, 79, 85, 88, 95, 96 ],
+        "tags" : [ "JJ", "NN", "VBD", "NN", "NN", "IN", "NN", "NNS", "IN", "NN", "IN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "recombinant", "npm", "decrease", "gtp", "binding", "in", "membrane", "fraction", "after", "activation", "of", "cxcr4", "by", "cxcl12", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O", "B-Cellular_component", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "prep_after"
+            }, {
+              "source" : 2,
+              "destination" : 13,
+              "relation" : "prep_by"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1675686750",
+    "text" : "NPM",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nucleolar phosphoprotein B23",
+      "namespace" : "uniprot",
+      "id" : "P06748",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1949007447",
+    "text" : "GTP",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "GTP",
+      "namespace" : "pubchem",
+      "id" : "6830",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:147361440",
+    "text" : "membrane",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "membrane",
+      "namespace" : "go",
+      "id" : "GO:0016020",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:195944426",
+    "text" : "CXCR4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Leukocyte-derived seven transmembrane domain receptor",
+      "namespace" : "uniprot",
+      "id" : "P61073",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:769428276",
+    "text" : "CXCL12",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SDF-1-alpha(3-67)",
+      "namespace" : "uniprot",
+      "id" : "P48061",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1576770358",
+    "text" : "activation of CXCR4 by CXCL12",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:472598332",
+      "text" : "activation",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 66,
+      "characterEndOffset" : 76,
+      "sentence" : 0,
+      "document" : "460890436",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:195944426",
+        "text" : "CXCR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "460890436",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Leukocyte-derived seven transmembrane domain receptor",
+          "namespace" : "uniprot",
+          "id" : "P61073",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0016020" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:769428276",
+        "text" : "CXCL12",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 89,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "460890436",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SDF-1-alpha(3-67)",
+          "namespace" : "uniprot",
+          "id" : "P48061",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0016020" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 14
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "460890436",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_2_noun",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

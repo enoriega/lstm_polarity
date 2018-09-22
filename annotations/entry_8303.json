@@ -1,0 +1,398 @@
+{
+  "documents" : {
+    "-113007201" : {
+      "id" : "sentence_annotator",
+      "text" : "This interaction lowers the threshold levels of IGF-I necessary to stimulate IGF-IR activation.",
+      "sentences" : [ {
+        "words" : [ "This", "interaction", "lowers", "the", "threshold", "levels", "of", "IGF-I", "necessary", "to", "stimulate", "IGF-IR", "activation", "." ],
+        "startOffsets" : [ 0, 5, 17, 24, 28, 38, 45, 48, 54, 64, 67, 77, 84, 94 ],
+        "endOffsets" : [ 4, 16, 23, 27, 37, 44, 47, 53, 63, 66, 76, 83, 94, 95 ],
+        "tags" : [ "DT", "NN", "VBZ", "DT", "NN", "NNS", "IN", "NN", "JJ", "TO", "VB", "NN", "NN", "." ],
+        "lemmas" : [ "this", "interaction", "lower", "the", "threshold", "level", "of", "igf-i", "necessary", "to", "stimulate", "igf-ir", "activation", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-ADJP", "B-VP", "I-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-225636701",
+    "text" : "IGF-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-113007201",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Somatomedin-C",
+      "namespace" : "uniprot",
+      "id" : "P05019",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2047005906",
+    "text" : "IGF-IR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-113007201",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IGF-IR",
+      "namespace" : "uaz",
+      "id" : "UAZ00217",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:659633379",
+    "text" : "levels of IGF-I",
+    "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1361870699",
+      "text" : "levels",
+      "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "-113007201",
+      "keep" : true,
+      "foundBy" : "amount_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-225636701",
+        "text" : "IGF-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-113007201",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Somatomedin-C",
+          "namespace" : "uniprot",
+          "id" : "P05019",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-225636701" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-113007201",
+    "keep" : true,
+    "foundBy" : "amount_1",
+    "displayLabel" : "Amount",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1007206197",
+    "text" : "levels of IGF-I necessary to stimulate IGF-IR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2130659679",
+      "text" : "stimulate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 67,
+      "characterEndOffset" : 76,
+      "sentence" : 0,
+      "document" : "-113007201",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2047005906",
+        "text" : "IGF-IR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "-113007201",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IGF-IR",
+          "namespace" : "uaz",
+          "id" : "UAZ00217",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:659633379",
+        "text" : "levels of IGF-I",
+        "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1361870699",
+          "text" : "levels",
+          "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 38,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "-113007201",
+          "keep" : true,
+          "foundBy" : "amount_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-225636701",
+            "text" : "IGF-I",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 48,
+            "characterEndOffset" : 53,
+            "sentence" : 0,
+            "document" : "-113007201",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Somatomedin-C",
+              "namespace" : "uniprot",
+              "id" : "P05019",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-225636701" : [ {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-113007201",
+        "keep" : true,
+        "foundBy" : "amount_1",
+        "displayLabel" : "Amount",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2047005906" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:659633379" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "T:-225636701" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-113007201",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

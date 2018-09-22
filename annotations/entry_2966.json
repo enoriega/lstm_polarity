@@ -1,0 +1,456 @@
+{
+  "documents" : {
+    "-141021130" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Thus, sequestration of p27 (KIP1) by cyclin D1/Cdk4 resulted in activation of Cdk2 in vitro.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Thus", ",", "sequestration", "of", "p27", "(", "KIP1", ")", "by", "cyclin", "D1/Cdk4", "resulted", "in", "activation", "of", "Cdk2", "in", "vitro", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 21, 24, 28, 29, 33, 35, 38, 45, 53, 62, 65, 76, 79, 84, 87, 92, 93 ],
+        "endOffsets" : [ 1, 5, 6, 20, 23, 27, 29, 33, 34, 37, 44, 52, 61, 64, 75, 78, 83, 86, 92, 93, 94 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", "IN", "NN", "NN", "VBD", "IN", "NN", "IN", "NN", "FW", "FW", ".", "''" ],
+        "lemmas" : [ "\"", "thus", ",", "sequestration", "of", "p27", "(", "kip1", ")", "by", "cyclin", "d1/cdk4", "result", "in", "activation", "of", "cdk2", "in", "vitro", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 18,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "prep_by"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 18,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_in"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "prep_of"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:882263701",
+    "text" : "p27",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interferon alpha-induced 11.5 kDa protein",
+      "namespace" : "uniprot",
+      "id" : "P40305",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1845633245",
+    "text" : "KIP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIP1",
+      "namespace" : "uniprot",
+      "id" : "P46527",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1311687798",
+    "text" : "cyclin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PCNA",
+      "namespace" : "uniprot",
+      "id" : "P12004",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:438986894",
+    "text" : "Cdk2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p33 protein kinase",
+      "namespace" : "uniprot",
+      "id" : "P24941",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:59337814",
+    "text" : "p27 (KIP1) by cyclin D1/Cdk4 resulted in activation of Cdk2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:528492974",
+      "text" : "resulted in activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 15
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 75,
+      "sentence" : 0,
+      "document" : "-141021130",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_8_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:438986894",
+        "text" : "Cdk2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "-141021130",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p33 protein kinase",
+          "namespace" : "uniprot",
+          "id" : "P24941",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:882263701",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-141021130",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:438986894" : [ {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:882263701" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1845633245" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 17
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_8_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1370851114",
+    "text" : "KIP1) by cyclin D1/Cdk4 resulted in activation of Cdk2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:528492974",
+      "text" : "resulted in activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 15
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 75,
+      "sentence" : 0,
+      "document" : "-141021130",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_8_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:438986894",
+        "text" : "Cdk2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 83,
+        "sentence" : 0,
+        "document" : "-141021130",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p33 protein kinase",
+          "namespace" : "uniprot",
+          "id" : "P24941",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1845633245",
+        "text" : "KIP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "-141021130",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIP1",
+          "namespace" : "uniprot",
+          "id" : "P46527",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:438986894" : [ {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:882263701" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1845633245" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "appos"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 17
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 83,
+    "sentence" : 0,
+    "document" : "-141021130",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_8_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

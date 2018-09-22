@@ -1,0 +1,285 @@
+{
+  "documents" : {
+    "208434469" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Furthermore, HAUSP inhibition elevates p53 stability and might be beneficial for therapeutic purposes.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Furthermore", ",", "HAUSP", "inhibition", "elevates", "p53", "stability", "and", "might", "be", "beneficial", "for", "therapeutic", "purposes", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 20, 31, 40, 44, 54, 58, 64, 67, 78, 82, 94, 102, 103 ],
+        "endOffsets" : [ 1, 12, 13, 19, 30, 39, 43, 53, 57, 63, 66, 77, 81, 93, 102, 103, 104 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "VBZ", "NN", "NN", "CC", "MD", "VB", "JJ", "IN", "JJ", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "furthermore", ",", "hausp", "inhibition", "elevate", "p53", "stability", "and", "might", "be", "beneficial", "for", "therapeutic", "purpose", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "I-VP", "B-ADJP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "cop"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "cop"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_for"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:206486806",
+    "text" : "HAUSP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "208434469",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Ubiquitin carboxyl-terminal hydrolase 7",
+      "namespace" : "uniprot",
+      "id" : "Q93009",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:937147861",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "208434469",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-955193463",
+    "text" : "HAUSP inhibition elevates p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1925417755",
+      "text" : "elevates",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 39,
+      "sentence" : 0,
+      "document" : "208434469",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:937147861",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "208434469",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:206486806",
+        "text" : "HAUSP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "208434469",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Ubiquitin carboxyl-terminal hydrolase 7",
+          "namespace" : "uniprot",
+          "id" : "Q93009",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:937147861" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:206486806" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 7
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "208434469",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

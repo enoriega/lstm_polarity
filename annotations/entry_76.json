@@ -1,0 +1,200 @@
+{
+  "documents" : {
+    "580666236" : {
+      "id" : "sentence_annotator",
+      "text" : "\"The survivin inhibits the cell apoptosis by inhibiting apoptotic factors, caspase-3 and -7 activity directly.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "The", "survivin", "inhibits", "the", "cell", "apoptosis", "by", "inhibiting", "apoptotic", "factors", ",", "caspase-3", "and", "-7", "activity", "directly", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 14, 23, 27, 32, 42, 45, 56, 66, 73, 75, 85, 89, 92, 101, 109, 110 ],
+        "endOffsets" : [ 1, 4, 13, 22, 26, 31, 41, 44, 55, 65, 73, 74, 84, 88, 91, 100, 109, 110, 111 ],
+        "tags" : [ "``", "DT", "NN", "VBZ", "DT", "NN", "NN", "IN", "VBG", "JJ", "NNS", ",", "NN", "CC", "CD", "NN", "RB", ".", "''" ],
+        "lemmas" : [ "\"", "the", "survivin", "inhibit", "the", "cell", "apoptosis", "by", "inhibit", "apoptotic", "factor", ",", "caspase-3", "and", "-7", "activity", "directly", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-BioProcess", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "O", "B-NP", "I-NP", "B-ADVP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pcomp"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "num"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:726119156",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "580666236",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1598750467",
+    "text" : "caspase-3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 75,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "580666236",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Caspase-3 subunit p12",
+      "namespace" : "uniprot",
+      "id" : "P42574",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  } ]
+}

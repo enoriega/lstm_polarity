@@ -1,0 +1,1951 @@
+{
+  "documents" : {
+    "1774066435" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Interestingly, MMP-2 overexpression in FRNK expressing cells rescued FRNK inhibition of cell invasion.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Interestingly", ",", "MMP-2", "overexpression", "in", "FRNK", "expressing", "cells", "rescued", "FRNK", "inhibition", "of", "cell", "invasion", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 22, 37, 40, 45, 56, 62, 70, 75, 86, 89, 94, 102, 103 ],
+        "endOffsets" : [ 1, 14, 15, 21, 36, 39, 44, 55, 61, 69, 74, 85, 88, 93, 102, 103, 104 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "IN", "NNP", "VBG", "NNS", "VBD", "NN", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "interestingly", ",", "mmp-2", "overexpression", "in", "FRNK", "express", "cell", "rescue", "frnk", "inhibition", "of", "cell", "invasion", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_in"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:309617684",
+    "text" : "MMP-2 overexpression in FRNK expressing",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-964525960",
+      "text" : "overexpression",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-972388615",
+        "text" : "FRNK expressing",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2137795815",
+          "text" : "expressing",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 45,
+          "characterEndOffset" : 55,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "expression_2"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-864722239",
+            "text" : "FRNK",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 44,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "FRNK",
+              "namespace" : "uniprot",
+              "id" : "Q05397",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-864722239" : [ {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "vmod"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "expression_2",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:920283151",
+        "text" : "MMP-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MMP-2",
+          "namespace" : "uniprot",
+          "id" : "P08253",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-972388615" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      },
+      "controller" : {
+        "T:920283151" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_3_noun",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:920283151",
+    "text" : "MMP-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MMP-2",
+      "namespace" : "uniprot",
+      "id" : "P08253",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-864722239",
+    "text" : "FRNK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "FRNK",
+      "namespace" : "uniprot",
+      "id" : "Q05397",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1644361172",
+    "text" : "FRNK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "FRNK",
+      "namespace" : "uniprot",
+      "id" : "Q05397",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-864722239",
+      "text" : "FRNK",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "FRNK",
+        "namespace" : "uniprot",
+        "id" : "Q05397",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1486996169",
+    "text" : "invasion",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 94,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "invasion",
+      "namespace" : "mesh",
+      "id" : "D009361",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-972388615",
+    "text" : "FRNK expressing",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2137795815",
+      "text" : "expressing",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 55,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "expression_2"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-864722239",
+        "text" : "FRNK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FRNK",
+          "namespace" : "uniprot",
+          "id" : "Q05397",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-864722239" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "expression_2",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2065057437",
+    "text" : "FRNK inhibition of cell invasion",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1348661373",
+      "text" : "inhibition",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 75,
+      "characterEndOffset" : 85,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1486996169",
+        "text" : "invasion",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 102,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "invasion",
+          "namespace" : "mesh",
+          "id" : "D009361",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1644361172",
+        "text" : "FRNK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FRNK",
+          "namespace" : "uniprot",
+          "id" : "Q05397",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1486996169" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1644361172" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 15
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1292752636",
+    "text" : "MMP-2 overexpression in FRNK expressing cells rescued FRNK",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1644361172",
+        "text" : "FRNK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FRNK",
+          "namespace" : "uniprot",
+          "id" : "Q05397",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1511551826",
+        "text" : "MMP-2 overexpression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:514655107",
+          "text" : "overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 22,
+          "characterEndOffset" : 36,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:920283151",
+            "text" : "MMP-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 21,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MMP-2",
+              "namespace" : "uniprot",
+              "id" : "P08253",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:920283151" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:806820839",
+    "text" : "MMP-2 overexpression in FRNK expressing cells rescued FRNK",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1644361172",
+        "text" : "FRNK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FRNK",
+          "namespace" : "uniprot",
+          "id" : "Q05397",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:309617684",
+        "text" : "MMP-2 overexpression in FRNK expressing",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-964525960",
+          "text" : "overexpression",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 22,
+          "characterEndOffset" : 36,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_3_noun"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-972388615",
+            "text" : "FRNK expressing",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:2137795815",
+              "text" : "expressing",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 45,
+              "characterEndOffset" : 55,
+              "sentence" : 0,
+              "document" : "1774066435",
+              "keep" : true,
+              "foundBy" : "expression_2"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-864722239",
+                "text" : "FRNK",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 6,
+                  "end" : 7
+                },
+                "characterStartOffset" : 40,
+                "characterEndOffset" : 44,
+                "sentence" : 0,
+                "document" : "1774066435",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "FRNK",
+                  "namespace" : "uniprot",
+                  "id" : "Q05397",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-864722239" : [ {
+                  "source" : 6,
+                  "destination" : 7,
+                  "relation" : "vmod"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 8
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "expression_2",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:920283151",
+            "text" : "MMP-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 21,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MMP-2",
+              "namespace" : "uniprot",
+              "id" : "P08253",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-972388615" : [ {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_in"
+            } ]
+          },
+          "controller" : {
+            "T:920283151" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "E:-1511551826" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_3_noun",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-890230147",
+    "text" : "MMP-2 overexpression in FRNK expressing cells rescued FRNK inhibition of cell invasion",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1486996169",
+        "text" : "invasion",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 102,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "invasion",
+          "namespace" : "mesh",
+          "id" : "D009361",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1511551826",
+        "text" : "MMP-2 overexpression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:514655107",
+          "text" : "overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 22,
+          "characterEndOffset" : 36,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:920283151",
+            "text" : "MMP-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 21,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MMP-2",
+              "namespace" : "uniprot",
+              "id" : "P08253",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:920283151" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1601541928",
+    "text" : "MMP-2 overexpression in FRNK expressing cells rescued FRNK inhibition of cell invasion",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1486996169",
+        "text" : "invasion",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 102,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "invasion",
+          "namespace" : "mesh",
+          "id" : "D009361",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:309617684",
+        "text" : "MMP-2 overexpression in FRNK expressing",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-964525960",
+          "text" : "overexpression",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 22,
+          "characterEndOffset" : 36,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_3_noun"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-972388615",
+            "text" : "FRNK expressing",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:2137795815",
+              "text" : "expressing",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 45,
+              "characterEndOffset" : 55,
+              "sentence" : 0,
+              "document" : "1774066435",
+              "keep" : true,
+              "foundBy" : "expression_2"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-864722239",
+                "text" : "FRNK",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 6,
+                  "end" : 7
+                },
+                "characterStartOffset" : 40,
+                "characterEndOffset" : 44,
+                "sentence" : 0,
+                "document" : "1774066435",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "FRNK",
+                  "namespace" : "uniprot",
+                  "id" : "Q05397",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-864722239" : [ {
+                  "source" : 6,
+                  "destination" : 7,
+                  "relation" : "vmod"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 8
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "expression_2",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:920283151",
+            "text" : "MMP-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 21,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MMP-2",
+              "namespace" : "uniprot",
+              "id" : "P08253",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-972388615" : [ {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_in"
+            } ]
+          },
+          "controller" : {
+            "T:920283151" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "E:-1511551826" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_3_noun",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1473885491",
+    "text" : "FRNK expressing cells rescued FRNK",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1644361172",
+        "text" : "FRNK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FRNK",
+          "namespace" : "uniprot",
+          "id" : "Q05397",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-972388615",
+        "text" : "FRNK expressing",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2137795815",
+          "text" : "expressing",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 45,
+          "characterEndOffset" : 55,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "expression_2"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-864722239",
+            "text" : "FRNK",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 44,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "FRNK",
+              "namespace" : "uniprot",
+              "id" : "Q05397",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-864722239" : [ {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "vmod"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "expression_2",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 11
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1773629880",
+    "text" : "FRNK expressing cells rescued FRNK inhibition of cell invasion",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2023729206",
+      "text" : "rescued",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1486996169",
+        "text" : "invasion",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 102,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "invasion",
+          "namespace" : "mesh",
+          "id" : "D009361",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-972388615",
+        "text" : "FRNK expressing",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2137795815",
+          "text" : "expressing",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 45,
+          "characterEndOffset" : 55,
+          "sentence" : 0,
+          "document" : "1774066435",
+          "keep" : true,
+          "foundBy" : "expression_2"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-864722239",
+            "text" : "FRNK",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 40,
+            "characterEndOffset" : 44,
+            "sentence" : 0,
+            "document" : "1774066435",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "FRNK",
+              "namespace" : "uniprot",
+              "id" : "Q05397",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-864722239" : [ {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "vmod"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "expression_2",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644361172" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1486996169" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-972388615" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:920283151" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-1511551826" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:309617684" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ],
+        "T:-864722239" : [ {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 15
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1511551826",
+    "text" : "MMP-2 overexpression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:514655107",
+      "text" : "overexpression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "1774066435",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:920283151",
+        "text" : "MMP-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "1774066435",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MMP-2",
+          "namespace" : "uniprot",
+          "id" : "P08253",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:920283151" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1774066435",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

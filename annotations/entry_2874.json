@@ -1,0 +1,359 @@
+{
+  "documents" : {
+    "-1447473644" : {
+      "id" : "sentence_annotator",
+      "text" : "\"There was complete loss of PTEN in 13/111, 12% of all cases.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "There", "was", "complete", "loss", "of", "PTEN", "in", "13/111", ",", "12", "%", "of", "all", "cases", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 11, 20, 25, 28, 33, 36, 42, 44, 46, 48, 51, 55, 60, 61 ],
+        "endOffsets" : [ 1, 6, 10, 19, 24, 27, 32, 35, 42, 43, 46, 47, 50, 54, 60, 61, 62 ],
+        "tags" : [ "``", "EX", "VBD", "JJ", "NN", "IN", "NN", "IN", "CD", ",", "CD", "NN", "IN", "DT", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "there", "be", "complete", "loss", "of", "pten", "in", "13/111", ",", "12", "%", "of", "all", "case", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "expl"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "det"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "expl"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "det"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:29619387",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-1447473644",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-349193401",
+    "text" : "was complete loss of PTEN",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-544681389",
+      "text" : "was complete loss",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 5
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "-1447473644",
+      "keep" : true,
+      "foundBy" : "Negative_activation_copula_1"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:588298198",
+        "text" : "loss of PTEN",
+        "labels" : [ "DecreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-2100524614",
+          "text" : "loss",
+          "labels" : [ "DecreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 20,
+          "characterEndOffset" : 24,
+          "sentence" : 0,
+          "document" : "-1447473644",
+          "keep" : true,
+          "foundBy" : "decrease_amount_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:29619387",
+            "text" : "PTEN",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 32,
+            "sentence" : 0,
+            "document" : "-1447473644",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PTEN",
+              "namespace" : "uniprot",
+              "id" : "P60484",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:29619387" : [ {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 7
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "-1447473644",
+        "keep" : true,
+        "foundBy" : "decrease_amount_1",
+        "displayLabel" : "DecreaseAmount",
+        "isDirect" : false
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:29619387",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "-1447473644",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "E:588298198" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:29619387" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-1447473644",
+    "keep" : true,
+    "foundBy" : "Negative_activation_copula_1",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:588298198",
+    "text" : "loss of PTEN",
+    "labels" : [ "DecreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2100524614",
+      "text" : "loss",
+      "labels" : [ "DecreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "-1447473644",
+      "keep" : true,
+      "foundBy" : "decrease_amount_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:29619387",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "-1447473644",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:29619387" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-1447473644",
+    "keep" : true,
+    "foundBy" : "decrease_amount_1",
+    "displayLabel" : "DecreaseAmount",
+    "isDirect" : false
+  } ]
+}

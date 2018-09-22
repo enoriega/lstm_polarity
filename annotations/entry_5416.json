@@ -1,0 +1,442 @@
+{
+  "documents" : {
+    "1565674034" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Among the negative regulators, SOCS1 suppresses the upstream LPS signaling pathway by inhibiting IRAK-1 XREF_BIBR.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Among", "the", "negative", "regulators", ",", "SOCS1", "suppresses", "the", "upstream", "LPS", "signaling", "pathway", "by", "inhibiting", "IRAK-1", "XREF_BIBR", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 11, 20, 30, 32, 38, 49, 53, 62, 66, 76, 84, 87, 98, 105, 114, 115 ],
+        "endOffsets" : [ 1, 6, 10, 19, 30, 31, 37, 48, 52, 61, 65, 75, 83, 86, 97, 104, 114, 115, 116 ],
+        "tags" : [ "``", "IN", "DT", "JJ", "NNS", ",", "NN", "VBZ", "DT", "JJ", "NN", "NN", "NN", "IN", "VBG", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "among", "the", "negative", "regulator", ",", "socs1", "suppress", "the", "upstream", "lp", "signaling", "pathway", "by", "inhibit", "irak-1", "xref_bibr", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pcomp"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "prep_among"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 12,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1435142015",
+    "text" : "SOCS1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "1565674034",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAB",
+      "namespace" : "uniprot",
+      "id" : "O15524",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:515729018",
+    "text" : "LPS",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1565674034",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "LPS with O-antigen",
+      "namespace" : "pubchem",
+      "id" : "53481793",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1286506212",
+    "text" : "IRAK-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 98,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "1565674034",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interleukin-1 receptor-associated kinase 1",
+      "namespace" : "uniprot",
+      "id" : "P51617",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1994455275",
+    "text" : "SOCS1 suppresses the upstream LPS",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:407854343",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "1565674034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:515729018",
+        "text" : "LPS",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "1565674034",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "LPS with O-antigen",
+          "namespace" : "pubchem",
+          "id" : "53481793",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1435142015",
+        "text" : "SOCS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "1565674034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAB",
+          "namespace" : "uniprot",
+          "id" : "O15524",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:515729018" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1286506212" : [ {
+          "source" : 7,
+          "destination" : 14,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1435142015" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 11
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1565674034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1407615446",
+    "text" : "SOCS1 suppresses the upstream LPS signaling pathway by inhibiting IRAK-1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:407854343",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "1565674034",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1286506212",
+        "text" : "IRAK-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 98,
+        "characterEndOffset" : 104,
+        "sentence" : 0,
+        "document" : "1565674034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interleukin-1 receptor-associated kinase 1",
+          "namespace" : "uniprot",
+          "id" : "P51617",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1435142015",
+        "text" : "SOCS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "1565674034",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAB",
+          "namespace" : "uniprot",
+          "id" : "O15524",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:515729018" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1286506212" : [ {
+          "source" : 7,
+          "destination" : 14,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1435142015" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 16
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "1565674034",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

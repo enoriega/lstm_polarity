@@ -1,0 +1,415 @@
+{
+  "documents" : {
+    "-823921236" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Insulin can also down-regulate IGF1R, potentially by increasing levels of free IGF1 in plasma.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Insulin", "can", "also", "down-regulate", "IGF1R", ",", "potentially", "by", "increasing", "levels", "of", "free", "IGF1", "in", "plasma", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 13, 18, 32, 37, 39, 51, 54, 65, 72, 75, 80, 85, 88, 94, 95 ],
+        "endOffsets" : [ 1, 8, 12, 17, 31, 37, 38, 50, 53, 64, 71, 74, 79, 84, 87, 94, 95, 96 ],
+        "tags" : [ "``", "NN", "MD", "RB", "VB", "NN", ",", "RB", "IN", "VBG", "NNS", "IN", "JJ", "NN", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "insulin", "can", "also", "down-regulate", "igf1r", ",", "potentially", "by", "increase", "level", "of", "free", "igf1", "in", "plasma", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-TissueType", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-NP", "O", "B-ADVP", "B-PP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "prep_by"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:400458160",
+    "text" : "Insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1336017611",
+    "text" : "IGF1R",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IGF1R",
+      "namespace" : "uniprot",
+      "id" : "P08069",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1285994103",
+    "text" : "IGF1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IGF1",
+      "namespace" : "uniprot",
+      "id" : "P05019",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1533353465",
+    "text" : "plasma",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Plasma",
+      "namespace" : "tissuelist",
+      "id" : "TS-0800",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2010474178",
+    "text" : "Insulin can also down-regulate IGF1R",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1154943411",
+      "text" : "down-regulate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "-823921236",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1336017611",
+        "text" : "IGF1R",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-823921236",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IGF1R",
+          "namespace" : "uniprot",
+          "id" : "P08069",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:400458160",
+        "text" : "Insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "-823921236",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1336017611" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:400458160" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1335799076",
+    "text" : "levels of free IGF1",
+    "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2082202492",
+      "text" : "levels",
+      "labels" : [ "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 65,
+      "characterEndOffset" : 71,
+      "sentence" : 0,
+      "document" : "-823921236",
+      "keep" : true,
+      "foundBy" : "amount_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1285994103",
+        "text" : "IGF1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-823921236",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IGF1",
+          "namespace" : "uniprot",
+          "id" : "P05019",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0800" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1285994103" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 14
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-823921236",
+    "keep" : true,
+    "foundBy" : "amount_1",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0800" ]
+    },
+    "displayLabel" : "Amount",
+    "isDirect" : false
+  } ]
+}

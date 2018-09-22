@@ -1,0 +1,723 @@
+{
+  "documents" : {
+    "624044003" : {
+      "id" : "sentence_annotator",
+      "text" : "Protein phosphatase 2A and Wip1 decreased CHK2 kinase activity and protein stability through T68 dephosphorylation.",
+      "sentences" : [ {
+        "words" : [ "Protein", "phosphatase", "2A", "and", "Wip1", "decreased", "CHK2", "kinase", "activity", "and", "protein", "stability", "through", "T68", "dephosphorylation", "." ],
+        "startOffsets" : [ 0, 8, 20, 23, 27, 32, 42, 47, 54, 63, 67, 75, 85, 93, 97, 114 ],
+        "endOffsets" : [ 7, 19, 22, 26, 31, 41, 46, 53, 62, 66, 74, 84, 92, 96, 114, 115 ],
+        "tags" : [ "NN", "NN", "NN", "CC", "NN", "VBD", "NN", "NN", "NN", "CC", "NN", "NN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "protein", "phosphatase", "2a", "and", "wip1", "decrease", "chk2", "kinase", "activity", "and", "protein", "stability", "through", "t68", "dephosphorylation", "." ],
+        "entities" : [ "O", "B-Family", "B-CellLine", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "prep_through"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1545939225",
+    "text" : "phosphatase",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1565445501",
+        "text" : "Wip1",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "multi-site",
+        "grounding" : {
+          "text" : "Wip1",
+          "namespace" : "uaz",
+          "id" : "UAZ01431",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Site"
+      }
+    }, {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:617055461",
+        "text" : "2A",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "site_1letter_b",
+        "grounding" : {
+          "text" : "2a",
+          "namespace" : "uaz",
+          "id" : "UAZ00690",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "Phosphatase",
+      "namespace" : "pfam",
+      "id" : "PF15698",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:137396831",
+    "text" : "2A",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "2A",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_6353",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:617055461",
+    "text" : "2A",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "site_1letter_b",
+    "grounding" : {
+      "text" : "2a",
+      "namespace" : "uaz",
+      "id" : "UAZ00690",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Site",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:137396831",
+      "text" : "2A",
+      "labels" : [ "CellLine", "Context" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "624044003",
+      "keep" : true,
+      "foundBy" : "ner-cell-lines",
+      "grounding" : {
+        "text" : "2A",
+        "namespace" : "cellosaurus",
+        "id" : "CVCL_6353",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "CellLine" : [ "cellosaurus:CVCL_6353" ]
+      },
+      "displayLabel" : "CellLine"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1985223982",
+    "text" : "Wip1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein phosphatase 1D",
+      "namespace" : "uniprot",
+      "id" : "O15297",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1565445501",
+    "text" : "Wip1",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "multi-site",
+    "grounding" : {
+      "text" : "Wip1",
+      "namespace" : "uaz",
+      "id" : "UAZ01431",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Site",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1985223982",
+      "text" : "Wip1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "624044003",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Protein phosphatase 1D",
+        "namespace" : "uniprot",
+        "id" : "O15297",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "CellLine" : [ "cellosaurus:CVCL_6353" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1447005209",
+    "text" : "CHK2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Chk2",
+      "namespace" : "uniprot",
+      "id" : "O96017",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1788398409",
+    "text" : "T68",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 93,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "site_1letter_a",
+    "grounding" : {
+      "text" : "T68",
+      "namespace" : "uaz",
+      "id" : "UAZ01432",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1041448663",
+    "text" : "phosphatase 2A and Wip1 decreased CHK2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-526849417",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "624044003",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1447005209",
+        "text" : "CHK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Chk2",
+          "namespace" : "uniprot",
+          "id" : "O96017",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1545939225",
+        "text" : "phosphatase",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:1565445501",
+            "text" : "Wip1",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 31,
+            "sentence" : 0,
+            "document" : "624044003",
+            "keep" : true,
+            "foundBy" : "multi-site",
+            "grounding" : {
+              "text" : "Wip1",
+              "namespace" : "uaz",
+              "id" : "UAZ01431",
+              "species" : ""
+            },
+            "context" : {
+              "CellLine" : [ "cellosaurus:CVCL_6353" ]
+            },
+            "displayLabel" : "Site"
+          }
+        }, {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:617055461",
+            "text" : "2A",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 22,
+            "sentence" : 0,
+            "document" : "624044003",
+            "keep" : true,
+            "foundBy" : "site_1letter_b",
+            "grounding" : {
+              "text" : "2a",
+              "namespace" : "uaz",
+              "id" : "UAZ00690",
+              "species" : ""
+            },
+            "context" : {
+              "CellLine" : [ "cellosaurus:CVCL_6353" ]
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "Phosphatase",
+          "namespace" : "pfam",
+          "id" : "PF15698",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1447005209" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1545939225" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ],
+        "T:-1985223982" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:34650074",
+    "text" : "Wip1 decreased CHK2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-526849417",
+      "text" : "decreased",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "624044003",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1447005209",
+        "text" : "CHK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Chk2",
+          "namespace" : "uniprot",
+          "id" : "O96017",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1985223982",
+        "text" : "Wip1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "624044003",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein phosphatase 1D",
+          "namespace" : "uniprot",
+          "id" : "O15297",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1447005209" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1545939225" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ],
+        "T:-1985223982" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "624044003",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

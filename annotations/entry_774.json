@@ -1,0 +1,270 @@
+{
+  "documents" : {
+    "1512343006" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Consistent with p-PERK catalyzing formation of p-eIF2alpha, PERK knockdown inhibited formation of p-eIF2alpha (XREF_FIG).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Consistent", "with", "p-PERK", "catalyzing", "formation", "of", "p-eIF2alpha", ",", "PERK", "knockdown", "inhibited", "formation", "of", "p-eIF2alpha", "(", "XREF_FIG", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 17, 24, 35, 45, 48, 59, 61, 66, 76, 86, 96, 99, 111, 112, 120, 121, 122 ],
+        "endOffsets" : [ 1, 11, 16, 23, 34, 44, 47, 59, 60, 65, 75, 85, 95, 98, 110, 112, 120, 121, 122, 123 ],
+        "tags" : [ "``", "JJ", "IN", "NN", "VBG", "NN", "IN", "NN", ",", "NN", "NN", "VBD", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "consistent", "with", "p-perk", "catalyze", "formation", "of", "p-eif2alpha", ",", "perk", "knockdown", "inhibit", "formation", "of", "p-eif2alpha", "(", "xref_fig", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADJP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "appos"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 11 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_with"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "appos"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 11 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-974027855",
+    "text" : "p-PERK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "1512343006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Pancreatic eIF2-alpha kinase",
+      "namespace" : "uniprot",
+      "id" : "Q9NZJ5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2012716077",
+    "text" : "p-eIF2alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "1512343006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF2A",
+      "namespace" : "uniprot",
+      "id" : "P05198",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1626738294",
+    "text" : "PERK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1512343006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Pancreatic eIF2-alpha kinase",
+      "namespace" : "uniprot",
+      "id" : "Q9NZJ5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-974027855",
+      "text" : "p-PERK",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 23,
+      "sentence" : 0,
+      "document" : "1512343006",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Pancreatic eIF2-alpha kinase",
+        "namespace" : "uniprot",
+        "id" : "Q9NZJ5",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:910944186",
+    "text" : "p-eIF2alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "1512343006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF2A",
+      "namespace" : "uniprot",
+      "id" : "P05198",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-2012716077",
+      "text" : "p-eIF2alpha",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "1512343006",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "EIF2A",
+        "namespace" : "uniprot",
+        "id" : "P05198",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  } ]
+}

@@ -1,0 +1,293 @@
+{
+  "documents" : {
+    "712066641" : {
+      "id" : "sentence_annotator",
+      "text" : "The Tie2 antagonist angiopoietin-2 represents a promising target against sepsis associated multiple organ dysfunction.",
+      "sentences" : [ {
+        "words" : [ "The", "Tie2", "antagonist", "angiopoietin-2", "represents", "a", "promising", "target", "against", "sepsis", "associated", "multiple", "organ", "dysfunction", "." ],
+        "startOffsets" : [ 0, 4, 9, 20, 35, 46, 48, 58, 65, 73, 80, 91, 100, 106, 117 ],
+        "endOffsets" : [ 3, 8, 19, 34, 45, 47, 57, 64, 72, 79, 90, 99, 105, 117, 118 ],
+        "tags" : [ "DT", "JJ", "NN", "NN", "VBZ", "DT", "JJ", "NN", "IN", "NN", "VBN", "JJ", "NN", "NN", "." ],
+        "lemmas" : [ "the", "tie2", "antagonist", "angiopoietin-2", "represent", "a", "promising", "target", "against", "sepsis", "associate", "multiple", "organ", "dysfunction", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Organ", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_against"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:174209432",
+    "text" : "Tie2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "712066641",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Endothelial tyrosine kinase",
+      "namespace" : "uniprot",
+      "id" : "Q02763",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:0000062" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:309441149",
+    "text" : "angiopoietin-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "712066641",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ANGPT2",
+      "namespace" : "uniprot",
+      "id" : "O15123",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:0000062" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2042210621",
+    "text" : "organ",
+    "labels" : [ "Organ", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 105,
+    "sentence" : 0,
+    "document" : "712066641",
+    "keep" : true,
+    "foundBy" : "ner-organ",
+    "grounding" : {
+      "text" : "organ",
+      "namespace" : "uberon",
+      "id" : "UBERON:0000062",
+      "species" : ""
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:0000062" ]
+    },
+    "displayLabel" : "Organ"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1941205117",
+    "text" : "Tie2 antagonist angiopoietin-2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2063814790",
+      "text" : "antagonist",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "712066641",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:174209432",
+        "text" : "Tie2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "712066641",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Endothelial tyrosine kinase",
+          "namespace" : "uniprot",
+          "id" : "Q02763",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:0000062" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:309441149",
+        "text" : "angiopoietin-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "712066641",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ANGPT2",
+          "namespace" : "uniprot",
+          "id" : "O15123",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:0000062" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "712066641",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_1_noun",
+    "context" : {
+      "Organ" : [ "uberon:UBERON:0000062" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,229 @@
+{
+  "documents" : {
+    "-1675482136" : {
+      "id" : "sentence_annotator",
+      "text" : "Insulin stimulated GLUT4 translocation is generally impaired in type 2 diabetes.",
+      "sentences" : [ {
+        "words" : [ "Insulin", "stimulated", "GLUT4", "translocation", "is", "generally", "impaired", "in", "type", "2", "diabetes", "." ],
+        "startOffsets" : [ 0, 8, 19, 25, 39, 42, 52, 61, 64, 69, 71, 79 ],
+        "endOffsets" : [ 7, 18, 24, 38, 41, 51, 60, 63, 68, 70, 79, 80 ],
+        "tags" : [ "NN", "VBD", "NN", "NN", "VBZ", "RB", "JJ", "IN", "NN", "CD", "NN", "." ],
+        "lemmas" : [ "insulin", "stimulate", "glut4", "translocation", "be", "generally", "impaired", "in", "type", "2", "diabetes", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-ADJP", "I-ADJP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "num"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "num"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1004979869",
+    "text" : "Insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "-1675482136",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1464804496",
+    "text" : "GLUT4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-1675482136",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Glucose transporter type 4, insulin-responsive",
+      "namespace" : "uniprot",
+      "id" : "P14672",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:4212634",
+    "text" : "Insulin stimulated GLUT4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1635196478",
+      "text" : "stimulated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "-1675482136",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1004979869",
+        "text" : "Insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "-1675482136",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1464804496",
+        "text" : "GLUT4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-1675482136",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Glucose transporter type 4, insulin-responsive",
+          "namespace" : "uniprot",
+          "id" : "P14672",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-1675482136",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

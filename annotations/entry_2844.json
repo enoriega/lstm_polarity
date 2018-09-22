@@ -1,0 +1,200 @@
+{
+  "documents" : {
+    "2131345584" : {
+      "id" : "sentence_annotator",
+      "text" : "PDG Display SHH Upregulation and Metaplasia in Human Chronic Pancreatitis.",
+      "sentences" : [ {
+        "words" : [ "PDG", "Display", "SHH", "Upregulation", "and", "Metaplasia", "in", "Human", "Chronic", "Pancreatitis", "." ],
+        "startOffsets" : [ 0, 4, 12, 16, 29, 33, 44, 47, 53, 61, 73 ],
+        "endOffsets" : [ 3, 11, 15, 28, 32, 43, 46, 52, 60, 73, 74 ],
+        "tags" : [ "NNP", "VB", "NNP", "NN", "CC", "NN", "IN", "NN", "JJ", "NN", "." ],
+        "lemmas" : [ "PDG", "display", "SHH", "upregulation", "and", "metaplasium", "in", "human", "chronic", "pancreatitis", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Organ", "O", "B-Species", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "prep_in"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1184269491",
+    "text" : "PDG",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "2131345584",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "UV endonuclease 32 kDa isoform",
+      "namespace" : "uniprot",
+      "id" : "P46303",
+      "species" : "micrococcus luteus (strain atcc 4698 / dsm 20030 / jcm 1464 / nbrc 3333 / ncimb 9278 / nctc 2665 / vkm ac-2230)"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "Organ" : [ "uberon:UBERON:4000142" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-852581981",
+    "text" : "SHH",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "2131345584",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Sonic hedgehog protein N-product",
+      "namespace" : "uniprot",
+      "id" : "Q15465",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "Organ" : [ "uberon:UBERON:4000142" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-83790997",
+    "text" : "Metaplasia",
+    "labels" : [ "Organ", "Context" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "2131345584",
+    "keep" : true,
+    "foundBy" : "ner-organ",
+    "grounding" : {
+      "text" : "obsolete metaplastic ossification",
+      "namespace" : "uberon",
+      "id" : "UBERON:4000142",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "Organ" : [ "uberon:UBERON:4000142" ]
+    },
+    "displayLabel" : "Organ"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1184080324",
+    "text" : "Human",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "2131345584",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "Organ" : [ "uberon:UBERON:4000142" ]
+    },
+    "displayLabel" : "Species"
+  } ]
+}

@@ -1,0 +1,470 @@
+{
+  "documents" : {
+    "-1478670983" : {
+      "id" : "sentence_annotator",
+      "text" : "Blocking this AREG and EREG induced activation of EGFR might promote cancer cell death.",
+      "sentences" : [ {
+        "words" : [ "Blocking", "this", "AREG", "and", "EREG", "induced", "activation", "of", "EGFR", "might", "promote", "cancer", "cell", "death", "." ],
+        "startOffsets" : [ 0, 9, 14, 19, 23, 28, 36, 47, 50, 55, 61, 69, 76, 81, 86 ],
+        "endOffsets" : [ 8, 13, 18, 22, 27, 35, 46, 49, 54, 60, 68, 75, 80, 86, 87 ],
+        "tags" : [ "VBG", "DT", "NN", "CC", "NN", "VBD", "NN", "IN", "NN", "MD", "VB", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "block", "this", "areg", "and", "ereg", "induce", "activation", "of", "egfr", "might", "promote", "cancer", "cell", "death", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-BioProcess", "I-BioProcess", "O" ],
+        "chunks" : [ "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "csubj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 0,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "csubj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:903444500",
+    "text" : "AREG",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CRDGF",
+      "namespace" : "uniprot",
+      "id" : "P15514",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1496545056",
+    "text" : "EREG",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EREG",
+      "namespace" : "uniprot",
+      "id" : "O14944",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1499350916",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-208428181",
+    "text" : "cell death",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell death",
+      "namespace" : "go",
+      "id" : "GO:0008219",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2035197782",
+    "text" : "EREG induced activation of EGFR might promote cancer cell death",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1877622730",
+      "text" : "promote",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 61,
+      "characterEndOffset" : 68,
+      "sentence" : 0,
+      "document" : "-1478670983",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-208428181",
+        "text" : "cell death",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 14
+        },
+        "characterStartOffset" : 76,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "-1478670983",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell death",
+          "namespace" : "go",
+          "id" : "GO:0008219",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1933476246",
+        "text" : "EREG induced activation of EGFR",
+        "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1501232127",
+          "text" : "induced",
+          "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 28,
+          "characterEndOffset" : 35,
+          "sentence" : 0,
+          "document" : "-1478670983",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1496545056",
+            "text" : "EREG",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-1478670983",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EREG",
+              "namespace" : "uniprot",
+              "id" : "O14944",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1499350916",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 50,
+            "characterEndOffset" : 54,
+            "sentence" : 0,
+            "document" : "-1478670983",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 9
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1478670983",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Negative_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-208428181" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1933476246" : [ {
+          "source" : 10,
+          "destination" : 6,
+          "relation" : "nsubj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:1499350916" : [ {
+          "source" : 10,
+          "destination" : 6,
+          "relation" : "nsubj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 14
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1933476246",
+    "text" : "EREG induced activation of EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1501232127",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 35,
+      "sentence" : 0,
+      "document" : "-1478670983",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1496545056",
+        "text" : "EREG",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-1478670983",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EREG",
+          "namespace" : "uniprot",
+          "id" : "O14944",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1499350916",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1478670983",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1478670983",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

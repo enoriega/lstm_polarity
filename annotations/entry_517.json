@@ -1,0 +1,452 @@
+{
+  "documents" : {
+    "1445442853" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In fumarate hydratase deficient RCC, fumarate induced succination of KEAP1 activates Nrf2 signaling.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "fumarate", "hydratase", "deficient", "RCC", ",", "fumarate", "induced", "succination", "of", "KEAP1", "activates", "Nrf2", "signaling", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 13, 23, 33, 36, 38, 47, 55, 67, 70, 76, 86, 91, 100, 101 ],
+        "endOffsets" : [ 1, 3, 12, 22, 32, 36, 37, 46, 54, 66, 69, 75, 85, 90, 100, 101, 102 ],
+        "tags" : [ "``", "IN", "JJ", "NN", "JJ", "NN", ",", "NN", "VBD", "NN", "IN", "NN", "VBZ", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "fumarate", "hydratase", "deficient", "rcc", ",", "fumarate", "induce", "succination", "of", "keap1", "activate", "nrf2", "signaling", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-854496463",
+    "text" : "hydratase",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "hydratase",
+      "namespace" : "uaz",
+      "id" : "UAZ00136",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1279137923",
+    "text" : "RCC",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "(7S,8S,10(1)R)-8-(2-carboxyethyl)-17-ethyl-19-formyl-10(1)-(methoxycarbonyl)-3,7,13,18-tetramethyl-2-vinyl-8,23-dihydro-7H-10,12-ethanobiladiene-ab-1,10(2)(21H)-dione",
+      "namespace" : "pubchem",
+      "id" : "10985033",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1071981765",
+    "text" : "fumarate",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "E297",
+      "namespace" : "pubchem",
+      "id" : "444972",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:425116538",
+    "text" : "KEAP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:503838193",
+    "text" : "Nrf2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1460283658",
+    "text" : "KEAP1 activates Nrf2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1651378348",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 85,
+      "sentence" : 0,
+      "document" : "1445442853",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:503838193",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 90,
+        "sentence" : 0,
+        "document" : "1445442853",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:425116538",
+        "text" : "KEAP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1445442853",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:503838193" : [ {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:425116538" : [ {
+          "source" : 12,
+          "destination" : 9,
+          "relation" : "nsubj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 14
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:141466911",
+    "text" : "fumarate induced succination of KEAP1 activates Nrf2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1114592540",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "1445442853",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:503838193",
+        "text" : "Nrf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 90,
+        "sentence" : 0,
+        "document" : "1445442853",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1071981765",
+        "text" : "fumarate",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1445442853",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "E297",
+          "namespace" : "pubchem",
+          "id" : "444972",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:503838193" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "ccomp"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1071981765" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 14
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "1445442853",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

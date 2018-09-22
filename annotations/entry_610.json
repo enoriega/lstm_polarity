@@ -1,0 +1,261 @@
+{
+  "documents" : {
+    "589476597" : {
+      "id" : "sentence_annotator",
+      "text" : "\"KEAP1 targets NRF2 for proteasomal degradation [XREF_BIBR, XREF_BIBR, XREF_BIBR].\"",
+      "sentences" : [ {
+        "words" : [ "\"", "KEAP1", "targets", "NRF2", "for", "proteasomal", "degradation", "[", "XREF_BIBR", ",", "XREF_BIBR", ",", "XREF_BIBR", "]", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 15, 20, 24, 36, 48, 49, 58, 60, 69, 71, 80, 81, 82 ],
+        "endOffsets" : [ 1, 6, 14, 19, 23, 35, 47, 49, 58, 59, 69, 70, 80, 81, 82, 83 ],
+        "tags" : [ "``", "NN", "VBZ", "NN", "IN", "JJ", "NN", "NN", "NN", ",", "NN", ",", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "keap1", "target", "nrf2", "for", "proteasomal", "degradation", "[", "xref_bibr", ",", "xref_bibr", ",", "xref_bibr", "]", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "O", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 13,
+              "relation" : "prep_for"
+            }, {
+              "source" : 13,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:589979156",
+    "text" : "KEAP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "589476597",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "KIAA0132",
+      "namespace" : "uniprot",
+      "id" : "Q14145",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2096764887",
+    "text" : "NRF2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "589476597",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Nrf2",
+      "namespace" : "uniprot",
+      "id" : "Q16236",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1759988002",
+    "text" : "KEAP1 targets NRF2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1920563144",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 7,
+      "characterEndOffset" : 14,
+      "sentence" : 0,
+      "document" : "589476597",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2096764887",
+        "text" : "NRF2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "589476597",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Nrf2",
+          "namespace" : "uniprot",
+          "id" : "Q16236",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:589979156",
+        "text" : "KEAP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "589476597",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "KIAA0132",
+          "namespace" : "uniprot",
+          "id" : "Q14145",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2096764887" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:589979156" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "589476597",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

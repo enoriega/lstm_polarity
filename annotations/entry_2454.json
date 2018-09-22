@@ -1,0 +1,317 @@
+{
+  "documents" : {
+    "-1863552810" : {
+      "id" : "sentence_annotator",
+      "text" : "Ciliary Ptch prevents pathway activation by blocking the entry of Smo into the primary cilium.",
+      "sentences" : [ {
+        "words" : [ "Ciliary", "Ptch", "prevents", "pathway", "activation", "by", "blocking", "the", "entry", "of", "Smo", "into", "the", "primary", "cilium", "." ],
+        "startOffsets" : [ 0, 8, 13, 22, 30, 41, 44, 53, 57, 63, 66, 70, 75, 79, 87, 93 ],
+        "endOffsets" : [ 7, 12, 21, 29, 40, 43, 52, 56, 62, 65, 69, 74, 78, 86, 93, 94 ],
+        "tags" : [ "JJ", "NN", "VBZ", "NN", "NN", "IN", "VBG", "DT", "NN", "IN", "NN", "IN", "DT", "JJ", "NN", "." ],
+        "lemmas" : [ "ciliary", "ptch", "prevent", "pathway", "activation", "by", "block", "the", "entry", "of", "smo", "into", "the", "primary", "cilium", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Cellular_component", "I-Cellular_component", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pcomp"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 14,
+              "relation" : "prep_into"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:355430181",
+    "text" : "Ptch",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 12,
+    "sentence" : 0,
+    "document" : "-1863552810",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTCH",
+      "namespace" : "uniprot",
+      "id" : "Q13635",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0072372" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:270287553",
+    "text" : "Smo",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "-1863552810",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein Gx",
+      "namespace" : "uniprot",
+      "id" : "Q99835",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0072372" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:596369169",
+    "text" : "primary cilium",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 15
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "-1863552810",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "primary cilium",
+      "namespace" : "go",
+      "id" : "GO:0072372",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0072372" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:655613946",
+    "text" : "Ptch prevents pathway activation by blocking the entry of Smo",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1695566101",
+      "text" : "prevents",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 13,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "-1863552810",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:270287553",
+        "text" : "Smo",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 69,
+        "sentence" : 0,
+        "document" : "-1863552810",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein Gx",
+          "namespace" : "uniprot",
+          "id" : "Q99835",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0072372" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:355430181",
+        "text" : "Ptch",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 12,
+        "sentence" : 0,
+        "document" : "-1863552810",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTCH",
+          "namespace" : "uniprot",
+          "id" : "Q13635",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0072372" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:270287553" : [ {
+          "source" : 2,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:355430181" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "-1863552810",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0072372" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

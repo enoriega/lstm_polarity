@@ -1,0 +1,372 @@
+{
+  "documents" : {
+    "13159037" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Thus, we conclude that CXCR7 prevents downregulation of CXCR4 by CXCL12 stimulation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Thus", ",", "we", "conclude", "that", "CXCR7", "prevents", "downregulation", "of", "CXCR4", "by", "CXCL12", "stimulation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 10, 19, 24, 30, 39, 54, 57, 63, 66, 73, 84, 85 ],
+        "endOffsets" : [ 1, 5, 6, 9, 18, 23, 29, 38, 53, 56, 62, 65, 72, 84, 85, 86 ],
+        "tags" : [ "``", "RB", ",", "PRP", "VBP", "IN", "NN", "VBZ", "NN", "IN", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "thus", ",", "we", "conclude", "that", "cxcr7", "prevent", "downregulation", "of", "cxcr4", "by", "cxcl12", "stimulation", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "prep_by"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-802521551",
+    "text" : "CXCR7",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "13159037",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Atypical chemokine receptor 3",
+      "namespace" : "uniprot",
+      "id" : "P25106",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:852468237",
+    "text" : "CXCR4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "13159037",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Leukocyte-derived seven transmembrane domain receptor",
+      "namespace" : "uniprot",
+      "id" : "P61073",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1798164681",
+    "text" : "CXCL12",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "13159037",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SDF-1-alpha(3-67)",
+      "namespace" : "uniprot",
+      "id" : "P48061",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1288445700",
+    "text" : "CXCR7 prevents downregulation of CXCR4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:319691604",
+      "text" : "prevents",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "13159037",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:852468237",
+        "text" : "CXCR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "13159037",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Leukocyte-derived seven transmembrane domain receptor",
+          "namespace" : "uniprot",
+          "id" : "P61073",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-802521551",
+        "text" : "CXCR7",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "13159037",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Atypical chemokine receptor 3",
+          "namespace" : "uniprot",
+          "id" : "P25106",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:852468237" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-802521551" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 11
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "13159037",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-969558598",
+    "text" : "downregulation of CXCR4 by CXCL12",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1540383687",
+      "text" : "downregulation",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "13159037",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:852468237",
+        "text" : "CXCR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "13159037",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Leukocyte-derived seven transmembrane domain receptor",
+          "namespace" : "uniprot",
+          "id" : "P61073",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1798164681",
+        "text" : "CXCL12",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "13159037",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SDF-1-alpha(3-67)",
+          "namespace" : "uniprot",
+          "id" : "P48061",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 13
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "13159037",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_2_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

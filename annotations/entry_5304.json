@@ -1,0 +1,414 @@
+{
+  "documents" : {
+    "1815627907" : {
+      "id" : "sentence_annotator",
+      "text" : "The inhibition of PARP-1 activation by AG14361 prevented ATP loss following MNNG exposure (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "The", "inhibition", "of", "PARP-1", "activation", "by", "AG14361", "prevented", "ATP", "loss", "following", "MNNG", "exposure", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 4, 15, 18, 25, 36, 39, 47, 57, 61, 66, 76, 81, 90, 91, 99, 100 ],
+        "endOffsets" : [ 3, 14, 17, 24, 35, 38, 46, 56, 60, 65, 75, 80, 89, 91, 99, 100, 101 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "NN", "IN", "NN", "VBD", "NN", "NN", "VBG", "NNP", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "the", "inhibition", "of", "parp-1", "activation", "by", "ag14361", "prevent", "atp", "loss", "follow", "MNNG", "exposure", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_by"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "prep_following"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:203693388",
+    "text" : "PARP-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ARTD1",
+      "namespace" : "uniprot",
+      "id" : "P09874",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:635073083",
+    "text" : "AG14361",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AG14361",
+      "namespace" : "uaz",
+      "id" : "UAZ01517",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-311884571",
+    "text" : "ATP",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ATP",
+      "namespace" : "pubchem",
+      "id" : "5957",
+      "species" : "human"
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:500650154",
+    "text" : "MNNG",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "N-Nitroso-N-methyl-N'-nitroguanidine",
+      "namespace" : "pubchem",
+      "id" : "9562060",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1413436925",
+    "text" : "PARP-1 activation by AG14361",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1493243038",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 35,
+      "sentence" : 0,
+      "document" : "1815627907",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:203693388",
+        "text" : "PARP-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1815627907",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ARTD1",
+          "namespace" : "uniprot",
+          "id" : "P09874",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:635073083",
+        "text" : "AG14361",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 39,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1815627907",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AG14361",
+          "namespace" : "uaz",
+          "id" : "UAZ01517",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:203693388" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:635073083" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 7
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-158610995",
+    "text" : "PARP-1 activation by AG14361 prevented ATP",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:537098480",
+      "text" : "prevented",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "1815627907",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-311884571",
+        "text" : "ATP",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 60,
+        "sentence" : 0,
+        "document" : "1815627907",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ATP",
+          "namespace" : "pubchem",
+          "id" : "5957",
+          "species" : "human"
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:203693388",
+        "text" : "PARP-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1815627907",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ARTD1",
+          "namespace" : "uniprot",
+          "id" : "P09874",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-311884571" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:203693388" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prep_of"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "1815627907",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

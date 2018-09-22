@@ -1,0 +1,277 @@
+{
+  "documents" : {
+    "-1760608625" : {
+      "id" : "sentence_annotator",
+      "text" : "RelB is sequestered in the cytosol by the p100 molecule.",
+      "sentences" : [ {
+        "words" : [ "RelB", "is", "sequestered", "in", "the", "cytosol", "by", "the", "p100", "molecule", "." ],
+        "startOffsets" : [ 0, 5, 8, 20, 23, 27, 35, 38, 42, 47, 55 ],
+        "endOffsets" : [ 4, 7, 19, 22, 26, 34, 37, 41, 46, 55, 56 ],
+        "tags" : [ "NN", "VBZ", "VBN", "IN", "DT", "NN", "IN", "DT", "NN", "NN", "." ],
+        "lemmas" : [ "relb", "be", "sequester", "in", "the", "cytosol", "by", "the", "p100", "molecule", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Cellular_component", "O", "O", "B-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "auxpass"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "agent"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-179241074",
+    "text" : "RelB",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-1760608625",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "I-Rel",
+      "namespace" : "uniprot",
+      "id" : "Q01201",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:117073681",
+    "text" : "cytosol",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-1760608625",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "cytosol",
+      "namespace" : "go",
+      "id" : "GO:0005829",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:133628044",
+    "text" : "p100",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1760608625",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "p100",
+      "namespace" : "pfam",
+      "id" : "PF00794",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1792908826",
+    "text" : "RelB is sequestered in the cytosol by the p100",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1081664811",
+      "text" : "sequestered",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "-1760608625",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-179241074",
+        "text" : "RelB",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-1760608625",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "I-Rel",
+          "namespace" : "uniprot",
+          "id" : "Q01201",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:133628044",
+        "text" : "p100",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-1760608625",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "p100",
+          "namespace" : "pfam",
+          "id" : "PF00794",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-179241074" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:133628044" : [ {
+          "source" : 2,
+          "destination" : 9,
+          "relation" : "agent"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1760608625",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

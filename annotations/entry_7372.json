@@ -1,0 +1,241 @@
+{
+  "documents" : {
+    "326149605" : {
+      "id" : "sentence_annotator",
+      "text" : "Another Akt substrate GSK3beta is negatively modulated by Akt activity.",
+      "sentences" : [ {
+        "words" : [ "Another", "Akt", "substrate", "GSK3beta", "is", "negatively", "modulated", "by", "Akt", "activity", "." ],
+        "startOffsets" : [ 0, 8, 12, 22, 31, 34, 45, 55, 58, 62, 70 ],
+        "endOffsets" : [ 7, 11, 21, 30, 33, 44, 54, 57, 61, 70, 71 ],
+        "tags" : [ "DT", "NN", "NN", "NN", "VBZ", "RB", "VBN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "another", "akt", "substrate", "gsk3beta", "be", "negatively", "modulate", "by", "akt", "activity", "." ],
+        "entities" : [ "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Family", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "agent"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1018284848",
+    "text" : "GSK3beta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 30,
+    "sentence" : 0,
+    "document" : "326149605",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GSK3beta",
+      "namespace" : "uniprot",
+      "id" : "P49841",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:17095997",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "326149605",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:569355832",
+    "text" : "GSK3beta is negatively modulated by Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2077821853",
+      "text" : "modulated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "326149605",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1018284848",
+        "text" : "GSK3beta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 30,
+        "sentence" : 0,
+        "document" : "326149605",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GSK3beta",
+          "namespace" : "uniprot",
+          "id" : "P49841",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:17095997",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "326149605",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1018284848" : [ {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:17095997" : [ {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "agent"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "326149605",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

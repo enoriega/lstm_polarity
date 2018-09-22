@@ -1,0 +1,233 @@
+{
+  "documents" : {
+    "1596083477" : {
+      "id" : "sentence_annotator",
+      "text" : "Although FOXO1 can be synergized by PGC-1alpha (Puigserver etal.",
+      "sentences" : [ {
+        "words" : [ "Although", "FOXO1", "can", "be", "synergized", "by", "PGC-1alpha", "(", "Puigserver", "etal", "." ],
+        "startOffsets" : [ 0, 9, 15, 19, 22, 33, 36, 47, 48, 59, 63 ],
+        "endOffsets" : [ 8, 14, 18, 21, 32, 35, 46, 48, 58, 63, 64 ],
+        "tags" : [ "IN", "NN", "MD", "VB", "VBN", "IN", "NN", "-LRB-", "NN", "NN", "." ],
+        "lemmas" : [ "although", "foxo1", "can", "be", "synergize", "by", "pgc-1alpha", "(", "puigserver", "etal", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-SBAR", "B-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "aux"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:577655421",
+    "text" : "FOXO1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 9,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "1596083477",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Forkhead box protein O1",
+      "namespace" : "uniprot",
+      "id" : "Q12778",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-354631693",
+    "text" : "PGC-1alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1596083477",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PPARGC-1-alpha",
+      "namespace" : "uniprot",
+      "id" : "Q9UBK2",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1742306058",
+    "text" : "FOXO1 can be synergized by PGC-1alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:516634188",
+      "text" : "synergized",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1596083477",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-354631693",
+        "text" : "PGC-1alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1596083477",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PPARGC-1-alpha",
+          "namespace" : "uniprot",
+          "id" : "Q9UBK2",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:577655421",
+        "text" : "FOXO1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 9,
+        "characterEndOffset" : 14,
+        "sentence" : 0,
+        "document" : "1596083477",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Forkhead box protein O1",
+          "namespace" : "uniprot",
+          "id" : "Q12778",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-354631693" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:577655421" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 9,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1596083477",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

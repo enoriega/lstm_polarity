@@ -1,0 +1,361 @@
+{
+  "documents" : {
+    "1617013342" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Thus, the SOCS-1 antagonist enhanced IFNgamma effects against HSV-1 in a macrophage cell line.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Thus", ",", "the", "SOCS-1", "antagonist", "enhanced", "IFNgamma", "effects", "against", "HSV-1", "in", "a", "macrophage", "cell", "line", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 11, 18, 29, 38, 47, 55, 63, 69, 72, 74, 85, 90, 94, 95 ],
+        "endOffsets" : [ 1, 5, 6, 10, 17, 28, 37, 46, 54, 62, 68, 71, 73, 84, 89, 94, 95, 96 ],
+        "tags" : [ "``", "RB", ",", "DT", "NN", "NN", "VBD", "NN", "NNS", "IN", "NN", "IN", "DT", "NN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "thus", ",", "the", "socs-1", "antagonist", "enhance", "ifngamma", "effect", "against", "hsv-1", "in", "a", "macrophage", "cell", "line", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Species", "O", "O", "B-TissueType", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 15,
+              "relation" : "prep_in"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_against"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:518225494",
+    "text" : "SOCS-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "1617013342",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAB",
+      "namespace" : "uniprot",
+      "id" : "O15524",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10298" ],
+      "TissueType" : [ "tissuelist:TS-0587" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:5093215",
+    "text" : "IFNgamma",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1617013342",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IFN-gamma",
+      "namespace" : "uniprot",
+      "id" : "P01579",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10298" ],
+      "TissueType" : [ "tissuelist:TS-0587" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1662130037",
+    "text" : "HSV-1",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "1617013342",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "H.herpesvirus type 1",
+      "namespace" : "taxonomy",
+      "id" : "10298",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10298" ],
+      "TissueType" : [ "tissuelist:TS-0587" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1367017819",
+    "text" : "macrophage",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "1617013342",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Macrophage",
+      "namespace" : "tissuelist",
+      "id" : "TS-0587",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:10298" ],
+      "TissueType" : [ "tissuelist:TS-0587" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1915837897",
+    "text" : "SOCS-1 antagonist enhanced IFNgamma",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:957245176",
+      "text" : "enhanced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 29,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "1617013342",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:5093215",
+        "text" : "IFNgamma",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1617013342",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IFN-gamma",
+          "namespace" : "uniprot",
+          "id" : "P01579",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10298" ],
+          "TissueType" : [ "tissuelist:TS-0587" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:518225494",
+        "text" : "SOCS-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1617013342",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAB",
+          "namespace" : "uniprot",
+          "id" : "O15524",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:10298" ],
+          "TissueType" : [ "tissuelist:TS-0587" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:5093215" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:518225494" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1617013342",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:10298" ],
+      "TissueType" : [ "tissuelist:TS-0587" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

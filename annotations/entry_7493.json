@@ -1,0 +1,392 @@
+{
+  "documents" : {
+    "-315005890" : {
+      "id" : "sentence_annotator",
+      "text" : "11 EGFR tyrosine kinase inhibitors blocked ERBB3 activation in these lung tumor cells.",
+      "sentences" : [ {
+        "words" : [ "11", "EGFR", "tyrosine", "kinase", "inhibitors", "blocked", "ERBB3", "activation", "in", "these", "lung", "tumor", "cells", "." ],
+        "startOffsets" : [ 0, 3, 8, 17, 24, 35, 43, 49, 60, 63, 69, 74, 80, 85 ],
+        "endOffsets" : [ 2, 7, 16, 23, 34, 42, 48, 59, 62, 68, 73, 79, 85, 86 ],
+        "tags" : [ "CD", "NN", "NN", "NN", "NNS", "VBD", "NN", "NN", "IN", "DT", "NN", "NN", "NNS", "." ],
+        "lemmas" : [ "11", "egfr", "tyrosine", "kinase", "inhibitor", "block", "erbb3", "activation", "in", "these", "lung", "tumor", "cell", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "B-Site", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-TissueType", "I-TissueType", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 12,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-610295231",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 3,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "-315005890",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1760978421",
+        "text" : "tyrosine",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 16,
+        "sentence" : 0,
+        "document" : "-315005890",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "Tyrosine",
+          "namespace" : "uaz",
+          "id" : "UAZ-S-019",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0577" ]
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0577" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1760978421",
+    "text" : "tyrosine",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 16,
+    "sentence" : 0,
+    "document" : "-315005890",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "Tyrosine",
+      "namespace" : "uaz",
+      "id" : "UAZ-S-019",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0577" ]
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:359064628",
+    "text" : "ERBB3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-315005890",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ERBB3",
+      "namespace" : "uniprot",
+      "id" : "P21860",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0577" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2017985051",
+    "text" : "lung tumor",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "-315005890",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Lung tumour",
+      "namespace" : "tissuelist",
+      "id" : "TS-0577",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0577" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2028078844",
+    "text" : "EGFR tyrosine kinase inhibitors blocked ERBB3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1100495248",
+      "text" : "blocked",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 42,
+      "sentence" : 0,
+      "document" : "-315005890",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:359064628",
+        "text" : "ERBB3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 43,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-315005890",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ERBB3",
+          "namespace" : "uniprot",
+          "id" : "P21860",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0577" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-610295231",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 3,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "-315005890",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-1760978421",
+            "text" : "tyrosine",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 8,
+            "characterEndOffset" : 16,
+            "sentence" : 0,
+            "document" : "-315005890",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "Tyrosine",
+              "namespace" : "uaz",
+              "id" : "UAZ-S-019",
+              "species" : "human"
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0577" ]
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0577" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:359064628" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-610295231" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 3,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-315005890",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0577" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

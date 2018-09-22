@@ -1,0 +1,670 @@
+{
+  "documents" : {
+    "372202200" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Overexpression of Trak1 and its mutants inhibit EGF induced EGFR degradation, but not endocytosis.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Overexpression", "of", "Trak1", "and", "its", "mutants", "inhibit", "EGF", "induced", "EGFR", "degradation", ",", "but", "not", "endocytosis", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 16, 19, 25, 29, 33, 41, 49, 53, 61, 66, 77, 79, 83, 87, 98, 99 ],
+        "endOffsets" : [ 1, 15, 18, 24, 28, 32, 40, 48, 52, 60, 65, 77, 78, 82, 86, 98, 99, 100 ],
+        "tags" : [ "``", "NN", "IN", "NN", "CC", "PRP$", "NNS", "VBP", "NN", "VBD", "NN", "NN", ",", "CC", "RB", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "overexpression", "of", "trak1", "and", "its", "mutant", "inhibit", "egf", "induce", "egfr", "degradation", ",", "but", "not", "endocytosis", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "B-VP", "B-NP", "I-NP", "O", "O", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "poss"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "poss"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "conj_but"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-1198132462",
+    "text" : "Overexpression of Trak1 and its mutants inhibit EGF induced EGFR",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1488744344",
+      "text" : "inhibit",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 41,
+      "characterEndOffset" : 48,
+      "sentence" : 0,
+      "document" : "372202200",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-247382265",
+        "text" : "EGF induced EGFR",
+        "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-565638856",
+          "text" : "induced",
+          "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 53,
+          "characterEndOffset" : 60,
+          "sentence" : 0,
+          "document" : "372202200",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1046560365",
+            "text" : "EGF",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 49,
+            "characterEndOffset" : 52,
+            "sentence" : 0,
+            "document" : "372202200",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGF",
+              "namespace" : "uniprot",
+              "id" : "P01133",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1275821543",
+            "text" : "EGFR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 10,
+              "end" : 11
+            },
+            "characterStartOffset" : 61,
+            "characterEndOffset" : 65,
+            "sentence" : 0,
+            "document" : "372202200",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EGFR",
+              "namespace" : "uniprot",
+              "id" : "P00533",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 11
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "372202200",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Negative_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-448343901",
+        "text" : "Overexpression of Trak1",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2136421700",
+          "text" : "Overexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 1,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "372202200",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1908255644",
+            "text" : "Trak1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 24,
+            "sentence" : 0,
+            "document" : "372202200",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "OIP106",
+              "namespace" : "uniprot",
+              "id" : "Q9UPV9",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-122309915" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "conj_and"
+            } ],
+            "T:814679412" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "conj_and"
+            } ],
+            "T:1908255644" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "372202200",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-247382265" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "ccomp"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1908255644" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-849426427" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "E:-448343901" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-122309915" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "T:814679412" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "E:306525876" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1908255644",
+    "text" : "Trak1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "OIP106",
+      "namespace" : "uniprot",
+      "id" : "Q9UPV9",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1046560365",
+    "text" : "EGF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1275821543",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1218636209",
+    "text" : "endocytosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 87,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "plasma membrane invagination",
+      "namespace" : "go",
+      "id" : "GO:0006897",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-247382265",
+    "text" : "EGF induced EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-565638856",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "372202200",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1046560365",
+        "text" : "EGF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 49,
+        "characterEndOffset" : 52,
+        "sentence" : 0,
+        "document" : "372202200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1275821543",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 61,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "372202200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 11
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-448343901",
+    "text" : "Overexpression of Trak1",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2136421700",
+      "text" : "Overexpression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 1,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "372202200",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1908255644",
+        "text" : "Trak1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "372202200",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "OIP106",
+          "namespace" : "uniprot",
+          "id" : "Q9UPV9",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-122309915" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ],
+        "T:814679412" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "conj_and"
+        } ],
+        "T:1908255644" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "372202200",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

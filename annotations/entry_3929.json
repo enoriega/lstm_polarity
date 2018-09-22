@@ -1,0 +1,498 @@
+{
+  "documents" : {
+    "-401275291" : {
+      "id" : "sentence_annotator",
+      "text" : "\"During the prolonged treatment with AZD8055, AZD8055 inhibits the mammalian target of rapamycin mTOR.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "During", "the", "prolonged", "treatment", "with", "AZD8055", ",", "AZD8055", "inhibits", "the", "mammalian", "target", "of", "rapamycin", "mTOR", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 12, 22, 32, 37, 44, 46, 54, 63, 67, 77, 84, 87, 97, 101, 102 ],
+        "endOffsets" : [ 1, 7, 11, 21, 31, 36, 44, 45, 53, 62, 66, 76, 83, 86, 96, 101, 102, 103 ],
+        "tags" : [ "``", "IN", "DT", "JJ", "NN", "IN", "NN", ",", "NN", "VBZ", "DT", "JJ", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "during", "the", "prolonged", "treatment", "with", "azd8055", ",", "azd8055", "inhibit", "the", "mammalian", "target", "of", "rapamycin", "mtor", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_with"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "prep_during"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:826295633",
+    "text" : "AZD8055",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "AZD8055",
+      "namespace" : "pubchem",
+      "id" : "25262965",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2070055778",
+    "text" : "AZD8055",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "AZD8055",
+      "namespace" : "pubchem",
+      "id" : "25262965",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:826295633",
+      "text" : "AZD8055",
+      "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "-401275291",
+      "keep" : true,
+      "foundBy" : "ner-simple_chemical-entities",
+      "grounding" : {
+        "text" : "AZD8055",
+        "namespace" : "pubchem",
+        "id" : "25262965",
+        "species" : ""
+      },
+      "displayLabel" : "Simple_chemical"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:30613888",
+    "text" : "mammalian target of rapamycin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 15
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Rapamycin target protein 1",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-287221047",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:30613888",
+      "text" : "mammalian target of rapamycin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 15
+      },
+      "characterStartOffset" : 67,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "-401275291",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Rapamycin target protein 1",
+        "namespace" : "uniprot",
+        "id" : "P42345",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-593104834",
+    "text" : "AZD8055 inhibits the mammalian target of rapamycin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1050371445",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "-401275291",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:30613888",
+        "text" : "mammalian target of rapamycin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 15
+        },
+        "characterStartOffset" : 67,
+        "characterEndOffset" : 96,
+        "sentence" : 0,
+        "document" : "-401275291",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Rapamycin target protein 1",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2070055778",
+        "text" : "AZD8055",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-401275291",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "AZD8055",
+          "namespace" : "pubchem",
+          "id" : "25262965",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:30613888" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ],
+        "T:-287221047" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:2070055778" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 15
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-315026105",
+    "text" : "AZD8055 inhibits the mammalian target of rapamycin mTOR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1050371445",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "-401275291",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-287221047",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "-401275291",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2070055778",
+        "text" : "AZD8055",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "-401275291",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "AZD8055",
+          "namespace" : "pubchem",
+          "id" : "25262965",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:30613888" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ],
+        "T:-287221047" : [ {
+          "source" : 9,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:2070055778" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 16
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "-401275291",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

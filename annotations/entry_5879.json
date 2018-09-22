@@ -1,0 +1,730 @@
+{
+  "documents" : {
+    "-210758633" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Furthermore, BITC induced the down-regulation of Bcl-2 expression and induced up-regulation of Bax in A375.S2 cells.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Furthermore", ",", "BITC", "induced", "the", "down-regulation", "of", "Bcl-2", "expression", "and", "induced", "up-regulation", "of", "Bax", "in", "A375.S2", "cells", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 19, 27, 31, 47, 50, 56, 67, 71, 79, 93, 96, 100, 103, 111, 116, 117 ],
+        "endOffsets" : [ 1, 12, 13, 18, 26, 30, 46, 49, 55, 66, 70, 78, 92, 95, 99, 102, 110, 116, 117, 118 ],
+        "tags" : [ "``", "RB", ",", "NN", "VBD", "DT", "NN", "IN", "NN", "NN", "CC", "VBD", "NN", "IN", "NN", "IN", "NN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "furthermore", ",", "bitc", "induce", "the", "down-regulation", "of", "bcl-2", "expression", "and", "induce", "up-regulation", "of", "bax", "in", "a375.s2", "cell", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-CellLine", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "pobj"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 17,
+              "relation" : "prep_in"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:41446130",
+    "text" : "BITC induced the down-regulation of Bcl-2 expression",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1027228514",
+      "text" : "induced",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "-210758633",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:672389435",
+        "text" : "Bcl-2 expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-2103550292",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 56,
+          "characterEndOffset" : 66,
+          "sentence" : 0,
+          "document" : "-210758633",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2010030512",
+            "text" : "Bcl-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 50,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "-210758633",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Bcl2",
+              "namespace" : "uniprot",
+              "id" : "P10415",
+              "species" : "human"
+            },
+            "context" : {
+              "CellLine" : [ "cellosaurus:CVCL_0136" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:2010030512" : [ {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-210758633",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1250745656",
+        "text" : "BITC",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "-210758633",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "butyl mustard oil",
+          "namespace" : "pubchem",
+          "id" : "11613",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0136" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:672389435" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prep_of"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1250745656" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1250745656",
+    "text" : "BITC",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "butyl mustard oil",
+      "namespace" : "pubchem",
+      "id" : "11613",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2010030512",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1400565027",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 96,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1089780518",
+    "text" : "A375.S2",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 103,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "A375-S2",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_0136",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:672389435",
+    "text" : "Bcl-2 expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2103550292",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "-210758633",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2010030512",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "-210758633",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0136" ]
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:2010030512" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-124433566",
+    "text" : "BITC induced the down-regulation of Bcl-2 expression and induced up-regulation of Bax",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1183252026",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 71,
+      "characterEndOffset" : 78,
+      "sentence" : 0,
+      "document" : "-210758633",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1400565027",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 99,
+        "sentence" : 0,
+        "document" : "-210758633",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_0136" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:41446130",
+        "text" : "BITC induced the down-regulation of Bcl-2 expression",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1027228514",
+          "text" : "induced",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 19,
+          "characterEndOffset" : 26,
+          "sentence" : 0,
+          "document" : "-210758633",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:672389435",
+            "text" : "Bcl-2 expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-2103550292",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 9,
+                "end" : 10
+              },
+              "characterStartOffset" : 56,
+              "characterEndOffset" : 66,
+              "sentence" : 0,
+              "document" : "-210758633",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:2010030512",
+                "text" : "Bcl-2",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 8,
+                  "end" : 9
+                },
+                "characterStartOffset" : 50,
+                "characterEndOffset" : 55,
+                "sentence" : 0,
+                "document" : "-210758633",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Bcl2",
+                  "namespace" : "uniprot",
+                  "id" : "P10415",
+                  "species" : "human"
+                },
+                "context" : {
+                  "CellLine" : [ "cellosaurus:CVCL_0136" ]
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:2010030512" : [ {
+                  "source" : 9,
+                  "destination" : 8,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 50,
+            "characterEndOffset" : 66,
+            "sentence" : 0,
+            "document" : "-210758633",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1250745656",
+            "text" : "BITC",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 14,
+            "characterEndOffset" : 18,
+            "sentence" : 0,
+            "document" : "-210758633",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "butyl mustard oil",
+              "namespace" : "pubchem",
+              "id" : "11613",
+              "species" : ""
+            },
+            "context" : {
+              "CellLine" : [ "cellosaurus:CVCL_0136" ]
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:672389435" : [ {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:-1250745656" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 10
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 66,
+        "sentence" : 0,
+        "document" : "-210758633",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1400565027" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1250745656" : [ {
+          "source" : 11,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:41446130" : [ {
+          "source" : 11,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "-210758633",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_0136" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

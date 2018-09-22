@@ -1,0 +1,513 @@
+{
+  "documents" : {
+    "-2053868215" : {
+      "id" : "sentence_annotator",
+      "text" : "The phosphorylation of AR on Tyr534 reduced the interaction of AR with CHIP.",
+      "sentences" : [ {
+        "words" : [ "The", "phosphorylation", "of", "AR", "on", "Tyr534", "reduced", "the", "interaction", "of", "AR", "with", "CHIP", "." ],
+        "startOffsets" : [ 0, 4, 20, 23, 26, 29, 36, 44, 48, 60, 63, 66, 71, 75 ],
+        "endOffsets" : [ 3, 19, 22, 25, 28, 35, 43, 47, 59, 62, 65, 70, 75, 76 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "IN", "NN", "VBD", "DT", "NN", "IN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "the", "phosphorylation", "of", "ar", "on", "tyr534", "reduce", "the", "interaction", "of", "ar", "with", "chip", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_on"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "prep_with"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:524910916",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1825811081",
+    "text" : "Tyr534",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "site_3letter",
+    "grounding" : {
+      "text" : "Tyr534",
+      "namespace" : "uaz",
+      "id" : "UAZ01986",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1200392824",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:524910916",
+      "text" : "AR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2053868215",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "NR3C4",
+        "namespace" : "uniprot",
+        "id" : "P10275",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-962809901",
+    "text" : "CHIP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "E3 ubiquitin-protein ligase CHIP",
+      "namespace" : "uniprot",
+      "id" : "Q9UNE7",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:340739302",
+    "text" : "phosphorylation of AR on Tyr534",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-429215468",
+      "text" : "phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "-2053868215",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:524910916",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-2053868215",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1825811081",
+        "text" : "Tyr534",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "-2053868215",
+        "keep" : true,
+        "foundBy" : "site_3letter",
+        "grounding" : {
+          "text" : "Tyr534",
+          "namespace" : "uaz",
+          "id" : "UAZ01986",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:524910916" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "site" : {
+        "T:1825811081" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_on"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:257996137",
+    "text" : "phosphorylation of AR on Tyr534 reduced the interaction of AR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:47405546",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-2053868215",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1200392824",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-2053868215",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:340739302",
+        "text" : "phosphorylation of AR on Tyr534",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-429215468",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "-2053868215",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:524910916",
+            "text" : "AR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "-2053868215",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "NR3C4",
+              "namespace" : "uniprot",
+              "id" : "P10275",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1825811081",
+            "text" : "Tyr534",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 29,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "-2053868215",
+            "keep" : true,
+            "foundBy" : "site_3letter",
+            "grounding" : {
+              "text" : "Tyr534",
+              "namespace" : "uaz",
+              "id" : "UAZ01986",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:524910916" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "site" : {
+            "T:1825811081" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_on"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 6
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "-2053868215",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1200392824" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:340739302" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:524910916" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-2053868215",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

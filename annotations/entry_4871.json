@@ -1,0 +1,2168 @@
+{
+  "documents" : {
+    "2081712564" : {
+      "id" : "sentence_annotator",
+      "text" : "Persistent autophosphorylation of Mps1 causes a decreased kinetochore localization of BubR1 and Mad2.",
+      "sentences" : [ {
+        "words" : [ "Persistent", "autophosphorylation", "of", "Mps1", "causes", "a", "decreased", "kinetochore", "localization", "of", "BubR1", "and", "Mad2", "." ],
+        "startOffsets" : [ 0, 11, 31, 34, 39, 46, 48, 58, 70, 83, 86, 92, 96, 100 ],
+        "endOffsets" : [ 10, 30, 33, 38, 45, 47, 57, 69, 82, 85, 91, 95, 100, 101 ],
+        "tags" : [ "JJ", "NN", "IN", "NN", "VBZ", "DT", "JJ", "NN", "NN", "IN", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "persistent", "autophosphorylation", "of", "mps1", "cause", "a", "decreased", "kinetochore", "localization", "of", "bubr1", "and", "mad2", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:-1685614893",
+    "text" : "autophosphorylation of Mps1",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1659897818",
+        "text" : "Mps1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TTK",
+          "namespace" : "uniprot",
+          "id" : "P33981",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-544614280",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-145391101",
+          "text" : "autophosphorylation",
+          "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "2081712564",
+          "keep" : true,
+          "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "cause" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "theme" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "AutoPhosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1659897818",
+    "text" : "Mps1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TTK",
+      "namespace" : "uniprot",
+      "id" : "P33981",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2011483581",
+    "text" : "kinetochore",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Kinetochore",
+      "namespace" : "be",
+      "id" : "Kinetochore",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-90780392",
+    "text" : "localization",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "subcellular localization",
+      "namespace" : "go",
+      "id" : "GO:0051179",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:32676914",
+    "text" : "BubR1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BUB1B",
+      "namespace" : "uniprot",
+      "id" : "O60566",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1061237716",
+    "text" : "Mad2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 96,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAD2",
+      "namespace" : "uniprot",
+      "id" : "Q13257",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1745626952",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2011483581",
+        "text" : "kinetochore",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 69,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Kinetochore",
+          "namespace" : "be",
+          "id" : "Kinetochore",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-1685614893",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-544614280",
+            "text" : "autophosphorylation of Mps1",
+            "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-145391101",
+              "text" : "autophosphorylation",
+              "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 11,
+              "characterEndOffset" : 30,
+              "sentence" : 0,
+              "document" : "2081712564",
+              "keep" : true,
+              "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1659897818",
+                "text" : "Mps1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 34,
+                "characterEndOffset" : 38,
+                "sentence" : 0,
+                "document" : "2081712564",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TTK",
+                  "namespace" : "uniprot",
+                  "id" : "P33981",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "cause" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "theme" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 4
+            },
+            "characterStartOffset" : 11,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+            "displayLabel" : "AutoPhosphorylation",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1894706331",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2011483581",
+        "text" : "kinetochore",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 69,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Kinetochore",
+          "namespace" : "be",
+          "id" : "Kinetochore",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-544614280",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-145391101",
+          "text" : "autophosphorylation",
+          "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "2081712564",
+          "keep" : true,
+          "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "cause" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "theme" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "AutoPhosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1147686106",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-90780392",
+        "text" : "localization",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "subcellular localization",
+          "namespace" : "go",
+          "id" : "GO:0051179",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-1685614893",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-544614280",
+            "text" : "autophosphorylation of Mps1",
+            "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-145391101",
+              "text" : "autophosphorylation",
+              "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 11,
+              "characterEndOffset" : 30,
+              "sentence" : 0,
+              "document" : "2081712564",
+              "keep" : true,
+              "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1659897818",
+                "text" : "Mps1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 34,
+                "characterEndOffset" : 38,
+                "sentence" : 0,
+                "document" : "2081712564",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TTK",
+                  "namespace" : "uniprot",
+                  "id" : "P33981",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "cause" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "theme" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 4
+            },
+            "characterStartOffset" : 11,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+            "displayLabel" : "AutoPhosphorylation",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1946778792",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-90780392",
+        "text" : "localization",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "subcellular localization",
+          "namespace" : "go",
+          "id" : "GO:0051179",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-544614280",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-145391101",
+          "text" : "autophosphorylation",
+          "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "2081712564",
+          "keep" : true,
+          "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "cause" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "theme" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "AutoPhosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1459174970",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization of BubR1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:32676914",
+        "text" : "BubR1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BUB1B",
+          "namespace" : "uniprot",
+          "id" : "O60566",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-1685614893",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-544614280",
+            "text" : "autophosphorylation of Mps1",
+            "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-145391101",
+              "text" : "autophosphorylation",
+              "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 11,
+              "characterEndOffset" : 30,
+              "sentence" : 0,
+              "document" : "2081712564",
+              "keep" : true,
+              "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1659897818",
+                "text" : "Mps1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 34,
+                "characterEndOffset" : 38,
+                "sentence" : 0,
+                "document" : "2081712564",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TTK",
+                  "namespace" : "uniprot",
+                  "id" : "P33981",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "cause" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "theme" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 4
+            },
+            "characterStartOffset" : 11,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+            "displayLabel" : "AutoPhosphorylation",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1588787292",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization of BubR1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:32676914",
+        "text" : "BubR1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BUB1B",
+          "namespace" : "uniprot",
+          "id" : "O60566",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-544614280",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-145391101",
+          "text" : "autophosphorylation",
+          "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "2081712564",
+          "keep" : true,
+          "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "cause" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "theme" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "AutoPhosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1299830378",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization of BubR1 and Mad2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1061237716",
+        "text" : "Mad2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 100,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAD2",
+          "namespace" : "uniprot",
+          "id" : "Q13257",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-1685614893",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-544614280",
+            "text" : "autophosphorylation of Mps1",
+            "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-145391101",
+              "text" : "autophosphorylation",
+              "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 1,
+                "end" : 2
+              },
+              "characterStartOffset" : 11,
+              "characterEndOffset" : 30,
+              "sentence" : 0,
+              "document" : "2081712564",
+              "keep" : true,
+              "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1659897818",
+                "text" : "Mps1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 34,
+                "characterEndOffset" : 38,
+                "sentence" : 0,
+                "document" : "2081712564",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "TTK",
+                  "namespace" : "uniprot",
+                  "id" : "P33981",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "cause" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "theme" : {
+                "T:-1659897818" : [ {
+                  "source" : 1,
+                  "destination" : 3,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 4
+            },
+            "characterStartOffset" : 11,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+            "displayLabel" : "AutoPhosphorylation",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1178402414",
+    "text" : "autophosphorylation of Mps1 causes a decreased kinetochore localization of BubR1 and Mad2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:904990137",
+      "text" : "causes",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 39,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1061237716",
+        "text" : "Mad2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 100,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAD2",
+          "namespace" : "uniprot",
+          "id" : "Q13257",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-544614280",
+        "text" : "autophosphorylation of Mps1",
+        "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-145391101",
+          "text" : "autophosphorylation",
+          "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 30,
+          "sentence" : 0,
+          "document" : "2081712564",
+          "keep" : true,
+          "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1659897818",
+            "text" : "Mps1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 34,
+            "characterEndOffset" : 38,
+            "sentence" : 0,
+            "document" : "2081712564",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "TTK",
+              "namespace" : "uniprot",
+              "id" : "P33981",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "cause" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          },
+          "theme" : {
+            "T:-1659897818" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+        "displayLabel" : "AutoPhosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-90780392" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-2011483581" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "T:32676914" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "prep_of"
+        } ],
+        "T:1061237716" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "R:-1685614893" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "E:-544614280" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:-1659897818" : [ {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-544614280",
+    "text" : "autophosphorylation of Mps1",
+    "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-145391101",
+      "text" : "autophosphorylation",
+      "labels" : [ "AutoPhosphorylation", "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 11,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "2081712564",
+      "keep" : true,
+      "foundBy" : "AutoPhosphorylation_syntax_2_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1659897818",
+        "text" : "Mps1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "2081712564",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TTK",
+          "namespace" : "uniprot",
+          "id" : "P33981",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "cause" : {
+        "T:-1659897818" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      },
+      "theme" : {
+        "T:-1659897818" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "2081712564",
+    "keep" : true,
+    "foundBy" : "AutoPhosphorylation_syntax_2_noun",
+    "displayLabel" : "AutoPhosphorylation",
+    "isDirect" : false
+  } ]
+}

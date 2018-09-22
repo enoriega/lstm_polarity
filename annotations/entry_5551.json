@@ -1,0 +1,766 @@
+{
+  "documents" : {
+    "1773682147" : {
+      "id" : "sentence_annotator",
+      "text" : "These findings suggest that Sox6 suppression induces transcription of BMP-4 and increases secretion of BMP-4.",
+      "sentences" : [ {
+        "words" : [ "These", "findings", "suggest", "that", "Sox6", "suppression", "induces", "transcription", "of", "BMP-4", "and", "increases", "secretion", "of", "BMP-4", "." ],
+        "startOffsets" : [ 0, 6, 15, 23, 28, 33, 45, 53, 67, 70, 76, 80, 90, 100, 103, 108 ],
+        "endOffsets" : [ 5, 14, 22, 27, 32, 44, 52, 66, 69, 75, 79, 89, 99, 102, 108, 109 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "NN", "NN", "VBZ", "NN", "IN", "NN", "CC", "VBZ", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "these", "finding", "suggest", "that", "sox6", "suppression", "induce", "transcription", "of", "bmp-4", "and", "increase", "secretion", "of", "bmp-4", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O", "B-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:298519995",
+    "text" : "Sox6 suppression induces transcription of BMP-4",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-482574601",
+      "text" : "induces",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "1773682147",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1953723404",
+        "text" : "transcription of BMP-4",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1221174879",
+          "text" : "transcription",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 53,
+          "characterEndOffset" : 66,
+          "sentence" : 0,
+          "document" : "1773682147",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1820505534",
+            "text" : "BMP-4",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 70,
+            "characterEndOffset" : 75,
+            "sentence" : 0,
+            "document" : "1773682147",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "DVR4",
+              "namespace" : "uniprot",
+              "id" : "P12644",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1820505534" : [ {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 10
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2081141223",
+        "text" : "Sox6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOX6",
+          "namespace" : "uniprot",
+          "id" : "P35712",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:1953723404" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:2081141223" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 10
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:629976013",
+        "text" : "suggest",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2081141223",
+    "text" : "Sox6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SOX6",
+      "namespace" : "uniprot",
+      "id" : "P35712",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1772086001",
+    "text" : "transcription",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 66,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA-dependent transcription",
+      "namespace" : "go",
+      "id" : "GO:0006351",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1820505534",
+    "text" : "BMP-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DVR4",
+      "namespace" : "uniprot",
+      "id" : "P12644",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:925424559",
+    "text" : "BMP-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 103,
+    "characterEndOffset" : 108,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DVR4",
+      "namespace" : "uniprot",
+      "id" : "P12644",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1820505534",
+      "text" : "BMP-4",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 70,
+      "characterEndOffset" : 75,
+      "sentence" : 0,
+      "document" : "1773682147",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "DVR4",
+        "namespace" : "uniprot",
+        "id" : "P12644",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1196925103",
+    "text" : "Sox6 suppression induces transcription of BMP-4 and increases secretion of BMP-4",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1527111073",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 80,
+      "characterEndOffset" : 89,
+      "sentence" : 0,
+      "document" : "1773682147",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:925424559",
+        "text" : "BMP-4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 103,
+        "characterEndOffset" : 108,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DVR4",
+          "namespace" : "uniprot",
+          "id" : "P12644",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:298519995",
+        "text" : "Sox6 suppression induces transcription of BMP-4",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-482574601",
+          "text" : "induces",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 6,
+            "end" : 7
+          },
+          "characterStartOffset" : 45,
+          "characterEndOffset" : 52,
+          "sentence" : 0,
+          "document" : "1773682147",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:1953723404",
+            "text" : "transcription of BMP-4",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1221174879",
+              "text" : "transcription",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 53,
+              "characterEndOffset" : 66,
+              "sentence" : 0,
+              "document" : "1773682147",
+              "keep" : true,
+              "foundBy" : "transcription_1b"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1820505534",
+                "text" : "BMP-4",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 9,
+                  "end" : 10
+                },
+                "characterStartOffset" : 70,
+                "characterEndOffset" : 75,
+                "sentence" : 0,
+                "document" : "1773682147",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "DVR4",
+                  "namespace" : "uniprot",
+                  "id" : "P12644",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-1820505534" : [ {
+                  "source" : 7,
+                  "destination" : 9,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 10
+            },
+            "characterStartOffset" : 53,
+            "characterEndOffset" : 75,
+            "sentence" : 0,
+            "document" : "1773682147",
+            "keep" : true,
+            "foundBy" : "transcription_1b",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2081141223",
+            "text" : "Sox6",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 32,
+            "sentence" : 0,
+            "document" : "1773682147",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "SOX6",
+              "namespace" : "uniprot",
+              "id" : "P35712",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1953723404" : [ {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:2081141223" : [ {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 10
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "modifications" : [ {
+          "modification-type" : "Hypothesis",
+          "evidence" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:629976013",
+            "text" : "suggest",
+            "labels" : [ "Hypothesis_hint" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 15,
+            "characterEndOffset" : 22,
+            "sentence" : 0,
+            "document" : "1773682147",
+            "keep" : true,
+            "foundBy" : "Positive_regulation_syntax_1_verb",
+            "displayLabel" : "Hypothesis_hint"
+          }
+        } ],
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:925424559" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:298519995" : [ {
+          "source" : 11,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "T:2081141223" : [ {
+          "source" : 11,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 15
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 108,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:629976013",
+        "text" : "suggest",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1953723404",
+    "text" : "transcription of BMP-4",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1221174879",
+      "text" : "transcription",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 66,
+      "sentence" : 0,
+      "document" : "1773682147",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1820505534",
+        "text" : "BMP-4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1773682147",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DVR4",
+          "namespace" : "uniprot",
+          "id" : "P12644",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1820505534" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1773682147",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,311 @@
+{
+  "documents" : {
+    "1771458902" : {
+      "id" : "sentence_annotator",
+      "text" : "\"BACE1 was also found to degrade Abeta, albeit ~ 150-fold less efficiently than BACE2.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "BACE1", "was", "also", "found", "to", "degrade", "Abeta", ",", "albeit", "~", "150-fold", "less", "efficiently", "than", "BACE2", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 11, 16, 22, 25, 33, 38, 40, 47, 49, 58, 63, 75, 80, 85, 86 ],
+        "endOffsets" : [ 1, 6, 10, 15, 21, 24, 32, 38, 39, 46, 48, 57, 62, 74, 79, 85, 86, 87 ],
+        "tags" : [ "``", "NN", "VBD", "RB", "VBN", "TO", "VB", "NNP", ",", "IN", "NN", "RB", "RBR", "RB", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "bace1", "be", "also", "find", "to", "degrade", "Abeta", ",", "albeit", "~", "150-fold", "less", "efficiently", "than", "bace2", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "I-VP", "I-VP", "B-NP", "O", "B-ADVP", "I-ADVP", "I-ADVP", "I-ADVP", "I-ADVP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "xcomp"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "advcl"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "mark"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "xcomp"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "advcl"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "mark"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_than"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:295637143",
+    "text" : "BACE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "1771458902",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1847744804",
+    "text" : "Abeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1771458902",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "A-beta",
+      "namespace" : "uniprot",
+      "id" : "O73683",
+      "species" : "chelonodon fluviatilis"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1793785049",
+    "text" : "BACE2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1771458902",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Down region aspartic protease",
+      "namespace" : "uniprot",
+      "id" : "Q9Y5Z0",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1047974221",
+    "text" : "BACE1 was also found to degrade Abeta",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:223839296",
+      "text" : "degrade",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1771458902",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1847744804",
+        "text" : "Abeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 38,
+        "sentence" : 0,
+        "document" : "1771458902",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "A-beta",
+          "namespace" : "uniprot",
+          "id" : "O73683",
+          "species" : "chelonodon fluviatilis"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:295637143",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "1771458902",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1847744804" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:295637143" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "xcomp"
+        }, {
+          "source" : 4,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 8
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 38,
+    "sentence" : 0,
+    "document" : "1771458902",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

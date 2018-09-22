@@ -1,0 +1,406 @@
+{
+  "documents" : {
+    "1806547410" : {
+      "id" : "sentence_annotator",
+      "text" : "It has been confirmed that SIRT1 mediates miR-34a-induced apoptosis by regulating p53 activity.",
+      "sentences" : [ {
+        "words" : [ "It", "has", "been", "confirmed", "that", "SIRT1", "mediates", "miR-34a-induced", "apoptosis", "by", "regulating", "p53", "activity", "." ],
+        "startOffsets" : [ 0, 3, 7, 12, 22, 27, 33, 42, 58, 68, 71, 82, 86, 94 ],
+        "endOffsets" : [ 2, 6, 11, 21, 26, 32, 41, 57, 67, 70, 81, 85, 94, 95 ],
+        "tags" : [ "PRP", "VBZ", "VBN", "VBN", "IN", "NN", "VBZ", "JJ", "NN", "IN", "VBG", "NN", "NN", "." ],
+        "lemmas" : [ "it", "have", "be", "confirm", "that", "sirt1", "mediate", "mir-34a-induced", "apoptosis", "by", "regulate", "p53", "activity", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pcomp"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1574283976",
+    "text" : "SIRT1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "1806547410",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:716393632",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1806547410",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1016794786",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 82,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1806547410",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:961978684",
+    "text" : "SIRT1 mediates miR-34a-induced apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1393267392",
+      "text" : "mediates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "1806547410",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:716393632",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "1806547410",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1574283976",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "1806547410",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:716393632" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1016794786" : [ {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1574283976" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 9
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1806547410",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1805153099",
+    "text" : "SIRT1 mediates miR-34a-induced apoptosis by regulating p53",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1393267392",
+      "text" : "mediates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 33,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "1806547410",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1016794786",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 82,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "1806547410",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1574283976",
+        "text" : "SIRT1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "1806547410",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:716393632" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:-1016794786" : [ {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1574283976" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1806547410",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

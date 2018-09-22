@@ -1,0 +1,464 @@
+{
+  "documents" : {
+    "-1239692889" : {
+      "id" : "sentence_annotator",
+      "text" : "This reduces the ability of MEKK3 to phosphorylate MEK5 which is required to activate ERK5.",
+      "sentences" : [ {
+        "words" : [ "This", "reduces", "the", "ability", "of", "MEKK3", "to", "phosphorylate", "MEK5", "which", "is", "required", "to", "activate", "ERK5", "." ],
+        "startOffsets" : [ 0, 5, 13, 17, 25, 28, 34, 37, 51, 56, 62, 65, 74, 77, 86, 90 ],
+        "endOffsets" : [ 4, 12, 16, 24, 27, 33, 36, 50, 55, 61, 64, 73, 76, 85, 90, 91 ],
+        "tags" : [ "DT", "VBZ", "DT", "NN", "IN", "NN", "TO", "VB", "NN", "WDT", "VBZ", "VBN", "TO", "VB", "NN", "." ],
+        "lemmas" : [ "this", "reduce", "the", "ability", "of", "mekk3", "to", "phosphorylate", "mek5", "which", "be", "require", "to", "activate", "erk5", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "I-VP", "B-NP", "B-NP", "B-VP", "I-VP", "I-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "rcmod"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "auxpass"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "xcomp"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "rcmod"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "auxpass"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "xcomp"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-608850222",
+    "text" : "MEKK3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "-1239692889",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAPKKK3",
+      "namespace" : "uniprot",
+      "id" : "Q99759",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1947260429",
+    "text" : "MEK5",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "-1239692889",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAPKK 5",
+      "namespace" : "uniprot",
+      "id" : "Q13163",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1946687974",
+    "text" : "ERK5",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "-1239692889",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Big MAP kinase 1",
+      "namespace" : "uniprot",
+      "id" : "Q13164",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1032890209",
+    "text" : "phosphorylate MEK5 which is required to activate ERK5",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:65249924",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 77,
+      "characterEndOffset" : 85,
+      "sentence" : 0,
+      "document" : "-1239692889",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1946687974",
+        "text" : "ERK5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 90,
+        "sentence" : 0,
+        "document" : "-1239692889",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Big MAP kinase 1",
+          "namespace" : "uniprot",
+          "id" : "Q13164",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1248166042",
+        "text" : "phosphorylate MEK5",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1904727540",
+          "text" : "phosphorylate",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 37,
+          "characterEndOffset" : 50,
+          "sentence" : 0,
+          "document" : "-1239692889",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1947260429",
+            "text" : "MEK5",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 51,
+            "characterEndOffset" : 55,
+            "sentence" : 0,
+            "document" : "-1239692889",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MAPKK 5",
+              "namespace" : "uniprot",
+              "id" : "Q13163",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1947260429" : [ {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-1869809809" : [ {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 9
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "-1239692889",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1946687974" : [ {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1947260429" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "rcmod"
+        } ],
+        "E:1248166042" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "rcmod"
+        } ],
+        "R:-222545895" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "rcmod"
+        } ],
+        "E:-1170251798" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "xcomp"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 15
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "-1239692889",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1248166042",
+    "text" : "phosphorylate MEK5",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1904727540",
+      "text" : "phosphorylate",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 50,
+      "sentence" : 0,
+      "document" : "-1239692889",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_verb"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1947260429",
+        "text" : "MEK5",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 55,
+        "sentence" : 0,
+        "document" : "-1239692889",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAPKK 5",
+          "namespace" : "uniprot",
+          "id" : "Q13163",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1947260429" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:-1869809809" : [ {
+          "source" : 1,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 9
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "-1239692889",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_verb",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  } ]
+}

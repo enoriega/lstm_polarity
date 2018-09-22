@@ -1,0 +1,291 @@
+{
+  "documents" : {
+    "-2125600561" : {
+      "id" : "sentence_annotator",
+      "text" : "This causes either LRP6 activation in the case of Wnt3a or signal attenuation by Dkk-1.",
+      "sentences" : [ {
+        "words" : [ "This", "causes", "either", "LRP6", "activation", "in", "the", "case", "of", "Wnt3a", "or", "signal", "attenuation", "by", "Dkk-1", "." ],
+        "startOffsets" : [ 0, 5, 12, 19, 24, 35, 38, 42, 47, 50, 56, 59, 66, 78, 81, 86 ],
+        "endOffsets" : [ 4, 11, 18, 23, 34, 37, 41, 46, 49, 55, 58, 65, 77, 80, 86, 87 ],
+        "tags" : [ "DT", "VBZ", "CC", "NN", "NN", "IN", "DT", "NN", "IN", "NN", "CC", "NN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "this", "cause", "either", "lrp6", "activation", "in", "the", "case", "of", "wnt3a", "or", "signal", "attenuation", "by", "dkk-1", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dep"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 4,
+              "destination" : 14,
+              "relation" : "prep_by"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj_or"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:337632867",
+    "text" : "LRP6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "-2125600561",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "LRP6",
+      "namespace" : "uniprot",
+      "id" : "O75581",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-805537999",
+    "text" : "Wnt3a",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 55,
+    "sentence" : 0,
+    "document" : "-2125600561",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "WNT3A",
+      "namespace" : "uniprot",
+      "id" : "P56704",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1605186506",
+    "text" : "Dkk-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-2125600561",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Dickkopf-1",
+      "namespace" : "uniprot",
+      "id" : "O94907",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1519527188",
+    "text" : "LRP6 activation in the case of Wnt3a or signal attenuation by Dkk-1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-518992000",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "-2125600561",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:337632867",
+        "text" : "LRP6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-2125600561",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "LRP6",
+          "namespace" : "uniprot",
+          "id" : "O75581",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1605186506",
+        "text" : "Dkk-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "-2125600561",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Dickkopf-1",
+          "namespace" : "uniprot",
+          "id" : "O94907",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:337632867" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1605186506" : [ {
+          "source" : 4,
+          "destination" : 14,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-2125600561",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

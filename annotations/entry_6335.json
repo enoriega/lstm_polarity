@@ -1,0 +1,323 @@
+{
+  "documents" : {
+    "886384378" : {
+      "id" : "sentence_annotator",
+      "text" : "\"During chronic lithium treatment, GSK-3beta is inactivated, preventing beta-catenin degradation, and thus increasing protein expression.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "During", "chronic", "lithium", "treatment", ",", "GSK-3beta", "is", "inactivated", ",", "preventing", "beta-catenin", "degradation", ",", "and", "thus", "increasing", "protein", "expression", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 16, 24, 33, 35, 45, 48, 59, 61, 72, 85, 96, 98, 102, 107, 118, 126, 136, 137 ],
+        "endOffsets" : [ 1, 7, 15, 23, 33, 34, 44, 47, 59, 60, 71, 84, 96, 97, 101, 106, 117, 125, 136, 137, 138 ],
+        "tags" : [ "``", "IN", "JJ", "NN", "NN", ",", "NN", "VBZ", "VBN", ",", "VBG", "NN", "NN", ",", "CC", "RB", "VBG", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "during", "chronic", "lithium", "treatment", ",", "gsk-3beta", "be", "inactivate", ",", "prevent", "beta-catenin", "degradation", ",", "and", "thus", "increase", "protein", "expression", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "I-VP", "O", "B-VP", "B-NP", "I-NP", "O", "O", "B-VP", "I-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 10,
+              "destination" : 16,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "cc"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "advmod"
+            }, {
+              "source" : 16,
+              "destination" : 18,
+              "relation" : "dobj"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "prep_during"
+            }, {
+              "source" : 8,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 10,
+              "destination" : 16,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "advmod"
+            }, {
+              "source" : 16,
+              "destination" : 18,
+              "relation" : "dobj"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1697926478",
+    "text" : "lithium",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "886384378",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Li(+) cation",
+      "namespace" : "pubchem",
+      "id" : "28486",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1332696985",
+    "text" : "GSK-3beta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "886384378",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GSK3beta",
+      "namespace" : "uniprot",
+      "id" : "P49841",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1034177290",
+    "text" : "beta-catenin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 72,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "886384378",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-catenin",
+      "namespace" : "uniprot",
+      "id" : "P35222",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:71987225",
+    "text" : "GSK-3beta is inactivated, preventing beta-catenin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:959543070",
+      "text" : "inactivated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "886384378",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1034177290",
+        "text" : "beta-catenin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 72,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "886384378",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-catenin",
+          "namespace" : "uniprot",
+          "id" : "P35222",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1332696985",
+        "text" : "GSK-3beta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "886384378",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GSK3beta",
+          "namespace" : "uniprot",
+          "id" : "P49841",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1034177290" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "ccomp"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1332696985" : [ {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 12
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "886384378",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

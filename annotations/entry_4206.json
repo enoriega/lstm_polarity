@@ -1,0 +1,575 @@
+{
+  "documents" : {
+    "1533711671" : {
+      "id" : "sentence_annotator",
+      "text" : "The knockdown of cyclin D1 or CDK4 reduced p-Rb levels markedly (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "The", "knockdown", "of", "cyclin", "D1", "or", "CDK4", "reduced", "p-Rb", "levels", "markedly", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 4, 14, 17, 24, 27, 30, 35, 43, 48, 55, 64, 65, 73, 74 ],
+        "endOffsets" : [ 3, 13, 16, 23, 26, 29, 34, 42, 47, 54, 63, 65, 73, 74, 75 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "NN", "CC", "NN", "VBD", "NN", "NNS", "RB", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "the", "knockdown", "of", "cyclin", "d1", "or", "cdk4", "reduce", "p-rb", "level", "markedly", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "appos"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "npadvmod"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "prep_of"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj_or"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "appos"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "npadvmod"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2084153988",
+    "text" : "cyclin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1734278667",
+        "text" : "CDK4",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "multi-site",
+        "grounding" : {
+          "text" : "CDK4",
+          "namespace" : "uaz",
+          "id" : "UAZ00343",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      }
+    }, {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-93606765",
+        "text" : "D1",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "site_1letter_a",
+        "grounding" : {
+          "text" : "D1",
+          "namespace" : "uaz",
+          "id" : "UAZ00016",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "PCNA",
+      "namespace" : "uniprot",
+      "id" : "P12004",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-93606765",
+    "text" : "D1",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "site_1letter_a",
+    "grounding" : {
+      "text" : "D1",
+      "namespace" : "uaz",
+      "id" : "UAZ00016",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:575968829",
+    "text" : "CDK4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cell division protein kinase 4",
+      "namespace" : "uniprot",
+      "id" : "P11802",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1734278667",
+    "text" : "CDK4",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "multi-site",
+    "grounding" : {
+      "text" : "CDK4",
+      "namespace" : "uaz",
+      "id" : "UAZ00343",
+      "species" : ""
+    },
+    "displayLabel" : "Site",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:575968829",
+      "text" : "CDK4",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "1533711671",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Cell division protein kinase 4",
+        "namespace" : "uniprot",
+        "id" : "P11802",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:364082648",
+    "text" : "p-Rb",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pRb",
+      "namespace" : "uniprot",
+      "id" : "P06400",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1472917820",
+    "text" : "cyclin D1 or CDK4 reduced p-Rb",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:599633911",
+      "text" : "reduced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 42,
+      "sentence" : 0,
+      "document" : "1533711671",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:364082648",
+        "text" : "p-Rb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 43,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pRb",
+          "namespace" : "uniprot",
+          "id" : "P06400",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2084153988",
+        "text" : "cyclin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-1734278667",
+            "text" : "CDK4",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 30,
+            "characterEndOffset" : 34,
+            "sentence" : 0,
+            "document" : "1533711671",
+            "keep" : true,
+            "foundBy" : "multi-site",
+            "grounding" : {
+              "text" : "CDK4",
+              "namespace" : "uaz",
+              "id" : "UAZ00343",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          }
+        }, {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-93606765",
+            "text" : "D1",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 24,
+            "characterEndOffset" : 26,
+            "sentence" : 0,
+            "document" : "1533711671",
+            "keep" : true,
+            "foundBy" : "site_1letter_a",
+            "grounding" : {
+              "text" : "D1",
+              "namespace" : "uaz",
+              "id" : "UAZ00016",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "PCNA",
+          "namespace" : "uniprot",
+          "id" : "P12004",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:364082648" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:575968829" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "T:2084153988" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prep_of"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1421624477",
+    "text" : "CDK4 reduced p-Rb",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:599633911",
+      "text" : "reduced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 35,
+      "characterEndOffset" : 42,
+      "sentence" : 0,
+      "document" : "1533711671",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:364082648",
+        "text" : "p-Rb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 43,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pRb",
+          "namespace" : "uniprot",
+          "id" : "P06400",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:575968829",
+        "text" : "CDK4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1533711671",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cell division protein kinase 4",
+          "namespace" : "uniprot",
+          "id" : "P11802",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:364082648" : [ {
+          "source" : 7,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:575968829" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "T:2084153988" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "prep_of"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 9
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "1533711671",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,265 @@
+{
+  "documents" : {
+    "1393138765" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Further, as expected, only EGFR was substantially lowered by EGF treatment.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Further", ",", "as", "expected", ",", "only", "EGFR", "was", "substantially", "lowered", "by", "EGF", "treatment", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 10, 13, 21, 23, 28, 33, 37, 51, 59, 62, 66, 75, 76 ],
+        "endOffsets" : [ 1, 8, 9, 12, 21, 22, 27, 32, 36, 50, 58, 61, 65, 75, 76, 77 ],
+        "tags" : [ "``", "RB", ",", "IN", "VBN", ",", "RB", "NN", "VBD", "RB", "VBN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "further", ",", "as", "expect", ",", "only", "egfr", "be", "substantially", "lower", "by", "egf", "treatment", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-SBAR", "B-VP", "O", "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "parataxis"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 4,
+              "relation" : "parataxis"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "agent"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-259441638",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "1393138765",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-900128043",
+    "text" : "EGF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1393138765",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGF",
+      "namespace" : "uniprot",
+      "id" : "P01133",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-327059999",
+    "text" : "EGFR was substantially lowered by EGF",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1279217091",
+      "text" : "lowered",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 58,
+      "sentence" : 0,
+      "document" : "1393138765",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-259441638",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 32,
+        "sentence" : 0,
+        "document" : "1393138765",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-900128043",
+        "text" : "EGF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "1393138765",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGF",
+          "namespace" : "uniprot",
+          "id" : "P01133",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-259441638" : [ {
+          "source" : 10,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-900128043" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1393138765",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

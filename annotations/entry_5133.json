@@ -1,0 +1,263 @@
+{
+  "documents" : {
+    "1269053022" : {
+      "id" : "sentence_annotator",
+      "text" : "Activation of Aurora-A requires Bora which is also activated by Cdk1.",
+      "sentences" : [ {
+        "words" : [ "Activation", "of", "Aurora-A", "requires", "Bora", "which", "is", "also", "activated", "by", "Cdk1", "." ],
+        "startOffsets" : [ 0, 11, 14, 23, 32, 37, 43, 46, 51, 61, 64, 68 ],
+        "endOffsets" : [ 10, 13, 22, 31, 36, 42, 45, 50, 60, 63, 68, 69 ],
+        "tags" : [ "NN", "IN", "NN", "VBZ", "NNP", "WDT", "VBZ", "RB", "VBN", "IN", "NN", "." ],
+        "lemmas" : [ "activation", "of", "aurora-a", "require", "Bora", "which", "be", "also", "activate", "by", "cdk1", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "B-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "agent"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1798488759",
+    "text" : "Aurora-A",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1269053022",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Aurora A",
+      "namespace" : "uaz",
+      "id" : "UAZ00879",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:38001924",
+    "text" : "Bora",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1269053022",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "C13orf34",
+      "namespace" : "uniprot",
+      "id" : "Q6PGQ7",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1625170307",
+    "text" : "Cdk1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "1269053022",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDKN1",
+      "namespace" : "uniprot",
+      "id" : "P06493",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:800381838",
+    "text" : "Bora which is also activated by Cdk1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-321294516",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "1269053022",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_6_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:38001924",
+        "text" : "Bora",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1269053022",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "C13orf34",
+          "namespace" : "uniprot",
+          "id" : "Q6PGQ7",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1625170307",
+        "text" : "Cdk1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "1269053022",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN1",
+          "namespace" : "uniprot",
+          "id" : "P06493",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:38001924" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "rcmod"
+        } ]
+      },
+      "controller" : {
+        "T:-1625170307" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 11
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "1269053022",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_6_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,436 @@
+{
+  "documents" : {
+    "40754497" : {
+      "id" : "sentence_annotator",
+      "text" : "We hypothesize that Nectin-4 is critical for GBC progression via PI3K and AKT pathway activation of Rac1.",
+      "sentences" : [ {
+        "words" : [ "We", "hypothesize", "that", "Nectin-4", "is", "critical", "for", "GBC", "progression", "via", "PI3K", "and", "AKT", "pathway", "activation", "of", "Rac1", "." ],
+        "startOffsets" : [ 0, 3, 15, 20, 29, 32, 41, 45, 49, 61, 65, 70, 74, 78, 86, 97, 100, 104 ],
+        "endOffsets" : [ 2, 14, 19, 28, 31, 40, 44, 48, 60, 64, 69, 73, 77, 85, 96, 99, 104, 105 ],
+        "tags" : [ "PRP", "VBP", "IN", "NN", "VBZ", "JJ", "IN", "NNP", "NN", "IN", "NN", "CC", "NN", "NN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "we", "hypothesize", "that", "nectin-4", "be", "critical", "for", "GBC", "progression", "via", "pi3k", "and", "akt", "pathway", "activation", "of", "rac1", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-ADJP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_for"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "prep_via"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:951776752",
+    "text" : "Nectin-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Ig superfamily receptor LNIR",
+      "namespace" : "uniprot",
+      "id" : "Q96NY8",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-99900609",
+    "text" : "PI3K",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "phosphatidylinositol 3-kinase",
+      "namespace" : "be",
+      "id" : "PI3K",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1027165678",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2058955655",
+    "text" : "Rac1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "RAC1",
+      "namespace" : "uniprot",
+      "id" : "P63000",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-178463636",
+    "text" : "PI3K and AKT pathway activation of Rac1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1890275884",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 86,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "40754497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2058955655",
+        "text" : "Rac1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 100,
+        "characterEndOffset" : 104,
+        "sentence" : 0,
+        "document" : "40754497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RAC1",
+          "namespace" : "uniprot",
+          "id" : "P63000",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-99900609",
+        "text" : "PI3K",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 65,
+        "characterEndOffset" : 69,
+        "sentence" : 0,
+        "document" : "40754497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phosphatidylinositol 3-kinase",
+          "namespace" : "be",
+          "id" : "PI3K",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2058955655" : [ {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-99900609" : [ {
+          "source" : 14,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1027165678" : [ {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 17
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:366120901",
+    "text" : "AKT pathway activation of Rac1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1890275884",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 86,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "40754497",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2058955655",
+        "text" : "Rac1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 100,
+        "characterEndOffset" : 104,
+        "sentence" : 0,
+        "document" : "40754497",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RAC1",
+          "namespace" : "uniprot",
+          "id" : "P63000",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1027165678",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 74,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "40754497",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2058955655" : [ {
+          "source" : 14,
+          "destination" : 16,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-99900609" : [ {
+          "source" : 14,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1027165678" : [ {
+          "source" : 14,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 17
+    },
+    "characterStartOffset" : 74,
+    "characterEndOffset" : 104,
+    "sentence" : 0,
+    "document" : "40754497",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

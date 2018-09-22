@@ -1,0 +1,617 @@
+{
+  "documents" : {
+    "-47254441" : {
+      "id" : "sentence_annotator",
+      "text" : "\"As the possible mechanisms, gamma2pf activated ERK and p38 MAPK but inactivated Akt in HUVECs.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "As", "the", "possible", "mechanisms", ",", "gamma2pf", "activated", "ERK", "and", "p38", "MAPK", "but", "inactivated", "Akt", "in", "HUVECs", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 8, 17, 27, 29, 38, 48, 52, 56, 60, 65, 69, 81, 85, 88, 94, 95 ],
+        "endOffsets" : [ 1, 3, 7, 16, 27, 28, 37, 47, 51, 55, 59, 64, 68, 80, 84, 87, 94, 95, 96 ],
+        "tags" : [ "``", "IN", "DT", "JJ", "NNS", ",", "NN", "VBD", "NN", "CC", "NN", "NN", "CC", "VBD", "NN", "IN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "as", "the", "possible", "mechanism", ",", "gamma2pf", "activate", "erk", "and", "p38", "mapk", "but", "inactivate", "akt", "in", "huvec", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "B-Family", "I-Family", "O", "O", "B-Family", "O", "B-TissueType", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "prep_as"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "conj_but"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-301986525",
+    "text" : "gamma2pf",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "gamma2pf",
+      "namespace" : "uaz",
+      "id" : "UAZ01042",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1187633253",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1229971136",
+    "text" : "p38 MAPK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "p38-MAPK",
+      "namespace" : "be",
+      "id" : "p38",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1931626937",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1936382874",
+    "text" : "HUVECs",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "HUVECs",
+      "namespace" : "uaz",
+      "id" : "CVCL_9S75",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1282887349",
+    "text" : "gamma2pf activated ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-865396827",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 47,
+      "sentence" : 0,
+      "document" : "-47254441",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1187633253",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-301986525",
+        "text" : "gamma2pf",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "gamma2pf",
+          "namespace" : "uaz",
+          "id" : "UAZ01042",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1229971136" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1187633253" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-301986525" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 9
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1181795088",
+    "text" : "gamma2pf activated ERK and p38 MAPK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-865396827",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 47,
+      "sentence" : 0,
+      "document" : "-47254441",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1229971136",
+        "text" : "p38 MAPK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 12
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 64,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "p38-MAPK",
+          "namespace" : "be",
+          "id" : "p38",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-301986525",
+        "text" : "gamma2pf",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "gamma2pf",
+          "namespace" : "uaz",
+          "id" : "UAZ01042",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1229971136" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:1187633253" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-301986525" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 12
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1092437082",
+    "text" : "gamma2pf activated ERK and p38 MAPK but inactivated Akt",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:336577626",
+      "text" : "inactivated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 69,
+      "characterEndOffset" : 80,
+      "sentence" : 0,
+      "document" : "-47254441",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1931626937",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 81,
+        "characterEndOffset" : 84,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-301986525",
+        "text" : "gamma2pf",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-47254441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "gamma2pf",
+          "namespace" : "uaz",
+          "id" : "UAZ01042",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "uaz:CVCL_9S75" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1931626937" : [ {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-301986525" : [ {
+          "source" : 13,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 15
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 84,
+    "sentence" : 0,
+    "document" : "-47254441",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "uaz:CVCL_9S75" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

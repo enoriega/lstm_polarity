@@ -1,0 +1,319 @@
+{
+  "documents" : {
+    "-160385890" : {
+      "id" : "sentence_annotator",
+      "text" : "\"CD40, not LMP1, signaling has been shown to degrade TRAF2 and 3.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "CD40", ",", "not", "LMP1", ",", "signaling", "has", "been", "shown", "to", "degrade", "TRAF2", "and", "3", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 11, 15, 17, 27, 31, 36, 42, 45, 53, 59, 63, 64, 65 ],
+        "endOffsets" : [ 1, 5, 6, 10, 15, 16, 26, 30, 35, 41, 44, 52, 58, 62, 64, 65, 66 ],
+        "tags" : [ "``", "NN", ",", "RB", "NN", ",", "NN", "VBZ", "VBN", "VBN", "TO", "VB", "NN", "CC", "CD", ".", "''" ],
+        "lemmas" : [ "\"", "cd40", ",", "not", "lmp1", ",", "signaling", "have", "be", "show", "to", "degrade", "traf2", "and", "3", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "O", "B-NP", "O", "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "cc"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "appos"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1796030245",
+    "text" : "CD40",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "-160385890",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CD40",
+      "namespace" : "uniprot",
+      "id" : "P25942",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1624944089",
+    "text" : "LMP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "-160385890",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "LAMP family protein lmp-1",
+      "namespace" : "uniprot",
+      "id" : "Q11117",
+      "species" : "caenorhabditis elegans"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1486043590",
+    "text" : "TRAF2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-160385890",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TRAF2",
+      "namespace" : "uniprot",
+      "id" : "Q12933",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-204624234",
+    "text" : "CD40, not LMP1, signaling has been shown to degrade TRAF2",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-741024618",
+      "text" : "degrade",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "-160385890",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1486043590",
+        "text" : "TRAF2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "-160385890",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TRAF2",
+          "namespace" : "uniprot",
+          "id" : "Q12933",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1796030245",
+        "text" : "CD40",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "-160385890",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CD40",
+          "namespace" : "uniprot",
+          "id" : "P25942",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1486043590" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1796030245" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-160385890",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:543772040",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 10,
+        "sentence" : 0,
+        "document" : "-160385890",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,263 @@
+{
+  "documents" : {
+    "2112292836" : {
+      "id" : "sentence_annotator",
+      "text" : "CDK1 Activates Foxo as a Key Check in the Cell Cycle.",
+      "sentences" : [ {
+        "words" : [ "CDK1", "Activates", "Foxo", "as", "a", "Key", "Check", "in", "the", "Cell", "Cycle", "." ],
+        "startOffsets" : [ 0, 5, 15, 20, 23, 25, 29, 35, 38, 42, 47, 52 ],
+        "endOffsets" : [ 4, 14, 19, 22, 24, 28, 34, 37, 41, 46, 52, 53 ],
+        "tags" : [ "NN", "VBZ", "NNP", "IN", "DT", "NN", "VB", "IN", "DT", "NN", "NN", "." ],
+        "lemmas" : [ "cdk1", "activate", "Foxo", "as", "a", "key", "check", "in", "the", "cell", "cycle", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "O", "O", "O", "B-BioProcess", "I-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dep"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 10,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_as"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:785075856",
+    "text" : "CDK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "2112292836",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDKN1",
+      "namespace" : "uniprot",
+      "id" : "P06493",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-541002362",
+    "text" : "Foxo",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "2112292836",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "FOXO",
+      "namespace" : "be",
+      "id" : "FOXO",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-289610858",
+    "text" : "Cell Cycle",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 11
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "2112292836",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell division cycle",
+      "namespace" : "go",
+      "id" : "GO:0007049",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2079125227",
+    "text" : "CDK1 Activates Foxo",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-53533202",
+      "text" : "Activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 5,
+      "characterEndOffset" : 14,
+      "sentence" : 0,
+      "document" : "2112292836",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-541002362",
+        "text" : "Foxo",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "2112292836",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "FOXO",
+          "namespace" : "be",
+          "id" : "FOXO",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:785075856",
+        "text" : "CDK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "2112292836",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN1",
+          "namespace" : "uniprot",
+          "id" : "P06493",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-541002362" : [ {
+          "source" : 1,
+          "destination" : 2,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:785075856" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "2112292836",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,426 @@
+{
+  "documents" : {
+    "1653319013" : {
+      "id" : "sentence_annotator",
+      "text" : "Pharmacological inactivation of CHK1 and WEE1 but not ATR induces mitotic catastrophe.",
+      "sentences" : [ {
+        "words" : [ "Pharmacological", "inactivation", "of", "CHK1", "and", "WEE1", "but", "not", "ATR", "induces", "mitotic", "catastrophe", "." ],
+        "startOffsets" : [ 0, 16, 29, 32, 37, 41, 46, 50, 54, 58, 66, 74, 85 ],
+        "endOffsets" : [ 15, 28, 31, 36, 40, 45, 49, 53, 57, 65, 73, 85, 86 ],
+        "tags" : [ "JJ", "NN", "IN", "NN", "CC", "NN", "CC", "RB", "NN", "VBZ", "JJ", "NN", "." ],
+        "lemmas" : [ "pharmacological", "inactivation", "of", "chk1", "and", "wee1", "but", "not", "atr", "induce", "mitotic", "catastrophe", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "conj_negcc"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-80316984",
+    "text" : "CHK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1653319013",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CHEK1",
+      "namespace" : "uniprot",
+      "id" : "O14757",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1107939754",
+    "text" : "WEE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "1653319013",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "WEE1hu",
+      "namespace" : "uniprot",
+      "id" : "P30291",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1817935118",
+    "text" : "ATR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1653319013",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ARGS",
+      "namespace" : "uniprot",
+      "id" : "P20848",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1236171885",
+    "text" : "inactivation of CHK1 and WEE1 but not ATR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:702481602",
+      "text" : "inactivation",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "1653319013",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-80316984",
+        "text" : "CHK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CHEK1",
+          "namespace" : "uniprot",
+          "id" : "O14757",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1817935118",
+        "text" : "ATR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ARGS",
+          "namespace" : "uniprot",
+          "id" : "P20848",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-80316984" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1107939754" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1817935118" : [ {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "conj_negcc"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1653319013",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_noun",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:206074396",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_3_noun",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-308829547",
+    "text" : "inactivation of CHK1 and WEE1 but not ATR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:702481602",
+      "text" : "inactivation",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "1653319013",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1107939754",
+        "text" : "WEE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "WEE1hu",
+          "namespace" : "uniprot",
+          "id" : "P30291",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1817935118",
+        "text" : "ATR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ARGS",
+          "namespace" : "uniprot",
+          "id" : "P20848",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-80316984" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:1107939754" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1817935118" : [ {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "conj_negcc"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "1653319013",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_3_noun",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:206074396",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "1653319013",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_3_noun",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

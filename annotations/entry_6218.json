@@ -1,0 +1,675 @@
+{
+  "documents" : {
+    "1172415856" : {
+      "id" : "sentence_annotator",
+      "text" : "\"However, Bcl-2 accelerates the shuttling of only Bax, and not that of Bak.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "However", ",", "Bcl-2", "accelerates", "the", "shuttling", "of", "only", "Bax", ",", "and", "not", "that", "of", "Bak", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 10, 16, 28, 32, 42, 45, 50, 53, 55, 59, 63, 68, 71, 74, 75 ],
+        "endOffsets" : [ 1, 8, 9, 15, 27, 31, 41, 44, 49, 53, 54, 58, 62, 67, 70, 74, 75, 76 ],
+        "tags" : [ "``", "RB", ",", "NN", "VBZ", "DT", "NN", "IN", "RB", "NN", ",", "CC", "RB", "DT", "IN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "however", ",", "bcl-2", "accelerate", "the", "shuttling", "of", "only", "bax", ",", "and", "not", "that", "of", "bak", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-NP", "I-NP", "I-NP", "B-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "neg"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "neg"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1367999897",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2084226118",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1404613523",
+    "text" : "that",
+    "labels" : [ "Generic_entity", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "DT_not_determiner",
+    "grounding" : {
+      "text" : "that",
+      "namespace" : "uaz",
+      "id" : "UAZ00044",
+      "species" : ""
+    },
+    "displayLabel" : "Generic_entity",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-2084226118",
+      "text" : "Bax",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 53,
+      "sentence" : 0,
+      "document" : "1172415856",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "BCL2L4",
+        "namespace" : "uniprot",
+        "id" : "Q07812",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-775302494",
+    "text" : "Bak",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BAK1",
+      "namespace" : "uniprot",
+      "id" : "Q16611",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:693300518",
+    "text" : "Bcl-2 accelerates the shuttling of only Bax",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1160179187",
+      "text" : "accelerates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "1172415856",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2084226118",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1367999897",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2084226118" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ],
+        "T:-1404613523" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        } ],
+        "T:-775302494" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1367999897" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:543344716",
+    "text" : "Bcl-2 accelerates the shuttling of only Bax, and not that",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1160179187",
+      "text" : "accelerates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "1172415856",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1404613523",
+        "text" : "that",
+        "labels" : [ "Generic_entity", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "DT_not_determiner",
+        "grounding" : {
+          "text" : "that",
+          "namespace" : "uaz",
+          "id" : "UAZ00044",
+          "species" : ""
+        },
+        "displayLabel" : "Generic_entity",
+        "antecedents" : [ {
+          "type" : "CorefTextBoundMention",
+          "id" : "T:-2084226118",
+          "text" : "Bax",
+          "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 50,
+          "characterEndOffset" : 53,
+          "sentence" : 0,
+          "document" : "1172415856",
+          "keep" : true,
+          "foundBy" : "ner-gene_or_gene_product-entities",
+          "grounding" : {
+            "text" : "BCL2L4",
+            "namespace" : "uniprot",
+            "id" : "Q07812",
+            "species" : "homo sapiens"
+          },
+          "displayLabel" : "Protein"
+        } ]
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1367999897",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2084226118" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ],
+        "T:-1404613523" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        } ],
+        "T:-775302494" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1367999897" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 14
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb, pronominalMatch",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1004174230",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:228381861",
+    "text" : "Bcl-2 accelerates the shuttling of only Bax, and not that of Bak",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1160179187",
+      "text" : "accelerates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "1172415856",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-775302494",
+        "text" : "Bak",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BAK1",
+          "namespace" : "uniprot",
+          "id" : "Q16611",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1367999897",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2084226118" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ],
+        "T:-1404613523" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        } ],
+        "T:-775302494" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 13,
+          "relation" : "conj_and"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1367999897" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 16
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "1172415856",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1004174230",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1172415856",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

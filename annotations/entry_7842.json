@@ -1,0 +1,273 @@
+{
+  "documents" : {
+    "-1649385820" : {
+      "id" : "sentence_annotator",
+      "text" : "Electrophysiological experiments confirmed that KCa3.1 activity was blocked by 250 nM TRAM-34 (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "Electrophysiological", "experiments", "confirmed", "that", "KCa3", ".1", "activity", "was", "blocked", "by", "250", "nM", "TRAM-34", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 21, 33, 43, 48, 52, 55, 64, 68, 76, 79, 83, 86, 94, 95, 103, 104 ],
+        "endOffsets" : [ 20, 32, 42, 47, 52, 54, 63, 67, 75, 78, 82, 85, 93, 95, 103, 104, 105 ],
+        "tags" : [ "JJ", "NNS", "VBD", "IN", "NN", "NN", "NN", "VBD", "VBN", "IN", "CD", "NN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "electrophysiological", "experiment", "confirm", "that", "kca3", ".1", "activity", "be", "block", "by", "250", "nm", "tram-34", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "agent"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-489751166",
+    "text" : "KCa3.1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1649385820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SK4",
+      "namespace" : "uniprot",
+      "id" : "O15554",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1000294859",
+    "text" : "TRAM-34",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "-1649385820",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TRAM-34",
+      "namespace" : "uaz",
+      "id" : "UAZ02157",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2115895505",
+    "text" : "KCa3.1 activity was blocked by 250 nM TRAM-34",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1745469746",
+      "text" : "blocked",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 68,
+      "characterEndOffset" : 75,
+      "sentence" : 0,
+      "document" : "-1649385820",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-489751166",
+        "text" : "KCa3.1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1649385820",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SK4",
+          "namespace" : "uniprot",
+          "id" : "O15554",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1000294859",
+        "text" : "TRAM-34",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 93,
+        "sentence" : 0,
+        "document" : "-1649385820",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TRAM-34",
+          "namespace" : "uaz",
+          "id" : "UAZ02157",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-489751166" : [ {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1000294859" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 93,
+    "sentence" : 0,
+    "document" : "-1649385820",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,487 @@
+{
+  "documents" : {
+    "-84127905" : {
+      "id" : "sentence_annotator",
+      "text" : "(3) PI3K antagonist LY294002 (LY) or mTOR antagonist rapamycin (RAPA) markedly inhibited cardiomyocyte hypertrophy.",
+      "sentences" : [ {
+        "words" : [ "(", "3", ")", "PI3K", "antagonist", "LY294002", "(", "LY", ")", "or", "mTOR", "antagonist", "rapamycin", "(", "RAPA", ")", "markedly", "inhibited", "cardiomyocyte", "hypertrophy", "." ],
+        "startOffsets" : [ 0, 1, 2, 4, 9, 20, 29, 30, 32, 34, 37, 42, 53, 63, 64, 68, 70, 79, 89, 103, 114 ],
+        "endOffsets" : [ 1, 2, 3, 8, 19, 28, 30, 32, 33, 36, 41, 52, 62, 64, 68, 69, 78, 88, 102, 114, 115 ],
+        "tags" : [ "-LRB-", "CD", "-RRB-", "NN", "NN", "NN", "-LRB-", "NN", "-RRB-", "CC", "NN", "NN", "NN", "-LRB-", "NN", "-RRB-", "RB", "VBD", "NN", "NN", "." ],
+        "lemmas" : [ "(", "3", ")", "pi3k", "antagonist", "ly294002", "(", "ly", ")", "or", "mtor", "antagonist", "rapamycin", "(", "rapa", ")", "markedly", "inhibit", "cardiomyocyte", "hypertrophy", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-TissueType", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "dep"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            }, {
+              "source" : 16,
+              "destination" : 12,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "advmod"
+            }, {
+              "source" : 17,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 17,
+              "destination" : 19,
+              "relation" : "dobj"
+            }, {
+              "source" : 19,
+              "destination" : 18,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 17 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "dep"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 1,
+              "destination" : 10,
+              "relation" : "conj_or"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "appos"
+            }, {
+              "source" : 16,
+              "destination" : 12,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 17,
+              "destination" : 16,
+              "relation" : "advmod"
+            }, {
+              "source" : 17,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 17,
+              "destination" : 19,
+              "relation" : "dobj"
+            }, {
+              "source" : 17,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 19,
+              "destination" : 18,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 17 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:716603274",
+    "text" : "PI3K",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "phosphatidylinositol 3-kinase",
+      "namespace" : "be",
+      "id" : "PI3K",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1230949716",
+    "text" : "LY294002",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "LY 294002",
+      "namespace" : "pubchem",
+      "id" : "3973",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1979947743",
+    "text" : "LY",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 32,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "L-Y",
+      "namespace" : "pubchem",
+      "id" : "70410",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-111554718",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-290854249",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:421527591",
+    "text" : "RAPA",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Breast cancer anti-estrogen resistance 2",
+      "namespace" : "uniprot",
+      "id" : "Q96PN7",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1262492769",
+    "text" : "cardiomyocyte",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 18,
+      "end" : 19
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 102,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Cardiomyocyte",
+      "namespace" : "tissuelist",
+      "id" : "TS-0115",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-945788709",
+    "text" : "PI3K antagonist LY294002",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1388859249",
+      "text" : "antagonist",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "-84127905",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:716603274",
+        "text" : "PI3K",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "-84127905",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phosphatidylinositol 3-kinase",
+          "namespace" : "be",
+          "id" : "PI3K",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0115" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1230949716",
+        "text" : "LY294002",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "-84127905",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "LY 294002",
+          "namespace" : "pubchem",
+          "id" : "3973",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0115" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 6
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_1_noun",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2108850959",
+    "text" : "mTOR antagonist rapamycin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-271881512",
+      "text" : "antagonist",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 42,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "-84127905",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-111554718",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "-84127905",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0115" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-290854249",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "-84127905",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0115" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 13
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-84127905",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_1_noun",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0115" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

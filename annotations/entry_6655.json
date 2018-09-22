@@ -1,0 +1,329 @@
+{
+  "documents" : {
+    "1787300129" : {
+      "id" : "sentence_annotator",
+      "text" : "Shh signaling in Ptch1 +/- / SKH-1 enhances inflammatory microenvironment in the skin.",
+      "sentences" : [ {
+        "words" : [ "Shh", "signaling", "in", "Ptch1", "+/-", "/", "SKH-1", "enhances", "inflammatory", "microenvironment", "in", "the", "skin", "." ],
+        "startOffsets" : [ 0, 4, 14, 17, 23, 27, 29, 35, 44, 57, 74, 77, 81, 85 ],
+        "endOffsets" : [ 3, 13, 16, 22, 26, 28, 34, 43, 56, 73, 76, 80, 85, 86 ],
+        "tags" : [ "NN", "NN", "IN", "NN", "CC", ":", "NN", "VBZ", "JJ", "NN", "IN", "DT", "NN", "." ],
+        "lemmas" : [ "shh", "signaling", "in", "ptch1", "+/-", "/", "skh-1", "enhance", "inflammatory", "microenvironment", "in", "the", "skin", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-CellLine", "O", "O", "O", "O", "O", "B-TissueType", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "O", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "punct"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "punct"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "prep_in"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:830888001",
+    "text" : "Shh",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "1787300129",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Sonic hedgehog protein N-product",
+      "namespace" : "uniprot",
+      "id" : "Q15465",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_C124" ],
+      "TissueType" : [ "tissuelist:TS-0934" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-727571507",
+    "text" : "Ptch1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1787300129",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTCH",
+      "namespace" : "uniprot",
+      "id" : "Q13635",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_C124" ],
+      "TissueType" : [ "tissuelist:TS-0934" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1556671923",
+    "text" : "SKH-1",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1787300129",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "SKH-1",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_C124",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_C124" ],
+      "TissueType" : [ "tissuelist:TS-0934" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:276738576",
+    "text" : "skin",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1787300129",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Skin",
+      "namespace" : "tissuelist",
+      "id" : "TS-0934",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_C124" ],
+      "TissueType" : [ "tissuelist:TS-0934" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-144980332",
+    "text" : "Shh signaling in Ptch1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1630092916",
+      "text" : "signaling",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 13,
+      "sentence" : 0,
+      "document" : "1787300129",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-727571507",
+        "text" : "Ptch1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1787300129",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTCH",
+          "namespace" : "uniprot",
+          "id" : "Q13635",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_C124" ],
+          "TissueType" : [ "tissuelist:TS-0934" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:830888001",
+        "text" : "Shh",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "1787300129",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Sonic hedgehog protein N-product",
+          "namespace" : "uniprot",
+          "id" : "Q15465",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_C124" ],
+          "TissueType" : [ "tissuelist:TS-0934" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-727571507" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ]
+      },
+      "controller" : {
+        "T:830888001" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1787300129",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_C124" ],
+      "TissueType" : [ "tissuelist:TS-0934" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

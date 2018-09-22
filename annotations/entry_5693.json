@@ -1,0 +1,492 @@
+{
+  "documents" : {
+    "-978093889" : {
+      "id" : "sentence_annotator",
+      "text" : "Recent studies indicated that insulin could inhibit inflammation by activating phosphatidylinositol 3-kinase-Akt-dependent (PI3K-Akt) signaling pathway.",
+      "sentences" : [ {
+        "words" : [ "Recent", "studies", "indicated", "that", "insulin", "could", "inhibit", "inflammation", "by", "activating", "phosphatidylinositol", "3-kinase-Akt-dependent", "(", "PI3K-Akt", ")", "signaling", "pathway", "." ],
+        "startOffsets" : [ 0, 7, 15, 25, 30, 38, 44, 52, 65, 68, 79, 100, 123, 124, 132, 134, 144, 151 ],
+        "endOffsets" : [ 6, 14, 24, 29, 37, 43, 51, 64, 67, 78, 99, 122, 124, 132, 133, 143, 151, 152 ],
+        "tags" : [ "JJ", "NNS", "VBD", "IN", "NN", "MD", "VB", "NN", "IN", "VBG", "NN", "JJ", "-LRB-", "NN", "-RRB-", "NN", "NN", "." ],
+        "lemmas" : [ "recent", "study", "indicate", "that", "insulin", "could", "inhibit", "inflammation", "by", "activate", "phosphatidylinositol", "3-kinase-akt-dependent", "(", "pi3k-akt", ")", "signaling", "pathway", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "B-Simple_chemical", "O", "O", "B-Family", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "I-VP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pcomp"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dep"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 11,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "npadvmod"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dep"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 11,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-985315711",
+    "text" : "insulin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin B chain",
+      "namespace" : "uniprot",
+      "id" : "P01308",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:732848414",
+    "text" : "inflammation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "inflammatory response",
+      "namespace" : "go",
+      "id" : "GO:0006954",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1491227196",
+    "text" : "phosphatidylinositol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "1-Phosphatidyl-D-myo-inositol",
+      "namespace" : "pubchem",
+      "id" : "53477912",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1107010708",
+    "text" : "PI3K-Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 124,
+    "characterEndOffset" : 132,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:312770839",
+    "text" : "insulin could inhibit inflammation",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:589391789",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-978093889",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:732848414",
+        "text" : "inflammation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 64,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "inflammatory response",
+          "namespace" : "go",
+          "id" : "GO:0006954",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-985315711",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:732848414" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:-1107010708" : [ {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 11,
+          "relation" : "amod"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dep"
+        } ]
+      },
+      "controller" : {
+        "T:-985315711" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1240265402",
+        "text" : "indicated",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1006494552",
+    "text" : "insulin could inhibit inflammation by activating phosphatidylinositol 3-kinase-Akt-dependent (PI3K-Akt",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:589391789",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 44,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-978093889",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1107010708",
+        "text" : "PI3K-Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 124,
+        "characterEndOffset" : 132,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-985315711",
+        "text" : "insulin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin B chain",
+          "namespace" : "uniprot",
+          "id" : "P01308",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:732848414" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ],
+        "T:-1107010708" : [ {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 9,
+          "destination" : 16,
+          "relation" : "dobj"
+        }, {
+          "source" : 16,
+          "destination" : 11,
+          "relation" : "amod"
+        }, {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dep"
+        } ]
+      },
+      "controller" : {
+        "T:-985315711" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 14
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 132,
+    "sentence" : 0,
+    "document" : "-978093889",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1240265402",
+        "text" : "indicated",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-978093889",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

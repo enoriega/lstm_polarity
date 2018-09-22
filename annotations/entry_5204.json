@@ -1,0 +1,357 @@
+{
+  "documents" : {
+    "1135177293" : {
+      "id" : "sentence_annotator",
+      "text" : "Our laboratory found that SHIP2 -/- fetal liver derived macrophages have augmented M-CSF-induced Akt1 activity.",
+      "sentences" : [ {
+        "words" : [ "Our", "laboratory", "found", "that", "SHIP2", "-/-", "fetal", "liver", "derived", "macrophages", "have", "augmented", "M-CSF-induced", "Akt1", "activity", "." ],
+        "startOffsets" : [ 0, 4, 15, 21, 26, 32, 36, 42, 48, 56, 68, 73, 83, 97, 102, 110 ],
+        "endOffsets" : [ 3, 14, 20, 25, 31, 35, 41, 47, 55, 67, 72, 82, 96, 101, 110, 111 ],
+        "tags" : [ "PRP$", "NN", "VBD", "IN", "NN", "CD", "JJ", "NN", "VBN", "NNS", "VBP", "VBN", "JJ", "NN", "NN", "." ],
+        "lemmas" : [ "we", "laboratory", "find", "that", "ship2", "-/-", "fetal", "liver", "derive", "macrophage", "have", "augment", "m-csf-induced", "akt1", "activity", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-TissueType", "I-TissueType", "O", "B-CellType", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "poss"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "num"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 11,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "poss"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "dep"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "num"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 11,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1548790218",
+    "text" : "SHIP2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "1135177293",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Inositol polyphosphate phosphatase-like protein 1",
+      "namespace" : "uniprot",
+      "id" : "O15357",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0344" ],
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:73108566",
+    "text" : "fetal liver",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "1135177293",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Fetal liver",
+      "namespace" : "tissuelist",
+      "id" : "TS-0344",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0344" ],
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1983850548",
+    "text" : "macrophages",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "1135177293",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "histiocyte",
+      "namespace" : "cl",
+      "id" : "CL:0000235",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0344" ],
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1921258258",
+    "text" : "Akt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1135177293",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AKT1",
+      "namespace" : "uniprot",
+      "id" : "P31749",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0344" ],
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:971105012",
+    "text" : "SHIP2 -/- fetal liver derived macrophages have augmented M-CSF-induced Akt1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:147514248",
+      "text" : "augmented",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 73,
+      "characterEndOffset" : 82,
+      "sentence" : 0,
+      "document" : "1135177293",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1921258258",
+        "text" : "Akt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "1135177293",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AKT1",
+          "namespace" : "uniprot",
+          "id" : "P31749",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0344" ],
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1548790218",
+        "text" : "SHIP2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "1135177293",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Inositol polyphosphate phosphatase-like protein 1",
+          "namespace" : "uniprot",
+          "id" : "O15357",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0344" ],
+          "CellType" : [ "cl:CL:0000235" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1921258258" : [ {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1548790218" : [ {
+          "source" : 11,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 14
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1135177293",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0344" ],
+      "CellType" : [ "cl:CL:0000235" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

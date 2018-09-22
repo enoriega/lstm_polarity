@@ -1,0 +1,277 @@
+{
+  "documents" : {
+    "1703208054" : {
+      "id" : "sentence_annotator",
+      "text" : "PD98059 has been shown to inhibit activation of MEK targets including ERK1/2 [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "PD98059", "has", "been", "shown", "to", "inhibit", "activation", "of", "MEK", "targets", "including", "ERK1/2", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 8, 12, 17, 23, 26, 34, 45, 48, 52, 60, 70, 77, 78, 87, 88 ],
+        "endOffsets" : [ 7, 11, 16, 22, 25, 33, 44, 47, 51, 59, 69, 76, 78, 87, 88, 89 ],
+        "tags" : [ "NN", "VBZ", "VBN", "VBN", "TO", "VB", "NN", "IN", "NN", "NNS", "VBG", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "pd98059", "have", "be", "show", "to", "inhibit", "activation", "of", "mek", "target", "include", "erk1/2", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "B-Family", "O", "O", "B-Family", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "prep_including"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1559780267",
+    "text" : "MEK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "1703208054",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "MEK",
+      "namespace" : "be",
+      "id" : "MEK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:840021979",
+    "text" : "ERK1/2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "1703208054",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERKs",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-12844359",
+    "text" : "MEK targets including ERK1/2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2010388747",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "1703208054",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1559780267",
+        "text" : "MEK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "1703208054",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:840021979",
+        "text" : "ERK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 76,
+        "sentence" : 0,
+        "document" : "1703208054",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1559780267" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:840021979" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "prep_including"
+        }, {
+          "source" : 14,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 12
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "1703208054",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "-1670120414" : {
+      "id" : "sentence_annotator",
+      "text" : "Cytochrome c binds to tRNA both in vivo and in vitro and inhibits caspase-9 activation.",
+      "sentences" : [ {
+        "words" : [ "Cytochrome", "c", "binds", "to", "tRNA", "both", "in", "vivo", "and", "in", "vitro", "and", "inhibits", "caspase-9", "activation", "." ],
+        "startOffsets" : [ 0, 11, 13, 19, 22, 27, 32, 35, 40, 44, 47, 53, 57, 66, 76, 86 ],
+        "endOffsets" : [ 10, 12, 18, 21, 26, 31, 34, 39, 43, 46, 52, 56, 65, 75, 86, 87 ],
+        "tags" : [ "NN", "NN", "VBZ", "TO", "NN", "CC", "FW", "FW", "CC", "FW", "FW", "CC", "VBZ", "NN", "NN", "." ],
+        "lemmas" : [ "cytochrome", "c", "bind", "to", "trna", "both", "in", "vivo", "and", "in", "vitro", "and", "inhibit", "caspase-9", "activation", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1650448446",
+    "text" : "Cytochrome c",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 12,
+    "sentence" : 0,
+    "document" : "-1670120414",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cytochrome c",
+      "namespace" : "uniprot",
+      "id" : "P99999",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-627780576",
+    "text" : "caspase-9",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1670120414",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CASP-9",
+      "namespace" : "uniprot",
+      "id" : "P55211",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1756418544",
+    "text" : "Cytochrome c binds to tRNA both in vivo and in vitro and inhibits caspase-9",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1758017328",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 57,
+      "characterEndOffset" : 65,
+      "sentence" : 0,
+      "document" : "-1670120414",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-627780576",
+        "text" : "caspase-9",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-1670120414",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CASP-9",
+          "namespace" : "uniprot",
+          "id" : "P55211",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1650448446",
+        "text" : "Cytochrome c",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 12,
+        "sentence" : 0,
+        "document" : "-1670120414",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cytochrome c",
+          "namespace" : "uniprot",
+          "id" : "P99999",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-627780576" : [ {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "dobj"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1650448446" : [ {
+          "source" : 12,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 14
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-1670120414",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

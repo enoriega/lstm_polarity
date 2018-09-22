@@ -1,0 +1,283 @@
+{
+  "documents" : {
+    "1627397188" : {
+      "id" : "sentence_annotator",
+      "text" : "The classical MAPK cascade leads from the Ras kinases to the MAPKK MEK1/2.",
+      "sentences" : [ {
+        "words" : [ "The", "classical", "MAPK", "cascade", "leads", "from", "the", "Ras", "kinases", "to", "the", "MAPKK", "MEK1/2", "." ],
+        "startOffsets" : [ 0, 4, 14, 19, 27, 33, 38, 42, 46, 54, 57, 61, 67, 73 ],
+        "endOffsets" : [ 3, 13, 18, 26, 32, 37, 41, 45, 53, 56, 60, 66, 73, 74 ],
+        "tags" : [ "DT", "JJ", "NN", "NN", "VBZ", "IN", "DT", "NN", "NNS", "TO", "DT", "NNP", "NN", "." ],
+        "lemmas" : [ "the", "classical", "mapk", "cascade", "lead", "from", "the", "ra", "kinase", "to", "the", "MAPKK", "mek1/2", "." ],
+        "entities" : [ "O", "O", "B-Family", "O", "O", "O", "O", "B-Family", "O", "O", "O", "O", "B-Family", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep_from"
+            }, {
+              "source" : 4,
+              "destination" : 12,
+              "relation" : "prep_to"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:972991058",
+    "text" : "MAPK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "1627397188",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERKs",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2139329542",
+    "text" : "Ras",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "1627397188",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "RAS",
+      "namespace" : "pfam",
+      "id" : "PF00071",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-200418191",
+    "text" : "MEK1/2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "1627397188",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "MEK 1/2",
+      "namespace" : "be",
+      "id" : "MEK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-210522344",
+    "text" : "MAPK cascade leads from the Ras kinases to the MAPKK MEK1/2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-241532479",
+      "text" : "leads",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1627397188",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_7_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-200418191",
+        "text" : "MEK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 67,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "1627397188",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK 1/2",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:972991058",
+        "text" : "MAPK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "1627397188",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERKs",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-200418191" : [ {
+          "source" : 4,
+          "destination" : 12,
+          "relation" : "prep_to"
+        } ]
+      },
+      "controller" : {
+        "T:972991058" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 13
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "1627397188",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_7_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

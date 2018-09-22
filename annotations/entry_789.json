@@ -1,0 +1,549 @@
+{
+  "documents" : {
+    "1815161210" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Moreover, transcription of replication dependent histones was independent of rapamycin mediated mTOR pathway inactivation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Moreover", ",", "transcription", "of", "replication", "dependent", "histones", "was", "independent", "of", "rapamycin", "mediated", "mTOR", "pathway", "inactivation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 25, 28, 40, 50, 59, 63, 75, 78, 88, 97, 102, 110, 122, 123 ],
+        "endOffsets" : [ 1, 9, 10, 24, 27, 39, 49, 58, 62, 74, 77, 87, 96, 101, 109, 122, 123, 124 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "NN", "JJ", "NNS", "VBD", "JJ", "IN", "NN", "VBD", "NN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "moreover", ",", "transcription", "of", "replication", "dependent", "histone", "be", "independent", "of", "rapamycin", "mediate", "mtor", "pathway", "inactivation", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-BioProcess", "O", "O", "O", "B-Family", "O", "O", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "B-ADJP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "rcmod"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 9,
+              "relation" : "rcmod"
+            }, {
+              "source" : 3,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 12,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 12 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:333943491",
+    "text" : "transcription",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA-dependent transcription",
+      "namespace" : "go",
+      "id" : "GO:0006351",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-693515520",
+    "text" : "histones",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "histones",
+      "namespace" : "be",
+      "id" : "Histone",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1897469435",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1123452211",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-431157454",
+    "text" : "transcription of replication dependent histones was independent of rapamycin",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1142898191",
+      "text" : "transcription",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 11,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "1815161210",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897469435",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "1815161210",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1897469435" : [ {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 12
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:590513454",
+    "text" : "transcription of replication dependent histones was independent of rapamycin mediated mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:65159448",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 88,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "1815161210",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1123452211",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "1815161210",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-431157454",
+        "text" : "transcription of replication dependent histones was independent of rapamycin",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1142898191",
+          "text" : "transcription",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 3,
+            "end" : 4
+          },
+          "characterStartOffset" : 11,
+          "characterEndOffset" : 24,
+          "sentence" : 0,
+          "document" : "1815161210",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1897469435",
+            "text" : "rapamycin",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 11,
+              "end" : 12
+            },
+            "characterStartOffset" : 78,
+            "characterEndOffset" : 87,
+            "sentence" : 0,
+            "document" : "1815161210",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "Antibiotic AY 22989",
+              "namespace" : "pubchem",
+              "id" : "5284616",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1897469435" : [ {
+              "source" : 3,
+              "destination" : 11,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 12
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "1815161210",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1123452211" : [ {
+          "source" : 12,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:333943491" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:-431157454" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ],
+        "T:1897469435" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ],
+        "E:-936357722" : [ {
+          "source" : 12,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 14
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-936357722",
+    "text" : "rapamycin mediated mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:65159448",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 88,
+      "characterEndOffset" : 96,
+      "sentence" : 0,
+      "document" : "1815161210",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1897469435",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "1815161210",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1123452211",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 97,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "1815161210",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 14
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1815161210",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

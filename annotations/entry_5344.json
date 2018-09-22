@@ -1,0 +1,1816 @@
+{
+  "documents" : {
+    "1758614457" : {
+      "id" : "sentence_annotator",
+      "text" : "Inhibition of the TAB1 phosphatase DUSP14 also blocked TAB1 dephosphorylation and reduced TAK1 activation.",
+      "sentences" : [ {
+        "words" : [ "Inhibition", "of", "the", "TAB1", "phosphatase", "DUSP14", "also", "blocked", "TAB1", "dephosphorylation", "and", "reduced", "TAK1", "activation", "." ],
+        "startOffsets" : [ 0, 11, 14, 18, 23, 35, 42, 47, 55, 60, 78, 82, 90, 95, 105 ],
+        "endOffsets" : [ 10, 13, 17, 22, 34, 41, 46, 54, 59, 77, 81, 89, 94, 105, 106 ],
+        "tags" : [ "NN", "IN", "DT", "NN", "NN", "NN", "RB", "VBD", "NN", "NN", "CC", "VBD", "NN", "NN", "." ],
+        "lemmas" : [ "inhibition", "of", "the", "tab1", "phosphatase", "dusp14", "also", "block", "tab1", "dephosphorylation", "and", "reduce", "tak1", "activation", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "B-Family", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:852423621",
+    "text" : "TAB1 phosphatase DUSP14 also blocked TAB1 dephosphorylation",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1349332059",
+      "text" : "blocked",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-130035466",
+        "text" : "TAB1 dephosphorylation",
+        "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1420412501",
+          "text" : "dephosphorylation",
+          "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 60,
+          "characterEndOffset" : 77,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Dephosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-826161686",
+            "text" : "TAB1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 59,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MAP3K7IP1",
+              "namespace" : "uniprot",
+              "id" : "Q15750",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-826161686" : [ {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 55,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_4_noun",
+        "displayLabel" : "Dephosphorylation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:161041058",
+        "text" : "TAB1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAP3K7IP1",
+          "namespace" : "uniprot",
+          "id" : "Q15750",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-130035466" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1592098127" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1877359454",
+    "text" : "phosphatase DUSP14 also blocked TAB1 dephosphorylation",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1349332059",
+      "text" : "blocked",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-130035466",
+        "text" : "TAB1 dephosphorylation",
+        "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1420412501",
+          "text" : "dephosphorylation",
+          "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 60,
+          "characterEndOffset" : 77,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Dephosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-826161686",
+            "text" : "TAB1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 59,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MAP3K7IP1",
+              "namespace" : "uniprot",
+              "id" : "Q15750",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-826161686" : [ {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 55,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_4_noun",
+        "displayLabel" : "Dephosphorylation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1093042700",
+        "text" : "phosphatase",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Phosphatase",
+          "namespace" : "pfam",
+          "id" : "PF15698",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-130035466" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1592098127" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 10
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2052883514",
+    "text" : "DUSP14 also blocked TAB1 dephosphorylation",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1349332059",
+      "text" : "blocked",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-130035466",
+        "text" : "TAB1 dephosphorylation",
+        "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1420412501",
+          "text" : "dephosphorylation",
+          "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 9,
+            "end" : 10
+          },
+          "characterStartOffset" : 60,
+          "characterEndOffset" : 77,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Dephosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-826161686",
+            "text" : "TAB1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 9
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 59,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MAP3K7IP1",
+              "namespace" : "uniprot",
+              "id" : "Q15750",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-826161686" : [ {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 10
+        },
+        "characterStartOffset" : 55,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_4_noun",
+        "displayLabel" : "Dephosphorylation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1592098127",
+        "text" : "DUSP14",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DUSP14",
+          "namespace" : "uniprot",
+          "id" : "O95147",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-130035466" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1592098127" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 7,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 10
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:161041058",
+    "text" : "TAB1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAP3K7IP1",
+      "namespace" : "uniprot",
+      "id" : "Q15750",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1093042700",
+    "text" : "phosphatase",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Phosphatase",
+      "namespace" : "pfam",
+      "id" : "PF15698",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1592098127",
+    "text" : "DUSP14",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DUSP14",
+      "namespace" : "uniprot",
+      "id" : "O95147",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-826161686",
+    "text" : "TAB1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAP3K7IP1",
+      "namespace" : "uniprot",
+      "id" : "Q15750",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:161041058",
+      "text" : "TAB1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "MAP3K7IP1",
+        "namespace" : "uniprot",
+        "id" : "Q15750",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1838659268",
+    "text" : "TAK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 90,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TAK1",
+      "namespace" : "uniprot",
+      "id" : "O43318",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-130035466",
+    "text" : "TAB1 dephosphorylation",
+    "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1420412501",
+      "text" : "dephosphorylation",
+      "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 77,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Dephosphorylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-826161686",
+        "text" : "TAB1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 55,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAP3K7IP1",
+          "namespace" : "uniprot",
+          "id" : "Q15750",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-826161686" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 10
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Dephosphorylation_syntax_4_noun",
+    "displayLabel" : "Dephosphorylation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-248939932",
+    "text" : "TAB1 phosphatase DUSP14 also blocked TAB1 dephosphorylation and reduced TAK1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2004724276",
+      "text" : "reduced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 82,
+      "characterEndOffset" : 89,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1838659268",
+        "text" : "TAK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 90,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TAK1",
+          "namespace" : "uniprot",
+          "id" : "O43318",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:852423621",
+        "text" : "TAB1 phosphatase DUSP14 also blocked TAB1 dephosphorylation",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1349332059",
+          "text" : "blocked",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 47,
+          "characterEndOffset" : 54,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-130035466",
+            "text" : "TAB1 dephosphorylation",
+            "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1420412501",
+              "text" : "dephosphorylation",
+              "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 9,
+                "end" : 10
+              },
+              "characterStartOffset" : 60,
+              "characterEndOffset" : 77,
+              "sentence" : 0,
+              "document" : "1758614457",
+              "keep" : true,
+              "foundBy" : "Dephosphorylation_syntax_4_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-826161686",
+                "text" : "TAB1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 8,
+                  "end" : 9
+                },
+                "characterStartOffset" : 55,
+                "characterEndOffset" : 59,
+                "sentence" : 0,
+                "document" : "1758614457",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "MAP3K7IP1",
+                  "namespace" : "uniprot",
+                  "id" : "Q15750",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-826161686" : [ {
+                  "source" : 9,
+                  "destination" : 8,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 77,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "Dephosphorylation_syntax_4_noun",
+            "displayLabel" : "Dephosphorylation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:161041058",
+            "text" : "TAB1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 18,
+            "characterEndOffset" : 22,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "MAP3K7IP1",
+              "namespace" : "uniprot",
+              "id" : "Q15750",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-130035466" : [ {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1592098127" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            } ],
+            "T:161041058" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "T:-1093042700" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 10
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1838659268" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-1877359454" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:852423621" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:-2052883514" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1592098127" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1947522320",
+    "text" : "phosphatase DUSP14 also blocked TAB1 dephosphorylation and reduced TAK1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2004724276",
+      "text" : "reduced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 82,
+      "characterEndOffset" : 89,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1838659268",
+        "text" : "TAK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 90,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TAK1",
+          "namespace" : "uniprot",
+          "id" : "O43318",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1877359454",
+        "text" : "phosphatase DUSP14 also blocked TAB1 dephosphorylation",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1349332059",
+          "text" : "blocked",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 47,
+          "characterEndOffset" : 54,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-130035466",
+            "text" : "TAB1 dephosphorylation",
+            "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1420412501",
+              "text" : "dephosphorylation",
+              "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 9,
+                "end" : 10
+              },
+              "characterStartOffset" : 60,
+              "characterEndOffset" : 77,
+              "sentence" : 0,
+              "document" : "1758614457",
+              "keep" : true,
+              "foundBy" : "Dephosphorylation_syntax_4_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-826161686",
+                "text" : "TAB1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 8,
+                  "end" : 9
+                },
+                "characterStartOffset" : 55,
+                "characterEndOffset" : 59,
+                "sentence" : 0,
+                "document" : "1758614457",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "MAP3K7IP1",
+                  "namespace" : "uniprot",
+                  "id" : "Q15750",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-826161686" : [ {
+                  "source" : 9,
+                  "destination" : 8,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 77,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "Dephosphorylation_syntax_4_noun",
+            "displayLabel" : "Dephosphorylation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1093042700",
+            "text" : "phosphatase",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 23,
+            "characterEndOffset" : 34,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "Phosphatase",
+              "namespace" : "pfam",
+              "id" : "PF15698",
+              "species" : ""
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-130035466" : [ {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1592098127" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            } ],
+            "T:161041058" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "T:-1093042700" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 10
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1838659268" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-1877359454" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:852423621" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:-2052883514" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1592098127" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1125829790",
+    "text" : "DUSP14 also blocked TAB1 dephosphorylation and reduced TAK1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2004724276",
+      "text" : "reduced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 82,
+      "characterEndOffset" : 89,
+      "sentence" : 0,
+      "document" : "1758614457",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1838659268",
+        "text" : "TAK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 90,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TAK1",
+          "namespace" : "uniprot",
+          "id" : "O43318",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-2052883514",
+        "text" : "DUSP14 also blocked TAB1 dephosphorylation",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1349332059",
+          "text" : "blocked",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 47,
+          "characterEndOffset" : 54,
+          "sentence" : 0,
+          "document" : "1758614457",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-130035466",
+            "text" : "TAB1 dephosphorylation",
+            "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1420412501",
+              "text" : "dephosphorylation",
+              "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 9,
+                "end" : 10
+              },
+              "characterStartOffset" : 60,
+              "characterEndOffset" : 77,
+              "sentence" : 0,
+              "document" : "1758614457",
+              "keep" : true,
+              "foundBy" : "Dephosphorylation_syntax_4_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-826161686",
+                "text" : "TAB1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 8,
+                  "end" : 9
+                },
+                "characterStartOffset" : 55,
+                "characterEndOffset" : 59,
+                "sentence" : 0,
+                "document" : "1758614457",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "MAP3K7IP1",
+                  "namespace" : "uniprot",
+                  "id" : "Q15750",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-826161686" : [ {
+                  "source" : 9,
+                  "destination" : 8,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 8,
+              "end" : 10
+            },
+            "characterStartOffset" : 55,
+            "characterEndOffset" : 77,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "Dephosphorylation_syntax_4_noun",
+            "displayLabel" : "Dephosphorylation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1592098127",
+            "text" : "DUSP14",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 41,
+            "sentence" : 0,
+            "document" : "1758614457",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "DUSP14",
+              "namespace" : "uniprot",
+              "id" : "O95147",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-130035466" : [ {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1592098127" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            } ],
+            "T:161041058" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            } ],
+            "T:-1093042700" : [ {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 10
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 77,
+        "sentence" : 0,
+        "document" : "1758614457",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1838659268" : [ {
+          "source" : 11,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:-1877359454" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:852423621" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:-2052883514" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:1592098127" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ],
+        "T:161041058" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1093042700" : [ {
+          "source" : 11,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 13
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "1758614457",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

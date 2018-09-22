@@ -1,0 +1,921 @@
+{
+  "documents" : {
+    "-1554588113" : {
+      "id" : "sentence_annotator",
+      "text" : "\"PKCepsilon phosphorylates IKKbeta at serine 177, which activates IKKbeta.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "PKCepsilon", "phosphorylates", "IKKbeta", "at", "serine", "177", ",", "which", "activates", "IKKbeta", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 27, 35, 38, 45, 48, 50, 56, 66, 73, 74 ],
+        "endOffsets" : [ 1, 11, 26, 34, 37, 44, 48, 49, 55, 65, 73, 74, 75 ],
+        "tags" : [ "``", "NN", "VBZ", "NN", "IN", "NN", "CD", ",", "WDT", "VBZ", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "pkcepsilon", "phosphorylate", "ikkbeta", "at", "serine", "177", ",", "which", "activate", "ikkbeta", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Site", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "rcmod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_at"
+            }, {
+              "source" : 2,
+              "destination" : 12,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "rcmod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:1226940816",
+    "text" : "PKCepsilon phosphorylates IKKbeta at serine 177",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-138702013",
+        "text" : "phosphorylates IKKbeta at serine 177",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:661988260",
+          "text" : "phosphorylates",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 12,
+          "characterEndOffset" : 26,
+          "sentence" : 0,
+          "document" : "-1554588113",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:323548828",
+            "text" : "serine 177",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 7
+            },
+            "characterStartOffset" : 38,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "serine 177",
+              "namespace" : "uaz",
+              "id" : "UAZ00951",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1573432886",
+            "text" : "IKKbeta",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 34,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "IKK2",
+              "namespace" : "uniprot",
+              "id" : "O14920",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1573432886" : [ {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:59224289" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            } ]
+          },
+          "site" : {
+            "T:323548828" : [ {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 7
+        },
+        "characterStartOffset" : 12,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:59224289",
+        "text" : "PKCepsilon",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PKC epsilon",
+          "namespace" : "uaz",
+          "id" : "UA-BP-GGP-00124",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1573432886" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:59224289" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      },
+      "site" : {
+        "T:323548828" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:59224289",
+    "text" : "PKCepsilon",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PKC epsilon",
+      "namespace" : "uaz",
+      "id" : "UA-BP-GGP-00124",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1573432886",
+    "text" : "IKKbeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IKK2",
+      "namespace" : "uniprot",
+      "id" : "O14920",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:323548828",
+    "text" : "serine 177",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "serine 177",
+      "namespace" : "uaz",
+      "id" : "UAZ00951",
+      "species" : ""
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:471508174",
+    "text" : "IKKbeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IKK2",
+      "namespace" : "uniprot",
+      "id" : "O14920",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1573432886",
+      "text" : "IKKbeta",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "-1554588113",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "IKK2",
+        "namespace" : "uniprot",
+        "id" : "O14920",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-138702013",
+    "text" : "phosphorylates IKKbeta at serine 177",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:661988260",
+      "text" : "phosphorylates",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "-1554588113",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_verb"
+    },
+    "arguments" : {
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:323548828",
+        "text" : "serine 177",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 38,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "serine 177",
+          "namespace" : "uaz",
+          "id" : "UAZ00951",
+          "species" : ""
+        },
+        "displayLabel" : "Site"
+      } ],
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1573432886",
+        "text" : "IKKbeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IKK2",
+          "namespace" : "uniprot",
+          "id" : "O14920",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1573432886" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:59224289" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      },
+      "site" : {
+        "T:323548828" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_at"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_verb",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-291663664",
+    "text" : "PKCepsilon phosphorylates IKKbeta at serine 177, which activates IKKbeta",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1321813929",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 65,
+      "sentence" : 0,
+      "document" : "-1554588113",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:471508174",
+        "text" : "IKKbeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IKK2",
+          "namespace" : "uniprot",
+          "id" : "O14920",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:1226940816",
+        "text" : "PKCepsilon phosphorylates IKKbeta at serine 177",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-138702013",
+            "text" : "phosphorylates IKKbeta at serine 177",
+            "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:661988260",
+              "text" : "phosphorylates",
+              "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 2,
+                "end" : 3
+              },
+              "characterStartOffset" : 12,
+              "characterEndOffset" : 26,
+              "sentence" : 0,
+              "document" : "-1554588113",
+              "keep" : true,
+              "foundBy" : "Phosphorylation_syntax_1a_verb"
+            },
+            "arguments" : {
+              "site" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:323548828",
+                "text" : "serine 177",
+                "labels" : [ "Site" ],
+                "tokenInterval" : {
+                  "start" : 5,
+                  "end" : 7
+                },
+                "characterStartOffset" : 38,
+                "characterEndOffset" : 48,
+                "sentence" : 0,
+                "document" : "-1554588113",
+                "keep" : true,
+                "foundBy" : "site_long",
+                "grounding" : {
+                  "text" : "serine 177",
+                  "namespace" : "uaz",
+                  "id" : "UAZ00951",
+                  "species" : ""
+                },
+                "displayLabel" : "Site"
+              } ],
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1573432886",
+                "text" : "IKKbeta",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 27,
+                "characterEndOffset" : 34,
+                "sentence" : 0,
+                "document" : "-1554588113",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "IKK2",
+                  "namespace" : "uniprot",
+                  "id" : "O14920",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-1573432886" : [ {
+                  "source" : 2,
+                  "destination" : 3,
+                  "relation" : "dobj"
+                } ]
+              },
+              "cause" : {
+                "T:59224289" : [ {
+                  "source" : 2,
+                  "destination" : 1,
+                  "relation" : "nsubj"
+                } ]
+              },
+              "site" : {
+                "T:323548828" : [ {
+                  "source" : 2,
+                  "destination" : 5,
+                  "relation" : "prep_at"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 7
+            },
+            "characterStartOffset" : 12,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "Phosphorylation_syntax_1a_verb",
+            "displayLabel" : "Phosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:59224289",
+            "text" : "PKCepsilon",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 1,
+            "characterEndOffset" : 11,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PKC epsilon",
+              "namespace" : "uaz",
+              "id" : "UA-BP-GGP-00124",
+              "species" : ""
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1573432886" : [ {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:59224289" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            } ]
+          },
+          "site" : {
+            "T:323548828" : [ {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 7
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:471508174" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-138702013" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "rcmod"
+        } ],
+        "R:1226940816" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1504167744",
+    "text" : "phosphorylates IKKbeta at serine 177, which activates IKKbeta",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1321813929",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 65,
+      "sentence" : 0,
+      "document" : "-1554588113",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:471508174",
+        "text" : "IKKbeta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IKK2",
+          "namespace" : "uniprot",
+          "id" : "O14920",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-138702013",
+        "text" : "phosphorylates IKKbeta at serine 177",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:661988260",
+          "text" : "phosphorylates",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 12,
+          "characterEndOffset" : 26,
+          "sentence" : 0,
+          "document" : "-1554588113",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:323548828",
+            "text" : "serine 177",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 7
+            },
+            "characterStartOffset" : 38,
+            "characterEndOffset" : 48,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "serine 177",
+              "namespace" : "uaz",
+              "id" : "UAZ00951",
+              "species" : ""
+            },
+            "displayLabel" : "Site"
+          } ],
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1573432886",
+            "text" : "IKKbeta",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 27,
+            "characterEndOffset" : 34,
+            "sentence" : 0,
+            "document" : "-1554588113",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "IKK2",
+              "namespace" : "uniprot",
+              "id" : "O14920",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1573432886" : [ {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:59224289" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            } ]
+          },
+          "site" : {
+            "T:323548828" : [ {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_at"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 7
+        },
+        "characterStartOffset" : 12,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "-1554588113",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:471508174" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-138702013" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "rcmod"
+        } ],
+        "R:1226940816" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 11
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-1554588113",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

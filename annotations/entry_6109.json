@@ -1,0 +1,433 @@
+{
+  "documents" : {
+    "-1215179006" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Nutlin-3 inhibits interaction of p53 with Mdm2, impeding its ubiquitination and thereby proteasomal degradation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Nutlin-3", "inhibits", "interaction", "of", "p53", "with", "Mdm2", ",", "impeding", "its", "ubiquitination", "and", "thereby", "proteasomal", "degradation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 10, 19, 31, 34, 38, 43, 47, 49, 58, 62, 77, 81, 89, 101, 112, 113 ],
+        "endOffsets" : [ 1, 9, 18, 30, 33, 37, 42, 47, 48, 57, 61, 76, 80, 88, 100, 112, 113, 114 ],
+        "tags" : [ "``", "NN", "VBZ", "NN", "IN", "NN", "IN", "NN", ",", "VBG", "PRP$", "NN", "CC", "RB", "JJ", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "nutlin-3", "inhibit", "interaction", "of", "p53", "with", "mdm2", ",", "impede", "its", "ubiquitination", "and", "thereby", "proteasomal", "degradation", ".", "\"" ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "poss"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "prep_with"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "poss"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "advmod"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-182387998",
+    "text" : "Nutlin-3",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+      "namespace" : "pubchem",
+      "id" : "16755649",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1148792629",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1955814864",
+    "text" : "Mdm2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MDM2",
+      "namespace" : "uniprot",
+      "id" : "Q00987",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1282061567",
+    "text" : "its",
+    "labels" : [ "Generic_entity", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "PRP",
+    "grounding" : {
+      "text" : "its",
+      "namespace" : "uaz",
+      "id" : "UAZ00010",
+      "species" : ""
+    },
+    "displayLabel" : "Generic_entity",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-182387998",
+      "text" : "Nutlin-3",
+      "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 1,
+      "characterEndOffset" : 9,
+      "sentence" : 0,
+      "document" : "-1215179006",
+      "keep" : true,
+      "foundBy" : "ner-simple_chemical-entities",
+      "grounding" : {
+        "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+        "namespace" : "pubchem",
+        "id" : "16755649",
+        "species" : ""
+      },
+      "displayLabel" : "Simple_chemical"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:95936981",
+    "text" : "Nutlin-3 inhibits interaction of p53",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-904341263",
+      "text" : "inhibits",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 10,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "-1215179006",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1148792629",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-1215179006",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-182387998",
+        "text" : "Nutlin-3",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-1215179006",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+          "namespace" : "pubchem",
+          "id" : "16755649",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1148792629" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-182387998" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1079808176",
+    "text" : "its ubiquitination",
+    "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:502017387",
+      "text" : "ubiquitination",
+      "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 76,
+      "sentence" : 0,
+      "document" : "-1215179006",
+      "keep" : true,
+      "foundBy" : "Ubiquitination_token_3_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1282061567",
+        "text" : "its",
+        "labels" : [ "Generic_entity", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "-1215179006",
+        "keep" : true,
+        "foundBy" : "PRP",
+        "grounding" : {
+          "text" : "its",
+          "namespace" : "uaz",
+          "id" : "UAZ00010",
+          "species" : ""
+        },
+        "displayLabel" : "Generic_entity",
+        "antecedents" : [ {
+          "type" : "CorefTextBoundMention",
+          "id" : "T:-182387998",
+          "text" : "Nutlin-3",
+          "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 1,
+          "characterEndOffset" : 9,
+          "sentence" : 0,
+          "document" : "-1215179006",
+          "keep" : true,
+          "foundBy" : "ner-simple_chemical-entities",
+          "grounding" : {
+            "text" : "cis-4-{[4,5-bis(4-chlorophenyl)-2-(2-isopropoxy-4-methoxyphenyl)-4,5-dihydroimidazol-1-yl]carbonyl}piperazin-2-one",
+            "namespace" : "pubchem",
+            "id" : "16755649",
+            "species" : ""
+          },
+          "displayLabel" : "Simple_chemical"
+        } ]
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-1215179006",
+    "keep" : true,
+    "foundBy" : "Ubiquitination_token_3_noun, pronominalMatch",
+    "displayLabel" : "Ubiquitination",
+    "isDirect" : false
+  } ]
+}

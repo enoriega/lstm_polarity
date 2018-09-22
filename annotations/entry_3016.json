@@ -1,0 +1,430 @@
+{
+  "documents" : {
+    "-1271962451" : {
+      "id" : "sentence_annotator",
+      "text" : "BAX and BAK conformational changes were completely inhibited by down-regulation of BIM in clone 2 (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "BAX", "and", "BAK", "conformational", "changes", "were", "completely", "inhibited", "by", "down-regulation", "of", "BIM", "in", "clone", "2", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 4, 8, 12, 27, 35, 40, 51, 61, 64, 80, 83, 87, 90, 96, 98, 99, 107, 108 ],
+        "endOffsets" : [ 3, 7, 11, 26, 34, 39, 50, 60, 63, 79, 82, 86, 89, 95, 97, 99, 107, 108, 109 ],
+        "tags" : [ "NN", "CC", "NN", "JJ", "NNS", "VBD", "RB", "VBN", "IN", "NN", "IN", "NNP", "IN", "NN", "CD", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "bax", "and", "bak", "conformational", "change", "be", "completely", "inhibit", "by", "down-regulation", "of", "BIM", "in", "clone", "2", "(", "xref_fig", ")", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "cc"
+            }, {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 16,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "num"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "conj_and"
+            }, {
+              "source" : 16,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "num"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "agent"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-479449523",
+    "text" : "BAX",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "-1271962451",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:954047163",
+    "text" : "BAK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "-1271962451",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BAK1",
+      "namespace" : "uniprot",
+      "id" : "Q16611",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:946774414",
+    "text" : "BIM",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 83,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-1271962451",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2-interacting mediator of cell death",
+      "namespace" : "uniprot",
+      "id" : "O43521",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1710246415",
+    "text" : "BAX and BAK conformational changes were completely inhibited by down-regulation of BIM",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1310919326",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "-1271962451",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-479449523",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "-1271962451",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:946774414",
+        "text" : "BIM",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 83,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "-1271962451",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2-interacting mediator of cell death",
+          "namespace" : "uniprot",
+          "id" : "O43521",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-479449523" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:954047163" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:946774414" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "agent"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-1271962451",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1383323115",
+    "text" : "BAK conformational changes were completely inhibited by down-regulation of BIM",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1310919326",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "-1271962451",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:954047163",
+        "text" : "BAK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "-1271962451",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BAK1",
+          "namespace" : "uniprot",
+          "id" : "Q16611",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:946774414",
+        "text" : "BIM",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 83,
+        "characterEndOffset" : 86,
+        "sentence" : 0,
+        "document" : "-1271962451",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2-interacting mediator of cell death",
+          "namespace" : "uniprot",
+          "id" : "O43521",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-479449523" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:954047163" : [ {
+          "source" : 7,
+          "destination" : 4,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:946774414" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "agent"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 12
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "-1271962451",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

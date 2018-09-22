@@ -1,0 +1,352 @@
+{
+  "documents" : {
+    "-1145267304" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Furthermore, potent activation of PKCs resulted in robust Erk activation and elevation of p21 (CIP1).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Furthermore", ",", "potent", "activation", "of", "PKCs", "resulted", "in", "robust", "Erk", "activation", "and", "elevation", "of", "p21", "(", "CIP1", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 21, 32, 35, 40, 49, 52, 59, 63, 74, 78, 88, 91, 95, 96, 100, 101, 102 ],
+        "endOffsets" : [ 1, 12, 13, 20, 31, 34, 39, 48, 51, 58, 62, 73, 77, 87, 90, 94, 96, 100, 101, 102, 103 ],
+        "tags" : [ "``", "RB", ",", "JJ", "NN", "IN", "NNS", "VBD", "IN", "JJ", "NN", "NN", "CC", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "furthermore", ",", "potent", "activation", "of", "pkc", "result", "in", "robust", "erk", "activation", "and", "elevation", "of", "p21", "(", "cip1", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Family", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1915025039",
+    "text" : "PKCs",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 39,
+    "sentence" : 0,
+    "document" : "-1145267304",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PKCs",
+      "namespace" : "uaz",
+      "id" : "UAZ00481",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-823649593",
+    "text" : "Erk",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "-1145267304",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-563939338",
+    "text" : "p21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 91,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-1145267304",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p21",
+      "namespace" : "uniprot",
+      "id" : "P38936",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-170331136",
+    "text" : "CIP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 17,
+      "end" : 18
+    },
+    "characterStartOffset" : 96,
+    "characterEndOffset" : 100,
+    "sentence" : 0,
+    "document" : "-1145267304",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MDA6",
+      "namespace" : "uniprot",
+      "id" : "P38936",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-563939338",
+      "text" : "p21",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 15,
+        "end" : 16
+      },
+      "characterStartOffset" : 91,
+      "characterEndOffset" : 94,
+      "sentence" : 0,
+      "document" : "-1145267304",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "p21",
+        "namespace" : "uniprot",
+        "id" : "P38936",
+        "species" : "human"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:126187479",
+    "text" : "Erk activation and elevation of p21",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1632609357",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "-1145267304",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-563939338",
+        "text" : "p21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 91,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "-1145267304",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p21",
+          "namespace" : "uniprot",
+          "id" : "P38936",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-823649593",
+        "text" : "Erk",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 59,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "-1145267304",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-563939338" : [ {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-823649593" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 16
+    },
+    "characterStartOffset" : 59,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-1145267304",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

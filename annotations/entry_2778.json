@@ -1,0 +1,297 @@
+{
+  "documents" : {
+    "2090609209" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Interestingly, caspase-9 DN was not able to inhibit caspase-3 activity efficiently (XREF_FIG).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Interestingly", ",", "caspase-9", "DN", "was", "not", "able", "to", "inhibit", "caspase-3", "activity", "efficiently", "(", "XREF_FIG", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 26, 29, 33, 37, 42, 45, 53, 63, 72, 84, 85, 93, 94, 95 ],
+        "endOffsets" : [ 1, 14, 15, 25, 28, 32, 36, 41, 44, 52, 62, 71, 83, 85, 93, 94, 95, 96 ],
+        "tags" : [ "``", "RB", ",", "NN", "JJ", "VBD", "RB", "JJ", "TO", "VB", "NN", "NN", "RB", "-LRB-", "NN", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "interestingly", ",", "caspase-9", "dn", "be", "not", "able", "to", "inhibit", "caspase-3", "activity", "efficiently", "(", "xref_fig", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-ADJP", "I-ADJP", "B-VP", "O", "B-ADJP", "B-VP", "I-VP", "B-NP", "I-NP", "B-ADVP", "O", "O", "O", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "cop"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "neg"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "appos"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "npadvmod"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "cop"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "neg"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "appos"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "npadvmod"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-185745932",
+    "text" : "caspase-9",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "2090609209",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CASP-9",
+      "namespace" : "uniprot",
+      "id" : "P55211",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:43015921",
+    "text" : "caspase-3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "2090609209",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Caspase-3 subunit p12",
+      "namespace" : "uniprot",
+      "id" : "P42574",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-878800421",
+    "text" : "caspase-9 DN was not able to inhibit caspase-3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:146895412",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "2090609209",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:43015921",
+        "text" : "caspase-3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "2090609209",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Caspase-3 subunit p12",
+          "namespace" : "uniprot",
+          "id" : "P42574",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-185745932",
+        "text" : "caspase-9",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "2090609209",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CASP-9",
+          "namespace" : "uniprot",
+          "id" : "P55211",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:43015921" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-185745932" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 7,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "2090609209",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1238689726",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "2090609209",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

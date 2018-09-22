@@ -1,0 +1,315 @@
+{
+  "documents" : {
+    "-772273575" : {
+      "id" : "sentence_annotator",
+      "text" : "This inhibition was antagonized by c-Fos indicating that HBZ replaces c-Jun in the complex.",
+      "sentences" : [ {
+        "words" : [ "This", "inhibition", "was", "antagonized", "by", "c-Fos", "indicating", "that", "HBZ", "replaces", "c-Jun", "in", "the", "complex", "." ],
+        "startOffsets" : [ 0, 5, 16, 20, 32, 35, 41, 52, 57, 61, 70, 76, 79, 83, 90 ],
+        "endOffsets" : [ 4, 15, 19, 31, 34, 40, 51, 56, 60, 69, 75, 78, 82, 90, 91 ],
+        "tags" : [ "DT", "NN", "VBD", "VBN", "IN", "NN", "VBG", "IN", "NN", "VBZ", "NN", "IN", "DT", "NN", "." ],
+        "lemmas" : [ "this", "inhibition", "be", "antagonize", "by", "c-fo", "indicate", "that", "hbz", "replace", "c-jun", "in", "the", "complex", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "xcomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "det"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "agent"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "xcomp"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "det"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1073125028",
+    "text" : "c-Fos",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-772273575",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "c-Fos",
+      "namespace" : "uaz",
+      "id" : "UAZ00898",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1815316768",
+    "text" : "HBZ",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "-772273575",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Hemoglobin subunit zeta",
+      "namespace" : "uniprot",
+      "id" : "P02008",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-206509930",
+    "text" : "c-Jun",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-772273575",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "c-Jun",
+      "namespace" : "uaz",
+      "id" : "UAZ00135",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1831988439",
+    "text" : "antagonized by c-Fos indicating that HBZ replaces c-Jun",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:154927905",
+      "text" : "antagonized",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "-772273575",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-206509930",
+        "text" : "c-Jun",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-772273575",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "c-Jun",
+          "namespace" : "uaz",
+          "id" : "UAZ00135",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1073125028",
+        "text" : "c-Fos",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-772273575",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "c-Fos",
+          "namespace" : "uaz",
+          "id" : "UAZ00898",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-206509930" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "xcomp"
+        }, {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "ccomp"
+        }, {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1073125028" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-772273575",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1946841167",
+        "text" : "indicating",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "-772273575",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

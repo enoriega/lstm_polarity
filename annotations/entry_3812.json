@@ -1,0 +1,175 @@
+{
+  "documents" : {
+    "-1225756266" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Second, IFN-alpha-induced IL-6 predominantly down-regulated membrane bound gp130.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Second", ",", "IFN-alpha-induced", "IL-6", "predominantly", "down-regulated", "membrane", "bound", "gp130", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 9, 27, 32, 46, 61, 70, 76, 81, 82 ],
+        "endOffsets" : [ 1, 7, 8, 26, 31, 45, 60, 69, 75, 81, 82, 83 ],
+        "tags" : [ "``", "NNP", ",", "JJ", "NN", "RB", "VBD", "NN", "VBD", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "Second", ",", "ifn-alpha-induced", "il-6", "predominantly", "down-regulate", "membrane", "bind", "gp130", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Cellular_component", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "parataxis"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "punct"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "parataxis"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "punct"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1704116768",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1225756266",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1563639646",
+    "text" : "membrane",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "-1225756266",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "membrane",
+      "namespace" : "go",
+      "id" : "GO:0016020",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-942658488",
+    "text" : "gp130",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "-1225756266",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL-6R-beta",
+      "namespace" : "uniprot",
+      "id" : "P40189",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0016020" ]
+    },
+    "displayLabel" : "Protein"
+  } ]
+}

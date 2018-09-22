@@ -1,0 +1,601 @@
+{
+  "documents" : {
+    "1415724904" : {
+      "id" : "sentence_annotator",
+      "text" : "Increasing cAMP promotes PHAS-I dephosphorylation and increases binding to eIF-4E.",
+      "sentences" : [ {
+        "words" : [ "Increasing", "cAMP", "promotes", "PHAS-I", "dephosphorylation", "and", "increases", "binding", "to", "eIF-4E", "." ],
+        "startOffsets" : [ 0, 11, 16, 25, 32, 50, 54, 64, 72, 75, 81 ],
+        "endOffsets" : [ 10, 15, 24, 31, 49, 53, 63, 71, 74, 81, 82 ],
+        "tags" : [ "VBG", "NN", "VBZ", "NN", "NN", "CC", "VBZ", "VBG", "TO", "NN", "." ],
+        "lemmas" : [ "increase", "camp", "promote", "phas-i", "dephosphorylation", "and", "increase", "bind", "to", "eif-4e", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "I-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_to"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-704918457",
+    "text" : "cAMP promotes PHAS-I dephosphorylation",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1472615556",
+      "text" : "promotes",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "1415724904",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-672594005",
+        "text" : "PHAS-I dephosphorylation",
+        "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1682015895",
+          "text" : "dephosphorylation",
+          "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 32,
+          "characterEndOffset" : 49,
+          "sentence" : 0,
+          "document" : "1415724904",
+          "keep" : true,
+          "foundBy" : "Dephosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-114278303",
+            "text" : "PHAS-I",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 25,
+            "characterEndOffset" : 31,
+            "sentence" : 0,
+            "document" : "1415724904",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EIF4EBP1",
+              "namespace" : "uniprot",
+              "id" : "Q13541",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-114278303" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "1415724904",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_4_noun",
+        "displayLabel" : "Dephosphorylation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1072083702",
+        "text" : "cAMP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1415724904",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cathelicidin antimicrobial peptide",
+          "namespace" : "uniprot",
+          "id" : "P49913",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-672594005" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1072083702" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1072083702",
+    "text" : "cAMP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cathelicidin antimicrobial peptide",
+      "namespace" : "uniprot",
+      "id" : "P49913",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-114278303",
+    "text" : "PHAS-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF4EBP1",
+      "namespace" : "uniprot",
+      "id" : "Q13541",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:910476822",
+    "text" : "eIF-4E",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 75,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF4F",
+      "namespace" : "uniprot",
+      "id" : "P06730",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:652960731",
+    "text" : "cAMP promotes PHAS-I dephosphorylation and increases binding to eIF-4E",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1196086375",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 54,
+      "characterEndOffset" : 63,
+      "sentence" : 0,
+      "document" : "1415724904",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_7_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:910476822",
+        "text" : "eIF-4E",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 75,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "1415724904",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4F",
+          "namespace" : "uniprot",
+          "id" : "P06730",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-704918457",
+        "text" : "cAMP promotes PHAS-I dephosphorylation",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1472615556",
+          "text" : "promotes",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 16,
+          "characterEndOffset" : 24,
+          "sentence" : 0,
+          "document" : "1415724904",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-672594005",
+            "text" : "PHAS-I dephosphorylation",
+            "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1682015895",
+              "text" : "dephosphorylation",
+              "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 32,
+              "characterEndOffset" : 49,
+              "sentence" : 0,
+              "document" : "1415724904",
+              "keep" : true,
+              "foundBy" : "Dephosphorylation_syntax_4_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-114278303",
+                "text" : "PHAS-I",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 25,
+                "characterEndOffset" : 31,
+                "sentence" : 0,
+                "document" : "1415724904",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "EIF4EBP1",
+                  "namespace" : "uniprot",
+                  "id" : "Q13541",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-114278303" : [ {
+                  "source" : 4,
+                  "destination" : 3,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 5
+            },
+            "characterStartOffset" : 25,
+            "characterEndOffset" : 49,
+            "sentence" : 0,
+            "document" : "1415724904",
+            "keep" : true,
+            "foundBy" : "Dephosphorylation_syntax_4_noun",
+            "displayLabel" : "Dephosphorylation",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1072083702",
+            "text" : "cAMP",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 11,
+            "characterEndOffset" : 15,
+            "sentence" : 0,
+            "document" : "1415724904",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Cathelicidin antimicrobial peptide",
+              "namespace" : "uniprot",
+              "id" : "P49913",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-672594005" : [ {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1072083702" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 5
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "1415724904",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:910476822" : [ {
+          "source" : 6,
+          "destination" : 9,
+          "relation" : "prep_to"
+        } ]
+      },
+      "controller" : {
+        "T:1072083702" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "E:-704918457" : [ {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 10
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_7_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-672594005",
+    "text" : "PHAS-I dephosphorylation",
+    "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1682015895",
+      "text" : "dephosphorylation",
+      "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "1415724904",
+      "keep" : true,
+      "foundBy" : "Dephosphorylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-114278303",
+        "text" : "PHAS-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "1415724904",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4EBP1",
+          "namespace" : "uniprot",
+          "id" : "Q13541",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-114278303" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "1415724904",
+    "keep" : true,
+    "foundBy" : "Dephosphorylation_syntax_4_noun",
+    "displayLabel" : "Dephosphorylation",
+    "isDirect" : false
+  } ]
+}

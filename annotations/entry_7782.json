@@ -1,0 +1,410 @@
+{
+  "documents" : {
+    "886437912" : {
+      "id" : "sentence_annotator",
+      "text" : "These results suggest that inhibition of caspase-9 activation by Akt dependent phosphorylation is not generalized across species.",
+      "sentences" : [ {
+        "words" : [ "These", "results", "suggest", "that", "inhibition", "of", "caspase-9", "activation", "by", "Akt", "dependent", "phosphorylation", "is", "not", "generalized", "across", "species", "." ],
+        "startOffsets" : [ 0, 6, 14, 22, 27, 38, 41, 51, 62, 65, 69, 79, 95, 98, 102, 114, 121, 128 ],
+        "endOffsets" : [ 5, 13, 21, 26, 37, 40, 50, 61, 64, 68, 78, 94, 97, 101, 113, 120, 128, 129 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "NN", "IN", "NN", "NN", "IN", "NN", "JJ", "NN", "VBZ", "RB", "VBN", "IN", "NNS", "." ],
+        "lemmas" : [ "these", "result", "suggest", "that", "inhibition", "of", "caspase-9", "activation", "by", "akt", "dependent", "phosphorylation", "be", "not", "generalize", "across", "species", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Family", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 14,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "neg"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 14,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prep_by"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "prep_across"
+            }, {
+              "source" : 14,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 14,
+              "destination" : 4,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "neg"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1388115715",
+    "text" : "caspase-9",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "886437912",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CASP-9",
+      "namespace" : "uniprot",
+      "id" : "P55211",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1736939047",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "886437912",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1875794454",
+    "text" : "caspase-9 activation by Akt dependent phosphorylation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1285770775",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 51,
+      "characterEndOffset" : 61,
+      "sentence" : 0,
+      "document" : "886437912",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1388115715",
+        "text" : "caspase-9",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "886437912",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CASP-9",
+          "namespace" : "uniprot",
+          "id" : "P55211",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:871817870",
+        "text" : "Akt dependent phosphorylation",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-800577044",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 11,
+            "end" : 12
+          },
+          "characterStartOffset" : 79,
+          "characterEndOffset" : 94,
+          "sentence" : 0,
+          "document" : "886437912",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1736939047",
+            "text" : "Akt",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 65,
+            "characterEndOffset" : 68,
+            "sentence" : 0,
+            "document" : "886437912",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PI3K-AKT",
+              "namespace" : "be",
+              "id" : "AKT",
+              "species" : ""
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1736939047" : [ {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 12
+        },
+        "characterStartOffset" : 65,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "886437912",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_4_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1388115715" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:871817870" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "prep_by"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "amod"
+        } ],
+        "T:1736939047" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "prep_by"
+        }, {
+          "source" : 11,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 12
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "886437912",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:871817870",
+    "text" : "Akt dependent phosphorylation",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-800577044",
+      "text" : "phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 79,
+      "characterEndOffset" : 94,
+      "sentence" : 0,
+      "document" : "886437912",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1736939047",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 65,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "886437912",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1736939047" : [ {
+          "source" : 11,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 12
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "886437912",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_4_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  } ]
+}

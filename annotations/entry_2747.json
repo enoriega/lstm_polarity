@@ -1,0 +1,440 @@
+{
+  "documents" : {
+    "652526712" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Accordingly, in Ovx bones there was reduced OPG and increased RANKL expression.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Accordingly", ",", "in", "Ovx", "bones", "there", "was", "reduced", "OPG", "and", "increased", "RANKL", "expression", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 17, 21, 27, 33, 37, 45, 49, 53, 63, 69, 79, 80 ],
+        "endOffsets" : [ 1, 12, 13, 16, 20, 26, 32, 36, 44, 48, 52, 62, 68, 79, 80, 81 ],
+        "tags" : [ "``", "RB", ",", "IN", "NNP", "NNS", "EX", "VBD", "VBN", "NNP", "CC", "VBD", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "accordingly", ",", "in", "Ovx", "bone", "there", "be", "reduce", "OPG", "and", "increase", "rankl", "expression", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-CellLine", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-PP", "B-NP", "I-NP", "B-NP", "B-VP", "I-VP", "B-NP", "O", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "expl"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "expl"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2139238679",
+    "text" : "bones",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "652526712",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "Bones",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_D953",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_D953" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:386349054",
+    "text" : "OPG",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "652526712",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "OCIF",
+      "namespace" : "uniprot",
+      "id" : "O00300",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_D953" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:801396325",
+    "text" : "RANKL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "652526712",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Osteoclast differentiation factor",
+      "namespace" : "uniprot",
+      "id" : "O14788",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_D953" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1896626758",
+    "text" : "reduced OPG and increased RANKL expression",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-138491365",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "652526712",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:386349054",
+        "text" : "OPG",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "652526712",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "OCIF",
+          "namespace" : "uniprot",
+          "id" : "O00300",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_D953" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-1659583853",
+        "text" : "RANKL expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1036934604",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 13,
+            "end" : 14
+          },
+          "characterStartOffset" : 69,
+          "characterEndOffset" : 79,
+          "sentence" : 0,
+          "document" : "652526712",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:801396325",
+            "text" : "RANKL",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 12,
+              "end" : 13
+            },
+            "characterStartOffset" : 63,
+            "characterEndOffset" : 68,
+            "sentence" : 0,
+            "document" : "652526712",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Osteoclast differentiation factor",
+              "namespace" : "uniprot",
+              "id" : "O14788",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "CellLine" : [ "cellosaurus:CVCL_D953" ]
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:801396325" : [ {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 14
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 79,
+        "sentence" : 0,
+        "document" : "652526712",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:386349054" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-1659583853" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ],
+        "T:801396325" : [ {
+          "source" : 8,
+          "destination" : 13,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 14
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "652526712",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_D953" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1659583853",
+    "text" : "RANKL expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1036934604",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 69,
+      "characterEndOffset" : 79,
+      "sentence" : 0,
+      "document" : "652526712",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:801396325",
+        "text" : "RANKL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "652526712",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Osteoclast differentiation factor",
+          "namespace" : "uniprot",
+          "id" : "O14788",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_D953" ]
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:801396325" : [ {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "652526712",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_D953" ]
+    },
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

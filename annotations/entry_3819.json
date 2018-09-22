@@ -1,0 +1,876 @@
+{
+  "documents" : {
+    "-56862173" : {
+      "id" : "sentence_annotator",
+      "text" : "\"SP600125, a JNK inhibitor, prevented PMA and TNFalpha induced IRS1 Ser 307 phosphorylation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "SP600125", ",", "a", "JNK", "inhibitor", ",", "prevented", "PMA", "and", "TNFalpha", "induced", "IRS1", "Ser", "307", "phosphorylation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 11, 13, 17, 26, 28, 38, 42, 46, 55, 63, 68, 72, 76, 91, 92 ],
+        "endOffsets" : [ 1, 9, 10, 12, 16, 26, 27, 37, 41, 45, 54, 62, 67, 71, 75, 91, 92, 93 ],
+        "tags" : [ "``", "NN", ",", "DT", "NN", "NN", ",", "VBD", "NN", "CC", "NN", "VBD", "NN", "NN", "CD", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "sp600125", ",", "a", "jnk", "inhibitor", ",", "prevent", "pma", "and", "tnfalpha", "induce", "irs1", "ser", "307", "phosphorylation", ".", "\"" ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "O", "B-Family", "O", "O", "O", "B-Organ", "O", "B-Family", "O", "B-Gene_or_gene_product", "B-Site", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "iobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "num"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "det"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "iobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "num"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:796420448",
+    "text" : "SP600125, a JNK inhibitor, prevented PMA and TNFalpha induced IRS1",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1027687503",
+      "text" : "prevented",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "-56862173",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:678167949",
+        "text" : "TNFalpha induced IRS1",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:133654124",
+          "text" : "induced",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 11,
+            "end" : 12
+          },
+          "characterStartOffset" : 55,
+          "characterEndOffset" : 62,
+          "sentence" : 0,
+          "document" : "-56862173",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2092626828",
+            "text" : "TNFalpha",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 10,
+              "end" : 11
+            },
+            "characterStartOffset" : 46,
+            "characterEndOffset" : 54,
+            "sentence" : 0,
+            "document" : "-56862173",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "modifications" : [ {
+              "modification-type" : "EventSite",
+              "site" : {
+                "type" : "BioTextBoundMention",
+                "id" : "T:1642256111",
+                "text" : "Ser 307",
+                "labels" : [ "Site" ],
+                "tokenInterval" : {
+                  "start" : 13,
+                  "end" : 15
+                },
+                "characterStartOffset" : 68,
+                "characterEndOffset" : 75,
+                "sentence" : 0,
+                "document" : "-56862173",
+                "keep" : true,
+                "foundBy" : "site_3letterALT",
+                "grounding" : {
+                  "text" : "Ser307",
+                  "namespace" : "uaz",
+                  "id" : "UAZ01083",
+                  "species" : ""
+                },
+                "context" : {
+                  "Organ" : [ "uberon:UBERON:2005088" ]
+                },
+                "displayLabel" : "Site"
+              }
+            } ],
+            "grounding" : {
+              "text" : "TNFALPHA",
+              "namespace" : "interpro",
+              "id" : "IPR002959",
+              "species" : "human"
+            },
+            "context" : {
+              "Organ" : [ "uberon:UBERON:2005088" ]
+            },
+            "displayLabel" : "Family"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-54014645",
+            "text" : "IRS1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 12,
+              "end" : 13
+            },
+            "characterStartOffset" : 63,
+            "characterEndOffset" : 67,
+            "sentence" : 0,
+            "document" : "-56862173",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Insulin receptor substrate 1",
+              "namespace" : "uniprot",
+              "id" : "P35568",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "Organ" : [ "uberon:UBERON:2005088" ]
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 13
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1326734004",
+        "text" : "SP600125",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "SP 600125",
+          "namespace" : "pubchem",
+          "id" : "8515",
+          "species" : ""
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:2005088" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:678167949" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "ccomp"
+        } ],
+        "E:-532352001" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "ccomp"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1326734004" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:858061656" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 13
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1549477328",
+    "text" : "JNK inhibitor, prevented PMA and TNFalpha induced IRS1",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1027687503",
+      "text" : "prevented",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "-56862173",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:678167949",
+        "text" : "TNFalpha induced IRS1",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:133654124",
+          "text" : "induced",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 11,
+            "end" : 12
+          },
+          "characterStartOffset" : 55,
+          "characterEndOffset" : 62,
+          "sentence" : 0,
+          "document" : "-56862173",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2092626828",
+            "text" : "TNFalpha",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 10,
+              "end" : 11
+            },
+            "characterStartOffset" : 46,
+            "characterEndOffset" : 54,
+            "sentence" : 0,
+            "document" : "-56862173",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "modifications" : [ {
+              "modification-type" : "EventSite",
+              "site" : {
+                "type" : "BioTextBoundMention",
+                "id" : "T:1642256111",
+                "text" : "Ser 307",
+                "labels" : [ "Site" ],
+                "tokenInterval" : {
+                  "start" : 13,
+                  "end" : 15
+                },
+                "characterStartOffset" : 68,
+                "characterEndOffset" : 75,
+                "sentence" : 0,
+                "document" : "-56862173",
+                "keep" : true,
+                "foundBy" : "site_3letterALT",
+                "grounding" : {
+                  "text" : "Ser307",
+                  "namespace" : "uaz",
+                  "id" : "UAZ01083",
+                  "species" : ""
+                },
+                "context" : {
+                  "Organ" : [ "uberon:UBERON:2005088" ]
+                },
+                "displayLabel" : "Site"
+              }
+            } ],
+            "grounding" : {
+              "text" : "TNFALPHA",
+              "namespace" : "interpro",
+              "id" : "IPR002959",
+              "species" : "human"
+            },
+            "context" : {
+              "Organ" : [ "uberon:UBERON:2005088" ]
+            },
+            "displayLabel" : "Family"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-54014645",
+            "text" : "IRS1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 12,
+              "end" : 13
+            },
+            "characterStartOffset" : 63,
+            "characterEndOffset" : 67,
+            "sentence" : 0,
+            "document" : "-56862173",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Insulin receptor substrate 1",
+              "namespace" : "uniprot",
+              "id" : "P35568",
+              "species" : "homo sapiens"
+            },
+            "context" : {
+              "Organ" : [ "uberon:UBERON:2005088" ]
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 13
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:858061656",
+        "text" : "JNK inhibitor",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "protein-inhibitor",
+        "grounding" : {
+          "text" : "JNK inhibitor",
+          "namespace" : "uaz",
+          "id" : "UAZ00055",
+          "species" : ""
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:2005088" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:678167949" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "ccomp"
+        } ],
+        "E:-532352001" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "ccomp"
+        }, {
+          "source" : 11,
+          "destination" : 15,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1326734004" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ],
+        "T:858061656" : [ {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "appos"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 13
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1326734004",
+    "text" : "SP600125",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "SP 600125",
+      "namespace" : "pubchem",
+      "id" : "8515",
+      "species" : ""
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:858061656",
+    "text" : "JNK inhibitor",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "protein-inhibitor",
+    "grounding" : {
+      "text" : "JNK inhibitor",
+      "namespace" : "uaz",
+      "id" : "UAZ00055",
+      "species" : ""
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:965597297",
+    "text" : "PMA",
+    "labels" : [ "Organ", "Context" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 38,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "ner-organ",
+    "grounding" : {
+      "text" : "caudal mesenteric artery",
+      "namespace" : "uberon",
+      "id" : "UBERON:2005088",
+      "species" : ""
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Organ"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2092626828",
+    "text" : "TNFalpha",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "modifications" : [ {
+      "modification-type" : "EventSite",
+      "site" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1642256111",
+        "text" : "Ser 307",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 15
+        },
+        "characterStartOffset" : 68,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "site_3letterALT",
+        "grounding" : {
+          "text" : "Ser307",
+          "namespace" : "uaz",
+          "id" : "UAZ01083",
+          "species" : ""
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:2005088" ]
+        },
+        "displayLabel" : "Site"
+      }
+    } ],
+    "grounding" : {
+      "text" : "TNFALPHA",
+      "namespace" : "interpro",
+      "id" : "IPR002959",
+      "species" : "human"
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-54014645",
+    "text" : "IRS1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor substrate 1",
+      "namespace" : "uniprot",
+      "id" : "P35568",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1642256111",
+    "text" : "Ser 307",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 15
+    },
+    "characterStartOffset" : 68,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "site_3letterALT",
+    "grounding" : {
+      "text" : "Ser307",
+      "namespace" : "uaz",
+      "id" : "UAZ01083",
+      "species" : ""
+    },
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:678167949",
+    "text" : "TNFalpha induced IRS1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:133654124",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 55,
+      "characterEndOffset" : 62,
+      "sentence" : 0,
+      "document" : "-56862173",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2092626828",
+        "text" : "TNFalpha",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "modifications" : [ {
+          "modification-type" : "EventSite",
+          "site" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:1642256111",
+            "text" : "Ser 307",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 13,
+              "end" : 15
+            },
+            "characterStartOffset" : 68,
+            "characterEndOffset" : 75,
+            "sentence" : 0,
+            "document" : "-56862173",
+            "keep" : true,
+            "foundBy" : "site_3letterALT",
+            "grounding" : {
+              "text" : "Ser307",
+              "namespace" : "uaz",
+              "id" : "UAZ01083",
+              "species" : ""
+            },
+            "context" : {
+              "Organ" : [ "uberon:UBERON:2005088" ]
+            },
+            "displayLabel" : "Site"
+          }
+        } ],
+        "grounding" : {
+          "text" : "TNFALPHA",
+          "namespace" : "interpro",
+          "id" : "IPR002959",
+          "species" : "human"
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:2005088" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-54014645",
+        "text" : "IRS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-56862173",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin receptor substrate 1",
+          "namespace" : "uniprot",
+          "id" : "P35568",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Organ" : [ "uberon:UBERON:2005088" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 13
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-56862173",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "context" : {
+      "Organ" : [ "uberon:UBERON:2005088" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

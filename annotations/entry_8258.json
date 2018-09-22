@@ -1,0 +1,601 @@
+{
+  "documents" : {
+    "514615040" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Hence, dn SH2 Grb2 sequesters SOS1 in the cytoplasm.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Hence", ",", "dn", "SH2", "Grb2", "sequesters", "SOS1", "in", "the", "cytoplasm", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 8, 11, 15, 20, 31, 36, 39, 43, 52, 53 ],
+        "endOffsets" : [ 1, 6, 7, 10, 14, 19, 30, 35, 38, 42, 52, 53, 54 ],
+        "tags" : [ "``", "RB", ",", "NN", "NN", "NN", "VBZ", "NN", "IN", "DT", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "hence", ",", "dn", "sh2", "grb2", "sequester", "sos1", "in", "the", "cytoplasm", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "B-Family", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Cellular_component", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "det"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "det"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1630150023",
+    "text" : "dn",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 10,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beethoven protein",
+      "namespace" : "uniprot",
+      "id" : "Q8R4P5",
+      "species" : "mouse"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1952793866",
+    "text" : "SH2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 14,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "SH2",
+      "namespace" : "pfam",
+      "id" : "PF00017",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-459188532",
+    "text" : "Grb2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "GRB2",
+      "namespace" : "uniprot",
+      "id" : "P62993",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1835136566",
+    "text" : "SOS1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SOS1",
+      "namespace" : "uniprot",
+      "id" : "Q07889",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:546651554",
+    "text" : "cytoplasm",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "cytoplasms",
+      "namespace" : "go",
+      "id" : "GO:0005737",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1164891521",
+    "text" : "dn SH2 Grb2 sequesters SOS1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1639522012",
+      "text" : "sequesters",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "514615040",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1835136566",
+        "text" : "SOS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOS1",
+          "namespace" : "uniprot",
+          "id" : "Q07889",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1630150023",
+        "text" : "dn",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 10,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beethoven protein",
+          "namespace" : "uniprot",
+          "id" : "Q8R4P5",
+          "species" : "mouse"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1835136566" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-459188532" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-1630150023" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:1952793866" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-291048996",
+    "text" : "SH2 Grb2 sequesters SOS1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1639522012",
+      "text" : "sequesters",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "514615040",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1835136566",
+        "text" : "SOS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOS1",
+          "namespace" : "uniprot",
+          "id" : "Q07889",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1952793866",
+        "text" : "SH2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 11,
+        "characterEndOffset" : 14,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "SH2",
+          "namespace" : "pfam",
+          "id" : "PF00017",
+          "species" : ""
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1835136566" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-459188532" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-1630150023" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:1952793866" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 11,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-172101280",
+    "text" : "Grb2 sequesters SOS1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1639522012",
+      "text" : "sequesters",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "514615040",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1835136566",
+        "text" : "SOS1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOS1",
+          "namespace" : "uniprot",
+          "id" : "Q07889",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-459188532",
+        "text" : "Grb2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "514615040",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "GRB2",
+          "namespace" : "uniprot",
+          "id" : "P62993",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005737" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1835136566" : [ {
+          "source" : 6,
+          "destination" : 7,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-459188532" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-1630150023" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:1952793866" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "514615040",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005737" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

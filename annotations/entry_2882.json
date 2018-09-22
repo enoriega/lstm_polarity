@@ -1,0 +1,789 @@
+{
+  "documents" : {
+    "1186654632" : {
+      "id" : "sentence_annotator",
+      "text" : "8 NEDD4-1 catalyzes PTEN polyubiquitination and degradation decreasing the cytoplasmic PTEN in carcinogenesis.",
+      "sentences" : [ {
+        "words" : [ "8", "NEDD4-1", "catalyzes", "PTEN", "polyubiquitination", "and", "degradation", "decreasing", "the", "cytoplasmic", "PTEN", "in", "carcinogenesis", "." ],
+        "startOffsets" : [ 0, 2, 10, 20, 25, 44, 48, 60, 71, 75, 87, 92, 95, 109 ],
+        "endOffsets" : [ 1, 9, 19, 24, 43, 47, 59, 70, 74, 86, 91, 94, 109, 110 ],
+        "tags" : [ "CD", "NN", "VBZ", "NN", "NN", "CC", "NN", "VBG", "DT", "JJ", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "8", "nedd4-1", "catalyze", "pten", "polyubiquitination", "and", "degradation", "decrease", "the", "cytoplasmic", "pten", "in", "carcinogenesis", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "vmod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "prep_in"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-891158987",
+    "text" : "NEDD4-1 catalyzes PTEN polyubiquitination",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-568283580",
+      "text" : "catalyzes",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 10,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "1186654632",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2045164815",
+        "text" : "NEDD4-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 2,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NEDD-4",
+          "namespace" : "uniprot",
+          "id" : "P46934",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-2129818693",
+        "text" : "PTEN polyubiquitination",
+        "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1939644737",
+          "text" : "polyubiquitination",
+          "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 25,
+          "characterEndOffset" : 43,
+          "sentence" : 0,
+          "document" : "1186654632",
+          "keep" : true,
+          "foundBy" : "Ubiquitination_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1699755475",
+            "text" : "PTEN",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 24,
+            "sentence" : 0,
+            "document" : "1186654632",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PTEN",
+              "namespace" : "uniprot",
+              "id" : "P60484",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1699755475" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "Ubiquitination_syntax_4_noun",
+        "displayLabel" : "Ubiquitination",
+        "isDirect" : false
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 5
+    },
+    "characterStartOffset" : 2,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_token_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2045164815",
+    "text" : "NEDD4-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 2,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NEDD-4",
+      "namespace" : "uniprot",
+      "id" : "P46934",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1699755475",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1024364534",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 87,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1699755475",
+      "text" : "PTEN",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "1186654632",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "PTEN",
+        "namespace" : "uniprot",
+        "id" : "P60484",
+        "species" : "human"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-145377092",
+    "text" : "NEDD4-1 catalyzes PTEN polyubiquitination and degradation decreasing the cytoplasmic PTEN",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1166985929",
+      "text" : "decreasing",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "1186654632",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1024364534",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 87,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-891158987",
+        "text" : "NEDD4-1 catalyzes PTEN polyubiquitination",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-568283580",
+          "text" : "catalyzes",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 10,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "1186654632",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_token_1_verb"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:2045164815",
+            "text" : "NEDD4-1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 2,
+            "characterEndOffset" : 9,
+            "sentence" : 0,
+            "document" : "1186654632",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "NEDD-4",
+              "namespace" : "uniprot",
+              "id" : "P46934",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-2129818693",
+            "text" : "PTEN polyubiquitination",
+            "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1939644737",
+              "text" : "polyubiquitination",
+              "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 4,
+                "end" : 5
+              },
+              "characterStartOffset" : 25,
+              "characterEndOffset" : 43,
+              "sentence" : 0,
+              "document" : "1186654632",
+              "keep" : true,
+              "foundBy" : "Ubiquitination_syntax_4_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-1699755475",
+                "text" : "PTEN",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 20,
+                "characterEndOffset" : 24,
+                "sentence" : 0,
+                "document" : "1186654632",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "PTEN",
+                  "namespace" : "uniprot",
+                  "id" : "P60484",
+                  "species" : "human"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-1699755475" : [ {
+                  "source" : 4,
+                  "destination" : 3,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 5
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 43,
+            "sentence" : 0,
+            "document" : "1186654632",
+            "keep" : true,
+            "foundBy" : "Ubiquitination_syntax_4_noun",
+            "displayLabel" : "Ubiquitination",
+            "isDirect" : false
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 5
+        },
+        "characterStartOffset" : 2,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_token_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1024364534" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-2129818693" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-891158987" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1699755475" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 11
+    },
+    "characterStartOffset" : 2,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:328374763",
+    "text" : "PTEN polyubiquitination and degradation decreasing the cytoplasmic PTEN",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1166985929",
+      "text" : "decreasing",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "1186654632",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1024364534",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 87,
+        "characterEndOffset" : 91,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-2129818693",
+        "text" : "PTEN polyubiquitination",
+        "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1939644737",
+          "text" : "polyubiquitination",
+          "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 4,
+            "end" : 5
+          },
+          "characterStartOffset" : 25,
+          "characterEndOffset" : 43,
+          "sentence" : 0,
+          "document" : "1186654632",
+          "keep" : true,
+          "foundBy" : "Ubiquitination_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1699755475",
+            "text" : "PTEN",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 20,
+            "characterEndOffset" : 24,
+            "sentence" : 0,
+            "document" : "1186654632",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PTEN",
+              "namespace" : "uniprot",
+              "id" : "P60484",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-1699755475" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 5
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "Ubiquitination_syntax_4_noun",
+        "displayLabel" : "Ubiquitination",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1024364534" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:-2129818693" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "E:-891158987" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1699755475" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "vmod"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2129818693",
+    "text" : "PTEN polyubiquitination",
+    "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1939644737",
+      "text" : "polyubiquitination",
+      "labels" : [ "Ubiquitination", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "1186654632",
+      "keep" : true,
+      "foundBy" : "Ubiquitination_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1699755475",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1186654632",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1699755475" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "1186654632",
+    "keep" : true,
+    "foundBy" : "Ubiquitination_syntax_4_noun",
+    "displayLabel" : "Ubiquitination",
+    "isDirect" : false
+  } ]
+}

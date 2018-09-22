@@ -1,0 +1,404 @@
+{
+  "documents" : {
+    "17679725" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In contrast, ACE inhibition by captopril did not inhibit ANG-I degradation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "contrast", ",", "ACE", "inhibition", "by", "captopril", "did", "not", "inhibit", "ANG-I", "degradation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 12, 14, 18, 29, 32, 42, 46, 50, 58, 64, 75, 76 ],
+        "endOffsets" : [ 1, 3, 12, 13, 17, 28, 31, 41, 45, 49, 57, 63, 75, 76, 77 ],
+        "tags" : [ "``", "IN", "NN", ",", "NN", "NN", "IN", "NN", "VBD", "RB", "VB", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "contrast", ",", "ace", "inhibition", "by", "captopril", "do", "not", "inhibit", "ang-i", "degradation", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "neg"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_by"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 2,
+              "relation" : "prep_in"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "neg"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1459537561",
+    "text" : "ACE",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "17679725",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ACE",
+      "namespace" : "uniprot",
+      "id" : "P12821",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1253803843",
+    "text" : "captopril",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "17679725",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "1-[(2S)-2-methyl-3-sulfanylpropanoyl]-L-proline",
+      "namespace" : "pubchem",
+      "id" : "44093",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-528885660",
+    "text" : "ANG-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "17679725",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Angiotensin 1-7",
+      "namespace" : "uniprot",
+      "id" : "P01019",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:468331235",
+    "text" : "ACE inhibition by captopril did not inhibit ANG-I",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1782424527",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 50,
+      "characterEndOffset" : 57,
+      "sentence" : 0,
+      "document" : "17679725",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-528885660",
+        "text" : "ANG-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "17679725",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Angiotensin 1-7",
+          "namespace" : "uniprot",
+          "id" : "P01019",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1459537561",
+        "text" : "ACE",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "17679725",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ACE",
+          "namespace" : "uniprot",
+          "id" : "P12821",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-528885660" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1459537561" : [ {
+          "source" : 10,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 12
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "17679725",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-145060870",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "17679725",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1858995716",
+    "text" : "ACE inhibition by captopril",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:59612362",
+      "text" : "inhibition",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "17679725",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1459537561",
+        "text" : "ACE",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "17679725",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ACE",
+          "namespace" : "uniprot",
+          "id" : "P12821",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1253803843",
+        "text" : "captopril",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "17679725",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "1-[(2S)-2-methyl-3-sulfanylpropanoyl]-L-proline",
+          "namespace" : "pubchem",
+          "id" : "44093",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1459537561" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1253803843" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "17679725",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_noun",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

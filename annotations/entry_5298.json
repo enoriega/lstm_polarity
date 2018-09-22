@@ -1,0 +1,253 @@
+{
+  "documents" : {
+    "609950234" : {
+      "id" : "sentence_annotator",
+      "text" : "Down-regulated Akt activation by overexpressed SHIP-2 causes cell-cycle arrest [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "Down-regulated", "Akt", "activation", "by", "overexpressed", "SHIP-2", "causes", "cell-cycle", "arrest", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 15, 19, 30, 33, 47, 54, 61, 72, 79, 80, 89, 90 ],
+        "endOffsets" : [ 14, 18, 29, 32, 46, 53, 60, 71, 78, 80, 89, 90, 91 ],
+        "tags" : [ "JJ", "NN", "NN", "IN", "JJ", "NN", "VBZ", "JJ", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "down-regulated", "akt", "activation", "by", "overexpressed", "ship-2", "cause", "cell-cycle", "arrest", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "O", "B-Family", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dep"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_by"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dep"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:214782978",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "609950234",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-218969264",
+    "text" : "SHIP-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 47,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "609950234",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Inositol polyphosphate phosphatase-like protein 1",
+      "namespace" : "uniprot",
+      "id" : "O15357",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1229092409",
+    "text" : "Akt activation by overexpressed SHIP-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-582709402",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "609950234",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:214782978",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "609950234",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-218969264",
+        "text" : "SHIP-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 47,
+        "characterEndOffset" : 53,
+        "sentence" : 0,
+        "document" : "609950234",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Inositol polyphosphate phosphatase-like protein 1",
+          "namespace" : "uniprot",
+          "id" : "O15357",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:214782978" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-218969264" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 53,
+    "sentence" : 0,
+    "document" : "609950234",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,263 @@
+{
+  "documents" : {
+    "2043560721" : {
+      "id" : "sentence_annotator",
+      "text" : "\"MEK1/2 activation, like ERK, was not increased in CIA.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "MEK1/2", "activation", ",", "like", "ERK", ",", "was", "not", "increased", "in", "CIA", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 18, 20, 25, 28, 30, 34, 38, 48, 51, 54, 55 ],
+        "endOffsets" : [ 1, 7, 18, 19, 24, 28, 29, 33, 37, 47, 50, 54, 55, 56 ],
+        "tags" : [ "``", "NN", "NN", ",", "IN", "NN", ",", "VBD", "RB", "VBN", "IN", "NNP", ".", "''" ],
+        "lemmas" : [ "\"", "mek1/2", "activation", ",", "like", "erk", ",", "be", "not", "increase", "in", "CIA", ".", "\"" ],
+        "entities" : [ "O", "B-Family", "O", "O", "O", "B-Family", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "O", "B-PP", "B-NP", "O", "B-VP", "I-VP", "I-VP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "neg"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_like"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "neg"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_in"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "punct"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-579065519",
+    "text" : "MEK1/2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "2043560721",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "MEK 1/2",
+      "namespace" : "be",
+      "id" : "MEK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1124516256",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "2043560721",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:177935663",
+    "text" : "CIA",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "2043560721",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NCOA5",
+      "namespace" : "uniprot",
+      "id" : "Q9HCD5",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:939584714",
+    "text" : "MEK1/2 activation, like ERK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-303893877",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 18,
+      "sentence" : 0,
+      "document" : "2043560721",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-579065519",
+        "text" : "MEK1/2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "2043560721",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "MEK 1/2",
+          "namespace" : "be",
+          "id" : "MEK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1124516256",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "2043560721",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-579065519" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1124516256" : [ {
+          "source" : 2,
+          "destination" : 5,
+          "relation" : "prep_like"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "2043560721",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,422 @@
+{
+  "documents" : {
+    "259680463" : {
+      "id" : "sentence_annotator",
+      "text" : "A systematic investigation of the apoptosis related Bcl-2 family modulated by p53 in HCC is lacking.",
+      "sentences" : [ {
+        "words" : [ "A", "systematic", "investigation", "of", "the", "apoptosis", "related", "Bcl-2", "family", "modulated", "by", "p53", "in", "HCC", "is", "lacking", "." ],
+        "startOffsets" : [ 0, 2, 13, 27, 30, 34, 44, 52, 58, 65, 75, 78, 82, 85, 89, 92, 99 ],
+        "endOffsets" : [ 1, 12, 26, 29, 33, 43, 51, 57, 64, 74, 77, 81, 84, 88, 91, 99, 100 ],
+        "tags" : [ "DT", "JJ", "NN", "IN", "DT", "NN", "JJ", "NN", "NN", "VBN", "IN", "NN", "IN", "NNP", "VBZ", "VBG", "." ],
+        "lemmas" : [ "a", "systematic", "investigation", "of", "the", "apoptosis", "related", "bcl-2", "family", "modulate", "by", "p53", "in", "HCC", "be", "lack", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "aux"
+            } ],
+            "roots" : [ 15 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "vmod"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "agent"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 15,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "aux"
+            } ],
+            "roots" : [ 15 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2020830540",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "259680463",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1518515498",
+    "text" : "Bcl-2",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "259680463",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:576279782",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "259680463",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:575913343",
+    "text" : "apoptosis related Bcl-2 family modulated by p53",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1412618320",
+      "text" : "modulated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 65,
+      "characterEndOffset" : 74,
+      "sentence" : 0,
+      "document" : "259680463",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2020830540",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "259680463",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:576279782",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "259680463",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2020830540" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:-1518515498" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:576279782" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "259680463",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1364565205",
+    "text" : "Bcl-2 family modulated by p53",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1412618320",
+      "text" : "modulated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 65,
+      "characterEndOffset" : 74,
+      "sentence" : 0,
+      "document" : "259680463",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1518515498",
+        "text" : "Bcl-2",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "259680463",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:576279782",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 78,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "259680463",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2020830540" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:-1518515498" : [ {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "vmod"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:576279782" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 12
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "259680463",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

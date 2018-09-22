@@ -1,0 +1,257 @@
+{
+  "documents" : {
+    "216600815" : {
+      "id" : "sentence_annotator",
+      "text" : "\"VHL, which targets HIF1alpha for degradation, promotes ciliogenesis by stabilizing microtubules.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "VHL", ",", "which", "targets", "HIF1alpha", "for", "degradation", ",", "promotes", "ciliogenesis", "by", "stabilizing", "microtubules", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 6, 12, 20, 30, 34, 45, 47, 56, 69, 72, 84, 96, 97 ],
+        "endOffsets" : [ 1, 4, 5, 11, 19, 29, 33, 45, 46, 55, 68, 71, 83, 96, 97, 98 ],
+        "tags" : [ "``", "NN", ",", "WDT", "VBZ", "NN", "IN", "NN", ",", "VBZ", "NN", "IN", "VBG", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "vhl", ",", "which", "target", "hif1alpha", "for", "degradation", ",", "promote", "ciliogenesis", "by", "stabilize", "microtubule", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O", "B-VP", "B-NP", "B-PP", "B-VP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "rcmod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_for"
+            }, {
+              "source" : 9,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_by"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1628145577",
+    "text" : "VHL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "216600815",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pVHL",
+      "namespace" : "uniprot",
+      "id" : "P40337",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1070824177",
+    "text" : "HIF1alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "216600815",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HIF1-alpha",
+      "namespace" : "uniprot",
+      "id" : "Q16665",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1630183280",
+    "text" : "VHL, which targets HIF1alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:452305533",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "216600815",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1070824177",
+        "text" : "HIF1alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "216600815",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HIF1-alpha",
+          "namespace" : "uniprot",
+          "id" : "Q16665",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1628145577",
+        "text" : "VHL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "216600815",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pVHL",
+          "namespace" : "uniprot",
+          "id" : "P40337",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1070824177" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1628145577" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "216600815",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

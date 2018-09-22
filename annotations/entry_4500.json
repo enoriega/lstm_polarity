@@ -1,0 +1,289 @@
+{
+  "documents" : {
+    "-369711720" : {
+      "id" : "sentence_annotator",
+      "text" : "The binding of IL-7 has also been shown to down-regulate IL-7Ralpha by modulating its gene expression.",
+      "sentences" : [ {
+        "words" : [ "The", "binding", "of", "IL-7", "has", "also", "been", "shown", "to", "down-regulate", "IL-7Ralpha", "by", "modulating", "its", "gene", "expression", "." ],
+        "startOffsets" : [ 0, 4, 12, 15, 20, 24, 29, 34, 40, 43, 57, 68, 71, 82, 86, 91, 101 ],
+        "endOffsets" : [ 3, 11, 14, 19, 23, 28, 33, 39, 42, 56, 67, 70, 81, 85, 90, 101, 102 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "VBZ", "RB", "VBN", "VBN", "TO", "VB", "NN", "IN", "VBG", "PRP$", "NN", "NN", "." ],
+        "lemmas" : [ "the", "binding", "of", "il-7", "have", "also", "be", "show", "to", "down-regulate", "il-7ralpha", "by", "modulate", "its", "gene", "expression", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pcomp"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "poss"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "auxpass"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "aux"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 12,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "poss"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:585365317",
+    "text" : "IL-7",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-369711720",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL-7",
+      "namespace" : "uniprot",
+      "id" : "P13232",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:481287321",
+    "text" : "IL-7Ralpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-369711720",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDw127",
+      "namespace" : "uniprot",
+      "id" : "P16871",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:164098575",
+    "text" : "IL-7 has also been shown to down-regulate IL-7Ralpha",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1925799985",
+      "text" : "down-regulate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 43,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "-369711720",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:481287321",
+        "text" : "IL-7Ralpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 57,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-369711720",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDw127",
+          "namespace" : "uniprot",
+          "id" : "P16871",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:585365317",
+        "text" : "IL-7",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-369711720",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL-7",
+          "namespace" : "uniprot",
+          "id" : "P13232",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:481287321" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:585365317" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "xcomp"
+        }, {
+          "source" : 7,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-369711720",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

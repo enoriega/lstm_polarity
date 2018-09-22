@@ -1,0 +1,360 @@
+{
+  "documents" : {
+    "1548361553" : {
+      "id" : "sentence_annotator",
+      "text" : "SVEC cells expressing GFP-tBID 2A BCL-xL (BCL-xL dependent SVEC cells) were treated with ABT-737 +/- Q-VD-OPh.",
+      "sentences" : [ {
+        "words" : [ "SVEC", "cells", "expressing", "GFP-tBID", "2A", "BCL-xL", "(", "BCL-xL", "dependent", "SVEC", "cells", ")", "were", "treated", "with", "ABT-737", "+/-", "Q-VD-OPh", "." ],
+        "startOffsets" : [ 0, 5, 11, 22, 31, 34, 41, 42, 49, 59, 64, 69, 71, 76, 84, 89, 97, 101, 109 ],
+        "endOffsets" : [ 4, 10, 21, 30, 33, 40, 42, 48, 58, 63, 69, 70, 75, 83, 88, 96, 100, 109, 110 ],
+        "tags" : [ "NN", "NNS", "VBG", "NN", "NN", "NN", "-LRB-", "NN", "JJ", "NN", "NNS", "-RRB-", "VBD", "VBN", "IN", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "svec", "cell", "express", "gfp-tbid", "2a", "bcl-xl", "(", "bcl-xl", "dependent", "svec", "cell", ")", "be", "treat", "with", "abt-737", "+/-", "q-vd-oph", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-CellLine", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 13 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "appos"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_with"
+            }, {
+              "source" : 13,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 17,
+              "relation" : "prep_with"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "conj_+/-"
+            } ],
+            "roots" : [ 13 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1356441119",
+    "text" : "2A",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1548361553",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "2A",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_6353",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1175904330",
+    "text" : "2A",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1548361553",
+    "keep" : true,
+    "foundBy" : "site_1letter_b",
+    "grounding" : {
+      "text" : "2a",
+      "namespace" : "uaz",
+      "id" : "UAZ00690",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Site",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1356441119",
+      "text" : "2A",
+      "labels" : [ "CellLine", "Context" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "1548361553",
+      "keep" : true,
+      "foundBy" : "ner-cell-lines",
+      "grounding" : {
+        "text" : "2A",
+        "namespace" : "cellosaurus",
+        "id" : "CVCL_6353",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "CellLine" : [ "cellosaurus:CVCL_6353" ]
+      },
+      "displayLabel" : "CellLine"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1679529833",
+    "text" : "BCL-xL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1548361553",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BclXL",
+      "namespace" : "uniprot",
+      "id" : "Q07817",
+      "species" : "human"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-242537939",
+    "text" : "ABT-737",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "1548361553",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ABT-737",
+      "namespace" : "pubchem",
+      "id" : "11228183",
+      "species" : ""
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:88878127",
+    "text" : "BCL-xL dependent SVEC cells) were treated with ABT-737",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2069193074",
+      "text" : "treated with",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 15
+      },
+      "characterStartOffset" : 76,
+      "characterEndOffset" : 88,
+      "sentence" : 0,
+      "document" : "1548361553",
+      "keep" : true,
+      "foundBy" : "Positive_activation_surface_treated_with"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1679529833",
+        "text" : "BCL-xL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 42,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "1548361553",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BclXL",
+          "namespace" : "uniprot",
+          "id" : "Q07817",
+          "species" : "human"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-242537939",
+        "text" : "ABT-737",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 89,
+        "characterEndOffset" : 96,
+        "sentence" : 0,
+        "document" : "1548361553",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ABT-737",
+          "namespace" : "pubchem",
+          "id" : "11228183",
+          "species" : ""
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_6353" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 16
+    },
+    "characterStartOffset" : 42,
+    "characterEndOffset" : 96,
+    "sentence" : 0,
+    "document" : "1548361553",
+    "keep" : true,
+    "foundBy" : "Positive_activation_surface_treated_with",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_6353" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

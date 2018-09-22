@@ -1,0 +1,754 @@
+{
+  "documents" : {
+    "-325602933" : {
+      "id" : "sentence_annotator",
+      "text" : "We provide evidence that mTOR-raptor phosphorylates SGK1 to modulate p27 function.",
+      "sentences" : [ {
+        "words" : [ "We", "provide", "evidence", "that", "mTOR-raptor", "phosphorylates", "SGK1", "to", "modulate", "p27", "function", "." ],
+        "startOffsets" : [ 0, 3, 11, 20, 25, 37, 52, 57, 60, 69, 73, 81 ],
+        "endOffsets" : [ 2, 10, 19, 24, 36, 51, 56, 59, 68, 72, 81, 82 ],
+        "tags" : [ "PRP", "VBP", "NN", "IN", "NN", "VBZ", "NN", "TO", "VB", "NN", "NN", "." ],
+        "lemmas" : [ "we", "provide", "evidence", "that", "mtor-raptor", "phosphorylate", "sgk1", "to", "modulate", "p27", "function", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "B-SBAR", "B-NP", "B-VP", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:1004372255",
+    "text" : "mTOR-raptor phosphorylates SGK1",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:930650299",
+        "text" : "phosphorylates SGK1",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:609298416",
+          "text" : "phosphorylates",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 37,
+          "characterEndOffset" : 51,
+          "sentence" : 0,
+          "document" : "-325602933",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:172734172",
+            "text" : "SGK1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 52,
+            "characterEndOffset" : 56,
+            "sentence" : 0,
+            "document" : "-325602933",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Serum/glucocorticoid-regulated kinase 1",
+              "namespace" : "uniprot",
+              "id" : "O00141",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:172734172" : [ {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-1004175334" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1004175334",
+        "text" : "mTOR-raptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR-raptor",
+          "namespace" : "uaz",
+          "id" : "UAZ01441",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:172734172" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:-1004175334" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1004175334",
+    "text" : "mTOR-raptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR-raptor",
+      "namespace" : "uaz",
+      "id" : "UAZ01441",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:172734172",
+    "text" : "SGK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Serum/glucocorticoid-regulated kinase 1",
+      "namespace" : "uniprot",
+      "id" : "O00141",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-339028498",
+    "text" : "p27",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Interferon alpha-induced 11.5 kDa protein",
+      "namespace" : "uniprot",
+      "id" : "P40305",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1952955633",
+    "text" : "mTOR-raptor phosphorylates SGK1 to modulate p27",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1703730007",
+      "text" : "modulate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 68,
+      "sentence" : 0,
+      "document" : "-325602933",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-339028498",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 69,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:1004372255",
+        "text" : "mTOR-raptor phosphorylates SGK1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:930650299",
+            "text" : "phosphorylates SGK1",
+            "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:609298416",
+              "text" : "phosphorylates",
+              "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 37,
+              "characterEndOffset" : 51,
+              "sentence" : 0,
+              "document" : "-325602933",
+              "keep" : true,
+              "foundBy" : "Phosphorylation_syntax_1a_verb"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:172734172",
+                "text" : "SGK1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 6,
+                  "end" : 7
+                },
+                "characterStartOffset" : 52,
+                "characterEndOffset" : 56,
+                "sentence" : 0,
+                "document" : "-325602933",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Serum/glucocorticoid-regulated kinase 1",
+                  "namespace" : "uniprot",
+                  "id" : "O00141",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:172734172" : [ {
+                  "source" : 5,
+                  "destination" : 6,
+                  "relation" : "dobj"
+                } ]
+              },
+              "cause" : {
+                "T:-1004175334" : [ {
+                  "source" : 5,
+                  "destination" : 4,
+                  "relation" : "nsubj"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 7
+            },
+            "characterStartOffset" : 37,
+            "characterEndOffset" : 56,
+            "sentence" : 0,
+            "document" : "-325602933",
+            "keep" : true,
+            "foundBy" : "Phosphorylation_syntax_1a_verb",
+            "displayLabel" : "Phosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1004175334",
+            "text" : "mTOR-raptor",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 25,
+            "characterEndOffset" : 36,
+            "sentence" : 0,
+            "document" : "-325602933",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "mTOR-raptor",
+              "namespace" : "uaz",
+              "id" : "UAZ01441",
+              "species" : ""
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:172734172" : [ {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-1004175334" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 7
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-339028498" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:930650299" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "vmod"
+        } ],
+        "R:1004372255" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 10
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2092457162",
+    "text" : "phosphorylates SGK1 to modulate p27",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1703730007",
+      "text" : "modulate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 68,
+      "sentence" : 0,
+      "document" : "-325602933",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-339028498",
+        "text" : "p27",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 69,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Interferon alpha-induced 11.5 kDa protein",
+          "namespace" : "uniprot",
+          "id" : "P40305",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:930650299",
+        "text" : "phosphorylates SGK1",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:609298416",
+          "text" : "phosphorylates",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 37,
+          "characterEndOffset" : 51,
+          "sentence" : 0,
+          "document" : "-325602933",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:172734172",
+            "text" : "SGK1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 52,
+            "characterEndOffset" : 56,
+            "sentence" : 0,
+            "document" : "-325602933",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Serum/glucocorticoid-regulated kinase 1",
+              "namespace" : "uniprot",
+              "id" : "O00141",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:172734172" : [ {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-1004175334" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_verb",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-339028498" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:930650299" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "vmod"
+        } ],
+        "R:1004372255" : [ {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 10
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:930650299",
+    "text" : "phosphorylates SGK1",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:609298416",
+      "text" : "phosphorylates",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "-325602933",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_verb"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:172734172",
+        "text" : "SGK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "-325602933",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Serum/glucocorticoid-regulated kinase 1",
+          "namespace" : "uniprot",
+          "id" : "O00141",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:172734172" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:-1004175334" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-325602933",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_verb",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  } ]
+}
