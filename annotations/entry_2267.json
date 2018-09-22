@@ -1,0 +1,448 @@
+{
+  "documents" : {
+    "734603800" : {
+      "id" : "sentence_annotator",
+      "text" : "\"The Akt activates many downstream factors, including mTOR, which in turn activates 4EBP1 and p70S6K1.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "The", "Akt", "activates", "many", "downstream", "factors", ",", "including", "mTOR", ",", "which", "in", "turn", "activates", "4EBP1", "and", "p70S6K1", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 9, 19, 24, 35, 42, 44, 54, 58, 60, 66, 69, 74, 84, 90, 94, 101, 102 ],
+        "endOffsets" : [ 1, 4, 8, 18, 23, 34, 42, 43, 53, 58, 59, 65, 68, 73, 83, 89, 93, 101, 102, 103 ],
+        "tags" : [ "``", "DT", "NN", "VBZ", "JJ", "JJ", "NNS", ",", "VBG", "NN", ",", "WDT", "IN", "NN", "VBZ", "NN", "CC", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "the", "akt", "activate", "many", "downstream", "factor", ",", "include", "mtor", ",", "which", "in", "turn", "activate", "4ebp1", "and", "p70s6k1", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Family", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "B-PP", "B-NP", "O", "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "rcmod"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep_including"
+            }, {
+              "source" : 9,
+              "destination" : 14,
+              "relation" : "rcmod"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 17,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:980389510",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1639017807",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1998292563",
+    "text" : "4EBP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 84,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF4EBP1",
+      "namespace" : "uniprot",
+      "id" : "Q13541",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-463236444",
+    "text" : "p70S6K1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 17,
+      "end" : 18
+    },
+    "characterStartOffset" : 94,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p70 S6K-alpha",
+      "namespace" : "uniprot",
+      "id" : "P23443",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1006486722",
+    "text" : "mTOR, which in turn activates 4EBP1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:622455172",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 74,
+      "characterEndOffset" : 83,
+      "sentence" : 0,
+      "document" : "734603800",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1998292563",
+        "text" : "4EBP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 84,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "734603800",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4EBP1",
+          "namespace" : "uniprot",
+          "id" : "Q13541",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1639017807",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "734603800",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1998292563" : [ {
+          "source" : 14,
+          "destination" : 15,
+          "relation" : "dobj"
+        } ],
+        "T:-463236444" : [ {
+          "source" : 14,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 17,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1639017807" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 16
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:104135861",
+    "text" : "mTOR, which in turn activates 4EBP1 and p70S6K1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:622455172",
+      "text" : "activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 14,
+        "end" : 15
+      },
+      "characterStartOffset" : 74,
+      "characterEndOffset" : 83,
+      "sentence" : 0,
+      "document" : "734603800",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_5_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-463236444",
+        "text" : "p70S6K1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 17,
+          "end" : 18
+        },
+        "characterStartOffset" : 94,
+        "characterEndOffset" : 101,
+        "sentence" : 0,
+        "document" : "734603800",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p70 S6K-alpha",
+          "namespace" : "uniprot",
+          "id" : "P23443",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1639017807",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "734603800",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1998292563" : [ {
+          "source" : 14,
+          "destination" : 15,
+          "relation" : "dobj"
+        } ],
+        "T:-463236444" : [ {
+          "source" : 14,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 17,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-1639017807" : [ {
+          "source" : 9,
+          "destination" : 14,
+          "relation" : "rcmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 18
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "734603800",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_5_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

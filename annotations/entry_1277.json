@@ -1,0 +1,314 @@
+{
+  "documents" : {
+    "-635911913" : {
+      "id" : "sentence_annotator",
+      "text" : "Apoptosis in Bcl11a deficient pro B cells is rescued by exogenous Bcl2.",
+      "sentences" : [ {
+        "words" : [ "Apoptosis", "in", "Bcl11a", "deficient", "pro", "B", "cells", "is", "rescued", "by", "exogenous", "Bcl2", "." ],
+        "startOffsets" : [ 0, 10, 13, 20, 30, 34, 36, 42, 45, 53, 56, 66, 70 ],
+        "endOffsets" : [ 9, 12, 19, 29, 33, 35, 41, 44, 52, 55, 65, 70, 71 ],
+        "tags" : [ "NN", "IN", "NN", "JJ", "JJ", "NN", "NNS", "VBZ", "VBN", "IN", "JJ", "NN", "." ],
+        "lemmas" : [ "apoptosis", "in", "bcl11a", "deficient", "pro", "b", "cell", "be", "rescue", "by", "exogenous", "bcl2", "." ],
+        "entities" : [ "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "B-CellType", "I-CellType", "I-CellType", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "dep"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_in"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "dep"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "auxpass"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "agent"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1816104267",
+    "text" : "Apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-635911913",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000826" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1953444571",
+    "text" : "Bcl11a",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-635911913",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ZNF856",
+      "namespace" : "uniprot",
+      "id" : "Q9H165",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000826" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1777687030",
+    "text" : "pro B cells",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-635911913",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "progenitor B-cells",
+      "namespace" : "cl",
+      "id" : "CL:0000826",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000826" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:109196444",
+    "text" : "Bcl2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-635911913",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000826" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1198014324",
+    "text" : "Apoptosis in Bcl11a deficient pro B cells is rescued by exogenous Bcl2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-892986816",
+      "text" : "rescued",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 52,
+      "sentence" : 0,
+      "document" : "-635911913",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1816104267",
+        "text" : "Apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-635911913",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000826" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:109196444",
+        "text" : "Bcl2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 70,
+        "sentence" : 0,
+        "document" : "-635911913",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000826" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1816104267" : [ {
+          "source" : 8,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:109196444" : [ {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "agent"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-635911913",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "context" : {
+      "CellType" : [ "cl:CL:0000826" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

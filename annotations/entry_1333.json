@@ -1,0 +1,402 @@
+{
+  "documents" : {
+    "1133633139" : {
+      "id" : "sentence_annotator",
+      "text" : "A surexpression of bax in several cell lines allows to counteract the effect of bcl-2.",
+      "sentences" : [ {
+        "words" : [ "A", "surexpression", "of", "bax", "in", "several", "cell", "lines", "allows", "to", "counteract", "the", "effect", "of", "bcl-2", "." ],
+        "startOffsets" : [ 0, 2, 16, 19, 23, 26, 34, 39, 45, 52, 55, 66, 70, 77, 80, 85 ],
+        "endOffsets" : [ 1, 15, 18, 22, 25, 33, 38, 44, 51, 54, 65, 69, 76, 79, 85, 86 ],
+        "tags" : [ "DT", "NN", "IN", "NN", "IN", "JJ", "NN", "NNS", "VBZ", "TO", "VB", "DT", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "a", "surexpression", "of", "bax", "in", "several", "cell", "line", "allow", "to", "counteract", "the", "effect", "of", "bcl-2", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "xcomp"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "aux"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:835072993",
+    "text" : "bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1133633139",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-656788181",
+    "text" : "bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1133633139",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:213417480",
+    "text" : "surexpression of bax",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1462859635",
+      "text" : "surexpression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 2,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "1133633139",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:835072993",
+        "text" : "bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1133633139",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:835072993" : [ {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 2,
+    "characterEndOffset" : 22,
+    "sentence" : 0,
+    "document" : "1133633139",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1788338114",
+    "text" : "surexpression of bax in several cell lines allows to counteract the effect of bcl-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1463341763",
+      "text" : "allows",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "1133633139",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-656788181",
+        "text" : "bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "1133633139",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:213417480",
+        "text" : "surexpression of bax",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1462859635",
+          "text" : "surexpression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 2,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "1133633139",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:835072993",
+            "text" : "bax",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 22,
+            "sentence" : 0,
+            "document" : "1133633139",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "BCL2L4",
+              "namespace" : "uniprot",
+              "id" : "Q07812",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:835072993" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 4
+        },
+        "characterStartOffset" : 2,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "1133633139",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-656788181" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "xcomp"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:213417480" : [ {
+          "source" : 8,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ],
+        "T:835072993" : [ {
+          "source" : 8,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 15
+    },
+    "characterStartOffset" : 2,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1133633139",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

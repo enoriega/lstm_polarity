@@ -1,0 +1,305 @@
+{
+  "documents" : {
+    "80771537" : {
+      "id" : "sentence_annotator",
+      "text" : "It appears that activation of Sirt1 by SRT1720 is downstream of Epac and AMPK (XREF_FIG L).",
+      "sentences" : [ {
+        "words" : [ "It", "appears", "that", "activation", "of", "Sirt1", "by", "SRT1720", "is", "downstream", "of", "Epac", "and", "AMPK", "(", "XREF_FIG", "L", ")", "." ],
+        "startOffsets" : [ 0, 3, 11, 16, 27, 30, 36, 39, 47, 50, 61, 64, 69, 73, 78, 79, 88, 89, 90 ],
+        "endOffsets" : [ 2, 10, 15, 26, 29, 35, 38, 46, 49, 60, 63, 68, 72, 77, 79, 87, 89, 90, 91 ],
+        "tags" : [ "PRP", "VBZ", "IN", "NN", "IN", "NN", "IN", "NN", "VBZ", "JJ", "IN", "NNP", "CC", "NNP", "-LRB-", "NN", "NN", "-RRB-", "." ],
+        "lemmas" : [ "it", "appear", "that", "activation", "of", "sirt1", "by", "srt1720", "be", "downstream", "of", "Epac", "and", "AMPK", "(", "xref_fig", "l", ")", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-VP", "B-ADJP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "appos"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_by"
+            }, {
+              "source" : 9,
+              "destination" : 16,
+              "relation" : "appos"
+            }, {
+              "source" : 9,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "cop"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2067062313",
+    "text" : "Sirt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "80771537",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-866419938",
+    "text" : "SRT1720",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 39,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "80771537",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SRT1720",
+      "namespace" : "uaz",
+      "id" : "UAZ00832",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1378693170",
+    "text" : "Epac",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "80771537",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CGEF1",
+      "namespace" : "uniprot",
+      "id" : "O95398",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1561210061",
+    "text" : "AMPK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 77,
+    "sentence" : 0,
+    "document" : "80771537",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AMPK",
+      "namespace" : "be",
+      "id" : "AMPK",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1143324065",
+    "text" : "activation of Sirt1 by SRT1720",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-444127569",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "80771537",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2067062313",
+        "text" : "Sirt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "80771537",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-866419938",
+        "text" : "SRT1720",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 39,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "80771537",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SRT1720",
+          "namespace" : "uaz",
+          "id" : "UAZ00832",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "80771537",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_2_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

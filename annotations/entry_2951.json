@@ -1,0 +1,374 @@
+{
+  "documents" : {
+    "1595507875" : {
+      "id" : "sentence_annotator",
+      "text" : "3.1 SRT1720 Activates AMPK in a Sirt1 independent Manner.",
+      "sentences" : [ {
+        "words" : [ "3.1", "SRT1720", "Activates", "AMPK", "in", "a", "Sirt1", "independent", "Manner", "." ],
+        "startOffsets" : [ 0, 4, 12, 22, 27, 30, 32, 38, 50, 56 ],
+        "endOffsets" : [ 3, 11, 21, 26, 29, 31, 37, 49, 56, 57 ],
+        "tags" : [ "CD", "NN", "VBZ", "NNP", "IN", "DT", "NN", "JJ", "NN", "." ],
+        "lemmas" : [ "3.1", "srt1720", "activate", "AMPK", "in", "a", "sirt1", "independent", "manner", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "num"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:573336524",
+    "text" : "SRT1720",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 11,
+    "sentence" : 0,
+    "document" : "1595507875",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SRT1720",
+      "namespace" : "uaz",
+      "id" : "UAZ00832",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-193567974",
+    "text" : "AMPK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "1595507875",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AMPK",
+      "namespace" : "be",
+      "id" : "AMPK",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:830675298",
+    "text" : "Sirt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "1595507875",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2110459480",
+    "text" : "SRT1720 Activates AMPK",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1622258451",
+      "text" : "Activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "1595507875",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-193567974",
+        "text" : "AMPK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "1595507875",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AMPK",
+          "namespace" : "be",
+          "id" : "AMPK",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:573336524",
+        "text" : "SRT1720",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "1595507875",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SRT1720",
+          "namespace" : "uaz",
+          "id" : "UAZ00832",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-193567974" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ],
+        "T:830675298" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_in"
+        }, {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:573336524" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "1595507875",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1172542396",
+    "text" : "SRT1720 Activates AMPK in a Sirt1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1622258451",
+      "text" : "Activates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 21,
+      "sentence" : 0,
+      "document" : "1595507875",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:830675298",
+        "text" : "Sirt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "1595507875",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:573336524",
+        "text" : "SRT1720",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 11,
+        "sentence" : 0,
+        "document" : "1595507875",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SRT1720",
+          "namespace" : "uaz",
+          "id" : "UAZ00832",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-193567974" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ],
+        "T:830675298" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        }, {
+          "source" : 3,
+          "destination" : 8,
+          "relation" : "prep_in"
+        }, {
+          "source" : 8,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:573336524" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 7
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "1595507875",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

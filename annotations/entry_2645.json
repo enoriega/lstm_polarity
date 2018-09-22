@@ -1,0 +1,300 @@
+{
+  "documents" : {
+    "-404953264" : {
+      "id" : "sentence_annotator",
+      "text" : "Inhibition of CXCL12 induced CXCR4 receptor internalization.",
+      "sentences" : [ {
+        "words" : [ "Inhibition", "of", "CXCL12", "induced", "CXCR4", "receptor", "internalization", "." ],
+        "startOffsets" : [ 0, 11, 14, 21, 29, 35, 44, 59 ],
+        "endOffsets" : [ 10, 13, 20, 28, 34, 43, 59, 60 ],
+        "tags" : [ "NN", "IN", "NN", "VBD", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "inhibition", "of", "cxcl12", "induce", "cxcr4", "receptor", "internalization", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-686045721",
+    "text" : "CXCL12",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "-404953264",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SDF-1-alpha(3-67)",
+      "namespace" : "uniprot",
+      "id" : "P48061",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:268821183",
+    "text" : "CXCR4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-404953264",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Leukocyte-derived seven transmembrane domain receptor",
+      "namespace" : "uniprot",
+      "id" : "P61073",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1880232848",
+    "text" : "CXCR4 receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-404953264",
+    "keep" : true,
+    "foundBy" : "missing-location",
+    "grounding" : {
+      "text" : "CXCR4 receptor",
+      "namespace" : "uaz",
+      "id" : "UAZ00742",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:908348367",
+    "text" : "CXCL12 induced CXCR4",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1958519322",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "-404953264",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-686045721",
+        "text" : "CXCL12",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-404953264",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SDF-1-alpha(3-67)",
+          "namespace" : "uniprot",
+          "id" : "P48061",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:268821183",
+        "text" : "CXCR4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "-404953264",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Leukocyte-derived seven transmembrane domain receptor",
+          "namespace" : "uniprot",
+          "id" : "P61073",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "-404953264",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:145866221",
+    "text" : "CXCL12 induced CXCR4 receptor",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1958519322",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "-404953264",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-686045721",
+        "text" : "CXCL12",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-404953264",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SDF-1-alpha(3-67)",
+          "namespace" : "uniprot",
+          "id" : "P48061",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1880232848",
+        "text" : "CXCR4 receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 43,
+        "sentence" : 0,
+        "document" : "-404953264",
+        "keep" : true,
+        "foundBy" : "missing-location",
+        "grounding" : {
+          "text" : "CXCR4 receptor",
+          "namespace" : "uaz",
+          "id" : "UAZ00742",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 6
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 43,
+    "sentence" : 0,
+    "document" : "-404953264",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

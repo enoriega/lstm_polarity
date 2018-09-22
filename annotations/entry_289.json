@@ -1,0 +1,773 @@
+{
+  "documents" : {
+    "-1733280824" : {
+      "id" : "sentence_annotator",
+      "text" : "BAX and BCL-2 activate caspases by promoting the release of cytochrome C from mitochondrion.",
+      "sentences" : [ {
+        "words" : [ "BAX", "and", "BCL-2", "activate", "caspases", "by", "promoting", "the", "release", "of", "cytochrome", "C", "from", "mitochondrion", "." ],
+        "startOffsets" : [ 0, 4, 8, 14, 23, 32, 35, 45, 49, 57, 60, 71, 73, 78, 91 ],
+        "endOffsets" : [ 3, 7, 13, 22, 31, 34, 44, 48, 56, 59, 70, 72, 77, 91, 92 ],
+        "tags" : [ "NN", "CC", "NN", "VBP", "NNS", "IN", "VBG", "DT", "NN", "IN", "NN", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "bax", "and", "bcl-2", "activate", "caspase", "by", "promote", "the", "release", "of", "cytochrome", "c", "from", "mitochondrion", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Cellular_component", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "cc"
+            }, {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pcomp"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "prep_from"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:821283644",
+    "text" : "BAX",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1563006284",
+    "text" : "BCL-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 13,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-201954396",
+    "text" : "caspases",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "caspases",
+      "namespace" : "be",
+      "id" : "Caspase",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1800559598",
+    "text" : "cytochrome C",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cytochrome c",
+      "namespace" : "uniprot",
+      "id" : "P99999",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2119693578",
+    "text" : "mitochondrion",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 78,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "mitochondrions",
+      "namespace" : "go",
+      "id" : "GO:0005739",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1105133065",
+    "text" : "BAX and BCL-2 activate caspases",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1508112928",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 14,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-1733280824",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-201954396",
+        "text" : "caspases",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "caspases",
+          "namespace" : "be",
+          "id" : "Caspase",
+          "species" : ""
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:821283644",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-201954396" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:1800559598" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "prep_of"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:821283644" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "T:-1563006284" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:175405579",
+    "text" : "BAX and BCL-2 activate caspases by promoting the release of cytochrome C",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1508112928",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 14,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-1733280824",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1800559598",
+        "text" : "cytochrome C",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 12
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cytochrome c",
+          "namespace" : "uniprot",
+          "id" : "P99999",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:821283644",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-201954396" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:1800559598" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "prep_of"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:821283644" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "T:-1563006284" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 12
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1710682944",
+    "text" : "BCL-2 activate caspases",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1508112928",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 14,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-1733280824",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-201954396",
+        "text" : "caspases",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "caspases",
+          "namespace" : "be",
+          "id" : "Caspase",
+          "species" : ""
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1563006284",
+        "text" : "BCL-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 13,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-201954396" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:1800559598" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "prep_of"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:821283644" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "T:-1563006284" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-922396622",
+    "text" : "BCL-2 activate caspases by promoting the release of cytochrome C",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1508112928",
+      "text" : "activate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 14,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-1733280824",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1800559598",
+        "text" : "cytochrome C",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 12
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Cytochrome c",
+          "namespace" : "uniprot",
+          "id" : "P99999",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1563006284",
+        "text" : "BCL-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 8,
+        "characterEndOffset" : 13,
+        "sentence" : 0,
+        "document" : "-1733280824",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005739" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-201954396" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        } ],
+        "T:1800559598" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 11,
+          "relation" : "prep_of"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:821283644" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "T:-1563006284" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "conj_and"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 12
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "-1733280824",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005739" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,453 @@
+{
+  "documents" : {
+    "1563041599" : {
+      "id" : "sentence_annotator",
+      "text" : "Basal cholesterol release but not apoA-I stimulated cholesterol release is inhibited by brefeldin A (BFA).",
+      "sentences" : [ {
+        "words" : [ "Basal", "cholesterol", "release", "but", "not", "apoA-I", "stimulated", "cholesterol", "release", "is", "inhibited", "by", "brefeldin", "A", "(", "BFA", ")", "." ],
+        "startOffsets" : [ 0, 6, 18, 26, 30, 34, 41, 52, 64, 72, 75, 85, 88, 98, 100, 101, 104, 105 ],
+        "endOffsets" : [ 5, 17, 25, 29, 33, 40, 51, 63, 71, 74, 84, 87, 97, 99, 101, 104, 105, 106 ],
+        "tags" : [ "JJ", "NN", "NN", "CC", "RB", "NN", "VBD", "NN", "NN", "VBZ", "VBN", "IN", "NN", "NN", "-LRB-", "NNP", "-RRB-", "." ],
+        "lemmas" : [ "basal", "cholesterol", "release", "but", "not", "apoa-i", "stimulate", "cholesterol", "release", "be", "inhibit", "by", "brefeldin", "a", "(", "BFA", ")", "." ],
+        "entities" : [ "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Simple_chemical", "O", "O", "O", "O", "B-Simple_chemical", "I-Simple_chemical", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-NP", "I-NP", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "neg"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "appos"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "neg"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "agent"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "appos"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-542589621",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-53617342",
+    "text" : "apoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-886987641",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-542589621",
+      "text" : "cholesterol",
+      "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 6,
+      "characterEndOffset" : 17,
+      "sentence" : 0,
+      "document" : "1563041599",
+      "keep" : true,
+      "foundBy" : "ner-simple_chemical-entities",
+      "grounding" : {
+        "text" : "Cholesteryl alcohol",
+        "namespace" : "pubchem",
+        "id" : "11025495",
+        "species" : ""
+      },
+      "displayLabel" : "Simple_chemical"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-248643860",
+    "text" : "brefeldin A",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 14
+    },
+    "characterStartOffset" : 88,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ascotoxin",
+      "namespace" : "pubchem",
+      "id" : "5287620",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1453819629",
+    "text" : "cholesterol release is inhibited by brefeldin A",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1759418418",
+      "text" : "inhibited",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 75,
+      "characterEndOffset" : 84,
+      "sentence" : 0,
+      "document" : "1563041599",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-886987641",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1563041599",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-248643860",
+        "text" : "brefeldin A",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 14
+        },
+        "characterStartOffset" : 88,
+        "characterEndOffset" : 99,
+        "sentence" : 0,
+        "document" : "1563041599",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ascotoxin",
+          "namespace" : "pubchem",
+          "id" : "5287620",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-886987641" : [ {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-248643860" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "agent"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 14
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 99,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_2_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1256366196",
+    "text" : "apoA-I stimulated cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-794675436",
+      "text" : "stimulated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 41,
+      "characterEndOffset" : 51,
+      "sentence" : 0,
+      "document" : "1563041599",
+      "keep" : true,
+      "foundBy" : "Positive_activation_token_1_verb"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-53617342",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 34,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "1563041599",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-886987641",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1563041599",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1563041599",
+    "keep" : true,
+    "foundBy" : "Positive_activation_token_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1373746241",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "1563041599",
+        "keep" : true,
+        "foundBy" : "Positive_activation_token_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

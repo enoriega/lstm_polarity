@@ -1,0 +1,615 @@
+{
+  "documents" : {
+    "-781066104" : {
+      "id" : "sentence_annotator",
+      "text" : "PTPs can dephosphorylate IR at autophosphorylated tyrosines and thus inactivate IR.",
+      "sentences" : [ {
+        "words" : [ "PTPs", "can", "dephosphorylate", "IR", "at", "autophosphorylated", "tyrosines", "and", "thus", "inactivate", "IR", "." ],
+        "startOffsets" : [ 0, 5, 9, 25, 28, 31, 50, 60, 64, 69, 80, 82 ],
+        "endOffsets" : [ 4, 8, 24, 27, 30, 49, 59, 63, 68, 79, 82, 83 ],
+        "tags" : [ "NNS", "MD", "VB", "NNP", "IN", "VBN", "NNS", "CC", "RB", "VBP", "NN", "." ],
+        "lemmas" : [ "ptp", "can", "dephosphorylate", "IR", "at", "autophosphorylate", "tyrosine", "and", "thus", "inactivate", "ir", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "B-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:1018717315",
+    "text" : "PTPs can dephosphorylate IR",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:826845130",
+        "text" : "dephosphorylate IR",
+        "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:733653089",
+          "text" : "dephosphorylate",
+          "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 2,
+            "end" : 3
+          },
+          "characterStartOffset" : 9,
+          "characterEndOffset" : 24,
+          "sentence" : 0,
+          "document" : "-781066104",
+          "keep" : true,
+          "foundBy" : "Dephosphorylation_syntax_1a_verb"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-886449732",
+            "text" : "IR",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 25,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-781066104",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Insulin receptor subunit beta",
+              "namespace" : "uniprot",
+              "id" : "P06213",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-886449732" : [ {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-2133185939" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 4
+        },
+        "characterStartOffset" : 9,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-781066104",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_1a_verb",
+        "displayLabel" : "Dephosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2133185939",
+        "text" : "PTPs",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-781066104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTP synthase",
+          "namespace" : "uniprot",
+          "id" : "Q03393",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-886449732" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:-2133185939" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 4
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "Dephosphorylation_syntax_1a_verb + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2133185939",
+    "text" : "PTPs",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTP synthase",
+      "namespace" : "uniprot",
+      "id" : "Q03393",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-886449732",
+    "text" : "IR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 25,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor subunit beta",
+      "namespace" : "uniprot",
+      "id" : "P06213",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:822005459",
+    "text" : "IR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Insulin receptor subunit beta",
+      "namespace" : "uniprot",
+      "id" : "P06213",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-886449732",
+      "text" : "IR",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "-781066104",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Insulin receptor subunit beta",
+        "namespace" : "uniprot",
+        "id" : "P06213",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:826845130",
+    "text" : "dephosphorylate IR",
+    "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:733653089",
+      "text" : "dephosphorylate",
+      "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 9,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "-781066104",
+      "keep" : true,
+      "foundBy" : "Dephosphorylation_syntax_1a_verb"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-886449732",
+        "text" : "IR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 25,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-781066104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin receptor subunit beta",
+          "namespace" : "uniprot",
+          "id" : "P06213",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-886449732" : [ {
+          "source" : 2,
+          "destination" : 3,
+          "relation" : "dobj"
+        } ]
+      },
+      "cause" : {
+        "T:-2133185939" : [ {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 4
+    },
+    "characterStartOffset" : 9,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "Dephosphorylation_syntax_1a_verb",
+    "displayLabel" : "Dephosphorylation",
+    "isDirect" : true
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:171590464",
+    "text" : "PTPs can dephosphorylate IR at autophosphorylated tyrosines and thus inactivate IR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1112658806",
+      "text" : "inactivate",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 69,
+      "characterEndOffset" : 79,
+      "sentence" : 0,
+      "document" : "-781066104",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:822005459",
+        "text" : "IR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "-781066104",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Insulin receptor subunit beta",
+          "namespace" : "uniprot",
+          "id" : "P06213",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:1018717315",
+        "text" : "PTPs can dephosphorylate IR",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:826845130",
+            "text" : "dephosphorylate IR",
+            "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:733653089",
+              "text" : "dephosphorylate",
+              "labels" : [ "Dephosphorylation", "RemovalEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 2,
+                "end" : 3
+              },
+              "characterStartOffset" : 9,
+              "characterEndOffset" : 24,
+              "sentence" : 0,
+              "document" : "-781066104",
+              "keep" : true,
+              "foundBy" : "Dephosphorylation_syntax_1a_verb"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-886449732",
+                "text" : "IR",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 3,
+                  "end" : 4
+                },
+                "characterStartOffset" : 25,
+                "characterEndOffset" : 27,
+                "sentence" : 0,
+                "document" : "-781066104",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Insulin receptor subunit beta",
+                  "namespace" : "uniprot",
+                  "id" : "P06213",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-886449732" : [ {
+                  "source" : 2,
+                  "destination" : 3,
+                  "relation" : "dobj"
+                } ]
+              },
+              "cause" : {
+                "T:-2133185939" : [ {
+                  "source" : 2,
+                  "destination" : 0,
+                  "relation" : "nsubj"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 4
+            },
+            "characterStartOffset" : 9,
+            "characterEndOffset" : 27,
+            "sentence" : 0,
+            "document" : "-781066104",
+            "keep" : true,
+            "foundBy" : "Dephosphorylation_syntax_1a_verb",
+            "displayLabel" : "Dephosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-2133185939",
+            "text" : "PTPs",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 4,
+            "sentence" : 0,
+            "document" : "-781066104",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PTP synthase",
+              "namespace" : "uniprot",
+              "id" : "Q03393",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-886449732" : [ {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            } ]
+          },
+          "cause" : {
+            "T:-2133185939" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 4
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "-781066104",
+        "keep" : true,
+        "foundBy" : "Dephosphorylation_syntax_1a_verb + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:822005459" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-2133185939" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ],
+        "R:1018717315" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "-781066104",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

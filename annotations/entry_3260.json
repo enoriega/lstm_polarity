@@ -1,0 +1,601 @@
+{
+  "documents" : {
+    "2100108695" : {
+      "id" : "sentence_annotator",
+      "text" : "Mitotic entry is controlled by the antagonising effect on Cdc2 activation of Wee1 kinase and Cdc25 phosphatase.",
+      "sentences" : [ {
+        "words" : [ "Mitotic", "entry", "is", "controlled", "by", "the", "antagonising", "effect", "on", "Cdc2", "activation", "of", "Wee1", "kinase", "and", "Cdc25", "phosphatase", "." ],
+        "startOffsets" : [ 0, 8, 14, 17, 28, 31, 35, 48, 55, 58, 63, 74, 77, 82, 89, 93, 99, 110 ],
+        "endOffsets" : [ 7, 13, 16, 27, 30, 34, 47, 54, 57, 62, 73, 76, 81, 88, 92, 98, 110, 111 ],
+        "tags" : [ "JJ", "NN", "VBZ", "VBN", "IN", "DT", "VBG", "NN", "IN", "NN", "NN", "IN", "NN", "NN", "CC", "NN", "NN", "." ],
+        "lemmas" : [ "mitotic", "entry", "be", "control", "by", "the", "antagonise", "effect", "on", "cdc2", "activation", "of", "wee1", "kinase", "and", "cdc25", "phosphatase", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "B-Family", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "cc"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "auxpass"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "agent"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep_on"
+            }, {
+              "source" : 10,
+              "destination" : 16,
+              "relation" : "prep_of"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-791158508",
+    "text" : "Cdc2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDKN1",
+      "namespace" : "uniprot",
+      "id" : "P06493",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1812005139",
+    "text" : "Wee1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "WEE1hu",
+      "namespace" : "uniprot",
+      "id" : "P30291",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-618493451",
+    "text" : "Cdc25",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 93,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Ras-specific guanine nucleotide-releasing factor 1",
+      "namespace" : "uniprot",
+      "id" : "Q13972",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:921376093",
+    "text" : "phosphatase",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 99,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Phosphatase",
+      "namespace" : "pfam",
+      "id" : "PF15698",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2053275881",
+    "text" : "Cdc2 activation of Wee1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-52567974",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "2100108695",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1812005139",
+        "text" : "Wee1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "WEE1hu",
+          "namespace" : "uniprot",
+          "id" : "P30291",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-791158508",
+        "text" : "Cdc2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN1",
+          "namespace" : "uniprot",
+          "id" : "P06493",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1812005139" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ],
+        "T:921376093" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        } ],
+        "T:-618493451" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        }, {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-791158508" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 13
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2092426441",
+    "text" : "Cdc2 activation of Wee1 kinase and Cdc25",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-52567974",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "2100108695",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-618493451",
+        "text" : "Cdc25",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 15,
+          "end" : 16
+        },
+        "characterStartOffset" : 93,
+        "characterEndOffset" : 98,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Ras-specific guanine nucleotide-releasing factor 1",
+          "namespace" : "uniprot",
+          "id" : "Q13972",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-791158508",
+        "text" : "Cdc2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN1",
+          "namespace" : "uniprot",
+          "id" : "P06493",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1812005139" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ],
+        "T:921376093" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        } ],
+        "T:-618493451" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        }, {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-791158508" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 16
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:196674601",
+    "text" : "Cdc2 activation of Wee1 kinase and Cdc25 phosphatase",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-52567974",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 63,
+      "characterEndOffset" : 73,
+      "sentence" : 0,
+      "document" : "2100108695",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:921376093",
+        "text" : "phosphatase",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 99,
+        "characterEndOffset" : 110,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Phosphatase",
+          "namespace" : "pfam",
+          "id" : "PF15698",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-791158508",
+        "text" : "Cdc2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "2100108695",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN1",
+          "namespace" : "uniprot",
+          "id" : "P06493",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1812005139" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ],
+        "T:921376093" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        } ],
+        "T:-618493451" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 16,
+          "relation" : "conj_and"
+        }, {
+          "source" : 16,
+          "destination" : 15,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-791158508" : [ {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 17
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 110,
+    "sentence" : 0,
+    "document" : "2100108695",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

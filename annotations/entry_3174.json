@@ -1,0 +1,237 @@
+{
+  "documents" : {
+    "-498991957" : {
+      "id" : "sentence_annotator",
+      "text" : "Smurf2 can also target TGF-beta type I receptor for degradation.",
+      "sentences" : [ {
+        "words" : [ "Smurf2", "can", "also", "target", "TGF-beta", "type", "I", "receptor", "for", "degradation", "." ],
+        "startOffsets" : [ 0, 7, 11, 16, 23, 32, 37, 39, 48, 52, 63 ],
+        "endOffsets" : [ 6, 10, 15, 22, 31, 36, 38, 47, 51, 63, 64 ],
+        "tags" : [ "NN", "MD", "RB", "VB", "NN", "NN", "CD", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "smurf2", "can", "also", "target", "tgf-beta", "type", "i", "receptor", "for", "degradation", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "advmod"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_for"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1176890873",
+    "text" : "Smurf2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "-498991957",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SMAD-specific E3 ubiquitin-protein ligase 2",
+      "namespace" : "uniprot",
+      "id" : "Q9HAU4",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2015590154",
+    "text" : "TGF-beta type I receptor",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 23,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-498991957",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TGF-beta receptor type-1",
+      "namespace" : "uniprot",
+      "id" : "P36897",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-332508827",
+    "text" : "Smurf2 can also target TGF-beta type I receptor",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-668928506",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 16,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-498991957",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2015590154",
+        "text" : "TGF-beta type I receptor",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 8
+        },
+        "characterStartOffset" : 23,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "-498991957",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TGF-beta receptor type-1",
+          "namespace" : "uniprot",
+          "id" : "P36897",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1176890873",
+        "text" : "Smurf2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 6,
+        "sentence" : 0,
+        "document" : "-498991957",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SMAD-specific E3 ubiquitin-protein ligase 2",
+          "namespace" : "uniprot",
+          "id" : "Q9HAU4",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2015590154" : [ {
+          "source" : 3,
+          "destination" : 7,
+          "relation" : "xcomp"
+        } ]
+      },
+      "controller" : {
+        "T:-1176890873" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 8
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-498991957",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,249 @@
+{
+  "documents" : {
+    "1701480919" : {
+      "id" : "sentence_annotator",
+      "text" : "TGF-alpha did not induce significant EGFR degradation (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "TGF-alpha", "did", "not", "induce", "significant", "EGFR", "degradation", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 10, 14, 18, 25, 37, 42, 54, 55, 63, 64 ],
+        "endOffsets" : [ 9, 13, 17, 24, 36, 41, 53, 55, 63, 64, 65 ],
+        "tags" : [ "NN", "VBD", "RB", "VB", "JJ", "NN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "tgf-alpha", "do", "not", "induce", "significant", "egfr", "degradation", "(", "xref_fig", ")", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "neg"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "aux"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "neg"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:692912949",
+    "text" : "TGF-alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "1701480919",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ETGF",
+      "namespace" : "uniprot",
+      "id" : "P01135",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-600933338",
+    "text" : "EGFR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1701480919",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EGFR",
+      "namespace" : "uniprot",
+      "id" : "P00533",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1417119025",
+    "text" : "TGF-alpha did not induce significant EGFR",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1456896393",
+      "text" : "induce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 24,
+      "sentence" : 0,
+      "document" : "1701480919",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-600933338",
+        "text" : "EGFR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "1701480919",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EGFR",
+          "namespace" : "uniprot",
+          "id" : "P00533",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:692912949",
+        "text" : "TGF-alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "1701480919",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ETGF",
+          "namespace" : "uniprot",
+          "id" : "P01135",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-600933338" : [ {
+          "source" : 3,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:692912949" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "1701480919",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-265447462",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1701480919",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

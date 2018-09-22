@@ -1,0 +1,233 @@
+{
+  "documents" : {
+    "-836595823" : {
+      "id" : "sentence_annotator",
+      "text" : "Our IL-6 knockdown system attenuated STAT3 activation (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "Our", "IL-6", "knockdown", "system", "attenuated", "STAT3", "activation", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 4, 9, 19, 26, 37, 43, 54, 55, 63, 64 ],
+        "endOffsets" : [ 3, 8, 18, 25, 36, 42, 53, 55, 63, 64, 65 ],
+        "tags" : [ "PRP$", "NN", "NN", "NN", "VBD", "NN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "we", "il-6", "knockdown", "system", "attenuate", "stat3", "activation", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "poss"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "poss"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-642507838",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "-836595823",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-317803496",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-836595823",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1126847782",
+    "text" : "IL-6 knockdown system attenuated STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:867776608",
+      "text" : "attenuated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 36,
+      "sentence" : 0,
+      "document" : "-836595823",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-317803496",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 42,
+        "sentence" : 0,
+        "document" : "-836595823",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-642507838",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 4,
+        "characterEndOffset" : 8,
+        "sentence" : 0,
+        "document" : "-836595823",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-317803496" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-642507838" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        }, {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 6
+    },
+    "characterStartOffset" : 4,
+    "characterEndOffset" : 42,
+    "sentence" : 0,
+    "document" : "-836595823",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

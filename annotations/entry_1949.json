@@ -1,0 +1,507 @@
+{
+  "documents" : {
+    "-332225521" : {
+      "id" : "sentence_annotator",
+      "text" : "\"As shown previously, IL-6 induced STAT3 activation was inhibited by the anti-gp130 mAb.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "As", "shown", "previously", ",", "IL-6", "induced", "STAT3", "activation", "was", "inhibited", "by", "the", "anti-gp130", "mAb", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 10, 20, 22, 27, 35, 41, 52, 56, 66, 69, 73, 84, 87, 88 ],
+        "endOffsets" : [ 1, 3, 9, 20, 21, 26, 34, 40, 51, 55, 65, 68, 72, 83, 87, 88, 89 ],
+        "tags" : [ "``", "IN", "VBN", "RB", ",", "NN", "VBD", "NN", "NN", "VBD", "VBN", "IN", "DT", "JJ", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "as", "show", "previously", ",", "il-6", "induce", "stat3", "activation", "be", "inhibit", "by", "the", "anti-gp130", "mab", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product" ],
+        "chunks" : [ "O", "B-SBAR", "B-VP", "B-ADVP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "mark"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "advcl"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "mark"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "advcl"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "auxpass"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "agent"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:-132540454",
+    "text" : "IL-6 induced STAT3 activation was inhibited by the anti-gp130 mAb.\"",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:651679921",
+      "text" : "inhibited",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 56,
+      "characterEndOffset" : 65,
+      "sentence" : 0,
+      "document" : "-332225521",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-531557166",
+        "text" : "IL-6 induced STAT3",
+        "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-76723761",
+          "text" : "induced",
+          "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 6,
+            "end" : 7
+          },
+          "characterStartOffset" : 27,
+          "characterEndOffset" : 34,
+          "sentence" : 0,
+          "document" : "-332225521",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-711469464",
+            "text" : "IL-6",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 22,
+            "characterEndOffset" : 26,
+            "sentence" : 0,
+            "document" : "-332225521",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "IL6",
+              "namespace" : "uniprot",
+              "id" : "P05231",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:203512503",
+            "text" : "STAT3",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 35,
+            "characterEndOffset" : 40,
+            "sentence" : 0,
+            "document" : "-332225521",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "STAT3",
+              "namespace" : "uniprot",
+              "id" : "P40763",
+              "species" : "human"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "modifications" : [ {
+          "modification-type" : "Hypothesis",
+          "evidence" : {
+            "type" : "BioTextBoundMention",
+            "id" : "T:-197932743",
+            "text" : "previously",
+            "labels" : [ "Hypothesis_hint" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 10,
+            "characterEndOffset" : 20,
+            "sentence" : 0,
+            "document" : "-332225521",
+            "keep" : true,
+            "foundBy" : "Positive_early_activation",
+            "displayLabel" : "Hypothesis_hint"
+          }
+        } ],
+        "displayLabel" : "Negative_activation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1005331163",
+        "text" : "anti-gp130 mAb.\"",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 17
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "anti-gp130 mAb.\"",
+          "namespace" : "uaz",
+          "id" : "UAZ00495",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-531557166" : [ {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1005331163" : [ {
+          "source" : 10,
+          "destination" : 14,
+          "relation" : "agent"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "amod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 17
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-332225521",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_2_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-197932743",
+        "text" : "previously",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_2_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-711469464",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-332225521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:203512503",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-332225521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1005331163",
+    "text" : "anti-gp130 mAb.\"",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 17
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-332225521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "anti-gp130 mAb.\"",
+      "namespace" : "uaz",
+      "id" : "UAZ00495",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-531557166",
+    "text" : "IL-6 induced STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-76723761",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 27,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "-332225521",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-711469464",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:203512503",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 40,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 40,
+    "sentence" : 0,
+    "document" : "-332225521",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-197932743",
+        "text" : "previously",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-332225521",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

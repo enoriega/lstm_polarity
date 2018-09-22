@@ -1,0 +1,325 @@
+{
+  "documents" : {
+    "-1089925770" : {
+      "id" : "sentence_annotator",
+      "text" : "Knockdown of TIF-2 has been reported to inhibit androgen independent AR activation in C4-2 cells.",
+      "sentences" : [ {
+        "words" : [ "Knockdown", "of", "TIF-2", "has", "been", "reported", "to", "inhibit", "androgen", "independent", "AR", "activation", "in", "C4-2", "cells", "." ],
+        "startOffsets" : [ 0, 10, 13, 19, 23, 28, 37, 40, 48, 57, 69, 72, 83, 86, 91, 96 ],
+        "endOffsets" : [ 9, 12, 18, 22, 27, 36, 39, 47, 56, 68, 71, 82, 85, 90, 96, 97 ],
+        "tags" : [ "NNP", "IN", "NN", "VBZ", "VBN", "VBN", "TO", "VB", "NN", "JJ", "NN", "NN", "IN", "NN", "NNS", "." ],
+        "lemmas" : [ "Knockdown", "of", "tif-2", "have", "be", "report", "to", "inhibit", "androgen", "independent", "ar", "activation", "in", "c4-2", "cell", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-CellLine", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "auxpass"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_in"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1199152253",
+    "text" : "TIF-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "-1089925770",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TIF2",
+      "namespace" : "uniprot",
+      "id" : "Q15596",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_4782" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1644495724",
+    "text" : "AR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1089925770",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NR3C4",
+      "namespace" : "uniprot",
+      "id" : "P10275",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_4782" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:627057299",
+    "text" : "C4-2",
+    "labels" : [ "CellLine", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 90,
+    "sentence" : 0,
+    "document" : "-1089925770",
+    "keep" : true,
+    "foundBy" : "ner-cell-lines",
+    "grounding" : {
+      "text" : "LNCaP-C4-2",
+      "namespace" : "cellosaurus",
+      "id" : "CVCL_4782",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_4782" ]
+    },
+    "displayLabel" : "CellLine"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2109462876",
+    "text" : "TIF-2 has been reported to inhibit androgen independent AR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1974023677",
+      "text" : "inhibit",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 40,
+      "characterEndOffset" : 47,
+      "sentence" : 0,
+      "document" : "-1089925770",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1644495724",
+        "text" : "AR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 69,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-1089925770",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NR3C4",
+          "namespace" : "uniprot",
+          "id" : "P10275",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_4782" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1199152253",
+        "text" : "TIF-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "-1089925770",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TIF2",
+          "namespace" : "uniprot",
+          "id" : "Q15596",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellLine" : [ "cellosaurus:CVCL_4782" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1644495724" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1199152253" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 11
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1089925770",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellLine" : [ "cellosaurus:CVCL_4782" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,792 @@
+{
+  "documents" : {
+    "-957198764" : {
+      "id" : "sentence_annotator",
+      "text" : "Phosphorylation of 4E-BP1 by mTORC1 increases the availability of eIF4E.",
+      "sentences" : [ {
+        "words" : [ "Phosphorylation", "of", "4E-BP1", "by", "mTORC1", "increases", "the", "availability", "of", "eIF4E", "." ],
+        "startOffsets" : [ 0, 16, 19, 26, 29, 36, 46, 50, 63, 66, 71 ],
+        "endOffsets" : [ 15, 18, 25, 28, 35, 45, 49, 62, 65, 71, 72 ],
+        "tags" : [ "NN", "IN", "NN", "IN", "NN", "VBZ", "DT", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "phosphorylation", "of", "4e-bp1", "by", "mtorc1", "increase", "the", "availability", "of", "eif4e", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_by"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefRelationMention",
+    "id" : "R:-1356163721",
+    "text" : "Phosphorylation of 4E-BP1 by mTORC1",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-46990035",
+        "text" : "Phosphorylation of 4E-BP1",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-262080495",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-957198764",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-338815284",
+            "text" : "4E-BP1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "-957198764",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EIF4EBP1",
+              "namespace" : "uniprot",
+              "id" : "Q13541",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-338815284" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:-1216826438" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_by"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1216826438",
+        "text" : "mTORC1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 29,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTORC1",
+          "namespace" : "be",
+          "id" : "mTORC1",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-338815284" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:-1216826438" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+    "displayLabel" : "Positive_regulation"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-338815284",
+    "text" : "4E-BP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 19,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF4EBP1",
+      "namespace" : "uniprot",
+      "id" : "Q13541",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1216826438",
+    "text" : "mTORC1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTORC1",
+      "namespace" : "be",
+      "id" : "mTORC1",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-910087845",
+    "text" : "eIF4E",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "EIF4F",
+      "namespace" : "uniprot",
+      "id" : "P06730",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:154968508",
+    "text" : "Phosphorylation of 4E-BP1 by mTORC1 increases the availability of eIF4E",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1936032134",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "-957198764",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-910087845",
+        "text" : "eIF4E",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4F",
+          "namespace" : "uniprot",
+          "id" : "P06730",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-46990035",
+        "text" : "Phosphorylation of 4E-BP1",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-262080495",
+          "text" : "Phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 0,
+            "end" : 1
+          },
+          "characterStartOffset" : 0,
+          "characterEndOffset" : 15,
+          "sentence" : 0,
+          "document" : "-957198764",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_1a_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-338815284",
+            "text" : "4E-BP1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 19,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "-957198764",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "EIF4EBP1",
+              "namespace" : "uniprot",
+              "id" : "Q13541",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-338815284" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:-1216826438" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_by"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 3
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : true
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-910087845" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-46990035" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "R:-1356163721" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:-338815284" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1264688105",
+    "text" : "Phosphorylation of 4E-BP1 by mTORC1 increases the availability of eIF4E",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1936032134",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "-957198764",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-910087845",
+        "text" : "eIF4E",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 71,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4F",
+          "namespace" : "uniprot",
+          "id" : "P06730",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefRelationMention",
+        "id" : "R:-1356163721",
+        "text" : "Phosphorylation of 4E-BP1 by mTORC1",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-46990035",
+            "text" : "Phosphorylation of 4E-BP1",
+            "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-262080495",
+              "text" : "Phosphorylation",
+              "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 0,
+                "end" : 1
+              },
+              "characterStartOffset" : 0,
+              "characterEndOffset" : 15,
+              "sentence" : 0,
+              "document" : "-957198764",
+              "keep" : true,
+              "foundBy" : "Phosphorylation_syntax_1a_noun"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-338815284",
+                "text" : "4E-BP1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 2,
+                  "end" : 3
+                },
+                "characterStartOffset" : 19,
+                "characterEndOffset" : 25,
+                "sentence" : 0,
+                "document" : "-957198764",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "EIF4EBP1",
+                  "namespace" : "uniprot",
+                  "id" : "Q13541",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Protein"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-338815284" : [ {
+                  "source" : 0,
+                  "destination" : 2,
+                  "relation" : "prep_of"
+                } ]
+              },
+              "cause" : {
+                "T:-1216826438" : [ {
+                  "source" : 0,
+                  "destination" : 2,
+                  "relation" : "prep_of"
+                }, {
+                  "source" : 2,
+                  "destination" : 4,
+                  "relation" : "prep_by"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 3
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 25,
+            "sentence" : 0,
+            "document" : "-957198764",
+            "keep" : true,
+            "foundBy" : "Phosphorylation_syntax_1a_noun",
+            "displayLabel" : "Phosphorylation",
+            "isDirect" : true
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1216826438",
+            "text" : "mTORC1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 29,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "-957198764",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "mTORC1",
+              "namespace" : "be",
+              "id" : "mTORC1",
+              "species" : ""
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-338815284" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            } ]
+          },
+          "cause" : {
+            "T:-1216826438" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_by"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 5
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_1a_noun + toRelationMention",
+        "displayLabel" : "Positive_regulation"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-910087845" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:-46990035" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "R:-1356163721" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ],
+        "T:-338815284" : [ {
+          "source" : 5,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 10
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-46990035",
+    "text" : "Phosphorylation of 4E-BP1",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-262080495",
+      "text" : "Phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 0,
+        "end" : 1
+      },
+      "characterStartOffset" : 0,
+      "characterEndOffset" : 15,
+      "sentence" : 0,
+      "document" : "-957198764",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_1a_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-338815284",
+        "text" : "4E-BP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 19,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-957198764",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "EIF4EBP1",
+          "namespace" : "uniprot",
+          "id" : "Q13541",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-338815284" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      },
+      "cause" : {
+        "T:-1216826438" : [ {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-957198764",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_1a_noun",
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : true
+  } ]
+}

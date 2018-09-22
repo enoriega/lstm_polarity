@@ -1,0 +1,434 @@
+{
+  "documents" : {
+    "1647262534" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Genetic ablation of PTEN causes Akt overactivation, apoptosis resistance and cavitation blockade.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Genetic", "ablation", "of", "PTEN", "causes", "Akt", "overactivation", ",", "apoptosis", "resistance", "and", "cavitation", "blockade", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 9, 18, 21, 26, 33, 37, 51, 53, 63, 74, 78, 89, 97, 98 ],
+        "endOffsets" : [ 1, 8, 17, 20, 25, 32, 36, 51, 52, 62, 73, 77, 88, 97, 98, 99 ],
+        "tags" : [ "``", "JJ", "NN", "IN", "NN", "VBZ", "NN", "NN", ",", "NN", "NN", "CC", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "genetic", "ablation", "of", "pten", "cause", "akt", "overactivation", ",", "apoptosis", "resistance", "and", "cavitation", "blockade", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "B-BioProcess", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "amod"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-220608674",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "1647262534",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:122120144",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1647262534",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1233725181",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1647262534",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-418534194",
+    "text" : "PTEN causes Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1302669562",
+      "text" : "causes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1647262534",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:122120144",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1647262534",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-220608674",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "1647262534",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:122120144" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:-1233725181" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "conj_and"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-220608674" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1647262534",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:421484506",
+    "text" : "PTEN causes Akt overactivation, apoptosis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1302669562",
+      "text" : "causes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1647262534",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1233725181",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "1647262534",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-220608674",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "1647262534",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:122120144" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:-1233725181" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "conj_and"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-220608674" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 10
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1647262534",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,368 @@
+{
+  "documents" : {
+    "234093653" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Upon Hh binding, the inhibitory function of PTCH on SMO is abolished, resulting in SMO activation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Upon", "Hh", "binding", ",", "the", "inhibitory", "function", "of", "PTCH", "on", "SMO", "is", "abolished", ",", "resulting", "in", "SMO", "activation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 9, 16, 18, 22, 33, 42, 45, 50, 53, 57, 60, 69, 71, 81, 84, 88, 98, 99 ],
+        "endOffsets" : [ 1, 5, 8, 16, 17, 21, 32, 41, 44, 49, 52, 56, 59, 69, 70, 80, 83, 87, 98, 99, 100 ],
+        "tags" : [ "``", "IN", "NN", "NN", ",", "DT", "JJ", "NN", "IN", "NN", "IN", "NN", "VBZ", "VBN", ",", "VBG", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "upon", "hh", "binding", ",", "the", "inhibitory", "function", "of", "ptch", "on", "smo", "be", "abolish", ",", "result", "in", "smo", "activation", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "O", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-NP", "B-VP", "I-VP", "O", "B-VP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "xcomp"
+            }, {
+              "source" : 13,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 13,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 13,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "prep"
+            }, {
+              "source" : 16,
+              "destination" : 18,
+              "relation" : "pobj"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 13 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_on"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "xcomp"
+            }, {
+              "source" : 13,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 13,
+              "destination" : 3,
+              "relation" : "prep_upon"
+            }, {
+              "source" : 13,
+              "destination" : 20,
+              "relation" : "punct"
+            }, {
+              "source" : 13,
+              "destination" : 7,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "auxpass"
+            }, {
+              "source" : 15,
+              "destination" : 18,
+              "relation" : "prep_in"
+            }, {
+              "source" : 18,
+              "destination" : 17,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 13 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-48682408",
+    "text" : "Hh",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 6,
+    "characterEndOffset" : 8,
+    "sentence" : 0,
+    "document" : "234093653",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "L-His-L-His",
+      "namespace" : "pubchem",
+      "id" : "6993105",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-605954210",
+    "text" : "PTCH",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "234093653",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTCH",
+      "namespace" : "uniprot",
+      "id" : "Q13635",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-756631585",
+    "text" : "SMO",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "234093653",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein Gx",
+      "namespace" : "uniprot",
+      "id" : "Q99835",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2045492360",
+    "text" : "SMO",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 17,
+      "end" : 18
+    },
+    "characterStartOffset" : 84,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "234093653",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Protein Gx",
+      "namespace" : "uniprot",
+      "id" : "Q99835",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-756631585",
+      "text" : "SMO",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "234093653",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Protein Gx",
+        "namespace" : "uniprot",
+        "id" : "Q99835",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1712484078",
+    "text" : "PTCH on SMO is abolished, resulting in SMO",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:137995699",
+      "text" : "abolished",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 69,
+      "sentence" : 0,
+      "document" : "234093653",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-2045492360",
+        "text" : "SMO",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 17,
+          "end" : 18
+        },
+        "characterStartOffset" : 84,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "234093653",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Protein Gx",
+          "namespace" : "uniprot",
+          "id" : "Q99835",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-605954210",
+        "text" : "PTCH",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "234093653",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTCH",
+          "namespace" : "uniprot",
+          "id" : "Q13635",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-2045492360" : [ {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "xcomp"
+        }, {
+          "source" : 15,
+          "destination" : 18,
+          "relation" : "prep_in"
+        }, {
+          "source" : 18,
+          "destination" : 17,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-605954210" : [ {
+          "source" : 13,
+          "destination" : 7,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 18
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "234093653",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

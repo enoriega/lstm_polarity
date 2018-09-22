@@ -1,0 +1,265 @@
+{
+  "documents" : {
+    "1851310244" : {
+      "id" : "sentence_annotator",
+      "text" : "\"VMP1 releases Bcl-2 from Beclin 1, driving Beclin 1 into the autophagy pathway.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "VMP1", "releases", "Bcl-2", "from", "Beclin", "1", ",", "driving", "Beclin", "1", "into", "the", "autophagy", "pathway", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 6, 15, 21, 26, 33, 34, 36, 44, 51, 53, 58, 62, 72, 79, 80 ],
+        "endOffsets" : [ 1, 5, 14, 20, 25, 32, 34, 35, 43, 50, 52, 57, 61, 71, 79, 80, 81 ],
+        "tags" : [ "``", "NN", "VBZ", "NN", "IN", "NNP", "CD", ",", "VBG", "NNP", "CD", "IN", "DT", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "vmp1", "release", "bcl-2", "from", "Beclin", "1", ",", "drive", "Beclin", "1", "into", "the", "autophagy", "pathway", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "prep_from"
+            }, {
+              "source" : 2,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "num"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "prep_into"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "num"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-695600146",
+    "text" : "VMP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "1851310244",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Vacuole membrane protein 1",
+      "namespace" : "uniprot",
+      "id" : "Q96GC9",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2000363058",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 15,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "1851310244",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:989003365",
+    "text" : "Beclin 1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1851310244",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Coiled-coil myosin-like BCL2-interacting protein",
+      "namespace" : "uniprot",
+      "id" : "Q14457",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1275314540",
+    "text" : "Beclin 1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 11
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 52,
+    "sentence" : 0,
+    "document" : "1851310244",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Coiled-coil myosin-like BCL2-interacting protein",
+      "namespace" : "uniprot",
+      "id" : "Q14457",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:989003365",
+      "text" : "Beclin 1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 7
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 34,
+      "sentence" : 0,
+      "document" : "1851310244",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Coiled-coil myosin-like BCL2-interacting protein",
+        "namespace" : "uniprot",
+        "id" : "Q14457",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1460016816",
+    "text" : "autophagy",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "1851310244",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "autophagy",
+      "namespace" : "go",
+      "id" : "GO:0006914",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  } ]
+}

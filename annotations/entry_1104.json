@@ -1,0 +1,438 @@
+{
+  "documents" : {
+    "970114323" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Among these, previously identified STAT3 targets such as Bcl3 and Socs3 were found.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Among", "these", ",", "previously", "identified", "STAT3", "targets", "such", "as", "Bcl3", "and", "Socs3", "were", "found", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 12, 14, 25, 36, 42, 50, 55, 58, 63, 67, 73, 78, 83, 84 ],
+        "endOffsets" : [ 1, 6, 12, 13, 24, 35, 41, 49, 54, 57, 62, 66, 72, 77, 83, 84, 85 ],
+        "tags" : [ "``", "IN", "DT", ",", "RB", "VBN", "NN", "NNS", "JJ", "IN", "NN", "CC", "NN", "VBD", "VBN", ".", "''" ],
+        "lemmas" : [ "\"", "among", "these", ",", "previously", "identify", "stat3", "target", "such", "as", "bcl3", "and", "socs3", "be", "find", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "O", "B-VP", "I-VP", "B-NP", "I-NP", "B-PP", "I-PP", "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "mwe"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 14,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 5,
+              "relation" : "csubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "auxpass"
+            } ],
+            "roots" : [ 14 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep_such_as"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep_such_as"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 14,
+              "destination" : 2,
+              "relation" : "prep_among"
+            }, {
+              "source" : 14,
+              "destination" : 5,
+              "relation" : "csubjpass"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "auxpass"
+            } ],
+            "roots" : [ 14 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1626080927",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "970114323",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2020011826",
+    "text" : "Bcl3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 58,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "970114323",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "D19S37",
+      "namespace" : "uniprot",
+      "id" : "P20749",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:356322997",
+    "text" : "Socs3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 67,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "970114323",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SOCS3",
+      "namespace" : "uniprot",
+      "id" : "O14543",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-315251990",
+    "text" : "STAT3 targets such as Bcl3",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:503499899",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 42,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "970114323",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1626080927",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2020011826",
+        "text" : "Bcl3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 62,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "D19S37",
+          "namespace" : "uniprot",
+          "id" : "P20749",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1626080927" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2020011826" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "prep_such_as"
+        } ],
+        "T:356322997" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_such_as"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 11
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "970114323",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:349742282",
+        "text" : "previously",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_noun_Hearst",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-604096227",
+    "text" : "STAT3 targets such as Bcl3 and Socs3",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:503499899",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 42,
+      "characterEndOffset" : 49,
+      "sentence" : 0,
+      "document" : "970114323",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_noun_Hearst"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1626080927",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:356322997",
+        "text" : "Socs3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 67,
+        "characterEndOffset" : 72,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOCS3",
+          "namespace" : "uniprot",
+          "id" : "O14543",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1626080927" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:2020011826" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "prep_such_as"
+        } ],
+        "T:356322997" : [ {
+          "source" : 7,
+          "destination" : 12,
+          "relation" : "prep_such_as"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 13
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 72,
+    "sentence" : 0,
+    "document" : "970114323",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_noun_Hearst",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:349742282",
+        "text" : "previously",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "970114323",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_noun_Hearst",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

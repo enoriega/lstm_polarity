@@ -1,0 +1,301 @@
+{
+  "documents" : {
+    "1196178957" : {
+      "id" : "sentence_annotator",
+      "text" : "\"In non immune cells, SOCS3 suppresses inflammatory reactions by inhibiting STAT3.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "In", "non", "immune", "cells", ",", "SOCS3", "suppresses", "inflammatory", "reactions", "by", "inhibiting", "STAT3", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 4, 8, 15, 20, 22, 28, 39, 52, 62, 65, 76, 81, 82 ],
+        "endOffsets" : [ 1, 3, 7, 14, 20, 21, 27, 38, 51, 61, 64, 75, 81, 82, 83 ],
+        "tags" : [ "``", "IN", "JJ", "JJ", "NNS", ",", "NN", "VBZ", "JJ", "NNS", "IN", "VBG", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "in", "non", "immune", "cell", ",", "socs3", "suppress", "inflammatory", "reaction", "by", "inhibit", "stat3", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-CellType", "I-CellType", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-PP", "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pcomp"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 7 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "prep_in"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 7,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 7 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1952319950",
+    "text" : "immune cells",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 8,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "1196178957",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "leukocyte",
+      "namespace" : "cl",
+      "id" : "CL:0000738",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000738" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1825544318",
+    "text" : "SOCS3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 27,
+    "sentence" : 0,
+    "document" : "1196178957",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SOCS3",
+      "namespace" : "uniprot",
+      "id" : "O14543",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000738" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1956929662",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1196178957",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000738" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-39250747",
+    "text" : "SOCS3 suppresses inflammatory reactions by inhibiting STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:460282712",
+      "text" : "suppresses",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 38,
+      "sentence" : 0,
+      "document" : "1196178957",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1956929662",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 76,
+        "characterEndOffset" : 81,
+        "sentence" : 0,
+        "document" : "1196178957",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000738" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1825544318",
+        "text" : "SOCS3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 27,
+        "sentence" : 0,
+        "document" : "1196178957",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SOCS3",
+          "namespace" : "uniprot",
+          "id" : "O14543",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000738" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1956929662" : [ {
+          "source" : 7,
+          "destination" : 11,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1825544318" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 13
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "1196178957",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "CellType" : [ "cl:CL:0000738" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

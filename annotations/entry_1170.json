@@ -1,0 +1,363 @@
+{
+  "documents" : {
+    "-1757243249" : {
+      "id" : "sentence_annotator",
+      "text" : "It is unclear why AKT targets p-FOXO1 more strongly than p-S6 in human retinoblastoma.",
+      "sentences" : [ {
+        "words" : [ "It", "is", "unclear", "why", "AKT", "targets", "p-FOXO1", "more", "strongly", "than", "p-S6", "in", "human", "retinoblastoma", "." ],
+        "startOffsets" : [ 0, 3, 6, 14, 18, 22, 30, 38, 43, 52, 57, 62, 65, 71, 85 ],
+        "endOffsets" : [ 2, 5, 13, 17, 21, 29, 37, 42, 51, 56, 61, 64, 70, 85, 86 ],
+        "tags" : [ "PRP", "VBZ", "JJ", "WRB", "NNP", "VBZ", "NN", "RBR", "RB", "IN", "NN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "it", "be", "unclear", "why", "AKT", "target", "p-foxo1", "more", "strongly", "than", "p-s6", "in", "human", "retinoblastoma", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Family", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Species", "B-TissueType", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-ADJP", "B-ADVP", "B-NP", "B-VP", "B-NP", "B-ADVP", "I-ADVP", "B-PP", "B-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "cop"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "advcl"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "cop"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "advcl"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "prep_than"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1206383421",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-361171051",
+    "text" : "p-FOXO1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Forkhead box protein O1",
+      "namespace" : "uniprot",
+      "id" : "Q12778",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1203388100",
+    "text" : "p-S6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pS6",
+      "namespace" : "uniprot",
+      "id" : "P62753",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1392266689",
+    "text" : "human",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 65,
+    "characterEndOffset" : 70,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:37829643",
+    "text" : "retinoblastoma",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Retinoblastoma",
+      "namespace" : "tissuelist",
+      "id" : "TS-0871",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1427956423",
+    "text" : "AKT targets p-FOXO1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1712625087",
+      "text" : "targets",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "-1757243249",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-361171051",
+        "text" : "p-FOXO1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-1757243249",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Forkhead box protein O1",
+          "namespace" : "uniprot",
+          "id" : "Q12778",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ],
+          "TissueType" : [ "tissuelist:TS-0871" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1206383421",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "-1757243249",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ],
+          "TissueType" : [ "tissuelist:TS-0871" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-361171051" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:1206383421" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 7
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1757243249",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "TissueType" : [ "tissuelist:TS-0871" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

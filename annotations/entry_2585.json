@@ -1,0 +1,426 @@
+{
+  "documents" : {
+    "-555843247" : {
+      "id" : "sentence_annotator",
+      "text" : "\"However, ABT-737 is essential to target and inactivate Bcl-2 and Bcl-X L.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "However", ",", "ABT-737", "is", "essential", "to", "target", "and", "inactivate", "Bcl-2", "and", "Bcl-X", "L.", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 10, 18, 21, 31, 34, 41, 45, 56, 62, 66, 72, 74 ],
+        "endOffsets" : [ 1, 8, 9, 17, 20, 30, 33, 40, 44, 55, 61, 65, 71, 74, 75 ],
+        "tags" : [ "``", "RB", ",", "NN", "VBZ", "JJ", "TO", "VB", "CC", "VB", "NN", "CC", "NNP", "NNP", "''" ],
+        "lemmas" : [ "\"", "however", ",", "abt-737", "be", "essential", "to", "target", "and", "inactivate", "bcl-2", "and", "Bcl-X", "L.", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-ADJP", "B-VP", "I-VP", "I-VP", "I-VP", "B-NP", "O", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 14,
+              "relation" : "punct"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:881943515",
+    "text" : "ABT-737",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-555843247",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ABT-737",
+      "namespace" : "pubchem",
+      "id" : "11228183",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1352312970",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-555843247",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1976282530",
+    "text" : "Bcl-X L.\"",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 15
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-555843247",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl-X L.\"",
+      "namespace" : "uaz",
+      "id" : "UAZ00722",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1697967049",
+    "text" : "ABT-737 is essential to target and inactivate Bcl-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2138483596",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 34,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-555843247",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1352312970",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "-555843247",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:881943515",
+        "text" : "ABT-737",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-555843247",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ABT-737",
+          "namespace" : "pubchem",
+          "id" : "11228183",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1352312970" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:-1976282530" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "conj_and"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:881943515" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-555843247",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1208555024",
+    "text" : "ABT-737 is essential to target and inactivate Bcl-2 and Bcl-X L.\"",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2138483596",
+      "text" : "target",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 34,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-555843247",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1976282530",
+        "text" : "Bcl-X L.\"",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 15
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-555843247",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl-X L.\"",
+          "namespace" : "uaz",
+          "id" : "UAZ00722",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:881943515",
+        "text" : "ABT-737",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-555843247",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ABT-737",
+          "namespace" : "pubchem",
+          "id" : "11228183",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1352312970" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:-1976282530" : [ {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "conj_and"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:881943515" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-555843247",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

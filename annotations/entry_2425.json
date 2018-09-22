@@ -1,0 +1,410 @@
+{
+  "documents" : {
+    "1230308215" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Thus, DNA-PKcs does not inhibit WRN exonuclease.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Thus", ",", "DNA-PKcs", "does", "not", "inhibit", "WRN", "exonuclease", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 7, 16, 21, 25, 33, 37, 48, 49 ],
+        "endOffsets" : [ 1, 5, 6, 15, 20, 24, 32, 36, 48, 49, 50 ],
+        "tags" : [ "``", "RB", ",", "NN", "VBZ", "RB", "VB", "NNP", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "thus", ",", "dna-pkc", "do", "not", "inhibit", "WRN", "exonuclease", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "B-Family", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "I-VP", "I-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "neg"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "neg"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-851975100",
+    "text" : "DNA-PKcs",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "1230308215",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DNA-PK catalytic subunit",
+      "namespace" : "uniprot",
+      "id" : "P78527",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1480819624",
+    "text" : "WRN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1230308215",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Werner syndrome ATP-dependent helicase",
+      "namespace" : "uniprot",
+      "id" : "Q14191",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1024732148",
+    "text" : "exonuclease",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 37,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1230308215",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "Exonuclease",
+      "namespace" : "pfam",
+      "id" : "PF00929",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1045122375",
+    "text" : "DNA-PKcs does not inhibit WRN",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:828770503",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1230308215",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1480819624",
+        "text" : "WRN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Werner syndrome ATP-dependent helicase",
+          "namespace" : "uniprot",
+          "id" : "Q14191",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-851975100",
+        "text" : "DNA-PKcs",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DNA-PK catalytic subunit",
+          "namespace" : "uniprot",
+          "id" : "P78527",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1024732148" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:1480819624" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-851975100" : [ {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "1230308215",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:2069386989",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-278074977",
+    "text" : "DNA-PKcs does not inhibit WRN exonuclease",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:828770503",
+      "text" : "inhibit",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 25,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "1230308215",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1024732148",
+        "text" : "exonuclease",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "Exonuclease",
+          "namespace" : "pfam",
+          "id" : "PF00929",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-851975100",
+        "text" : "DNA-PKcs",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 7,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DNA-PK catalytic subunit",
+          "namespace" : "uniprot",
+          "id" : "P78527",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1024732148" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        } ],
+        "T:1480819624" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "dobj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-851975100" : [ {
+          "source" : 6,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 7,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1230308215",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:2069386989",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "1230308215",
+        "keep" : true,
+        "foundBy" : "Negative_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

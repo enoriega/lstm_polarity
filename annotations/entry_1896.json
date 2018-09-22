@@ -1,0 +1,442 @@
+{
+  "documents" : {
+    "-101897676" : {
+      "id" : "sentence_annotator",
+      "text" : "Oxidative modifications of apoA-I have been shown to impair the cholesterol efflux capacity of HDL (XREF_FIG).",
+      "sentences" : [ {
+        "words" : [ "Oxidative", "modifications", "of", "apoA-I", "have", "been", "shown", "to", "impair", "the", "cholesterol", "efflux", "capacity", "of", "HDL", "(", "XREF_FIG", ")", "." ],
+        "startOffsets" : [ 0, 10, 24, 27, 34, 39, 44, 50, 53, 60, 64, 76, 83, 92, 95, 99, 100, 108, 109 ],
+        "endOffsets" : [ 9, 23, 26, 33, 38, 43, 49, 52, 59, 63, 75, 82, 91, 94, 98, 100, 108, 109, 110 ],
+        "tags" : [ "JJ", "NNS", "IN", "NN", "VBP", "VBN", "VBN", "TO", "VB", "DT", "NN", "NN", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "oxidative", "modification", "of", "apoa-i", "have", "be", "show", "to", "impair", "the", "cholesterol", "efflux", "capacity", "of", "hdl", "(", "xref_fig", ")", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "I-VP", "I-VP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "xcomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "prep"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "auxpass"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "xcomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "det"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1583781668",
+    "text" : "apoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "-101897676",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:869164859",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-101897676",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1051464699",
+    "text" : "HDL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 95,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "-101897676",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HDL",
+      "namespace" : "be",
+      "id" : "HDL",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1178481239",
+    "text" : "apoA-I have been shown to impair the cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1897495810",
+      "text" : "impair",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-101897676",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:869164859",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "-101897676",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1583781668",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "-101897676",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:869164859" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-1051464699" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1583781668" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "xcomp"
+        }, {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "-101897676",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1428442637",
+    "text" : "apoA-I have been shown to impair the cholesterol efflux capacity of HDL",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1897495810",
+      "text" : "impair",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 53,
+      "characterEndOffset" : 59,
+      "sentence" : 0,
+      "document" : "-101897676",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1051464699",
+        "text" : "HDL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 95,
+        "characterEndOffset" : 98,
+        "sentence" : 0,
+        "document" : "-101897676",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDL",
+          "namespace" : "be",
+          "id" : "HDL",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1583781668",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 27,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "-101897676",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:869164859" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 10,
+          "relation" : "nn"
+        } ],
+        "T:-1051464699" : [ {
+          "source" : 8,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 14,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1583781668" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "xcomp"
+        }, {
+          "source" : 6,
+          "destination" : 1,
+          "relation" : "nsubjpass"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 15
+    },
+    "characterStartOffset" : 27,
+    "characterEndOffset" : 98,
+    "sentence" : 0,
+    "document" : "-101897676",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

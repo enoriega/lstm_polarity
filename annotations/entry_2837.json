@@ -1,0 +1,430 @@
+{
+  "documents" : {
+    "2040764419" : {
+      "id" : "sentence_annotator",
+      "text" : "Deficiency of RIP1 negated induction of IL-8 secretion as well as induction of caspase-8 activity.",
+      "sentences" : [ {
+        "words" : [ "Deficiency", "of", "RIP1", "negated", "induction", "of", "IL-8", "secretion", "as", "well", "as", "induction", "of", "caspase-8", "activity", "." ],
+        "startOffsets" : [ 0, 11, 14, 19, 27, 37, 40, 45, 55, 58, 63, 66, 76, 79, 89, 97 ],
+        "endOffsets" : [ 10, 13, 18, 26, 36, 39, 44, 54, 57, 62, 65, 75, 78, 88, 97, 98 ],
+        "tags" : [ "NN", "IN", "NN", "VBD", "NN", "IN", "NN", "NN", "RB", "RB", "IN", "NN", "IN", "NN", "NN", "." ],
+        "lemmas" : [ "deficiency", "of", "rip1", "negate", "induction", "of", "il-8", "secretion", "as", "well", "as", "induction", "of", "caspase-8", "activity", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-CONJP", "I-CONJP", "I-CONJP", "B-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "mwe"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_of"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:251987466",
+    "text" : "RIP1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 18,
+    "sentence" : 0,
+    "document" : "2040764419",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "RIPK1",
+      "namespace" : "uniprot",
+      "id" : "Q13546",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1900945141",
+    "text" : "IL-8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "2040764419",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL8",
+      "namespace" : "uniprot",
+      "id" : "P10145",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1711785875",
+    "text" : "caspase-8",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 79,
+    "characterEndOffset" : 88,
+    "sentence" : 0,
+    "document" : "2040764419",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ICE-like apoptotic protease 5",
+      "namespace" : "uniprot",
+      "id" : "Q14790",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-93751114",
+    "text" : "RIP1 negated induction of IL-8",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-24438267",
+      "text" : "negated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "2040764419",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1900945141",
+        "text" : "IL-8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "2040764419",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL8",
+          "namespace" : "uniprot",
+          "id" : "P10145",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:251987466",
+        "text" : "RIP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "2040764419",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RIPK1",
+          "namespace" : "uniprot",
+          "id" : "Q13546",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1900945141" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "prep_of"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:1711785875" : [ {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:251987466" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "2040764419",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:942216514",
+    "text" : "RIP1 negated induction of IL-8 secretion as well as induction of caspase-8",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-24438267",
+      "text" : "negated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 19,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "2040764419",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1711785875",
+        "text" : "caspase-8",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 79,
+        "characterEndOffset" : 88,
+        "sentence" : 0,
+        "document" : "2040764419",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ICE-like apoptotic protease 5",
+          "namespace" : "uniprot",
+          "id" : "Q14790",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:251987466",
+        "text" : "RIP1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 18,
+        "sentence" : 0,
+        "document" : "2040764419",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "RIPK1",
+          "namespace" : "uniprot",
+          "id" : "Q13546",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1900945141" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "prep_of"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ],
+        "T:1711785875" : [ {
+          "source" : 3,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 14,
+          "relation" : "prep_of"
+        }, {
+          "source" : 14,
+          "destination" : 13,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:251987466" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 14
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 88,
+    "sentence" : 0,
+    "document" : "2040764419",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

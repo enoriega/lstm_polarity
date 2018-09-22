@@ -1,0 +1,213 @@
+{
+  "documents" : {
+    "-1666562694" : {
+      "id" : "sentence_annotator",
+      "text" : "IL-6 neutralising antibodies significantly reduced p-STAT3.",
+      "sentences" : [ {
+        "words" : [ "IL-6", "neutralising", "antibodies", "significantly", "reduced", "p-STAT3", "." ],
+        "startOffsets" : [ 0, 5, 18, 29, 43, 51, 58 ],
+        "endOffsets" : [ 4, 17, 28, 42, 50, 58, 59 ],
+        "tags" : [ "NNP", "NN", "NNS", "RB", "VBD", "NN", "." ],
+        "lemmas" : [ "IL-6", "neutralising", "antibody", "significantly", "reduce", "p-stat3", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-ADVP", "B-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1276769225",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 4,
+    "sentence" : 0,
+    "document" : "-1666562694",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:432336185",
+    "text" : "p-STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-1666562694",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2079044260",
+    "text" : "IL-6 neutralising antibodies significantly reduced p-STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1386326755",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 43,
+      "characterEndOffset" : 50,
+      "sentence" : 0,
+      "document" : "-1666562694",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:432336185",
+        "text" : "p-STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 58,
+        "sentence" : 0,
+        "document" : "-1666562694",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1276769225",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 4,
+        "sentence" : 0,
+        "document" : "-1666562694",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:432336185" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-1276769225" : [ {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 6
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 58,
+    "sentence" : 0,
+    "document" : "-1666562694",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

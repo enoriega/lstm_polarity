@@ -1,0 +1,281 @@
+{
+  "documents" : {
+    "-961170697" : {
+      "id" : "sentence_annotator",
+      "text" : "Ivacaftor increases CFTR channel activity and improves pulmonary function for individuals bearing a G551D mutation.",
+      "sentences" : [ {
+        "words" : [ "Ivacaftor", "increases", "CFTR", "channel", "activity", "and", "improves", "pulmonary", "function", "for", "individuals", "bearing", "a", "G551D", "mutation", "." ],
+        "startOffsets" : [ 0, 10, 20, 25, 33, 42, 46, 55, 65, 74, 78, 90, 98, 100, 106, 114 ],
+        "endOffsets" : [ 9, 19, 24, 32, 41, 45, 54, 64, 73, 77, 89, 97, 99, 105, 114, 115 ],
+        "tags" : [ "NNP", "VBZ", "NNP", "NN", "NN", "CC", "VBZ", "JJ", "NN", "IN", "NNS", "VBG", "DT", "NN", "NN", "." ],
+        "lemmas" : [ "Ivacaftor", "increase", "CFTR", "channel", "activity", "and", "improve", "pulmonary", "function", "for", "individual", "bear", "a", "g551d", "mutation", "." ],
+        "entities" : [ "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "cc"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "conj"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "vmod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 1,
+              "destination" : 6,
+              "relation" : "conj_and"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_for"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "vmod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 12,
+              "relation" : "det"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1466662587",
+    "text" : "Ivacaftor",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "-961170697",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "ivacaftor",
+      "namespace" : "pubchem",
+      "id" : "16220172",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:102711633",
+    "text" : "CFTR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 20,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-961170697",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "cAMP-dependent chloride channel",
+      "namespace" : "uniprot",
+      "id" : "P13569",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1141740287",
+    "text" : "Ivacaftor increases CFTR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1483771357",
+      "text" : "increases",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 10,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "-961170697",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:102711633",
+        "text" : "CFTR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 20,
+        "characterEndOffset" : 24,
+        "sentence" : 0,
+        "document" : "-961170697",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "cAMP-dependent chloride channel",
+          "namespace" : "uniprot",
+          "id" : "P13569",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1466662587",
+        "text" : "Ivacaftor",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "-961170697",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "ivacaftor",
+          "namespace" : "pubchem",
+          "id" : "16220172",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:102711633" : [ {
+          "source" : 1,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1466662587" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 24,
+    "sentence" : 0,
+    "document" : "-961170697",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,275 @@
+{
+  "documents" : {
+    "680805227" : {
+      "id" : "sentence_annotator",
+      "text" : "VHL mediated HIF-1alpha regulation is a major pathway involved in RCC biology and tumorigenesis.",
+      "sentences" : [ {
+        "words" : [ "VHL", "mediated", "HIF-1alpha", "regulation", "is", "a", "major", "pathway", "involved", "in", "RCC", "biology", "and", "tumorigenesis", "." ],
+        "startOffsets" : [ 0, 4, 13, 24, 35, 38, 40, 46, 54, 63, 66, 70, 78, 82, 95 ],
+        "endOffsets" : [ 3, 12, 23, 34, 37, 39, 45, 53, 62, 65, 69, 77, 81, 95, 96 ],
+        "tags" : [ "NN", "VBD", "NN", "NN", "VBZ", "DT", "JJ", "NN", "VBN", "IN", "NN", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "vhl", "mediate", "hif-1alpha", "regulation", "be", "a", "major", "pathway", "involve", "in", "rcc", "biology", "and", "tumorigenesis", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "O", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 7,
+              "destination" : 4,
+              "relation" : "cop"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "vmod"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 13,
+              "relation" : "prep_in"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-565532520",
+    "text" : "VHL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "680805227",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pVHL",
+      "namespace" : "uniprot",
+      "id" : "P40337",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1711600192",
+    "text" : "HIF-1alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "680805227",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HIF1-alpha",
+      "namespace" : "uniprot",
+      "id" : "Q16665",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-701793215",
+    "text" : "RCC",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 69,
+    "sentence" : 0,
+    "document" : "680805227",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "(7S,8S,10(1)R)-8-(2-carboxyethyl)-17-ethyl-19-formyl-10(1)-(methoxycarbonyl)-3,7,13,18-tetramethyl-2-vinyl-8,23-dihydro-7H-10,12-ethanobiladiene-ab-1,10(2)(21H)-dione",
+      "namespace" : "pubchem",
+      "id" : "10985033",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1336662243",
+    "text" : "VHL mediated HIF-1alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1161753382",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 12,
+      "sentence" : 0,
+      "document" : "680805227",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-565532520",
+        "text" : "VHL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "680805227",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pVHL",
+          "namespace" : "uniprot",
+          "id" : "P40337",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1711600192",
+        "text" : "HIF-1alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "680805227",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HIF1-alpha",
+          "namespace" : "uniprot",
+          "id" : "Q16665",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 3
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "680805227",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

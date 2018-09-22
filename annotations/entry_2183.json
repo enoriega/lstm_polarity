@@ -1,0 +1,378 @@
+{
+  "documents" : {
+    "-1667151600" : {
+      "id" : "sentence_annotator",
+      "text" : "Knockdown of p53 inhibits up-regulation of p21 and BAX.",
+      "sentences" : [ {
+        "words" : [ "Knockdown", "of", "p53", "inhibits", "up-regulation", "of", "p21", "and", "BAX", "." ],
+        "startOffsets" : [ 0, 10, 13, 17, 26, 40, 43, 47, 51, 54 ],
+        "endOffsets" : [ 9, 12, 16, 25, 39, 42, 46, 50, 54, 55 ],
+        "tags" : [ "NNP", "IN", "NN", "VBZ", "NN", "IN", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "Knockdown", "of", "p53", "inhibit", "up-regulation", "of", "p21", "and", "bax", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1411809887",
+    "text" : "p53",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 16,
+    "sentence" : 0,
+    "document" : "-1667151600",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Antigen NY-CO-13",
+      "namespace" : "uniprot",
+      "id" : "P04637",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1331216426",
+    "text" : "p21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 43,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1667151600",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "p21",
+      "namespace" : "uniprot",
+      "id" : "P38936",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-239684768",
+    "text" : "BAX",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1667151600",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:994595924",
+    "text" : "p53 inhibits up-regulation of p21",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1231225822",
+      "text" : "inhibits",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-1667151600",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1331216426",
+        "text" : "p21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 43,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "-1667151600",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "p21",
+          "namespace" : "uniprot",
+          "id" : "P38936",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1411809887",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 16,
+        "sentence" : 0,
+        "document" : "-1667151600",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1331216426" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "T:-239684768" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1411809887" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "-1667151600",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:797938680",
+    "text" : "p53 inhibits up-regulation of p21 and BAX",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1231225822",
+      "text" : "inhibits",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-1667151600",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-239684768",
+        "text" : "BAX",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1667151600",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1411809887",
+        "text" : "p53",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 16,
+        "sentence" : 0,
+        "document" : "-1667151600",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Antigen NY-CO-13",
+          "namespace" : "uniprot",
+          "id" : "P04637",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1331216426" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "prep_of"
+        } ],
+        "T:-239684768" : [ {
+          "source" : 3,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-1411809887" : [ {
+          "source" : 3,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 2,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 9
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1667151600",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

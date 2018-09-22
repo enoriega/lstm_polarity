@@ -1,0 +1,470 @@
+{
+  "documents" : {
+    "1499755004" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Based on our results, smoking can alter ApoA1 mediated reverse cholesterol transport in women.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Based", "on", "our", "results", ",", "smoking", "can", "alter", "ApoA1", "mediated", "reverse", "cholesterol", "transport", "in", "women", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 7, 10, 14, 21, 23, 31, 35, 41, 47, 56, 64, 76, 86, 89, 94, 95 ],
+        "endOffsets" : [ 1, 6, 9, 13, 21, 22, 30, 34, 40, 46, 55, 63, 75, 85, 88, 94, 95, 96 ],
+        "tags" : [ "``", "VBN", "IN", "PRP$", "NNS", ",", "NN", "MD", "VB", "NN", "VBN", "JJ", "NN", "NN", "IN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "base", "on", "we", "result", ",", "smoking", "can", "alter", "apoa1", "mediate", "reverse", "cholesterol", "transport", "in", "woman", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Simple_chemical", "B-BioProcess", "O", "B-Species", "O", "O" ],
+        "chunks" : [ "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "O", "B-VP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pcomp"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "poss"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "poss"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 2,
+              "relation" : "prepc_based_on"
+            }, {
+              "source" : 8,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 6,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "aux"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "vmod"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "dobj"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1384114189",
+    "text" : "ApoA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 46,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1718896724",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:395858286",
+    "text" : "transport",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 76,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cellular transport",
+      "namespace" : "go",
+      "id" : "GO:0006810",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-566493962",
+    "text" : "women",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2146327250",
+    "text" : "ApoA1 mediated reverse cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1226209776",
+      "text" : "mediated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 55,
+      "sentence" : 0,
+      "document" : "1499755004",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1718896724",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 75,
+        "sentence" : 0,
+        "document" : "1499755004",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1384114189",
+        "text" : "ApoA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1499755004",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:395858286" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        } ],
+        "T:1718896724" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1384114189" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 13
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 75,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-990519179",
+    "text" : "ApoA1 mediated reverse cholesterol transport",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1226209776",
+      "text" : "mediated",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 47,
+      "characterEndOffset" : 55,
+      "sentence" : 0,
+      "document" : "1499755004",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:395858286",
+        "text" : "transport",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 76,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "1499755004",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cellular transport",
+          "namespace" : "go",
+          "id" : "GO:0006810",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1384114189",
+        "text" : "ApoA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 41,
+        "characterEndOffset" : 46,
+        "sentence" : 0,
+        "document" : "1499755004",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:395858286" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        } ],
+        "T:1718896724" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "dobj"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1384114189" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "vmod"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 14
+    },
+    "characterStartOffset" : 41,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1499755004",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,379 @@
+{
+  "documents" : {
+    "-848111668" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Interestingly, inhibition of GDF11 signalling by follistatin substantially enhances muscle derived stem cell proliferation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Interestingly", ",", "inhibition", "of", "GDF11", "signalling", "by", "follistatin", "substantially", "enhances", "muscle", "derived", "stem", "cell", "proliferation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 14, 16, 27, 30, 36, 47, 50, 62, 76, 85, 92, 100, 105, 110, 123, 124 ],
+        "endOffsets" : [ 1, 14, 15, 26, 29, 35, 46, 49, 61, 75, 84, 91, 99, 104, 109, 123, 124, 125 ],
+        "tags" : [ "``", "RB", ",", "NN", "IN", "NN", "NN", "IN", "NN", "RB", "VBZ", "NN", "VBN", "NN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "interestingly", ",", "inhibition", "of", "gdf11", "signalling", "by", "follistatin", "substantially", "enhance", "muscle", "derive", "stem", "cell", "proliferation", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-TissueType", "O", "B-CellType", "I-CellType", "B-BioProcess", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "prep"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "vmod"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_by"
+            }, {
+              "source" : 10,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "vmod"
+            }, {
+              "source" : 12,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "nn"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1645954814",
+    "text" : "GDF11",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bone morphogenetic protein 11",
+      "namespace" : "uniprot",
+      "id" : "O95390",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-954658189",
+    "text" : "follistatin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 50,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "FST",
+      "namespace" : "uniprot",
+      "id" : "P19883",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1714720920",
+    "text" : "muscle",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 85,
+    "characterEndOffset" : 91,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Muscle",
+      "namespace" : "tissuelist",
+      "id" : "TS-0642",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-365049417",
+    "text" : "stem cell",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 15
+    },
+    "characterStartOffset" : 100,
+    "characterEndOffset" : 109,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "stem cell",
+      "namespace" : "cl",
+      "id" : "CL:0000034",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-2026349145",
+    "text" : "proliferation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "characterStartOffset" : 110,
+    "characterEndOffset" : 123,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell Multiplication",
+      "namespace" : "go",
+      "id" : "GO:0008283",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1477684687",
+    "text" : "GDF11 signalling by follistatin",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-864639523",
+      "text" : "signalling",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 46,
+      "sentence" : 0,
+      "document" : "-848111668",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1645954814",
+        "text" : "GDF11",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "-848111668",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bone morphogenetic protein 11",
+          "namespace" : "uniprot",
+          "id" : "O95390",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0642" ],
+          "CellType" : [ "cl:CL:0000034" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-954658189",
+        "text" : "follistatin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 50,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "-848111668",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "FST",
+          "namespace" : "uniprot",
+          "id" : "P19883",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0642" ],
+          "CellType" : [ "cl:CL:0000034" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1645954814" : [ {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-954658189" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_by"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 9
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-848111668",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_noun",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0642" ],
+      "CellType" : [ "cl:CL:0000034" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

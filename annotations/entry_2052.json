@@ -1,0 +1,351 @@
+{
+  "documents" : {
+    "-1935865702" : {
+      "id" : "sentence_annotator",
+      "text" : "Delivery of BACE1 siRNA appears to specifically reduce the cleavage of APP by inhibiting BACE1 activity.",
+      "sentences" : [ {
+        "words" : [ "Delivery", "of", "BACE1", "siRNA", "appears", "to", "specifically", "reduce", "the", "cleavage", "of", "APP", "by", "inhibiting", "BACE1", "activity", "." ],
+        "startOffsets" : [ 0, 9, 12, 18, 24, 32, 35, 48, 55, 59, 68, 71, 75, 78, 89, 95, 103 ],
+        "endOffsets" : [ 8, 11, 17, 23, 31, 34, 47, 54, 58, 67, 70, 74, 77, 88, 94, 103, 104 ],
+        "tags" : [ "NN", "IN", "NN", "NN", "VBZ", "TO", "RB", "VB", "DT", "NN", "IN", "NN", "IN", "VBG", "NN", "NN", "." ],
+        "lemmas" : [ "delivery", "of", "bace1", "sirna", "appear", "to", "specifically", "reduce", "the", "cleavage", "of", "app", "by", "inhibit", "bace1", "activity", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-VP", "I-VP", "I-VP", "I-VP", "B-NP", "I-NP", "B-PP", "B-NP", "B-PP", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "pcomp"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_of"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "xcomp"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "aux"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 13,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1266194368",
+    "text" : "BACE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-1935865702",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-412313251",
+    "text" : "APP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-1935865702",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AICD-50",
+      "namespace" : "uniprot",
+      "id" : "P05067",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1944582017",
+    "text" : "BACE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 89,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-1935865702",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-1266194368",
+      "text" : "BACE1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 12,
+      "characterEndOffset" : 17,
+      "sentence" : 0,
+      "document" : "-1935865702",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Beta-site APP cleaving enzyme 1",
+        "namespace" : "uniprot",
+        "id" : "P56817",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1211006889",
+    "text" : "BACE1 siRNA appears to specifically reduce the cleavage of APP",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-966312062",
+      "text" : "reduce",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 54,
+      "sentence" : 0,
+      "document" : "-1935865702",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-412313251",
+        "text" : "APP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "-1935865702",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AICD-50",
+          "namespace" : "uniprot",
+          "id" : "P05067",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1266194368",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 12,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-1935865702",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-412313251" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "prep_of"
+        } ],
+        "T:-1944582017" : [ {
+          "source" : 7,
+          "destination" : 13,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 13,
+          "destination" : 15,
+          "relation" : "dobj"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1266194368" : [ {
+          "source" : 4,
+          "destination" : 7,
+          "relation" : "xcomp"
+        }, {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_of"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 12
+    },
+    "characterStartOffset" : 12,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "-1935865702",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,389 @@
+{
+  "documents" : {
+    "597092869" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Noggin increased BMP-4 transcripts, suggesting autocrine control of BMP-4 expression.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Noggin", "increased", "BMP-4", "transcripts", ",", "suggesting", "autocrine", "control", "of", "BMP-4", "expression", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 18, 24, 35, 37, 48, 58, 66, 69, 75, 85, 86 ],
+        "endOffsets" : [ 1, 7, 17, 23, 35, 36, 47, 57, 65, 68, 74, 85, 86, 87 ],
+        "tags" : [ "``", "NN", "VBD", "NN", "NNS", ",", "VBG", "JJ", "NN", "IN", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "noggin", "increase", "bmp-4", "transcript", ",", "suggest", "autocrine", "control", "of", "bmp-4", "expression", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "prep"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "vmod"
+            }, {
+              "source" : 2,
+              "destination" : 13,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "amod"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-103335263",
+    "text" : "Noggin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "597092869",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "NOG",
+      "namespace" : "uniprot",
+      "id" : "Q13253",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1750110080",
+    "text" : "BMP-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 18,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "597092869",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DVR4",
+      "namespace" : "uniprot",
+      "id" : "P12644",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1341447296",
+    "text" : "BMP-4",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "597092869",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "DVR4",
+      "namespace" : "uniprot",
+      "id" : "P12644",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1750110080",
+      "text" : "BMP-4",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 23,
+      "sentence" : 0,
+      "document" : "597092869",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "DVR4",
+        "namespace" : "uniprot",
+        "id" : "P12644",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1213277767",
+    "text" : "Noggin increased BMP-4",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2074800843",
+      "text" : "increased",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 8,
+      "characterEndOffset" : 17,
+      "sentence" : 0,
+      "document" : "597092869",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1750110080",
+        "text" : "BMP-4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 18,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "597092869",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DVR4",
+          "namespace" : "uniprot",
+          "id" : "P12644",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-103335263",
+        "text" : "Noggin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 7,
+        "sentence" : 0,
+        "document" : "597092869",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "NOG",
+          "namespace" : "uniprot",
+          "id" : "Q13253",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1750110080" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "dobj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-103335263" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 23,
+    "sentence" : 0,
+    "document" : "597092869",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:1622705756",
+        "text" : "suggesting",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 37,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "597092869",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1752055644",
+    "text" : "BMP-4 expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1895391549",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 75,
+      "characterEndOffset" : 85,
+      "sentence" : 0,
+      "document" : "597092869",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1341447296",
+        "text" : "BMP-4",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 69,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "597092869",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "DVR4",
+          "namespace" : "uniprot",
+          "id" : "P12644",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-1341447296" : [ {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "characterStartOffset" : 69,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "597092869",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  } ]
+}

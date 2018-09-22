@@ -1,0 +1,569 @@
+{
+  "documents" : {
+    "-2136303811" : {
+      "id" : "sentence_annotator",
+      "text" : "We show that IL-6 reduced PCAT29 mRNA by activating STAT3 and miR-21.",
+      "sentences" : [ {
+        "words" : [ "We", "show", "that", "IL-6", "reduced", "PCAT29", "mRNA", "by", "activating", "STAT3", "and", "miR-21", "." ],
+        "startOffsets" : [ 0, 3, 8, 13, 18, 26, 33, 38, 41, 52, 58, 62, 68 ],
+        "endOffsets" : [ 2, 7, 12, 17, 25, 32, 37, 40, 51, 57, 61, 68, 69 ],
+        "tags" : [ "PRP", "VBP", "IN", "NN", "VBD", "NN", "NN", "IN", "VBG", "NN", "CC", "NN", "." ],
+        "lemmas" : [ "we", "show", "that", "il-6", "reduce", "pcat29", "mrna", "by", "activate", "stat3", "and", "mir-21", "." ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pcomp"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "mark"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 8,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1668431546",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1654525105",
+    "text" : "PCAT29 mRNA",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 7
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PCAT29 mRNA",
+      "namespace" : "uaz",
+      "id" : "UAZ00506",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1756955031",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 52,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-933408428",
+    "text" : "miR-21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "miR-21",
+      "namespace" : "uaz",
+      "id" : "UAZ00358",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-567357465",
+    "text" : "IL-6 reduced PCAT29 mRNA",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1952856130",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2136303811",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1654525105",
+        "text" : "PCAT29 mRNA",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 7
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PCAT29 mRNA",
+          "namespace" : "uaz",
+          "id" : "UAZ00506",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1668431546",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1654525105" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:-1756955031" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ],
+        "T:-933408428" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1668431546" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 7
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1486886480",
+    "text" : "IL-6 reduced PCAT29 mRNA by activating STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1952856130",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2136303811",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1756955031",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 52,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1668431546",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1654525105" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:-1756955031" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ],
+        "T:-933408428" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1668431546" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1442783331",
+    "text" : "IL-6 reduced PCAT29 mRNA by activating STAT3 and miR-21",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1952856130",
+      "text" : "reduced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 18,
+      "characterEndOffset" : 25,
+      "sentence" : 0,
+      "document" : "-2136303811",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-933408428",
+        "text" : "miR-21",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 68,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "miR-21",
+          "namespace" : "uaz",
+          "id" : "UAZ00358",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1668431546",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-2136303811",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1654525105" : [ {
+          "source" : 4,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 5,
+          "relation" : "nn"
+        } ],
+        "T:-1756955031" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        } ],
+        "T:-933408428" : [ {
+          "source" : 4,
+          "destination" : 8,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 8,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:1668431546" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 12
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 68,
+    "sentence" : 0,
+    "document" : "-2136303811",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

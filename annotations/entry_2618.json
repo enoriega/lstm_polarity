@@ -1,0 +1,309 @@
+{
+  "documents" : {
+    "-1257200987" : {
+      "id" : "sentence_annotator",
+      "text" : "Acute but Not Chronic TNF Induces a TNFR1 Dependent Loss of Paneth Cell Populations.",
+      "sentences" : [ {
+        "words" : [ "Acute", "but", "Not", "Chronic", "TNF", "Induces", "a", "TNFR1", "Dependent", "Loss", "of", "Paneth", "Cell", "Populations", "." ],
+        "startOffsets" : [ 0, 6, 10, 14, 22, 26, 34, 36, 42, 52, 57, 60, 67, 72, 83 ],
+        "endOffsets" : [ 5, 9, 13, 21, 25, 33, 35, 41, 51, 56, 59, 66, 71, 83, 84 ],
+        "tags" : [ "JJ", "CC", "RB", "JJ", "NN", "VBZ", "DT", "NN", "JJ", "NN", "IN", "NNP", "NNP", "NNPS", "." ],
+        "lemmas" : [ "acute", "but", "not", "chronic", "tnf", "induce", "a", "tnfr1", "dependent", "loss", "of", "Paneth", "Cell", "Populations", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-CellType", "I-CellType", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 2,
+              "relation" : "cc"
+            }, {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "conj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "prep"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "conj_negcc"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 11,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-106534181",
+    "text" : "TNF",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 25,
+    "sentence" : 0,
+    "document" : "-1257200987",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "C-domain 1",
+      "namespace" : "uniprot",
+      "id" : "P01375",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000510" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:2128875092",
+    "text" : "TNFR1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 36,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-1257200987",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TNF-R1",
+      "namespace" : "uniprot",
+      "id" : "P19438",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000510" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-683339753",
+    "text" : "Paneth Cell",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 71,
+    "sentence" : 0,
+    "document" : "-1257200987",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "paneth cells",
+      "namespace" : "cl",
+      "id" : "CL:0000510",
+      "species" : ""
+    },
+    "context" : {
+      "CellType" : [ "cl:CL:0000510" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-463134510",
+    "text" : "TNF Induces a TNFR1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1722794059",
+      "text" : "Induces",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 26,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "-1257200987",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:2128875092",
+        "text" : "TNFR1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 36,
+        "characterEndOffset" : 41,
+        "sentence" : 0,
+        "document" : "-1257200987",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TNF-R1",
+          "namespace" : "uniprot",
+          "id" : "P19438",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000510" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-106534181",
+        "text" : "TNF",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 25,
+        "sentence" : 0,
+        "document" : "-1257200987",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "C-domain 1",
+          "namespace" : "uniprot",
+          "id" : "P01375",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "CellType" : [ "cl:CL:0000510" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:2128875092" : [ {
+          "source" : 5,
+          "destination" : 9,
+          "relation" : "dobj"
+        }, {
+          "source" : 9,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-106534181" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 8
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 41,
+    "sentence" : 0,
+    "document" : "-1257200987",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "CellType" : [ "cl:CL:0000510" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

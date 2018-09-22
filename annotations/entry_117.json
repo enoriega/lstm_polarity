@@ -1,0 +1,469 @@
+{
+  "documents" : {
+    "1385936543" : {
+      "id" : "sentence_annotator",
+      "text" : "Tuberous sclerosis complex 1 (TSC1) and TSC2 are suppressors of mechanistic target of rapamycin (mTOR).",
+      "sentences" : [ {
+        "words" : [ "Tuberous", "sclerosis", "complex", "1", "(", "TSC1", ")", "and", "TSC2", "are", "suppressors", "of", "mechanistic", "target", "of", "rapamycin", "(", "mTOR", ")", "." ],
+        "startOffsets" : [ 0, 9, 19, 27, 29, 30, 34, 36, 40, 45, 49, 61, 64, 76, 83, 86, 96, 97, 101, 102 ],
+        "endOffsets" : [ 8, 18, 26, 28, 30, 34, 35, 39, 44, 48, 60, 63, 75, 82, 85, 95, 97, 101, 102, 103 ],
+        "tags" : [ "JJ", "NN", "NN", "CD", "-LRB-", "NN", "-RRB-", "CC", "NN", "VBP", "NNS", "IN", "JJ", "NN", "IN", "NN", "-LRB-", "NN", "-RRB-", "." ],
+        "lemmas" : [ "tuberous", "sclerosis", "complex", "1", "(", "tsc1", ")", "and", "tsc2", "be", "suppressor", "of", "mechanistic", "target", "of", "rapamycin", "(", "mtor", ")", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "I-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "cop"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "pobj"
+            }, {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 10 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 15,
+              "destination" : 17,
+              "relation" : "appos"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "num"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "conj_and"
+            }, {
+              "source" : 10,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "cop"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 15,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 10 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:934038753",
+    "text" : "sclerosis complex 1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 4
+    },
+    "characterStartOffset" : 9,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "sclerosis complex 1",
+      "namespace" : "uaz",
+      "id" : "UAZ00036",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1940806899",
+    "text" : "TSC1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TSC",
+      "namespace" : "uniprot",
+      "id" : "Q92574",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-132074544",
+    "text" : "TSC2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TSC2",
+      "namespace" : "uniprot",
+      "id" : "P49815",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:480027473",
+    "text" : "mechanistic target of rapamycin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 16
+    },
+    "characterStartOffset" : 64,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Rapamycin target protein 1",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1141650959",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 17,
+      "end" : 18
+    },
+    "characterStartOffset" : 97,
+    "characterEndOffset" : 101,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:480027473",
+      "text" : "mechanistic target of rapamycin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 16
+      },
+      "characterStartOffset" : 64,
+      "characterEndOffset" : 95,
+      "sentence" : 0,
+      "document" : "1385936543",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Rapamycin target protein 1",
+        "namespace" : "uniprot",
+        "id" : "P42345",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:406855303",
+    "text" : "TSC1) and TSC2 are suppressors of mechanistic target of rapamycin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1522116534",
+      "text" : "are suppressors",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 11
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "1385936543",
+      "keep" : true,
+      "foundBy" : "Negative_activation_copula_1"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1940806899",
+        "text" : "TSC1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 30,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "1385936543",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TSC",
+          "namespace" : "uniprot",
+          "id" : "Q92574",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:480027473",
+        "text" : "mechanistic target of rapamycin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 16
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "1385936543",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Rapamycin target protein 1",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:-1940806899" : [ {
+          "source" : 10,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-132074544" : [ {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:480027473" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 16
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "Negative_activation_copula_1",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:724684515",
+    "text" : "TSC2 are suppressors of mechanistic target of rapamycin",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1522116534",
+      "text" : "are suppressors",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 11
+      },
+      "characterStartOffset" : 45,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "1385936543",
+      "keep" : true,
+      "foundBy" : "Negative_activation_copula_1"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-132074544",
+        "text" : "TSC2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "1385936543",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TSC2",
+          "namespace" : "uniprot",
+          "id" : "P49815",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:480027473",
+        "text" : "mechanistic target of rapamycin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 16
+        },
+        "characterStartOffset" : 64,
+        "characterEndOffset" : 95,
+        "sentence" : 0,
+        "document" : "1385936543",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Rapamycin target protein 1",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controller" : {
+        "T:-1940806899" : [ {
+          "source" : 10,
+          "destination" : 5,
+          "relation" : "nsubj"
+        } ],
+        "T:-132074544" : [ {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nsubj"
+        } ]
+      },
+      "controlled" : {
+        "T:480027473" : [ {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 16
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 95,
+    "sentence" : 0,
+    "document" : "1385936543",
+    "keep" : true,
+    "foundBy" : "Negative_activation_copula_1",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

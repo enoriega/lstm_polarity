@@ -1,0 +1,237 @@
+{
+  "documents" : {
+    "-315648521" : {
+      "id" : "sentence_annotator",
+      "text" : "Neutralizing IL-6 was sufficient to block activation of STAT3.",
+      "sentences" : [ {
+        "words" : [ "Neutralizing", "IL-6", "was", "sufficient", "to", "block", "activation", "of", "STAT3", "." ],
+        "startOffsets" : [ 0, 13, 18, 22, 33, 36, 42, 53, 56, 61 ],
+        "endOffsets" : [ 12, 17, 21, 32, 35, 41, 52, 55, 61, 62 ],
+        "tags" : [ "VBG", "NN", "VBD", "JJ", "TO", "VB", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "neutralize", "il-6", "be", "sufficient", "to", "block", "activation", "of", "stat3", "." ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-ADJP", "B-VP", "I-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "cop"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 3 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "amod"
+            }, {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "cop"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "xcomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "aux"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 3 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-362209514",
+    "text" : "IL-6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "-315648521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "IL6",
+      "namespace" : "uniprot",
+      "id" : "P05231",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-487603401",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-315648521",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-805440620",
+    "text" : "IL-6 was sufficient to block activation of STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1064293972",
+      "text" : "block",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "-315648521",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-487603401",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 56,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "-315648521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-362209514",
+        "text" : "IL-6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "-315648521",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "IL6",
+          "namespace" : "uniprot",
+          "id" : "P05231",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-487603401" : [ {
+          "source" : 5,
+          "destination" : 6,
+          "relation" : "dobj"
+        }, {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-362209514" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "xcomp"
+        }, {
+          "source" : 3,
+          "destination" : 1,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 61,
+    "sentence" : 0,
+    "document" : "-315648521",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

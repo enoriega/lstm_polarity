@@ -1,0 +1,651 @@
+{
+  "documents" : {
+    "1088962801" : {
+      "id" : "sentence_annotator",
+      "text" : "There are data showing that aspirin mediated COX-2 inhibition suppresses angiogenesis and may trigger apoptosis.",
+      "sentences" : [ {
+        "words" : [ "There", "are", "data", "showing", "that", "aspirin", "mediated", "COX-2", "inhibition", "suppresses", "angiogenesis", "and", "may", "trigger", "apoptosis", "." ],
+        "startOffsets" : [ 0, 6, 10, 15, 23, 28, 36, 45, 51, 62, 73, 86, 90, 94, 102, 111 ],
+        "endOffsets" : [ 5, 9, 14, 22, 27, 35, 44, 50, 61, 72, 85, 89, 93, 101, 111, 112 ],
+        "tags" : [ "EX", "VBP", "NNS", "VBG", "IN", "NN", "VBD", "NN", "NN", "VBZ", "NN", "CC", "MD", "VB", "NN", "." ],
+        "lemmas" : [ "there", "be", "datum", "show", "that", "aspirin", "mediate", "cox-2", "inhibition", "suppress", "angiogenesis", "and", "may", "trigger", "apoptosis", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "O", "O", "B-BioProcess", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "O", "B-VP", "I-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "expl"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "conj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "expl"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 13,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 9,
+              "destination" : 13,
+              "relation" : "conj_and"
+            }, {
+              "source" : 13,
+              "destination" : 8,
+              "relation" : "nsubj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "aux"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-821907810",
+    "text" : "aspirin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "2-Acetoxybenzoate",
+      "namespace" : "pubchem",
+      "id" : "2244",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:820208744",
+    "text" : "COX-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 45,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PGHS-2",
+      "namespace" : "uniprot",
+      "id" : "P35354",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1624380181",
+    "text" : "angiogenesis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 73,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "neovascularization",
+      "namespace" : "go",
+      "id" : "GO:0001525",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:691674434",
+    "text" : "apoptosis",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 102,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "programmed cell death",
+      "namespace" : "go",
+      "id" : "GO:0006915",
+      "species" : "human"
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1019074129",
+    "text" : "aspirin mediated COX-2 inhibition suppresses angiogenesis and may trigger apoptosis",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:383817739",
+      "text" : "trigger",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 13,
+        "end" : 14
+      },
+      "characterStartOffset" : 94,
+      "characterEndOffset" : 101,
+      "sentence" : 0,
+      "document" : "1088962801",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:691674434",
+        "text" : "apoptosis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 102,
+        "characterEndOffset" : 111,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "programmed cell death",
+          "namespace" : "go",
+          "id" : "GO:0006915",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1331791987",
+        "text" : "aspirin mediated COX-2",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2074143726",
+          "text" : "mediated",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 6,
+            "end" : 7
+          },
+          "characterStartOffset" : 36,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "1088962801",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-821907810",
+            "text" : "aspirin",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "1088962801",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "2-Acetoxybenzoate",
+              "namespace" : "pubchem",
+              "id" : "2244",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:820208744",
+            "text" : "COX-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 45,
+            "characterEndOffset" : 50,
+            "sentence" : 0,
+            "document" : "1088962801",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PGHS-2",
+              "namespace" : "uniprot",
+              "id" : "P35354",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:691674434" : [ {
+          "source" : 13,
+          "destination" : 14,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:820208744" : [ {
+          "source" : 13,
+          "destination" : 8,
+          "relation" : "nsubj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "E:1331791987" : [ {
+          "source" : 13,
+          "destination" : 8,
+          "relation" : "nsubj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 15
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 111,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1331791987",
+    "text" : "aspirin mediated COX-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2074143726",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 36,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "1088962801",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-821907810",
+        "text" : "aspirin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "2-Acetoxybenzoate",
+          "namespace" : "pubchem",
+          "id" : "2244",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:820208744",
+        "text" : "COX-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 45,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PGHS-2",
+          "namespace" : "uniprot",
+          "id" : "P35354",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 50,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2001185089",
+    "text" : "aspirin mediated COX-2 inhibition suppresses angiogenesis",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-717346896",
+      "text" : "suppresses",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 72,
+      "sentence" : 0,
+      "document" : "1088962801",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1624380181",
+        "text" : "angiogenesis",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 73,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "neovascularization",
+          "namespace" : "go",
+          "id" : "GO:0001525",
+          "species" : "human"
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1331791987",
+        "text" : "aspirin mediated COX-2",
+        "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2074143726",
+          "text" : "mediated",
+          "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 6,
+            "end" : 7
+          },
+          "characterStartOffset" : 36,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "1088962801",
+          "keep" : true,
+          "foundBy" : "Positive_early_activation"
+        },
+        "arguments" : {
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-821907810",
+            "text" : "aspirin",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 5,
+              "end" : 6
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 35,
+            "sentence" : 0,
+            "document" : "1088962801",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "2-Acetoxybenzoate",
+              "namespace" : "pubchem",
+              "id" : "2244",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ],
+          "controlled" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:820208744",
+            "text" : "COX-2",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 45,
+            "characterEndOffset" : 50,
+            "sentence" : 0,
+            "document" : "1088962801",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "PGHS-2",
+              "namespace" : "uniprot",
+              "id" : "P35354",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 8
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 50,
+        "sentence" : 0,
+        "document" : "1088962801",
+        "keep" : true,
+        "foundBy" : "Positive_early_activation",
+        "displayLabel" : "Positive_activation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1624380181" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:820208744" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nsubj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ],
+        "E:1331791987" : [ {
+          "source" : 9,
+          "destination" : 8,
+          "relation" : "nsubj"
+        }, {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 11
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1088962801",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,665 @@
+{
+  "documents" : {
+    "824663930" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Explicitly, HG medium increases Bax expression, but does not modulate Bcl-2.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Explicitly", ",", "HG", "medium", "increases", "Bax", "expression", ",", "but", "does", "not", "modulate", "Bcl-2", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 11, 13, 16, 23, 33, 37, 47, 49, 53, 58, 62, 71, 76, 77 ],
+        "endOffsets" : [ 1, 11, 12, 15, 22, 32, 36, 47, 48, 52, 57, 61, 70, 76, 77, 78 ],
+        "tags" : [ "``", "RB", ",", "NNP", "NN", "VBZ", "NN", "NN", ",", "CC", "VBZ", "RB", "VB", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "explicitly", ",", "HG", "medium", "increase", "bax", "expression", ",", "but", "do", "not", "modulate", "bcl-2", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Simple_chemical", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "O", "B-VP", "I-VP", "I-VP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 12,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "neg"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 15,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 12,
+              "relation" : "conj_but"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 12,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "neg"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "dobj"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:249358297",
+    "text" : "HG medium increases Bax expression",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:168673529",
+      "text" : "increases",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 32,
+      "sentence" : 0,
+      "document" : "824663930",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1620430712",
+        "text" : "Bax expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1993772576",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 37,
+          "characterEndOffset" : 47,
+          "sentence" : 0,
+          "document" : "824663930",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:59989096",
+            "text" : "Bax",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 7
+            },
+            "characterStartOffset" : 33,
+            "characterEndOffset" : 36,
+            "sentence" : 0,
+            "document" : "824663930",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "BCL2L4",
+              "namespace" : "uniprot",
+              "id" : "Q07812",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:59989096" : [ {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 8
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1743894609",
+        "text" : "HG",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 15,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Histidinyl-Glycine",
+          "namespace" : "pubchem",
+          "id" : "101179",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:1620430712" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1743894609" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 8
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1743894609",
+    "text" : "HG",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 15,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Histidinyl-Glycine",
+      "namespace" : "pubchem",
+      "id" : "101179",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:59989096",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:983687324",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1620430712",
+    "text" : "Bax expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1993772576",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 47,
+      "sentence" : 0,
+      "document" : "824663930",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:59989096",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 33,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:59989096" : [ {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 8
+    },
+    "characterStartOffset" : 33,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:866762979",
+    "text" : "HG medium increases Bax expression, but does not modulate Bcl-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:986403987",
+      "text" : "modulate",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 62,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "824663930",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:983687324",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 76,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:249358297",
+        "text" : "HG medium increases Bax expression",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:168673529",
+          "text" : "increases",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 23,
+          "characterEndOffset" : 32,
+          "sentence" : 0,
+          "document" : "824663930",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:1620430712",
+            "text" : "Bax expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:1993772576",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 37,
+              "characterEndOffset" : 47,
+              "sentence" : 0,
+              "document" : "824663930",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:59989096",
+                "text" : "Bax",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 6,
+                  "end" : 7
+                },
+                "characterStartOffset" : 33,
+                "characterEndOffset" : 36,
+                "sentence" : 0,
+                "document" : "824663930",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "BCL2L4",
+                  "namespace" : "uniprot",
+                  "id" : "Q07812",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:59989096" : [ {
+                  "source" : 7,
+                  "destination" : 6,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 6,
+              "end" : 8
+            },
+            "characterStartOffset" : 33,
+            "characterEndOffset" : 47,
+            "sentence" : 0,
+            "document" : "824663930",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-1743894609",
+            "text" : "HG",
+            "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 13,
+            "characterEndOffset" : 15,
+            "sentence" : 0,
+            "document" : "824663930",
+            "keep" : true,
+            "foundBy" : "ner-simple_chemical-entities",
+            "grounding" : {
+              "text" : "Histidinyl-Glycine",
+              "namespace" : "pubchem",
+              "id" : "101179",
+              "species" : ""
+            },
+            "displayLabel" : "Simple_chemical"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:1620430712" : [ {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:-1743894609" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 8
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:983687324" : [ {
+          "source" : 12,
+          "destination" : 13,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "E:249358297" : [ {
+          "source" : 12,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ],
+        "T:-1743894609" : [ {
+          "source" : 12,
+          "destination" : 4,
+          "relation" : "nsubj"
+        }, {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 14
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "824663930",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-2075112931",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 58,
+        "characterEndOffset" : 61,
+        "sentence" : 0,
+        "document" : "824663930",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

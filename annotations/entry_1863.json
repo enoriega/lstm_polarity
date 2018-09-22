@@ -1,0 +1,293 @@
+{
+  "documents" : {
+    "845729568" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Following synthesis, apoA-I is lipid-poor, but begins to sequester phospholipids and some free cholesterol.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Following", "synthesis", ",", "apoA-I", "is", "lipid-poor", ",", "but", "begins", "to", "sequester", "phospholipids", "and", "some", "free", "cholesterol", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 11, 20, 22, 29, 32, 42, 44, 48, 55, 58, 68, 82, 86, 91, 96, 107, 108 ],
+        "endOffsets" : [ 1, 10, 20, 21, 28, 31, 42, 43, 47, 54, 57, 67, 81, 85, 90, 95, 107, 108, 109 ],
+        "tags" : [ "``", "VBG", "NN", ",", "NN", "VBZ", "JJ", ",", "CC", "VBZ", "TO", "VB", "NNS", "CC", "DT", "JJ", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "follow", "synthesis", ",", "apoa-i", "be", "lipid-poor", ",", "but", "begin", "to", "sequester", "phospholipid", "and", "some", "free", "cholesterol", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-Simple_chemical", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "O", "B-NP", "B-VP", "B-ADJP", "O", "O", "B-VP", "I-VP", "I-VP", "B-NP", "O", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "pobj"
+            }, {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "cop"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 13,
+              "relation" : "cc"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "det"
+            } ],
+            "roots" : [ 6 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 6,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 2,
+              "relation" : "prep_following"
+            }, {
+              "source" : 6,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "cop"
+            }, {
+              "source" : 6,
+              "destination" : 9,
+              "relation" : "conj_but"
+            }, {
+              "source" : 9,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "xcomp"
+            }, {
+              "source" : 11,
+              "destination" : 16,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "aux"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 16,
+              "relation" : "conj_and"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "amod"
+            }, {
+              "source" : 16,
+              "destination" : 14,
+              "relation" : "det"
+            } ],
+            "roots" : [ 6 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:631390469",
+    "text" : "apoA-I",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 28,
+    "sentence" : 0,
+    "document" : "845729568",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1149848972",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 96,
+    "characterEndOffset" : 107,
+    "sentence" : 0,
+    "document" : "845729568",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1334387889",
+    "text" : "apoA-I is lipid-poor, but begins to sequester phospholipids and some free cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:482048042",
+      "text" : "sequester",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 58,
+      "characterEndOffset" : 67,
+      "sentence" : 0,
+      "document" : "845729568",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1149848972",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 16,
+          "end" : 17
+        },
+        "characterStartOffset" : 96,
+        "characterEndOffset" : 107,
+        "sentence" : 0,
+        "document" : "845729568",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:631390469",
+        "text" : "apoA-I",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 22,
+        "characterEndOffset" : 28,
+        "sentence" : 0,
+        "document" : "845729568",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1149848972" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 16,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:631390469" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "xcomp"
+        }, {
+          "source" : 9,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 17
+    },
+    "characterStartOffset" : 22,
+    "characterEndOffset" : 107,
+    "sentence" : 0,
+    "document" : "845729568",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

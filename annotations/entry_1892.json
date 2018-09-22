@@ -1,0 +1,1125 @@
+{
+  "documents" : {
+    "-1444053470" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Mutations in ABCA1, APOA1, and LCAT reduce HDL cholesterol (HDLc) in humans.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Mutations", "in", "ABCA1", ",", "APOA1", ",", "and", "LCAT", "reduce", "HDL", "cholesterol", "(", "HDLc", ")", "in", "humans", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 11, 14, 19, 21, 26, 28, 32, 37, 44, 48, 60, 61, 65, 67, 70, 76, 77 ],
+        "endOffsets" : [ 1, 10, 13, 19, 20, 26, 27, 31, 36, 43, 47, 59, 61, 65, 66, 69, 76, 77, 78 ],
+        "tags" : [ "``", "NNS", "IN", "NN", ",", "NN", ",", "CC", "NN", "VB", "NN", "NN", "-LRB-", "NN", "-RRB-", "IN", "NNS", ".", "''" ],
+        "lemmas" : [ "\"", "mutation", "in", "abca1", ",", "apoa1", ",", "and", "lcat", "reduce", "hdl", "cholesterol", "(", "hdlc", ")", "in", "human", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "B-Simple_chemical", "O", "B-Gene_or_gene_product", "O", "O", "B-Species", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "O", "B-NP", "O", "O", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "conj"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 15,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "appos"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "prep_in"
+            }, {
+              "source" : 1,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "conj_and"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 18,
+              "relation" : "punct"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 11,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "appos"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:805995419",
+    "text" : "ABCA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "ABCA1",
+      "namespace" : "uniprot",
+      "id" : "O95477",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1953952716",
+    "text" : "APOA1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Apolipoprotein A1",
+      "namespace" : "uniprot",
+      "id" : "P02647",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:87885809",
+    "text" : "LCAT",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 36,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Lecithin-cholesterol acyltransferase",
+      "namespace" : "uniprot",
+      "id" : "P04180",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:504425611",
+    "text" : "HDL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HDL",
+      "namespace" : "be",
+      "id" : "HDL",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:136968167",
+    "text" : "cholesterol",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 48,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Cholesteryl alcohol",
+      "namespace" : "pubchem",
+      "id" : "11025495",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:308006382",
+    "text" : "HDLc",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "hdlC",
+      "namespace" : "uniprot",
+      "id" : "P84621",
+      "species" : "archaeoglobus profundus (strain dsm 5631 / jcm 9629 / nbrc 100127 / av18)"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:322740863",
+    "text" : "humans",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 76,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1916717027",
+    "text" : "ABCA1, APOA1, and LCAT reduce HDL",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:504425611",
+        "text" : "HDL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDL",
+          "namespace" : "be",
+          "id" : "HDL",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:805995419",
+        "text" : "ABCA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ABCA1",
+          "namespace" : "uniprot",
+          "id" : "O95477",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 11
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1193613087",
+    "text" : "ABCA1, APOA1, and LCAT reduce HDL cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:136968167",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:805995419",
+        "text" : "ABCA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "ABCA1",
+          "namespace" : "uniprot",
+          "id" : "O95477",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 12
+    },
+    "characterStartOffset" : 14,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1862373388",
+    "text" : "APOA1, and LCAT reduce HDL",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:504425611",
+        "text" : "HDL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDL",
+          "namespace" : "be",
+          "id" : "HDL",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1953952716",
+        "text" : "APOA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 11
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1135294774",
+    "text" : "APOA1, and LCAT reduce HDL cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:136968167",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1953952716",
+        "text" : "APOA1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 21,
+        "characterEndOffset" : 26,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Apolipoprotein A1",
+          "namespace" : "uniprot",
+          "id" : "P02647",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 12
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-854387041",
+    "text" : "LCAT reduce HDL",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:504425611",
+        "text" : "HDL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 47,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HDL",
+          "namespace" : "be",
+          "id" : "HDL",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:87885809",
+        "text" : "LCAT",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Lecithin-cholesterol acyltransferase",
+          "namespace" : "uniprot",
+          "id" : "P04180",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 11
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 47,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1480908290",
+    "text" : "LCAT reduce HDL cholesterol",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1946941741",
+      "text" : "reduce",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 37,
+      "characterEndOffset" : 43,
+      "sentence" : 0,
+      "document" : "-1444053470",
+      "keep" : true,
+      "foundBy" : "Negative_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:136968167",
+        "text" : "cholesterol",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 48,
+        "characterEndOffset" : 59,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Cholesteryl alcohol",
+          "namespace" : "pubchem",
+          "id" : "11025495",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:87885809",
+        "text" : "LCAT",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 32,
+        "characterEndOffset" : 36,
+        "sentence" : 0,
+        "document" : "-1444053470",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Lecithin-cholesterol acyltransferase",
+          "namespace" : "uniprot",
+          "id" : "P04180",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:136968167" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        } ],
+        "T:504425611" : [ {
+          "source" : 9,
+          "destination" : 11,
+          "relation" : "dobj"
+        }, {
+          "source" : 11,
+          "destination" : 10,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:805995419" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 3,
+          "relation" : "prep_in"
+        } ],
+        "T:1953952716" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 5,
+          "relation" : "prep_in"
+        } ],
+        "T:87885809" : [ {
+          "source" : 9,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 12
+    },
+    "characterStartOffset" : 32,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-1444053470",
+    "keep" : true,
+    "foundBy" : "Negative_activation_syntax_1_verb",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

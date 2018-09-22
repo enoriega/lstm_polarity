@@ -1,0 +1,241 @@
+{
+  "documents" : {
+    "-1544450309" : {
+      "id" : "sentence_annotator",
+      "text" : "The phosphotase PTEN is induced by PPAR-gamma [XREF_BIBR].",
+      "sentences" : [ {
+        "words" : [ "The", "phosphotase", "PTEN", "is", "induced", "by", "PPAR-gamma", "[", "XREF_BIBR", "]", "." ],
+        "startOffsets" : [ 0, 4, 16, 21, 24, 32, 35, 46, 47, 56, 57 ],
+        "endOffsets" : [ 3, 15, 20, 23, 31, 34, 45, 47, 56, 57, 58 ],
+        "tags" : [ "DT", "NN", "NN", "VBZ", "VBN", "IN", "NN", "CD", "NN", "NN", "." ],
+        "lemmas" : [ "the", "phosphotase", "pten", "be", "induce", "by", "ppar-gamma", "[", "xref_bibr", "]", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "I-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "num"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 2,
+              "relation" : "nsubjpass"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "auxpass"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "agent"
+            }, {
+              "source" : 9,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 7,
+              "relation" : "num"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:819190823",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 20,
+    "sentence" : 0,
+    "document" : "-1544450309",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-35789790",
+    "text" : "PPAR-gamma",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 35,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-1544450309",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PPAR-gamma",
+      "namespace" : "uniprot",
+      "id" : "P37231",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1316328089",
+    "text" : "PTEN is induced by PPAR-gamma",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:277259840",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 24,
+      "characterEndOffset" : 31,
+      "sentence" : 0,
+      "document" : "-1544450309",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_2_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:819190823",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 20,
+        "sentence" : 0,
+        "document" : "-1544450309",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-35789790",
+        "text" : "PPAR-gamma",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 35,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "-1544450309",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PPAR-gamma",
+          "namespace" : "uniprot",
+          "id" : "P37231",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:819190823" : [ {
+          "source" : 4,
+          "destination" : 2,
+          "relation" : "nsubjpass"
+        } ]
+      },
+      "controller" : {
+        "T:-35789790" : [ {
+          "source" : 4,
+          "destination" : 9,
+          "relation" : "agent"
+        }, {
+          "source" : 9,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 7
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-1544450309",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_2_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

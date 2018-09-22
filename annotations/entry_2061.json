@@ -1,0 +1,1129 @@
+{
+  "documents" : {
+    "626610441" : {
+      "id" : "sentence_annotator",
+      "text" : "\"PKCdelta knockdown reduces BACE1 expression, BACE1 mediated APP processing, and Abeta production.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "PKCdelta", "knockdown", "reduces", "BACE1", "expression", ",", "BACE1", "mediated", "APP", "processing", ",", "and", "Abeta", "production", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 10, 20, 28, 34, 44, 46, 52, 61, 65, 75, 77, 81, 87, 97, 98 ],
+        "endOffsets" : [ 1, 9, 19, 27, 33, 44, 45, 51, 60, 64, 75, 76, 80, 86, 97, 98, 99 ],
+        "tags" : [ "``", "NN", "NN", "VBZ", "NN", "NN", ",", "NN", "VBD", "NN", "NN", ",", "CC", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "pkcdelta", "knockdown", "reduce", "bace1", "expression", ",", "bace1", "mediate", "app", "processing", ",", "and", "abeta", "production", ".", "\"" ],
+        "entities" : [ "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "O", "O", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "conj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 8,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "ccomp"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 8,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 14,
+              "relation" : "conj_and"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 8 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:1730046642",
+    "text" : "PKCdelta knockdown reduces BACE1 expression, BACE1 mediated",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-748900803",
+      "text" : "mediated",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:179949343",
+        "text" : "PKCdelta knockdown reduces BACE1 expression",
+        "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-779433604",
+          "text" : "reduces",
+          "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 3,
+            "end" : 4
+          },
+          "characterStartOffset" : 20,
+          "characterEndOffset" : 27,
+          "sentence" : 0,
+          "document" : "626610441",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:893139936",
+            "text" : "BACE1 expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1695324369",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 34,
+              "characterEndOffset" : 44,
+              "sentence" : 0,
+              "document" : "626610441",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-165109297",
+                "text" : "BACE1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 4,
+                  "end" : 5
+                },
+                "characterStartOffset" : 28,
+                "characterEndOffset" : 33,
+                "sentence" : 0,
+                "document" : "626610441",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Beta-site APP cleaving enzyme 1",
+                  "namespace" : "uniprot",
+                  "id" : "P56817",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-165109297" : [ {
+                  "source" : 5,
+                  "destination" : 4,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 6
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 44,
+            "sentence" : 0,
+            "document" : "626610441",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1676460630",
+            "text" : "PKCdelta",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 1,
+              "end" : 2
+            },
+            "characterStartOffset" : 1,
+            "characterEndOffset" : 9,
+            "sentence" : 0,
+            "document" : "626610441",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Pkcdelta",
+              "namespace" : "uniprot",
+              "id" : "P83099",
+              "species" : "drosophila melanogaster"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:893139936" : [ {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1676460630" : [ {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 6
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Positive_regulation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1247285399",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:179949343" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "ccomp"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:893139936" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "ccomp"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:-266787845" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "ccomp"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:1123032423" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1247285399" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ],
+        "E:1123032423" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ],
+        "E:-266787845" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-266787845",
+    "text" : "BACE1 expression, BACE1 mediated",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:525911027",
+      "text" : "mediated",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "Positive_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:893139936",
+        "text" : "BACE1 expression",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:-1695324369",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 34,
+          "characterEndOffset" : 44,
+          "sentence" : 0,
+          "document" : "626610441",
+          "keep" : true,
+          "foundBy" : "expression_1"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-165109297",
+            "text" : "BACE1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 33,
+            "sentence" : 0,
+            "document" : "626610441",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Beta-site APP cleaving enzyme 1",
+              "namespace" : "uniprot",
+              "id" : "P56817",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-165109297" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 6
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 44,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "expression_1",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1247285399",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:893139936" : [ {
+          "source" : 8,
+          "destination" : 3,
+          "relation" : "ccomp"
+        }, {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:1123032423" : [ {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1247285399" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ],
+        "E:1123032423" : [ {
+          "source" : 8,
+          "destination" : 7,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "Positive_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-521647962",
+    "text" : "PKCdelta knockdown reduces BACE1 expression, BACE1 mediated",
+    "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-779433604",
+      "text" : "reduces",
+      "labels" : [ "Positive_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 27,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-266787845",
+        "text" : "BACE1 expression, BACE1 mediated",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:525911027",
+          "text" : "mediated",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 8,
+            "end" : 9
+          },
+          "characterStartOffset" : 52,
+          "characterEndOffset" : 60,
+          "sentence" : 0,
+          "document" : "626610441",
+          "keep" : true,
+          "foundBy" : "Positive_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:893139936",
+            "text" : "BACE1 expression",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:-1695324369",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 5,
+                "end" : 6
+              },
+              "characterStartOffset" : 34,
+              "characterEndOffset" : 44,
+              "sentence" : 0,
+              "document" : "626610441",
+              "keep" : true,
+              "foundBy" : "expression_1"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:-165109297",
+                "text" : "BACE1",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 4,
+                  "end" : 5
+                },
+                "characterStartOffset" : 28,
+                "characterEndOffset" : 33,
+                "sentence" : 0,
+                "document" : "626610441",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "Beta-site APP cleaving enzyme 1",
+                  "namespace" : "uniprot",
+                  "id" : "P56817",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:-165109297" : [ {
+                  "source" : 5,
+                  "destination" : 4,
+                  "relation" : "nn"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 6
+            },
+            "characterStartOffset" : 28,
+            "characterEndOffset" : 44,
+            "sentence" : 0,
+            "document" : "626610441",
+            "keep" : true,
+            "foundBy" : "expression_1",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1247285399",
+            "text" : "BACE1",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 8
+            },
+            "characterStartOffset" : 46,
+            "characterEndOffset" : 51,
+            "sentence" : 0,
+            "document" : "626610441",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "Beta-site APP cleaving enzyme 1",
+              "namespace" : "uniprot",
+              "id" : "P56817",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:893139936" : [ {
+              "source" : 8,
+              "destination" : 3,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ],
+            "E:1123032423" : [ {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ]
+          },
+          "controller" : {
+            "T:1247285399" : [ {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            } ],
+            "E:1123032423" : [ {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 9
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 60,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "Positive_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1676460630",
+        "text" : "PKCdelta",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 1,
+          "end" : 2
+        },
+        "characterStartOffset" : 1,
+        "characterEndOffset" : 9,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Pkcdelta",
+          "namespace" : "uniprot",
+          "id" : "P83099",
+          "species" : "drosophila melanogaster"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:893139936" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:-266787845" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "E:179949343" : [ {
+          "source" : 3,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:179949343" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ],
+        "T:1676460630" : [ {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nsubj"
+        }, {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 9
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 60,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Positive_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1676460630",
+    "text" : "PKCdelta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 1,
+      "end" : 2
+    },
+    "characterStartOffset" : 1,
+    "characterEndOffset" : 9,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Pkcdelta",
+      "namespace" : "uniprot",
+      "id" : "P83099",
+      "species" : "drosophila melanogaster"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-165109297",
+    "text" : "BACE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1247285399",
+    "text" : "BACE1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Beta-site APP cleaving enzyme 1",
+      "namespace" : "uniprot",
+      "id" : "P56817",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:-165109297",
+      "text" : "BACE1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 33,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Beta-site APP cleaving enzyme 1",
+        "namespace" : "uniprot",
+        "id" : "P56817",
+        "species" : "homo sapiens"
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1954284687",
+    "text" : "APP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "AICD-50",
+      "namespace" : "uniprot",
+      "id" : "P05067",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1601144288",
+    "text" : "Abeta",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 81,
+    "characterEndOffset" : 86,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "A-beta",
+      "namespace" : "uniprot",
+      "id" : "O73683",
+      "species" : "chelonodon fluviatilis"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:893139936",
+    "text" : "BACE1 expression",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1695324369",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 34,
+      "characterEndOffset" : 44,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "expression_1"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-165109297",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-165109297" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 6
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 44,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "expression_1",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1123032423",
+    "text" : "BACE1 mediated APP",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1188970559",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 8,
+        "end" : 9
+      },
+      "characterStartOffset" : 52,
+      "characterEndOffset" : 60,
+      "sentence" : 0,
+      "document" : "626610441",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1247285399",
+        "text" : "BACE1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Beta-site APP cleaving enzyme 1",
+          "namespace" : "uniprot",
+          "id" : "P56817",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1954284687",
+        "text" : "APP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 61,
+        "characterEndOffset" : 64,
+        "sentence" : 0,
+        "document" : "626610441",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "AICD-50",
+          "namespace" : "uniprot",
+          "id" : "P05067",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 64,
+    "sentence" : 0,
+    "document" : "626610441",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

@@ -1,0 +1,647 @@
+{
+  "documents" : {
+    "377739756" : {
+      "id" : "sentence_annotator",
+      "text" : "AKT phosphorylation promotes B cell survival by inactivating transcription factor FOXO1 3.",
+      "sentences" : [ {
+        "words" : [ "AKT", "phosphorylation", "promotes", "B", "cell", "survival", "by", "inactivating", "transcription", "factor", "FOXO1", "3", "." ],
+        "startOffsets" : [ 0, 4, 20, 29, 31, 36, 45, 48, 61, 75, 82, 88, 89 ],
+        "endOffsets" : [ 3, 19, 28, 30, 35, 44, 47, 60, 74, 81, 87, 89, 90 ],
+        "tags" : [ "NN", "NN", "VBZ", "NN", "NN", "NN", "IN", "VBG", "NN", "NN", "NN", "CD", "." ],
+        "lemmas" : [ "akt", "phosphorylation", "promote", "b", "cell", "survival", "by", "inactivate", "transcription", "factor", "foxo1", "3", "." ],
+        "entities" : [ "B-Family", "O", "O", "B-TissueType", "I-TissueType", "O", "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-PP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pcomp"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "prepc_by"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1756272276",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 3,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:191407317",
+    "text" : "B cell",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 5
+    },
+    "characterStartOffset" : 29,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "B lymphocyte",
+      "namespace" : "tissuelist",
+      "id" : "TS-0068",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-904303577",
+    "text" : "transcription",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 61,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "DNA-dependent transcription",
+      "namespace" : "go",
+      "id" : "GO:0006351",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1153721088",
+    "text" : "FOXO1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 82,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Forkhead box protein O1",
+      "namespace" : "uniprot",
+      "id" : "Q12778",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-2128115400",
+    "text" : "AKT phosphorylation promotes B cell survival by inactivating transcription",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-843705710",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "377739756",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-904303577",
+        "text" : "transcription",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 61,
+        "characterEndOffset" : 74,
+        "sentence" : 0,
+        "document" : "377739756",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "DNA-dependent transcription",
+          "namespace" : "go",
+          "id" : "GO:0006351",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0068" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1075014446",
+        "text" : "AKT phosphorylation",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:868503993",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "377739756",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1756272276",
+            "text" : "AKT",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 3,
+            "sentence" : 0,
+            "document" : "377739756",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PI3K-AKT",
+              "namespace" : "be",
+              "id" : "AKT",
+              "species" : ""
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0068" ]
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1756272276" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "377739756",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_4_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1153721088" : [ {
+          "source" : 2,
+          "destination" : 7,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:-904303577" : [ {
+          "source" : 2,
+          "destination" : 7,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1075014446" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1756272276" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 9
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 74,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1019853474",
+    "text" : "AKT phosphorylation promotes B cell survival by inactivating transcription factor FOXO1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-843705710",
+      "text" : "promotes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 20,
+      "characterEndOffset" : 28,
+      "sentence" : 0,
+      "document" : "377739756",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1153721088",
+        "text" : "FOXO1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 82,
+        "characterEndOffset" : 87,
+        "sentence" : 0,
+        "document" : "377739756",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Forkhead box protein O1",
+          "namespace" : "uniprot",
+          "id" : "Q12778",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0068" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1075014446",
+        "text" : "AKT phosphorylation",
+        "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:868503993",
+          "text" : "phosphorylation",
+          "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 1,
+            "end" : 2
+          },
+          "characterStartOffset" : 4,
+          "characterEndOffset" : 19,
+          "sentence" : 0,
+          "document" : "377739756",
+          "keep" : true,
+          "foundBy" : "Phosphorylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1756272276",
+            "text" : "AKT",
+            "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 0,
+              "end" : 1
+            },
+            "characterStartOffset" : 0,
+            "characterEndOffset" : 3,
+            "sentence" : 0,
+            "document" : "377739756",
+            "keep" : true,
+            "foundBy" : "ner-family-entities",
+            "grounding" : {
+              "text" : "PI3K-AKT",
+              "namespace" : "be",
+              "id" : "AKT",
+              "species" : ""
+            },
+            "context" : {
+              "TissueType" : [ "tissuelist:TS-0068" ]
+            },
+            "displayLabel" : "Family"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1756272276" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 2
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "377739756",
+        "keep" : true,
+        "foundBy" : "Phosphorylation_syntax_4_noun",
+        "displayLabel" : "Phosphorylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1153721088" : [ {
+          "source" : 2,
+          "destination" : 7,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:-904303577" : [ {
+          "source" : 2,
+          "destination" : 7,
+          "relation" : "prepc_by"
+        }, {
+          "source" : 7,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "E:1075014446" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ],
+        "T:1756272276" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 11
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 87,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1075014446",
+    "text" : "AKT phosphorylation",
+    "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:868503993",
+      "text" : "phosphorylation",
+      "labels" : [ "Phosphorylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 1,
+        "end" : 2
+      },
+      "characterStartOffset" : 4,
+      "characterEndOffset" : 19,
+      "sentence" : 0,
+      "document" : "377739756",
+      "keep" : true,
+      "foundBy" : "Phosphorylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1756272276",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 3,
+        "sentence" : 0,
+        "document" : "377739756",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0068" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1756272276" : [ {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 2
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "377739756",
+    "keep" : true,
+    "foundBy" : "Phosphorylation_syntax_4_noun",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0068" ]
+    },
+    "displayLabel" : "Phosphorylation",
+    "isDirect" : false
+  } ]
+}

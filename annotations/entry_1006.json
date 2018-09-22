@@ -1,0 +1,469 @@
+{
+  "documents" : {
+    "1288241873" : {
+      "id" : "sentence_annotator",
+      "text" : "Nitrite circumvents the rapamycin induced attenuation of myoblast proliferation and enhances mTOR activity.",
+      "sentences" : [ {
+        "words" : [ "Nitrite", "circumvents", "the", "rapamycin", "induced", "attenuation", "of", "myoblast", "proliferation", "and", "enhances", "mTOR", "activity", "." ],
+        "startOffsets" : [ 0, 8, 20, 24, 34, 42, 54, 57, 66, 80, 84, 93, 98, 106 ],
+        "endOffsets" : [ 7, 19, 23, 33, 41, 53, 56, 65, 79, 83, 92, 97, 106, 107 ],
+        "tags" : [ "NNP", "VBZ", "DT", "NN", "VBD", "NN", "IN", "NN", "NN", "CC", "VBZ", "NN", "NN", "." ],
+        "lemmas" : [ "Nitrite", "circumvent", "the", "rapamycin", "induce", "attenuation", "of", "myoblast", "proliferation", "and", "enhance", "mtor", "activity", "." ],
+        "entities" : [ "B-Simple_chemical", "O", "O", "B-Simple_chemical", "O", "O", "O", "B-TissueType", "B-BioProcess", "O", "O", "B-Gene_or_gene_product", "O", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "O", "B-VP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 4,
+              "relation" : "ccomp"
+            }, {
+              "source" : 1,
+              "destination" : 10,
+              "relation" : "ccomp"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "det"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:227386310",
+    "text" : "Nitrite",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Nitrogen dioxide",
+      "namespace" : "pubchem",
+      "id" : "946",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1884506368",
+    "text" : "rapamycin",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 33,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Antibiotic AY 22989",
+      "namespace" : "pubchem",
+      "id" : "5284616",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1971239482",
+    "text" : "myoblast",
+    "labels" : [ "TissueType", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 57,
+    "characterEndOffset" : 65,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "ner-tissue-type",
+    "grounding" : {
+      "text" : "Myoblast",
+      "namespace" : "tissuelist",
+      "id" : "TS-0650",
+      "species" : ""
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "TissueType"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1589556491",
+    "text" : "proliferation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 66,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "cell Multiplication",
+      "namespace" : "go",
+      "id" : "GO:0008283",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:462745235",
+    "text" : "mTOR",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 93,
+    "characterEndOffset" : 97,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "mTOR",
+      "namespace" : "uniprot",
+      "id" : "P42345",
+      "species" : "human"
+    },
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-625110969",
+    "text" : "rapamycin induced attenuation of myoblast proliferation and enhances mTOR",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1463920244",
+      "text" : "enhances",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 10,
+        "end" : 11
+      },
+      "characterStartOffset" : 84,
+      "characterEndOffset" : 92,
+      "sentence" : 0,
+      "document" : "1288241873",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:462745235",
+        "text" : "mTOR",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 93,
+        "characterEndOffset" : 97,
+        "sentence" : 0,
+        "document" : "1288241873",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "mTOR",
+          "namespace" : "uniprot",
+          "id" : "P42345",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0650" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1884506368",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "1288241873",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0650" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:462745235" : [ {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "dobj"
+        }, {
+          "source" : 12,
+          "destination" : 11,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1884506368" : [ {
+          "source" : 10,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 12
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 97,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1329034609",
+    "text" : "rapamycin induced attenuation of myoblast proliferation",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2104374606",
+      "text" : "induced",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 34,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "1288241873",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1589556491",
+        "text" : "proliferation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 66,
+        "characterEndOffset" : 79,
+        "sentence" : 0,
+        "document" : "1288241873",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "cell Multiplication",
+          "namespace" : "go",
+          "id" : "GO:0008283",
+          "species" : "human"
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0650" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1884506368",
+        "text" : "rapamycin",
+        "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 33,
+        "sentence" : 0,
+        "document" : "1288241873",
+        "keep" : true,
+        "foundBy" : "ner-simple_chemical-entities",
+        "grounding" : {
+          "text" : "Antibiotic AY 22989",
+          "namespace" : "pubchem",
+          "id" : "5284616",
+          "species" : ""
+        },
+        "context" : {
+          "TissueType" : [ "tissuelist:TS-0650" ]
+        },
+        "displayLabel" : "Simple_chemical"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1589556491" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:1884506368" : [ {
+          "source" : 4,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 9
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 79,
+    "sentence" : 0,
+    "document" : "1288241873",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "context" : {
+      "TissueType" : [ "tissuelist:TS-0650" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

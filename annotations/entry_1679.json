@@ -1,0 +1,438 @@
+{
+  "documents" : {
+    "1842945060" : {
+      "id" : "sentence_annotator",
+      "text" : "Mutations in PTEN gene causes activation of PI3K and Akt oncogenic signals in MSI cells.",
+      "sentences" : [ {
+        "words" : [ "Mutations", "in", "PTEN", "gene", "causes", "activation", "of", "PI3K", "and", "Akt", "oncogenic", "signals", "in", "MSI", "cells", "." ],
+        "startOffsets" : [ 0, 10, 13, 18, 23, 30, 41, 44, 49, 53, 57, 67, 75, 78, 82, 87 ],
+        "endOffsets" : [ 9, 12, 17, 22, 29, 40, 43, 48, 52, 56, 66, 74, 77, 81, 87, 88 ],
+        "tags" : [ "NNS", "IN", "NN", "NN", "VBZ", "NN", "IN", "NN", "CC", "NN", "JJ", "NNS", "IN", "NN", "NNS", "." ],
+        "lemmas" : [ "mutation", "in", "pten", "gene", "cause", "activation", "of", "pi3k", "and", "akt", "oncogenic", "signal", "in", "msus", "cell", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "prep"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "pobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 11,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 11,
+              "destination" : 10,
+              "relation" : "amod"
+            }, {
+              "source" : 11,
+              "destination" : 14,
+              "relation" : "prep_in"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-923728042",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 17,
+    "sentence" : 0,
+    "document" : "1842945060",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-20329753",
+    "text" : "PI3K",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1842945060",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "phosphatidylinositol 3-kinase",
+      "namespace" : "be",
+      "id" : "PI3K",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-790152743",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "1842945060",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:888528667",
+    "text" : "PTEN gene causes activation of PI3K",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2090215127",
+      "text" : "causes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1842945060",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-20329753",
+        "text" : "PI3K",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 48,
+        "sentence" : 0,
+        "document" : "1842945060",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "phosphatidylinositol 3-kinase",
+          "namespace" : "be",
+          "id" : "PI3K",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-923728042",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1842945060",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-20329753" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "T:-790152743" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 11,
+          "relation" : "conj_and"
+        }, {
+          "source" : 11,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-923728042" : [ {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_in"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 8
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 48,
+    "sentence" : 0,
+    "document" : "1842945060",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2031989326",
+    "text" : "PTEN gene causes activation of PI3K and Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-2090215127",
+      "text" : "causes",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 4,
+        "end" : 5
+      },
+      "characterStartOffset" : 23,
+      "characterEndOffset" : 29,
+      "sentence" : 0,
+      "document" : "1842945060",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-790152743",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 53,
+        "characterEndOffset" : 56,
+        "sentence" : 0,
+        "document" : "1842945060",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-923728042",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 13,
+        "characterEndOffset" : 17,
+        "sentence" : 0,
+        "document" : "1842945060",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-20329753" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ],
+        "T:-790152743" : [ {
+          "source" : 4,
+          "destination" : 5,
+          "relation" : "dobj"
+        }, {
+          "source" : 5,
+          "destination" : 11,
+          "relation" : "conj_and"
+        }, {
+          "source" : 11,
+          "destination" : 9,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-923728042" : [ {
+          "source" : 4,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 3,
+          "relation" : "prep_in"
+        }, {
+          "source" : 3,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 10
+    },
+    "characterStartOffset" : 13,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "1842945060",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

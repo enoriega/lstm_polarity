@@ -1,0 +1,327 @@
+{
+  "documents" : {
+    "916330858" : {
+      "id" : "sentence_annotator",
+      "text" : "miR-21 Regulates PTEN mediated Akt Activation in Human Glomerular Mesangial Cells.",
+      "sentences" : [ {
+        "words" : [ "miR-21", "Regulates", "PTEN", "mediated", "Akt", "Activation", "in", "Human", "Glomerular", "Mesangial", "Cells", "." ],
+        "startOffsets" : [ 0, 7, 17, 22, 31, 35, 46, 49, 55, 66, 76, 81 ],
+        "endOffsets" : [ 6, 16, 21, 30, 34, 45, 48, 54, 65, 75, 81, 82 ],
+        "tags" : [ "NNP", "VBZ", "NN", "VBN", "NNP", "NN", "IN", "NN", "JJ", "JJ", "NNS", "." ],
+        "lemmas" : [ "miR-21", "regulate", "pten", "mediate", "Akt", "activation", "in", "human", "glomerular", "mesangial", "cell", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "B-Species", "B-CellType", "I-CellType", "I-CellType", "O" ],
+        "chunks" : [ "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "dobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "vmod"
+            }, {
+              "source" : 3,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 10,
+              "relation" : "dep"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "amod"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:911014435",
+    "text" : "miR-21",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 6,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "miR-21",
+      "namespace" : "uaz",
+      "id" : "UAZ00358",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1789212208",
+    "text" : "PTEN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 21,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PTEN",
+      "namespace" : "uniprot",
+      "id" : "P60484",
+      "species" : "human"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1370958610",
+    "text" : "Akt",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-57524491",
+    "text" : "Human",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 49,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1566234732",
+    "text" : "Glomerular Mesangial Cells",
+    "labels" : [ "CellType", "Context" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 11
+    },
+    "characterStartOffset" : 55,
+    "characterEndOffset" : 81,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "ner-cell-type",
+    "grounding" : {
+      "text" : "glomerular mesangial cells",
+      "namespace" : "cl",
+      "id" : "CL:1000742",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "CellType"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:1336294408",
+    "text" : "PTEN mediated Akt",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1383024032",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 22,
+      "characterEndOffset" : 30,
+      "sentence" : 0,
+      "document" : "916330858",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1789212208",
+        "text" : "PTEN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 17,
+        "characterEndOffset" : 21,
+        "sentence" : 0,
+        "document" : "916330858",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PTEN",
+          "namespace" : "uniprot",
+          "id" : "P60484",
+          "species" : "human"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ],
+          "CellType" : [ "cl:CL:1000742" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1370958610",
+        "text" : "Akt",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 34,
+        "sentence" : 0,
+        "document" : "916330858",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ],
+          "CellType" : [ "cl:CL:1000742" ]
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 5
+    },
+    "characterStartOffset" : 17,
+    "characterEndOffset" : 34,
+    "sentence" : 0,
+    "document" : "916330858",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ],
+      "CellType" : [ "cl:CL:1000742" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

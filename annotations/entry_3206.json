@@ -1,0 +1,392 @@
+{
+  "documents" : {
+    "-618828785" : {
+      "id" : "sentence_annotator",
+      "text" : "c-Src inhibition leads to JAK dependent STAT3 activation in vitro and in vivo.",
+      "sentences" : [ {
+        "words" : [ "c-Src", "inhibition", "leads", "to", "JAK", "dependent", "STAT3", "activation", "in", "vitro", "and", "in", "vivo", "." ],
+        "startOffsets" : [ 0, 6, 17, 23, 26, 30, 40, 46, 57, 60, 66, 70, 73, 77 ],
+        "endOffsets" : [ 5, 16, 22, 25, 29, 39, 45, 56, 59, 65, 69, 72, 77, 78 ],
+        "tags" : [ "NNP", "NN", "VBZ", "TO", "NN", "JJ", "NN", "NN", "FW", "FW", "CC", "FW", "FW", "." ],
+        "lemmas" : [ "c-Src", "inhibition", "lead", "to", "jak", "dependent", "stat3", "activation", "in", "vitro", "and", "in", "vivo", "." ],
+        "entities" : [ "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "pobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "prep_to"
+            }, {
+              "source" : 2,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "amod"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "advmod"
+            }, {
+              "source" : 7,
+              "destination" : 11,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1411735243",
+    "text" : "c-Src",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 5,
+    "sentence" : 0,
+    "document" : "-618828785",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "cSrc",
+      "namespace" : "uaz",
+      "id" : "UAZ00429",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-206662669",
+    "text" : "JAK",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 26,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "-618828785",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "JAK",
+      "namespace" : "uaz",
+      "id" : "UA-BP-GGP-00072",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:321472634",
+    "text" : "STAT3",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 7
+    },
+    "characterStartOffset" : 40,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-618828785",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "STAT3",
+      "namespace" : "uniprot",
+      "id" : "P40763",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-203812124",
+    "text" : "c-Src inhibition leads to JAK",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1812930309",
+      "text" : "leads",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-618828785",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_7_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-206662669",
+        "text" : "JAK",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 26,
+        "characterEndOffset" : 29,
+        "sentence" : 0,
+        "document" : "-618828785",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "JAK",
+          "namespace" : "uaz",
+          "id" : "UA-BP-GGP-00072",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1411735243",
+        "text" : "c-Src",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "-618828785",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "cSrc",
+          "namespace" : "uaz",
+          "id" : "UAZ00429",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-206662669" : [ {
+          "source" : 2,
+          "destination" : 4,
+          "relation" : "prep_to"
+        } ]
+      },
+      "controller" : {
+        "T:1411735243" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 5
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 29,
+    "sentence" : 0,
+    "document" : "-618828785",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_7_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1183853415",
+    "text" : "c-Src inhibition leads to JAK dependent STAT3",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1812930309",
+      "text" : "leads",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 2,
+        "end" : 3
+      },
+      "characterStartOffset" : 17,
+      "characterEndOffset" : 22,
+      "sentence" : 0,
+      "document" : "-618828785",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:321472634",
+        "text" : "STAT3",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 6,
+          "end" : 7
+        },
+        "characterStartOffset" : 40,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "-618828785",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "STAT3",
+          "namespace" : "uniprot",
+          "id" : "P40763",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1411735243",
+        "text" : "c-Src",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 0,
+          "end" : 1
+        },
+        "characterStartOffset" : 0,
+        "characterEndOffset" : 5,
+        "sentence" : 0,
+        "document" : "-618828785",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "cSrc",
+          "namespace" : "uaz",
+          "id" : "UAZ00429",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:321472634" : [ {
+          "source" : 2,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 6,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:1411735243" : [ {
+          "source" : 2,
+          "destination" : 1,
+          "relation" : "nsubj"
+        }, {
+          "source" : 1,
+          "destination" : 0,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 7
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-618828785",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}

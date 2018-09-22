@@ -1,0 +1,331 @@
+{
+  "documents" : {
+    "-1642300288" : {
+      "id" : "sentence_annotator",
+      "text" : "\"The p38-MAPK pathway upregulates p16, which prevents Cdk4- or Cdk6 mediated pRb inactivation.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "The", "p38-MAPK", "pathway", "upregulates", "p16", ",", "which", "prevents", "Cdk4-", "or", "Cdk6", "mediated", "pRb", "inactivation", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 5, 14, 22, 34, 37, 39, 45, 54, 60, 63, 68, 77, 81, 93, 94 ],
+        "endOffsets" : [ 1, 4, 13, 21, 33, 37, 38, 44, 53, 59, 62, 67, 76, 80, 93, 94, 95 ],
+        "tags" : [ "``", "DT", "NN", "NN", "VBZ", "NN", ",", "WDT", "VBZ", "NN", "CC", "NN", "VBD", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "the", "p38-mapk", "pathway", "upregulate", "p16", ",", "which", "prevent", "cdk4-_NN", "or", "cdk6", "mediate", "prb", "inactivation", ".", "\"" ],
+        "entities" : [ "O", "O", "B-Family", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "O", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "I-NP", "B-VP", "B-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 3,
+              "destination" : 1,
+              "relation" : "det"
+            }, {
+              "source" : 3,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 16,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 5,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "rcmod"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "nsubj"
+            }, {
+              "source" : 8,
+              "destination" : 12,
+              "relation" : "ccomp"
+            }, {
+              "source" : 9,
+              "destination" : 11,
+              "relation" : "conj_or"
+            }, {
+              "source" : 12,
+              "destination" : 9,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "nsubj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dobj"
+            }, {
+              "source" : 14,
+              "destination" : 13,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1508891870",
+    "text" : "p38-MAPK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 5,
+    "characterEndOffset" : 13,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "p38-MAPK",
+      "namespace" : "be",
+      "id" : "p38",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1371604150",
+    "text" : "p16",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 34,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Peroxidase 16",
+      "namespace" : "uniprot",
+      "id" : "Q96518",
+      "species" : "arabidopsis thaliana"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:875757448",
+    "text" : "Cdk4-",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 59,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Cell division protein kinase 4",
+      "namespace" : "uniprot",
+      "id" : "P11802",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1406720389",
+    "text" : "Cdk6",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 12
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "CDKN6",
+      "namespace" : "uniprot",
+      "id" : "Q00534",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1316297441",
+    "text" : "pRb",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 13,
+      "end" : 14
+    },
+    "characterStartOffset" : 77,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pRb",
+      "namespace" : "uniprot",
+      "id" : "P06400",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-873263254",
+    "text" : "Cdk6 mediated pRb",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1716640740",
+      "text" : "mediated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 12,
+        "end" : 13
+      },
+      "characterStartOffset" : 68,
+      "characterEndOffset" : 76,
+      "sentence" : 0,
+      "document" : "-1642300288",
+      "keep" : true,
+      "foundBy" : "Positive_early_activation"
+    },
+    "arguments" : {
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1406720389",
+        "text" : "Cdk6",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 11,
+          "end" : 12
+        },
+        "characterStartOffset" : 63,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "-1642300288",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "CDKN6",
+          "namespace" : "uniprot",
+          "id" : "Q00534",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1316297441",
+        "text" : "pRb",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 13,
+          "end" : 14
+        },
+        "characterStartOffset" : 77,
+        "characterEndOffset" : 80,
+        "sentence" : 0,
+        "document" : "-1642300288",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pRb",
+          "namespace" : "uniprot",
+          "id" : "P06400",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 11,
+      "end" : 14
+    },
+    "characterStartOffset" : 63,
+    "characterEndOffset" : 80,
+    "sentence" : 0,
+    "document" : "-1642300288",
+    "keep" : true,
+    "foundBy" : "Positive_early_activation",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

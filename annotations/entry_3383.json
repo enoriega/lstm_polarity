@@ -1,0 +1,466 @@
+{
+  "documents" : {
+    "-378825128" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Furthermore, we observed the activation of Raf-1 and ERK but not the AKT pathway.\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Furthermore", ",", "we", "observed", "the", "activation", "of", "Raf-1", "and", "ERK", "but", "not", "the", "AKT", "pathway", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 12, 14, 17, 26, 30, 41, 44, 50, 54, 58, 62, 66, 70, 74, 81, 82 ],
+        "endOffsets" : [ 1, 12, 13, 16, 25, 29, 40, 43, 49, 53, 57, 61, 65, 69, 73, 81, 82, 83 ],
+        "tags" : [ "``", "RB", ",", "PRP", "VBD", "DT", "NN", "IN", "NN", "CC", "NN", "CC", "RB", "DT", "NN", "NN", ".", "''" ],
+        "lemmas" : [ "\"", "furthermore", ",", "we", "observe", "the", "activation", "of", "raf-1", "and", "erk", "but", "not", "the", "akt", "pathway", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "B-Family", "O", "O", "O", "B-Family", "O", "O", "O" ],
+        "chunks" : [ "O", "B-ADVP", "O", "B-NP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "B-NP", "I-NP", "B-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 15,
+              "relation" : "conj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 12,
+              "relation" : "cc"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "cc"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 12,
+              "destination" : 11,
+              "relation" : "cc"
+            }, {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 4 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 15,
+              "destination" : 13,
+              "relation" : "det"
+            }, {
+              "source" : 15,
+              "destination" : 14,
+              "relation" : "nn"
+            }, {
+              "source" : 4,
+              "destination" : 15,
+              "relation" : "dobj"
+            }, {
+              "source" : 4,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 4,
+              "destination" : 17,
+              "relation" : "punct"
+            }, {
+              "source" : 4,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 4,
+              "destination" : 6,
+              "relation" : "dobj"
+            }, {
+              "source" : 6,
+              "destination" : 15,
+              "relation" : "conj_negcc"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "det"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "prep_of"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "prep_of"
+            }, {
+              "source" : 8,
+              "destination" : 10,
+              "relation" : "conj_and"
+            } ],
+            "roots" : [ 4 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1012406478",
+    "text" : "Raf-1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 44,
+    "characterEndOffset" : 49,
+    "sentence" : 0,
+    "document" : "-378825128",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Raf-1",
+      "namespace" : "uniprot",
+      "id" : "P04049",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:65298047",
+    "text" : "ERK",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 54,
+    "characterEndOffset" : 57,
+    "sentence" : 0,
+    "document" : "-378825128",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "ERK",
+      "namespace" : "be",
+      "id" : "ERK",
+      "species" : "human"
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-516833740",
+    "text" : "AKT",
+    "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 14,
+      "end" : 15
+    },
+    "characterStartOffset" : 70,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-378825128",
+    "keep" : true,
+    "foundBy" : "ner-family-entities",
+    "grounding" : {
+      "text" : "PI3K-AKT",
+      "namespace" : "be",
+      "id" : "AKT",
+      "species" : ""
+    },
+    "displayLabel" : "Family"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:959700821",
+    "text" : "activation of Raf-1 and ERK but not the AKT",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1395032665",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-378825128",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1012406478",
+        "text" : "Raf-1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 44,
+        "characterEndOffset" : 49,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Raf-1",
+          "namespace" : "uniprot",
+          "id" : "P04049",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-516833740",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1012406478" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:65298047" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-516833740" : [ {
+          "source" : 6,
+          "destination" : 15,
+          "relation" : "conj_negcc"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 15
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-378825128",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-981121352",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_3_noun",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1972755845",
+    "text" : "activation of Raf-1 and ERK but not the AKT",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1395032665",
+      "text" : "activation",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 30,
+      "characterEndOffset" : 40,
+      "sentence" : 0,
+      "document" : "-378825128",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_3_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:65298047",
+        "text" : "ERK",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 54,
+        "characterEndOffset" : 57,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "ERK",
+          "namespace" : "be",
+          "id" : "ERK",
+          "species" : "human"
+        },
+        "displayLabel" : "Family"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-516833740",
+        "text" : "AKT",
+        "labels" : [ "Family", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 14,
+          "end" : 15
+        },
+        "characterStartOffset" : 70,
+        "characterEndOffset" : 73,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "ner-family-entities",
+        "grounding" : {
+          "text" : "PI3K-AKT",
+          "namespace" : "be",
+          "id" : "AKT",
+          "species" : ""
+        },
+        "displayLabel" : "Family"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1012406478" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        } ],
+        "T:65298047" : [ {
+          "source" : 6,
+          "destination" : 8,
+          "relation" : "prep_of"
+        }, {
+          "source" : 8,
+          "destination" : 10,
+          "relation" : "conj_and"
+        } ]
+      },
+      "controller" : {
+        "T:-516833740" : [ {
+          "source" : 6,
+          "destination" : 15,
+          "relation" : "conj_negcc"
+        }, {
+          "source" : 15,
+          "destination" : 14,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 6,
+      "end" : 15
+    },
+    "characterStartOffset" : 30,
+    "characterEndOffset" : 73,
+    "sentence" : 0,
+    "document" : "-378825128",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_3_noun",
+    "modifications" : [ {
+      "modification-type" : "Negation",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-981121352",
+        "text" : "not",
+        "labels" : [ "Negation_trigger" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 65,
+        "sentence" : 0,
+        "document" : "-378825128",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_3_noun",
+        "displayLabel" : "Negation_trigger"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

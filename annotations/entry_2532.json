@@ -1,0 +1,507 @@
+{
+  "documents" : {
+    "-323476053" : {
+      "id" : "sentence_annotator",
+      "text" : "Independence of VHL and proline hydroxylation in the MGO induced destabilization of HIF-1alpha.",
+      "sentences" : [ {
+        "words" : [ "Independence", "of", "VHL", "and", "proline", "hydroxylation", "in", "the", "MGO", "induced", "destabilization", "of", "HIF-1alpha", "." ],
+        "startOffsets" : [ 0, 13, 16, 20, 24, 32, 46, 49, 53, 57, 65, 81, 84, 94 ],
+        "endOffsets" : [ 12, 15, 19, 23, 31, 45, 48, 52, 56, 64, 80, 83, 94, 95 ],
+        "tags" : [ "NN", "IN", "NN", "CC", "NN", "NN", "IN", "DT", "NN", "VBD", "NN", "IN", "NN", "." ],
+        "lemmas" : [ "independence", "of", "vhl", "and", "proline", "hydroxylation", "in", "the", "mgo", "induce", "destabilization", "of", "hif-1alpha", "." ],
+        "entities" : [ "O", "O", "B-Gene_or_gene_product", "O", "B-Site", "O", "O", "O", "B-Simple_chemical", "O", "O", "O", "B-Gene_or_gene_product", "O" ],
+        "chunks" : [ "B-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "B-PP", "B-NP", "I-NP", "B-VP", "B-NP", "B-PP", "B-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 1,
+              "relation" : "prep"
+            }, {
+              "source" : 1,
+              "destination" : 5,
+              "relation" : "pobj"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "cc"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 8,
+              "relation" : "pobj"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "pobj"
+            } ],
+            "roots" : [ 9 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 0,
+              "destination" : 5,
+              "relation" : "prep_of"
+            }, {
+              "source" : 2,
+              "destination" : 4,
+              "relation" : "conj_and"
+            }, {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            }, {
+              "source" : 5,
+              "destination" : 8,
+              "relation" : "prep_in"
+            }, {
+              "source" : 8,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 9,
+              "destination" : 0,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 12,
+              "relation" : "prep_of"
+            } ],
+            "roots" : [ 9 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-768945779",
+    "text" : "VHL",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 3
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 19,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "pVHL",
+      "namespace" : "uniprot",
+      "id" : "P40337",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:471593727",
+    "text" : "proline",
+    "labels" : [ "Site" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 24,
+    "characterEndOffset" : 31,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "site_long",
+    "grounding" : {
+      "text" : "Proline",
+      "namespace" : "uaz",
+      "id" : "UAZ-S-015",
+      "species" : "human"
+    },
+    "displayLabel" : "Site"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1347853976",
+    "text" : "MGO",
+    "labels" : [ "Simple_chemical", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 53,
+    "characterEndOffset" : 56,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "ner-simple_chemical-entities",
+    "grounding" : {
+      "text" : "Magnesium oxide",
+      "namespace" : "pubchem",
+      "id" : "6850729",
+      "species" : ""
+    },
+    "displayLabel" : "Simple_chemical"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-223108431",
+    "text" : "HIF-1alpha",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 84,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "HIF1-alpha",
+      "namespace" : "uniprot",
+      "id" : "Q16665",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-155732875",
+    "text" : "VHL and proline hydroxylation in the MGO induced destabilization of HIF-1alpha",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1985924125",
+      "text" : "induced",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 57,
+      "characterEndOffset" : 64,
+      "sentence" : 0,
+      "document" : "-323476053",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-223108431",
+        "text" : "HIF-1alpha",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 84,
+        "characterEndOffset" : 94,
+        "sentence" : 0,
+        "document" : "-323476053",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "HIF1-alpha",
+          "namespace" : "uniprot",
+          "id" : "Q16665",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:581298731",
+        "text" : "VHL and proline hydroxylation",
+        "labels" : [ "Hydroxylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:2109870750",
+          "text" : "hydroxylation",
+          "labels" : [ "Hydroxylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 32,
+          "characterEndOffset" : 45,
+          "sentence" : 0,
+          "document" : "-323476053",
+          "keep" : true,
+          "foundBy" : "Hydroxylation_syntax_4_noun"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-768945779",
+            "text" : "VHL",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 2,
+              "end" : 3
+            },
+            "characterStartOffset" : 16,
+            "characterEndOffset" : 19,
+            "sentence" : 0,
+            "document" : "-323476053",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "pVHL",
+              "namespace" : "uniprot",
+              "id" : "P40337",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ],
+          "site" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:471593727",
+            "text" : "proline",
+            "labels" : [ "Site" ],
+            "tokenInterval" : {
+              "start" : 4,
+              "end" : 5
+            },
+            "characterStartOffset" : 24,
+            "characterEndOffset" : 31,
+            "sentence" : 0,
+            "document" : "-323476053",
+            "keep" : true,
+            "foundBy" : "site_long",
+            "grounding" : {
+              "text" : "Proline",
+              "namespace" : "uaz",
+              "id" : "UAZ-S-015",
+              "species" : "human"
+            },
+            "displayLabel" : "Site"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:-768945779" : [ {
+              "source" : 5,
+              "destination" : 2,
+              "relation" : "nn"
+            } ]
+          },
+          "site" : {
+            "T:471593727" : [ {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "nn"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 6
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 45,
+        "sentence" : 0,
+        "document" : "-323476053",
+        "keep" : true,
+        "foundBy" : "Hydroxylation_syntax_4_noun",
+        "displayLabel" : "Hydroxylation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-223108431" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 12,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "E:581298731" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ],
+        "T:-768945779" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nn"
+        } ],
+        "T:-1347853976" : [ {
+          "source" : 9,
+          "destination" : 0,
+          "relation" : "nsubj"
+        }, {
+          "source" : 0,
+          "destination" : 5,
+          "relation" : "prep_of"
+        }, {
+          "source" : 5,
+          "destination" : 8,
+          "relation" : "prep_in"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 13
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 94,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:581298731",
+    "text" : "VHL and proline hydroxylation",
+    "labels" : [ "Hydroxylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:2109870750",
+      "text" : "hydroxylation",
+      "labels" : [ "Hydroxylation", "AdditionEvent", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 32,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "-323476053",
+      "keep" : true,
+      "foundBy" : "Hydroxylation_syntax_4_noun"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-768945779",
+        "text" : "VHL",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 16,
+        "characterEndOffset" : 19,
+        "sentence" : 0,
+        "document" : "-323476053",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "pVHL",
+          "namespace" : "uniprot",
+          "id" : "P40337",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "site" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:471593727",
+        "text" : "proline",
+        "labels" : [ "Site" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 24,
+        "characterEndOffset" : 31,
+        "sentence" : 0,
+        "document" : "-323476053",
+        "keep" : true,
+        "foundBy" : "site_long",
+        "grounding" : {
+          "text" : "Proline",
+          "namespace" : "uaz",
+          "id" : "UAZ-S-015",
+          "species" : "human"
+        },
+        "displayLabel" : "Site"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:-768945779" : [ {
+          "source" : 5,
+          "destination" : 2,
+          "relation" : "nn"
+        } ]
+      },
+      "site" : {
+        "T:471593727" : [ {
+          "source" : 5,
+          "destination" : 4,
+          "relation" : "nn"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 2,
+      "end" : 6
+    },
+    "characterStartOffset" : 16,
+    "characterEndOffset" : 45,
+    "sentence" : 0,
+    "document" : "-323476053",
+    "keep" : true,
+    "foundBy" : "Hydroxylation_syntax_4_noun",
+    "displayLabel" : "Hydroxylation",
+    "isDirect" : false
+  } ]
+}

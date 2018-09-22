@@ -1,0 +1,530 @@
+{
+  "documents" : {
+    "-1668899561" : {
+      "id" : "sentence_annotator",
+      "text" : "These findings indicate that catalytic activity of MK2 also stimulates translation of TTP mRNA in the cytosol.",
+      "sentences" : [ {
+        "words" : [ "These", "findings", "indicate", "that", "catalytic", "activity", "of", "MK2", "also", "stimulates", "translation", "of", "TTP", "mRNA", "in", "the", "cytosol", "." ],
+        "startOffsets" : [ 0, 6, 15, 24, 29, 39, 48, 51, 55, 60, 71, 83, 86, 90, 95, 98, 102, 109 ],
+        "endOffsets" : [ 5, 14, 23, 28, 38, 47, 50, 54, 59, 70, 82, 85, 89, 94, 97, 101, 109, 110 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "JJ", "NN", "IN", "NN", "RB", "VBZ", "NN", "IN", "NN", "NN", "IN", "DT", "NN", "." ],
+        "lemmas" : [ "these", "finding", "indicate", "that", "catalytic", "activity", "of", "mk2", "also", "stimulate", "translation", "of", "ttp", "mrna", "in", "the", "cytosol", "." ],
+        "entities" : [ "O", "O", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-BioProcess", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Cellular_component", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "I-NP", "B-PP", "B-NP", "B-ADVP", "B-VP", "B-NP", "B-PP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 6,
+              "relation" : "prep"
+            }, {
+              "source" : 6,
+              "destination" : 7,
+              "relation" : "pobj"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 13,
+              "destination" : 14,
+              "relation" : "prep"
+            }, {
+              "source" : 14,
+              "destination" : 16,
+              "relation" : "pobj"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "det"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 9,
+              "relation" : "ccomp"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "amod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "prep_of"
+            }, {
+              "source" : 9,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 9,
+              "destination" : 5,
+              "relation" : "nsubj"
+            }, {
+              "source" : 9,
+              "destination" : 8,
+              "relation" : "advmod"
+            }, {
+              "source" : 9,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_of"
+            }, {
+              "source" : 13,
+              "destination" : 16,
+              "relation" : "prep_in"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "nn"
+            }, {
+              "source" : 16,
+              "destination" : 15,
+              "relation" : "det"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1182848913",
+    "text" : "MK2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 54,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "MAPK-activated protein kinase 2",
+      "namespace" : "uniprot",
+      "id" : "P49137",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1480283315",
+    "text" : "translation",
+    "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 10,
+      "end" : 11
+    },
+    "characterStartOffset" : 71,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "ner-bioprocess-entities",
+    "grounding" : {
+      "text" : "protein biosynthesis",
+      "namespace" : "go",
+      "id" : "GO:0006412",
+      "species" : "human"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "BioProcess"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1229806590",
+    "text" : "TTP",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 86,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "TIS11A",
+      "namespace" : "uniprot",
+      "id" : "P26651",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-581823358",
+    "text" : "cytosol",
+    "labels" : [ "Cellular_component", "Context" ],
+    "tokenInterval" : {
+      "start" : 16,
+      "end" : 17
+    },
+    "characterStartOffset" : 102,
+    "characterEndOffset" : 109,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "ner-cellular_component-entities",
+    "grounding" : {
+      "text" : "cytosol",
+      "namespace" : "go",
+      "id" : "GO:0005829",
+      "species" : ""
+    },
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Cellular_component"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:2097133988",
+    "text" : "MK2 also stimulates translation",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-968702972",
+      "text" : "stimulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "-1668899561",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1480283315",
+        "text" : "translation",
+        "labels" : [ "BioProcess", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 10,
+          "end" : 11
+        },
+        "characterStartOffset" : 71,
+        "characterEndOffset" : 82,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "ner-bioprocess-entities",
+        "grounding" : {
+          "text" : "protein biosynthesis",
+          "namespace" : "go",
+          "id" : "GO:0006412",
+          "species" : "human"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "BioProcess"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1182848913",
+        "text" : "MK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAPK-activated protein kinase 2",
+          "namespace" : "uniprot",
+          "id" : "P49137",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1480283315" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:1229806590" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1182848913" : [ {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 11
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 82,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1667153665",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1637467603",
+    "text" : "MK2 also stimulates translation of TTP",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-968702972",
+      "text" : "stimulates",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 9,
+        "end" : 10
+      },
+      "characterStartOffset" : 60,
+      "characterEndOffset" : 70,
+      "sentence" : 0,
+      "document" : "-1668899561",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1229806590",
+        "text" : "TTP",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 86,
+        "characterEndOffset" : 89,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "TIS11A",
+          "namespace" : "uniprot",
+          "id" : "P26651",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1182848913",
+        "text" : "MK2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 51,
+        "characterEndOffset" : 54,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "MAPK-activated protein kinase 2",
+          "namespace" : "uniprot",
+          "id" : "P49137",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Cellular_component" : [ "go:GO:0005829" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:-1480283315" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        } ],
+        "T:1229806590" : [ {
+          "source" : 9,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 13,
+          "relation" : "prep_of"
+        }, {
+          "source" : 13,
+          "destination" : 12,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1182848913" : [ {
+          "source" : 9,
+          "destination" : 5,
+          "relation" : "nsubj"
+        }, {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 13
+    },
+    "characterStartOffset" : 51,
+    "characterEndOffset" : 89,
+    "sentence" : 0,
+    "document" : "-1668899561",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:-1667153665",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 15,
+        "characterEndOffset" : 23,
+        "sentence" : 0,
+        "document" : "-1668899561",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "context" : {
+      "Cellular_component" : [ "go:GO:0005829" ]
+    },
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

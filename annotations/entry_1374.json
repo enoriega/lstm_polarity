@@ -1,0 +1,649 @@
+{
+  "documents" : {
+    "1776355920" : {
+      "id" : "sentence_annotator",
+      "text" : "\"Besides, TSN significantly downregulated the expression of Bax and upregulated Bcl-2 (P < 0.05).\"",
+      "sentences" : [ {
+        "words" : [ "\"", "Besides", ",", "TSN", "significantly", "downregulated", "the", "expression", "of", "Bax", "and", "upregulated", "Bcl-2", "(", "P", "<", "0.05", ")", ".", "\"" ],
+        "startOffsets" : [ 0, 1, 8, 10, 14, 28, 42, 46, 57, 60, 64, 68, 80, 86, 87, 89, 91, 95, 96, 97 ],
+        "endOffsets" : [ 1, 8, 9, 13, 27, 41, 45, 56, 59, 63, 67, 79, 85, 87, 88, 90, 95, 96, 97, 98 ],
+        "tags" : [ "``", "IN", ",", "NNP", "RB", "VBD", "DT", "NN", "IN", "NN", "CC", "VBN", "NN", "-LRB-", "NN", "JJR", "CD", "-RRB-", ".", "''" ],
+        "lemmas" : [ "\"", "besides", ",", "TSN", "significantly", "downregulate", "the", "expression", "of", "bax", "and", "upregulate", "bcl-2", "(", "p", "<", "0.05", ")", ".", "\"" ],
+        "entities" : [ "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "O", "B-NP", "B-ADVP", "B-VP", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 10,
+              "relation" : "cc"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 8,
+              "relation" : "prep"
+            }, {
+              "source" : 8,
+              "destination" : 9,
+              "relation" : "pobj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dep"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 5 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 5,
+              "destination" : 0,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 1,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 5,
+              "destination" : 19,
+              "relation" : "punct"
+            }, {
+              "source" : 5,
+              "destination" : 4,
+              "relation" : "advmod"
+            }, {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 5,
+              "destination" : 11,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "det"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            }, {
+              "source" : 11,
+              "destination" : 3,
+              "relation" : "nsubj"
+            }, {
+              "source" : 11,
+              "destination" : 12,
+              "relation" : "dobj"
+            }, {
+              "source" : 12,
+              "destination" : 14,
+              "relation" : "dep"
+            }, {
+              "source" : 14,
+              "destination" : 15,
+              "relation" : "dep"
+            }, {
+              "source" : 15,
+              "destination" : 16,
+              "relation" : "dep"
+            } ],
+            "roots" : [ 5 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefEventMention",
+    "id" : "E:1051632172",
+    "text" : "TSN significantly downregulated the expression of Bax",
+    "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:1111999654",
+      "text" : "downregulated",
+      "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 28,
+      "characterEndOffset" : 41,
+      "sentence" : 0,
+      "document" : "1776355920",
+      "keep" : true,
+      "foundBy" : "Negative_regulation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:-85314583",
+        "text" : "expression of Bax",
+        "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:7937601",
+          "text" : "expression",
+          "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 7,
+            "end" : 8
+          },
+          "characterStartOffset" : 46,
+          "characterEndOffset" : 56,
+          "sentence" : 0,
+          "document" : "1776355920",
+          "keep" : true,
+          "foundBy" : "transcription_1b"
+        },
+        "arguments" : {
+          "theme" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:1488902656",
+            "text" : "Bax",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 9,
+              "end" : 10
+            },
+            "characterStartOffset" : 60,
+            "characterEndOffset" : 63,
+            "sentence" : 0,
+            "document" : "1776355920",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "BCL2L4",
+              "namespace" : "uniprot",
+              "id" : "Q07812",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Gene"
+          } ]
+        },
+        "paths" : {
+          "theme" : {
+            "T:1488902656" : [ {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 10
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1776355920",
+        "keep" : true,
+        "foundBy" : "transcription_1b",
+        "displayLabel" : "Transcription",
+        "isDirect" : false
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-259325492",
+        "text" : "TSN",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 4
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 13,
+        "sentence" : 0,
+        "document" : "1776355920",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "C3PO",
+          "namespace" : "uniprot",
+          "id" : "Q15631",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "E:-85314583" : [ {
+          "source" : 5,
+          "destination" : 7,
+          "relation" : "dobj"
+        }, {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      },
+      "controller" : {
+        "T:-259325492" : [ {
+          "source" : 5,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 10
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "Negative_regulation_syntax_1_verb",
+    "displayLabel" : "Negative_regulation",
+    "isDirect" : false
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-259325492",
+    "text" : "TSN",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 13,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "C3PO",
+      "namespace" : "uniprot",
+      "id" : "Q15631",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1488902656",
+    "text" : "Bax",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 60,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "BCL2L4",
+      "namespace" : "uniprot",
+      "id" : "Q07812",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:808798940",
+    "text" : "Bcl-2",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 12,
+      "end" : 13
+    },
+    "characterStartOffset" : 80,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Bcl2",
+      "namespace" : "uniprot",
+      "id" : "P10415",
+      "species" : "human"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-85314583",
+    "text" : "expression of Bax",
+    "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:7937601",
+      "text" : "expression",
+      "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 7,
+        "end" : 8
+      },
+      "characterStartOffset" : 46,
+      "characterEndOffset" : 56,
+      "sentence" : 0,
+      "document" : "1776355920",
+      "keep" : true,
+      "foundBy" : "transcription_1b"
+    },
+    "arguments" : {
+      "theme" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1488902656",
+        "text" : "Bax",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 9,
+          "end" : 10
+        },
+        "characterStartOffset" : 60,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1776355920",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "BCL2L4",
+          "namespace" : "uniprot",
+          "id" : "Q07812",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Gene"
+      } ]
+    },
+    "paths" : {
+      "theme" : {
+        "T:1488902656" : [ {
+          "source" : 7,
+          "destination" : 9,
+          "relation" : "prep_of"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 10
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 63,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "transcription_1b",
+    "displayLabel" : "Transcription",
+    "isDirect" : false
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:-1536137350",
+    "text" : "TSN significantly downregulated the expression of Bax and upregulated Bcl-2",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1583382660",
+      "text" : "upregulated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 11,
+        "end" : 12
+      },
+      "characterStartOffset" : 68,
+      "characterEndOffset" : 79,
+      "sentence" : 0,
+      "document" : "1776355920",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:808798940",
+        "text" : "Bcl-2",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 12,
+          "end" : 13
+        },
+        "characterStartOffset" : 80,
+        "characterEndOffset" : 85,
+        "sentence" : 0,
+        "document" : "1776355920",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Bcl2",
+          "namespace" : "uniprot",
+          "id" : "P10415",
+          "species" : "human"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefEventMention",
+        "id" : "E:1051632172",
+        "text" : "TSN significantly downregulated the expression of Bax",
+        "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+        "trigger" : {
+          "type" : "TextBoundMention",
+          "id" : "T:1111999654",
+          "text" : "downregulated",
+          "labels" : [ "Negative_regulation", "Regulation", "ComplexEvent", "Event", "PossibleController" ],
+          "tokenInterval" : {
+            "start" : 5,
+            "end" : 6
+          },
+          "characterStartOffset" : 28,
+          "characterEndOffset" : 41,
+          "sentence" : 0,
+          "document" : "1776355920",
+          "keep" : true,
+          "foundBy" : "Negative_regulation_syntax_1_verb"
+        },
+        "arguments" : {
+          "controlled" : [ {
+            "type" : "CorefEventMention",
+            "id" : "E:-85314583",
+            "text" : "expression of Bax",
+            "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+            "trigger" : {
+              "type" : "TextBoundMention",
+              "id" : "T:7937601",
+              "text" : "expression",
+              "labels" : [ "Transcription", "IncreaseAmount", "Amount", "SimpleEvent", "Event", "PossibleController" ],
+              "tokenInterval" : {
+                "start" : 7,
+                "end" : 8
+              },
+              "characterStartOffset" : 46,
+              "characterEndOffset" : 56,
+              "sentence" : 0,
+              "document" : "1776355920",
+              "keep" : true,
+              "foundBy" : "transcription_1b"
+            },
+            "arguments" : {
+              "theme" : [ {
+                "type" : "CorefTextBoundMention",
+                "id" : "T:1488902656",
+                "text" : "Bax",
+                "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+                "tokenInterval" : {
+                  "start" : 9,
+                  "end" : 10
+                },
+                "characterStartOffset" : 60,
+                "characterEndOffset" : 63,
+                "sentence" : 0,
+                "document" : "1776355920",
+                "keep" : true,
+                "foundBy" : "ner-gene_or_gene_product-entities",
+                "grounding" : {
+                  "text" : "BCL2L4",
+                  "namespace" : "uniprot",
+                  "id" : "Q07812",
+                  "species" : "homo sapiens"
+                },
+                "displayLabel" : "Gene"
+              } ]
+            },
+            "paths" : {
+              "theme" : {
+                "T:1488902656" : [ {
+                  "source" : 7,
+                  "destination" : 9,
+                  "relation" : "prep_of"
+                } ]
+              }
+            },
+            "tokenInterval" : {
+              "start" : 7,
+              "end" : 10
+            },
+            "characterStartOffset" : 46,
+            "characterEndOffset" : 63,
+            "sentence" : 0,
+            "document" : "1776355920",
+            "keep" : true,
+            "foundBy" : "transcription_1b",
+            "displayLabel" : "Transcription",
+            "isDirect" : false
+          } ],
+          "controller" : [ {
+            "type" : "CorefTextBoundMention",
+            "id" : "T:-259325492",
+            "text" : "TSN",
+            "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+            "tokenInterval" : {
+              "start" : 3,
+              "end" : 4
+            },
+            "characterStartOffset" : 10,
+            "characterEndOffset" : 13,
+            "sentence" : 0,
+            "document" : "1776355920",
+            "keep" : true,
+            "foundBy" : "ner-gene_or_gene_product-entities",
+            "grounding" : {
+              "text" : "C3PO",
+              "namespace" : "uniprot",
+              "id" : "Q15631",
+              "species" : "homo sapiens"
+            },
+            "displayLabel" : "Protein"
+          } ]
+        },
+        "paths" : {
+          "controlled" : {
+            "E:-85314583" : [ {
+              "source" : 5,
+              "destination" : 7,
+              "relation" : "dobj"
+            }, {
+              "source" : 7,
+              "destination" : 9,
+              "relation" : "prep_of"
+            } ]
+          },
+          "controller" : {
+            "T:-259325492" : [ {
+              "source" : 5,
+              "destination" : 3,
+              "relation" : "nsubj"
+            } ]
+          }
+        },
+        "tokenInterval" : {
+          "start" : 3,
+          "end" : 10
+        },
+        "characterStartOffset" : 10,
+        "characterEndOffset" : 63,
+        "sentence" : 0,
+        "document" : "1776355920",
+        "keep" : true,
+        "foundBy" : "Negative_regulation_syntax_1_verb",
+        "displayLabel" : "Negative_regulation",
+        "isDirect" : false
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:808798940" : [ {
+          "source" : 11,
+          "destination" : 12,
+          "relation" : "dobj"
+        } ]
+      },
+      "controller" : {
+        "T:-259325492" : [ {
+          "source" : 11,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ],
+        "E:1051632172" : [ {
+          "source" : 11,
+          "destination" : 3,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 13
+    },
+    "characterStartOffset" : 10,
+    "characterEndOffset" : 85,
+    "sentence" : 0,
+    "document" : "1776355920",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

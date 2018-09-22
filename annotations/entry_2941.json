@@ -1,0 +1,273 @@
+{
+  "documents" : {
+    "117734841" : {
+      "id" : "sentence_annotator",
+      "text" : "These results indicate that SRT1720 effectively activated the Sirt1 signaling pathway.",
+      "sentences" : [ {
+        "words" : [ "These", "results", "indicate", "that", "SRT1720", "effectively", "activated", "the", "Sirt1", "signaling", "pathway", "." ],
+        "startOffsets" : [ 0, 6, 14, 23, 28, 36, 48, 58, 62, 68, 78, 85 ],
+        "endOffsets" : [ 5, 13, 22, 27, 35, 47, 57, 61, 67, 77, 85, 86 ],
+        "tags" : [ "DT", "NNS", "VBP", "IN", "NN", "RB", "VBD", "DT", "NN", "NN", "NN", "." ],
+        "lemmas" : [ "these", "result", "indicate", "that", "srt1720", "effectively", "activate", "the", "sirt1", "signaling", "pathway", "." ],
+        "entities" : [ "O", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O", "B-Gene_or_gene_product", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-VP", "B-SBAR", "B-NP", "B-VP", "I-VP", "B-NP", "I-NP", "I-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "det"
+            }, {
+              "source" : 2,
+              "destination" : 1,
+              "relation" : "nsubj"
+            }, {
+              "source" : 2,
+              "destination" : 6,
+              "relation" : "ccomp"
+            }, {
+              "source" : 6,
+              "destination" : 3,
+              "relation" : "mark"
+            }, {
+              "source" : 6,
+              "destination" : 4,
+              "relation" : "nsubj"
+            }, {
+              "source" : 6,
+              "destination" : 5,
+              "relation" : "advmod"
+            }, {
+              "source" : 6,
+              "destination" : 10,
+              "relation" : "dobj"
+            }, {
+              "source" : 10,
+              "destination" : 7,
+              "relation" : "det"
+            }, {
+              "source" : 10,
+              "destination" : 8,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            } ],
+            "roots" : [ 2 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1107736322",
+    "text" : "SRT1720",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 5
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 35,
+    "sentence" : 0,
+    "document" : "117734841",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "SRT1720",
+      "namespace" : "uaz",
+      "id" : "UAZ00832",
+      "species" : ""
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1317695035",
+    "text" : "Sirt1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 8,
+      "end" : 9
+    },
+    "characterStartOffset" : 62,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "117734841",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "75SirT1",
+      "namespace" : "uniprot",
+      "id" : "Q96EB6",
+      "species" : "homo sapiens"
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:391348224",
+    "text" : "SRT1720 effectively activated the Sirt1",
+    "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1974212823",
+      "text" : "activated",
+      "labels" : [ "Positive_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 48,
+      "characterEndOffset" : 57,
+      "sentence" : 0,
+      "document" : "117734841",
+      "keep" : true,
+      "foundBy" : "Positive_activation_syntax_1_verb"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1317695035",
+        "text" : "Sirt1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 8,
+          "end" : 9
+        },
+        "characterStartOffset" : 62,
+        "characterEndOffset" : 67,
+        "sentence" : 0,
+        "document" : "117734841",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "75SirT1",
+          "namespace" : "uniprot",
+          "id" : "Q96EB6",
+          "species" : "homo sapiens"
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:-1107736322",
+        "text" : "SRT1720",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 4,
+          "end" : 5
+        },
+        "characterStartOffset" : 28,
+        "characterEndOffset" : 35,
+        "sentence" : 0,
+        "document" : "117734841",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "SRT1720",
+          "namespace" : "uaz",
+          "id" : "UAZ00832",
+          "species" : ""
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "paths" : {
+      "controlled" : {
+        "T:1317695035" : [ {
+          "source" : 6,
+          "destination" : 10,
+          "relation" : "dobj"
+        }, {
+          "source" : 10,
+          "destination" : 8,
+          "relation" : "nn"
+        } ]
+      },
+      "controller" : {
+        "T:-1107736322" : [ {
+          "source" : 6,
+          "destination" : 4,
+          "relation" : "nsubj"
+        } ]
+      }
+    },
+    "tokenInterval" : {
+      "start" : 4,
+      "end" : 9
+    },
+    "characterStartOffset" : 28,
+    "characterEndOffset" : 67,
+    "sentence" : 0,
+    "document" : "117734841",
+    "keep" : true,
+    "foundBy" : "Positive_activation_syntax_1_verb",
+    "modifications" : [ {
+      "modification-type" : "Hypothesis",
+      "evidence" : {
+        "type" : "BioTextBoundMention",
+        "id" : "T:528406055",
+        "text" : "indicate",
+        "labels" : [ "Hypothesis_hint" ],
+        "tokenInterval" : {
+          "start" : 2,
+          "end" : 3
+        },
+        "characterStartOffset" : 14,
+        "characterEndOffset" : 22,
+        "sentence" : 0,
+        "document" : "117734841",
+        "keep" : true,
+        "foundBy" : "Positive_activation_syntax_1_verb",
+        "displayLabel" : "Hypothesis_hint"
+      }
+    } ],
+    "displayLabel" : "Positive_activation",
+    "isDirect" : false
+  } ]
+}

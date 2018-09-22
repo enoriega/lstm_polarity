@@ -1,0 +1,391 @@
+{
+  "documents" : {
+    "1658636356" : {
+      "id" : "sentence_annotator",
+      "text" : "Patient Mutations in PINK1 and Parkin Disrupt PINK1 and Parkin Pathway at Distinct Steps.",
+      "sentences" : [ {
+        "words" : [ "Patient", "Mutations", "in", "PINK1", "and", "Parkin", "Disrupt", "PINK1", "and", "Parkin", "Pathway", "at", "Distinct", "Steps", "." ],
+        "startOffsets" : [ 0, 8, 18, 21, 27, 31, 38, 46, 52, 56, 63, 71, 74, 83, 88 ],
+        "endOffsets" : [ 7, 17, 20, 26, 30, 37, 45, 51, 55, 62, 70, 73, 82, 88, 89 ],
+        "tags" : [ "NN", "NNS", "IN", "NN", "CC", "NNP", "NNP", "NN", "CC", "NNP", "NN", "IN", "JJ", "NNS", "." ],
+        "lemmas" : [ "patient", "mutation", "in", "pink1", "and", "Parkin", "Disrupt", "pink1", "and", "Parkin", "pathway", "at", "distinct", "step", "." ],
+        "entities" : [ "B-Species", "O", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "B-Gene_or_gene_product", "O", "O", "O", "O", "O" ],
+        "chunks" : [ "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "I-NP", "I-NP", "I-NP", "O", "B-NP", "I-NP", "B-PP", "B-NP", "I-NP", "O" ],
+        "graphs" : {
+          "stanford-basic" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 2,
+              "relation" : "prep"
+            }, {
+              "source" : 2,
+              "destination" : 3,
+              "relation" : "pobj"
+            }, {
+              "source" : 3,
+              "destination" : 4,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj"
+            }, {
+              "source" : 3,
+              "destination" : 8,
+              "relation" : "cc"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "conj"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 11,
+              "relation" : "prep"
+            }, {
+              "source" : 11,
+              "destination" : 13,
+              "relation" : "pobj"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          },
+          "stanford-collapsed" : {
+            "edges" : [ {
+              "source" : 1,
+              "destination" : 0,
+              "relation" : "nn"
+            }, {
+              "source" : 1,
+              "destination" : 3,
+              "relation" : "prep_in"
+            }, {
+              "source" : 1,
+              "destination" : 7,
+              "relation" : "prep_in"
+            }, {
+              "source" : 1,
+              "destination" : 10,
+              "relation" : "prep_in"
+            }, {
+              "source" : 3,
+              "destination" : 7,
+              "relation" : "conj_and"
+            }, {
+              "source" : 3,
+              "destination" : 10,
+              "relation" : "conj_and"
+            }, {
+              "source" : 7,
+              "destination" : 5,
+              "relation" : "nn"
+            }, {
+              "source" : 7,
+              "destination" : 6,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 9,
+              "relation" : "nn"
+            }, {
+              "source" : 10,
+              "destination" : 13,
+              "relation" : "prep_at"
+            }, {
+              "source" : 13,
+              "destination" : 12,
+              "relation" : "amod"
+            } ],
+            "roots" : [ 1 ]
+          }
+        }
+      } ]
+    }
+  },
+  "mentions" : [ {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:-1476836733",
+    "text" : "Patient",
+    "labels" : [ "Species", "Context" ],
+    "tokenInterval" : {
+      "start" : 0,
+      "end" : 1
+    },
+    "characterStartOffset" : 0,
+    "characterEndOffset" : 7,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "ner-species",
+    "grounding" : {
+      "text" : "Homo sapiens",
+      "namespace" : "taxonomy",
+      "id" : "9606",
+      "species" : ""
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Species"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1095363440",
+    "text" : "PINK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 3,
+      "end" : 4
+    },
+    "characterStartOffset" : 21,
+    "characterEndOffset" : 26,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PINK1",
+      "namespace" : "uniprot",
+      "id" : "Q9BXM7",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1206932354",
+    "text" : "Parkin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 6
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 37,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Parkinson juvenile disease protein 2",
+      "namespace" : "uniprot",
+      "id" : "O60260",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein"
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:415187347",
+    "text" : "PINK1",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 7,
+      "end" : 8
+    },
+    "characterStartOffset" : 46,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "PINK1",
+      "namespace" : "uniprot",
+      "id" : "Q9BXM7",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1095363440",
+      "text" : "PINK1",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 3,
+        "end" : 4
+      },
+      "characterStartOffset" : 21,
+      "characterEndOffset" : 26,
+      "sentence" : 0,
+      "document" : "1658636356",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "PINK1",
+        "namespace" : "uniprot",
+        "id" : "Q9BXM7",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "Species" : [ "taxonomy:9606" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefTextBoundMention",
+    "id" : "T:1437082302",
+    "text" : "Parkin",
+    "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+    "tokenInterval" : {
+      "start" : 9,
+      "end" : 10
+    },
+    "characterStartOffset" : 56,
+    "characterEndOffset" : 62,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "ner-gene_or_gene_product-entities",
+    "grounding" : {
+      "text" : "Parkinson juvenile disease protein 2",
+      "namespace" : "uniprot",
+      "id" : "O60260",
+      "species" : "homo sapiens"
+    },
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Protein",
+    "antecedents" : [ {
+      "type" : "CorefTextBoundMention",
+      "id" : "T:1206932354",
+      "text" : "Parkin",
+      "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 5,
+        "end" : 6
+      },
+      "characterStartOffset" : 31,
+      "characterEndOffset" : 37,
+      "sentence" : 0,
+      "document" : "1658636356",
+      "keep" : true,
+      "foundBy" : "ner-gene_or_gene_product-entities",
+      "grounding" : {
+        "text" : "Parkinson juvenile disease protein 2",
+        "namespace" : "uniprot",
+        "id" : "O60260",
+        "species" : "homo sapiens"
+      },
+      "context" : {
+        "Species" : [ "taxonomy:9606" ]
+      },
+      "displayLabel" : "Protein"
+    } ]
+  }, {
+    "type" : "CorefEventMention",
+    "id" : "E:636376834",
+    "text" : "Parkin Disrupt PINK1",
+    "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+    "trigger" : {
+      "type" : "TextBoundMention",
+      "id" : "T:-1204493789",
+      "text" : "Disrupt",
+      "labels" : [ "Negative_activation", "ActivationEvent", "ComplexEvent", "Event", "PossibleController" ],
+      "tokenInterval" : {
+        "start" : 6,
+        "end" : 7
+      },
+      "characterStartOffset" : 38,
+      "characterEndOffset" : 45,
+      "sentence" : 0,
+      "document" : "1658636356",
+      "keep" : true,
+      "foundBy" : "Negative_activation_token_1_noun"
+    },
+    "arguments" : {
+      "controlled" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:1206932354",
+        "text" : "Parkin",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 5,
+          "end" : 6
+        },
+        "characterStartOffset" : 31,
+        "characterEndOffset" : 37,
+        "sentence" : 0,
+        "document" : "1658636356",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "Parkinson juvenile disease protein 2",
+          "namespace" : "uniprot",
+          "id" : "O60260",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ],
+      "controller" : [ {
+        "type" : "CorefTextBoundMention",
+        "id" : "T:415187347",
+        "text" : "PINK1",
+        "labels" : [ "Gene_or_gene_product", "MacroMolecule", "Equivalable", "BioChemicalEntity", "BioEntity", "Entity", "PossibleController" ],
+        "tokenInterval" : {
+          "start" : 7,
+          "end" : 8
+        },
+        "characterStartOffset" : 46,
+        "characterEndOffset" : 51,
+        "sentence" : 0,
+        "document" : "1658636356",
+        "keep" : true,
+        "foundBy" : "ner-gene_or_gene_product-entities",
+        "grounding" : {
+          "text" : "PINK1",
+          "namespace" : "uniprot",
+          "id" : "Q9BXM7",
+          "species" : "homo sapiens"
+        },
+        "context" : {
+          "Species" : [ "taxonomy:9606" ]
+        },
+        "displayLabel" : "Protein"
+      } ]
+    },
+    "tokenInterval" : {
+      "start" : 5,
+      "end" : 8
+    },
+    "characterStartOffset" : 31,
+    "characterEndOffset" : 51,
+    "sentence" : 0,
+    "document" : "1658636356",
+    "keep" : true,
+    "foundBy" : "Negative_activation_token_1_noun",
+    "context" : {
+      "Species" : [ "taxonomy:9606" ]
+    },
+    "displayLabel" : "Negative_activation",
+    "isDirect" : false
+  } ]
+}
