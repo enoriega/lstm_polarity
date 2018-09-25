@@ -3,6 +3,7 @@ import re
 import random
 import itertools as it
 import numpy as np
+import matplotlib.pyplot as plt
 import dynet_config as dy_conf
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
@@ -135,28 +136,58 @@ def main(input_path):
 
         # Now do testing
         testing_losses = list()
+        testing_classifications = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
             prediction = run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM)
+            pred_val = prediction.value()
+            testing_predictions.append(pred_val)
             y_pred = 1 if prediction.value() >= 0.5 else 0
-            testing_predictions.append(y_pred)
+            testing_classifications.append(y_pred)
             loss = prediction_loss(instance, prediction)
             loss_value = loss.value()
             testing_losses.append(loss_value)
 
-        f1 = f1_score(testing_labels, testing_predictions)
-        precision = precision_score(testing_labels, testing_predictions)
-        recall = recall_score(testing_labels, testing_predictions)
+        f1s, precisions, recalls = dict(), dict(), dict()
+        for t in np.arange(0.1, 0.9, 0.1):
+            f1, precision, recall = classification_scores(testing_labels, testing_predictions, t)
+            f1s[t], precisions[t], recalls[t] = f1, precision, recall
 
+        plot_stats(f1s, precisions, recalls, e+1)
 
         print("Epoch %i average training loss: %f\t average testing loss: %f" % (e+1, np.average(training_losses), np.average(testing_losses)))
         print("Precision: %f\tRecall: %f\tF1: %f" % (precision, recall, f1))
-        if sum(testing_predictions) >= 1:
-            report = classification_report(testing_labels, testing_predictions)
+        if sum(testing_classifications) >= 1:
+            report = classification_report(testing_labels, testing_classifications)
             print(report)
         if avg_loss <= 3e-3:
             break
         print()
+
+
+def classification_scores(y_true, scores, threshold):
+    y_pred = [1 if s >= threshold else 0 for s in scores]
+
+    f1 = f1_score(y_true, y_pred)
+    precision = precision_score(y_true, y_pred)
+    recall = recall_score(y_true, y_pred)
+
+    return f1, precision, recall
+
+
+def plot_stats(f1s, precisions, recalls, epoch):
+    x = sorted(f1s.keys())
+    #plt.ion()
+    plt.figure()
+    plt.title("Scores for epoch %i" % epoch)
+    plt.xlabel("Classification decision threshold")
+    plt.ylabel("Score value")
+    plt.plot(x, [f1s[k] for k in x])
+    plt.plot(x, [precisions[k] for k in x])
+    plt.plot(x, [recalls[k] for k in x])
+    plt.legend(["F1", "Precision", "Recall"])
+    plt.show()
+    #plt.ioff()
 
 
 def run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM):
@@ -171,7 +202,6 @@ def run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM):
         if len(segment) > 0:
 
             # Fetch the embeddings for the current sentence
-            #words = instance.get_tokens()
             inputs = [wemb[ix[w]] for w in segment]
 
             # Run FF over the LSTM
@@ -194,7 +224,6 @@ def run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM):
 
     ff_input = dy.concatenate([trigger_expression, lstm_result])
 
-    #print(ff_input.dim(), len(instance.get_segments()), instance.original)
     # Run the FF network for classification
     prediction = dy.logistic(V * (W * ff_input + b))
 
