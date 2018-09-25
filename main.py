@@ -16,7 +16,7 @@ import dynet as dy
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity):
+    def __init__(self, sen, start, end, trigger, polarity, rule_name):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
@@ -24,6 +24,8 @@ class Instance:
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
         self.tokens = Instance.normalize(sen)
+        self.rule_name = rule_name.lower()
+        self.rule_polarity = True if self.rule_name.startswith("positive") else False;
 
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
@@ -47,7 +49,8 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        False if d['polarity'].startswith('Positive') else True)
+                        False if d['polarity'].startswith('Positive') else True,
+                        d['rule'])
 
     def get_segments(self, k = 2):
         trigger_tokens = self.trigger.split()
@@ -95,7 +98,7 @@ def main(input_path):
     params = dy.ParameterCollection()
     wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS))
     # Feed-Forward parameters
-    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM))
+    W = params.add_parameters((FF_HIDDEN_DIM, (HIDDEN_DIM*4)+1))
     b = params.add_parameters((FF_HIDDEN_DIM))
     V = params.add_parameters((1, FF_HIDDEN_DIM))
 
@@ -111,13 +114,14 @@ def main(input_path):
 
     # Training loop
     trainer = dy.SimpleSGDTrainer(params)
+    #trainer = dy.AdamTrainer(params, alpha=0.0001)
     epochs = 100
     for e in range(epochs):
         # Shuffle the training instances
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance, builder, wemb, ix, W, V, b)
+            prediction = run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM)
 
             loss = prediction_loss(instance, prediction)
 
@@ -133,7 +137,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance, builder, wemb, ix, W, V, b)
+            prediction = run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
@@ -143,7 +147,6 @@ def main(input_path):
         f1 = f1_score(testing_labels, testing_predictions)
         precision = precision_score(testing_labels, testing_predictions)
         recall = recall_score(testing_labels, testing_predictions)
-
 
 
         print("Epoch %i average training loss: %f\t average testing loss: %f" % (e+1, np.average(training_losses), np.average(testing_losses)))
@@ -156,24 +159,44 @@ def main(input_path):
         print()
 
 
-def run_instance(instance, builder, wemb, ix, W, V, b):
+def run_instance(instance, builder, wemb, ix, W, V, b, HIDDEN_DIM):
 
     # Renew the computational graph
     dy.renew_cg()
 
-    # Fetch the embeddings for the current sentence
-    words = instance.get_tokens()
-    inputs = [wemb[ix[w]] for w in words]
+    collected_vectors = list()
 
-    # Run FF over the LSTM
-    lstm = builder.initial_state()
-    outputs = lstm.transduce(inputs)
+    for segment in instance.get_segments():
 
-    # Get the last embedding
-    selected = outputs[-1]
+        if len(segment) > 0:
 
+            # Fetch the embeddings for the current sentence
+            #words = instance.get_tokens()
+            inputs = [wemb[ix[w]] for w in segment]
+
+            # Run FF over the LSTM
+            lstm = builder.initial_state()
+            outputs = lstm.transduce(inputs)
+
+            # Get the last embedding
+            selected = outputs[-1]
+
+            # Collect it
+            collected_vectors.append(selected)
+        else:
+            zero_vector = dy.zeros(HIDDEN_DIM)
+            collected_vectors.append(zero_vector)
+
+    # Concatenate the selected vectors and the polarity trigger feature
+    lstm_result = dy.concatenate(collected_vectors)
+
+    trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+
+    ff_input = dy.concatenate([trigger_expression, lstm_result])
+
+    #print(ff_input.dim(), len(instance.get_segments()), instance.original)
     # Run the FF network for classification
-    prediction = dy.logistic(V * (W * selected + b))
+    prediction = dy.logistic(V * (W * ff_input + b))
 
     return prediction
 
