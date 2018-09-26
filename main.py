@@ -16,7 +16,7 @@ import dynet as dy
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity):
+    def __init__(self, sen, start, end, trigger, polarity, rule_name):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
@@ -24,18 +24,21 @@ class Instance:
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
         self.tokens = Instance.normalize(sen)
+        self.rule_name = rule_name.lower()
+        self.rule_polarity = True if self.rule_name.startswith("positive") else False;
 
     def get_tokens(self, k=0):
-        start = min(0, self.start - k)
-        end = max(len(self.tokens) - 1, self.end + k)
+        start = max(0, self.start - k)
+        end = min(len(self.tokens) - 1, self.end + k)
         return self.tokens[start:end]
 
     @staticmethod
     def normalize(raw):
-        sentence = raw.lower().strip('"')
+        sentence = raw.lower()
         # Replace numbers by "[NUM]"
-        sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', '[NUM]', sentence)
+        sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', ' [NUM] ', sentence)
         tokens = sentence.split()
+
         return tokens
         # return ['[START]'] + tokens + ['[END]']
 
@@ -46,7 +49,18 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        False if d['polarity'].startswith('Positive') else True)
+                        False if d['polarity'].startswith('Positive') else True,
+                        d['rule'])
+
+    def get_segments(self, k = 2):
+        trigger_tokens = self.trigger.split()
+        trigger_ix = self.tokens.index(trigger_tokens[0], self.start, self.end+1)
+        tokens_prev = self.tokens[max(0, self.start - k):self.start]
+        tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
+        tokens_in_right = self.tokens[(trigger_ix+len(trigger_tokens)):self.end]
+        tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
+
+        return tokens_prev, tokens_in_left, tokens_in_right, tokens_last
 
 
 def build_vocabulary(words):
