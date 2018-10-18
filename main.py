@@ -96,11 +96,11 @@ def main(input_path):
     print("Vocabulary size: %i" % len(ix))
 
     params = dy.ParameterCollection()
-    wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS))
+    wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="wemb")
     # Feed-Forward parameters
-    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM))
-    b = params.add_parameters((FF_HIDDEN_DIM))
-    V = params.add_parameters((1, FF_HIDDEN_DIM))
+    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM), name="W")
+    b = params.add_parameters((FF_HIDDEN_DIM), name = "b")
+    V = params.add_parameters((1, FF_HIDDEN_DIM), name = "V")
 
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
 
@@ -157,6 +157,8 @@ def main(input_path):
         if avg_loss <= 3e-3:
             break
         print()
+
+    params.save("model.dy")
 
 
 def run_instance(instance, builder, wemb, ix, W, V, b):
