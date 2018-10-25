@@ -33,11 +33,54 @@ class Instance:
         return self.tokens[start:end]
 
     @staticmethod
+    def _is_number(w):
+        i = 0
+        found_digit = True
+        while i < len(w):
+            c = w[i]
+            match = re.match("\r", c)
+            if match is None and c != '-' and c != '+' and c != ',' and c != '.' and c != '/' and c != '\\':
+                return False
+            if match:
+                found_digit = True
+            i += 1
+
+        return found_digit
+
+    @staticmethod
+    def _sanitize_word(uw, keepNumbers=True):
+        w = uw.lower()
+
+        # skip parens from corenlp
+        if w == "-lrb-" or w == "-rrb-" or w == "-lsb-" or w == "-rsb-":
+            return ""
+
+        # skip URLS
+        if w.startswith("http") or ".com" in w or ".org" in w:  # added .com and .org to cover more urls (becky)
+            return ""
+
+        # normalize numbers to a unique token
+        if Instance._is_number(w):
+            return "xnumx" if keepNumbers else ""
+
+        # remove all non-letters; convert letters to lowercase
+        os = ""
+        i = 0
+        while i < len(w):
+            c = w[i]
+            # added underscore since it is our delimiter for dependency stuff...
+            if re.match(r"[a-z]", w) or c == '_':
+                os += c
+            i += 1
+
+        return os
+
+    @staticmethod
     def normalize(raw):
         sentence = raw.lower()
         # Replace numbers by "[NUM]"
-        sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', ' [NUM] ', sentence)
-        tokens = sentence.split()
+        #sentence = re.sub(r'(\s+|^)[+-]?\d+\.?(\d+)(\s+|$)?', ' [NUM] ', sentence)
+        tokens = [Instance._sanitize_word(t) for t in sentence.split()]
 
         return tokens
         # return ['[START]'] + tokens + ['[END]']
@@ -52,7 +95,7 @@ class Instance:
                         False if d['polarity'].startswith('Positive') else True,
                         d['rule'])
 
-    def get_segments(self, k = 2):
+    def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
         trigger_ix = self.tokens.index(trigger_tokens[0], self.start, self.end+1)
         tokens_prev = self.tokens[max(0, self.start - k):self.start]
@@ -65,7 +108,7 @@ class Instance:
 
 def build_vocabulary(words):
     index, reverse_index = dict(), dict()
-    for i, w in enumerate(words):
+    for i, w in enumerate(sorted(words)):
         index[w] = i
         reverse_index[i] = w
 
@@ -84,6 +127,12 @@ def main(input_path):
     print("There are %i instances" % len(instances))
 
     ix, rix = build_vocabulary(set(it.chain.from_iterable(i.tokens for i in instances)))
+
+    # Store the vocabulary
+    with open("vocab.txt", "w") as f:
+        for i in range(len(rix)):
+            f.write(rix[i] + "\n")
+
 
     VOC_SIZE = len(ix)
     WEM_DIMENSIONS = 50
