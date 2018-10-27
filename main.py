@@ -1,6 +1,7 @@
 import csv
 import re
 import random
+import w2v
 import itertools as it
 import numpy as np
 import dynet_config as dy_conf
@@ -120,13 +121,15 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
+    embeddings = w2v.load_embeddings("medPubDict.pkl.gz")
+
     print("There are %i rows" % len(data))
 
     instances = [Instance.from_dict(d) for d in data]
 
     print("There are %i instances" % len(instances))
 
-    ix, rix = build_vocabulary(set(it.chain.from_iterable(i.tokens for i in instances)))
+    ix, rix = build_vocabulary(filter(lambda w: w not in embeddings, set(it.chain.from_iterable(i.tokens for i in instances))))
 
     # Store the vocabulary
     with open("vocab.txt", "w") as f:
@@ -135,7 +138,7 @@ def main(input_path):
 
 
     VOC_SIZE = len(ix)
-    WEM_DIMENSIONS = 50
+    WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1
     HIDDEN_DIM = 20
@@ -145,7 +148,9 @@ def main(input_path):
     print("Vocabulary size: %i" % len(ix))
 
     params = dy.ParameterCollection()
-    wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="wemb")
+    missing_wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="missing-wemb")
+    w2v_wemb = params.add_lookup_parameters(embeddings.matrix.shape, init=embeddings.matrix, name="w2v-wemb")
+
     # Feed-Forward parameters
     W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM), name="W")
     b = params.add_parameters((FF_HIDDEN_DIM), name = "b")
@@ -169,7 +174,7 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance, builder, wemb, ix, W, V, b)
+            prediction = run_instance(instance, builder, missing_wemb, w2v_wemb, embeddings, ix, W, V, b)
 
             loss = prediction_loss(instance, prediction)
 
@@ -185,7 +190,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance, builder, wemb, ix, W, V, b)
+            prediction = run_instance(instance, builder, missing_wemb, w2v_wemb, embeddings, ix, W, V, b)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
@@ -210,14 +215,14 @@ def main(input_path):
     params.save("model.dy")
 
 
-def run_instance(instance, builder, wemb, ix, W, V, b):
+def run_instance(instance, builder, missing_wemb, w2v_wemb, embeddings, ix, W, V, b):
 
     # Renew the computational graph
     dy.renew_cg()
 
     # Fetch the embeddings for the current sentence
     words = instance.get_tokens()
-    inputs = [wemb[ix[w]] for w in words]
+    inputs = [w2v_wemb[embeddings[w]] if w in embeddings else missing_wemb[ix[w]] for w in words]
 
     # Run FF over the LSTM
     lstm = builder.initial_state()
