@@ -1,5 +1,6 @@
 import gzip, pickle
 import numpy as np
+import json
 
 
 class W2VEmbeddings:
@@ -28,4 +29,30 @@ def load_embeddings(path):
         raw = pickle.load(f)
 
     return W2VEmbeddings(raw)
+
+
+def save_as_json(path):
+    with gzip.open(path, "r") as f:
+        raw = pickle.load(f)
+
+    new_file_name = '.'.join(path.split('.')[-2:0])+'.json'
+
+    marshalled = {k: list(v) for k, v in raw.items()}
+
+    with open(new_file_name, 'w') as f:
+        json.dump(marshalled, f)
+
+
+def save_as_txt(path):
+    with gzip.open(path, "r") as f:
+        raw = pickle.load(f)
+
+    new_file_name = '.'.join(path.split('.'))+'.txt'
+
+    lines = list()
+    for k, v in raw.items():
+        lines.append('%s\t%s\n' % (k, ','.join(str(i) for i in v)))
+
+    with open(new_file_name, 'w') as f:
+        f.writelines(lines)
 
