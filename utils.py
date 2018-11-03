@@ -22,7 +22,7 @@ class Instance:
     @staticmethod
     def _is_number(w):
         i = 0
-        found_digit = True
+        found_digit = False
         while i < len(w):
             c = w[i]
             match = re.match("\r", c)
@@ -56,7 +56,7 @@ class Instance:
         while i < len(w):
             c = w[i]
             # added underscore since it is our delimiter for dependency stuff...
-            if re.match(r"[a-z]", w) or c == '_':
+            if re.match(r"[a-z]", c) or c == '_':
                 os += c
             i += 1
 

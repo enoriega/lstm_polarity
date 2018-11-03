@@ -58,9 +58,9 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance, elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
 
-            loss = prediction_loss(instance, prediction)
+            loss = prediction_loss(instance.get_tokens(), prediction)
 
             loss.backward()
             trainer.update()

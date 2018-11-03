@@ -4,7 +4,7 @@ from collections import namedtuple
 ModelElements = namedtuple("ModelElements", "W V b w2v_emb missing_emb param_collection builder")
 
 
-def run_instance(instance, model_elems, embeddings):
+def run_instance(tokens, model_elems, embeddings):
 
     # Renew the computational graph
     dy.renew_cg()
@@ -15,7 +15,7 @@ def run_instance(instance, model_elems, embeddings):
     b = model_elems.b
 
     # Fetch the embeddings for the current sentence
-    words = instance.get_tokens()
+    words = tokens
     inputs = [embeddings[w] for w in words]
 
     # Run FF over the LSTM
