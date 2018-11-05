@@ -60,7 +60,7 @@ def main(input_path):
 
             prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
 
-            loss = prediction_loss(instance.get_tokens(), prediction)
+            loss = prediction_loss(instance, prediction)
 
             loss.backward()
             trainer.update()
@@ -74,7 +74,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance, elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
