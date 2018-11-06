@@ -21,7 +21,7 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
-    embeddings = w2v.load_embeddings("medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
 
     print("There are %i rows" % len(data))
 
@@ -51,14 +51,16 @@ def main(input_path):
     testing_labels = [1 if instance.polarity else 0 for instance in testing]
 
     # Training loop
-    trainer = dy.SimpleSGDTrainer(params)
+    #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
+    trainer = dy.AdamTrainer(params)
+    trainer.set_clip_threshold(20)
     epochs = 100
     for e in range(epochs):
         # Shuffle the training instances
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
+            prediction = run_instance(instance, elements, embeddings_index)
 
             loss = prediction_loss(instance, prediction)
 
@@ -67,6 +69,7 @@ def main(input_path):
 
             loss_value = loss.value()
             training_losses.append(loss_value)
+            
 
         avg_loss = np.average(training_losses)
 
@@ -74,12 +77,18 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
+            prediction = run_instance(instance, elements, embeddings_index)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
             loss_value = loss.value()
             testing_losses.append(loss_value)
+            
+#        print('W value:', np.sum(elements.W.npvalue()))
+#        print('W updated?',elements.W.is_updated())
+#        print('embd value:', np.sum(elements.w2v_emb.npvalue()))
+#        print('embd updated?',elements.w2v_emb.is_updated())
+#        input("press enter to continue")
 
         f1 = f1_score(testing_labels, testing_predictions)
         precision = precision_score(testing_labels, testing_predictions)
