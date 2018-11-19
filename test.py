@@ -3,7 +3,7 @@ from utils import Instance
 
 if __name__ == "__main__":
 
-    p = "/Users/enrique/scratch/lstm_polarity/model.dy"
+    p = "model.dy"
     pc = dy.ParameterCollection()
 
     # a = pc.load_param(p, "/vanilla-lstm-builder/_0")

@@ -25,7 +25,16 @@ def main(input_path):
 
     print("There are %i rows" % len(data))
 
-    instances = [Instance.from_dict(d) for d in data]
+    instances = list([])
+    for i, d in enumerate(data):
+      #print('generating instance:', i)
+#      if i==533:
+#        print('sentence text:', d['sentence text'])
+#        print('event start:',d['event interval start'])
+#        print('event end:', d['event interval end'])
+      instances.append(Instance.from_dict(d))
+    
+    #instances = [Instance.from_dict(d) for d in data]
 
     print("There are %i instances" % len(instances))
 
@@ -36,7 +45,9 @@ def main(input_path):
         for i in range(len(missing_voc_inverse)):
             f.write(missing_voc_inverse[i] + "\n")
 
-    elements = build_model(missing_voc, embeddings)
+    attention_choices = {'no-att':0, '1-layer-att':1, '2-layer-att':2}
+    attention_sel = attention_choices['no-att']
+    elements = build_model(missing_voc, embeddings, attention_sel)
 
     params = elements.param_collection
 
@@ -44,7 +55,7 @@ def main(input_path):
 
     # Split training and testing
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
-    training, testing = train_test_split(instances, stratify=labels)
+    training, testing = train_test_split(instances, stratify=labels, train_size=0.9, test_size=0.1)
 
     print("Positive: %i\tNegative: %i" % (sum(labels), len(labels)-sum(labels)))
 
@@ -53,14 +64,15 @@ def main(input_path):
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
-    trainer.set_clip_threshold(20)
+    trainer.set_clip_threshold(20.0)
     epochs = 100
+    
     for e in range(epochs):
         # Shuffle the training instances
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance, elements, embeddings_index)
+            prediction = run_instance(instance, elements, embeddings_index, attention_sel)
 
             loss = prediction_loss(instance, prediction)
 
@@ -77,7 +89,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance, elements, embeddings_index)
+            prediction = run_instance(instance, elements, embeddings_index, attention_sel)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
@@ -107,4 +119,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo.csv")
+    main("SentencesInfo_all.csv")
