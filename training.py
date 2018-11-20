@@ -60,7 +60,7 @@ def main(input_path):
     epochs = 100
     
     # split data and do cross-validation
-    skf = StratifiedKFold(n_splits=3)
+    skf = StratifiedKFold(n_splits=5)
     for e in range(epochs):
         for train_indices, test_indices in skf.split(instances, labels):
             training_losses = list()

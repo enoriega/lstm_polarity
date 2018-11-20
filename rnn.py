@@ -38,7 +38,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     dy.renew_cg()
 
     builder = model_elems.builder
-    builder.set_dropouts(0.1, 0.1)   # currently 0.2, 0.2 gives the best result
+    builder.set_dropouts(0, 0)   # currently 0.2, 0.2 gives the best result
     
     W = model_elems.W
     V = model_elems.V

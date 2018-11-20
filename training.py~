@@ -32,6 +32,7 @@ def main(input_path):
 
     instances = [Instance.from_dict(d) for d in data]
         
+    # Shuffle the training instances
     random.Random(python_rand_seed).shuffle(instances)
     labels = [1 if instance.polarity else 0 for instance in instances]
 
@@ -52,22 +53,15 @@ def main(input_path):
 
     embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings, elements.missing_emb, missing_voc)
 
-    # Split training and testing
-     # Compute the labels for a stratified split
-    #training, testing = train_test_split(instances, stratify=labels, train_size=0.9, test_size=0.1)
-
-    #print("Positive: %i\tNegative: %i" % (sum(labels), len(labels)-sum(labels)))
-
-    #testing_labels = [1 if instance.polarity else 0 for instance in testing]
-
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
     trainer.set_clip_threshold(20.0)
     epochs = 100
+    
+    # split data and do cross-validation
     skf = StratifiedKFold(n_splits=3)
     for e in range(epochs):
-        # Shuffle the training instances
         for train_indices, test_indices in skf.split(instances, labels):
             training_losses = list()
             for i, sample_index in enumerate(train_indices):
