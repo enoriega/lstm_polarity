@@ -28,8 +28,6 @@ def main(input_path):
 
     print("There are %i rows" % len(data))
 
-    instances = list([])
-
     instances = [Instance.from_dict(d) for d in data]
         
     # Shuffle the training instances
@@ -56,14 +54,22 @@ def main(input_path):
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
-    trainer.set_clip_threshold(20.0)
+    trainer.set_clip_threshold(4.0)
     epochs = 100
     
     # split data and do cross-validation
     skf = StratifiedKFold(n_splits=5)
     for e in range(epochs):
+    
+        
+        test_pred_dict = {}
+        test_label_dict = {}
+        test_loss_dict = {}
+        test_reach_pred_dict={}
+    
+        training_losses = list()
         for train_indices, test_indices in skf.split(instances, labels):
-            training_losses = list()
+            
             for i, sample_index in enumerate(train_indices):
                 instance = instances[sample_index]
                 prediction = run_instance(instance, elements, embeddings_index, attention_sel)
@@ -76,16 +82,14 @@ def main(input_path):
                 loss_value = loss.value()
                 training_losses.append(loss_value)
 
-            avg_loss = np.average(training_losses)
-
             # Now do testing
-            test_pred_dict = {}
-            test_label_dict = {}
-            test_loss_dict = {}
 
             # testing_losses = list()
             # testing_predictions = list()
             # testing_labels = [1 if instances[index].polarity else 0 for index in test_indices]
+            
+            fold_preds = list([])
+            fold_labels = list([])
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
                 prediction = run_instance(instance, elements, embeddings_index, attention_sel)
@@ -93,34 +97,60 @@ def main(input_path):
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
                 
+                fold_preds.append(y_pred)
+                fold_labels.append([1 if instance.polarity else 0])
+                
                 if instance.neg_count not in test_pred_dict:
                     test_pred_dict[instance.neg_count]=list([])
                     test_label_dict[instance.neg_count]=list([])
                     test_loss_dict[instance.neg_count]=list([])
+                    test_reach_pred_dict[instance.neg_count]=list([])
                     
                 test_pred_dict[instance.neg_count].append(y_pred)
                 test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
                 test_loss_dict[instance.neg_count].append(loss_value)
+                test_reach_pred_dict[instance.neg_count].append([1 if instance.pred_polarity else 0])
+                
+            print('fold f1 for LSTM:', f1_score(fold_labels, fold_preds))
 
-            print('===================================================================')
-            print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
-            print('---------------1 fold result------------------------- ')
-
-            for neg_count in test_pred_dict.keys():
-                f1 = f1_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-                precision = precision_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-                recall = recall_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-                print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
+        print('===================================================================')
+        print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
+        
+        print('---------------LSTM result------------------------- ')
+        all_pred = list([])
+        all_label = list([])
+        for neg_count in test_pred_dict.keys():
+            f1 = f1_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+            precision = precision_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+            recall = recall_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+            print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
+            all_pred.extend(test_pred_dict[neg_count])
+            all_label.extend(test_label_dict[neg_count])
+        all_f1 = f1_score(all_label, all_pred)
+        print('overall f1:', all_f1)
+        
+        print('---------------REACH result------------------------- ')
+        all_pred = list([])
+        all_label = list([])
+        for neg_count in test_pred_dict.keys():
+            f1 = f1_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
+            precision = precision_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
+            recall = recall_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
+            print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
+            all_pred.extend(test_reach_pred_dict[neg_count])
+            all_label.extend(test_label_dict[neg_count])
+        all_f1 = f1_score(all_label, all_pred)
+        print('overall f1:', all_f1)
             
 #            if sum(testing_predictions) >= 1:
 #                report = classification_report(testing_labels, testing_predictions)
 #                #print(report)
-            if avg_loss <= 3e-3:
-                break
-            print()
+#            if avg_loss <= 3e-3:
+#                break
+#            print()
 
     params.save("model.dy")
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label.csv")
+    main("SentencesInfo_all_label_dup.csv")

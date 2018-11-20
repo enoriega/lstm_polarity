@@ -3,13 +3,14 @@ import re
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity, rule_name):
+    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
         self.original_trigger = trigger
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
+        self.pred_polarity = pred_polarity
         self.tokens = Instance.normalize(sen)
         self.rule_name = rule_name.lower()
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
@@ -80,7 +81,8 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        False if d['polarity'].startswith('Positive') else True,
+                        True if d['polarity'].startswith('Positive') else False,
+                        True if d['pred_polarity'].startswith('Positive') else False,
                         d['rule'])
 
     def get_segments(self, k=2):
