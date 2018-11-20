@@ -13,6 +13,7 @@ class Instance:
         self.tokens = Instance.normalize(sen)
         self.rule_name = rule_name.lower()
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
+        self.neg_count = self.get_negCount()
 
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
@@ -91,6 +92,11 @@ class Instance:
         tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
 
         return tokens_prev, tokens_in_left, tokens_in_right, tokens_last
+        
+    def get_negCount(self):
+        event_text = ' '.join(word for word in self.tokens[self.start:self.end])
+        neg_count = len(re.findall(r'(?=attenu|block|deactiv|decreas|degrad|delet|deplet|diminish|disrupt|dominant-negative|impair|imped|inhibit|knockdown|knockout|limit|loss|lower|negat|reduc|reliev|repress|restrict|revers|silenc|shRNA|siRNA|slow|starv|suppress|supress|turnover|off)', event_text))
+        return neg_count
 
 
 class WordEmbeddingIndex(object):

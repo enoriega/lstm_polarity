@@ -60,7 +60,7 @@ def main(input_path):
     epochs = 100
     
     # split data and do cross-validation
-    skf = StratifiedKFold(n_splits=3)
+    skf = StratifiedKFold(n_splits=5)
     for e in range(epochs):
         for train_indices, test_indices in skf.split(instances, labels):
             training_losses = list()
@@ -79,27 +79,42 @@ def main(input_path):
             avg_loss = np.average(training_losses)
 
             # Now do testing
-            testing_losses = list()
-            testing_predictions = list()
-            testing_labels = [1 if instances[index].polarity else 0 for index in test_indices]
+            test_pred_dict = {}
+            test_label_dict = {}
+            test_loss_dict = {}
+
+            # testing_losses = list()
+            # testing_predictions = list()
+            # testing_labels = [1 if instances[index].polarity else 0 for index in test_indices]
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
                 prediction = run_instance(instance, elements, embeddings_index, attention_sel)
                 y_pred = 1 if prediction.value() >= 0.5 else 0
-                testing_predictions.append(y_pred)
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
-                testing_losses.append(loss_value)
+                
+                if instance.neg_count not in test_pred_dict:
+                    test_pred_dict[instance.neg_count]=list([])
+                    test_label_dict[instance.neg_count]=list([])
+                    test_loss_dict[instance.neg_count]=list([])
+                    
+                    test_pred_dict[instance.neg_count].append(y_pred)
+                    test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
+                    test_loss_dict[instance.neg_count].append(loss_value)
 
-            f1 = f1_score(testing_labels, testing_predictions)
-            precision = precision_score(testing_labels, testing_predictions)
-            recall = recall_score(testing_labels, testing_predictions)
+            print('===================================================================')
+            print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
+            print('---------------1 fold result------------------------- ')
 
-            print("Epoch %i average training loss: %f\t average testing loss: %f" % (e+1, np.average(training_losses), np.average(testing_losses)))
-            print("Precision: %f\tRecall: %f\tF1: %f" % (precision, recall, f1))
-            if sum(testing_predictions) >= 1:
-                report = classification_report(testing_labels, testing_predictions)
-                #print(report)
+            for neg_count in test_pred_dict.keys():
+                f1 = f1_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+                precision = precision_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+                recall = recall_score(test_label_dict[neg_count], test_pred_dict[neg_count])
+                print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
+            
+#            if sum(testing_predictions) >= 1:
+#                report = classification_report(testing_labels, testing_predictions)
+#                #print(report)
             if avg_loss <= 3e-3:
                 break
             print()
