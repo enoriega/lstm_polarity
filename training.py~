@@ -98,9 +98,9 @@ def main(input_path):
                     test_label_dict[instance.neg_count]=list([])
                     test_loss_dict[instance.neg_count]=list([])
                     
-                    test_pred_dict[instance.neg_count].append(y_pred)
-                    test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
-                    test_loss_dict[instance.neg_count].append(loss_value)
+                test_pred_dict[instance.neg_count].append(y_pred)
+                test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
+                test_loss_dict[instance.neg_count].append(loss_value)
 
             print('===================================================================')
             print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
