@@ -8,10 +8,12 @@ from utils import *
 from rnn import *
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
+import random
 
 random.seed(14535)
 np.random.seed(78456)
 dy_conf.set(random_seed=2522620396)
+python_rand_seed=1
 
 import dynet as dy
 
@@ -20,6 +22,7 @@ def main(input_path):
     with open(input_path) as f:
         reader = csv.DictReader(f)
         data = list(reader)
+
 
     embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
 
@@ -55,7 +58,12 @@ def main(input_path):
 
     # Split training and testing
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
-    training, testing = train_test_split(instances, stratify=labels, train_size=0.9, test_size=0.1)
+    training, testing = train_test_split(instances, stratify=labels, train_size=0.8, test_size=0.2)
+    #training = instances[:52421]
+    #testing = instances[52421:]
+    
+    random.Random(python_rand_seed).shuffle(training)
+    random.Random(python_rand_seed).shuffle(testing)
 
     print("Positive: %i\tNegative: %i" % (sum(labels), len(labels)-sum(labels)))
 
@@ -72,7 +80,7 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance, elements, embeddings_index, attention_sel)
+            prediction = run_instance(instance, elements, embeddings_index, attention_sel, True)
 
             loss = prediction_loss(instance, prediction)
 
@@ -89,7 +97,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance, elements, embeddings_index, attention_sel)
+            prediction = run_instance(instance, elements, embeddings_index, attention_sel, False)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
@@ -119,4 +127,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_op.csv")
+    main("SentencesInfo_all_label.csv")

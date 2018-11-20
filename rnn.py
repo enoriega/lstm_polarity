@@ -32,13 +32,15 @@ def output_attention_high(collected_vectors, W_a_2, b_a_2, HIDDEN_DIM):   #high-
     
     return dy.reshape(s*dy.transpose(collected_vectors), d=(HIDDEN_DIM,))
 
-def run_instance(instance, model_elems, embeddings, attention_sel):
+def run_instance(instance, model_elems, embeddings, attention_sel, train_flag):
 
     # Renew the computational graph
     dy.renew_cg()
 
     builder = model_elems.builder
-    builder.set_dropouts(0, 0)   # currently 0.2, 0.2 gives the best result
+    
+    if train_flag:
+        builder.set_dropouts(0, 0)   # currently 0.2, 0.2 gives the best result
     
     W = model_elems.W
     V = model_elems.V
