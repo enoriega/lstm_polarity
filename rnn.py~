@@ -40,7 +40,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel, train_flag):
     builder = model_elems.builder
     
     if train_flag:
-        builder.set_dropouts(0.1, 0)   # currently 0.2, 0.2 gives the best result
+        builder.set_dropouts(0, 0)   # currently 0.2, 0.2 gives the best result
     
     W = model_elems.W
     V = model_elems.V
@@ -122,7 +122,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel, train_flag):
                 collected_vectors.append(zero_vector)
 
         lstm_result_att = output_attention_high(collected_vectors, W_a_2, b_a_2, HIDDEN_DIM)
-        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+        trigger_expression = dy.scalarInput(0 if instance.rule_polarity is True else 1)
         ff_input = dy.concatenate([trigger_expression, lstm_result_att])
         prediction = dy.logistic(V * (W * ff_input + b))
 
