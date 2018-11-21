@@ -84,9 +84,6 @@ class Instance:
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
-        print('=========================================')
-        print('self.tokens:',self.tokens)
-        print('trigger tokens:', trigger_tokens[0])
         trigger_ix = self.tokens.index(Instance._sanitize_word(trigger_tokens[0]), self.start, self.end+1)
         tokens_prev = self.tokens[max(0, self.start - k):self.start]
         tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]

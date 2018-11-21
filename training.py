@@ -55,7 +55,7 @@ def main(input_path):
 
     # Split training and testing
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
-    training, testing = train_test_split(instances, stratify=labels, train_size=0.9, test_size=0.1)
+    training, testing = train_test_split(instances, stratify=labels, train_size=0.8, test_size=0.2)
 
     print("Positive: %i\tNegative: %i" % (sum(labels), len(labels)-sum(labels)))
 
@@ -119,4 +119,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all.csv")
+    main("SentencesInfo_all_label.csv")

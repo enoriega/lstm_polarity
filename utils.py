@@ -79,7 +79,7 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        False if d['polarity'].startswith('Positive') else True,
+                        True if d['polarity'].startswith('Positive') else False,
                         d['rule'])
 
     def get_segments(self, k=2):
