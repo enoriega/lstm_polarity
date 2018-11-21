@@ -97,9 +97,6 @@ def main(input_path):
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
                 
-                fold_preds.append(y_pred)
-                fold_labels.append([1 if instance.polarity else 0])
-                
                 if instance.neg_count not in test_pred_dict:
                     test_pred_dict[instance.neg_count]=list([])
                     test_label_dict[instance.neg_count]=list([])
@@ -110,8 +107,6 @@ def main(input_path):
                 test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
                 test_loss_dict[instance.neg_count].append(loss_value)
                 test_reach_pred_dict[instance.neg_count].append([1 if instance.pred_polarity else 0])
-                
-            print('fold f1 for LSTM:', f1_score(fold_labels, fold_preds))
 
         print('===================================================================')
         print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
@@ -153,4 +148,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_dup.csv")
+    main("SentencesInfo_all_label.csv")
