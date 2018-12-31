@@ -22,6 +22,9 @@ def main(input_path):
         data = list(reader)
 
     embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
+    
+    with open('char_dict.pickle', 'rb') as handle:
+        char_embeddings = pickle.load(handle)
 
     print("There are %i rows" % len(data))
 
@@ -39,6 +42,7 @@ def main(input_path):
     print("There are %i instances" % len(instances))
 
     missing_voc, missing_voc_inverse = build_vocabulary(filter(lambda w: w not in embeddings, set(it.chain.from_iterable(i.tokens for i in instances))))
+    
 
     # Store the vocabulary of the missing words (from the pre-trained embeddings)
     with open("missing_vocab.txt", "w") as f:
@@ -47,11 +51,12 @@ def main(input_path):
 
     attention_choices = {'no-att':0, '1-layer-att':1, '2-layer-att':2}
     attention_sel = attention_choices['no-att']
-    elements = build_model(missing_voc, embeddings, attention_sel)
+    elements = build_model(missing_voc, embeddings, char_embeddings, attention_sel)
 
     params = elements.param_collection
 
     embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings, elements.missing_emb, missing_voc)
+    embeddings_char_index = CharEmbeddingIndex(elements.c2v_emb, char_embeddings)
 
     # Split training and testing
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
@@ -65,7 +70,11 @@ def main(input_path):
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
     trainer.set_clip_threshold(20.0)
-    epochs = 100
+    epochs = 15
+    
+#    print('parameter list:')
+#    print(params.parameters_list())
+#    print(params.lookup_parameters_list())
     
     for e in range(epochs):
         # Shuffle the training instances
@@ -115,8 +124,8 @@ def main(input_path):
             break
         print()
 
-    params.save("model.dy")
+    #params.save("model.dy")
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_reachLabel.csv")
+    main("SentencesInfo_all_label.csv")

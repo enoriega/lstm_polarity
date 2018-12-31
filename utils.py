@@ -1,4 +1,5 @@
 import re
+import pickle
 
 
 class Instance:
@@ -103,7 +104,17 @@ class WordEmbeddingIndex(object):
 
     def __getitem__(self, w):
         return self.w2v_data[self.w2v_index[w]] if w in self.w2v_index else self.missing_data[self.missing_index[w]]
+        
+class CharEmbeddingIndex(object):
+    def __init__(self, c2v_data, char_embeddings):
+    # c2v_data is the dynet lookup parameter, character_dict_path is the path of all characters.
+        self.char_dict = char_embeddings
+        self.c2v_data = c2v_data
+        self.c2v_index = {w:i for i,w in enumerate(sorted(list(self.char_dict.keys())))}
+        print('sorted c2v dict:', self.c2v_index)
 
+    def __getitem__(self, c):
+        return self.c2v_data[self.c2v_index[c]] if c in self.char_dict else self.c2v_data[len(self.char_dict)]
 
 def build_vocabulary(words):
     index, reverse_index = dict(), dict()
