@@ -144,7 +144,7 @@ def main(input_path):
 #                break
 #            print()
 
-    params.save("model.dy")
+    #params.save("model.dy")
 
 
 if __name__ == "__main__":
