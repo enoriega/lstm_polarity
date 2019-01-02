@@ -64,11 +64,12 @@ def main(input_path):
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
-    trainer.set_clip_threshold(20.0)
+    trainer.set_clip_threshold(10.0)
     epochs = 100
     
     for e in range(epochs):
         # Shuffle the training instances
+        print('training ......')
         training_losses = list()
         for i, instance in enumerate(training):
 
@@ -86,6 +87,7 @@ def main(input_path):
         avg_loss = np.average(training_losses)
 
         # Now do testing
+        print('testing ......')
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
@@ -115,8 +117,8 @@ def main(input_path):
             break
         print()
 
-    params.save("model.dy")
+    #params.save("model.dy")
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_reachLabel.csv")
+    main("SentencesInfo_all_label.csv")

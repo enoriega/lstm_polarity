@@ -47,6 +47,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     
     if attention_sel==0:
         HIDDEN_DIM = int((W.dim()[0][1]-1)/4)
+        #lstm = builder.initial_state()  # comment this line if we do not want state to be inherited between segments
         for segment in instance.get_segments():
 
             if len(segment) > 0:

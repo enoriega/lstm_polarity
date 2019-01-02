@@ -47,6 +47,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     
     if attention_sel==0:
         HIDDEN_DIM = int((W.dim()[0][1]-1)/4)
+        lstm = builder.initial_state()  # comment this line if we do not want state to be inherited between segments
         for segment in instance.get_segments():
 
             if len(segment) > 0:
@@ -55,7 +56,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
                 inputs = [embeddings[w] for w in segment]
 
                 # Run FF over the LSTM
-                lstm = builder.initial_state()
+                # lstm = builder.initial_state()
                 outputs = lstm.transduce(inputs)
 
                 # Get the last embedding
@@ -139,7 +140,7 @@ def build_model(missing_voc, w2v_embeddings, attention_sel):
     WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1
-    HIDDEN_DIM = 40
+    HIDDEN_DIM = 30
 
     FF_HIDDEN_DIM = 10
 
