@@ -55,13 +55,24 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
                 inputs = list([])
                 for w in segment:
                     average_char_embd = dy.inputTensor(np.zeros(20))
-                    for character in w:
-                        average_char_embd += embeddings_char_index[character]
-                    print('expression 1:', embeddings[w].dim())
-                    print('expression 1:', embeddings[w].npvalue())
-                    print('expression 2:', average_char_embd.dim())
-                    print('expression 2:', average_char_embd.npvalue())
-                    input('press enter to continue')
+                    if w=='':
+                        average_char_embd = embeddings_char_index[w]
+                        print('empty word detected')
+                        print(average_char_embd.npvalue())
+                        input('press enter to continue')
+                        
+                    else:
+                        for character in w:
+                            average_char_embd += embeddings_char_index[character]
+#                    if np.sum(average_char_embd.npvalue())==0:
+#                        print('problematic word:',w)
+#                        print('problematic segment:',segment)
+#                        input('press enter to continue')
+#                    print('expression 1:', embeddings[w].dim())
+#                    print('expression 1:', embeddings[w].npvalue())
+#                    print('expression 2:', average_char_embd.dim())
+#                    print('expression 2:', average_char_embd.npvalue())
+#                    input('press enter to continue')
                     input_word_char = dy.concatenate([embeddings[w], average_char_embd])
                     inputs.append(input_word_char)
                         

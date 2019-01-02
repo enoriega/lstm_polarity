@@ -123,3 +123,15 @@ def build_vocabulary(words):
         reverse_index[i] = w
 
     return index, reverse_index
+    
+def build_char_dict(instances):
+    char_dict = {}
+    for instance in instances:
+        for token in instance.tokens:
+            for character in token:
+                if character=='':
+                    print('have empty token!  ', instance.tokens)
+                    input('press enter to continue')
+                char_dict[character] = 1
+    char_dict['']=1
+    return char_dict

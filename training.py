@@ -23,8 +23,8 @@ def main(input_path):
 
     embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
     
-    with open('char_dict.pickle', 'rb') as handle:
-        char_embeddings = pickle.load(handle)
+#    with open('char_dict.pickle', 'rb') as handle:
+#        char_embeddings = pickle.load(handle)
 
     print("There are %i rows" % len(data))
 
@@ -42,6 +42,8 @@ def main(input_path):
     print("There are %i instances" % len(instances))
 
     missing_voc, missing_voc_inverse = build_vocabulary(filter(lambda w: w not in embeddings, set(it.chain.from_iterable(i.tokens for i in instances))))
+    
+    char_embeddings = build_char_dict(instances)
     
 
     # Store the vocabulary of the missing words (from the pre-trained embeddings)
