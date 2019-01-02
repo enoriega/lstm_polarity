@@ -3,7 +3,7 @@ from collections import namedtuple
 import numpy as np
 from utils import *
 
-ModelElements = namedtuple("ModelElements", "W V b w2v_emb c2v_emb missing_emb param_collection builder")
+ModelElements = namedtuple("ModelElements", "W V b w2v_emb c2v_emb missing_emb param_collection builder builder_char")
 
 ModelElements_1 = namedtuple("ModelElements", "W V b W_a b_a w2v_emb c2v_emb missing_emb param_collection builder")
 
@@ -38,6 +38,8 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
     dy.renew_cg()
 
     builder = model_elems.builder
+    builder_char = model_elems.builder_char
+    
     builder.set_dropouts(0, 0)   # currently 0.2, 0.2 gives the best result
     
     W = model_elems.W
@@ -54,15 +56,23 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
                 # Fetch the embeddings for the current sentence
                 inputs = list([])
                 for w in segment:
-                    average_char_embd = dy.inputTensor(np.zeros(20))
+                    char_GRU = builder_char.initial_state()
+                    char_embd_input = list([])
                     for character in w:
-                        average_char_embd += embeddings_char_index[character]
-                    print('expression 1:', embeddings[w].dim())
-                    print('expression 1:', embeddings[w].npvalue())
-                    print('expression 2:', average_char_embd.dim())
-                    print('expression 2:', average_char_embd.npvalue())
-                    input('press enter to continue')
-                    input_word_char = dy.concatenate([embeddings[w], average_char_embd])
+                        char_embd_input.append(embeddings_char_index[character])
+                    char_embd_output = char_GRU.transduce(char_embd_input)
+#                    print('expression 1:', embeddings[w].dim())
+#                    print('expression 1:', embeddings[w].npvalue())
+#                    print('expression 2:', average_char_embd.dim())
+#                    print('expression 2:', average_char_embd.npvalue())
+#                    input('press enter to continue')
+#                    print('word embedding shape:', embeddings[w].dim())
+#                    print('character embedding shape:', char_embd_output[-1].dim())
+#                    input('press enter to continue')
+                    if len(char_embd_output)<=1:
+                        char_embd_output = dy.inputTensor(np.zeros((1,20)))
+                    #print('char embd shape:',char_embd_output[-1].dim())
+                    input_word_char = dy.concatenate([embeddings[w], char_embd_output[-1]])
                     inputs.append(input_word_char)
                         
                 # inputs = [embeddings[w] for w in segment]  #input is a list
@@ -165,6 +175,7 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     c2v_emb = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
     
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
+    builder_char = dy.GRUBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
 
     # Feed-Forward parameters
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
@@ -173,7 +184,7 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     # no attention
     if attention_sel==0:
         W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
-        ret = ModelElements(W, V, b, w2v_wemb, c2v_emb, missing_wemb, params, builder)
+        ret = ModelElements(W, V, b, w2v_wemb, c2v_emb, missing_wemb, params, builder, builder_char)
         
     # 1-layer attention
     elif attention_sel==1:
