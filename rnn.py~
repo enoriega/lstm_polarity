@@ -3,11 +3,43 @@ from collections import namedtuple
 import numpy as np
 from utils import *
 
-ModelElements = namedtuple("ModelElements", "W V b w2v_emb c2v_emb missing_emb param_collection builder")
+ModelElements = namedtuple("ModelElements", "W V b W_char w2v_emb c2v_emb missing_emb param_collection builder")
 
 ModelElements_1 = namedtuple("ModelElements", "W V b W_a b_a w2v_emb c2v_emb missing_emb param_collection builder")
 
 ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb c2v_emb missing_emb param_collection builder")
+
+def get_word_embd(word, model_elems, embeddings_char_index):
+    char_embd = 0
+    if word=='':
+        char_embd = embeddings_char_index[word]
+    elif len(word)<=2:
+        char_embd = dy.inputTensor(np.zeros(20))
+        for character in word:
+            char_embd+=embeddings_char_index[character]
+    else:
+        W_char_exp = dy.parameter(model_elems.W_char)
+        char_embd_list = list()
+        for character in word:
+            char_embd_list.append(embeddings_char_index[character])
+        char_embd_tensor = dy.transpose(dy.concatenate(char_embd_list,d=1))
+        
+        ((n_row, n_col), batch_dim) = char_embd_tensor.dim()
+        
+        output=list([])
+        for i in np.arange(n_row-2)+1:
+            #print('left bound %d, right bound %d' % (i-1, i+2))
+            z_i = char_embd_tensor[i-1:i+2]
+            output.append(dy.filter1d_narrow(z_i, W_char_exp))
+
+        output_tensor = dy.concatenate(output, d=0)
+  
+        #print('output tensor:',output_tensor.npvalue())
+
+        char_embd = dy.kmax_pooling(x=output_tensor, k=1, d=0)
+        #print('output vector:',char_embd.npvalue())
+        char_embd = dy.reshape(char_embd,(n_col,))
+    return char_embd
 
 def output_attention(collected_vectors, W_a, b_a, HIDDEN_DIM):
     #print('check attention')
@@ -54,26 +86,17 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
                 # Fetch the embeddings for the current sentence
                 inputs = list([])
                 for w in segment:
-                    average_char_embd = dy.inputTensor(np.zeros(20))
-                    if w=='':
-                        average_char_embd = embeddings_char_index[w]
-                        print('empty word detected')
-                        print(average_char_embd.npvalue())
-                        input('press enter to continue')
-                        
-                    else:
-                        for character in w:
-                            average_char_embd += embeddings_char_index[character]
+                    char_embd = get_word_embd(w, model_elems,embeddings_char_index)
 #                    if np.sum(average_char_embd.npvalue())==0:
 #                        print('problematic word:',w)
 #                        print('problematic segment:',segment)
 #                        input('press enter to continue')
-#                    print('expression 1:', embeddings[w].dim())
-#                    print('expression 1:', embeddings[w].npvalue())
-#                    print('expression 2:', average_char_embd.dim())
-#                    print('expression 2:', average_char_embd.npvalue())
-#                    input('press enter to continue')
-                    input_word_char = dy.concatenate([embeddings[w], average_char_embd])
+                    print('expression 1:', embeddings[w].dim())
+                    #print('expression 1:', embeddings[w].npvalue())
+                    print('expression 2:', char_embd.dim())
+                    #print('expression 2:', average_char_embd.npvalue())
+                    input('press enter to continue')
+                    input_word_char = dy.concatenate([embeddings[w], char_embd])
                     inputs.append(input_word_char)
                         
                 # inputs = [embeddings[w] for w in segment]  #input is a list
@@ -175,6 +198,8 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
     c2v_emb = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
     
+    W_char = params.add_parameters((3, 1))
+    
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
 
     # Feed-Forward parameters
@@ -184,7 +209,7 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     # no attention
     if attention_sel==0:
         W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
-        ret = ModelElements(W, V, b, w2v_wemb, c2v_emb, missing_wemb, params, builder)
+        ret = ModelElements(W, V, b, W_char, w2v_wemb, c2v_emb, missing_wemb, params, builder)
         
     # 1-layer attention
     elif attention_sel==1:
