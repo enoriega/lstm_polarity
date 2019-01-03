@@ -56,7 +56,8 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
                 # Fetch the embeddings for the current sentence
                 inputs = list([])
                 for w in segment:
-                    char_GRU = builder_char.initial_state()
+                    #char_GRU = builder_char.initial_state()
+                    char_GRU = builder_char
                     char_embd_input = list([])
                     for character in w:
                         char_embd_input.append(embeddings_char_index[character])
@@ -175,7 +176,8 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     c2v_emb = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
     
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
-    builder_char = dy.GRUBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
+    #builder_char = dy.GRUBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
+    builder_char = dy.BiRNNBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params, dy.GRUBuilder)
 
     # Feed-Forward parameters
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")

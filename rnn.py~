@@ -69,7 +69,7 @@ def run_instance(instance, model_elems, embeddings, embeddings_char_index, atten
 #                    print('word embedding shape:', embeddings[w].dim())
 #                    print('character embedding shape:', char_embd_output[-1].dim())
 #                    input('press enter to continue')
-                    if len(char_embd_output)<=1:
+                    if len(char_embd_output)<1:
                         char_embd_output = dy.inputTensor(np.zeros((1,20)))
                     #print('char embd shape:',char_embd_output[-1].dim())
                     input_word_char = dy.concatenate([embeddings[w], char_embd_output[-1]])
@@ -175,7 +175,8 @@ def build_model(missing_voc, w2v_embeddings, char_embeddings, attention_sel):
     c2v_emb = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
     
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
-    builder_char = dy.GRUBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
+    #builder_char = dy.GRUBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
+    builder_char = dy.BiRNNBuilder(1, CEM_DIMENSIONS, CEM_DIMENSIONS, params, dy.GRUBuilder)
 
     # Feed-Forward parameters
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
