@@ -1,7 +1,7 @@
 import dynet as dy
 from collections import namedtuple
 
-ModelElements = namedtuple("ModelElements", "W V b w2v_emb missing_emb param_collection builder")
+ModelElements = namedtuple("ModelElements", "W V b w2v_emb param_collection builder")
 
 
 def run_instance(tokens, model_elems, embeddings):
@@ -39,8 +39,8 @@ def prediction_loss(instance, prediction):
     return loss
 
 
-def build_model(missing_voc, w2v_embeddings):
-    VOC_SIZE = len(missing_voc)
+def build_model(w2v_embeddings):
+    #VOC_SIZE = len(missing_voc)
     WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1
@@ -48,10 +48,10 @@ def build_model(missing_voc, w2v_embeddings):
 
     FF_HIDDEN_DIM = 10
 
-    print("Missing vocabulary size: %i" % len(missing_voc))
+    #print("Missing vocabulary size: %i" % len(missing_voc))
 
     params = dy.ParameterCollection()
-    missing_wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="missing-wemb")
+    #missing_wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="missing-wemb")
     w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
 
     # Feed-Forward parameters
@@ -61,7 +61,7 @@ def build_model(missing_voc, w2v_embeddings):
 
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
 
-    ret = ModelElements(W, V, b, w2v_wemb, missing_wemb, params, builder)
+    ret = ModelElements(W, V, b, w2v_wemb, params, builder)
 
     return ret
 
