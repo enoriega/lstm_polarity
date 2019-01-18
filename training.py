@@ -29,9 +29,6 @@ def main(input_path):
 
     print("There are %i instances" % len(instances))
 
-    #missing_voc, missing_voc_inverse = build_vocabulary(filter(lambda w: w not in embeddings, set(it.chain.from_iterable(i.tokens for i in instances))))
-
-
     elements = build_model(embeddings)
 
     params = elements.param_collection
@@ -43,7 +40,7 @@ def main(input_path):
         for w in embeddings_index.w2v_index.to_list():
             f.write(w + "\n")
 
-    # Split training and testing
+    # Split training and testing 1 for positive and 0 for negative
     labels = [1 if instance.polarity else 0 for instance in instances] # Compute the labels for a stratified split
     training, testing = train_test_split(instances, stratify=labels)
 
@@ -59,7 +56,7 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), instance.polarity, elements, embeddings_index)
 
             loss = prediction_loss(instance, prediction)
 
@@ -75,7 +72,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance.get_tokens(), elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), instance.polarity, elements, embeddings_index)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)

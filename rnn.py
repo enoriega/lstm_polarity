@@ -4,7 +4,7 @@ from collections import namedtuple
 ModelElements = namedtuple("ModelElements", "W V b w2v_emb param_collection builder")
 
 
-def run_instance(tokens, model_elems, embeddings):
+def run_instance(tokens, polarity, model_elems, embeddings):
 
     # Renew the computational graph
     dy.renew_cg()
@@ -25,8 +25,11 @@ def run_instance(tokens, model_elems, embeddings):
     # Get the last embedding
     selected = outputs[-1]
 
+    # Concatenate the polarity bit to the selected vector
+    prediction_input = dy.concatenate([selected, dy.scalarInput(1 if polarity else 0)])
+
     # Run the FF network for classification
-    prediction = dy.logistic(V * (W * selected + b))
+    prediction = dy.logistic(V * (W * prediction_input + b))
 
     return prediction
 
@@ -40,7 +43,6 @@ def prediction_loss(instance, prediction):
 
 
 def build_model(w2v_embeddings):
-    #VOC_SIZE = len(missing_voc)
     WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1
@@ -48,14 +50,11 @@ def build_model(w2v_embeddings):
 
     FF_HIDDEN_DIM = 10
 
-    #print("Missing vocabulary size: %i" % len(missing_voc))
-
     params = dy.ParameterCollection()
-    #missing_wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="missing-wemb")
     w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
 
     # Feed-Forward parameters
-    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM), name="W")
+    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
     V = params.add_parameters((1, FF_HIDDEN_DIM), name="V")
 
