@@ -36,20 +36,18 @@ def main(input_path):
 
     print("There are %i instances" % len(instances))
 
-    missing_voc, missing_voc_inverse = build_vocabulary(filter(lambda w: w not in embeddings, set(it.chain.from_iterable(i.tokens for i in instances))))
-
-    # Store the vocabulary of the missing words (from the pre-trained embeddings)
-    with open("missing_vocab.txt", "w") as f:
-        for i in range(len(missing_voc_inverse)):
-            f.write(missing_voc_inverse[i] + "\n")
-
     attention_choices = {'no-att':0, '1-layer-att':1, '2-layer-att':2}
     attention_sel = attention_choices['no-att']
-    elements = build_model(missing_voc, embeddings, attention_sel)
+    elements = build_model(embeddings, attention_sel)
 
     params = elements.param_collection
 
-    embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings, elements.missing_emb, missing_voc)
+    embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings)
+
+    # Store the vocabulary of the missing words (from the pre-trained embeddings)
+    with open("w2v_vocab.txt", "w") as f:
+        for w in embeddings_index.w2v_index.to_list():
+            f.write(w + "\n")
 
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)

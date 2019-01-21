@@ -6,10 +6,11 @@ import json
 class W2VEmbeddings:
 
     def __init__(self, raw):
-        self.keys = set(raw.keys())
+        UNK = np.random.random(100) #TODO: Automatically figure this out
+        self.keys = set(raw.keys()) | {"*unknown*"}
         self.keys.remove("1579375")  # Had to remove it manually
         self.voc = {w:ix for ix, w in enumerate(sorted(list(self.keys)))}
-        arrays = [raw[k] for k in sorted(self.keys)]
+        arrays = [raw[k] if k != "*unknown*" else UNK for k in sorted(self.keys)]
 
         self.matrix = np.vstack(arrays)
 
@@ -21,6 +22,9 @@ class W2VEmbeddings:
 
     def shape(self):
         return self.matrix.shape
+
+    def to_list(self):
+        return sorted(list(self.keys))
 
 
 def load_embeddings(path):

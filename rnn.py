@@ -3,11 +3,11 @@ from collections import namedtuple
 import numpy as np
 from utils import *
 
-ModelElements = namedtuple("ModelElements", "W V b w2v_emb missing_emb param_collection builder")
+ModelElements = namedtuple("ModelElements", "W V b w2v_emb param_collection builder")
 
-ModelElements_1 = namedtuple("ModelElements", "W V b W_a b_a w2v_emb missing_emb param_collection builder")
+ModelElements_1 = namedtuple("ModelElements", "W V b W_a b_a w2v_emb param_collection builder")
 
-ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb missing_emb param_collection builder")
+ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb param_collection builder")
 
 def output_attention(collected_vectors, W_a, b_a, HIDDEN_DIM):
     #print('check attention')
@@ -134,8 +134,7 @@ def prediction_loss(instance, prediction):
     return loss
 
 
-def build_model(missing_voc, w2v_embeddings, attention_sel):
-    VOC_SIZE = len(missing_voc)
+def build_model(w2v_embeddings, attention_sel):
     WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1
@@ -143,10 +142,7 @@ def build_model(missing_voc, w2v_embeddings, attention_sel):
 
     FF_HIDDEN_DIM = 10
 
-    print("Missing vocabulary size: %i" % len(missing_voc))
-
     params = dy.ParameterCollection()
-    missing_wemb = params.add_lookup_parameters((VOC_SIZE, WEM_DIMENSIONS), name="missing-wemb")
     w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
     
     builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
@@ -158,14 +154,14 @@ def build_model(missing_voc, w2v_embeddings, attention_sel):
     # no attention
     if attention_sel==0:
         W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
-        ret = ModelElements(W, V, b, w2v_wemb, missing_wemb, params, builder)
+        ret = ModelElements(W, V, b, w2v_wemb, params, builder)
         
     # 1-layer attention
     elif attention_sel==1:
         W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
         W_a = params.add_parameters((1, HIDDEN_DIM))
         b_a = params.add_parameters(1, init=0.01)
-        ret = ModelElements_1(W, V, b, W_a, b_a, w2v_wemb, missing_wemb, params, builder)
+        ret = ModelElements_1(W, V, b, W_a, b_a, w2v_wemb, params, builder)
         
     # 2-layer attention
     elif attention_sel==2:
@@ -174,6 +170,7 @@ def build_model(missing_voc, w2v_embeddings, attention_sel):
         b_a = params.add_parameters(1, init=0.01)
         W_a_2 = params.add_parameters((1, HIDDEN_DIM))       # second level attention weight
         b_a_2 = params.add_parameters(1, init=0.01)
-        ret = ModelElements_2(W, V, b, W_a, b_a, W_a_2, b_a_2, w2v_wemb, missing_wemb, params, builder)
+        ret = ModelElements_2(W, V, b, W_a, b_a, W_a_2, b_a_2, w2v_wemb, params, builder)
+
     return ret
 

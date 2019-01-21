@@ -4,10 +4,6 @@ dy_conf.set(random_seed=2522620396)
 from rnn import *
 from utils import *
 
-
-
-
-
 import dynet as dy
 
 if __name__ == "__main__":

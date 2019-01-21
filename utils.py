@@ -87,8 +87,7 @@ class Instance:
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
-        #print('trigger tokens:', trigger_tokens)
-        #print('tokens:',self.tokens)
+
         trigger_ix = self.tokens.index(Instance._sanitize_word(trigger_tokens[0]), self.start, self.end+1)
         tokens_prev = self.tokens[max(0, self.start - k):self.start]
         tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
@@ -105,14 +104,12 @@ class Instance:
 
 class WordEmbeddingIndex(object):
 
-    def __init__(self, w2v_data, w2v_ix, missing_data, missing_ix):
+    def __init__(self, w2v_data, w2v_ix):
         self.w2v_data = w2v_data
         self.w2v_index = w2v_ix
-        self.missing_data = missing_data
-        self.missing_index = missing_ix
 
     def __getitem__(self, w):
-        return self.w2v_data[self.w2v_index[w]] if w in self.w2v_index else self.missing_data[self.missing_index[w]]
+        return self.w2v_data[self.w2v_index[w]] if w in self.w2v_index else self.w2v_data[self.w2v_index["*unknown*"]]
 
 
 def build_vocabulary(words):
