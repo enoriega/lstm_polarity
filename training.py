@@ -148,4 +148,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label.csv")
+    main("SentencesInfo_all_label_final.csv")

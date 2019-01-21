@@ -81,12 +81,14 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        True if d['pred_polarity'].startswith('Positive') else False,
                         True if d['polarity'].startswith('Positive') else False,
+                        True if d['pred_polarity'].startswith('Positive') else False,
                         d['rule'])
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
+        #print('trigger tokens:', trigger_tokens)
+        #print('tokens:',self.tokens)
         trigger_ix = self.tokens.index(Instance._sanitize_word(trigger_tokens[0]), self.start, self.end+1)
         tokens_prev = self.tokens[max(0, self.start - k):self.start]
         tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
