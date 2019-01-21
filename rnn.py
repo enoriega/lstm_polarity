@@ -27,6 +27,7 @@ def run_instance(tokens, polarity, model_elems, embeddings):
 
     # Concatenate the polarity bit to the selected vector
     prediction_input = dy.concatenate([selected, dy.scalarInput(1 if polarity else 0)])
+    #prediction_input = selected
 
     # Run the FF network for classification
     prediction = dy.logistic(V * (W * prediction_input + b))
@@ -55,6 +56,7 @@ def build_model(w2v_embeddings):
 
     # Feed-Forward parameters
     W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
+    #W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM), name="W")
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
     V = params.add_parameters((1, FF_HIDDEN_DIM), name="V")
 

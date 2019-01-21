@@ -3,16 +3,18 @@ import re
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity, rule_name):
+    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
         self.original_trigger = trigger
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
+        self.pred_polarity = pred_polarity
         self.tokens = Instance.normalize(sen)
         self.rule_name = rule_name.lower()
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
+        self.neg_count = self.get_negCount()
 
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
@@ -79,18 +81,24 @@ class Instance:
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        False if d['polarity'].startswith('Positive') else True,
+                        True if d['polarity'].startswith('Positive') else False,
+                        True if d['pred_polarity'].startswith('Positive') else False,
                         d['rule'])
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
-        trigger_ix = self.tokens.index(trigger_tokens[0], self.start, self.end+1)
+        trigger_ix = self.tokens.index(Instance._sanitize_word(trigger_tokens[0]), self.start, self.end+1)
         tokens_prev = self.tokens[max(0, self.start - k):self.start]
         tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
         tokens_in_right = self.tokens[(trigger_ix+len(trigger_tokens)):self.end]
         tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
 
         return tokens_prev, tokens_in_left, tokens_in_right, tokens_last
+        
+    def get_negCount(self):
+        event_text = ' '.join(word for word in self.tokens[self.start:self.end])
+        neg_count = len(re.findall(r'(?=attenu|block|deactiv|decreas|degrad|delet|deplet|diminish|disrupt|dominant-negative|impair|imped|inhibit|knockdown|knockout|limit|loss|lower|negat|reduc|reliev|repress|restrict|revers|silenc|shRNA|siRNA|slow|starv|suppress|supress|turnover|off)', event_text))
+        return neg_count
 
 
 class WordEmbeddingIndex(object):

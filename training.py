@@ -56,7 +56,7 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance.get_tokens(), instance.polarity, elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), instance.pred_polarity, elements, embeddings_index)
 
             loss = prediction_loss(instance, prediction)
 
@@ -96,4 +96,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo.csv")
+    main("SentencesInfo_all_label_final.csv")
