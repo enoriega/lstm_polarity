@@ -135,8 +135,7 @@ def prediction_loss(instance, prediction):
     return loss
 
 
-def build_model(w2v_embeddings, attention_sel, python_rand_seed):
-    dy_conf.set(random_seed=python_rand_seed)
+def build_model(w2v_embeddings, attention_sel):
     WEM_DIMENSIONS = 100
 
     NUM_LAYERS = 1

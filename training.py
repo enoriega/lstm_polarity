@@ -4,17 +4,19 @@ import w2v
 import itertools as it
 import numpy as np
 import dynet_config as dy_conf
-from utils import *
-from rnn import *
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
-import dynet as dy
+
 
 python_rand_seed=65535
 random.seed(python_rand_seed)
 np.random.seed(python_rand_seed)
 dy_conf.set(random_seed=python_rand_seed)
+
+import dynet as dy
+from utils import *
+from rnn import *
 
 
 

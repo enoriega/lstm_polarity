@@ -4,8 +4,6 @@ import w2v
 import itertools as it
 import numpy as np
 import dynet_config as dy_conf
-from utils import *
-from rnn import *
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
@@ -15,6 +13,9 @@ python_rand_seed=65535
 random.seed(python_rand_seed)
 np.random.seed(python_rand_seed)
 dy_conf.set(random_seed=python_rand_seed)
+
+from utils import *
+from rnn import *
 
 
 
@@ -39,7 +40,7 @@ def main(input_path):
 
     attention_choices = {'no-att':0, '1-layer-att':1, '2-layer-att':2}
     attention_sel = attention_choices['no-att']
-    elements = build_model(embeddings, attention_sel,python_rand_seed)
+    elements = build_model(embeddings, attention_sel)
 
     params = elements.param_collection
 
