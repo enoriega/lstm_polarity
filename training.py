@@ -9,14 +9,15 @@ from rnn import *
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
-import random
-
-random.seed(14535)
-np.random.seed(78456)
-dy_conf.set(random_seed=2522620396)
-python_rand_seed=65535
-
 import dynet as dy
+
+python_rand_seed=65535
+random.seed(python_rand_seed)
+np.random.seed(python_rand_seed)
+dy_conf.set(random_seed=python_rand_seed)
+
+
+
 
 
 def main(input_path):
@@ -52,6 +53,7 @@ def main(input_path):
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
+
     trainer.set_clip_threshold(4.0)
     epochs = 100
     
@@ -59,6 +61,7 @@ def main(input_path):
     skf = StratifiedKFold(n_splits=5)
     for e in range(epochs):
     
+
         
         test_pred_dict = {}
         test_label_dict = {}
@@ -66,6 +69,13 @@ def main(input_path):
         test_reach_pred_dict={}
     
         training_losses = list()
+        bad_grad_count = 0
+        
+        W_np = elements.W.npvalue()
+        
+        print('W sum:',np.sum(W_np), 'W std:',np.std(W_np))
+        print('learning rate:',trainer.learning_rate)
+        
         for train_indices, test_indices in skf.split(instances, labels):
             
             for i, sample_index in enumerate(train_indices):
@@ -75,8 +85,11 @@ def main(input_path):
                 loss = prediction_loss(instance, prediction)
 
                 loss.backward()
-                trainer.update()
-
+                try:
+                    trainer.update()
+                except RuntimeError:
+                    #print('encountered bad gradient, instance skipped.')
+                    bad_grad_count+=1
                 loss_value = loss.value()
                 training_losses.append(loss_value)
 
@@ -105,8 +118,9 @@ def main(input_path):
                 test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
                 test_loss_dict[instance.neg_count].append(loss_value)
                 test_reach_pred_dict[instance.neg_count].append([1 if instance.pred_polarity else 0])
-
+        trainer.learning_rate = trainer.learning_rate*0.1
         print('===================================================================')
+        print('number of bad grads:', bad_grad_count)
         print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
         
         print('---------------LSTM result------------------------- ')

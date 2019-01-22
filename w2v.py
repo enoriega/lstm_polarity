@@ -3,6 +3,7 @@ import numpy as np
 import json
 
 
+
 class W2VEmbeddings:
 
     def __init__(self, raw):

@@ -1,0 +1,32 @@
+import csv
+import random
+import w2v
+import itertools as it
+import numpy as np
+#import dynet_config as dy_conf
+from utils import *
+from rnn import *
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
+import random
+
+random.seed(14535)
+np.random.seed(78456)
+#dy_conf.set(random_seed=2522620396)
+python_rand_seed=65535
+
+#import dynet as dy
+
+input_path  ="SentencesInfo_all_label_final.csv"
+with open(input_path) as f:
+    reader = csv.DictReader(f)
+    data = list(reader)
+    
+instances = [Instance.from_dict(d) for d in data]
+
+
+for i in np.arange(1,len(instances),5000):
+    instance = instances[i]
+    print(instance.tokens[instance.start:instance.end])
+    print(instance.neg_count)

@@ -2,6 +2,7 @@ import dynet as dy
 from collections import namedtuple
 import numpy as np
 from utils import *
+import dynet_config as dy_conf
 
 ModelElements = namedtuple("ModelElements", "W V b w2v_emb param_collection builder")
 

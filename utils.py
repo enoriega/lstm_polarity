@@ -1,6 +1,7 @@
 import re
 
 
+
 class Instance:
 
     def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
