@@ -55,7 +55,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     
     trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
 
-    ff_input = dy.concatenate([trigger_expression, lstm_result])
+    ff_input = dy.concatenate([trigger_expression, selected])
 
     # Run the FF network for classification
     prediction = dy.logistic(V * (W * ff_input + b))
@@ -64,7 +64,7 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
 
 def prediction_loss(instance, prediction):
     # Compute the loss
-    y_true = dy.scalarInput(1 if instance.polarity else 0)
+    y_true = dy.scalarInput(1 if instance.pred_polarity else 0)
     loss = dy.binary_log_loss(prediction, y_true)
 
     return loss
