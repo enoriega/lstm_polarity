@@ -46,84 +46,19 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     b = model_elems.b
     collected_vectors = list()
     
-    if attention_sel==0:
-        HIDDEN_DIM = int((W.dim()[0][1]-1)/4)
-        for segment in instance.get_segments():
+    inputs = [embeddings[w] for w in instance.tokens]
+    lstm = builder.initial_state()
+    outputs = lstm.transduce(inputs)
 
-            if len(segment) > 0:
-
-                # Fetch the embeddings for the current sentence
-                inputs = [embeddings[w] for w in segment]
-
-                # Run FF over the LSTM
-                lstm = builder.initial_state()
-                outputs = lstm.transduce(inputs)
-
-                # Get the last embedding
-                selected = outputs[-1]
-
-                # Collect it
-                collected_vectors.append(selected)
-            else:
-                zero_vector = dy.zeros(HIDDEN_DIM)
-                collected_vectors.append(zero_vector)
-
-        # Concatenate the selected vectors and the polarity trigger feature
-        lstm_result = dy.concatenate(collected_vectors)  # shape=4*20
-
-        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
-
-        ff_input = dy.concatenate([trigger_expression, lstm_result])
-
-        # Run the FF network for classification
-        prediction = dy.logistic(V * (W * ff_input + b))
-        
-    # 1-layer attention
-    elif attention_sel==1:
-        HIDDEN_DIM = int((W.dim()[0][1])-1)
+    # Get the last embedding
+    selected = outputs[-1]
     
-        W_a = model_elems.W_a
-        b_a = model_elems.b_a
+    trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
 
-        for segment in instance.get_segments():
-            if len(segment) > 0:
-                inputs = [embeddings[w] for w in segment]
-                lstm = builder.initial_state()
-                outputs = lstm.transduce(inputs)
-                selected = outputs[-1]
-                collected_vectors.append(selected)
-            else:
-                zero_vector = dy.zeros(HIDDEN_DIM)
-                collected_vectors.append(zero_vector)
+    ff_input = dy.concatenate([trigger_expression, selected])
 
-        lstm_result_att = output_attention(collected_vectors, W_a, b_a, HIDDEN_DIM)
-        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
-        ff_input = dy.concatenate([trigger_expression, lstm_result_att])
-        prediction = dy.logistic(V * (W * ff_input + b))
-        
-    elif attention_sel==2:
-        HIDDEN_DIM = int((W.dim()[0][1])-1)
-    
-        W_a = model_elems.W_a
-        b_a = model_elems.b_a
-        W_a_2 = model_elems.W_a_2
-        b_a_2 = model_elems.b_a_2
-        
-        for segment in instance.get_segments():
-            if len(segment) > 0:
-                inputs = [embeddings[w] for w in segment]
-                lstm = builder.initial_state()
-                outputs = lstm.transduce(inputs)
-                selected_att = output_attention_low(outputs, W_a, b_a, HIDDEN_DIM)
-                collected_vectors.append(selected_att)
-            else:
-                zero_vector = dy.zeros(HIDDEN_DIM)
-                collected_vectors.append(zero_vector)
-
-        lstm_result_att = output_attention_high(collected_vectors, W_a_2, b_a_2, HIDDEN_DIM)
-        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
-        ff_input = dy.concatenate([trigger_expression, lstm_result_att])
-        prediction = dy.logistic(V * (W * ff_input + b))
+    # Run the FF network for classification
+    prediction = dy.logistic(V * (W * ff_input + b))
 
     return prediction
 
@@ -154,7 +89,7 @@ def build_model(w2v_embeddings, attention_sel):
     
     # no attention
     if attention_sel==0:
-        W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
+        W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
         ret = ModelElements(W, V, b, w2v_wemb, params, builder)
         
     # 1-layer attention
