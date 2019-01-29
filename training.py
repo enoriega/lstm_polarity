@@ -21,7 +21,7 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
-    embeddings = w2v.load_embeddings("medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
 
     print("There are %i rows" % len(data))
 
@@ -56,7 +56,7 @@ def main(input_path):
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance.get_tokens(), instance.pred_polarity, elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
 
             loss = prediction_loss(instance, prediction)
 
@@ -72,7 +72,7 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance.get_tokens(), instance.polarity, elements, embeddings_index)
+            prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)
@@ -92,7 +92,7 @@ def main(input_path):
             break
         print()
 
-    params.save("model.dy")
+    #params.save("model.dy")
 
 
 if __name__ == "__main__":
