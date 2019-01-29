@@ -112,6 +112,17 @@ class WordEmbeddingIndex(object):
     def __getitem__(self, w):
         return self.w2v_data[self.w2v_index[w]] if w in self.w2v_index else self.w2v_data[self.w2v_index["*unknown*"]]
 
+class CharEmbeddingIndex(object):
+    def __init__(self, c2v_data, char_embeddings):
+    # c2v_data is the dynet lookup parameter, character_dict_path is the path of all characters.
+        self.char_dict = char_embeddings
+        self.c2v_data = c2v_data
+        self.c2v_index = {w:i for i,w in enumerate(sorted(list(self.char_dict.keys())))}
+        print('sorted c2v dict:', self.c2v_index)
+
+    def __getitem__(self, c):
+        return self.c2v_data[self.c2v_index[c]] if c in self.char_dict else self.c2v_data[len(self.char_dict)]
+
 
 def build_vocabulary(words):
     index, reverse_index = dict(), dict()
@@ -120,3 +131,15 @@ def build_vocabulary(words):
         reverse_index[i] = w
 
     return index, reverse_index
+
+def build_char_dict(instances):
+    char_dict = {}
+    for instance in instances:
+        for token in instance.tokens:
+            for character in token:
+                if character=='':
+                    print('have empty token!  ', instance.tokens)
+                    input('press enter to continue')
+                char_dict[character] = 1
+    char_dict['']=1
+    return char_dict

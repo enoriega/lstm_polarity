@@ -4,36 +4,30 @@ import numpy as np
 from utils import *
 
 
-ModelElements = namedtuple("ModelElements", "W V b w2v_emb param_collection builder")
+ModelElements = namedtuple("ModelElements", "W V b w2v_emb c2v_embd param_collection builder")
 
-ModelElements_1 = namedtuple("ModelElements", "W V b W_a b_a w2v_emb param_collection builder")
+ModelElements_1 = namedtuple("ModelElements", "W V b W_char b_char w2v_emb c2v_embd param_collection builder")
 
-ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb param_collection builder")
+#ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb param_collection builder")
+def get_char_embd(word, model_elems, embeddings_char_index):
+    W_char = model_elems.W_char
+    b_char = model_elems.b_char
 
-def output_attention(collected_vectors, W_a, b_a, HIDDEN_DIM):
-    #print('check attention')
-    collected_vectors = dy.concatenate(collected_vectors, d=1)
-    a = W_a * collected_vectors + b_a
-    s = dy.transpose(dy.softmax(dy.transpose(a)))
-    
-    return dy.reshape(s*dy.transpose(collected_vectors), d=(HIDDEN_DIM,))
+    char_embd_list = list([])
+    for character in word:
+        char_embd_list.append(embeddings_char_index[character])
+    char_embd_tensor = dy.transpose(dy.concatenate(char_embd_list,d=1))
 
-def output_attention_low(outputs, W_a, b_a, HIDDEN_DIM):   # low-level attention (within each LSTM)
-    outputs = dy.concatenate(outputs, d=1)
-    a = W_a * outputs + b_a
-    s = dy.transpose(dy.softmax(dy.transpose(a)))
-    
-    return dy.reshape(s*dy.transpose(outputs), d=(HIDDEN_DIM,))
+    print('char embed tensor dim:', char_embd_tensor.dim())
 
-def output_attention_high(collected_vectors, W_a_2, b_a_2, HIDDEN_DIM):   #high-level attention
-    #print('check attention')
-    collected_vectors = dy.concatenate(collected_vectors, d=1)
-    a = W_a_2 * collected_vectors + b_a_2
-    s = dy.transpose(dy.softmax(dy.transpose(a)))
-    
-    return dy.reshape(s*dy.transpose(collected_vectors), d=(HIDDEN_DIM,))
+    char_embd_vec = dy.max_dim(char_embd_tensor)
 
-def run_instance(instance, model_elems, embeddings, attention_sel):
+    print('char embd vec dim:', char_embd_vec.dim())
+
+    return char_embd_vec
+
+
+def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_sel):
 
     # Renew the computational graph
     dy.renew_cg()
@@ -44,23 +38,55 @@ def run_instance(instance, model_elems, embeddings, attention_sel):
     W = model_elems.W
     V = model_elems.V
     b = model_elems.b
-    collected_vectors = list()
-    
-    inputs = [embeddings[w] for w in instance.tokens]
-    lstm = builder.initial_state()
-    outputs = lstm.transduce(inputs)
 
-    # Get the last embedding
-    selected = outputs[-1]
-    
-    trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+    if char_embd_sel==0:
+        collected_vectors = list()
+        
+        inputs = [embeddings[w] for w in instance.tokens] # in Enrique's master branch code, he uses get_toekn
+        lstm = builder.initial_state()
+        outputs = lstm.transduce(inputs)
 
-    ff_input = dy.concatenate([trigger_expression, selected])
+        # Get the last embedding
+        selected = outputs[-1]
+        
+        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
 
-    # Run the FF network for classification
-    prediction = dy.logistic(V * (W * ff_input + b))
+        ff_input = dy.concatenate([trigger_expression, selected])
 
-    return prediction
+        # Run the FF network for classification
+        prediction = dy.logistic(V * (W * ff_input + b))
+
+        return prediction
+
+    elif char_embd_sel==1:
+
+        inputs = list([])
+        for word in instance.tokens:
+            word_embd = embeddings[word]
+            char_embd = get_char_embd(word, model_elems, char_embeddings)
+            input_vec = dy.concatenate([word_embd,char_embd])
+
+            print('input vec dim:', input_vec.dim())
+
+            inputs.append(input_vec)
+        lstm = builder.initial_state()
+        outputs = lstm.transduce(inputs)
+
+        # Get the last embedding
+        selected = outputs[-1]
+        
+        trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+
+        ff_input = dy.concatenate([trigger_expression, selected])
+
+        # Run the FF network for classification
+        prediction = dy.logistic(V * (W * ff_input + b))
+
+        input('press enter to continue')
+
+        return prediction
+
+
 
 def prediction_loss(instance, prediction):
     # Compute the loss
@@ -70,8 +96,10 @@ def prediction_loss(instance, prediction):
     return loss
 
 
-def build_model(w2v_embeddings, attention_sel):
+def build_model(w2v_embeddings, char_embeddings, word_embd_sel, char_embd_sel):
     WEM_DIMENSIONS = 100
+    CEM_DIMENSIONS = 20
+
 
     NUM_LAYERS = 1
     HIDDEN_DIM = 30
@@ -79,34 +107,33 @@ def build_model(w2v_embeddings, attention_sel):
     FF_HIDDEN_DIM = 10
 
     params = dy.ParameterCollection()
-    w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
-    
-    builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
+
+    if word_embd_sel==0:
+        w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, name="w2v-wemb")
+
+    elif word_embd_sel==1:
+        w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
+    c2v_embd = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
+
+
 
     # Feed-Forward parameters
+    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
     V = params.add_parameters((1, FF_HIDDEN_DIM), name="V")
     
     # no attention
-    if attention_sel==0:
-        W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
-        ret = ModelElements(W, V, b, w2v_wemb, params, builder)
-        
-    # 1-layer attention
-    elif attention_sel==1:
-        W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
-        W_a = params.add_parameters((1, HIDDEN_DIM))
-        b_a = params.add_parameters(1, init=0.01)
-        ret = ModelElements_1(W, V, b, W_a, b_a, w2v_wemb, params, builder)
-        
-    # 2-layer attention
-    elif attention_sel==2:
-        W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
-        W_a = params.add_parameters((1, HIDDEN_DIM))   #first level attention weight
-        b_a = params.add_parameters(1, init=0.01)
-        W_a_2 = params.add_parameters((1, HIDDEN_DIM))       # second level attention weight
-        b_a_2 = params.add_parameters(1, init=0.01)
-        ret = ModelElements_2(W, V, b, W_a, b_a, W_a_2, b_a_2, w2v_wemb, params, builder)
+    if char_embd_sel==0:
+        builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
+
+        ret = ModelElements(W, V, b, w2v_wemb, c2v_embd, params, builder)
+
+    elif char_embd_sel==1:
+        builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
+
+        W_char = params.add_parameters((CEM_DIMENSIONS, CEM_DIMENSIONS), name="Wchar")
+        b_char = params.add_parameters((CEM_DIMENSIONS), name="bchar")
+
+        ret = ModelElements_1(W, V, b, W_char, b_char, w2v_wemb, c2v_embd, params, builder)
 
     return ret
-

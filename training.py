@@ -27,11 +27,15 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
-    embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+
 
     print("There are %i rows" % len(data))
 
     instances = [Instance.from_dict(d) for d in data]
+
+    char_embeddings = build_char_dict(instances)
+
         
     # Shuffle the training instances
     random.Random(python_rand_seed).shuffle(instances)
@@ -39,13 +43,18 @@ def main(input_path):
 
     print("There are %i instances" % len(instances))
 
-    attention_choices = {'no-att':0, '1-layer-att':1, '2-layer-att':2}
-    attention_sel = attention_choices['no-att']
-    elements = build_model(embeddings, attention_sel)
+    char_embd_choices = {'no-char-embd':0, 'linear-char-embd':1, 'biGRU-char-embd':2}
+    char_embd_sel = char_embd_choices['linear-char-embd']
+    word_embd_choices = {'no-med-pub':0,'med-pub':1}
+    word_embd_sel = word_embd_choices['no-med-pub']
+
+
+    elements = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
 
     params = elements.param_collection
 
     embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings)
+    embeddings_char_index = CharEmbeddingIndex(elements.c2v_embd, char_embeddings)
 
     # Store the vocabulary of the missing words (from the pre-trained embeddings)
     with open("w2v_vocab.txt", "w") as f:
@@ -82,7 +91,7 @@ def main(input_path):
             
             for i, sample_index in enumerate(train_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, attention_sel)
+                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
 
                 loss = prediction_loss(instance, prediction)
 
@@ -105,7 +114,7 @@ def main(input_path):
             fold_labels = list([])
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, attention_sel)
+                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
                 y_pred = 1 if prediction.value() >= 0.5 else 0
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
