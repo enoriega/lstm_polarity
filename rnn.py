@@ -16,6 +16,12 @@ def run_instance(tokens, polarity, model_elems, embeddings):
 
     # Fetch the embeddings for the current sentence
     words = tokens
+
+    print('words of a sentence:')
+    print([word for word in words])
+    print('embedding for empty character')
+    print(embeddings[''].npvalue())
+    input('press enter to continue')
     inputs = [embeddings[w] for w in words]
 
     # Run FF over the LSTM
