@@ -118,7 +118,7 @@ class CharEmbeddingIndex(object):
         self.char_dict = char_embeddings
         self.c2v_data = c2v_data
         self.c2v_index = {w:i for i,w in enumerate(sorted(list(self.char_dict.keys())))}
-        print('sorted c2v dict:', self.c2v_index)
+        #print('sorted c2v dict:', self.c2v_index)
 
     def __getitem__(self, c):
         return self.c2v_data[self.c2v_index[c]] if c in self.char_dict else self.c2v_data[len(self.char_dict)]

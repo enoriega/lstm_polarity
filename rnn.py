@@ -6,25 +6,35 @@ from utils import *
 
 ModelElements = namedtuple("ModelElements", "W V b w2v_emb c2v_embd param_collection builder")
 
-ModelElements_1 = namedtuple("ModelElements", "W V b w2v_emb c2v_embd param_collection builder builder_char")
+ModelElements_1 = namedtuple("ModelElements", "W V b w2v_emb c2v_embd param_collection builder builder_char_fwd, builder_char_bwd")
 
 #ModelElements_2 = namedtuple("ModelElements", "W V b W_a b_a W_a_2 b_a_2 w2v_emb param_collection builder")
 def get_char_embd(word, model_elems, embeddings_char_index):
-    biGRU = model_elems.builder_char
+    gru_char_fwd = model_elems.builder_char_fwd.initial_state()
+    gru_char_bwd = model_elems.builder_char_bwd.initial_state()
 
-    print('current word:', word)
-    print('number of characters in word:',len(word))
+    #print('current word:', word)
+    #print('number of characters in word:',len(word))
 
-    char_embd_list = list([])
-    for character in word:
-        char_embd_list.append(embeddings_char_index[character])
-    char_embd_output = biGRU.transduce(char_embd_list)
+    if word=='':
+        char_embd_list = [embeddings_char_index['']]
 
-    print('char emdb GRU output of each time step:', char_embd_output[0].dim())
+    else:
+        char_embd_list = list([])
+        for character in word:
+            char_embd_list.append(embeddings_char_index[character])
 
-    char_embd_vec = dy.concatenate([char_embd_output[0], char_embd_output[1]],d=0)
+    output_fwd = gru_char_fwd.transduce(char_embd_list)
+    output_bwd = gru_char_bwd.transduce(char_embd_list[::-1])
 
-    print('char embd vec dim:', char_embd_vec.dim())
+    # print('length of input:', len(output_fwd))
+    # print('length of output:', len(output_bwd))
+
+    char_embd_vec = dy.concatenate([output_fwd[-1], output_bwd[-1]],d=0)
+
+    # print('char embd vec dim:', char_embd_vec.dim())
+
+    # input('press enter to continue')
 
     return char_embd_vec
 
@@ -43,6 +53,8 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
 
     if char_embd_sel==0:
         collected_vectors = list()
+
+        # it is ok to have empty embedding in the token sequence. 
         
         inputs = [embeddings[w] for w in instance.tokens] # in Enrique's master branch code, he uses get_toekn
         lstm = builder.initial_state()
@@ -63,14 +75,14 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
     elif char_embd_sel==1:
 
         inputs = list([])
-        print('tokens of the sentence')
-        print([token for token in instance.tokens])
+        #print('tokens of the sentence')
+        #print([token for token in instance.tokens])
         for word in instance.tokens:
             word_embd = embeddings[word]
             char_embd = get_char_embd(word, model_elems, char_embeddings)
             input_vec = dy.concatenate([word_embd,char_embd], d=0)
 
-            print('input vec dim:', input_vec.dim())
+            #print('input vec dim:', input_vec.dim())
 
             inputs.append(input_vec)
         lstm = builder.initial_state()
@@ -86,7 +98,7 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
         # Run the FF network for classification
         prediction = dy.logistic(V * (W * ff_input + b))
 
-        input('press enter to continue')
+        #input('press enter to continue')
 
         return prediction
 
@@ -133,9 +145,11 @@ def build_model(w2v_embeddings, char_embeddings, word_embd_sel, char_embd_sel):
         ret = ModelElements(W, V, b, w2v_wemb, c2v_embd, params, builder)
 
     elif char_embd_sel==1:
-        builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS, HIDDEN_DIM, params)
-        builder_char = dy.BiRNNBuilder(NUM_LAYERS, CEM_DIMENSIONS, CEM_DIMENSIONS, params, dy.GRUBuilder)
+        builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS*2, HIDDEN_DIM, params)
+        builder_char_fwd = dy.GRUBuilder(NUM_LAYERS, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
+        builder_char_bwd = dy.GRUBuilder(NUM_LAYERS, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
 
-        ret = ModelElements_1(W, V, b, w2v_wemb, c2v_embd, params, builder, builder_char)
+
+        ret = ModelElements_1(W, V, b, w2v_wemb, c2v_embd, params, builder, builder_char_fwd, builder_char_bwd)
 
     return ret

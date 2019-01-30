@@ -7,9 +7,18 @@ import dynet_config as dy_conf
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
+import sys
+
+python_rand_seed = int(sys.argv[1])
+word_embd_sel = int(sys.argv[2])
+char_embd_sel = int(sys.argv[3])
+
+print('python random seed:', python_rand_seed)
+print('word embd:', word_embd_sel)
+print('char embd:', char_embd_sel)
 
 
-python_rand_seed=65535
+#python_rand_seed=65535
 random.seed(python_rand_seed)
 np.random.seed(python_rand_seed)
 dy_conf.set(random_seed=python_rand_seed)
@@ -36,6 +45,8 @@ def main(input_path):
 
     char_embeddings = build_char_dict(instances)
 
+
+
         
     # Shuffle the training instances
     random.Random(python_rand_seed).shuffle(instances)
@@ -43,10 +54,10 @@ def main(input_path):
 
     print("There are %i instances" % len(instances))
 
-    char_embd_choices = {'no-char-embd':0, 'linear-char-embd':1, 'biGRU-char-embd':2}
-    char_embd_sel = char_embd_choices['linear-char-embd']
-    word_embd_choices = {'no-med-pub':0,'med-pub':1}
-    word_embd_sel = word_embd_choices['no-med-pub']
+    # char_embd_choices = {'no-char-embd':0, 'biGRU-char-embd':1}
+    # char_embd_sel = char_embd_choices['biGRU-char-embd']
+    # word_embd_choices = {'no-med-pub':0,'med-pub':1}
+    # word_embd_sel = word_embd_choices['no-med-pub']
 
 
     elements = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
@@ -66,10 +77,13 @@ def main(input_path):
     trainer = dy.AdamTrainer(params)
 
     trainer.set_clip_threshold(4.0)
-    epochs = 100
+    epochs = 10
     
     # split data and do cross-validation
     skf = StratifiedKFold(n_splits=5)
+
+    f1_results = np.zeros((epochs, 6))
+
     for e in range(epochs):
     
 
@@ -145,6 +159,10 @@ def main(input_path):
             all_pred.extend(test_pred_dict[neg_count])
             all_label.extend(test_label_dict[neg_count])
         all_f1 = f1_score(all_label, all_pred)
+        all_recall = recall_score(all_label, all_pred)
+        all_precision = precision_score(all_label, all_pred)
+
+        f1_results[e,0:3] = [all_f1, all_recall, all_precision]
         print('overall f1:', all_f1)
         
         print('---------------REACH result------------------------- ')
@@ -158,6 +176,10 @@ def main(input_path):
             all_pred.extend(test_reach_pred_dict[neg_count])
             all_label.extend(test_label_dict[neg_count])
         all_f1 = f1_score(all_label, all_pred)
+        all_recall = recall_score(all_label, all_pred)
+        all_precision = precision_score(all_label, all_pred)
+        f1_results[e,3:6] = [all_f1, all_recall, all_precision]
+
         print('overall f1:', all_f1)
             
 #            if sum(testing_predictions) >= 1:
@@ -166,6 +188,9 @@ def main(input_path):
 #            if avg_loss <= 3e-3:
 #                break
 #            print()
+
+    file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'.csv'
+    np.savetxt(file_name, f1_results, delimiter=',')
 
     #params.save("model.dy")
 
