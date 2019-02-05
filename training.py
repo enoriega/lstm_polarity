@@ -27,10 +27,6 @@ import dynet as dy
 from utils import *
 from rnn import *
 
-
-
-
-
 def main(input_path):
     with open(input_path) as f:
         reader = csv.DictReader(f)
@@ -60,33 +56,37 @@ def main(input_path):
     # word_embd_sel = word_embd_choices['no-med-pub']
 
 
-    elements = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
-
-    params = elements.param_collection
-
-    embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings)
-    embeddings_char_index = CharEmbeddingIndex(elements.c2v_embd, char_embeddings)
-
+    
     # Store the vocabulary of the missing words (from the pre-trained embeddings)
-    with open("w2v_vocab.txt", "w") as f:
-        for w in embeddings_index.w2v_index.to_list():
-            f.write(w + "\n")
+#    with open("w2v_vocab.txt", "w") as f:
+#        for w in embeddings_index.w2v_index.to_list():
+#            f.write(w + "\n")
 
     # Training loop
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
-    trainer = dy.AdamTrainer(params)
 
     # use this to test whether a smaller learning rate can boost the performance of pre-trained models. delete
     # this line when generating formal results.
     # trainer.learning_rate = trainer.learning_rate*0.5
-
-    trainer.set_clip_threshold(4.0)
-    epochs = 10
     
     # split data and do cross-validation
     skf = StratifiedKFold(n_splits=5)
-
+    
+    elements = {}
+    embeddings_indices = {}
+    embeddings_char_indices = {}
+    trainers = {}
+    params = {}
+    
+    epochs = 10
     f1_results = np.zeros((epochs, 6))
+    for i in range(5):
+        elements[i] = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
+        embeddings_indices[i] = WordEmbeddingIndex(elements[i].w2v_emb, embeddings)
+        embeddings_char_indices[i] = CharEmbeddingIndex(elements[i].c2v_embd, char_embeddings)
+        params[i] = elements[i].param_collection
+        trainers[i] = dy.AdamTrainer(params[i])
+        trainers[i].set_clip_threshold(4.0)
 
     for e in range(epochs):
     
@@ -100,16 +100,20 @@ def main(input_path):
         training_losses = list()
         bad_grad_count = 0
         
-        W_np = elements.W.npvalue()
         
-        print('W sum:',np.sum(W_np), 'W std:',np.std(W_np))
-        print('learning rate:',trainer.learning_rate)
-        
-        for train_indices, test_indices in skf.split(instances, labels):
+        for m_index, (train_indices, test_indices) in enumerate(skf.split(instances, labels)):
+            element = elements[m_index]
+            embeddings_index = embeddings_indices[m_index]
+            embeddings_char_index = embeddings_char_indices[m_index]
+            trainer = trainers[m_index]
+            
+            W_np = element.W.npvalue()
+            print('W sum:',np.sum(W_np), 'W std:',np.std(W_np))
+            print('learning rate:',trainer.learning_rate)
             
             for i, sample_index in enumerate(train_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, char_embd_sel)
 
                 loss = prediction_loss(instance, prediction)
 
@@ -132,7 +136,7 @@ def main(input_path):
             fold_labels = list([])
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, char_embd_sel)
                 y_pred = 1 if prediction.value() >= 0.5 else 0
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
@@ -147,7 +151,8 @@ def main(input_path):
                 test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
                 test_loss_dict[instance.neg_count].append(loss_value)
                 test_reach_pred_dict[instance.neg_count].append([1 if instance.pred_polarity else 0])
-        trainer.learning_rate = trainer.learning_rate*0.1
+            trainer.learning_rate = trainer.learning_rate*0.1
+            
         print('===================================================================')
         print('number of bad grads:', bad_grad_count)
         print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
