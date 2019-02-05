@@ -76,6 +76,10 @@ def main(input_path):
     #trainer = dy.SimpleSGDTrainer(params, learning_rate=0.005)
     trainer = dy.AdamTrainer(params)
 
+    # use this to test whether a smaller learning rate can boost the performance of pre-trained models. delete
+    # this line when generating formal results.
+    # trainer.learning_rate = trainer.learning_rate*0.5
+
     trainer.set_clip_threshold(4.0)
     epochs = 10
     
