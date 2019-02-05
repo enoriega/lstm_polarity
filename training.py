@@ -10,12 +10,13 @@ from sklearn.metrics import f1_score, precision_score, recall_score, classificat
 import sys
 
 python_rand_seed = int(sys.argv[1])
-word_embd_sel = int(sys.argv[2])
-char_embd_sel = int(sys.argv[3])
+seg_sel = int(sys.argv[2])
+att_sel = int(sys.argv[3])
+
 
 print('python random seed:', python_rand_seed)
-print('word embd:', word_embd_sel)
-print('char embd:', char_embd_sel)
+print('segment selection:', seg_sel)
+print('attention selection:', att_sel)
 
 
 #python_rand_seed=65535
@@ -43,9 +44,6 @@ def main(input_path):
 
     instances = [Instance.from_dict(d) for d in data]
 
-    char_embeddings = build_char_dict(instances)
-
-
 
         
     # Shuffle the training instances
@@ -60,12 +58,11 @@ def main(input_path):
     # word_embd_sel = word_embd_choices['no-med-pub']
 
 
-    elements = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
+    elements = build_model(embeddings, seg_sel, att_sel)
 
     params = elements.param_collection
 
     embeddings_index = WordEmbeddingIndex(elements.w2v_emb, embeddings)
-    embeddings_char_index = CharEmbeddingIndex(elements.c2v_embd, char_embeddings)
 
     # Store the vocabulary of the missing words (from the pre-trained embeddings)
     with open("w2v_vocab.txt", "w") as f:
@@ -105,7 +102,7 @@ def main(input_path):
             
             for i, sample_index in enumerate(train_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, elements, embeddings_index, seg_sel, att_sel)
 
                 loss = prediction_loss(instance, prediction)
 
@@ -128,7 +125,7 @@ def main(input_path):
             fold_labels = list([])
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, elements, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, elements, embeddings_index, seg_sel, att_sel)
                 y_pred = 1 if prediction.value() >= 0.5 else 0
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
@@ -189,7 +186,7 @@ def main(input_path):
 #                break
 #            print()
 
-    file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'.csv'
+    file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_seg_'+str(seg_sel)+'_att_'+str(att_sel)+'.csv'
     np.savetxt(file_name, f1_results, delimiter=',')
 
     #params.save("model.dy")
