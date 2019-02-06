@@ -49,14 +49,17 @@ def main(input_path):
     testing_labels = [1 if instance.polarity else 0 for instance in testing]
 
     # Training loop
-    trainer = dy.SimpleSGDTrainer(params)
+    #trainer = dy.SimpleSGDTrainer(params)
+    trainer = dy.AdamTrainer(params)
     epochs = 100
     for e in range(epochs):
         # Shuffle the training instances
         training_losses = list()
         for i, instance in enumerate(training):
 
-            prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
+            #prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
+            prediction = run_instance(instance.tokens, instance.rule_polarity, elements, embeddings_index)
+
 
             loss = prediction_loss(instance, prediction)
 
@@ -72,7 +75,9 @@ def main(input_path):
         testing_losses = list()
         testing_predictions = list()
         for i, instance in enumerate(testing):
-            prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
+            #prediction = run_instance(instance.get_tokens(), instance.rule_polarity, elements, embeddings_index)
+            prediction = run_instance(instance.tokens, instance.rule_polarity, elements, embeddings_index)
+
             y_pred = 1 if prediction.value() >= 0.5 else 0
             testing_predictions.append(y_pred)
             loss = prediction_loss(instance, prediction)

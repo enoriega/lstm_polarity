@@ -58,7 +58,8 @@ def build_model(w2v_embeddings):
     FF_HIDDEN_DIM = 10
 
     params = dy.ParameterCollection()
-    w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
+    #w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape, init=w2v_embeddings.matrix, name="w2v-wemb")
+    w2v_wemb = params.add_lookup_parameters(w2v_embeddings.matrix.shape,  name="w2v-wemb")
 
     # Feed-Forward parameters
     W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
