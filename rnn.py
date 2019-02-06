@@ -24,6 +24,9 @@ def get_char_embd(word, model_elems, embeddings_char_index):
         for character in word:
             char_embd_list.append(embeddings_char_index[character])
 
+    # print('forward char:', char_embd_list)
+    # print('backward char:', char_embd_list[::-1])
+
     output_fwd = gru_char_fwd.transduce(char_embd_list)
     output_bwd = gru_char_bwd.transduce(char_embd_list[::-1])
 
@@ -77,6 +80,8 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
         inputs = list([])
         #print('tokens of the sentence')
         #print([token for token in instance.tokens])
+        print('===new instance====')
+        print(instance.tokens)
         for word in instance.tokens:
             word_embd = embeddings[word]
             char_embd = get_char_embd(word, model_elems, char_embeddings)
@@ -99,6 +104,8 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
         prediction = dy.logistic(V * (W * ff_input + b))
 
         #input('press enter to continue')
+
+        input('press enter to continue')
 
         return prediction
 
