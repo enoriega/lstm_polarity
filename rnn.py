@@ -83,7 +83,9 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
     b = model_elems.b
     collected_vectors = list()
     
+
     if att_sel==0:
+        # 1-segment using tokens
         if seg_sel==0:
             HIDDEN_DIM = int((W.dim()[0][1]-1))
             collected_vectors = list()
@@ -112,8 +114,39 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
             prediction = dy.logistic(V * (W * ff_input + b))
 
             return prediction
-            
+
+        # 1-segment using get_tokens
         elif seg_sel==1:
+            HIDDEN_DIM = int((W.dim()[0][1]-1))
+            collected_vectors = list()
+
+            # it is ok to have empty embedding in the token sequence. 
+            inputs = list([])
+            for word in instance.get_tokens():
+                word_embd = embeddings[word]
+                char_embd = get_char_embd(word, model_elems, char_embeddings)
+                input_vec = dy.concatenate([word_embd,char_embd], d=0)
+                inputs.append(input_vec)
+
+            
+            #inputs = [embeddings[w] for w in instance.tokens] # in Enrique's master branch code, he uses get_toekn
+            lstm = builder.initial_state()
+            outputs = lstm.transduce(inputs)
+
+            # Get the last embedding
+            selected = outputs[-1]
+            
+            trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+
+            ff_input = dy.concatenate([trigger_expression, selected])
+
+            # Run the FF network for classification
+            prediction = dy.logistic(V * (W * ff_input + b))
+
+            return prediction
+            
+        # four segments
+        elif seg_sel==2:
             HIDDEN_DIM = int((W.dim()[0][1]-1)/4)
             for segment in instance.get_segments():
 
@@ -185,8 +218,38 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
             # Run the FF network for classification
             prediction = dy.logistic(V * (W * ff_input + b))
 
-
         elif seg_sel==1:
+            HIDDEN_DIM = int((W.dim()[0][1]-1))
+
+            W_a = model_elems.W_a
+            b_a = model_elems.b_a
+
+            collected_vectors = list()
+
+            # it is ok to have empty embedding in the token sequence. 
+            inputs = list([])
+            for word in instance.get_tokens():
+                word_embd = embeddings[word]
+                char_embd = get_char_embd(word, model_elems, char_embeddings)
+                input_vec = dy.concatenate([word_embd,char_embd], d=0)
+                inputs.append(input_vec)
+            
+            #inputs = [embeddings[w] for w in instance.tokens] # in Enrique's master branch code, he uses get_toekn
+            lstm = builder.initial_state()
+            outputs = lstm.transduce(inputs)
+
+            # Get the last embedding
+            selected = output_attention(outputs, W_a, b_a, HIDDEN_DIM)
+            
+            trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+
+            ff_input = dy.concatenate([trigger_expression, selected])
+
+            # Run the FF network for classification
+            prediction = dy.logistic(V * (W * ff_input + b))
+
+
+        elif seg_sel==2:
             HIDDEN_DIM = int((W.dim()[0][1])-1)
         
             W_a = model_elems.W_a
@@ -281,9 +344,9 @@ def build_model(w2v_embeddings, char_embeddings, seg_sel, att_sel):
     
     # no attention
     if att_sel==0:
-        if seg_sel==0:
+        if seg_sel==0 or seg_sel==1:
             W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
-        elif seg_sel==1:
+        elif seg_sel==2:
             W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
         ret = ModelElements(W, V, b, w2v_wemb, c2v_embd, params, builder, builder_char_fwd, builder_char_bwd)
         

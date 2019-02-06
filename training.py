@@ -78,7 +78,7 @@ def main(input_path):
     trainers = {}
     params = {}
     
-    epochs = 5
+    epochs = 1
     f1_results = np.zeros((epochs, 6))
     for i in range(5):
         elements[i] = build_model(embeddings, char_embeddings, seg_sel, att_sel)
