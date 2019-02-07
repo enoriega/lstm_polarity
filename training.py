@@ -10,12 +10,10 @@ from sklearn.metrics import f1_score, precision_score, recall_score, classificat
 import sys
 
 python_rand_seed = int(sys.argv[1])
-word_embd_sel = int(sys.argv[2])
-char_embd_sel = int(sys.argv[3])
+
 
 print('python random seed:', python_rand_seed)
-print('word embd:', word_embd_sel)
-print('char embd:', char_embd_sel)
+
 
 
 #python_rand_seed=65535
@@ -33,7 +31,8 @@ def main(input_path):
         data = list(reader)
 
     #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
-    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    #embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
 
 
     print("There are %i rows" % len(data))
@@ -42,9 +41,6 @@ def main(input_path):
 
     char_embeddings = build_char_dict(instances)
 
-
-
-        
     # Shuffle the training instances
     random.Random(python_rand_seed).shuffle(instances)
     labels = [1 if instance.polarity else 0 for instance in instances]
@@ -82,7 +78,7 @@ def main(input_path):
     epochs = 10
     f1_results = np.zeros((epochs, 6))
     for i in range(5):
-        elements[i] = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
+        elements[i] = build_model(embeddings, char_embeddings)
         embeddings_indices[i] = WordEmbeddingIndex(elements[i].w2v_emb, embeddings)
         embeddings_char_indices[i] = CharEmbeddingIndex(elements[i].c2v_embd, char_embeddings)
         params[i] = elements[i].param_collection
@@ -90,8 +86,6 @@ def main(input_path):
         trainers[i].set_clip_threshold(4.0)
 
     for e in range(epochs):
-    
-
         
         test_pred_dict = {}
         test_label_dict = {}
@@ -114,7 +108,7 @@ def main(input_path):
             
             for i, sample_index in enumerate(train_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index)
 
                 loss = prediction_loss(instance, prediction)
 
@@ -137,7 +131,7 @@ def main(input_path):
             fold_labels = list([])
             for i, sample_index in enumerate(test_indices):
                 instance = instances[sample_index]
-                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, char_embd_sel)
+                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index)
                 y_pred = 1 if prediction.value() >= 0.5 else 0
                 loss = prediction_loss(instance, prediction)
                 loss_value = loss.value()
@@ -199,7 +193,7 @@ def main(input_path):
 #                break
 #            print()
 
-    file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'.csv'
+    file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_biLSTM.csv'
     np.savetxt(file_name, f1_results, delimiter=',')
 
     #params.save("model.dy")
