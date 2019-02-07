@@ -8,9 +8,9 @@ do
 	
 	python training.py ${seed} 0 1
 
-	python training.py ${seed} 1 0
+	# python training.py ${seed} 1 0
 
-	python training.py ${seed} 1 1
+	# python training.py ${seed} 1 1
 
 
 done

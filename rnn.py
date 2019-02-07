@@ -59,7 +59,7 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
 
         # it is ok to have empty embedding in the token sequence. 
         
-        inputs = [embeddings[w] for w in instance.tokens] # in Enrique's master branch code, he uses get_toekn
+        inputs = [embeddings[w] for w in instance.get_tokens()] # in Enrique's master branch code, he uses get_toekn
         lstm = builder.initial_state()
         outputs = lstm.transduce(inputs)
 
@@ -82,9 +82,9 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
         inputs = list([])
         #print('tokens of the sentence')
         #print([token for token in instance.tokens])
-        print('===new instance====')
-        print(instance.tokens)
-        for word in instance.tokens:
+        # print('===new instance====')
+        # print(instance.tokens)
+        for word in instance.get_tokens():
             word_embd = embeddings[word]
             char_embd = get_char_embd(word, model_elems, char_embeddings)
             input_vec = dy.concatenate([word_embd,char_embd], d=0)
@@ -107,7 +107,7 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
 
         #input('press enter to continue')
 
-        input('press enter to continue')
+        # input('press enter to continue')
 
         return prediction
 
