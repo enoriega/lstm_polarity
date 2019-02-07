@@ -67,8 +67,10 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, char_embd_s
         selected = outputs[-1]
         
         trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
+        #trigger_expression = dy.scalarInput(0)
 
         ff_input = dy.concatenate([trigger_expression, selected])
+        #ff_input = selected
 
         # Run the FF network for classification
         prediction = dy.logistic(V * (W * ff_input + b))
