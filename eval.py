@@ -42,8 +42,8 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
-    embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
-    #embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
     #embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
 
 
@@ -55,7 +55,7 @@ def main(input_path):
 
     # Shuffle the training instances
     random.Random(python_rand_seed).shuffle(instances)
-    labels = [1 if instance.polarity else 0 for instance in instances]
+    labels = [instance.polarity for instance in instances]
     
     element = build_model()
     embeddings_index = WordEmbeddingIndex(element.w2v_emb, embeddings)
@@ -74,12 +74,54 @@ def main(input_path):
         loss_value = loss.value()
         testing_losses.append(loss_value)
 
-    f1 = f1_score(labels, testing_predictions)
-    precision = precision_score(labels, testing_predictions)
-    recall = recall_score(labels, testing_predictions)
+    print('test labels:', labels)
+    print('test preds:', testing_predictions)
+    print('=========================')
+
+    count = 0
+    for i, label in enumerate(labels):
+        if label == testing_predictions[i]:
+            count+=1
+    print('lstm accuracy:', count/1.0/len(labels))
+
+    reach_labels = [1 if instance.pred_polarity else 0 for instance in instances]
+
+    count = 0
+    for i, label in enumerate(labels):
+        if label == reach_labels[i]:
+            count+=1
+    print('reach accuracy:', count/1.0/len(labels))
+
+    lstm_f1 = f1_score(labels, testing_predictions, average="micro")
+    lstm_precision = precision_score(labels, testing_predictions, average="micro")
+    lstm_recall = recall_score(labels, testing_predictions, average="micro")
+
+
+    reach_f1 = f1_score(labels, reach_labels, average="micro")
+    reach_precision = precision_score(labels, reach_labels, average="micro")
+    reach_recall = recall_score(labels, reach_labels, average="micro")
+
+
+    print('lstm f1:', lstm_f1,'    lstm precision:', lstm_precision, '    lstm recall:', lstm_recall)
+    print('reach f1:', reach_f1, '    reach precision:', reach_precision, '    reach_recall:', reach_recall)
+    # f1 = f1_score(labels, testing_predictions, average = 'samples')
+    # #precision = precision_score(labels, testing_predictions)
+    # #recall = recall_score(labels, testing_predictions)
     
-    print("Precision: %f\tRecall: %f\tF1: %f" % (precision, recall, f1))
+    # #print("Precision: %f\tRecall: %f\tF1: %f" % (precision, recall, f1))
+    # print("F1: %f" % (f1))
+
+    # reach_labels = [1 if instance.pred_polarity else 0 for instance in instances]
+
+    # reach_f1 = f1_score(reach_labels, testing_predictions, average = 'samples')
+    # #precision = precision_score(labels, testing_predictions)
+    # #recall = recall_score(labels, testing_predictions)
+    
+    # print("F1: %f" % (reach_f1))
+
+    
+    
     
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final.csv")
+    main("SentencesInfo_op_label_final_test.csv")
     

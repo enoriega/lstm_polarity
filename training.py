@@ -30,8 +30,8 @@ def main(input_path):
         reader = csv.DictReader(f)
         data = list(reader)
 
-    embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
-    #embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
     #embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
 
 
@@ -80,7 +80,7 @@ def main(input_path):
     trainer = dy.AdamTrainer(param)
     trainer.set_clip_threshold(4.0)
     
-    epochs=10
+    epochs=5
     for e in range(epochs):
         # Shuffle the training instances
         training_losses = list()
@@ -132,4 +132,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final.csv")
+    main("SentencesInfo_all_label_final_train.csv")
