@@ -32,26 +32,42 @@ from rnn import *
 
 
 
-def main(input_path):
-    with open(input_path) as f:
-        reader = csv.DictReader(f)
-        data = list(reader)
-
+def main(path_train, path_test_con, path_test_op):
+    #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
     embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
-
-
-    print("There are %i rows" % len(data))
-
-    instances = [Instance.from_dict(d) for d in data]
-    char_embeddings = build_char_dict(instances)
-
-
+    #embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
         
-    # Shuffle the training instances
-    random.Random(python_rand_seed).shuffle(instances)
-    labels = [1 if instance.polarity else 0 for instance in instances]
 
-    print("There are %i instances" % len(instances))
+    with open(path_train) as f:
+        reader = csv.DictReader(f)
+        data_train = list(reader)
+    instances_train = [Instance.from_dict(d) for d in data_train]
+
+    with open(path_test_con) as f:
+        reader = csv.DictReader(f)
+        data_test_con = list(reader)
+    instances_test_con = [Instance.from_dict(d) for d in data_test_con]
+
+    with open(path_test_op) as f:
+        reader = csv.DictReader(f)
+        data_test_op = list(reader)
+    instances_test_op = [Instance.from_dict(d) for d in data_test_op]
+
+    print('training:', len(instances_train), '  test con:', len(instances_test_con), '  test op:', len(instances_test_op))
+
+    char_embeddings = build_char_dict(instances_train)
+
+    # Shuffle the training instances
+    random.Random(python_rand_seed).shuffle(instances_train)
+    labels_train = [instance.polarity for instance in instances_train]
+
+    #print('2 in training labels:', 2 in labels_train)
+    labels_test_con = [instance.polarity for instance in instances_test_con]
+    labels_test_op = [instance.polarity for instance in instances_test_op]
+
+    reach_labels_con = [1 if instance.pred_polarity else 0 for instance in instances_test_con]
+    reach_labels_op = [1 if instance.pred_polarity else 0 for instance in instances_test_op]
+
 
     # char_embd_choices = {'no-char-embd':0, 'biGRU-char-embd':1}
     # char_embd_sel = char_embd_choices['biGRU-char-embd']
@@ -70,60 +86,38 @@ def main(input_path):
     
     
     # split data and do cross-validation
-    skf = StratifiedKFold(n_splits=5)
-
-    elements = {}
-    embeddings_indices = {}
-    embeddings_char_indices = {}
-    trainers = {}
-    params = {}
     
     epochs = 10
-    f1_results = np.zeros((epochs, 6))
-    for i in range(5):
-        elements[i] = build_model(embeddings, char_embeddings, seg_sel, att_sel)
-        embeddings_indices[i] = WordEmbeddingIndex(elements[i].w2v_emb, embeddings)
-        embeddings_char_indices[i] = CharEmbeddingIndex(elements[i].c2v_embd, char_embeddings)
-        params[i] = elements[i].param_collection
-        trainers[i] = dy.AdamTrainer(params[i])
-        trainers[i].set_clip_threshold(4.0)
+    f1_results = np.zeros((epochs, 12))
+
+    element = build_model(embeddings, char_embeddings, seg_sel, att_sel)
+    embeddings_index = WordEmbeddingIndex(element.w2v_emb, embeddings)
+    embeddings_char_index = CharEmbeddingIndex(element.c2v_embd, char_embeddings)
+    params = element.param_collection
+    trainer = dy.AdamTrainer(params)
+    trainer.set_clip_threshold(4.0)
 
     for e in range(epochs):
     
-        test_pred_dict = {}
-        test_label_dict = {}
-        test_loss_dict = {}
-        test_reach_pred_dict={}
-    
         training_losses = list()
         bad_grad_count = 0
-        
-        for m_index, (train_indices, test_indices) in enumerate(skf.split(instances, labels)):
+   
+        lstm_labels_train = list()
+        for i, instance in enumerate(instances_train):
+            prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
+            y_pred = 1 if prediction.value() >= 0.5 else 0
+            lstm_labels_train.append(y_pred)
 
+            loss = prediction_loss(instance, prediction)
 
-            element = elements[m_index]
-            embeddings_index = embeddings_indices[m_index]
-            embeddings_char_index = embeddings_char_indices[m_index]
-            trainer = trainers[m_index]
-            
-            W_np = element.W.npvalue()
-            print('W sum:',np.sum(W_np), 'W std:',np.std(W_np))
-            print('learning rate:',trainer.learning_rate)
-            
-            for i, sample_index in enumerate(train_indices):
-                instance = instances[sample_index]
-                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
-
-                loss = prediction_loss(instance, prediction)
-
-                loss.backward()
-                try:
-                    trainer.update()
-                except RuntimeError:
-                    #print('encountered bad gradient, instance skipped.')
-                    bad_grad_count+=1
-                loss_value = loss.value()
-                training_losses.append(loss_value)
+            loss.backward()
+            try:
+                trainer.update()
+            except RuntimeError:
+                #print('encountered bad gradient, instance skipped.')
+                bad_grad_count+=1
+            loss_value = loss.value()
+            training_losses.append(loss_value)
 
             # Now do testing
 
@@ -131,73 +125,48 @@ def main(input_path):
             # testing_predictions = list()
             # testing_labels = [1 if instances[index].polarity else 0 for index in test_indices]
             
-            fold_preds = list([])
-            fold_labels = list([])
-            for i, sample_index in enumerate(test_indices):
-                instance = instances[sample_index]
-                prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
-                y_pred = 1 if prediction.value() >= 0.5 else 0
-                loss = prediction_loss(instance, prediction)
-                loss_value = loss.value()
-                
-                if instance.neg_count not in test_pred_dict:
-                    test_pred_dict[instance.neg_count]=list([])
-                    test_label_dict[instance.neg_count]=list([])
-                    test_loss_dict[instance.neg_count]=list([])
-                    test_reach_pred_dict[instance.neg_count]=list([])
-                    
-                test_pred_dict[instance.neg_count].append(y_pred)
-                test_label_dict[instance.neg_count].append([1 if instance.polarity else 0])
-                test_loss_dict[instance.neg_count].append(loss_value)
-                test_reach_pred_dict[instance.neg_count].append([1 if instance.pred_polarity else 0])
+        lstm_labels_con = list()
+        for i, instance in enumerate(instances_test_con):
+            prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
+            y_pred = 1 if prediction.value() >= 0.5 else 0
+            lstm_labels_con.append(y_pred)
 
-            trainer.learning_rate = trainer.learning_rate*0.1
+        lstm_labels_op = list()
+        for i, instance in enumerate(instances_test_op):
+            prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
+            y_pred = 1 if prediction.value() >= 0.5 else 0
+            lstm_labels_op.append(y_pred)
+                
+
+        trainer.learning_rate = trainer.learning_rate*0.1
 
 
         print('===================================================================')
         print('number of bad grads:', bad_grad_count)
         print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
-        
-        print('---------------LSTM result------------------------- ')
-        all_pred = list([])
-        all_label = list([])
-        for neg_count in test_pred_dict.keys():
-            f1 = f1_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-            precision = precision_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-            recall = recall_score(test_label_dict[neg_count], test_pred_dict[neg_count])
-            print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
-            all_pred.extend(test_pred_dict[neg_count])
-            all_label.extend(test_label_dict[neg_count])
-        all_f1 = f1_score(all_label, all_pred)
-        all_recall = recall_score(all_label, all_pred)
-        all_precision = precision_score(all_label, all_pred)
 
-        f1_results[e,0:3] = [all_f1, all_recall, all_precision]
-        print('overall f1:', all_f1)
-        
-        print('---------------REACH result------------------------- ')
-        all_pred = list([])
-        all_label = list([])
-        for neg_count in test_pred_dict.keys():
-            f1 = f1_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
-            precision = precision_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
-            recall = recall_score(test_label_dict[neg_count], test_reach_pred_dict[neg_count])
-            print("Neg Count: %d\tN Samples: %d\tPrecision: %f\tRecall: %f\tF1: %f" % (neg_count, len(test_pred_dict[neg_count]), precision, recall, f1))
-            all_pred.extend(test_reach_pred_dict[neg_count])
-            all_label.extend(test_label_dict[neg_count])
-        all_f1 = f1_score(all_label, all_pred)
-        all_recall = recall_score(all_label, all_pred)
-        all_precision = precision_score(all_label, all_pred)
-        f1_results[e,3:6] = [all_f1, all_recall, all_precision]
+        print('training f1:', f1_score(labels_train, lstm_labels_train))
+        lstm_f1_con = f1_score(labels_test_con, lstm_labels_con, average='micro')
+        lstm_precision_con = precision_score(labels_test_con, lstm_labels_con, average='micro')
+        lstm_recall_con = recall_score(labels_test_con, lstm_labels_con, average='micro')
 
-        print('overall f1:', all_f1)
-            
-#            if sum(testing_predictions) >= 1:
-#                report = classification_report(testing_labels, testing_predictions)
-#                #print(report)
-#            if avg_loss <= 3e-3:
-#                break
-#            print()
+        lstm_f1_op = f1_score(labels_test_op, lstm_labels_op, average='micro')
+        lstm_precision_op = precision_score(labels_test_op, lstm_labels_op, average='micro')
+        lstm_recall_op = recall_score(labels_test_op, lstm_labels_op, average='micro')
+
+        reach_f1_con = f1_score(labels_test_con, reach_labels_con, average='micro')
+        reach_precision_con = precision_score(labels_test_con, reach_labels_con, average='micro')
+        reach_recall_con = recall_score(labels_test_con, reach_labels_con, average='micro')
+
+        reach_f1_op = f1_score(labels_test_op, reach_labels_op, average='micro')
+        reach_precision_op = precision_score(labels_test_op, reach_labels_op, average='micro')
+        reach_recall_op = recall_score(labels_test_op, reach_labels_op, average='micro')
+        
+        print('lstm con f1:', lstm_f1_con, '    lstm op f1:', lstm_f1_op)
+        print('reach con f1:', reach_f1_con, '    reach op f1:', reach_f1_op)
+
+        f1_results[e,:] = [lstm_f1_con, lstm_precision_con, lstm_recall_con, lstm_f1_op, lstm_precision_op, lstm_recall_op, reach_f1_con, reach_precision_con, reach_recall_con, reach_f1_op, reach_precision_op, reach_recall_op]
+
 
     file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_seg_'+str(seg_sel)+'_att_'+str(att_sel)+'.csv'
     np.savetxt(file_name, f1_results, delimiter=',')
@@ -206,4 +175,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final.csv")
+    main("SentencesInfo_all_label_final_train.csv", "SentencesInfo_con_label_final_test.csv", "SentencesInfo_op_label_final_test.csv",)
