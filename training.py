@@ -80,7 +80,7 @@ def main(path_train, path_test_con, path_test_op):
     
     # split data and do cross-validation
     
-    epochs = 1
+    epochs = 10
     f1_results = np.zeros((epochs, 12))
     
     element = build_model(embeddings, char_embeddings)
