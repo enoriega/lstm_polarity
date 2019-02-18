@@ -77,7 +77,8 @@ def run_instance(instance, model_elems, embeddings, char_embeddings):
     
     trigger_expression = dy.scalarInput(1 if instance.rule_polarity is True else 0)
 
-    ff_input = dy.concatenate([trigger_expression, selected_fwd, selected_bwd])
+    #ff_input = dy.concatenate([trigger_expression, selected_fwd, selected_bwd])
+    ff_input = dy.concatenate([selected_fwd, selected_bwd])
 
     # Run the FF network for classification
     prediction = dy.logistic(V * (W * ff_input + b))
@@ -118,7 +119,7 @@ def build_model(w2v_embeddings, char_embeddings):
 
 
     # Feed-Forward parameters
-    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*2+1), name="W")
+    W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*2), name="W")
     b = params.add_parameters((FF_HIDDEN_DIM), name="b")
     V = params.add_parameters((1, FF_HIDDEN_DIM), name="V")
 
