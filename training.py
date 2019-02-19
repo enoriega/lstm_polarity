@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
 import sys
+import pickle
 
 python_rand_seed = int(sys.argv[1])
 word_embd_sel = int(sys.argv[2])
@@ -29,8 +30,8 @@ from rnn import *
 
 def main(path_train, path_test_con, path_test_op):
     #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
-    #embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
-    embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    #embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
         
 
     with open(path_train) as f:
@@ -41,12 +42,20 @@ def main(path_train, path_test_con, path_test_op):
     with open(path_test_con) as f:
         reader = csv.DictReader(f)
         data_test_con = list(reader)
-    instances_test_con = [Instance.from_dict(d) for d in data_test_con]
+    instances_test_con_ = [Instance.from_dict(d) for d in data_test_con]
+    instances_test_con = list([])
+    for instance in instances_test_con_:
+        if instance.polarity!=2:
+            instances_test_con.append(instance)
 
     with open(path_test_op) as f:
         reader = csv.DictReader(f)
         data_test_op = list(reader)
-    instances_test_op = [Instance.from_dict(d) for d in data_test_op]
+    instances_test_op_ = [Instance.from_dict(d) for d in data_test_op]
+    instances_test_op = list([])
+    for instance in instances_test_op_:
+        if instance.polarity!=2:
+            instances_test_op.append(instance)
 
     print('training:', len(instances_train), '  test con:', len(instances_test_con), '  test op:', len(instances_test_op))
 
@@ -139,30 +148,44 @@ def main(path_train, path_test_con, path_test_op):
         print("Epoch %i average training loss: %f" % (e+1, np.average(training_losses)))
 
         print('training f1:', f1_score(labels_train, lstm_labels_train))
-        lstm_f1_con = f1_score(labels_test_con, lstm_labels_con, average='micro')
-        lstm_precision_con = precision_score(labels_test_con, lstm_labels_con, average='micro')
-        lstm_recall_con = recall_score(labels_test_con, lstm_labels_con, average='micro')
+        lstm_f1_con = f1_score(labels_test_con, lstm_labels_con)
+        lstm_precision_con = precision_score(labels_test_con, lstm_labels_con)
+        lstm_recall_con = recall_score(labels_test_con, lstm_labels_con)
 
-        lstm_f1_op = f1_score(labels_test_op, lstm_labels_op, average='micro')
-        lstm_precision_op = precision_score(labels_test_op, lstm_labels_op, average='micro')
-        lstm_recall_op = recall_score(labels_test_op, lstm_labels_op, average='micro')
+        lstm_f1_op = f1_score(labels_test_op, lstm_labels_op)
+        lstm_precision_op = precision_score(labels_test_op, lstm_labels_op)
+        lstm_recall_op = recall_score(labels_test_op, lstm_labels_op)
 
-        reach_f1_con = f1_score(labels_test_con, reach_labels_con, average='micro')
-        reach_precision_con = precision_score(labels_test_con, reach_labels_con, average='micro')
-        reach_recall_con = recall_score(labels_test_con, reach_labels_con, average='micro')
+        reach_f1_con = f1_score(labels_test_con, reach_labels_con)
+        reach_precision_con = precision_score(labels_test_con, reach_labels_con)
+        reach_recall_con = recall_score(labels_test_con, reach_labels_con)
 
-        reach_f1_op = f1_score(labels_test_op, reach_labels_op, average='micro')
-        reach_precision_op = precision_score(labels_test_op, reach_labels_op, average='micro')
-        reach_recall_op = recall_score(labels_test_op, reach_labels_op, average='micro')
+        reach_f1_op = f1_score(labels_test_op, reach_labels_op)
+        reach_precision_op = precision_score(labels_test_op, reach_labels_op)
+        reach_recall_op = recall_score(labels_test_op, reach_labels_op)
         
         print('lstm con f1:', lstm_f1_con, '    lstm op f1:', lstm_f1_op)
         print('reach con f1:', reach_f1_con, '    reach op f1:', reach_f1_op)
 
         f1_results[e,:] = [lstm_f1_con, lstm_precision_con, lstm_recall_con, lstm_f1_op, lstm_precision_op, lstm_recall_op, reach_f1_con, reach_precision_con, reach_recall_con, reach_f1_op, reach_precision_op, reach_recall_op]
 
+        if e==0:
+            print(labels_test_con, lstm_labels_con)
+            print(labels_test_op, lstm_labels_op)
+        if e==epochs-1:
+            labels_list = list([])
+            labels_list.append(labels_test_con)
+            labels_list.append(lstm_labels_con)
+            labels_list.append(labels_test_op)
+            labels_list.append(lstm_labels_op)
+            file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'_labels.pkl'
+            with open(file_name, 'wb') as f:
+                pickle.dump(labels_list, f)
+
     file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'.csv'
     np.savetxt(file_name, f1_results, delimiter=',')
 
+    
     #params.save("model.dy")
 
 
