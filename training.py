@@ -175,7 +175,7 @@ def main(path_train, path_test_con, path_test_op):
             labels_list.append(lstm_labels_con)
             labels_list.append(labels_test_op)
             labels_list.append(lstm_labels_op)
-            file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_wordEmbd_'+str(word_embd_sel)+'_charEmbd_'+str(char_embd_sel)+'_labels.pkl'
+            file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_biLSTM_labels.pkl'
             with open(file_name, 'wb') as f:
                 pickle.dump(labels_list, f)
                 
