@@ -1,12 +1,12 @@
 #!/bin/bash
 
-for seed in {5..5}
+for seed in {4..5}
 do
 	echo ${seed}
 
-	python training.py ${seed} 0 0
+	# python training.py ${seed} 0 0
 	
-	python training.py ${seed} 0 1
+	# python training.py ${seed} 0 1
 
 	python training.py ${seed} 1 0
 	

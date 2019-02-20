@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for seed in {1..5}
+for seed in {1..3}
 do
 	echo ${seed}
 
