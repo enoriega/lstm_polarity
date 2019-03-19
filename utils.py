@@ -4,10 +4,14 @@ import re
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
+    def __init__(self, sen, start, end, controller_start, controller_end, controlled_start, controlled_end, trigger, polarity, pred_polarity, rule_name):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
+        self.controller_start = controller_start
+        self.controller_end = controller_end
+        self.controlled_start = controlled_start
+        self.controlled_end = controlled_end
         self.original_trigger = trigger
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
@@ -86,6 +90,10 @@ class Instance:
         return Instance(d['sentence text'],
                         int(d['event interval start']),
                         int(d['event interval end']),
+                        int(d['controller start']),
+                        int(d['controller end']),
+                        int(d['controlled start']),
+                        int(d['controlled end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
                         polarity,
@@ -96,12 +104,17 @@ class Instance:
         trigger_tokens = self.trigger.split()
 
         trigger_ix = self.tokens.index(Instance._sanitize_word(trigger_tokens[0]), self.start, self.end+1)
-        tokens_prev = self.tokens[max(0, self.start - k):self.start]
-        tokens_in_left = self.tokens[self.start:(trigger_ix+len(trigger_tokens)-1)]
-        tokens_in_right = self.tokens[(trigger_ix+len(trigger_tokens)):self.end]
-        tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
+        # tokens_prev = self.tokens[max(0, self.start - k):self.start]
+        # tokens_in_left = self.tokens[self.controller_end:(trigger_ix+len(trigger_tokens)-1)]
+        # tokens_in_right = self.tokens[(trigger_ix+len(trigger_tokens)):self.controlled_start]
+        # tokens_last = self.tokens[min(self.end, len(self.tokens)-1):min(self.end+k, len(self.tokens)-1)]
 
-        return tokens_prev, tokens_in_left, tokens_in_right, tokens_last
+        tokens_prev = self.tokens[max(0, self.start - k):self.controller_start]
+        tokens_middle = self.tokens[self.controller_end:self.controlled_start]
+        tokens_last = self.tokens[self.controlled_end:min(self.end+k, len(self.tokens)-1)]
+
+
+        return tokens_prev, tokens_middle, tokens_last
         
     def get_negCount(self):
         event_text = ' '.join(word for word in self.tokens[self.start:self.end])

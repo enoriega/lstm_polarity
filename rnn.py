@@ -83,6 +83,11 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
     b = model_elems.b
     collected_vectors = list()
     
+    # print('=====================================')
+    # print('instance:',instance.original)
+    # print('event [start, end]:', instance.start, instance.end, '  controller [start, end]:', instance.controller_start, instance.controller_end, '  controlled [start, end]:', instance.controlled_start, instance.controlled_end)
+    # print('segments:', instance.get_segments())
+    # input('press enter to continue')
 
     if att_sel==0:
         # 1-segment using tokens
@@ -147,7 +152,7 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
             
         # four segments
         elif seg_sel==2:
-            HIDDEN_DIM = int((W.dim()[0][1]-1)/4)
+            HIDDEN_DIM = int((W.dim()[0][1]-1)/3)
             for segment in instance.get_segments():
 
                 if len(segment) > 0:
@@ -156,8 +161,9 @@ def run_instance(instance, model_elems, embeddings, char_embeddings, seg_sel, at
                     inputs = list([])
                     for word in segment:
                         word_embd = embeddings[word]
-                        char_embd = get_char_embd(word, model_elems, char_embeddings)
-                        input_vec = dy.concatenate([word_embd,char_embd], d=0)
+                        #char_embd = get_char_embd(word, model_elems, char_embeddings)
+                        #input_vec = dy.concatenate([word_embd,char_embd], d=0)
+                        input_vec = word_embd
                         inputs.append(input_vec)
 
                     #inputs = [embeddings[w] for w in segment]
@@ -334,7 +340,7 @@ def build_model(w2v_embeddings, char_embeddings, seg_sel, att_sel):
     c2v_embd = params.add_lookup_parameters((len(char_embeddings)+1, CEM_DIMENSIONS), name="c2v-emb")
 
 
-    builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS+CEM_DIMENSIONS*2, HIDDEN_DIM, params)
+    builder = dy.LSTMBuilder(NUM_LAYERS, WEM_DIMENSIONS, HIDDEN_DIM, params)
     builder_char_fwd = dy.GRUBuilder(NUM_LAYERS, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
     builder_char_bwd = dy.GRUBuilder(NUM_LAYERS, CEM_DIMENSIONS, CEM_DIMENSIONS, params)
 
@@ -347,7 +353,7 @@ def build_model(w2v_embeddings, char_embeddings, seg_sel, att_sel):
         if seg_sel==0 or seg_sel==1:
             W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM+1), name="W")
         elif seg_sel==2:
-            W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*4+1), name="W")
+            W = params.add_parameters((FF_HIDDEN_DIM, HIDDEN_DIM*3+1), name="W")
         ret = ModelElements(W, V, b, w2v_wemb, c2v_embd, params, builder, builder_char_fwd, builder_char_bwd)
         
     # 1-layer attention

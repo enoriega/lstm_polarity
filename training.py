@@ -36,8 +36,8 @@ from rnn import *
 
 def main(path_train, path_test_con, path_test_op):
     #embeddings = w2v.load_embeddings("/lhome/zhengzhongliang/CLU_Projects/2018_Automated_Scientific_Discovery_Framework/polarity/20181015/w2v/pubmed/medPubDict.pkl.gz")
-    #embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
-    embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
+    embeddings = w2v.load_embeddings("/Users/zhengzhongliang/NLP_Research/2019_ASDF/medPubDict.pkl.gz")
+    #embeddings = w2v.load_embeddings("/work/zhengzhongliang/ASDF_Github/2019_polarity/medPubDict.pkl.gz")
         
 
     with open(path_train) as f:
@@ -141,11 +141,25 @@ def main(path_train, path_test_con, path_test_op):
             y_pred = 1 if prediction.value() >= 0.5 else 0
             lstm_labels_con.append(y_pred)
 
+            print('======================')
+            print('instance text:', instance.tokens)
+            print('event [start, end]:', instance.start, instance.end, '  controller [start, end]:', instance.controller_start, instance.controller_end, '  controlled [start, end]:', instance.controlled_start, instance.controlled_end)
+            print('segments:', instance.get_segments())
+            print('ture label:', labels_test_con[i], '  pred label:', y_pred)
+            #input('press enter to continue')
+
         lstm_labels_op = list()
         for i, instance in enumerate(instances_test_op):
             prediction = run_instance(instance, element, embeddings_index, embeddings_char_index, seg_sel, att_sel)
             y_pred = 1 if prediction.value() >= 0.5 else 0
             lstm_labels_op.append(y_pred)
+
+            print('======================')
+            print('instance text:', instance.tokens)
+            print('event [start, end]:', instance.start, instance.end, '  controller [start, end]:', instance.controller_start, instance.controller_end, '  controlled [start, end]:', instance.controlled_start, instance.controlled_end)
+            print('segments:', instance.get_segments())
+            print('ture label:', labels_test_op[i], '  pred label:', y_pred)
+            #input('press enter to continue')
                 
 
         trainer.learning_rate = trainer.learning_rate*0.1
@@ -190,6 +204,7 @@ def main(path_train, path_test_con, path_test_op):
             with open(file_name, 'wb') as f:
                 pickle.dump(labels_list, f)
 
+        input('press enter to continue')
     file_name = 'Result/f1_score_seed_'+str(python_rand_seed)+'_seg_'+str(seg_sel)+'_att_'+str(att_sel)+'.csv'
     np.savetxt(file_name, f1_results, delimiter=',')
 
@@ -197,4 +212,4 @@ def main(path_train, path_test_con, path_test_op):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final_train.csv", "SentencesInfo_con_label_final_test.csv", "SentencesInfo_op_label_final_test.csv",)
+    main("SentencesInfo_all_label_final_train_mask.csv", "SentencesInfo_con_label_final_test_mask.csv", "SentencesInfo_op_label_final_test_mask.csv",)
