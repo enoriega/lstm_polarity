@@ -4,7 +4,7 @@ import re
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
+    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name, controller_start, controller_end, controlled_start, controlled_end):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
@@ -12,6 +12,10 @@ class Instance:
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
         self.pred_polarity = pred_polarity
+        self.controller_start = controller_start
+        self.controller_end = controller_end
+        self.controlled_start = controlled_start
+        self.controlled_end = controlled_end
         self.tokens = Instance.normalize(sen)
         self.rule_name = rule_name.lower()
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
@@ -20,7 +24,16 @@ class Instance:
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
         end = min(len(self.tokens) - 1, self.end + k)
-        return self.tokens[start:end]
+        returned_tokens = self.tokens.copy()
+        if returned_tokens[self.controller_start][-2:]=='kd':
+            returned_tokens[self.controller_start]='__controller__-kd' 
+        else:
+            returned_tokens[self.controller_start]='__controller__' 
+        if returned_tokens[self.controlled_start][-2:]=='kd':
+            returned_tokens[self.controlled_start]='__controlled__-kd' 
+        else:
+            returned_tokens[self.controlled_start]='__controlled__'
+        return returned_tokens[start:end]
 
     @staticmethod
     def _is_number(w):
@@ -84,7 +97,11 @@ class Instance:
                         # Remember the polarity is flipped because of SIGNOR
                         True if d['polarity'].startswith('Positive') else False,
                         True if d['pred_polarity'].startswith('Positive') else False,
-                        d['rule'])
+                        d['rule'],
+                        int(d['controller start']),
+                        int(d['controller end']),
+                        int(d['controlled start']),
+                        int(d['controlled end']))
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()

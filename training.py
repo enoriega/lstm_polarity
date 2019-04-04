@@ -107,6 +107,7 @@ def main(input_path):
             print('learning rate:',trainer.learning_rate)
             
             for i, sample_index in enumerate(train_indices):
+
                 instance = instances[sample_index]
                 prediction = run_instance(instance, element, embeddings_index, embeddings_char_index)
 
@@ -200,4 +201,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final.csv")
+    main("SentencesInfo_all_label_final_ExactRecur.csv")
