@@ -21,19 +21,20 @@ class Instance:
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
         self.neg_count = self.get_negCount()
 
+        if self.tokens[self.controller_start][-2:]=='kd':
+            self.tokens[self.controller_start]='__controller__-kd' 
+        else:
+            self.tokens[self.controller_start]='__controller__' 
+        if self.tokens[self.controlled_start][-2:]=='kd':
+            self.tokens[self.controlled_start]='__controlled__-kd' 
+        else:
+            self.tokens[self.controlled_start]='__controlled__'
+
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
         end = min(len(self.tokens) - 1, self.end + k)
-        returned_tokens = self.tokens.copy()
-        if returned_tokens[self.controller_start][-2:]=='kd':
-            returned_tokens[self.controller_start]='__controller__-kd' 
-        else:
-            returned_tokens[self.controller_start]='__controller__' 
-        if returned_tokens[self.controlled_start][-2:]=='kd':
-            returned_tokens[self.controlled_start]='__controlled__-kd' 
-        else:
-            returned_tokens[self.controlled_start]='__controlled__'
-        return returned_tokens[start:end]
+        return self.tokens[start:end]
+        
 
     @staticmethod
     def _is_number(w):
