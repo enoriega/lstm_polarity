@@ -21,14 +21,16 @@ class Instance:
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
         self.neg_count = self.get_negCount()
 
-        if self.tokens[self.controller_start][-2:]=='kd':
-            self.tokens[self.controller_start]='__controller__-kd' 
-        else:
-            self.tokens[self.controller_start]='__controller__' 
-        if self.tokens[self.controlled_start][-2:]=='kd':
-            self.tokens[self.controlled_start]='__controlled__-kd' 
-        else:
-            self.tokens[self.controlled_start]='__controlled__'
+        for entity_ix in range(self.controller_start, self.controller_end):
+            if self.tokens[entity_ix][-2:]=='kd':
+                self.tokens[entity_ix]='__controller__-kd' 
+            else:
+                self.tokens[entity_ix]='__controller__' 
+        for entity_ix in range(self.controlled_start, self.controlled_end):
+            if self.tokens[entity_ix][-2:]=='kd':
+                self.tokens[entity_ix]='__controlled__-kd' 
+            else:
+                self.tokens[entity_ix]='__controlled__'
 
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
