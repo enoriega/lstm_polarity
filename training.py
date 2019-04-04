@@ -90,7 +90,7 @@ def main(path_train, path_test_con, path_test_op):
     # this line when generating formal results.
     # trainer.learning_rate = trainer.learning_rate*0.5
     
-    epochs = 10
+    epochs = 7
     f1_results = np.zeros((epochs, 12))
 
     element = build_model(embeddings, char_embeddings, word_embd_sel, char_embd_sel)
@@ -190,4 +190,4 @@ def main(path_train, path_test_con, path_test_op):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final_train.csv", "SentencesInfo_con_label_final_test.csv", "SentencesInfo_op_label_final_test.csv",)
+    main("SentencesInfo_all_label_final_ExactRecur_train.csv", "SentencesInfo_con_label_final_ExactRecur_test.csv", "SentencesInfo_op_label_final_ExactRecur_test.csv",)
