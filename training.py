@@ -75,7 +75,7 @@ def main(input_path):
     trainers = {}
     params = {}
     
-    epochs = 10
+    epochs = 7
     f1_results = np.zeros((epochs, 6))
     for i in range(5):
         elements[i] = build_model(embeddings, char_embeddings)
@@ -200,4 +200,4 @@ def main(input_path):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final.csv")
+    main("SentencesInfo_all_label_ExactRecur_final.csv")
