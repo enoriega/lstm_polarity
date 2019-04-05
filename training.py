@@ -90,7 +90,7 @@ def main(path_train, path_test_con, path_test_op):
     
     # split data and do cross-validation
     
-    epochs = 10
+    epochs = 7
     f1_results = np.zeros((epochs, 12))
     
     element = build_model(embeddings, char_embeddings)
@@ -186,4 +186,4 @@ def main(path_train, path_test_con, path_test_op):
 
 
 if __name__ == "__main__":
-    main("SentencesInfo_all_label_final_train.csv", "SentencesInfo_con_label_final_test.csv", "SentencesInfo_op_label_final_test.csv",)
+    main("SentencesInfo_all_label_final_ExactRecur_train.csv", "SentencesInfo_con_label_final_ExactRecur_test.csv", "SentencesInfo_op_label_final_ExactRecur_test.csv",)
