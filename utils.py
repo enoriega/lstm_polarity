@@ -36,7 +36,6 @@ class Instance:
         start = max(0, self.start - k)
         end = min(len(self.tokens) - 1, self.end + k)
         return self.tokens[start:end]
-        
 
     @staticmethod
     def _is_number(w):
@@ -93,12 +92,18 @@ class Instance:
 
     @staticmethod
     def from_dict(d):
+        if d['polarity'].startswith('Positive'):
+            polarity = 1
+        elif d['polarity'].startswith('Negative'):
+            polarity = 0
+        else:
+            polarity=2
         return Instance(d['sentence text'],
                         int(d['event interval start']),
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        True if d['polarity'].startswith('Positive') else False,
+                        polarity,
                         True if d['pred_polarity'].startswith('Positive') else False,
                         d['rule'],
                         int(d['controller start']),
