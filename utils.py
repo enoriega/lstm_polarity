@@ -4,7 +4,7 @@ import re
 
 class Instance:
 
-    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name):
+    def __init__(self, sen, start, end, trigger, polarity, pred_polarity, rule_name, controller_start, controller_end, controlled_start, controlled_end):
         self.original = sen
         self.start = start  # + 1 # Plus one to account for the special start/end of sentence tokens
         self.end = end  # + 1
@@ -12,15 +12,31 @@ class Instance:
         self.trigger = trigger.lower().strip()
         self.polarity = polarity  # True for positive, False for negative
         self.pred_polarity = pred_polarity
+        self.controller_start = controller_start
+        self.controller_end = controller_end
+        self.controlled_start = controlled_start
+        self.controlled_end = controlled_end
         self.tokens = Instance.normalize(sen)
         self.rule_name = rule_name.lower()
         self.rule_polarity = True if self.rule_name.startswith("positive") else False;
         self.neg_count = self.get_negCount()
 
+        for entity_ix in range(self.controller_start, self.controller_end):
+            if self.tokens[entity_ix][-2:]=='kd':
+                self.tokens[entity_ix]='__controller__-kd' 
+            else:
+                self.tokens[entity_ix]='__controller__' 
+        for entity_ix in range(self.controlled_start, self.controlled_end):
+            if self.tokens[entity_ix][-2:]=='kd':
+                self.tokens[entity_ix]='__controlled__-kd' 
+            else:
+                self.tokens[entity_ix]='__controlled__'
+
     def get_tokens(self, k=0):
         start = max(0, self.start - k)
         end = min(len(self.tokens) - 1, self.end + k)
         return self.tokens[start:end]
+        
 
     @staticmethod
     def _is_number(w):
@@ -77,20 +93,18 @@ class Instance:
 
     @staticmethod
     def from_dict(d):
-        if d['polarity'].startswith('Positive'):
-            polarity = 1
-        elif d['polarity'].startswith('Negative'):
-            polarity = 0
-        else:
-            polarity=2
         return Instance(d['sentence text'],
                         int(d['event interval start']),
                         int(d['event interval end']),
                         d['trigger'],
                         # Remember the polarity is flipped because of SIGNOR
-                        polarity,
+                        True if d['polarity'].startswith('Positive') else False,
                         True if d['pred_polarity'].startswith('Positive') else False,
-                        d['rule'])
+                        d['rule'],
+                        int(d['controller start']),
+                        int(d['controller end']),
+                        int(d['controlled start']),
+                        int(d['controlled end']))
 
     def get_segments(self, k=2):
         trigger_tokens = self.trigger.split()
